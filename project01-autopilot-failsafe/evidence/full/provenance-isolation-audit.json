@@ -1,0 +1,1065 @@
+{
+  "schema_version": 1,
+  "runs_audited": 58,
+  "checks_per_run": 9,
+  "checks_evaluated": 522,
+  "scenario_gates_resolved": false,
+  "unresolved": [],
+  "remaining_project_simulator_pids": [],
+  "all_checks_passed": true,
+  "runner_source_hashes": [
+    "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+    "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+    "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db"
+  ],
+  "observed_speedup_range": [
+    3.9432807124119145,
+    4.004418228488849
+  ],
+  "runs": [
+    {
+      "run": "4.5.6/00-baseline/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002138694892887,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:48406      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.001714474670043,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:59841      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002792812848454,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:37144      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/03-rc-loss/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.004418228488849,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:60353      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/04-gcs-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002175627340466,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:57255      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/05-rc-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002467413936757,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:50653      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/06-battery-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002755781921541,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:58441      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/07-gcs-transient/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002615428622,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:54943      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/08-battery-transient/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.00257309913663,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:47886      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002344889096532,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:43816      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/10-gcs-rc-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.003143971650275,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:38215      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+      "observed_speedup": 4.002420801990897,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:45817      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/12-gps-rc-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.002362016559791,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:41754      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/00-baseline/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.0020113506078445,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:44873      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001771092637488,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:59444      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.002250819124715,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:59263      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/03-rc-loss/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001328155959147,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:54507      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/04-gcs-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001052561027349,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:41607      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/05-rc-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001935058301223,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:33581      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/06-battery-recovery/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001616067880971,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:54008      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/07-gcs-transient/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001764360435912,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:54473      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/08-battery-transient/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.00116640494594,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:51512      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.001429989484939,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:46822      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/10-gcs-rc-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+      "observed_speedup": 4.00288621990344,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:35897      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.00172104159693,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:41278      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/12-gps-rc-compound/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001847650057287,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:43497      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001532010342582,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:55287      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.0017930783355435,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:41270      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/03-rc-loss/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.003090090280527,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:41066      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/04-gcs-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.0027908665426075,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:36360      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/05-rc-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.002008483137514,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:56384      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/06-battery-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.9998111323297443,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:51629      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/07-gcs-transient/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.0024412726308505,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:56655      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/08-battery-transient/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.002133935217002,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:38077      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.000761158485176,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:41099      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/10-gcs-rc-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.000615868049952,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:60759      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.00081708578868,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:36975      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/12-gps-rc-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.998583467612866,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:50752      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.9994135561030717,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:35694      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.003651393374578,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:59135      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.00174845933214,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:51933      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.6/90-disabled-gcs-control/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "7ce11b41",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.999809002152738,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:51513      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001738063719854,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:53741      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001204177300207,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:37219      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/03-rc-loss/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001215022927978,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:41745      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/04-gcs-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001720294425456,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:43405      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/05-rc-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.0020389832267425,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:42152      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/06-battery-recovery/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.9973789741116823,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:43821      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/07-gcs-transient/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.00102871701945,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:49592      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/08-battery-transient/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.000165196388219,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:34682      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.000074070799803,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:40704      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/10-gcs-rc-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.9930948662746855,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:36580      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.990658461947516,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:45149      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/12-gps-rc-compound/schedule-0.7",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.000266228182974,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:57158      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.003101284230731,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:58084      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.001181362218481,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\nudp   UNCONN 0      0          127.0.0.1:49126      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-1.4",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 4.0011017555954185,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:51496      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    },
+    {
+      "run": "4.5.7/90-disabled-gcs-control/schedule-0.0",
+      "checks": {
+        "binary_pin": true,
+        "live_firmware_commit": true,
+        "config_pins": true,
+        "parameter_readback": true,
+        "private_network": true,
+        "no_hardware_fd": true,
+        "no_hardware_uart": true,
+        "monotonic_timing": true,
+        "cleanup": true
+      },
+      "live_firmware_commit": "2a3dc4b7",
+      "runner_sha256": "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db",
+      "observed_speedup": 3.9432807124119145,
+      "namespace_socket_snapshot": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0          127.0.0.1:53431      0.0.0.0:*    users:((\"python\",pid=2,fd=9))\nudp   UNCONN 0      0            0.0.0.0:5501       0.0.0.0:*    users:((\"arducopter\",pid=5,fd=7))\ntcp   LISTEN 0      1          127.0.0.1:5760       0.0.0.0:*    users:((\"python\",pid=2,fd=4))\n"
+    }
+  ]
+}

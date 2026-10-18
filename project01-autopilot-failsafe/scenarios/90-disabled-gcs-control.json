@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "90-disabled-gcs-control",
+  "title": "Negative control: GCS failsafe disabled",
+  "starter": true,
+  "baseline": false,
+  "parameters": {
+    "FS_GCS_ENABLE": 0
+  },
+  "preconditions": {
+    "mode": 4,
+    "armed": true,
+    "min_altitude_m": 10.5,
+    "max_altitude_m": 13.5,
+    "max_abs_vz_cm_s": 30,
+    "stable_for_s": 3,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3
+  },
+  "events": [
+    {
+      "id": "loss",
+      "at_s": 5,
+      "kind": "heartbeat",
+      "enabled": false
+    }
+  ],
+  "max_compound_skew_s": 0.25,
+  "assertions": [
+    {
+      "type": "heartbeat_gap",
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true
+    },
+    {
+      "type": "text",
+      "after": "loss",
+      "within_s": 8,
+      "contains": "GCS Failsafe",
+      "fault_evidence": true
+    },
+    {
+      "type": "mode",
+      "after": "loss",
+      "within_s": 8,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "disarmed",
+      "after": "loss",
+      "within_s": 50
+    }
+  ],
+  "duration_s": 62,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "rationale": "FS_GCS_ENABLE5, timeout3, options0; require 4s TX silence and failsafe status. Deadline8s includes scheduler and 0.1s clock resolution.",
+  "negative_control": true
+}

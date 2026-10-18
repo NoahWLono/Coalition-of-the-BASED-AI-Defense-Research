@@ -1,0 +1,10 @@
+docs/CLAIMS_LEDGER.md
+        LOW  rule-of-three          4x on lines 5, 17, 23, 28
+docs/COMPLETION_REPORT.md
+     3  MED  trailing-participle    , purchasing action or contractor message was performed.
+        LOW  rule-of-three          4x on lines 20, 27, 44, 44
+    44  MED  trailing-participle    , signing and legal applicability review need explicit scope and qual...
+README.md
+     7  MED  trailing-participle    , recording and reviewable decision report.
+
+11 finding(s)

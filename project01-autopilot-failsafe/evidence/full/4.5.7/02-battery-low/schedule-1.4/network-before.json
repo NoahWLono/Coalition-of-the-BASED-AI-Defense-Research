@@ -1,0 +1,60 @@
+{
+  "devices": [
+    "ptmx",
+    "pts",
+    "shm",
+    "core",
+    "fd",
+    "stderr",
+    "stdout",
+    "stdin",
+    "tty",
+    "urandom",
+    "random",
+    "full",
+    "zero",
+    "null"
+  ],
+  "host_namespace": "net:[4026531833]",
+  "interfaces": [
+    {
+      "addr_info": [
+        {
+          "family": "inet",
+          "label": "lo",
+          "local": "127.0.0.1",
+          "preferred_life_time": 4294967295,
+          "prefixlen": 8,
+          "scope": "host",
+          "valid_life_time": 4294967295
+        },
+        {
+          "family": "inet6",
+          "local": "::1",
+          "preferred_life_time": 4294967295,
+          "prefixlen": 128,
+          "protocol": "kernel_lo",
+          "scope": "host",
+          "valid_life_time": 4294967295
+        }
+      ],
+      "address": "00:00:00:00:00:00",
+      "broadcast": "00:00:00:00:00:00",
+      "flags": [
+        "LOOPBACK",
+        "UP",
+        "LOWER_UP"
+      ],
+      "group": "default",
+      "ifindex": 1,
+      "ifname": "lo",
+      "link_type": "loopback",
+      "mtu": 65536,
+      "operstate": "UNKNOWN",
+      "qdisc": "noqueue",
+      "txqlen": 1000
+    }
+  ],
+  "namespace": "net:[4026532518]",
+  "routes": ""
+}

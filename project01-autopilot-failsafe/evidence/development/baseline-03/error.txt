@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/src/failsafelab/runner.py", line 184, in run_case
+    c.until(lambda:c.latest['HEARTBEAT'].base_mode & 128,30,20)
+  File "/research/project11-autopilot-failsafe/src/failsafelab/runner.py", line 113, in until
+    raise TimeoutError('condition timed out: '+' | '.join(texts))
+TimeoutError: condition timed out: HEARTBEAT {type : 2, autopilot : 3, base_mode : 89, custom_mode : 4, system_status : 3, mavlink_version : 3} | STATUSTEXT {severity : 6, text : EKF3 IMU1 is using GPS, id : 0, chunk_seq : 0} | EKF_STATUS_REPORT {flags : 831, velocity_variance : 0.007729829754680395, pos_horiz_variance : 0.004377471748739481, pos_vert_variance : 8.440723831881769e-06, compass_variance : 0.005173616576939821, terrain_alt_variance : 0.0, airspeed_variance : 0.0} | GLOBAL_POSITION_INT {time_boot_ms : 55834, lat : 99999, lon : 100001, alt : 60, relative_alt : -37, vx : -1, vy : 1, vz : 0, hdg : 35952}

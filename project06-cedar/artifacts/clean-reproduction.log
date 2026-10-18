@@ -1,0 +1,74 @@
+$ uv sync --frozen
+Using CPython 3.13.15
+Creating virtual environment at: .venv
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 34 packages in 432ms
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anyio==4.15.1
+ + attrs==26.1.0
+ + charset-normalizer==3.5.2
+ + click==8.5.0
+ + fastapi==0.143.3
+ + greenlet==3.5.6
+ + h11==0.16.0
+ + httpcore2==2.13.1
+ + httpx2==2.13.1
+ + idna==3.20
+ + iniconfig==2.3.1
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + markdown==3.11.1
+ + opentelemetry-api==1.45.1
+ + packaging==26.3
+ + pillow==13.0.0
+ + playwright==1.64.0
+ + pluggy==1.7.0
+ + pydantic==2.14.1
+ + pydantic-core==2.50.1
+ + pyee==14.0.0
+ + pygments==2.21.0
+ + pytest==9.1.1
+ + referencing==0.37.0
+ + reportlab==5.0.1
+ + rpds-py==2026.9.1
+ + starlette==1.8.0
+ + truststore==0.10.5
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + uvicorn==0.54.0
+
+
+$ uv run --frozen python -m cedar corpus
+Generated slice: 3 packages, 8 requirements, 9 base documents, 1 amendments.
+Generated full: 12 packages, 40 requirements, 36 base documents, 3 amendments.
+
+
+$ uv run --frozen python -m cedar verify
+..........................................................               [100%]
+58 passed in 2.34s
+{"passed": true, "output": "artifacts/evaluation.json", "assessment_checks": 2952, "errors": [], "seconds": 0.3762, "rss_mib": 32.95}
+
+
+$ uv run --frozen python -m cedar walkthrough
+{"passed": true, "scope": "full", "package": "artifacts/full-decision.zip", "steps": 5}
+
+
+$ uv run --frozen python scripts/verify_package.py artifacts/full-decision.zip
+{
+  "valid": true,
+  "errors": [],
+  "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+  "snapshot_id": "DEC-2996c843b0",
+  "digest": "b92342382e70eabe055cf1673abdaa589aed31f164f8c6e64130a062808d72ae",
+  "status": "approved",
+  "files_checked": 56,
+  "sources_checked": 51,
+  "citations_checked": 620
+}
+
+
+$ uv run --frozen python scripts/reproduce_decision.py artifacts/full-decision.zip
+{"reproduced": true, "package": "artifacts/full-decision.zip"}

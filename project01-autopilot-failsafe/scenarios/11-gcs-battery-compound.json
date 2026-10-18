@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "11-gcs-battery-compound",
+  "title": "Simultaneous GCS loss and battery low",
+  "starter": false,
+  "baseline": false,
+  "parameters": {},
+  "preconditions": {
+    "mode": 4,
+    "armed": true,
+    "min_altitude_m": 10.5,
+    "max_altitude_m": 13.5,
+    "max_abs_vz_cm_s": 30,
+    "stable_for_s": 3,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3
+  },
+  "events": [
+    {
+      "id": "loss",
+      "at_s": 5,
+      "kind": "heartbeat",
+      "enabled": false
+    },
+    {
+      "id": "low",
+      "at_s": 5,
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 10.5
+    }
+  ],
+  "max_compound_skew_s": 0.25,
+  "assertions": [
+    {
+      "type": "heartbeat_gap",
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true
+    },
+    {
+      "type": "text",
+      "after": "loss",
+      "within_s": 8,
+      "fault_evidence": true,
+      "contains_any": [
+        "GCS Failsafe",
+        "GCS + Battery Failsafe - Continuing Landing"
+      ]
+    },
+    {
+      "type": "mode",
+      "after": "loss",
+      "within_s": 8,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "field",
+      "after": "low",
+      "within_s": 12,
+      "message": "SYS_STATUS",
+      "field": "voltage_battery",
+      "op": "lt",
+      "value": 11000,
+      "fault_evidence": true
+    },
+    {
+      "type": "text",
+      "after": "low",
+      "within_s": 12,
+      "contains": "Battery 1 is low",
+      "fault_evidence": true
+    },
+    {
+      "type": "mode",
+      "after": "low",
+      "within_s": 12,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "hold_mode",
+      "after": "low",
+      "start_s": 14,
+      "duration_s": 8,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "disarmed",
+      "after": "low",
+      "within_s": 50
+    }
+  ],
+  "duration_s": 62,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "rationale": "Both fault events at5s, both detectors must occur. Both configured actions LAND; this does not test conflicting action priorities."
+}

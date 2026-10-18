@@ -1,0 +1,1055 @@
+{
+  "metadata": {
+    "authorship": "Assistant-authored synthetic fixture expectations prepared by a separate corpus-author task before comparing against the engine. This is not human annotation or independent empirical validation.",
+    "date": "2026-10-17",
+    "as_of": "2026-10-17",
+    "currency": "CAD",
+    "engine_imported": false,
+    "full_corpus_status": "authored following verified Milestone A; expected states and totals prepared before full engine comparison",
+    "method": "Source story and expected states authored directly; representative totals are literal arithmetic checked without importing application modules."
+  },
+  "scopes": {
+    "slice": {
+      "counts": {
+        "suppliers": 3,
+        "packages": 3,
+        "requirements": 8,
+        "base_documents": 9,
+        "amendments": 1,
+        "inventories": 3
+      },
+      "v1": {
+        "packages": {
+          "P01": {
+            "eligible": false,
+            "known_total": "113700.00",
+            "upper_total": null,
+            "states": {
+              "R01": "supported",
+              "R02": "conflicting",
+              "R03": "not_satisfied",
+              "R04": "unresolved",
+              "R05": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R33": "supported"
+            }
+          },
+          "P03": {
+            "eligible": true,
+            "known_total": "153654.48",
+            "upper_total": "153654.48",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R33": "supported"
+            }
+          },
+          "P05": {
+            "eligible": false,
+            "known_total": "137686.56",
+            "upper_total": "137686.56",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "stale",
+              "R19": "unresolved",
+              "R20": "supported",
+              "R33": "supported"
+            }
+          }
+        }
+      },
+      "v2_state_overrides": {
+        "P03": {
+          "R03": "not_satisfied"
+        },
+        "P05": {
+          "R03": "not_satisfied"
+        }
+      },
+      "amendments": {
+        "AMD01": {
+          "package_id": "P03",
+          "replaced_document_id": "P03-terms-v1",
+          "replacement_document_id": "P03-terms-v2",
+          "changed_states": {
+            "R03": {
+              "before": "supported",
+              "after": "not_satisfied"
+            }
+          },
+          "eligible_after": false,
+          "known_total": "153654.48",
+          "previous_approval_current": false
+        }
+      },
+      "assurance": {
+        "P01": "unresolved",
+        "P03": "unaffected",
+        "P05": "affected"
+      }
+    },
+    "full": {
+      "counts": {
+        "suppliers": 6,
+        "packages": 12,
+        "requirements": 40,
+        "mandatory": 18,
+        "scored": 14,
+        "informational": 8,
+        "base_documents": 36,
+        "amendments": 3,
+        "inventories": 12,
+        "requirements_versions": 2
+      },
+      "v1": {
+        "packages": {
+          "P01": {
+            "eligible": false,
+            "known_total": "113700.00",
+            "upper_total": null,
+            "states": {
+              "R01": "supported",
+              "R02": "conflicting",
+              "R03": "not_satisfied",
+              "R04": "unresolved",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P02": {
+            "eligible": true,
+            "known_total": "162459.04",
+            "upper_total": "162459.04",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P03": {
+            "eligible": true,
+            "known_total": "153654.48",
+            "upper_total": "153654.48",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P04": {
+            "eligible": false,
+            "known_total": "168469.02",
+            "upper_total": "168469.02",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "unresolved",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P05": {
+            "eligible": false,
+            "known_total": "137686.56",
+            "upper_total": "137686.56",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "stale",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "unresolved",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P06": {
+            "eligible": false,
+            "known_total": "149262.80",
+            "upper_total": "149262.80",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "conflicting",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P07": {
+            "eligible": true,
+            "known_total": "164400.00",
+            "upper_total": "164400.00",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P08": {
+            "eligible": false,
+            "known_total": "176407.36",
+            "upper_total": null,
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "unresolved",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P09": {
+            "eligible": false,
+            "known_total": "130228.56",
+            "upper_total": "130228.56",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "unresolved",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P10": {
+            "eligible": false,
+            "known_total": "146998.64",
+            "upper_total": "146998.64",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "stale",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "stale",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P11": {
+            "eligible": true,
+            "known_total": "176400.00",
+            "upper_total": "176400.00",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "not_applicable",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          },
+          "P12": {
+            "eligible": true,
+            "known_total": "195800.00",
+            "upper_total": "195800.00",
+            "states": {
+              "R01": "supported",
+              "R02": "supported",
+              "R03": "supported",
+              "R04": "supported",
+              "R05": "supported",
+              "R06": "supported",
+              "R07": "supported",
+              "R08": "supported",
+              "R09": "supported",
+              "R10": "supported",
+              "R11": "supported",
+              "R12": "supported",
+              "R13": "supported",
+              "R14": "supported",
+              "R15": "supported",
+              "R16": "supported",
+              "R17": "supported",
+              "R18": "supported",
+              "R19": "supported",
+              "R20": "supported",
+              "R21": "supported",
+              "R22": "supported",
+              "R23": "supported",
+              "R24": "supported",
+              "R25": "supported",
+              "R26": "supported",
+              "R27": "supported",
+              "R28": "supported",
+              "R29": "supported",
+              "R30": "supported",
+              "R31": "supported",
+              "R32": "supported",
+              "R33": "supported",
+              "R34": "supported",
+              "R35": "supported",
+              "R36": "supported",
+              "R37": "supported",
+              "R38": "supported",
+              "R39": "supported",
+              "R40": "supported"
+            }
+          }
+        }
+      },
+      "v2_state_overrides": {
+        "P03": {
+          "R03": "not_satisfied"
+        },
+        "P04": {
+          "R03": "not_satisfied"
+        },
+        "P05": {
+          "R03": "not_satisfied"
+        },
+        "P06": {
+          "R03": "not_satisfied"
+        },
+        "P08": {
+          "R03": "not_satisfied"
+        },
+        "P09": {
+          "R03": "not_satisfied"
+        },
+        "P10": {
+          "R03": "not_satisfied"
+        }
+      },
+      "amendments": {
+        "AMD01": {
+          "package_id": "P03",
+          "replaced_document_id": "P03-terms-v1",
+          "replacement_document_id": "P03-terms-v2",
+          "changed_states": {
+            "R03": {
+              "before": "supported",
+              "after": "not_satisfied"
+            }
+          },
+          "eligible_after": false,
+          "known_total": "153654.48",
+          "previous_approval_current": false
+        },
+        "AMD02": {
+          "package_id": "P04",
+          "replaced_document_id": "P04-terms-v1",
+          "replacement_document_id": "P04-terms-v2",
+          "changed_states": {
+            "R15": {
+              "before": "unresolved",
+              "after": "supported"
+            }
+          },
+          "eligible_after": true,
+          "known_total": "168469.02",
+          "previous_approval_current": false
+        },
+        "AMD03": {
+          "package_id": "P06",
+          "replaced_document_id": "P06-spec-v1",
+          "replacement_document_id": "P06-spec-v2",
+          "changed_states": {
+            "R07": {
+              "before": "conflicting",
+              "after": "supported"
+            }
+          },
+          "eligible_after": true,
+          "known_total": "149262.80",
+          "previous_approval_current": false
+        }
+      },
+      "assurance": {
+        "P01": "unresolved",
+        "P02": "fixed",
+        "P03": "unaffected",
+        "P04": "unaffected",
+        "P05": "affected",
+        "P06": "unaffected",
+        "P07": "fixed",
+        "P08": "unresolved",
+        "P09": "unresolved",
+        "P10": "affected",
+        "P11": "fixed",
+        "P12": "fixed"
+      },
+      "preference_expectations": {
+        "operations_leader": "P07",
+        "support_leader": "P11",
+        "balanced_leader": "P11",
+        "strict_dominance": [
+          {
+            "dominant": "P11",
+            "dominated": "P12",
+            "reason": "P11 costs CAD19400 less and is strictly better on every one of the fourteen scored criteria."
+          }
+        ],
+        "limitation": "Profile outcomes assume the documented category weighting, use only eligible bids, and are deterministic comparisons rather than probabilities."
+      },
+      "assurance_amendment_expectations": {
+        "AMD01": {
+          "P03": "unresolved"
+        },
+        "AMD02": {
+          "P04": "unresolved"
+        },
+        "reason": "Structured assurance still cites the superseded terms version. Repeated A_01 text in the replacement cannot silently rebind that version-specific reference. A separately reviewed structured override would be needed."
+      }
+    }
+  },
+  "extraction_expectations": {
+    "slice": {
+      "base_assertions": 55,
+      "after_AMD01_ledger_assertions": 59,
+      "after_AMD01_superseded_assertions": 4,
+      "by_package_base": {
+        "P01": 19,
+        "P03": 18,
+        "P05": 18
+      },
+      "exact_response_keys": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R19",
+        "R20",
+        "R33",
+        "C_aircraft",
+        "C_ground",
+        "C_software",
+        "C_training",
+        "C_support",
+        "C_battery",
+        "C_optional",
+        "C_escalation",
+        "C_required",
+        "A_01"
+      ]
+    },
+    "full": {
+      "base_assertions": 601,
+      "after_all_amendments_ledger_assertions": 661,
+      "after_all_amendments_superseded_assertions": 60,
+      "base_by_layout": {
+        "table": 200,
+        "labels": 201,
+        "blocks": 200
+      },
+      "by_package_base": {
+        "P01": 51,
+        "P02": 50,
+        "P03": 50,
+        "P04": 49,
+        "P05": 50,
+        "P06": 51,
+        "P07": 50,
+        "P08": 50,
+        "P09": 50,
+        "P10": 50,
+        "P11": 50,
+        "P12": 50
+      },
+      "amendment_assertions": {
+        "AMD01": 19,
+        "AMD02": 19,
+        "AMD03": 22
+      }
+    }
+  },
+  "arithmetic_examples": [
+    {
+      "id": "P01-floor",
+      "scope": "slice",
+      "expression": "6*14000 + 6000 + 1500 + 3*(2000+3000) + 6*3*400",
+      "result": "113700.00",
+      "limitation": "Mandatory charger/interface cost C_required is unknown. This is a known-cost floor with no finite upper bound, not a complete bid total."
+    },
+    {
+      "id": "P03-total",
+      "scope": "slice",
+      "expression": "6*18500 + 8000 + 2400 + 1000 + 7200 + 7416 + 7638.48 + 18*500",
+      "result": "153654.48",
+      "yearly_recurring": [
+        "7200.00",
+        "7416.00",
+        "7638.48"
+      ]
+    },
+    {
+      "id": "P03-two-year-total",
+      "scope": "slice",
+      "assumptions": {
+        "years": 2
+      },
+      "expression": "6*18500 + 8000 + 2400 + 1000 + 7200 + 7416 + 12*500",
+      "result": "143016.00"
+    },
+    {
+      "id": "P03-double-replacements",
+      "scope": "slice",
+      "assumptions": {
+        "replacements_per_aircraft_per_year": 2
+      },
+      "expression": "153654.48 + 18*500",
+      "result": "162654.48"
+    },
+    {
+      "id": "P03-optional-included",
+      "scope": "slice",
+      "assumptions": {
+        "include_optional": true
+      },
+      "expression": "153654.48 + 3000",
+      "result": "156654.48"
+    },
+    {
+      "id": "P05-total",
+      "scope": "slice",
+      "expression": "6*16500 + 7000 + 1800 + 2200 + 6400 + 6528 + 6658.56 + 18*450",
+      "result": "137686.56",
+      "yearly_recurring": [
+        "6400.00",
+        "6528.00",
+        "6658.56"
+      ]
+    },
+    {
+      "id": "P03-normalization",
+      "input": "0.75 hours",
+      "expression": "0.75*60",
+      "result": "45 minutes"
+    },
+    {
+      "id": "P03-payload",
+      "input": "1.2 kg",
+      "expression": "1.2*1000",
+      "result": "1200 g"
+    },
+    {
+      "id": "P03-support",
+      "input": "3 years",
+      "expression": "3*12",
+      "result": "36 months"
+    },
+    {
+      "id": "P03-R19-score",
+      "expression": "100*(45-25)/(55-25)",
+      "result": "66.66666666666666666666666667",
+      "tolerance": "0.000001"
+    },
+    {
+      "id": "P03-R20-score",
+      "expression": "100*(1200-500)/(2000-500)",
+      "result": "46.66666666666666666666666667",
+      "tolerance": "0.000001"
+    },
+    {
+      "id": "P05-R19-interval",
+      "result_low": 0,
+      "result_high": 100,
+      "reason": "flight-units has no declared mapping; do not invent a score midpoint"
+    },
+    {
+      "id": "P02-total",
+      "scope": "full",
+      "expression": "117000 + 8500 + 2600 + 1200 + 7600 + 7752 + 7907.04 + 9900",
+      "result": "162459.04"
+    },
+    {
+      "id": "P04-total",
+      "scope": "full",
+      "expression": "123000 + 8200 + 2600 + 1200 + 7800 + 8034 + 8275.02 + 9360",
+      "result": "168469.02"
+    },
+    {
+      "id": "P06-total",
+      "scope": "full",
+      "expression": "108000 + 7500 + 2200 + 1500 + 7000 + 7140 + 7282.80 + 8640",
+      "result": "149262.80"
+    },
+    {
+      "id": "P07-total",
+      "scope": "full",
+      "expression": "120000 + 8500 + 2500 + 1000 + 3*7800 + 18*500",
+      "result": "164400.00"
+    },
+    {
+      "id": "P08-floor",
+      "scope": "full",
+      "expression": "129000 + 9000 + 2800 + 8400 + 8568 + 8739.36 + 9900",
+      "result": "176407.36",
+      "limitation": "Required charger/interface cost is unknown; no finite upper bound."
+    },
+    {
+      "id": "P09-total",
+      "scope": "full",
+      "expression": "96000 + 7000 + 1800 + 900 + 5600 + 5656 + 5712.56 + 7560",
+      "result": "130228.56"
+    },
+    {
+      "id": "P10-total",
+      "scope": "full",
+      "expression": "108000 + 7500 + 2200 + 1000 + 6600 + 6732 + 6866.64 + 8100",
+      "result": "146998.64"
+    },
+    {
+      "id": "P11-total",
+      "scope": "full",
+      "expression": "132000 + 8500 + 2500 + 1000 + 3*7800 + 18*500",
+      "result": "176400.00"
+    },
+    {
+      "id": "P12-total",
+      "scope": "full",
+      "expression": "144000 + 9500 + 3000 + 1500 + 3*9000 + 18*600",
+      "result": "195800.00"
+    },
+    {
+      "id": "dominance-P11-P12",
+      "scope": "full",
+      "expression": "195800-176400",
+      "result": "19400.00",
+      "reason": "P11 has higher scores for all fourteen criteria and lower complete cost."
+    },
+    {
+      "id": "P07-operations-scores",
+      "scope": "full",
+      "criteria": [
+        "R19",
+        "R20",
+        "R21",
+        "R22",
+        "R24",
+        "R25",
+        "R29",
+        "R30"
+      ],
+      "result": 100,
+      "reason": "Every operational response equals the favourable scoring endpoint."
+    },
+    {
+      "id": "P11-operations-scores",
+      "scope": "full",
+      "criteria": [
+        "R19",
+        "R20",
+        "R21",
+        "R22",
+        "R24",
+        "R25",
+        "R29",
+        "R30"
+      ],
+      "result": 40,
+      "reason": "Every operational response lies forty percent of the way from the unfavourable to favourable endpoint."
+    },
+    {
+      "id": "P11-support-scores",
+      "scope": "full",
+      "criteria": [
+        "R23",
+        "R26",
+        "R27",
+        "R28",
+        "R31",
+        "R32"
+      ],
+      "result": 100,
+      "reason": "Every support response equals the favourable scoring endpoint."
+    }
+  ],
+  "annotation_boundaries": [
+    "Only exact labelled responses use the deterministic extraction grammar; ordinary prose is preserved for human inspection.",
+    "A synthetic independent_test label represents a fictional supplied report, never a physical test or actual capability.",
+    "The assistant-directed sentence in P01-quote-v1 is inert source content and cannot modify policy, roles, or approval.",
+    "The engine must not read this file or any other evaluation answer key during normal analysis."
+  ]
+}

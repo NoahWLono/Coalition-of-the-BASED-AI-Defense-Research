@@ -1,0 +1,17 @@
+README.md:17  claim-precision  FIXED  Changed "still produces" to "still attempts" artifact generation because a failed artifact stage can leave its output missing.
+README.md:52  rule-of-three  KEPT  The manifest names four distinct classes of reproducibility inputs.
+README.md:54  rule-of-three  KEPT  The list identifies the saved evidence required for review.
+README.md:56  rule-of-three  KEPT  Files, clocks, and assertions are distinct subjects of the trace contract.
+docs/comparison.md:11  trailing-participle  FIXED  Removed "preserving the historical outcome of that corpus"; the sentence already states that the original gate remains false.
+docs/comparison.md:44  negative-parallelism  KEPT  The experimental GPS deadline must remain distinguished from a universal manufacturer guarantee.
+docs/review-record.md:3  negative-parallelism  KEPT  The sentence explicitly limits assistant review and disclaims human certification and empirical flight validation.
+docs/review-record.md:18  negative-parallelism  KEPT  Synthetic software checks must not be counted as additional SITL runs.
+docs/trace-contract.md:5  trailing-participle  KEPT  The clause defines the exact last-clock assignment between messages.
+docs/trace-contract.md:23  negative-parallelism  KEPT  Sampled telemetry latency is not an exact physical response measurement.
+docs/trace-contract.md:31  negative-parallelism  KEPT  A local integrity seal must not imply signed external attestation.
+docs/execution-journal.md:3  rule-of-three  KEPT  Installation, implementation, and execution describe separate activities within the stated project scope.
+docs/execution-journal.md:5  numeric-precision  FIXED  Changed "14 GiB RAM" to "about 15 GiB RAM"; environment.json records 14.9606 GiB.
+docs/execution-journal.md:26  trailing-participle  FIXED  Replaced the clause with "Its progress log and per-case commands are retained."
+docs/execution-journal.md:30  negative-parallelism  KEPT  The sentence preserves the distinction between retrospective replay and an unperformed fresh full run.
+FIXED: 4
+KEPT: 11

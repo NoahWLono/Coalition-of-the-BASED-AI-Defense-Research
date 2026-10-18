@@ -1,0 +1,59 @@
+{
+  "binary_sha256": "73691f043c7579f5ff4d6cf5c32219ade472476e662638e47bb860e5458f8f04",
+  "cleanup": {
+    "child_reaped": true,
+    "completed": true
+  },
+  "command": [
+    "/research/project11-autopilot-failsafe/vendor/4.5.6/arducopter",
+    "--model",
+    "quad",
+    "--speedup",
+    "4",
+    "--synthetic-clock",
+    "--home",
+    "0.01,0.01,0,0",
+    "--start-time",
+    "1700000000",
+    "--wipe",
+    "--defaults",
+    "/research/project11-autopilot-failsafe/config/base-copter.parm,/research/project11-autopilot-failsafe/config/lab.parm,/research/project11-autopilot-failsafe/evidence/development/baseline-03/overrides.parm",
+    "--serial0",
+    "tcpclient:127.0.0.1:5760",
+    "--serial1",
+    "none",
+    "--serial2",
+    "none",
+    "--serial4",
+    "none",
+    "--serial5",
+    "none",
+    "--serial6",
+    "none",
+    "--serial7",
+    "none",
+    "--serial8",
+    "none"
+  ],
+  "error": "TimeoutError: condition timed out: HEARTBEAT {type : 2, autopilot : 3, base_mode : 89, custom_mode : 4, system_status : 3, mavlink_version : 3} | STATUSTEXT {severity : 6, text : EKF3 IMU1 is using GPS, id : 0, chunk_seq : 0} | EKF_STATUS_REPORT {flags : 831, velocity_variance : 0.007729829754680395, pos_horiz_variance : 0.004377471748739481, pos_vert_variance : 8.440723831881769e-06, compass_variance : 0.005173616576939821, terrain_alt_variance : 0.0, airspeed_variance : 0.0} | GLOBAL_POSITION_INT {time_boot_ms : 55834, lat : 99999, lon : 100001, alt : 60, relative_alt : -37, vx : -1, vy : 1, vz : 0, hdg : 35952}",
+  "host": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "uname": [
+      "Linux",
+      "failsafe-lab",
+      "7.2.11-arch1-1",
+      "#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000",
+      "x86_64"
+    ]
+  },
+  "pid": 5,
+  "returncode": 1,
+  "scenario_id": "00-baseline",
+  "schedule_offset_s": 0,
+  "schema_version": 1,
+  "simulator_returncode": 0,
+  "synthetic": false,
+  "timing_model": "SITL synthetic clock; speedup 4; assertion clock SYSTEM_TIME.time_boot_ms",
+  "version": "4.5.6",
+  "wall_duration_s": 13.969778695999594
+}

@@ -1,0 +1,101 @@
+{
+  "scope": "Report appearance refresh only. Original decision bytes, digests, review events, current/stale states, citations and sources are preserved. Historical browser/PDF/video evidence was not regenerated.",
+  "packages": [
+    {
+      "package": "artifacts/full-decision.zip",
+      "historical_package": "artifacts/history/light-appearance/full-decision.zip",
+      "original_sha256": "4654ede2153078f316802a283e3ac8257321132e13a1b55e4440b930983ef8ae",
+      "sha256": "4f5cd0c47225c4fd6bc6ee97b71f00640b3f7a0ff75517a96dca3e034481030f",
+      "changed_members": [
+        "manifest.json",
+        "report.html",
+        "verify.py"
+      ],
+      "decision_json_byte_identical": true,
+      "evidence_csv_and_sources_byte_identical": true,
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-05c21a1fa5",
+        "digest": "73a52a37e1633a50ca7ac294f4ed38d480bae8c9a3e3ed36e0a819761b5317b7",
+        "status": "approved",
+        "files_checked": 56,
+        "sources_checked": 51,
+        "citations_checked": 620
+      }
+    },
+    {
+      "package": "artifacts/full-stale-decision.zip",
+      "historical_package": "artifacts/history/light-appearance/full-stale-decision.zip",
+      "original_sha256": "e4fef99067285cb43e80fdec1a01ff8b11b33c27e957aa4477f8f8d6fd812959",
+      "sha256": "ae86ff3ce798db7977ff442fc1f9348f752722e817bc427b8d9e0ca95381c36c",
+      "changed_members": [
+        "manifest.json",
+        "report.html",
+        "verify.py"
+      ],
+      "decision_json_byte_identical": true,
+      "evidence_csv_and_sources_byte_identical": true,
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-7a33affe70",
+        "digest": "d6ba28ed7a6257846e4b7de46f405e55193c1d35e936945d23c41f0b48a011b0",
+        "status": "stale",
+        "files_checked": 55,
+        "sources_checked": 50,
+        "citations_checked": 601
+      }
+    },
+    {
+      "package": "artifacts/slice-decision.zip",
+      "historical_package": "artifacts/history/light-appearance/slice-decision.zip",
+      "original_sha256": "eac524851f534f671db39c28b718866edb310b4fde29e64720708d14875969b8",
+      "sha256": "62c2831d6494cfd75d11d4fa6d9eccf19826b15401369ef41d55ecfd48f4a48e",
+      "changed_members": [
+        "manifest.json",
+        "report.html",
+        "verify.py"
+      ],
+      "decision_json_byte_identical": true,
+      "evidence_csv_and_sources_byte_identical": true,
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-844d472398",
+        "digest": "864d3437be2a093dcc36774b42a7c87e6adc5ec5d80aed7ce5204641dea12860",
+        "status": "approved",
+        "files_checked": 20,
+        "sources_checked": 15,
+        "citations_checked": 59
+      }
+    },
+    {
+      "package": "artifacts/slice-stale-decision.zip",
+      "historical_package": "artifacts/history/light-appearance/slice-stale-decision.zip",
+      "original_sha256": "764f121618df952a8c769e1fb490372fec44db6048c3b2344b600d764c22411e",
+      "sha256": "18ba1cd82fbf3df2229a0e20164f91b3be72db457dc0627c59997842365bdaef",
+      "changed_members": [
+        "manifest.json",
+        "report.html",
+        "verify.py"
+      ],
+      "decision_json_byte_identical": true,
+      "evidence_csv_and_sources_byte_identical": true,
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-6494c2c143",
+        "digest": "051ad7f969acafae14730921b1a0694de7a60e5d719207bd11084b7fa7e1d6e7",
+        "status": "stale",
+        "files_checked": 19,
+        "sources_checked": 14,
+        "citations_checked": 55
+      }
+    }
+  ]
+}

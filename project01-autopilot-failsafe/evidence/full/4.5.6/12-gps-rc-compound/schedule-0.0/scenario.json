@@ -1,0 +1,87 @@
+{
+  "assertions": [
+    {
+      "after": "stale",
+      "fault_evidence": true,
+      "field": "fix_type",
+      "message": "GPS_RAW_INT",
+      "op": "lt",
+      "type": "field",
+      "value": 3,
+      "within_s": 10
+    },
+    {
+      "after": "stale",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 40
+    },
+    {
+      "after": "rc",
+      "contains": "Radio Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 6
+    },
+    {
+      "after": "rc",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 6
+    },
+    {
+      "after": "rc",
+      "allowed": [
+        9
+      ],
+      "duration_s": 10,
+      "start_s": 10,
+      "type": "hold_mode"
+    },
+    {
+      "after": "rc",
+      "type": "disarmed",
+      "within_s": 70
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 78,
+  "events": [
+    {
+      "at_s": 5,
+      "id": "stale",
+      "kind": "parameter",
+      "name": "SIM_GPS_BYTELOSS",
+      "value": 100
+    },
+    {
+      "at_s": 5,
+      "id": "rc",
+      "kind": "parameter",
+      "name": "SIM_RC_FAIL",
+      "value": 1
+    }
+  ],
+  "id": "12-gps-rc-compound",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "Require actual GPS fix degradation plus radio failsafe. RC LAND may precede EKF action; this checks resulting LAND and fault visibility, not independent proof of two LAND causes.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Simultaneous GPS starvation and RC loss"
+}

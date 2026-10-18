@@ -1,0 +1,58 @@
+{
+  "assertions": [
+    {
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true,
+      "type": "heartbeat_gap"
+    },
+    {
+      "after": "loss",
+      "contains": "GCS Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 8
+    },
+    {
+      "after": "loss",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 8
+    },
+    {
+      "after": "loss",
+      "type": "disarmed",
+      "within_s": 50
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 62,
+  "events": [
+    {
+      "at_s": 5,
+      "enabled": false,
+      "id": "loss",
+      "kind": "heartbeat"
+    }
+  ],
+  "id": "01-gcs-loss",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "FS_GCS_ENABLE5, timeout3, options0; require 4s TX silence and failsafe status. Deadline8s includes scheduler and 0.1s clock resolution.",
+  "schema_version": 1,
+  "starter": true,
+  "title": "GCS heartbeat interruption requests LAND"
+}

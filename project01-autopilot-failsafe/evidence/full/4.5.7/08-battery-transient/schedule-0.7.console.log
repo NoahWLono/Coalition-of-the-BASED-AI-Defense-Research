@@ -1,0 +1,5 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.832, "host_monotonic_ns": 6787758013589, "host_unix_us": 1792289902633181, "altitude_m": 11.975, "mode": 4, "armed": true}
+{"id": "dip", "kind": "parameter", "sim_s": 62.534, "host_monotonic_ns": 6789177872644, "host_unix_us": 1792289904053038, "at_s": 5, "name": "SIM_BATT_VOLTAGE", "value": 10.5}
+{"id": "restore", "kind": "parameter", "sim_s": 63.632, "host_monotonic_ns": 6789449346701, "host_unix_us": 1792289904324511, "at_s": 6, "name": "SIM_BATT_VOLTAGE", "value": 12.6}
+{"id": "land", "kind": "mode", "sim_s": 77.532, "host_monotonic_ns": 6792937022942, "host_unix_us": 1792289907812188, "at_s": 20, "mode": "LAND"}
+{"id": "scenario_end", "kind": "end", "sim_s": 124.534, "host_monotonic_ns": 6804682814610, "host_unix_us": 1792289919557980}

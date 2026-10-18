@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "09-gps-stale",
+  "title": "GPS byte starvation requests LAND",
+  "starter": false,
+  "baseline": false,
+  "parameters": {},
+  "preconditions": {
+    "mode": 4,
+    "armed": true,
+    "min_altitude_m": 10.5,
+    "max_altitude_m": 13.5,
+    "max_abs_vz_cm_s": 30,
+    "stable_for_s": 3,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3
+  },
+  "events": [
+    {
+      "id": "stale",
+      "at_s": 5,
+      "kind": "parameter",
+      "name": "SIM_GPS_BYTELOSS",
+      "value": 100
+    }
+  ],
+  "max_compound_skew_s": 0.25,
+  "assertions": [
+    {
+      "type": "field",
+      "after": "stale",
+      "within_s": 10,
+      "message": "GPS_RAW_INT",
+      "field": "fix_type",
+      "op": "lt",
+      "value": 3,
+      "fault_evidence": true
+    },
+    {
+      "type": "mode",
+      "after": "stale",
+      "within_s": 40,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "disarmed",
+      "after": "stale",
+      "within_s": 70
+    }
+  ],
+  "duration_s": 78,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "rationale": "100 percent byte loss stops fresh GPS receiver input. GPS_TYPE2=0 prevents receiver substitution. GPS driver timeout4s; LAND within40s is an experimental bound for this EKF/configuration, not a documented universal guarantee. FS_DR_ENABLE0 isolates EKF behavior."
+}

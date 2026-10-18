@@ -1,0 +1,316 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | CASE_STUDY</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / CASE_STUDY</p><article><h1>CEDAR: preserving the evidence behind a procurement comparison</h1>
+<p><strong>Technical portfolio case study · Local synthetic demonstration</strong></p>
+<p>CEDAR turns a purchasing comparison into an inspectable record of requirements, source passages, assumptions and review decisions. Its main demonstration starts with an apparently inexpensive offer that cannot pass the buyer's mandatory gates. It then follows a different offer through review, approval and a supplier amendment that invalidates the earlier conclusion.</p>
+<p>The implemented system runs locally with Python, FastAPI, SQLite and a browser client. All suppliers, products, prices, test passages and advisories are fictional. It has no aircraft connection, purchasing authority or live model integration. Noah Weinberger supplied the project direction and background in AI red teaming, policy analysis and data provenance. The implementation, fixtures and portfolio were developed with AI assistance; manual authorship, customer validation and independent audit are not claimed.</p>
+<h2>The commercial question</h2>
+<p>The fictional buyer needs six unarmed UAVs, shared ground equipment, software, training and multiyear support for civilian inspection. Comparing headline prices would hide material differences. P01's lowest known subtotal excludes a required component. Other offers contain contradictory specifications, expired commitments or declarations where the buyer requires a different evidence type.</p>
+<p>A procurement manager needs a shortlist with its open commercial questions. An engineering reviewer needs to inspect whether the supplied evidence actually satisfies the stated documentary rule. A program manager needs to understand which amendment or planning assumption could change the conclusion. CEDAR implements that shared record. Reduced search time and easier collaboration remain proposed benefits to measure in a pilot.</p>
+<p><img alt="The implemented Overview showing five eligible configurations, two incomplete cost totals and P01's open conditions." src="../../artifacts/screenshots/overview.png" /></p>
+<p><em>Figure 1. Actual browser capture at the initial input revision. Documentary eligibility and cost completeness are displayed separately.</em></p>
+<p>The project first completed a vertical slice with three packages, eight requirements, nine base documents and one amendment. The <a href="../../artifacts/milestone-a.json">Milestone A replay</a> preserves that checkpoint. The full corpus then expanded to six suppliers, twelve configurations, forty requirements, thirty-six base documents in three text layouts, three amendments and two buyer-policy versions. Twelve software inventories accompany the full corpus. The <a href="../../evaluation/annotation-notes.md">annotation notes</a> explain how the fixture stories and expected results were prepared.</p>
+<h2>Why an assertion is more than a normalized value</h2>
+<p>A requirement records its identifier, exact wording, version, mandatory/scored/informational mode, applicability, accepted evidence types, units, comparator, dates and source. An assertion preserves the original statement alongside its normalized interpretation. Its identity incorporates the document identifier, source-content hash and starting line.</p>
+<p>For example, P03's three-year support statement normalizes to 36 months. The ledger keeps the original <code>3 years</code>, the declared multiplication by 12, the accepted evidence type and the precise source version. A later document cannot replace that passage merely by using the same commercial title. Superseded sources remain available to the ledger and old snapshots.</p>
+<p>The parser in <a href="../../cedar/ingest.py">ingest.py</a> recognizes explicit <code>Rxx</code>, cost and assurance response labels in table, label and block layouts. It implements three declared conversions: hours to minutes, years to months and kilograms to grams. It does not infer a requirement match from ordinary prose. An unrecognized response can therefore produce no assertion; the requirement stays unresolved. Original UTF-8 source bytes are preserved when reading the corpus, including line-ending differences relevant to hashes.</p>
+<p><img alt="The implemented source panel displaying P01's R02 quotation, literal passage, dates, source hash and original document." src="../../artifacts/screenshots/evidence.png" /></p>
+<p><em>Figure 2. The battery quotation can be inspected from its assessment. The displayed hash identifies the recorded source content; it does not establish that the quotation is truthful.</em></p>
+<p>The evidence model preserves four separate propositions: a supplier asserted a value; the supplied document meets the buyer's evidence rule; an independent test established a capability; and the product will perform that way in use. Only the first two are exercised here. An <code>independent_test</code> entry is a synthetic documentary category. No physical test occurred.</p>
+<h2>Documentary gates before preferences</h2>
+<p>The <a href="../../cedar/engine.py">assessment engine</a> applies rules in a deliberate order. It first checks applicability and the policy's effective dates. It then identifies current, non-superseded, non-rejected evidence, detects conflicting values and unresolved interpretation, checks accepted evidence types and units, and finally applies the comparator. Invalid validity dates retain uncertainty even if another source appears usable. Repeating an equal claim does not create independent confirmation.</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Meaning for the buyer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported</td>
+<td>Current supplied evidence of an accepted type meets the declared comparator.</td>
+</tr>
+<tr>
+<td>Not satisfied</td>
+<td>Interpretable current evidence fails that comparator.</td>
+</tr>
+<tr>
+<td>Unresolved</td>
+<td>Required support is absent, rejected, ambiguous, malformed or of an insufficient type.</td>
+</tr>
+<tr>
+<td>Conflicting</td>
+<td>Current interpretable observations disagree on value or normalized unit.</td>
+</tr>
+<tr>
+<td>Stale</td>
+<td>The policy is outside its effective period, or matching usable evidence is no longer current.</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>An explicit applicability rule excludes the configuration; the reason remains visible.</td>
+</tr>
+</tbody>
+</table>
+<p>A package is documentary-eligible only when every mandatory assessment is supported or explicitly not applicable. The full schedule has eighteen mandatory requirements, fourteen scored criteria and eight informational requirements. R18 applies only to the six thermal configurations; the other six receive a reasoned not-applicable state. Eligibility grants further consideration only. It does not guarantee complete pricing, resolve every assurance question or authorize a purchase.</p>
+<p>P01 has three separate mandatory problems: R02 conflicts between twelve and eighteen batteries; R03 offers 24 months of support against 36 required; and R04 supplies a declaration where an independent-test document is required. Repairing one does not repair the others. The unpriced mandatory component is also an explicit cost exposure. This distinction prevents a plausible numerical total or preference score from hiding the remaining work.</p>
+<h2>Costs with visible assumptions and open exposure</h2>
+<p>The <a href="../../cedar/costs.py">cost model</a> converts normalized quoted amounts to Decimal values and rounds the final result to cents. For complete inputs, the implemented undiscounted, pre-tax CAD calculation is:</p>
+<pre><code class="language-text">T = 6A + G + T0 + M
+    + sum from t=0 to H-1 of (S + U) × (1 + e/100)^t
+    + 6H × r × B
+    + I × O
+</code></pre>
+<p>Here <code>A</code> is aircraft unit price, <code>G</code> shared ground equipment, <code>T0</code> initial training, <code>M</code> required additional components, <code>S</code> annual software, <code>U</code> annual support, <code>e</code> quoted recurring escalation, <code>H</code> planning years, <code>r</code> replacement batteries per aircraft per year, <code>B</code> battery unit price, and <code>I</code> the explicit optional-equipment switch for price <code>O</code>.</p>
+<p>Quoted escalation and buyer assumptions have different provenance. Projecting a support payment does not extend a contractual support commitment. The baseline uses three years, one replacement battery per aircraft per year and no optional equipment. It makes no tax, inflation, exchange-rate or discount-rate estimate.</p>
+<p>P01's known subtotal is CAD 113,700. Its required charger/interface component is unpriced, so the result has no finite upper bound. Unknown charges are excluded from the known subtotal and listed as open exposures; they are not represented as settled zero-price items. If escalation is unknown, only the first recurring year's amount is included in the known subtotal.</p>
+<p>For P03, separately prepared arithmetic yields:</p>
+<pre><code class="language-text">111,000 + 8,000 + 2,400 + 1,000
++ 7,200 + 7,416 + 7,638.48 + 9,000
+= CAD 153,654.48
+</code></pre>
+<p>Changing only <code>r</code> from one to two adds CAD 9,000 and produces CAD 162,654.48. The <a href="../../artifacts/walkthrough.json">API walkthrough</a> records that result, and the browser capture shows the same changed assumption.</p>
+<p><img alt="The implemented Comparison view showing two replacement batteries per aircraft per year and P03's CAD 162,654.48 total." src="../../artifacts/screenshots/comparison.png" /></p>
+<p><em>Figure 3. The extra battery cost comes from a changed planning assumption; the source quotation remains inspectable.</em></p>
+<h2>Scores express preferences under declared rules</h2>
+<p>For a higher-is-better criterion, <a href="../../cedar/scoring.py">scoring.py</a> computes:</p>
+<pre><code class="language-text">s(x) = 100 × clamp((x - low) / (high - low), 0, 1)
+</code></pre>
+<p>A lower-is-better criterion reverses the fraction. Supported numeric values have equal lower and upper scores. Unresolved, conflicting or stale scored evidence spans <code>[0, 100]</code>; there is no midpoint imputation. For nonnegative normalized criterion weights <code>w_i</code> summing to one, the package interval is:</p>
+<pre><code class="language-text">[L, U] = [sum(w_i × lower_i), sum(w_i × upper_i)]
+</code></pre>
+<p>The three profiles assign raw capability-to-service weights of 1:1, 3:1 and 1:3. These weights apply to each criterion in its group. There are eight capability criteria and six service criteria, so the balanced profile gives every criterion equal weight; it does not allocate half the total weight to each group. Non-applicable criteria are excluded before normalization.</p>
+<p>The sensitivity calculation evaluates five explicit group-weight ratios among eligible packages. A possible leader has an upper score at least as high as the largest lower score. A guaranteed leader's lower score exceeds every other upper score. The baseline results are:</p>
+<table>
+<thead>
+<tr>
+<th>Capability : service raw criterion weight</th>
+<th>Guaranteed leader</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.25 : 1</td>
+<td>P11</td>
+</tr>
+<tr>
+<td>0.5 : 1</td>
+<td>P11</td>
+</tr>
+<tr>
+<td>1 : 1</td>
+<td>P11</td>
+</tr>
+<tr>
+<td>2 : 1</td>
+<td>P07</td>
+</tr>
+<tr>
+<td>4 : 1</td>
+<td>P07</td>
+</tr>
+</tbody>
+</table>
+<p>P07 has stronger capability values; P11 has stronger service values. The crossover makes the preference choice visible. These five deterministic cases provide no probability of purchasing success.</p>
+<p>Dominance uses a stricter, criterion-wise comparison. Both packages must be documentary-eligible with closed cost bounds. One package's cost upper bound must be no higher than the other's lower bound, and every criterion lower bound must meet the other's upper bound, with at least one strict improvement. P11 dominates P12 under the declared comparison. Open costs or overlapping score intervals can prevent that conclusion. Small hand-calculated examples and uncertainty limits appear in <a href="../../tests/test_sensitivity.py">test_sensitivity.py</a>.</p>
+<h2>Software assurance remains tied to its evidence</h2>
+<p>The <a href="../../cedar/assurance.py">assurance module</a> validates CycloneDX 1.6 inventories against vendored schemas. Matching is deliberately bounded to the fixture's top-level components, generic package URLs and exact synthetic affected/fixed version lists. Missing component identity remains unresolved. The module keeps component presence, advisory provenance and supplier application-exposure evidence separate.</p>
+<p>An affected component with no current application declaration produces an unresolved disposition and a procurement clarification. A fixed listed version describes the declared inventory; it does not verify a shipped binary. There are no real CVEs or exploitation findings in the corpus. Inventory validity also cannot establish completeness.</p>
+<p>AMD01 illustrates a consequence beyond support duration. Its replacement terms repeat an exposure statement, but the structured exposure reference still points to the superseded source version. Assurance therefore changes from unaffected to unresolved. Text similarity cannot silently rebind that reference. A future pilot would need a deliberate review workflow for a new source-bound declaration.</p>
+<h2>An approval belongs to a snapshot</h2>
+<p>The <a href="../../cedar/store.py">store</a> saves the selected policy, complete source bodies and hashes, structured assurance inputs, assertions and interpretation reviews, cost assumptions, scoring profile, evaluation date, outstanding questions, recommendation and limitations in a canonical JSON record. Technical review and approval are separate events bound to its SHA-256 digest.</p>
+<p>All mutations hold a SQLite write lock using <code>BEGIN IMMEDIATE</code> and check the expected revision inside the transaction. Approval additionally checks the record digest, current inputs and required technical review. If an amendment commits first, an attempt to approve the old revision fails. If approval commits first, the amendment makes it stale. The <a href="../../tests/test_state.py">state tests</a> exercise both competing amendments and an approval/amendment race.</p>
+<p>Invalidation is conservative: every input mutation makes every earlier snapshot stale. The change log separately reports the particular assessments, costs, scores and assurance dispositions that changed. Selective reuse of unaffected approvals is unimplemented. A changed source reference may appear in the change log even when the assessment word remains "Supported."</p>
+<p><img alt="The applied AMD01 support amendment and one stale decision snapshot in the implemented Change review." src="../../artifacts/screenshots/changes.png" /></p>
+<p><em>Figure 4. AMD01 reduces P03 support from 36 to 24 months. The previous approval cannot represent the current evidence.</em></p>
+<p>The walkthrough first records P03 as eligible under V1 and the changed replacement assumption. An analyst's attempt to approve returns HTTP 403. Demonstration reviewer and approver roles then record the required events. AMD01 changes R03 to not satisfied and makes the earlier approval stale. The new snapshot records a conditional hold for clarification. Approval of that record authorizes only the hold; P03's open mandatory gate remains visible.</p>
+<p><img alt="The implemented decision history showing the approved conditional hold with open mandatory gates, above the earlier stale decision." src="../../artifacts/screenshots/decision.png" /></p>
+<p><em>Figure 5. "Approved" describes the recorded decision. The conditional record retains the unresolved purchasing condition; it does not convert P03 into an eligible package.</em></p>
+<p>The <a href="../../cedar/export.py">portable exporter</a> includes the report, exact decision record, source files, evidence CSV, manifest and verifier. The verifier checks archive structure, hashes, source/citation binding and selected record consistency without executing package members. Re-evaluating the recorded purchasing inputs is a separate operation. Hashes can expose inconsistency with a manifest, but a party controlling the package can replace content and recompute hashes. A trusted verifier distribution channel remains necessary. Export status is measured when exported and cannot report future workspace changes. Digital signing is unimplemented.</p>
+<h2>What the evaluation establishes</h2>
+<p>The <a href="../../scripts/evaluate.py">evaluation runner</a> reads the expected-results files; the application does not. A separate fixture-author task prepared expected states and arithmetic before comparison with engine output. The extraction manifest records the generator's logical observations before layout serialization. The fixture author and implementation tasks used the same model family and shared schema. This separation helps expose coding mistakes but does not constitute independent empirical confirmation, human annotation or a held-out benchmark.</p>
+<p>The <a href="../../artifacts/evaluation.json">recorded evaluation</a> reports the following denominators and results:</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Slice</th>
+<th>Full corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline requirement positions</td>
+<td>3 × 8 = 24</td>
+<td>12 × 40 = 480</td>
+</tr>
+<tr>
+<td>Evaluated scenarios</td>
+<td>Baseline, buyer V2, AMD01</td>
+<td>Baseline, buyer V2, AMD01, AMD02, AMD03, all amendments</td>
+</tr>
+<tr>
+<td>Requirement-state comparisons</td>
+<td>72; zero disagreement</td>
+<td>2,880; zero disagreement</td>
+</tr>
+<tr>
+<td>Known-cost total comparisons</td>
+<td>9; all matched</td>
+<td>72; all matched</td>
+</tr>
+<tr>
+<td>Eligibility comparisons</td>
+<td>9; all matched</td>
+<td>72; all matched</td>
+</tr>
+<tr>
+<td>Baseline citations checked</td>
+<td>55; zero unsupported</td>
+<td>601; zero unsupported</td>
+</tr>
+<tr>
+<td>Incorrectly supported mandatory states</td>
+<td>Zero in the evaluated scenarios</td>
+<td>Zero in the evaluated scenarios</td>
+</tr>
+</tbody>
+</table>
+<p>The scenario counts repeat configurations under changed requirements or documents. They are not counts of distinct customer cases. Citation and extraction measurements above cover the baseline sources; they must not be read as 2,880 independently annotated citations.</p>
+<table>
+<thead>
+<tr>
+<th>Full-corpus extraction layout</th>
+<th style="text-align: right;">Expected assertions</th>
+<th style="text-align: right;">Extracted assertions</th>
+<th style="text-align: right;">Exact matches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td>Label</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">201</td>
+</tr>
+<tr>
+<td>Block</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">200</td>
+</tr>
+</tbody>
+</table>
+<p>These produce precision and recall of 1.0 for each known grammar. An exact match checks the response key, raw value, unit, evidence type and validity dates for the specified document and occurrence. All three layouts were designed for the parser. No unseen-layout, arbitrary-document or live-model accuracy follows from these results.</p>
+<p>The full baseline has 463 supported, two conflicting, one not-satisfied, five unresolved, three stale and six not-applicable assessments. Eligible packages are P02, P03, P07, P11 and P12. The scenario comparisons verify that AMD01 removes P03's support eligibility, AMD02 supplies P04's missing R15 commitment, and AMD03 resolves P06's conflicting temperature statements. Buyer V2 raises the support threshold to 48 months. All scenarios retain the quoted baseline costs under unchanged cost assumptions.</p>
+<p>The evaluation artifact records execution time, Python/platform information and peak process RSS for each run. These measurements cover one local evaluation process, including its schema validator and evaluation code. They are not browser-service load tests or measurements of procurement effort. The current suite result belongs in <a href="../../artifacts/test-results.txt">test-results.txt</a>; the test count is not a performance metric.</p>
+<h2>Failures found during development</h2>
+<p>The <a href="REVIEW_RECORD.html">review record</a> distinguishes a fresh-context source review from runtime reproduction. The reviewer used an AI system and did not establish independent human assurance. Material findings were reproduced locally before repair. The retained <a href="../../artifacts/review-red.txt">red regression log</a> includes six failing cases:</p>
+<table>
+<thead>
+<tr>
+<th>Observed failure</th>
+<th>Resulting correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A different display name hid an advisory despite matching package identity.</td>
+<td>Identity matching now considers the bounded package URL before excluding a display-name mismatch.</td>
+</tr>
+<tr>
+<td>An invalid date beside valid evidence left a requirement supported.</td>
+<td>Indeterminate validity keeps the requirement unresolved and the cost exposure open.</td>
+</tr>
+<tr>
+<td>An amendment changed assurance without recording that transition.</td>
+<td>Change records now include assurance dispositions and their reasons.</td>
+</tr>
+<tr>
+<td>A second exposure statement contradicted an unaffected declaration without changing its status.</td>
+<td>Conflicting current declarations now produce unresolved exposure.</td>
+</tr>
+<tr>
+<td>Text-mode reading changed CRLF bytes before hashing.</td>
+<td>Corpus reads decode exact UTF-8 bytes without newline rewriting.</td>
+</tr>
+<tr>
+<td>A declared structured source could resolve through a symlink outside the corpus.</td>
+<td>Resolved containment is enforced, and only declared structured inputs are read.</td>
+</tr>
+</tbody>
+</table>
+<p>A separate <a href="../../artifacts/startup-red.txt">startup failure</a> showed that requesting a missing full corpus silently loaded the slice; startup now fails explicitly. The <a href="../../artifacts/api-reference-red.txt">offline-reference regression</a> exposed remote CDN dependencies in the default API documentation page; the replacement reference uses local assets. Source review also found that the walkthrough's purported ZIP checksum hashed hexadecimal text. The walkthrough now hashes the actual ZIP bytes.</p>
+<p>Earlier checks corrected unidentified-component handling, fixed-version identity matching and document-order dependence. These failures matter because each could hide an unresolved condition, misrepresent provenance or demonstrate the wrong dataset. The retained failures, current code and regression tests provide a more useful account than a passing-test count alone.</p>
+<h2>Trust boundaries and the next adoption decision</h2>
+<p>The HTTP server enforces roles, write-session tokens, origin/host restrictions, bounded requests and strict typed request objects. Sources render as inert text. Uploads accept bounded plain text rather than executable files or archives. Export checks exercise unsafe archive names, duplicate members, expansion bounds, tampering and spreadsheet-formula prefixes. A source instruction to approve a supplier cannot change the deterministic policy engine. The optional model adapter is proposal-only and has no live client.</p>
+<p>These controls operate within a trusted local-host demonstration. Public passwords do not authenticate independent people. Local read endpoints are public, sessions live in process memory, and the filesystem and SQLite store remain trusted. Enterprise identity, encrypted document storage, tenancy, retention automation, backups and operational monitoring are unimplemented. No penetration test or formal proof is claimed.</p>
+<p>The <a href="../../artifacts/browser-check.json">browser check</a> records the workflow exercised in one Chromium build, with desktop and narrow-screen captures. The figures here are screenshots of the running application. They establish visible behavior in that run, without establishing a human usability study or formal accessibility conformance. The <a href="DEMO_SCRIPT.html">demo script</a> supplies narration and executable replay instructions.</p>
+<p>A credible next step is the <a href="PILOT_PROPOSAL.html">bounded four-week pilot</a>: one permitted, redacted comparison; agreed evidence rules; human annotations and adjudication; a held-out subset; and measurements that include preparation and correction effort. Customer material stays outside the public-credential demo until an approved environment and access controls exist. Controlled, confidential and operationally sensitive material remains excluded without a separately agreed future plan.</p>
+<p>Continuing beyond that pilot would require evidence of manageable errors, no unresolved mandatory false passes or misleading approval states, and sufficient reviewer benefit to justify integration. Real supplier capability, legal applicability and operational acceptance would require their own qualified evidence and owners. Contractor names supplied as possible audiences confer no endorsement or knowledge of internal purchasing practices; the portfolio remains contractor-neutral.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

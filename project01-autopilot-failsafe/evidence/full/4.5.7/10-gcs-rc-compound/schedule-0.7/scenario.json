@@ -1,0 +1,89 @@
+{
+  "assertions": [
+    {
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true,
+      "type": "heartbeat_gap"
+    },
+    {
+      "after": "loss",
+      "contains": "GCS Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 8
+    },
+    {
+      "after": "loss",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 8
+    },
+    {
+      "after": "rc",
+      "contains": "Radio Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 6
+    },
+    {
+      "after": "rc",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 6
+    },
+    {
+      "after": "rc",
+      "allowed": [
+        9
+      ],
+      "duration_s": 10,
+      "start_s": 9,
+      "type": "hold_mode"
+    },
+    {
+      "after": "rc",
+      "type": "disarmed",
+      "within_s": 50
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 62,
+  "events": [
+    {
+      "at_s": 5,
+      "enabled": false,
+      "id": "loss",
+      "kind": "heartbeat"
+    },
+    {
+      "at_s": 5,
+      "id": "rc",
+      "kind": "parameter",
+      "name": "SIM_RC_FAIL",
+      "value": 1
+    }
+  ],
+  "id": "10-gcs-rc-compound",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "Both faults within one controller scheduling tick; both detectors must be visible. Both actions LAND. Status text, heartbeat gap and sustained mode guard masking.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Simultaneous GCS and RC loss"
+}

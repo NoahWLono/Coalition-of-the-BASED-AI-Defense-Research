@@ -1,0 +1,3 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.334, "host_monotonic_ns": 5220079467734, "host_unix_us": 1792288334954633, "altitude_m": 11.973, "mode": 4, "armed": true}
+{"id": "loss", "kind": "heartbeat", "sim_s": 61.432, "host_monotonic_ns": 5221354966814, "host_unix_us": 1792288336230132, "at_s": 5, "enabled": false}
+{"id": "scenario_end", "kind": "end", "sim_s": 118.334, "host_monotonic_ns": 5235572826991, "host_unix_us": 1792288350447993}

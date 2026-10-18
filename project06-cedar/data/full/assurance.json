@@ -1,0 +1,110 @@
+{
+  "P01": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unresolved",
+      "rationale": "Supplier cannot resolve the telemetry helper identity; inventory absence does not prove unaffected status.",
+      "document_id": "P01-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P02": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Inventory supplies version 1.1.0, listed as fixed in the synthetic advisory; no real vulnerability or fix is asserted.",
+      "document_id": "P02-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P03": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Supplier declares the optional import path disabled; this declaration is unverified and configuration-dependent.",
+      "document_id": "P03-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P04": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Supplier declares the optional import path disabled; this declaration is unverified and configuration-dependent.",
+      "document_id": "P04-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P05": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "affected",
+      "rationale": "Supplier declares the optional import path enabled for the listed affected version; fixed version discussion remains open.",
+      "document_id": "P05-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P06": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Supplier declares the optional import path disabled; this declaration is unverified and configuration-dependent.",
+      "document_id": "P06-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P07": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Inventory supplies version 1.1.0, listed as fixed in the synthetic advisory; no real vulnerability or fix is asserted.",
+      "document_id": "P07-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P08": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unresolved",
+      "rationale": "Supplier cannot resolve the telemetry helper identity; inventory absence does not prove unaffected status.",
+      "document_id": "P08-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P09": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unresolved",
+      "rationale": "Supplier cannot resolve the telemetry helper identity; inventory absence does not prove unaffected status.",
+      "document_id": "P09-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P10": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "affected",
+      "rationale": "Supplier declares the optional import path enabled for the listed affected version; fixed version discussion remains open.",
+      "document_id": "P10-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P11": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Inventory supplies version 1.1.0, listed as fixed in the synthetic advisory; no real vulnerability or fix is asserted.",
+      "document_id": "P11-terms-v1",
+      "key": "A_01"
+    }
+  ],
+  "P12": [
+    {
+      "advisory_id": "SYNTH-CEDAR-001",
+      "status": "unaffected",
+      "rationale": "Inventory supplies version 1.1.0, listed as fixed in the synthetic advisory; no real vulnerability or fix is asserted.",
+      "document_id": "P12-terms-v1",
+      "key": "A_01"
+    }
+  ]
+}

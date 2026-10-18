@@ -1,0 +1,4 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.234, "host_monotonic_ns": 5570945932269, "host_unix_us": 1792288685821097, "altitude_m": 11.972, "mode": 4, "armed": true}
+{"id": "stale", "kind": "parameter", "sim_s": 61.332, "host_monotonic_ns": 5572221250436, "host_unix_us": 1792288687096415, "at_s": 5, "name": "SIM_GPS_BYTELOSS", "value": 100}
+{"id": "rc", "kind": "parameter", "sim_s": 61.332, "host_monotonic_ns": 5572221523001, "host_unix_us": 1792288687096687, "at_s": 5, "name": "SIM_RC_FAIL", "value": 1}
+{"id": "scenario_end", "kind": "end", "sim_s": 134.332, "host_monotonic_ns": 5590458909775, "host_unix_us": 1792288705334074}

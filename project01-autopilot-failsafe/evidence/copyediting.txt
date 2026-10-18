@@ -1,0 +1,7 @@
+docs/trace-contract.md
+     5  MED  trailing-participle    , carrying the last value forward between messages.
+    23  HIGH negative-parallelism   observations, not exact physical response times.
+docs/review-record.md
+     3  HIGH negative-parallelism   stant review, not human certification or independent empirical flig
+
+3 finding(s)

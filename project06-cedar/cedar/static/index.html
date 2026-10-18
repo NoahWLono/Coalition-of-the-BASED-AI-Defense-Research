@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142d42">
+  <title>Project 6 | CEDAR procurement evidence workbench</title>
+  <script src="/static/theme.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/theme.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to workbench</a>
+  <aside class="rail" aria-label="Workbench navigation">
+    <a class="brand" href="#overview" aria-label="CEDAR overview"><svg viewBox="0 0 36 40" aria-hidden="true"><path d="M18 2 3 19h8L1 31h13v7h8v-7h13L25 19h8Z" fill="currentColor"/></svg><span>CEDAR<small>Evidence &amp; assurance</small></span></a>
+    <div class="rail-project"><span class="project-dot"></span><span>Civil inspection fleet<small>Procurement workspace</small></span></div>
+    <nav id="navigation" aria-label="Views">
+      <button type="button" data-view="overview">Overview</button>
+      <button type="button" data-view="requirements">Requirements matrix</button>
+      <button type="button" data-view="evidence">Evidence viewer</button>
+      <button type="button" data-view="comparison">Comparison</button>
+      <button type="button" data-view="assurance">Software assurance</button>
+      <button type="button" data-view="changes">Change review</button>
+      <button type="button" data-view="decisions">Decision package</button>
+    </nav>
+    <div class="rail-bottom"><span class="local-label"><span></span> Local demonstration</span><p>Fictional suppliers and synthetic evidence. No aircraft or vendor connectivity.</p><a href="/api/docs" target="_blank" rel="noopener">API reference <span aria-hidden="true">↗</span></a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="breadcrumb">Project 6 · CEDAR / </span><span id="view-name">Overview</span></div><div class="topbar-actions"><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><span class="demo-label">Synthetic data</span><span id="revision-label">Loading</span><button id="refresh-button" class="icon-button" type="button" aria-label="Refresh workbench" title="Refresh workbench">↻</button><button id="session-button" class="session-button" type="button">Sign in</button></div></header>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <main id="main-content" tabindex="-1"><div class="loading-state"><span class="loading-mark" aria-hidden="true"></span><h1>Loading the evidence workbench</h1><p>Reading the local evaluation and its source ledger.</p></div></main>
+    <footer class="workspace-footer"><span>Documentary eligibility is for further consideration only.</span><span>CAD · Undiscounted · Taxes excluded</span></footer>
+  </div>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div class="drawer-header"><div><span class="drawer-label" id="detail-label">Evidence inspection</span><h2 id="detail-title">Evidence</h2></div><button type="button" class="icon-button" data-action="close-detail" aria-label="Close evidence panel">×</button></div><div id="detail-body" class="drawer-body"></div></dialog>
+  <dialog id="login-dialog" class="login-dialog" aria-labelledby="login-title"><div class="dialog-top"><h2 id="login-title">Sign in to a demonstration role</h2><button type="button" class="icon-button" data-action="close-login" aria-label="Close sign in">×</button></div><p>Each role has distinct server-enforced permissions. Enter the displayed demonstration password to choose a role.</p><form id="login-form"><label for="login-role">Role</label><select id="login-role" name="role"><option value="analyst">Analyst — inputs and decisions</option><option value="reviewer">Reviewer — evidence and technical review</option><option value="approver">Approver — decision approval</option></select><label for="login-password">Demonstration password</label><input id="login-password" name="password" type="password" required autocomplete="current-password" aria-describedby="password-hint"><p id="password-hint" class="field-hint">For this role, enter <code>cedar-analyst</code>.</p><p class="form-error" id="login-error" role="alert" hidden></p><button type="submit" class="button primary">Sign in</button></form><p class="small muted">These shared credentials demonstrate role separation; they are not production identity management.</p></dialog>
+</body>
+</html>

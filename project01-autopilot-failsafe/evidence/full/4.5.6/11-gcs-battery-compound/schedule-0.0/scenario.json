@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    {
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true,
+      "type": "heartbeat_gap"
+    },
+    {
+      "after": "loss",
+      "contains": "GCS Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 8
+    },
+    {
+      "after": "loss",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 8
+    },
+    {
+      "after": "low",
+      "fault_evidence": true,
+      "field": "voltage_battery",
+      "message": "SYS_STATUS",
+      "op": "lt",
+      "type": "field",
+      "value": 11000,
+      "within_s": 12
+    },
+    {
+      "after": "low",
+      "contains": "Battery 1 is low",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 12
+    },
+    {
+      "after": "low",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 12
+    },
+    {
+      "after": "low",
+      "allowed": [
+        9
+      ],
+      "duration_s": 8,
+      "start_s": 14,
+      "type": "hold_mode"
+    },
+    {
+      "after": "low",
+      "type": "disarmed",
+      "within_s": 50
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 62,
+  "events": [
+    {
+      "at_s": 5,
+      "enabled": false,
+      "id": "loss",
+      "kind": "heartbeat"
+    },
+    {
+      "at_s": 5,
+      "id": "low",
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 10.5
+    }
+  ],
+  "id": "11-gcs-battery-compound",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "Both fault events at5s, both detectors must occur. Both configured actions LAND; this does not test conflicting action priorities.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Simultaneous GCS loss and battery low"
+}

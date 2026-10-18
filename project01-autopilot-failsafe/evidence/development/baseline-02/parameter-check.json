@@ -1,0 +1,10 @@
+{
+  "ARSPD_BUS": {
+    "actual": null,
+    "expected": 2.0
+  },
+  "ARSPD_PIN": {
+    "actual": null,
+    "expected": 1.0
+  }
+}

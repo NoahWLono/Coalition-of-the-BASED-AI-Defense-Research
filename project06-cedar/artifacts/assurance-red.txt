@@ -1,0 +1,28 @@
+FF.                                                                      [100%]
+=================================== FAILURES ===================================
+__________________ test_unidentified_component_is_unresolved ___________________
+
+    def test_unidentified_component_is_unresolved():
+        i=load_corpus('data/slice'); r=software_assurance(i,'P01',ledger(i),'2026-10-17')
+>       assert r and r[0]['disposition']=='unresolved'
+E       assert ([])
+
+tests/test_assurance.py:9: AssertionError
+________________ test_fixed_exact_version_and_purl_consistency _________________
+
+    def test_fixed_exact_version_and_purl_consistency():
+        i=load_corpus('data/slice'); source=i['structured']['inventory/P03.cdx.json']
+        inv=json.loads(source['content']); c=inv['components'][0]
+        c['version']='1.1.0';c['purl']='pkg:generic/cedar-report-cache@1.1.0'
+        source['content']=json.dumps(inv);source['hash']=digest(source['content'])
+>       assert software_assurance(i,'P03',ledger(i),'2026-10-17')[0]['disposition']=='fixed'
+E       AssertionError: assert 'unresolved' == 'fixed'
+E         
+E         - fixed
+E         + unresolved
+
+tests/test_assurance.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_assurance.py::test_unidentified_component_is_unresolved - a...
+FAILED tests/test_assurance.py::test_fixed_exact_version_and_purl_consistency
+2 failed, 1 passed in 0.25s

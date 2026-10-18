@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "stage": "starter",
+  "expected_runs": 4,
+  "completed_runs": 4,
+  "wall_duration_s": 125.85391803200037,
+  "runs": [
+    {
+      "run": "4.5.6/00-baseline/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "00-baseline",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/00-baseline.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/00-baseline/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/01-gcs-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/02-battery-low/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/03-rc-loss/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "03-rc-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/03-rc-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/03-rc-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    }
+  ]
+}

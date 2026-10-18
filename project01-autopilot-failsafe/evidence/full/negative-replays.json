@@ -1,0 +1,16 @@
+[
+  {
+    "version": "4.5.6",
+    "outcome": "FAIL",
+    "control_accepted": true,
+    "expected": "FAIL",
+    "input": "unchanged sealed evidence; LAND9 expectation changed to RTL6"
+  },
+  {
+    "version": "4.5.7",
+    "outcome": "FAIL",
+    "control_accepted": true,
+    "expected": "FAIL",
+    "input": "unchanged sealed evidence; LAND9 expectation changed to RTL6"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "corpus_version": "1.0.0",
+  "fault_scenario_count": 12,
+  "baseline_count": 1,
+  "negative_control_count": 1,
+  "files": [
+    {
+      "path": "scenarios/00-baseline.json",
+      "id": "00-baseline",
+      "sha256": "756ac35993e8b2a4e9d2a0986b3a8494e090b1794146e483a756027476c0188f",
+      "starter": false,
+      "role": "baseline"
+    },
+    {
+      "path": "scenarios/01-gcs-loss.json",
+      "id": "01-gcs-loss",
+      "sha256": "68ce5079f79b5c39183cd7d5605104e5ab26821a8d78d9beca2f3b7a269014b8",
+      "starter": true,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/02-battery-low.json",
+      "id": "02-battery-low",
+      "sha256": "ad10d2125193737296b61ab9a519cac7d0cd17a01b9c4ea6936b2650469f613e",
+      "starter": true,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/03-rc-loss.json",
+      "id": "03-rc-loss",
+      "sha256": "1fd988b9f46342068f9e9ca9337ab0d5dab299450b1404a375cd1d078e2e72de",
+      "starter": true,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/04-gcs-recovery.json",
+      "id": "04-gcs-recovery",
+      "sha256": "ebd9706606a319bd9d9feb32fd38dbe8902389388070012630eb0164b8ecc716",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/05-rc-recovery.json",
+      "id": "05-rc-recovery",
+      "sha256": "0fc9360e68cd1f45ea5870981e7f74cae23ee6581d2fb96e323c77fbfa66534f",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/06-battery-recovery.json",
+      "id": "06-battery-recovery",
+      "sha256": "d91eddee3fc611757093113c4d038429bc203d33d6f3bef56dedd875bc6ceb03",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/07-gcs-transient.json",
+      "id": "07-gcs-transient",
+      "sha256": "c332c962da4819c0106d25e24fc1d6fe4476fa79dc352ec52621eb0457388661",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/08-battery-transient.json",
+      "id": "08-battery-transient",
+      "sha256": "f82f287d170d1473b2c6c8e097a4b0d0152f39cf93b6e4053d5ac8895375f8d1",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/09-gps-stale.json",
+      "id": "09-gps-stale",
+      "sha256": "01ef007b5fe40d644ffb0afcfbbf70bc8e0a565599ab1d99ef5a94a706726ad5",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/10-gcs-rc-compound.json",
+      "id": "10-gcs-rc-compound",
+      "sha256": "b9a004dfc20f46881a49b7ebca659dbb3792d0c03f00c627791d9e7b01fe7e0f",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/11-gcs-battery-compound.json",
+      "id": "11-gcs-battery-compound",
+      "sha256": "9d753f3ae15e07b48527b3e3da5fd114be030e0f9743c594597cf9769b078628",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/12-gps-rc-compound.json",
+      "id": "12-gps-rc-compound",
+      "sha256": "c9f4dfe58925a5cd64ffe0b4263adb01b7ad54a414da0220c4fdfde77c78ad73",
+      "starter": false,
+      "role": "fault-scenario"
+    },
+    {
+      "path": "scenarios/90-disabled-gcs-control.json",
+      "id": "90-disabled-gcs-control",
+      "sha256": "9086d6046cb6035f297d73a6c05432dfd5040dae91b1ee87ca642cdaee18031f",
+      "starter": true,
+      "role": "negative-control"
+    }
+  ]
+}

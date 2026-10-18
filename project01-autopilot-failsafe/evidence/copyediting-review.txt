@@ -1,0 +1,4 @@
+docs/trace-contract.md:5 trailing-participle KEPT describes the exact clock interpolation rule.
+docs/trace-contract.md:23 negative-parallelism KEPT distinguishes sampled telemetry latency from exact physical response time.
+docs/review-record.md:3 negative-parallelism KEPT states the required limit on assistant review and human certification.
+0 FIXED; 3 KEPT.

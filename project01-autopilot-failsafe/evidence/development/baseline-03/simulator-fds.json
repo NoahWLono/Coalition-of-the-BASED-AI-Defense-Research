@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/development/baseline-03/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/development/baseline-03/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/development/baseline-03/sitl.stdout",
+  "3": "socket:[80277]",
+  "4": "socket:[80278]",
+  "5": "socket:[80279]",
+  "6": "socket:[80280]",
+  "7": "socket:[80281]",
+  "8": "/research/project11-autopilot-failsafe/evidence/development/baseline-03/eeprom.bin",
+  "9": "socket:[80282]"
+}

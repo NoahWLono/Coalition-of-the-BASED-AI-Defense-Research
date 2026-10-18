@@ -1,0 +1,89 @@
+{
+  "scope": "slice",
+  "executed_at": "2026-10-18T02:12:58.263303+00:00",
+  "packages": 3,
+  "requirements": 8,
+  "base_documents": 9,
+  "steps": [
+    {
+      "step": "import and inspect cheapest bid",
+      "package_id": "P01",
+      "known_subtotal": 113700.0,
+      "eligible": false,
+      "open_costs": [
+        {
+          "key": "C_required",
+          "label": "Required additional components",
+          "reason": "Missing, conflicting, expired or uninterpretable quoted value; amount is open.",
+          "assertions": [
+            "12d49180fe6f6af4cfb52449"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "change replacement assumption",
+      "revision": 1,
+      "P03_total": 162654.48
+    },
+    {
+      "step": "separate review and approval",
+      "snapshot": "DEC-6494c2c143",
+      "status": "approved",
+      "analyst_approval_http": 403
+    },
+    {
+      "step": "amendment and invalidation",
+      "revision": 2,
+      "old_snapshot_status": "stale",
+      "changes": {
+        "approval_effect": "All previous snapshots are conservatively stale because the input revision changed. Re-review is required.",
+        "at": "2026-10-18T02:12:57.999860+00:00",
+        "diffs": [
+          {
+            "after": "not_satisfied",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Documented value 24.0 does not satisfy gte 36.",
+            "requirement_id": "R03"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R05"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R33"
+          }
+        ],
+        "reason": "Supplier amendment AMD01: Birch support commitment shortened",
+        "revision": 2
+      }
+    },
+    {
+      "step": "review new conditional snapshot and export",
+      "snapshot": "DEC-844d472398",
+      "status": "approved",
+      "package_sha256": "f869b0f9408d5f58b7bfd2961b765c766f3511ba91e0b2fe8afe8a735ad41f9d",
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-844d472398",
+        "digest": "864d3437be2a093dcc36774b42a7c87e6adc5ec5d80aed7ce5204641dea12860",
+        "status": "approved",
+        "files_checked": 20,
+        "sources_checked": 15,
+        "citations_checked": 59
+      }
+    }
+  ],
+  "passed": true,
+  "limits": "API replay using synthetic fixtures and public demonstration roles; no human review or customer validation."
+}

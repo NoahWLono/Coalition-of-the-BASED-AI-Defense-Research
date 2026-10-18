@@ -1,0 +1,322 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | THREAT_MODEL</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / THREAT_MODEL</p><article><h1>CEDAR threat model</h1>
+<h2>Overview</h2>
+<p>CEDAR is a local synthetic procurement workbench. The supported CLI starts one Uvicorn worker on 127.0.0.1:8765. An operator-selected corpus is copied into SQLite on first use; labelled text becomes a versioned assertion ledger. Deterministic requirement, cost, scoring and software-assurance functions feed the browser and immutable decision records. Public local reads expose synthetic state and source text. The application has no live aircraft, supplier or model-provider connection.</p>
+<p>This model incorporates a fresh-context AI source review and locally reproduced regression tests. It is not a completed security scan, independent human audit or production assurance statement. The source review initially found issues; the resolutions and test evidence are recorded in docs/REVIEW_RECORD.md.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Source</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported launcher</td>
+<td>cedar/<strong>main</strong>.py:23</td>
+<td>Loopback binding and one worker</td>
+</tr>
+<tr>
+<td>Browser/API boundary</td>
+<td>cedar/app.py:49</td>
+<td>Host, origin, body-size, session, CSRF and role handling</td>
+</tr>
+<tr>
+<td>Source ledger</td>
+<td>cedar/ingest.py:84</td>
+<td>Confined corpus reads and exact UTF-8 source hashes</td>
+</tr>
+<tr>
+<td>Policy engine</td>
+<td>cedar/engine.py:9</td>
+<td>Applicability, dates, uncertainty, evidence types and comparators</td>
+</tr>
+<tr>
+<td>State and approvals</td>
+<td>cedar/store.py:45</td>
+<td>Write transactions, expected revisions and role authorization</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>cedar/export.py:359</td>
+<td>Bounded archive/citation verification without member extraction</td>
+</tr>
+</tbody>
+</table>
+<h3>Effective resources</h3>
+<table>
+<thead>
+<tr>
+<th>Workflow</th>
+<th>Resource or capability</th>
+<th>Configuration and precedence</th>
+<th>Effective location</th>
+<th>Readers/writers or recipients</th>
+<th>Enforcing control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported CLI</td>
+<td>Server socket</td>
+<td>--port, default 8765</td>
+<td>IPv4 loopback only</td>
+<td>Local browser and local processes</td>
+<td>cedar/<strong>main</strong>.py:24-29; one worker</td>
+</tr>
+<tr>
+<td>Factory</td>
+<td>Corpus</td>
+<td>CEDAR_CORPUS, otherwise repo/data/full</td>
+<td>Selected existing corpus</td>
+<td>Loader reads, store copies</td>
+<td>cedar/app.py:43-45; missing corpus fails</td>
+</tr>
+<tr>
+<td>CLI</td>
+<td>Corpus</td>
+<td>--scope full or slice sets CEDAR_CORPUS</td>
+<td>repo/data/full or repo/data/slice</td>
+<td>Same loader</td>
+<td>cedar/<strong>main</strong>.py:17,26</td>
+</tr>
+<tr>
+<td>Factory/CLI</td>
+<td>Database</td>
+<td>CEDAR_DB or repo/runtime/cedar.sqlite; CLI --db overrides</td>
+<td>Local SQLite file</td>
+<td>Server and ordinary host filesystem principals</td>
+<td>cedar/store.py:26-36; existing row takes precedence over startup fixtures</td>
+</tr>
+<tr>
+<td>Loader</td>
+<td>Supplier text</td>
+<td>Catalog document paths, resolved against corpus</td>
+<td>Descendant paths only</td>
+<td>Corpus author to ledger and public local readers</td>
+<td>cedar/ingest.py:93-98</td>
+</tr>
+<tr>
+<td>Loader</td>
+<td>Declared structured inputs</td>
+<td>Only advisories.json, assurance.json and listed-package inventory files</td>
+<td>Confined descendants, including resolved symlinks</td>
+<td>Assurance engine and export</td>
+<td>cedar/ingest.py:106-114</td>
+</tr>
+<tr>
+<td>Schema validation</td>
+<td>Official schema files</td>
+<td>Repository vendor directory</td>
+<td>vendor/*.schema.json</td>
+<td>Offline validator</td>
+<td>cedar/assurance.py validator; no network schema lookup configured</td>
+</tr>
+<tr>
+<td>Analyst import</td>
+<td>New source text</td>
+<td>Generated document ID; submitted filename is metadata</td>
+<td>SQLite JSON, no filesystem upload destination</td>
+<td>Analyst writes; local readers/export consumers read</td>
+<td>cedar/store.py upload</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>Portable ZIP</td>
+<td>Selected stored snapshot</td>
+<td>In memory, returned to local caller</td>
+<td>Reviewer with artifact copy</td>
+<td>cedar/app.py export; cedar/export.py build_package</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Archive members</td>
+<td>User-selected package</td>
+<td>Bounded memory, no extraction/execution</td>
+<td>Local verifier process</td>
+<td>cedar/export.py verify_package</td>
+</tr>
+</tbody>
+</table>
+<p>The ASGI factory does not enforce socket binding itself. Operators who launch it through another command own that deployment choice. The documented CLI is the supported local mode.</p>
+<h2>Threat model, trust boundaries and assumptions</h2>
+<p>Protected assets are the documentary decision record, source provenance, uncertainty labels, cost and scoring results, local role authority, and the ability to distinguish a current approval from a historical one.</p>
+<p>A document author controls prose and labelled assertions. That author does not acquire policy or reviewer authority by writing instructions in a document. An analyst can import source text through the permitted route but cannot call reviewer-only or approver-only store actions. A hostile webpage can attempt requests to the loopback service; it does not have the same-origin session write token. A package supplier can provide arbitrary ZIP bytes to the verifier. A local operator with filesystem write access can alter source, schemas or the database; the prototype does not isolate itself from that authority.</p>
+<p>Public demonstration passwords intentionally allow the operator to exercise all three roles. This is permission enforcement under server-resolved sessions, not proof of three separate human identities. All read endpoints are local-public by design. Real confidential or controlled technical data is outside the demonstration's boundary.</p>
+<p>Key invariants:</p>
+<ul>
+<li>A mandatory requirement cannot pass solely because the supplier has a high preference score.</li>
+<li>Missing, contradictory, malformed or wrong-type evidence cannot silently become documentary support.</li>
+<li>An expired/superseded assertion stays inspectable and cannot support the current conclusion.</li>
+<li>Document prose cannot alter comparison policies, sessions or approval state.</li>
+<li>Mutations check the expected input revision under the SQLite write lock.</li>
+<li>Approval requires a current snapshot and a current technical review referring to its record digest.</li>
+<li>Changes invalidate old approvals; exports preserve the old inputs and identify the historical status.</li>
+<li>HTML is escaped, CSV formula prefixes are neutralized, archive paths are constrained, and source filenames are generated.</li>
+<li>Only declared structured sources enter snapshots; sessions and server secrets are not snapshot fields.</li>
+</ul>
+<p>Source evidence: cedar/engine.py assess; cedar/store.py:45-61,171-192; cedar/app.py:53-92; cedar/export.py _sources, _csv_cell, _semantic_errors and verify_package. Tests exercise these contracts in tests/test_engine.py, test_api.py, test_state.py, test_export.py and test_review_regressions.py.</p>
+<p>Assumptions include a trusted repository and pinned dependencies, a trusted single host and SQLite file, an operator-owned synthetic corpus, and a separately trusted verifier for adversarial artifacts. Sessions are in memory, expire after eight hours and disappear on restart. The database retains input history; the application does not provide encryption, backup orchestration, tenant separation or tamper-resistant logging.</p>
+<h2>Attack surface, mitigations and attacker stories</h2>
+<p>The following are threat scenarios, not claims of unremediated vulnerabilities.</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Scenario and capability gain</th>
+<th>Prerequisites</th>
+<th>Impact</th>
+<th>Existing controls and evidence</th>
+<th>Additional mitigation for a pilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High decision integrity</td>
+<td>A document tells an assistant to approve a bid</td>
+<td>Analyst imports attacker-controlled text</td>
+<td>Unauthorized compliance/approval conclusion if text were authority</td>
+<td>Deterministic labelled parser; no live model; instructions inert. test_normalization_citation_and_injection and test_upload_rejection_and_inert_instruction</td>
+<td>Keep future model output proposal-only; log real outputs and evaluate injection attempts</td>
+</tr>
+<tr>
+<td>High decision integrity</td>
+<td>A malformed observation disappears beside a passing claim</td>
+<td>Same requirement appears in current source with indeterminate validity</td>
+<td>False eligibility</td>
+<td>Undated assertions preserve uncertainty; review regression reproduces and checks fix</td>
+<td>Human annotation of edge cases and stronger source-format validation</td>
+</tr>
+<tr>
+<td>High decision integrity</td>
+<td>Component aliases or conflicting exposure statements hide an issue</td>
+<td>Valid inventory or current supplier clarification</td>
+<td>Buyer misses a software support question</td>
+<td>Match bounded PURL identity before display name; contradictory exposure unresolved; regression tests</td>
+<td>Full package identity library, nested-component traversal and application validation</td>
+</tr>
+<tr>
+<td>High decision integrity</td>
+<td>Amendment races with approval</td>
+<td>Concurrent authorized requests</td>
+<td>Apparently current approval for old evidence</td>
+<td>BEGIN IMMEDIATE, expected revision and current digest checks; two race tests</td>
+<td>Durable identities, audit service and transaction/load testing</td>
+</tr>
+<tr>
+<td>Medium local authority</td>
+<td>Browser or analyst attempts approver-only action</td>
+<td>Valid analyst session or hostile origin</td>
+<td>Improper approval</td>
+<td>Server role comparison, same-origin/CSRF checks, HttpOnly SameSite cookie; test_server_permissions_csrf_and_stale_revision</td>
+<td>Production identity provider and organizational separation of duties</td>
+</tr>
+<tr>
+<td>Medium artifact integrity</td>
+<td>ZIP member escapes destination or expands excessively</td>
+<td>Malicious ZIP sent to reviewer</td>
+<td>File write/code execution or memory exhaustion if unsafe extraction occurred</td>
+<td>Verifier does not extract/execute members, rejects duplicate/unsafe names and excessive expansion; export tests</td>
+<td>Establish trusted verifier distribution and operator resource limits</td>
+</tr>
+<tr>
+<td>Medium data handling</td>
+<td>Hidden file or sensitive runtime field enters export</td>
+<td>Operator places unrelated file nearby or malformed record passed to exporter</td>
+<td>Accidental disclosure</td>
+<td>Structured-input allowlist, resolved containment, strict snapshot field sets; relevant regression/export tests</td>
+<td>Customer-approved schema, redaction review and data retention policy</td>
+</tr>
+<tr>
+<td>Medium rendering</td>
+<td>Source content becomes HTML/script or spreadsheet formula</td>
+<td>Crafted supplier values</td>
+<td>Active content when reviewed</td>
+<td>Escaped HTML, literal text viewer, CSP and formula-safe CSV; export/API tests</td>
+<td>Cross-browser/accessibility review and application security assessment</td>
+</tr>
+<tr>
+<td>Low availability in this scope</td>
+<td>Repeated authorized imports grow the database</td>
+<td>Local demo credentials or host access</td>
+<td>Disk/memory consumption</td>
+<td>Per-request 250 KB and per-source 100 KiB limits; no whole-workspace quota</td>
+<td>Add quotas, rate limits and monitoring for any multi-user deployment</td>
+</tr>
+<tr>
+<td>Trust limit</td>
+<td>Attacker recomputes every package hash</td>
+<td>Full artifact control</td>
+<td>Internally consistent forgery</td>
+<td>Explicit authenticity disclaimer; no signature claim</td>
+<td>Trusted distribution, signed manifests and identity governance if required</td>
+</tr>
+</tbody>
+</table>
+<p>An unchanged exposure statement in an amendment does not silently inherit an old structured source link. AMD01 and AMD02 intentionally leave the old link stale, producing an unresolved disposition and a change-log entry. An explicit new version-bound declaration is needed. This conservative policy is documented, not an inference of actual application exposure.</p>
+<h2>Severity calibration</h2>
+<p>Critical would require a demonstrated path from this local tool into high-consequence systems or secrets outside its stated boundary; none is established, and there is no aircraft connectivity. High decision-integrity impact would mean an unconditional recommendation or apparently current approval over unsupported or changed inputs. Medium impact includes an unauthorized role action, misleading advisory omission, disclosure of permitted local data or unsafe artifact handling within a real pilot. Low impact includes bounded nuisance or presentation defects that do not alter the decision.</p>
+<p>These are contextual examples, not assigned vulnerability severities. Public demo passwords, operator write access to the repository, unchanged status in an exported historical file and absent live model behavior do not by themselves establish a security defect. Moving to confidential multi-user operation changes the assumptions and requires a new assessment.</p>
+<p>Repository: 8e9b52eca9ae6ce3906e0fe81d5f36dbb3b9f2dd1de28154bb9e800a5a160767
+Version: 473f535751c21281de02c4298155924c44b4aa54a4a684f81d5bce77e2ee443d</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

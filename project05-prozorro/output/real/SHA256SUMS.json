@@ -1,0 +1,15 @@
+{
+  "REPORT.md": "e1970b3ab2360f0ae8497c024afd9397a3251baf8d6dc0d67e135fc5ba981276",
+  "assumption-sensitivity.json": "ec6617d25c0803cfef18050cf769cb93e30f86be1fcbe9d3a56ed51990cceaa8",
+  "evaluation.json": "20e37ade8ef34cc92b7bf0bd43ba5323531c623faf06a8e63ee6714309276f25",
+  "exclusions.csv": "24ffb0cf2fe57a340171a48206ad4f8dbf68eed83f195b7626471812094bbd44",
+  "exclusions.json": "cb38202ad8feee90b9f4fa00a0323ce939250eec32df39551819078c15589e0f",
+  "holdout-review-template.json": "a2090bb6f1f9686981e49af0e58df5aba18ace57ec8bc3c7fcd174897c751a72",
+  "normalized.csv": "607a8cec1e58f5a4c479c8a8c8497a32d6346040ed51e28f9fd23e5165ab0b30",
+  "normalized.json": "1374dbbeab4853b9e0b4f596e16bc9578d8fe51f6ba50ff6fa3932e67652e3b7",
+  "provenance.json": "81a0f0e8f4e30a5da3a023bae2bf07812565eb53797d11281635a824431bfa0a",
+  "report.html": "5d8ca9d1bd3e5a14620603c55a67a1adac24d0a3ef5a51ee943c7b532f571ac4",
+  "screening.json": "2d6ff072e30ad355d6c4e41ca3b5be030a2c6a3f66935fd4b6d529b41f0a70ea",
+  "stage-observations.csv": "0a91c9118f894c469d39ecf3d96b6605baedacca06abb551789042d6f2314db1",
+  "summary.json": "ad6f2306263132004c324275ac0af59403b75767e590b12a0751dc28a98c497b"
+}

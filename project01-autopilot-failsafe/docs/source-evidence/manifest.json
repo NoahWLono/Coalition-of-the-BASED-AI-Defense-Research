@@ -1,0 +1,226 @@
+[
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "ArduCopter/events.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/events.cpp",
+    "bytes": 19639,
+    "sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "ArduCopter/ekf_check.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/ekf_check.cpp",
+    "bytes": 12412,
+    "sha256": "77b7ea17f191f2e26cbf9439c0b666377d0b035ae45d9d26ba8e68e18e30d183"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "ArduCopter/radio.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/radio.cpp",
+    "bytes": 7653,
+    "sha256": "79676b022fac27bc0e4b97f8ef4a04a12ff18dfc76c0d2f120969b0fb4bb81ba"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "ArduCopter/Parameters.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/Parameters.cpp",
+    "bytes": 78820,
+    "sha256": "4297e6350331cc3879db48b1a912eb11b58b152bf3905811c9c67718d878ace1"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "ArduCopter/defines.h",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/defines.h",
+    "bytes": 8101,
+    "sha256": "16ff1b7915ae8ed29322c4ef48e3e6f98afc9d3b95e6fe08e12d0045c1bf1584"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/SITL/SIM_GPS.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/SITL/SIM_GPS.cpp",
+    "bytes": 14215,
+    "sha256": "ea369f94eba435e937db1892a75eb25d41c58f9e398046361c26de4da169914b"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/SITL/SIM_GPS.h",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/SITL/SIM_GPS.h",
+    "bytes": 4178,
+    "sha256": "ed37fdfb63afe1e39f745fa2057c7da9e63c21b1ca0e42a0aec66077ec57a5e1"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/SITL/SIM_GPS_UBLOX.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/SITL/SIM_GPS_UBLOX.cpp",
+    "bytes": 10731,
+    "sha256": "43eb30e869169040583779fa375e56121abf4a9b1e8acdd80ea987d4300d8639"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/SITL/SITL.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/SITL/SITL.cpp",
+    "bytes": 52783,
+    "sha256": "a5bc81464508c12af14bd4efb925ac08687179d5608e794e9382b1436b8f13c3"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/AP_HAL_SITL/SITL_State.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_HAL_SITL/SITL_State.cpp",
+    "bytes": 21536,
+    "sha256": "11f0c64d8bc1ea3cb55876bd324ac5ab525a11cb0c9017a2bb9569466d70235d"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+    "bytes": 13328,
+    "sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+    "bytes": 37929,
+    "sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/AP_HAL_SITL/UARTDriver.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_HAL_SITL/UARTDriver.cpp",
+    "bytes": 31008,
+    "sha256": "87855ca1f35282e509102713473811365e887ad67f5313404425170ef83f0f29"
+  },
+  {
+    "version": "4.5.7",
+    "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+    "path": "libraries/AP_HAL_SITL/SITL_cmdline.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_HAL_SITL/SITL_cmdline.cpp",
+    "bytes": 26669,
+    "sha256": "7f2e931e57f726642afd96822d720e6e7a9b20da833bfc499b8312535a922311"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "ArduCopter/events.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/events.cpp",
+    "bytes": 19639,
+    "sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "ArduCopter/ekf_check.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/ekf_check.cpp",
+    "bytes": 12412,
+    "sha256": "77b7ea17f191f2e26cbf9439c0b666377d0b035ae45d9d26ba8e68e18e30d183"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "ArduCopter/radio.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/radio.cpp",
+    "bytes": 7653,
+    "sha256": "79676b022fac27bc0e4b97f8ef4a04a12ff18dfc76c0d2f120969b0fb4bb81ba"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "ArduCopter/Parameters.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/Parameters.cpp",
+    "bytes": 78820,
+    "sha256": "4297e6350331cc3879db48b1a912eb11b58b152bf3905811c9c67718d878ace1"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "ArduCopter/defines.h",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/defines.h",
+    "bytes": 8101,
+    "sha256": "16ff1b7915ae8ed29322c4ef48e3e6f98afc9d3b95e6fe08e12d0045c1bf1584"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/SITL/SIM_GPS.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/SITL/SIM_GPS.cpp",
+    "bytes": 14215,
+    "sha256": "ea369f94eba435e937db1892a75eb25d41c58f9e398046361c26de4da169914b"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/SITL/SIM_GPS.h",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/SITL/SIM_GPS.h",
+    "bytes": 4178,
+    "sha256": "ed37fdfb63afe1e39f745fa2057c7da9e63c21b1ca0e42a0aec66077ec57a5e1"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/SITL/SIM_GPS_UBLOX.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/SITL/SIM_GPS_UBLOX.cpp",
+    "bytes": 10731,
+    "sha256": "43eb30e869169040583779fa375e56121abf4a9b1e8acdd80ea987d4300d8639"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/SITL/SITL.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/SITL/SITL.cpp",
+    "bytes": 52783,
+    "sha256": "a5bc81464508c12af14bd4efb925ac08687179d5608e794e9382b1436b8f13c3"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/AP_HAL_SITL/SITL_State.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_HAL_SITL/SITL_State.cpp",
+    "bytes": 21536,
+    "sha256": "11f0c64d8bc1ea3cb55876bd324ac5ab525a11cb0c9017a2bb9569466d70235d"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+    "bytes": 13328,
+    "sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+    "bytes": 37929,
+    "sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/AP_HAL_SITL/UARTDriver.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_HAL_SITL/UARTDriver.cpp",
+    "bytes": 31008,
+    "sha256": "87855ca1f35282e509102713473811365e887ad67f5313404425170ef83f0f29"
+  },
+  {
+    "version": "4.5.6",
+    "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+    "path": "libraries/AP_HAL_SITL/SITL_cmdline.cpp",
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_HAL_SITL/SITL_cmdline.cpp",
+    "bytes": 26669,
+    "sha256": "7f2e931e57f726642afd96822d720e6e7a9b20da833bfc499b8312535a922311"
+  }
+]

@@ -1,0 +1,1645 @@
+{
+  "schema_version": 1,
+  "scenario_id": "00-baseline",
+  "outcome": "PASS",
+  "scenario_override": false,
+  "checks": [
+    {
+      "id": "seal",
+      "outcome": "PASS",
+      "detail": "All sealed evidence checksums match",
+      "files_verified": 18
+    },
+    {
+      "id": "compound_timing",
+      "outcome": "PASS",
+      "detail": "Simultaneous event groups satisfy declared skew",
+      "max_skew_s": 0.25,
+      "groups": []
+    },
+    {
+      "id": "runner_cleanup",
+      "outcome": "PASS",
+      "detail": "Runner completed and child reaped",
+      "returncode": 0,
+      "cleanup": {
+        "child_reaped": true,
+        "completed": true
+      }
+    },
+    {
+      "id": "raw_logs",
+      "outcome": "PASS",
+      "detail": "RX and TX MAVLink logs decoded",
+      "rx_messages": 29484,
+      "tx_messages": 238
+    },
+    {
+      "id": "simulator_clock",
+      "outcome": "PASS",
+      "detail": "SYSTEM_TIME covers the observation interval"
+    },
+    {
+      "id": "event_clock_alignment",
+      "outcome": "PASS",
+      "detail": "Event times agree with independently decoded SYSTEM_TIME"
+    },
+    {
+      "id": "baseline",
+      "outcome": "PASS",
+      "detail": "Continuous stable hover observed before baseline_ready",
+      "window_sim_s": [
+        53.832,
+        56.832
+      ],
+      "max_sample_gap_s": 0.5,
+      "stream_coverage": {
+        "HEARTBEAT": true,
+        "GLOBAL_POSITION_INT": true,
+        "GPS_RAW_INT": true,
+        "SYS_STATUS": true
+      },
+      "conditions": {
+        "mode_armed": true,
+        "altitude": true,
+        "vertical_speed": true,
+        "gps_fix": true,
+        "battery": true
+      },
+      "sample_counts": {
+        "HEARTBEAT": 15,
+        "GLOBAL_POSITION_INT": 30,
+        "GPS_RAW_INT": 16,
+        "SYS_STATUS": 16
+      },
+      "altitude_range_m": [
+        11.964,
+        12.037
+      ],
+      "max_abs_vz_cm_s": 7,
+      "min_gps_fix": 6,
+      "min_battery_mv": 12600
+    },
+    {
+      "id": "scenario_duration",
+      "outcome": "PASS",
+      "detail": "Full declared observation duration recorded",
+      "required_end_sim_s": 116.832
+    }
+  ],
+  "assertions": [
+    {
+      "id": "assertion-01",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "hold_mode",
+      "fault_evidence": false,
+      "window_sim_s": [
+        56.832,
+        66.832
+      ],
+      "observations": [
+        {
+          "sim_s": 56.932,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.132,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.332,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.534,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.734,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.934,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.134,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.334,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.532,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.732,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.932,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.132,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.332,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.532,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.734,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.934,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.134,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.334,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.534,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.732,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.932,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.132,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.332,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.532,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.734,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.934,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.134,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.334,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.534,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.732,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.932,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.132,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.332,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.532,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.734,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.934,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.134,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.334,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.534,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.734,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.932,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 65.132,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 65.332,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 65.532,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 65.732,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 65.934,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 66.134,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 66.334,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 66.534,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 66.734,
+          "mode": 4,
+          "armed": true
+        }
+      ],
+      "first_match_sim_s": 56.932
+    },
+    {
+      "id": "assertion-02",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "mode",
+      "fault_evidence": false,
+      "window_sim_s": [
+        68.834,
+        71.834
+      ],
+      "observations": [
+        {
+          "sim_s": 68.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.732,
+          "mode": 9,
+          "armed": true
+        }
+      ],
+      "first_match_sim_s": 68.834
+    },
+    {
+      "id": "assertion-03",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "disarmed",
+      "fault_evidence": false,
+      "window_sim_s": [
+        68.834,
+        113.834
+      ],
+      "observations": [
+        {
+          "sim_s": 68.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.932,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.132,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.332,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.532,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.732,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.934,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.134,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.334,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.534,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.734,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.734,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.934,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 112.134,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 112.334,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 112.534,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 112.732,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 112.932,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 113.132,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 113.332,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 113.532,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 113.734,
+          "mode": 9,
+          "armed": false
+        }
+      ],
+      "first_match_sim_s": 93.932
+    }
+  ],
+  "trace": {
+    "synthetic": false,
+    "rx_message_counts": {
+      "HEARTBEAT": 586,
+      "COMMAND_ACK": 13,
+      "AUTOPILOT_VERSION": 1,
+      "STATUSTEXT": 29,
+      "PARAM_VALUE": 2799,
+      "ATTITUDE": 1144,
+      "GLOBAL_POSITION_INT": 1144,
+      "POWER_STATUS": 1144,
+      "MEMINFO": 1144,
+      "NAV_CONTROLLER_OUTPUT": 1144,
+      "MISSION_CURRENT": 1144,
+      "VFR_HUD": 1144,
+      "SERVO_OUTPUT_RAW": 1144,
+      "RAW_IMU": 1144,
+      "SCALED_IMU2": 1144,
+      "SCALED_IMU3": 1144,
+      "SCALED_PRESSURE": 1144,
+      "SCALED_PRESSURE2": 1144,
+      "SYSTEM_TIME": 1144,
+      "AHRS": 1144,
+      "SIMSTATE": 1144,
+      "VIBRATION": 1144,
+      "SYS_STATUS": 572,
+      "RC_CHANNELS": 572,
+      "GPS_RAW_INT": 572,
+      "BATTERY_STATUS": 572,
+      "EKF_STATUS_REPORT": 567,
+      "AHRS2": 1124,
+      "ESC_TELEMETRY_1_TO_4": 1106,
+      "TIMESYNC": 11,
+      "GPS_GLOBAL_ORIGIN": 2,
+      "HOME_POSITION": 2,
+      "WIND": 754,
+      "LOCAL_POSITION_NED": 754
+    },
+    "tx_message_counts": {
+      "HEARTBEAT": 222,
+      "REQUEST_DATA_STREAM": 1,
+      "COMMAND_LONG": 11,
+      "PARAM_REQUEST_LIST": 2,
+      "SET_MODE": 2
+    },
+    "clock_samples": 1144,
+    "baseline_sim_s": 56.832,
+    "end_sim_s": 116.832,
+    "first_sim_s": 2.287,
+    "last_sim_s": 117.532
+  }
+}

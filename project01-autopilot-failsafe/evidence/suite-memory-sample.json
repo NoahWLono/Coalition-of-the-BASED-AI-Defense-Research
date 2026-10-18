@@ -1,0 +1,11 @@
+{
+  "scope": "live parent suite/evaluator process high-water mark while executing, not whole-system memory",
+  "processes": [
+    {
+      "Name": "python",
+      "VmHWM": "65372 kB",
+      "VmRSS": "64912 kB",
+      "Threads": "1"
+    }
+  ]
+}

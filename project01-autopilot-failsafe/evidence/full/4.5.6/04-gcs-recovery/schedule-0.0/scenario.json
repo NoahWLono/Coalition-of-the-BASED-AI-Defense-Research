@@ -1,0 +1,85 @@
+{
+  "assertions": [
+    {
+      "after": "loss",
+      "duration_s": 4,
+      "fault_evidence": true,
+      "type": "heartbeat_gap"
+    },
+    {
+      "after": "loss",
+      "contains": "GCS Failsafe",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 8
+    },
+    {
+      "after": "loss",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 8
+    },
+    {
+      "after": "restore",
+      "type": "heartbeat_resumed",
+      "within_s": 2
+    },
+    {
+      "after": "restore",
+      "contains": "GCS Failsafe Cleared",
+      "fault_evidence": true,
+      "type": "text",
+      "within_s": 5
+    },
+    {
+      "after": "restore",
+      "allowed": [
+        9
+      ],
+      "duration_s": 10,
+      "start_s": 1,
+      "type": "hold_mode"
+    },
+    {
+      "after": "loss",
+      "type": "disarmed",
+      "within_s": 50
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 62,
+  "events": [
+    {
+      "at_s": 5,
+      "enabled": false,
+      "id": "loss",
+      "kind": "heartbeat"
+    },
+    {
+      "at_s": 13,
+      "enabled": true,
+      "id": "restore",
+      "kind": "heartbeat"
+    }
+  ],
+  "id": "04-gcs-recovery",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "Restoring the link clears detection without automatically restoring GUIDED. LAND must persist for10s after heartbeat resumes.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "GCS recovery remains LAND"
+}

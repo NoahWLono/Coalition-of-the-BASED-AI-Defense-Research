@@ -1,0 +1,263 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | CLAIMS_LEDGER</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / CLAIMS_LEDGER</p><article><h1>Portfolio claims ledger</h1>
+<p>Scope: CEDAR 0.1.0, the bundled synthetic civilian inspection corpus, and the recorded local execution. Noah Weinberger supplied the direction and stated background. AI assistants generated and implemented the project, prepared annotations and performed the recorded checks. No customer, human annotator or independent auditor has validated these results.</p>
+<p>Commands below run from the repository with the frozen environment. <code>uv run --frozen python -m cedar verify</code> runs the suite and evaluation. Test names are stable evidence pointers; the saved result is <a href="../../artifacts/test-results.txt">test-results.txt</a>. The <a href="../../artifacts/evaluation.json">evaluation JSON</a> records denominators, timestamps and resource observations.</p>
+<table>
+<thead>
+<tr>
+<th>Exact claim</th>
+<th>Supporting implementation or artifact</th>
+<th>Establishing command, test or observation</th>
+<th>Dataset and scope</th>
+<th>Limitation</th>
+<th>Wording suitable for public use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The first complete slice preceded full-corpus expansion</td>
+<td>Commit <code>ba6fd37</code>; milestone-a.json and milestone-a-tests.txt</td>
+<td>Historical API replay and 36-test record</td>
+<td>Three packages, eight requirements, nine sources, one amendment</td>
+<td>Historical checkpoint; current source has subsequent corrections</td>
+<td>"A complete small workflow was verified before expanding the demonstration."</td>
+</tr>
+<tr>
+<td>The full workbench imports 12 packages and 40 requirements</td>
+<td>data/full; ingestion and evaluation</td>
+<td>test_full_480_expected_assessments_and_answer_key_isolation; browser-check.json</td>
+<td>Six suppliers; 18 mandatory, 14 scored, eight informational requirements</td>
+<td>All fictional; not an integration with a purchasing system</td>
+<td>"CEDAR demonstrates a twelve-configuration, forty-requirement comparison."</td>
+</tr>
+<tr>
+<td>The corpus contains 36 substantive base documents and three layouts</td>
+<td>data/full/documents; extraction_truth.json</td>
+<td>evaluate.py; each source can be opened as text</td>
+<td>36 base documents plus three amendments; table, labels, blocks</td>
+<td>Explicit response identifiers; every layout was designed for this parser</td>
+<td>"The baseline processes three documented synthetic text layouts."</td>
+</tr>
+<tr>
+<td>Full baseline extraction matches 601 expected assertion records</td>
+<td>ingest.py; evaluation.json</td>
+<td><code>uv run --frozen python scripts/evaluate.py</code></td>
+<td>200 table, 201 label, 200 block records; exact six-field match</td>
+<td>Separate AI fixture author; no human annotation or held-out layout</td>
+<td>"All 601 expected assertions matched on the bundled full baseline."</td>
+</tr>
+<tr>
+<td>Recorded baseline citations resolve to literal source passages</td>
+<td>document hashes, line locations; evaluation.json</td>
+<td>601 full and 55 slice citation checks; export semantic tests</td>
+<td>Baseline assertion ledger and exported snapshots</td>
+<td>A matching passage does not prove that the supplier statement is true</td>
+<td>"The demonstration's citations resolve to recorded source versions."</td>
+</tr>
+<tr>
+<td>Expected requirement states agree across declared scenarios</td>
+<td>engine.py; ground_truth.json</td>
+<td>evaluate.py: 2,880 full and 72 slice assessment comparisons</td>
+<td>Baseline, buyer-v2, single amendments and full all-amendments case</td>
+<td>Repeated fixture scenarios are not independent real-world samples</td>
+<td>"The evaluation recorded zero state mismatches in 2,952 synthetic comparisons."</td>
+</tr>
+<tr>
+<td>Mandatory gates remain separate from preference scores</td>
+<td>assess and evaluate in engine.py</td>
+<td>test_every_unconditional_eligibility_has_all_required_evidence</td>
+<td>All 12 baseline packages plus scenario eligibility checks</td>
+<td>Documentary eligibility permits further consideration only; purchase authorization is outside its scope</td>
+<td>"An unresolved mandatory gate prevents an unconditional eligibility recommendation."</td>
+</tr>
+<tr>
+<td>A declaration cannot replace a required independent-test document</td>
+<td>evidence_types in requirements; engine.py</td>
+<td>test_conflict_missing_stale_and_required_type; P01/P09 R04</td>
+<td>Synthetic required test passages and wrong-type declarations</td>
+<td>Even a synthetic test passage is not an actual independent physical test</td>
+<td>"CEDAR enforces the buyer's stated documentary evidence type."</td>
+</tr>
+<tr>
+<td>Contradictions, expiry and indeterminate validity remain visible</td>
+<td>ingest.py, engine.py, assurance.py</td>
+<td>test_conflict_missing_stale_and_required_type; review regressions</td>
+<td>Controlled contradictory, expired and malformed-date statements</td>
+<td>General semantic contradiction detection is unimplemented</td>
+<td>"The documented extraction grammar preserves seeded evidence uncertainty."</td>
+</tr>
+<tr>
+<td>Costs distinguish a known subtotal from an unbounded exposure</td>
+<td>costs.py; comparison view</td>
+<td>test_cost_literal_calculation_and_unknown_exposure; corpus arithmetic tests</td>
+<td>Six units; CAD; three-year undiscounted pre-tax baseline</td>
+<td>No estimated value for missing costs; no exchange conversion</td>
+<td>"The lowest known subtotal can remain an incomplete total."</td>
+</tr>
+<tr>
+<td>A declared replacement assumption changes P03's total</td>
+<td>walkthrough.json; comparison.png</td>
+<td>Replacement rate 1 to 2 changes CAD 153,654.48 to 162,654.48</td>
+<td>P03, six aircraft, three years, CAD 500 replacement battery</td>
+<td>Planning assumption; not a measured failure rate</td>
+<td>"CEDAR makes the commercial effect of a replacement assumption inspectable."</td>
+</tr>
+<tr>
+<td>Missing scored evidence remains an interval</td>
+<td>scoring.py</td>
+<td>test_scoring_limits_missing_and_weights; test_open_bounds_and_missing_score_prevent_false_certainty</td>
+<td>Unknown criterion spans 0 to 100; weighted interval arithmetic</td>
+<td>Bounds do not encode likelihood or preference uncertainty beyond declared inputs</td>
+<td>"Unknown scored evidence is shown as a range."</td>
+</tr>
+<tr>
+<td>Weight changes alter the preferred eligible package</td>
+<td>scoring.py; sensitivity.png; evaluation.json</td>
+<td>test_independent_weight_crossover_and_dominance; five full-corpus scenarios</td>
+<td>P11 leads at ratios 0.25, 0.5, 1; P07 at 2, 4</td>
+<td>Scenario counts are not probabilities of purchase success</td>
+<td>"The preference result depends on the buyer's operations-to-support weights."</td>
+</tr>
+<tr>
+<td>P11 dominates P12 under the declared bounded comparison</td>
+<td>scoring.py; evaluation.json</td>
+<td>Dominance check and independently calculated small example</td>
+<td>Documentary-eligible packages, every scored criterion, known cost bounds</td>
+<td>No claim of dominance on unmodelled product attributes</td>
+<td>"One synthetic alternative is dominated on the declared criteria and cost."</td>
+</tr>
+<tr>
+<td>Software assurance preserves the difference between presence and exposure</td>
+<td>assurance.py; inventories, advisories and exposure declarations</td>
+<td>test_assurance.py; advisory alias and conflict regressions</td>
+<td>Official vendored CycloneDX 1.6 validation; top-level generic PURLs; synthetic exact-version advisories</td>
+<td>No real CVEs, deployed-build verification, completeness proof or general version ranges</td>
+<td>"The bounded module connects synthetic software questions to procurement clarification."</td>
+</tr>
+<tr>
+<td>Permissions are enforced by the server</td>
+<td>app.py session and role checks; store.py authorization</td>
+<td>test_server_permissions_csrf_and_stale_revision; walkthrough analyst approval returns HTTP 403</td>
+<td>Analyst, reviewer and approver demonstration sessions</td>
+<td>Public passwords do not establish distinct human identities</td>
+<td>"The local API rejects analyst attempts to approve decisions."</td>
+</tr>
+<tr>
+<td>Amendments preserve the old decision and make its approval stale</td>
+<td>store.py snapshots and mutation transactions</td>
+<td>test_roles_stale_snapshot_and_portable_export; API and browser walkthroughs</td>
+<td>AMD01 reduces P03 support from 36 to 24 months</td>
+<td>All input changes conservatively invalidate snapshots; selective reuse is unimplemented</td>
+<td>"The prototype invalidates prior approvals after changed evidence."</td>
+</tr>
+<tr>
+<td>Concurrent changes cannot silently give old inputs a current approval in tested races</td>
+<td>store.py BEGIN IMMEDIATE and expected_revision checks</td>
+<td>test_concurrent_amendments_have_one_winner; test_racing_approval_and_amendment_never_approve_current_old_data</td>
+<td>Two local concurrent transactions over SQLite</td>
+<td>Not a distributed-system proof, stress test or formal verification</td>
+<td>"The tested approval/amendment races preserve current-version checks."</td>
+</tr>
+<tr>
+<td>The export binds the reviewed inputs and calculated result</td>
+<td>export.py; full-decision.zip</td>
+<td>verify_package.py; reproduce_decision.py; test_embedded_verifier_runs_without_project</td>
+<td>One portable HTML/JSON/CSV/source package and current/stale examples</td>
+<td>Hashes establish consistency; an attacker can recompute a manifest</td>
+<td>"A reviewer can inspect and verify a decision package without running the application."</td>
+</tr>
+<tr>
+<td>Inert-source and archive controls cover seeded hostile inputs</td>
+<td>app.py, ingest.py and export.py</td>
+<td>Upload, formula-neutralization, path, duplicate, expansion and citation tamper tests</td>
+<td>Project-controlled text and ZIP fixtures</td>
+<td>No penetration test or claim of general security</td>
+<td>"Focused checks exercise consequential untrusted-input failure modes."</td>
+</tr>
+<tr>
+<td>The implemented browser supports the full review story</td>
+<td>browser_check.py; screenshots; cedar-demo.webm</td>
+<td><code>uv run --frozen python scripts/browser_check.py --record</code></td>
+<td>One local Chromium build; desktop and 390-pixel viewport</td>
+<td>Scripted interaction, silent recording; no usability study or accessibility certification</td>
+<td>"The portfolio includes screenshots and a recording of the running application."</td>
+</tr>
+<tr>
+<td>The source package reproduces in a fresh environment on this host</td>
+<td>clean-reproduction.json; release manifest</td>
+<td>Frozen install, full verify, walkthrough, package reproduction and live health check after unpacking</td>
+<td>New temporary directory and virtual environment on the same Linux host</td>
+<td>Not an independent machine, Windows test, air-gapped initial install or installer certification</td>
+<td>"The locked source package was exercised from a clean directory."</td>
+</tr>
+<tr>
+<td>The project is AI-assisted and contractor-neutral</td>
+<td>USER_REQUEST.txt; REVIEW_RECORD.md; executive briefs</td>
+<td>Authorship disclosure and final document review</td>
+<td>User direction, assistant implementation and generated fixtures</td>
+<td>No manual-coding, relationship, endorsement or customer-validation claim</td>
+<td>"Directed by Noah Weinberger and implemented with AI assistance."</td>
+</tr>
+</tbody>
+</table>
+<p>Unperformed claims are explicit: live model evaluation, real-document accuracy, measured time savings, real product testing, procurement certification, production identity, external security audit, digital signing and a kernel-checked formal proof. The proposed pilot describes how to collect relevant evidence; it is not evidence that the benefits have already occurred.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

@@ -1,0 +1,84 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | INTERVIEW</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / INTERVIEW</p><article><h1>Ten technical questions about CEDAR</h1>
+<p>These answers describe the implemented local demonstration. Proposed pilot work is labelled separately. Noah supplied the project direction and relevant background; the repository and supporting materials were developed with AI assistance. No manual authorship, customer validation or independent audit is implied.</p>
+<h2>1. What does "supported" establish?</h2>
+<p>It means that current supplied evidence of an accepted type satisfies the buyer's documentary comparison rule. Each assertion retains the literal passage, document version, SHA-256 hash, line range, normalization and dates. A declaration cannot satisfy a requirement demanding an independent test. Even an <code>independent_test</code> passage in this corpus is fictional: it demonstrates an evidence rule. Physical capability remains untested. A real pilot would require the buyer to define acceptable evidence and a qualified reviewer to judge its adequacy.</p>
+<h2>2. How does the system avoid treating missing information as a pass?</h2>
+<p>The engine distinguishes supported, not satisfied, unresolved, conflicting, stale and not applicable states. Applicability and policy dates come first; usable observations, conflicts, evidence types, interpretation and units are checked before the comparator. Every applicable mandatory requirement must be supported for documentary eligibility. Scoring is separate. Missing scored evidence spans a score interval rather than receiving an invented midpoint. A high score cannot compensate for an unresolved mandatory condition.</p>
+<h2>3. What can the extraction actually read?</h2>
+<p>The parser recognizes explicit requirement and cost identifiers in three documented UTF-8 text layouts. It retains the source text and applies only declared unit conversions, such as years to months. It does not discover semantic requirement matches, perform OCR or ingest arbitrary PDFs. Unrecognized input may yield no assertion, which leaves the requirement unresolved. An optional proposal-adapter interface exists, but the application has no live model client and no measured model outputs. Representative permitted documents and human annotations are prerequisites for evaluating broader extraction.</p>
+<h2>4. What makes the cost comparison defensible?</h2>
+<p>It exposes its inputs and uses decimal arithmetic for a six-aircraft fleet. The three-year baseline includes quoted equipment, shared ground equipment, software, training, support, batteries and required additions. Quoted recurring escalation is separate from the planning assumption for battery replacements. Optional items are explicit. The baseline is undiscounted, pre-tax CAD. Unknown required charges have no finite upper bound; P01's CAD 113,700 is a known subtotal. Taxes, currency conversion and financial-policy extensions would need additional declared rules.</p>
+<h2>5. How should a buyer interpret the rankings and sensitivity analysis?</h2>
+<p>Fourteen criteria use declared min-max formulas, bounded to 0–100. Applicable weights sum to one. The three profiles express balanced, capability and service priorities. Five explicit capability-to-service ratios show which eligible packages could or must lead given their score intervals. These scenarios do not estimate probabilities of purchase success. Dominance requires closed cost bounds and criterion-by-criterion superiority under conservative interval comparisons. In the initial corpus P11 dominates P12 under that definition. These calculations inform a preference discussion; they do not establish a universally best purchase.</p>
+<h2>6. What does software assurance add to a procurement decision?</h2>
+<p>CEDAR validates the declared CycloneDX 1.6 inventory format and matches a bounded set of synthetic advisories using the fixture identities and exact version lists. It distinguishes component evidence from the supplier's exposure statement, with provenance and dates. Unresolved identity or exposure can justify a clarification or support question. Inventory validity does not establish completeness, shipment contents or exploitability. There are no real CVEs, live scans or real vendor findings, and no opaque aggregate cyber-risk score.</p>
+<h2>7. Can a document or the AI grant approval?</h2>
+<p>No. Source text is inert data. The demonstrated parser has no authority to execute document instructions, change policy or select a role. The server checks the session role for mutation, technical review and approval actions; it also applies request bounds, origin/host and CSRF checks. The optional model interface is proposal-only and is not called by the application. Public demo credentials demonstrate permission boundaries. They do not establish genuine separation of people. Production identity, storage and tenancy controls remain unimplemented.</p>
+<h2>8. What happens if an amendment races with approval?</h2>
+<p>Mutations use a SQLite write transaction and check the expected workspace revision under the lock. Approval also checks the snapshot digest, current inputs and required technical review. If the amendment commits first, approval of the old revision fails. If approval commits first, the amendment makes it stale. Invalidation is conservative: every input change stales all previous snapshots. The change log identifies the particular assessments and costs that changed; selective reuse of unaffected approvals is not implemented. AMD01 demonstrates the support reduction from 36 to 24 months.</p>
+<h2>9. How strong are the tests and exported hashes as evidence?</h2>
+<p>The initial full-corpus evaluation matched 480 requirement states and twelve cost totals against a separately AI-authored manifest. Tests and executable walkthroughs also exercise citations, costs, permissions, concurrency and amendment behavior. Human annotation and independent empirical audit remain unperformed. An export includes the snapshot, sources, evidence index, report and a verifier. Hashes detect internal inconsistencies relative to the manifest; an attacker who replaces both can recompute them. They do not prove authenticity or future approval status. No digital signature or formal proof is claimed.</p>
+<h2>10. What would integration and a credible customer pilot require?</h2>
+<p>The current architecture is one local FastAPI service, SQLite and a browser client. A four-week pilot would begin with a single permitted, redacted comparison, agreed evidence rules and human annotations, including a held-out subset. It would measure errors and total preparation/review effort and exercise amendment and export gates. Production integration would separately require durable identities, suitable storage, retention, backups, operational monitoring and tested interfaces to the customer's systems. The project has no customer validation, measured time savings or enterprise deployment. Those are questions for the pilot and later phases.</p>
+<p>Supporting detail: <a href="SCHEMAS.html">schemas</a>, <a href="ARCHITECTURE.html">architecture</a>, <a href="LIMITATIONS.html">limitations</a> and <a href="PILOT_PROPOSAL.html">pilot proposal</a>.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

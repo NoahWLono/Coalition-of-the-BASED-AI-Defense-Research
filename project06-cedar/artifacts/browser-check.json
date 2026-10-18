@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "executed_at": "2026-10-18T02:31:20.405837+00:00",
+  "steps": [
+    "01 Imported twelve synthetic packages and forty requirements",
+    "02 Inspected the battery conflict and exact source version",
+    "03 Changed the replacement assumption and inspected the resulting cost",
+    "04 Compared five declared weight scenarios and conservative dominance",
+    "05 Inspected synthetic component exposure and its procurement consequence",
+    "06 Created a snapshot tied to the current evidence and assumptions",
+    "07 A technical reviewer recorded a digest-bound review",
+    "08 A separate demonstration approver approved the recorded consideration",
+    "09 Applied the supplier amendment; the old approval is visibly stale",
+    "10 Exported the new reviewed conditional record; package verification passed"
+  ],
+  "page_errors": [],
+  "desktop": "1440x960",
+  "mobile": "390x844",
+  "duration_seconds": 213.47,
+  "recorded": true,
+  "recording": "cedar-demo.webm",
+  "limits": "Automated interaction in one Chromium build. Silent recording of the actual application; narration script supplied separately. Not a human usability study.",
+  "encoded_video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1440,
+        "height": 960
+      }
+    ],
+    "format": {
+      "duration": "205.480000",
+      "size": "28586371"
+    }
+  }
+}

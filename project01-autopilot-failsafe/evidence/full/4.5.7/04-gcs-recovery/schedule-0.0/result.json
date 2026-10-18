@@ -1,0 +1,2164 @@
+{
+  "schema_version": 1,
+  "scenario_id": "04-gcs-recovery",
+  "outcome": "PASS",
+  "scenario_override": false,
+  "checks": [
+    {
+      "id": "seal",
+      "outcome": "PASS",
+      "detail": "All sealed evidence checksums match",
+      "files_verified": 22
+    },
+    {
+      "id": "event_schedule",
+      "outcome": "PASS",
+      "detail": "Events follow declared simulator schedule and offset",
+      "schedule_offset_s": 0.0,
+      "max_lateness_s": 0.5,
+      "events": [
+        {
+          "event_id": "loss",
+          "expected_sim_s": 61.334,
+          "actual_sim_s": 61.432,
+          "lateness_s": 0.09799999999999898,
+          "valid": true
+        },
+        {
+          "event_id": "restore",
+          "expected_sim_s": 69.334,
+          "actual_sim_s": 69.432,
+          "lateness_s": 0.09799999999999898,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "compound_timing",
+      "outcome": "PASS",
+      "detail": "Simultaneous event groups satisfy declared skew",
+      "max_skew_s": 0.25,
+      "groups": []
+    },
+    {
+      "id": "runner_cleanup",
+      "outcome": "PASS",
+      "detail": "Runner completed and child reaped",
+      "returncode": 0,
+      "cleanup": {
+        "child_reaped": true,
+        "completed": true
+      }
+    },
+    {
+      "id": "raw_logs",
+      "outcome": "PASS",
+      "detail": "RX and TX MAVLink logs decoded",
+      "rx_messages": 29846,
+      "tx_messages": 229
+    },
+    {
+      "id": "injection_transport",
+      "outcome": "PASS",
+      "detail": "Parameter requests and subsequent matching acknowledgments observed",
+      "events": [],
+      "deadline_s": 5
+    },
+    {
+      "id": "simulator_clock",
+      "outcome": "PASS",
+      "detail": "SYSTEM_TIME covers the observation interval"
+    },
+    {
+      "id": "event_clock_alignment",
+      "outcome": "PASS",
+      "detail": "Event times agree with independently decoded SYSTEM_TIME"
+    },
+    {
+      "id": "baseline",
+      "outcome": "PASS",
+      "detail": "Continuous stable hover observed before baseline_ready",
+      "window_sim_s": [
+        53.334,
+        56.334
+      ],
+      "max_sample_gap_s": 0.5,
+      "stream_coverage": {
+        "HEARTBEAT": true,
+        "GLOBAL_POSITION_INT": true,
+        "GPS_RAW_INT": true,
+        "SYS_STATUS": true
+      },
+      "conditions": {
+        "mode_armed": true,
+        "altitude": true,
+        "vertical_speed": true,
+        "gps_fix": true,
+        "battery": true
+      },
+      "sample_counts": {
+        "HEARTBEAT": 15,
+        "GLOBAL_POSITION_INT": 30,
+        "GPS_RAW_INT": 16,
+        "SYS_STATUS": 16
+      },
+      "altitude_range_m": [
+        11.964,
+        12.041
+      ],
+      "max_abs_vz_cm_s": 9,
+      "min_gps_fix": 6,
+      "min_battery_mv": 12600
+    },
+    {
+      "id": "initial_state_until_event",
+      "outcome": "PASS",
+      "detail": "Initial mode and armed state persist until the first event",
+      "first_event_id": "loss",
+      "window_sim_s": [
+        56.334,
+        61.432
+      ],
+      "max_sample_gap_s": 0.5,
+      "heartbeat_coverage": true,
+      "initial_state_maintained": true,
+      "observations": [
+        {
+          "sim_s": 56.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 56.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 56.832,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.032,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.232,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.634,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 57.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.434,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 58.832,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.032,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.232,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.634,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 59.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.434,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 60.832,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.032,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.232,
+          "mode": 4,
+          "armed": true
+        }
+      ]
+    },
+    {
+      "id": "scenario_duration",
+      "outcome": "PASS",
+      "detail": "Full declared observation duration recorded",
+      "required_end_sim_s": 118.334
+    }
+  ],
+  "assertions": [
+    {
+      "id": "assertion-01",
+      "outcome": "PASS",
+      "detail": "Established GCS heartbeat stream is silent for the entire window",
+      "type": "heartbeat_gap",
+      "fault_evidence": true,
+      "window_sim_s": [
+        61.432,
+        65.432
+      ],
+      "observations": []
+    },
+    {
+      "id": "assertion-02",
+      "outcome": "PASS",
+      "detail": "Required status text observed",
+      "type": "text",
+      "fault_evidence": true,
+      "window_sim_s": [
+        61.432,
+        69.432
+      ],
+      "accepted_substrings": [
+        "GCS Failsafe"
+      ],
+      "observations": [
+        {
+          "sim_s": 64.434,
+          "text": "GCS Failsafe"
+        }
+      ],
+      "first_match_sim_s": 64.434
+    },
+    {
+      "id": "assertion-03",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "mode",
+      "fault_evidence": false,
+      "window_sim_s": [
+        61.432,
+        69.432
+      ],
+      "observations": [
+        {
+          "sim_s": 61.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.434,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.634,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.832,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.032,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.232,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.432,
+          "mode": 9,
+          "armed": true
+        }
+      ],
+      "first_match_sim_s": 64.434
+    },
+    {
+      "id": "assertion-04",
+      "outcome": "PASS",
+      "detail": "GCS heartbeat resumed",
+      "type": "heartbeat_resumed",
+      "fault_evidence": false,
+      "window_sim_s": [
+        69.432,
+        71.432
+      ],
+      "observations": [
+        {
+          "sim_s": 69.432,
+          "epoch_s": 1792288850.956646
+        },
+        {
+          "sim_s": 69.932,
+          "epoch_s": 1792288851.079129
+        },
+        {
+          "sim_s": 70.434,
+          "epoch_s": 1792288851.2012968
+        },
+        {
+          "sim_s": 70.934,
+          "epoch_s": 1792288851.3309588
+        }
+      ],
+      "first_match_sim_s": 69.432
+    },
+    {
+      "id": "assertion-05",
+      "outcome": "PASS",
+      "detail": "Required status text observed",
+      "type": "text",
+      "fault_evidence": true,
+      "window_sim_s": [
+        69.432,
+        74.432
+      ],
+      "accepted_substrings": [
+        "GCS Failsafe Cleared"
+      ],
+      "observations": [
+        {
+          "sim_s": 69.732,
+          "text": "GCS Failsafe Cleared"
+        }
+      ],
+      "first_match_sim_s": 69.732
+    },
+    {
+      "id": "assertion-06",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "hold_mode",
+      "fault_evidence": false,
+      "window_sim_s": [
+        70.432,
+        80.432
+      ],
+      "observations": [
+        {
+          "sim_s": 70.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.434,
+          "mode": 9,
+          "armed": true
+        }
+      ],
+      "first_match_sim_s": 70.434
+    },
+    {
+      "id": "assertion-07",
+      "outcome": "PASS",
+      "detail": "Observed requested state",
+      "type": "disarmed",
+      "fault_evidence": false,
+      "window_sim_s": [
+        61.432,
+        111.432
+      ],
+      "observations": [
+        {
+          "sim_s": 61.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 61.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.434,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.634,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 62.832,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.032,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.232,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.432,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.632,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 63.834,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.034,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.234,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "sim_s": 64.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 64.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 65.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 66.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 67.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 68.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 69.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 70.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 71.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 72.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 73.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 74.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 75.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 76.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 77.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 78.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 79.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 80.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 81.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 82.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 83.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 84.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 85.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 86.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 87.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 88.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 89.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 90.834,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.634,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 91.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.032,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.232,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.432,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.632,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 92.832,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.034,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.234,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.434,
+          "mode": 9,
+          "armed": true
+        },
+        {
+          "sim_s": 93.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 93.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 94.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 95.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 96.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 97.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 98.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 99.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 100.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 101.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 102.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 103.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 104.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 105.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 106.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 107.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 108.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.432,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.634,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 109.834,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.034,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.234,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.434,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.632,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 110.832,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.032,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.232,
+          "mode": 9,
+          "armed": false
+        },
+        {
+          "sim_s": 111.432,
+          "mode": 9,
+          "armed": false
+        }
+      ],
+      "first_match_sim_s": 93.634
+    }
+  ],
+  "trace": {
+    "synthetic": false,
+    "rx_message_counts": {
+      "HEARTBEAT": 594,
+      "COMMAND_ACK": 12,
+      "AUTOPILOT_VERSION": 1,
+      "STATUSTEXT": 31,
+      "PARAM_VALUE": 2799,
+      "ATTITUDE": 1159,
+      "GLOBAL_POSITION_INT": 1159,
+      "POWER_STATUS": 1159,
+      "MEMINFO": 1159,
+      "NAV_CONTROLLER_OUTPUT": 1159,
+      "MISSION_CURRENT": 1159,
+      "VFR_HUD": 1159,
+      "SERVO_OUTPUT_RAW": 1159,
+      "RAW_IMU": 1159,
+      "SCALED_IMU2": 1159,
+      "SCALED_IMU3": 1159,
+      "SCALED_PRESSURE": 1159,
+      "SCALED_PRESSURE2": 1159,
+      "SYSTEM_TIME": 1159,
+      "AHRS": 1159,
+      "SIMSTATE": 1159,
+      "VIBRATION": 1159,
+      "SYS_STATUS": 580,
+      "RC_CHANNELS": 580,
+      "GPS_RAW_INT": 580,
+      "BATTERY_STATUS": 580,
+      "EKF_STATUS_REPORT": 574,
+      "AHRS2": 1138,
+      "ESC_TELEMETRY_1_TO_4": 1121,
+      "TIMESYNC": 11,
+      "GPS_GLOBAL_ORIGIN": 2,
+      "HOME_POSITION": 2,
+      "WIND": 769,
+      "LOCAL_POSITION_NED": 769
+    },
+    "tx_message_counts": {
+      "HEARTBEAT": 214,
+      "REQUEST_DATA_STREAM": 1,
+      "COMMAND_LONG": 11,
+      "PARAM_REQUEST_LIST": 2,
+      "SET_MODE": 1
+    },
+    "clock_samples": 1159,
+    "baseline_sim_s": 56.334,
+    "end_sim_s": 118.334,
+    "first_sim_s": 2.266,
+    "last_sim_s": 119.032
+  }
+}

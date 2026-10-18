@@ -1,0 +1,12 @@
+Setting SIM_SPEEDUP=4.000000
+Suggested EK3_DRAG_BCOEF_* = 16.288, EK3_DRAG_MCOEF = 0.209
+Home: 0.010000 0.010000 alt=0.000000m hdg=0.000000
+Starting sketch 'ArduCopter'
+Starting SITL input
+Using Irlock at port : 9005
+Loaded defaults from /research/project11-autopilot-failsafe/config/upstream-copter.parm,/research/project11-autopilot-failsafe/config/lab.parm,/research/project11-autopilot-failsafe/evidence/development/baseline-01/overrides.parm
+ERROR: segmentation fault - aborting
+Running: sh dumpstack.sh 5 >dumpstack.sh_arducopter.5.out 2>&1
+Failed
+Running: sh dumpcore.sh 5 >dumpcore.sh_arducopter.5.out 2>&1
+Failed

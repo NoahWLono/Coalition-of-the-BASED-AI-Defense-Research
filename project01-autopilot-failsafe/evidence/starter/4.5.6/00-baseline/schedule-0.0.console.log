@@ -1,0 +1,3 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.732, "host_monotonic_ns": 5035799581172, "host_unix_us": 1792288150674746, "altitude_m": 11.973, "mode": 4, "armed": true}
+{"id": "land", "kind": "mode", "sim_s": 68.734, "host_monotonic_ns": 5038798352196, "host_unix_us": 1792288153673518, "at_s": 12, "mode": "LAND"}
+{"id": "scenario_end", "kind": "end", "sim_s": 116.734, "host_monotonic_ns": 5050794261110, "host_unix_us": 1792288165669426}

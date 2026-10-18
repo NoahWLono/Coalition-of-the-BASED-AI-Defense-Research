@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_api_reference_is_offline_and_has_no_remote_script_dependency _______
+
+tmp_path = PosixPath('/tmp/pytest-of-noah/pytest-30/test_api_reference_is_offline_0')
+
+    def test_api_reference_is_offline_and_has_no_remote_script_dependency(tmp_path):
+        c=client(tmp_path);r=c.get('/api/docs')
+        assert r.status_code==200
+>       assert 'cdn.jsdelivr.net' not in r.text and 'https://' not in r.text
+E       assert ('cdn.jsdelivr.net' not in '\n    <!DOC.../html>\n    '
+E         
+E         'cdn.jsdelivr.net' is contained here:
+E           ="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css">
+E         ?           ++++++++++++++++
+E               <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
+E               <title>CEDAR synthetic procurement workbench - Swagger UI</title>
+E               </head>...
+E         
+E         ...Full output truncated (23 lines hidden), use '-vv' to show)
+
+tests/test_api.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_api.py::test_api_reference_is_offline_and_has_no_remote_script_dependency
+1 failed in 0.74s

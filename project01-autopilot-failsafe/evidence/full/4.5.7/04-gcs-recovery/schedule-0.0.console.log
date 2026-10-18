@@ -1,0 +1,4 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.334, "host_monotonic_ns": 5732806109984, "host_unix_us": 1792288847681275, "altitude_m": 11.972, "mode": 4, "armed": true}
+{"id": "loss", "kind": "heartbeat", "sim_s": 61.432, "host_monotonic_ns": 5734083044057, "host_unix_us": 1792288848958209, "at_s": 5, "enabled": false}
+{"id": "restore", "kind": "heartbeat", "sim_s": 69.432, "host_monotonic_ns": 5736081201851, "host_unix_us": 1792288850956366, "at_s": 13, "enabled": true}
+{"id": "scenario_end", "kind": "end", "sim_s": 118.334, "host_monotonic_ns": 5748302032383, "host_unix_us": 1792288863177198}

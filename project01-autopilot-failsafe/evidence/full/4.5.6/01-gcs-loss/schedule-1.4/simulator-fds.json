@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-1.4/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-1.4/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-1.4/sitl.stdout",
+  "3": "socket:[181663]",
+  "4": "socket:[181664]",
+  "5": "socket:[181665]",
+  "6": "socket:[181666]",
+  "7": "socket:[181667]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-1.4/eeprom.bin",
+  "9": "socket:[181668]"
+}

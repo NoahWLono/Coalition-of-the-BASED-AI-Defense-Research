@@ -1,0 +1,2407 @@
+{
+  "suppliers": [
+    {
+      "id": "S01",
+      "name": "Alder Airworks"
+    },
+    {
+      "id": "S02",
+      "name": "Birch Field Systems"
+    },
+    {
+      "id": "S03",
+      "name": "Cobalt Survey Technology"
+    },
+    {
+      "id": "S04",
+      "name": "Dovetail Civil Robotics"
+    },
+    {
+      "id": "S05",
+      "name": "Elm Observation Works"
+    },
+    {
+      "id": "S06",
+      "name": "Fenland Inspection Systems"
+    }
+  ],
+  "packages": [
+    {
+      "id": "P01",
+      "supplier_id": "S01",
+      "name": "Alder Survey Lite"
+    },
+    {
+      "id": "P02",
+      "supplier_id": "S01",
+      "name": "Alder Survey Plus"
+    },
+    {
+      "id": "P03",
+      "supplier_id": "S02",
+      "name": "Birch Inspect Standard"
+    },
+    {
+      "id": "P04",
+      "supplier_id": "S02",
+      "name": "Birch Inspect Thermal"
+    },
+    {
+      "id": "P05",
+      "supplier_id": "S03",
+      "name": "Cobalt Terrain Base"
+    },
+    {
+      "id": "P06",
+      "supplier_id": "S03",
+      "name": "Cobalt Terrain Thermal"
+    },
+    {
+      "id": "P07",
+      "supplier_id": "S04",
+      "name": "Dovetail Range Standard"
+    },
+    {
+      "id": "P08",
+      "supplier_id": "S04",
+      "name": "Dovetail Range Thermal"
+    },
+    {
+      "id": "P09",
+      "supplier_id": "S05",
+      "name": "Elm Survey Standard"
+    },
+    {
+      "id": "P10",
+      "supplier_id": "S05",
+      "name": "Elm Survey Thermal"
+    },
+    {
+      "id": "P11",
+      "supplier_id": "S06",
+      "name": "Fenland Service Standard"
+    },
+    {
+      "id": "P12",
+      "supplier_id": "S06",
+      "name": "Fenland Service Thermal"
+    }
+  ],
+  "requirements": {
+    "v1": [
+      {
+        "id": "R01",
+        "wording": "Supply at least six aircraft in the civilian inspection fleet.",
+        "category": "fleet",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 6,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R02",
+        "wording": "Include at least eighteen flight batteries in the delivered fleet package.",
+        "category": "fleet",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 18,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R03",
+        "wording": "Commit to software maintenance and support for at least thirty-six months after acceptance.",
+        "category": "support",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 36,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R04",
+        "wording": "Provide a supplied independent-test report recording nominal position repeatability at or below two metres in its defined synthetic fixture.",
+        "category": "assurance",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "independent_test"
+        ],
+        "unit": "m",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R05",
+        "wording": "Commit to fleet delivery no later than twelve weeks after order acceptance.",
+        "category": "delivery",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "weeks",
+        "comparator": "lte",
+        "target": 12,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R06",
+        "wording": "Export inspection records in a documented CSV format without a separate access fee.",
+        "category": "data",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R07",
+        "wording": "Declare a minimum operating temperature at or below zero degrees Celsius.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "degC",
+        "comparator": "lte",
+        "target": 0,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R08",
+        "wording": "Declare an aircraft mass no greater than 2500 grams for buyer handling review.",
+        "category": "fleet",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "lte",
+        "target": 2500,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R09",
+        "wording": "Permit local review of stored inspection records while disconnected from the internet.",
+        "category": "data",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R10",
+        "wording": "Supply a versioned software component inventory for the ground-station application.",
+        "category": "assurance",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "inventory"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R11",
+        "wording": "Declare encryption at rest enabled for the local inspection record store.",
+        "category": "assurance",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R12",
+        "wording": "Commit to a hardware warranty lasting at least twenty-four months after acceptance.",
+        "category": "support",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 24,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R13",
+        "wording": "Commit to a repair or replacement turnaround within twenty business days for accepted warranty cases.",
+        "category": "support",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "days",
+        "comparator": "lte",
+        "target": 20,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R14",
+        "wording": "Identify a contact process for reporting reproducible software defects and suspected security issues.",
+        "category": "assurance",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R15",
+        "wording": "Commit to a supported maintenance release at intervals no greater than six months.",
+        "category": "support",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "lte",
+        "target": 6,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R16",
+        "wording": "Commit to returning buyer inspection records in documented formats on contract exit.",
+        "category": "data",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R17",
+        "wording": "Commit to deleting supplier-held inspection copies within thirty days after a verified deletion request, subject to stated exceptions.",
+        "category": "data",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "days",
+        "comparator": "lte",
+        "target": 30,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R18",
+        "wording": "For configurations with the thermal option, export thermal-image metadata in a documented file format.",
+        "category": "data",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "P02",
+          "P04",
+          "P06",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "na_reason": "Standard configurations do not include the thermal option; thermal metadata export is outside their purchased scope.",
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R19",
+        "wording": "State nominal endurance for comparison under the supplier's declared synthetic test conditions.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "independent_test"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 25,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 25,
+          "high": 55,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R20",
+        "wording": "State the available civilian inspection payload allowance.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "gte",
+        "target": 500,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 500,
+          "high": 2000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R21",
+        "wording": "Compare nominal survey coverage in the supplier's invented measurement fixture.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "hectares",
+        "comparator": "gte",
+        "target": 10,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 10,
+          "high": 40,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R22",
+        "wording": "Compare the documented interval between stored inspection images.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "seconds",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 0.5,
+          "high": 2,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R23",
+        "wording": "Compare included instructor-led training time in minutes.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 240,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 240,
+          "high": 1440,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R24",
+        "wording": "Compare offline storage capacity for inspection records.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "records",
+        "comparator": "gte",
+        "target": 1000,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 1000,
+          "high": 10000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R25",
+        "wording": "Compare packed equipment mass for manual transport planning.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "lte",
+        "target": 10000,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 3000,
+          "high": 10000,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R26",
+        "wording": "Compare the committed initial response time for a support request during service hours, measured in minutes.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "minutes",
+        "comparator": "lte",
+        "target": 2880,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 120,
+          "high": 2880,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R27",
+        "wording": "Compare the duration of the spare-parts availability commitment.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 24,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 24,
+          "high": 72,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R28",
+        "wording": "Compare included refresher-training sessions over the planning horizon.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "sessions",
+        "comparator": "gte",
+        "target": 0,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 0,
+          "high": 6,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R29",
+        "wording": "Compare the declared upper ambient temperature for the offered configuration.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "degC",
+        "comparator": "gte",
+        "target": 30,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 30,
+          "high": 50,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R30",
+        "wording": "Compare nominal battery charging time under the supplier's declared fixture conditions.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "minutes",
+        "comparator": "lte",
+        "target": 120,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 30,
+          "high": 120,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R31",
+        "wording": "Compare the fraction of the buyer's listed maintenance tasks addressed in the supplied draft handbook.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "pct",
+        "comparator": "gte",
+        "target": 50,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 50,
+          "high": 100,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R32",
+        "wording": "Compare the committed advance notice of support-branch retirement.",
+        "category": "support",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 3,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 3,
+          "high": 18,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R33",
+        "wording": "Identify the training delivery format offered for buyer review.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R34",
+        "wording": "Identify the offered civilian imaging payload type.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R35",
+        "wording": "Identify the supplied equipment handling manual.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R36",
+        "wording": "Describe the software inventory's stated completeness boundary.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "inventory"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R37",
+        "wording": "State the proposed supplier-side processing region for any voluntarily submitted diagnostic files.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R38",
+        "wording": "Identify the proposed maintenance service location at a general administrative level.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R39",
+        "wording": "Provide the supplier's administrative quotation reference.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R40",
+        "wording": "Describe the supplier's stated intended civilian use boundary.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      }
+    ],
+    "v2": [
+      {
+        "id": "R01",
+        "wording": "Supply at least six aircraft in the civilian inspection fleet.",
+        "category": "fleet",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 6,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R02",
+        "wording": "Include at least eighteen flight batteries in the delivered fleet package.",
+        "category": "fleet",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 18,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R03",
+        "wording": "Commit to software maintenance and support for at least forty-eight months after acceptance.",
+        "category": "support",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 48,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R04",
+        "wording": "Provide a supplied independent-test report recording nominal position repeatability at or below two metres in its defined synthetic fixture.",
+        "category": "assurance",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "independent_test"
+        ],
+        "unit": "m",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R05",
+        "wording": "Commit to fleet delivery no later than twelve weeks after order acceptance.",
+        "category": "delivery",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "weeks",
+        "comparator": "lte",
+        "target": 12,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R06",
+        "wording": "Export inspection records in a documented CSV format without a separate access fee.",
+        "category": "data",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R07",
+        "wording": "Declare a minimum operating temperature at or below zero degrees Celsius.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "degC",
+        "comparator": "lte",
+        "target": 0,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R08",
+        "wording": "Declare an aircraft mass no greater than 2500 grams for buyer handling review.",
+        "category": "fleet",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "lte",
+        "target": 2500,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R09",
+        "wording": "Permit local review of stored inspection records while disconnected from the internet.",
+        "category": "data",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R10",
+        "wording": "Supply a versioned software component inventory for the ground-station application.",
+        "category": "assurance",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "inventory"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R11",
+        "wording": "Declare encryption at rest enabled for the local inspection record store.",
+        "category": "assurance",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R12",
+        "wording": "Commit to a hardware warranty lasting at least twenty-four months after acceptance.",
+        "category": "support",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 24,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R13",
+        "wording": "Commit to a repair or replacement turnaround within twenty business days for accepted warranty cases.",
+        "category": "support",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "days",
+        "comparator": "lte",
+        "target": 20,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R14",
+        "wording": "Identify a contact process for reporting reproducible software defects and suspected security issues.",
+        "category": "assurance",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R15",
+        "wording": "Commit to a supported maintenance release at intervals no greater than six months.",
+        "category": "support",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "lte",
+        "target": 6,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R16",
+        "wording": "Commit to returning buyer inspection records in documented formats on contract exit.",
+        "category": "data",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R17",
+        "wording": "Commit to deleting supplier-held inspection copies within thirty days after a verified deletion request, subject to stated exceptions.",
+        "category": "data",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "days",
+        "comparator": "lte",
+        "target": 30,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R18",
+        "wording": "For configurations with the thermal option, export thermal-image metadata in a documented file format.",
+        "category": "data",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "P02",
+          "P04",
+          "P06",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "na_reason": "Standard configurations do not include the thermal option; thermal metadata export is outside their purchased scope.",
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "eq",
+        "target": "yes",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R19",
+        "wording": "State nominal endurance for comparison under the supplier's declared synthetic test conditions.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "independent_test"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 25,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 25,
+          "high": 55,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R20",
+        "wording": "State the available civilian inspection payload allowance.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "gte",
+        "target": 500,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 500,
+          "high": 2000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R21",
+        "wording": "Compare nominal survey coverage in the supplier's invented measurement fixture.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "hectares",
+        "comparator": "gte",
+        "target": 10,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 10,
+          "high": 40,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R22",
+        "wording": "Compare the documented interval between stored inspection images.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "seconds",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 0.5,
+          "high": 2,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R23",
+        "wording": "Compare included instructor-led training time in minutes.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 240,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 240,
+          "high": 1440,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R24",
+        "wording": "Compare offline storage capacity for inspection records.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "records",
+        "comparator": "gte",
+        "target": 1000,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 1000,
+          "high": 10000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R25",
+        "wording": "Compare packed equipment mass for manual transport planning.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "lte",
+        "target": 10000,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 3000,
+          "high": 10000,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R26",
+        "wording": "Compare the committed initial response time for a support request during service hours, measured in minutes.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "minutes",
+        "comparator": "lte",
+        "target": 2880,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 120,
+          "high": 2880,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R27",
+        "wording": "Compare the duration of the spare-parts availability commitment.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 24,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 24,
+          "high": 72,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R28",
+        "wording": "Compare included refresher-training sessions over the planning horizon.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "sessions",
+        "comparator": "gte",
+        "target": 0,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 0,
+          "high": 6,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R29",
+        "wording": "Compare the declared upper ambient temperature for the offered configuration.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "degC",
+        "comparator": "gte",
+        "target": 30,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 30,
+          "high": 50,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R30",
+        "wording": "Compare nominal battery charging time under the supplier's declared fixture conditions.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "minutes",
+        "comparator": "lte",
+        "target": 120,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 30,
+          "high": 120,
+          "direction": "lower"
+        }
+      },
+      {
+        "id": "R31",
+        "wording": "Compare the fraction of the buyer's listed maintenance tasks addressed in the supplied draft handbook.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "pct",
+        "comparator": "gte",
+        "target": 50,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 50,
+          "high": 100,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R32",
+        "wording": "Compare the committed advance notice of support-branch retirement.",
+        "category": "support",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 3,
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 3,
+          "high": 18,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R33",
+        "wording": "Identify the training delivery format offered for buyer review.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R34",
+        "wording": "Identify the offered civilian imaging payload type.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R35",
+        "wording": "Identify the supplied equipment handling manual.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R36",
+        "wording": "Describe the software inventory's stated completeness boundary.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "inventory"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R37",
+        "wording": "State the proposed supplier-side processing region for any voluntarily submitted diagnostic files.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R38",
+        "wording": "Identify the proposed maintenance service location at a general administrative level.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R39",
+        "wording": "Provide the supplier's administrative quotation reference.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R40",
+        "wording": "Describe the supplier's stated intended civilian use boundary.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-17",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "P01-spec-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P01-spec-v1.md",
+      "title": "Alder Survey Lite — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P01-quote-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P01-quote-v1.md",
+      "title": "Alder Survey Lite — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P01-terms-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P01-terms-v1.md",
+      "title": "Alder Survey Lite — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P02-spec-v1",
+      "package_id": "P02",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P02-spec-v1.md",
+      "title": "Alder Survey Plus — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P02-quote-v1",
+      "package_id": "P02",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P02-quote-v1.md",
+      "title": "Alder Survey Plus — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P02-terms-v1",
+      "package_id": "P02",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P02-terms-v1.md",
+      "title": "Alder Survey Plus — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P03-spec-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P03-spec-v1.md",
+      "title": "Birch Inspect Standard — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P03-quote-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P03-quote-v1.md",
+      "title": "Birch Inspect Standard — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P03-terms-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P03-terms-v1.md",
+      "title": "Birch Inspect Standard — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P04-spec-v1",
+      "package_id": "P04",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P04-spec-v1.md",
+      "title": "Birch Inspect Thermal — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P04-quote-v1",
+      "package_id": "P04",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P04-quote-v1.md",
+      "title": "Birch Inspect Thermal — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P04-terms-v1",
+      "package_id": "P04",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P04-terms-v1.md",
+      "title": "Birch Inspect Thermal — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P05-spec-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P05-spec-v1.md",
+      "title": "Cobalt Terrain Base — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P05-quote-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P05-quote-v1.md",
+      "title": "Cobalt Terrain Base — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P05-terms-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P05-terms-v1.md",
+      "title": "Cobalt Terrain Base — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P06-spec-v1",
+      "package_id": "P06",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P06-spec-v1.md",
+      "title": "Cobalt Terrain Thermal — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P06-quote-v1",
+      "package_id": "P06",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P06-quote-v1.md",
+      "title": "Cobalt Terrain Thermal — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P06-terms-v1",
+      "package_id": "P06",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P06-terms-v1.md",
+      "title": "Cobalt Terrain Thermal — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P07-spec-v1",
+      "package_id": "P07",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P07-spec-v1.md",
+      "title": "Dovetail Range Standard — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P07-quote-v1",
+      "package_id": "P07",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P07-quote-v1.md",
+      "title": "Dovetail Range Standard — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P07-terms-v1",
+      "package_id": "P07",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P07-terms-v1.md",
+      "title": "Dovetail Range Standard — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P08-spec-v1",
+      "package_id": "P08",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P08-spec-v1.md",
+      "title": "Dovetail Range Thermal — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P08-quote-v1",
+      "package_id": "P08",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P08-quote-v1.md",
+      "title": "Dovetail Range Thermal — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P08-terms-v1",
+      "package_id": "P08",
+      "supplier_id": "S04",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P08-terms-v1.md",
+      "title": "Dovetail Range Thermal — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P09-spec-v1",
+      "package_id": "P09",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P09-spec-v1.md",
+      "title": "Elm Survey Standard — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P09-quote-v1",
+      "package_id": "P09",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P09-quote-v1.md",
+      "title": "Elm Survey Standard — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P09-terms-v1",
+      "package_id": "P09",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P09-terms-v1.md",
+      "title": "Elm Survey Standard — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P10-spec-v1",
+      "package_id": "P10",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P10-spec-v1.md",
+      "title": "Elm Survey Thermal — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P10-quote-v1",
+      "package_id": "P10",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P10-quote-v1.md",
+      "title": "Elm Survey Thermal — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P10-terms-v1",
+      "package_id": "P10",
+      "supplier_id": "S05",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P10-terms-v1.md",
+      "title": "Elm Survey Thermal — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P11-spec-v1",
+      "package_id": "P11",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P11-spec-v1.md",
+      "title": "Fenland Service Standard — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P11-quote-v1",
+      "package_id": "P11",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P11-quote-v1.md",
+      "title": "Fenland Service Standard — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P11-terms-v1",
+      "package_id": "P11",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P11-terms-v1.md",
+      "title": "Fenland Service Standard — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P12-spec-v1",
+      "package_id": "P12",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P12-spec-v1.md",
+      "title": "Fenland Service Thermal — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P12-quote-v1",
+      "package_id": "P12",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P12-quote-v1.md",
+      "title": "Fenland Service Thermal — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P12-terms-v1",
+      "package_id": "P12",
+      "supplier_id": "S06",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P12-terms-v1.md",
+      "title": "Fenland Service Thermal — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    }
+  ],
+  "amendments": [
+    {
+      "id": "AMD01",
+      "title": "Birch support commitment shortened",
+      "description": "Replaces P03 terms with a twenty-four-month support commitment while retaining the other terms and exposure declaration.",
+      "documents": [
+        {
+          "id": "P03-terms-v2",
+          "package_id": "P03",
+          "supplier_id": "S02",
+          "version": 2,
+          "kind": "terms",
+          "path": "documents/P03-terms-v2.md",
+          "title": "Birch Inspect Standard — support, delivery, and exposure declaration",
+          "issued": "2026-10-17",
+          "supersedes": [
+            "P03-terms-v1"
+          ],
+          "layout": "labels"
+        }
+      ]
+    },
+    {
+      "id": "AMD02",
+      "title": "Birch Thermal maintenance cadence supplied",
+      "description": "Supplies the missing R15 commitment and replaces the entire P04 terms document.",
+      "documents": [
+        {
+          "id": "P04-terms-v2",
+          "package_id": "P04",
+          "supplier_id": "S02",
+          "version": 2,
+          "kind": "terms",
+          "path": "documents/P04-terms-v2.md",
+          "title": "Birch Inspect Thermal — support, delivery, and exposure declaration",
+          "issued": "2026-10-17",
+          "supersedes": [
+            "P04-terms-v1"
+          ],
+          "layout": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "AMD03",
+      "title": "Cobalt temperature contradiction resolved",
+      "description": "Supersedes the entire P06 specification and replaces its two R07 values with one current declaration.",
+      "documents": [
+        {
+          "id": "P06-spec-v2",
+          "package_id": "P06",
+          "supplier_id": "S03",
+          "version": 2,
+          "kind": "spec",
+          "path": "documents/P06-spec-v2.md",
+          "title": "Cobalt Terrain Thermal — product specification and synthetic laboratory attachment",
+          "issued": "2026-10-17",
+          "supersedes": [
+            "P06-spec-v1"
+          ],
+          "layout": "table"
+        }
+      ]
+    }
+  ]
+}

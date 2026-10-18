@@ -1,0 +1,25 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.archlinux.org>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Setting SIM_SPEEDUP=4.000000
+Suggested EK3_DRAG_BCOEF_* = 16.288, EK3_DRAG_MCOEF = 0.209
+Home: 0.010000 0.010000 alt=0.000000m hdg=0.000000
+Starting sketch 'ArduCopter'
+Starting SITL input
+Using Irlock at port : 9005
+Loaded defaults from /research/project11-autopilot-failsafe/config/upstream-copter.parm,/research/project11-autopilot-failsafe/config/lab.parm,/research/project11-autopilot-failsafe/evidence/development/baseline-01/overrides.parm
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00000000007a4e8b in __strcasecmp_l_avx ()
+#0  0x00000000007a4e8b in __strcasecmp_l_avx ()
+#1  0x00000000004c4c22 in AP_Param::find(char const*, ap_var_type*, unsigned short*) ()
+#2  0x00000000004c923a in AP_Param::set_default_by_name(char const*, float) ()
+#3  0x00000000005bbaf9 in HALSITL::Util::set_cmdline_parameters() ()
+#4  0x00000000004c8505 in AP_Param::load_all() ()
+#5  0x000000000041080f in Copter::load_parameters() ()
+#6  0x00000000004dc0a1 in AP_Vehicle::setup() ()
+#7  0x00000000005b56bd in HAL_SITL::run(int, char* const*, AP_HAL::HAL::Callbacks*) const ()
+#8  0x0000000000403a54 in main ()

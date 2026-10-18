@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/sitl.stdout",
+  "3": "socket:[326219]",
+  "4": "socket:[326220]",
+  "5": "socket:[326221]",
+  "6": "socket:[326222]",
+  "7": "socket:[326223]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/eeprom.bin",
+  "9": "socket:[326224]"
+}

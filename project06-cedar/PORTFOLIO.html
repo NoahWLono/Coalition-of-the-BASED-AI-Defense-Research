@@ -1,0 +1,72 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | Noah Weinberger</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body>
+<header><div><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><div class="eyebrow">Project 6 / Noah Weinberger / AI-assisted engineering portfolio</div><h1>CEDAR<br>Evidence behind a procurement decision.</h1><p class="lead">A local workbench that connects requirements to supplier evidence, exposes commercial uncertainty, and preserves decisions when the inputs change.</p></div></header>
+<main><div class="note"><strong>Synthetic civilian demonstration.</strong> Fictional suppliers, unarmed inspection packages and synthetic software advisories. No customer validation, physical product testing or contractor endorsement is claimed.</div>
+<p><span class="pill">12 configurations</span><span class="pill">40 requirements</span><span class="pill">36 base documents</span><span class="pill">601 baseline assertions</span></p>
+<div class="actions"><a href="http://127.0.0.1:8765">Open the running local application</a><a href="README.md">Source and reproduction guide</a><a href="output/html/README.html">Launch instructions</a></div>
+<div class="grid"><section class="card"><h2>Start the meeting</h2><p>Read the concise management brief, then follow the recorded change-and-review story.</p><ul><li><a href="output/html/EXECUTIVE_BRIEF_EN.html">Executive brief - English</a></li><li><a href="output/html/EXECUTIVE_BRIEF_FR.html">Note de synthèse - français</a></li><li><a href="output/pdf/cedar-executive-briefs.pdf">Bilingual brief PDF</a></li></ul></section><section class="card"><h2>Inspect the engineering</h2><p>Trace the evidence model, arithmetic, failure corrections and adoption limits.</p><ul><li><a href="output/html/CASE_STUDY.html">Technical case study</a></li><li><a href="output/pdf/cedar-technical-portfolio.pdf">Technical portfolio PDF</a></li><li><a href="output/html/ARCHITECTURE.html">Architecture and boundaries</a></li><li><a href="output/html/THREAT_MODEL.html">Threat model</a></li></ul></section><section class="card"><h2>Verify the result</h2><p>Open the portable decision, inspect its exact evidence, and reproduce the checks.</p><ul><li><a href="artifacts/sample-decision/report.html">Sample decision report</a></li><li><a href="artifacts/full-decision.zip">Portable decision ZIP</a></li><li><a href="output/html/CLAIMS_LEDGER.html">Claims ledger</a></li><li><a href="output/html/COMPLETION_REPORT.html">Completion report</a></li></ul></section><section class="card"><h2>Prepare the next conversation</h2><p>Use a bounded pilot proposal and implementation-grounded interview answers.</p><ul><li><a href="output/html/PILOT_PROPOSAL.html">Four-week pilot</a></li><li><a href="output/html/INTERVIEW.html">Ten technical questions</a></li><li><a href="output/html/DEMO_SCRIPT.html">Narration script</a></li><li><a href="output/html/README.html">Setup and reproduction</a></li></ul></section></div>
+<h2>The demonstration</h2><p>Start with an incomplete low quotation. Inspect the evidence, change the cost assumption, review a decision, then apply a supplier amendment. The previous approval becomes stale. A new conditional record preserves the open question.</p>
+<video controls preload="metadata" poster="artifacts/screenshots/overview.png"><source src="artifacts/cedar-demo.webm" type="video/webm"></video><p>Historical application capture, silent, recorded before the dark theme update. The recording and PDFs preserve the original light appearance. The accompanying narration script is a separate rehearsal guide. Recorded workflow duration: 213.5 seconds, including browser finalization; the encoded video duration is recorded in the completion report.</p>
+<h2>Evidence available for inspection</h2><p>The recorded synthetic evaluation compares 2,952 requirement states with separately authored expected results. No state mismatches or unsupported baseline citations were observed. The three text layouts were designed for this parser; this result does not establish accuracy on unseen customer files.</p>
+<div class="grid"><figure><a href="artifacts/screenshots/overview.png"><img src="artifacts/screenshots/overview.png" alt="Actual application: procurement overview" loading="lazy"></a><figcaption>Actual application: procurement overview · historical light appearance</figcaption></figure><figure><a href="artifacts/screenshots/evidence.png"><img src="artifacts/screenshots/evidence.png" alt="Exact original passage and source version" loading="lazy"></a><figcaption>Exact original passage and source version · historical light appearance</figcaption></figure><figure><a href="artifacts/screenshots/sensitivity.png"><img src="artifacts/screenshots/sensitivity.png" alt="Declared weight sensitivity" loading="lazy"></a><figcaption>Declared weight sensitivity · historical light appearance</figcaption></figure><figure><a href="artifacts/screenshots/changes.png"><img src="artifacts/screenshots/changes.png" alt="Amendment effects and stale approvals" loading="lazy"></a><figcaption>Amendment effects and stale approvals · historical light appearance</figcaption></figure></div>
+<footer>Synthetic portfolio, prepared October 2026. Historical checks and appearance are identified in the <a href="output/html/THEME_REFRESH.html">theme update record</a>. <a href="output/html/LIMITATIONS.html">Limits</a> · <a href="output/html/THIRD_PARTY.html">Attribution</a> · <a href="artifacts/evaluation.json">Machine-readable evaluation</a></footer></main></body></html>

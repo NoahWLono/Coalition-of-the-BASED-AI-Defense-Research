@@ -1,0 +1,1169 @@
+{
+  "schema_version": 1,
+  "stage": "full",
+  "expected_runs": 58,
+  "completed_runs": 58,
+  "wall_duration_s": 1902.0731141420001,
+  "runs": [
+    {
+      "run": "4.5.6/00-baseline/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "00-baseline",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/00-baseline.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/00-baseline/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/02-battery-low/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/03-rc-loss/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "03-rc-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/03-rc-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/03-rc-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/04-gcs-recovery/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "04-gcs-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/04-gcs-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/04-gcs-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/05-rc-recovery/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "05-rc-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/05-rc-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/05-rc-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/06-battery-recovery/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "06-battery-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/06-battery-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/07-gcs-transient/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "07-gcs-transient",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/07-gcs-transient.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/08-battery-transient/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "08-battery-transient",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/08-battery-transient.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/08-battery-transient/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/10-gcs-rc-compound/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "10-gcs-rc-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/10-gcs-rc-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "11-gcs-battery-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/11-gcs-battery-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/12-gps-rc-compound/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "12-gps-rc-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/12-gps-rc-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/12-gps-rc-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/00-baseline/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "00-baseline",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/00-baseline.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/00-baseline/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/01-gcs-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/02-battery-low/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/03-rc-loss/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "03-rc-loss",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/03-rc-loss.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/03-rc-loss/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/04-gcs-recovery/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "04-gcs-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/04-gcs-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/04-gcs-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/05-rc-recovery/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "05-rc-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/05-rc-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/06-battery-recovery/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "06-battery-recovery",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/06-battery-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/06-battery-recovery/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/07-gcs-transient/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "07-gcs-transient",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/07-gcs-transient.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/07-gcs-transient/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/08-battery-transient/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "08-battery-transient",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/08-battery-transient.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/08-battery-transient/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/09-gps-stale/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/10-gcs-rc-compound/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "10-gcs-rc-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/10-gcs-rc-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "11-gcs-battery-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/11-gcs-battery-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/12-gps-rc-compound/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "12-gps-rc-compound",
+      "schedule_offset_s": 0,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/12-gps-rc-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/12-gps-rc-compound/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/02-battery-low/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/03-rc-loss/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "03-rc-loss",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/03-rc-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/03-rc-loss/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/04-gcs-recovery/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "04-gcs-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/04-gcs-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/04-gcs-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/05-rc-recovery/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "05-rc-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/05-rc-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/05-rc-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/06-battery-recovery/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "06-battery-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/06-battery-recovery.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/07-gcs-transient/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "07-gcs-transient",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/07-gcs-transient.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/08-battery-transient/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "08-battery-transient",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/08-battery-transient.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/08-battery-transient/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/10-gcs-rc-compound/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "10-gcs-rc-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/10-gcs-rc-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "11-gcs-battery-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/11-gcs-battery-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/12-gps-rc-compound/schedule-0.7",
+      "version": "4.5.6",
+      "scenario_id": "12-gps-rc-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/12-gps-rc-compound.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/12-gps-rc-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.6/01-gcs-loss/schedule-1.4",
+      "version": "4.5.6",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/01-gcs-loss/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.6/02-battery-low/schedule-1.4",
+      "version": "4.5.6",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/02-battery-low/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.6/09-gps-stale/schedule-1.4",
+      "version": "4.5.6",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.6/90-disabled-gcs-control/schedule-0.0",
+      "version": "4.5.6",
+      "scenario_id": "90-disabled-gcs-control",
+      "schedule_offset_s": 0,
+      "outcome": "FAIL",
+      "negative_control": true,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/90-disabled-gcs-control.json",
+        "--version",
+        "4.5.6",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.6/90-disabled-gcs-control/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/01-gcs-loss/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/02-battery-low/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/03-rc-loss/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "03-rc-loss",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/03-rc-loss.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/03-rc-loss/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/04-gcs-recovery/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "04-gcs-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/04-gcs-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/04-gcs-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/05-rc-recovery/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "05-rc-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/05-rc-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/06-battery-recovery/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "06-battery-recovery",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/06-battery-recovery.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/06-battery-recovery/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/07-gcs-transient/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "07-gcs-transient",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/07-gcs-transient.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/07-gcs-transient/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/08-battery-transient/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "08-battery-transient",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/08-battery-transient.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/08-battery-transient/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/09-gps-stale/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/10-gcs-rc-compound/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "10-gcs-rc-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/10-gcs-rc-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "11-gcs-battery-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "FAIL",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/11-gcs-battery-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/12-gps-rc-compound/schedule-0.7",
+      "version": "4.5.7",
+      "scenario_id": "12-gps-rc-compound",
+      "schedule_offset_s": 0.7,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/12-gps-rc-compound.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/12-gps-rc-compound/schedule-0.7",
+        "--offset",
+        "0.7"
+      ]
+    },
+    {
+      "run": "4.5.7/01-gcs-loss/schedule-1.4",
+      "version": "4.5.7",
+      "scenario_id": "01-gcs-loss",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/01-gcs-loss.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/01-gcs-loss/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.7/02-battery-low/schedule-1.4",
+      "version": "4.5.7",
+      "scenario_id": "02-battery-low",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/02-battery-low.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/02-battery-low/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.7/09-gps-stale/schedule-1.4",
+      "version": "4.5.7",
+      "scenario_id": "09-gps-stale",
+      "schedule_offset_s": 1.4,
+      "outcome": "PASS",
+      "negative_control": false,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/09-gps-stale.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/09-gps-stale/schedule-1.4",
+        "--offset",
+        "1.4"
+      ]
+    },
+    {
+      "run": "4.5.7/90-disabled-gcs-control/schedule-0.0",
+      "version": "4.5.7",
+      "scenario_id": "90-disabled-gcs-control",
+      "schedule_offset_s": 0,
+      "outcome": "FAIL",
+      "negative_control": true,
+      "command": [
+        "bash",
+        "/research/project11-autopilot-failsafe/scripts/isolated-case.sh",
+        "--scenario",
+        "/research/project11-autopilot-failsafe/scenarios/90-disabled-gcs-control.json",
+        "--version",
+        "4.5.7",
+        "--output",
+        "/research/project11-autopilot-failsafe/evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0",
+        "--offset",
+        "0"
+      ]
+    }
+  ]
+}

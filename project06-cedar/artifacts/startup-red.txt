@@ -1,0 +1,19 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________ test_missing_requested_corpus_does_not_silently_fall_back ___________
+
+tmp_path = PosixPath('/tmp/pytest-of-noah/pytest-28/test_missing_requested_corpus_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ffa969ec3e0>
+
+    def test_missing_requested_corpus_does_not_silently_fall_back(tmp_path,monkeypatch):
+        import pytest
+        monkeypatch.setenv('CEDAR_CORPUS',str(tmp_path/'missing'))
+        monkeypatch.setenv('CEDAR_DB',str(tmp_path/'db'))
+>       with pytest.raises(FileNotFoundError):create_app()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE FileNotFoundError
+
+tests/test_api.py:54: Failed
+=========================== short test summary info ============================
+FAILED tests/test_api.py::test_missing_requested_corpus_does_not_silently_fall_back
+1 failed in 1.03s

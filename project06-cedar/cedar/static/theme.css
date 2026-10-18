@@ -1,0 +1,41 @@
+/* Dark is the no-storage/no-script default; the original light palette is retained. */
+:root { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root:not([data-theme="light"]) {
+  --slate:#0d1822; --navy:#102535; --ink:#e1edf4; --teal:#78d3d0;
+  --amber:#eec17b; --white:#152735; --muted:#a8becd; --line:#354e5e;
+  --soft:#213949; --danger:#f1a49b; --green:#8bd8b7;
+}
+.theme-control { display:inline-flex; align-items:center; gap:7px; font-size:11px; font-weight:600; color:var(--muted); white-space:nowrap; }
+.theme-control select { min-height:34px; padding:6px 26px 6px 9px; font-size:12px; }
+:root:not([data-theme="light"]) :is(.summary-strip,.panel,.toolbar,.matrix td:first-child,.drawer-header,.assertion-card,dialog,.button,.skip-link,input,select,textarea) { background:var(--white); color:var(--ink); }
+:root:not([data-theme="light"]) :is(.button,input,select,textarea,.session-button,.state-button:hover) { border-color:var(--line); }
+:root:not([data-theme="light"]) :is(th,.cost-breakdown,.snapshot-rationale,.source-lines,.policy-reference,.table-note,.tag) { background:#192e3e; color:var(--ink); }
+:root:not([data-theme="light"]) :is(th,.breadcrumb,.demo-label,.package-id,.workspace-footer,.source-lines .line-number,label,.field label,.evidence-excerpt,.callout p) { color:var(--muted); }
+:root:not([data-theme="light"]) :is(td,.compact-list li,.assurance-hashes) { border-color:var(--line); }
+:root:not([data-theme="light"]) :is(tbody tr:hover td,.matrix tbody tr:hover td:first-child,.assertion-card:hover,.button:hover,.state-button:hover) { background:var(--soft); border-color:#638294; }
+:root:not([data-theme="light"]) .button.primary { background:var(--teal); color:#102535; border-color:var(--teal); }
+:root:not([data-theme="light"]) .button.primary:hover { background:#a0e4df; }
+:root:not([data-theme="light"]) .button.subtle { background:transparent; border-color:transparent; color:var(--teal); }
+:root:not([data-theme="light"]) .button.danger { color:var(--danger); border-color:#87564f; }
+:root:not([data-theme="light"]) .callout { background:#142f35; border-color:#355f65; border-left-color:var(--teal); }
+:root:not([data-theme="light"]) :is(.callout.amber,.notice.error) { background:#352c1d; border-color:#78603b; border-left-color:var(--amber); color:#f0d4a6; }
+:root:not([data-theme="light"]) .citation { background:#15373c; border-color:#35646b; border-left-color:var(--teal); }
+:root:not([data-theme="light"]) .source-lines li.highlighted { background:#254e50; }
+:root:not([data-theme="light"]) .source-pill { background:#23464d; }
+:root:not([data-theme="light"]) :is(input:disabled,select:disabled,textarea:disabled) { background:#1c2b36; color:var(--muted); }
+:root:not([data-theme="light"]) .state-badge { background:#2b3d4d; color:#bacbd7; }
+:root:not([data-theme="light"]) :is(.state-supported,.state-eligible,.state-fixed,.state-unaffected,.state-approved,.state-accepted) { background:#1d4639; color:#9ce2be; }
+:root:not([data-theme="light"]) :is(.state-unresolved,.state-conditional,.state-draft,.state-unreviewed,.state-stale) { background:#44351f; color:#f0cc8d; }
+:root:not([data-theme="light"]) :is(.state-not_satisfied,.state-affected,.state-rejected,.form-error) { background:#492e2d; color:#f7b1a8; }
+:root:not([data-theme="light"]) .state-conflicting { background:#422f48; color:#e2b5df; }
+:root:not([data-theme="light"]) .state-reviewed { background:#20444e; color:#a0dae4; }
+:root:not([data-theme="light"]) .notice { background:#183d32; border-color:#3e7562; color:#b7e3cd; }
+:root:not([data-theme="light"]) .score-track { background:#3a5161; }
+:root:not([data-theme="light"]) .score-track span { background:#82d4d4; }
+:root:not([data-theme="light"]) dialog::backdrop { background:#020b13b8; }
+@media(max-width:720px) {
+  .topbar { height:auto; min-height:60px; padding-top:10px; padding-bottom:10px; flex-wrap:wrap; }
+  .topbar-actions { flex-wrap:wrap; }
+  .theme-control select { min-height:36px; }
+}

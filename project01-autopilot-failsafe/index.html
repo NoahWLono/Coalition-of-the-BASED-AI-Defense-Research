@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Explore the retained 58-run ArduCopter SITL failsafe experiment, original outcomes, and separate retrospective assertion replay.">
+<title>Project 1 · Autopilot failsafe laboratory · Saved experiment</title>
+<script>(() => {
+  'use strict';
+  const key = 'failsafelab-theme';
+  const modes = new Set(['dark', 'light', 'system']);
+  const media = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  let preference = 'dark';
+  try {
+    const saved = window.localStorage.getItem(key);
+    if (modes.has(saved)) preference = saved;
+  } catch (_) { /* Storage can be unavailable for local files or private contexts. */ }
+  const apply = () => {
+    const theme = preference === 'system' ? (media && media.matches ? 'dark' : 'light') : preference;
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+  };
+  apply();
+  const systemChanged = () => { if (preference === 'system') apply(); };
+  if (media && media.addEventListener) media.addEventListener('change', systemChanged);
+  else if (media && media.addListener) media.addListener(systemChanged);
+  window.flightLabTheme = {
+    get: () => preference,
+    set: (value) => {
+      if (!modes.has(value)) return;
+      preference = value;
+      apply();
+      try { window.localStorage.setItem(key, value); } catch (_) { /* Keep the session choice. */ }
+    }
+  };
+})();
+</script>
+<style>:root {
+  color-scheme: dark;
+  --page: #131c2a; --panel: #1b283a; --raised: #26364c; --text: #edf2f8;
+  --muted: #b7c5d7; --rule: #53627a; --link: #a8d4ff; --focus: #f5cc7d;
+  --pass: #a0e7c9; --pass-bg: #203f3a; --warn: #ffdb9a; --warn-bg: #493b26;
+  --fail: #ffc0cd; --fail-bg: #4b2c3a; --blue: #8bb8f4; --violet: #c8b5f0; --bar-text: #122235;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #f4f7fb; --panel: #ffffff; --raised: #e5edf7; --text: #1b2a40;
+  --muted: #465970; --rule: #9cabbe; --link: #124f96; --focus: #8a4900;
+  --pass: #146044; --pass-bg: #d9f1e5; --warn: #704400; --warn-bg: #ffedc7;
+  --fail: #96273d; --fail-bg: #ffe0e7; --blue: #b0cff5; --violet: #d3c4f2; --bar-text: #122235;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--page); color: var(--text); font: 16px/1.6 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+a { color: var(--link); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: .16em; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.skip { position: absolute; top: -100px; left: 16px; padding: 10px; background: var(--panel); z-index: 2; }
+.skip:focus { top: 12px; }
+.shell { max-width: 1240px; margin: auto; padding: 0 32px; }
+header { border-bottom: 1px solid var(--rule); }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 20px; }
+.brand { font-weight: 650; }
+nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.theme-control { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+select, input, button { font: inherit; border: 1px solid var(--rule); border-radius: 5px; background: var(--panel); color: var(--text); padding: 8px 12px; min-height: 44px; }
+button { cursor: pointer; }
+button:hover { background: var(--raised); }
+main { padding-block: 48px 64px; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font: 500 clamp(2.4rem, 5vw, 4.4rem)/1.06 Georgia, 'Times New Roman', serif; max-width: 800px; margin-bottom: 24px; letter-spacing: -.035em; }
+h2 { font-size: 1.65rem; line-height: 1.2; margin-bottom: 18px; letter-spacing: -.02em; }
+h3 { font-size: 1.08rem; line-height: 1.35; }
+p { max-width: 78ch; }
+.lede { font-size: 1.18rem; max-width: 70ch; color: var(--muted); }
+.scope { padding: 18px 22px; border-left: 4px solid var(--warn); background: var(--warn-bg); color: var(--warn); max-width: 100%; margin-block: 28px 36px; }
+.scope strong { display: block; }
+section { margin-top: 48px; scroll-margin-top: 20px; }
+.section-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; }
+.section-head p { color: var(--muted); }
+.outcome-panel { background: var(--panel); padding: 24px; border: 1px solid var(--rule); border-radius: 10px; }
+.outcome-track { display: flex; height: 16px; width: 100%; overflow: hidden; border-radius: 4px; gap: 3px; }
+.outcome-track .pass-segment { flex: 55; background: var(--pass); }
+.outcome-track .control-segment { flex: 2; background: var(--warn); }
+.outcome-track .mismatch-segment { flex: 1; background: var(--fail); }
+.outcomes { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr; gap: 24px; margin: 22px 0 0; }
+.outcomes div { border-left: 3px solid var(--pass); padding-left: 16px; }
+.outcomes div:nth-child(2) { border-color: var(--warn); }
+.outcomes div:nth-child(3) { border-color: var(--fail); }
+.outcomes dt { color: var(--muted); }
+.outcomes dd { margin: 0; font-size: 1.55rem; font-weight: 650; }
+.outcomes small { display: block; font-size: .86rem; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 14px 30px; padding: 20px 0; margin: 0; list-style: none; border-bottom: 1px solid var(--rule); }
+.facts strong { display: block; font-size: 1.2rem; }
+.facts li { flex: 1 1 175px; color: var(--muted); }
+.facts strong { color: var(--text); }
+.note { color: var(--muted); font-size: .95rem; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+caption { text-align: left; padding: 14px 18px; color: var(--muted); }
+th, td { padding: 14px 18px; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { font-size: .88rem; background: var(--raised); }
+tbody th { font-weight: 600; }
+tbody tr:hover { background: var(--raised); }
+small { display: block; font-size: .8rem; line-height: 1.5; color: var(--muted); font-weight: 400; margin-top: 3px; }
+.chart-table { min-width: 600px; table-layout: fixed; }
+.chart-table th:first-child { width: 36%; }
+.chart-table td { vertical-align: middle; }
+.latency { position: relative; isolation: isolate; }
+.bar { position: absolute; z-index: -1; inset: 8px auto 8px 0; background: var(--blue); border-right: 2px solid var(--link); }
+.bar.release-7 { background: var(--violet); border-color: var(--muted); }
+.bar-label { position: relative; display: inline-block; background: var(--panel); color: var(--text); border-radius: 4px; padding: 1px 5px; font-variant-numeric: tabular-nums; font-size: .9rem; }
+.revision { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; align-items: start; }
+.status { display: inline-block; border-radius: 4px; padding: 2px 8px; font-size: .8rem; font-weight: 700; white-space: nowrap; }
+.status.pass { color: var(--pass); background: var(--pass-bg); }
+.status.control { color: var(--warn); background: var(--warn-bg); }
+.status.mismatch { color: var(--fail); background: var(--fail-bg); }
+.filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px 18px; margin-block: 22px 14px; }
+.filters label { display: flex; flex-direction: column; gap: 5px; font-size: .9rem; }
+.filters .search { flex: 1 1 240px; }
+.filters input { width: 100%; }
+#run-count { margin-bottom: 12px; color: var(--muted); }
+#run-table { min-width: 970px; }
+#run-table th:first-child { min-width: 220px; }
+#run-table td:last-child { min-width: 180px; }
+.numeric { font-variant-numeric: tabular-nums; white-space: nowrap; }
+details { max-width: 280px; }
+summary { color: var(--link); cursor: pointer; font-size: .85rem; margin-top: 8px; }
+details p { font-size: .85rem; margin-top: 10px; }
+.evidence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.evidence-grid ul { padding-left: 20px; }
+.evidence-grid li { margin-bottom: 9px; }
+.pins { list-style: none; padding: 0 !important; }
+code { font: .8rem/1.6 ui-monospace, 'DejaVu Sans Mono', monospace; overflow-wrap: anywhere; }
+.pins code { display: block; color: var(--muted); margin-top: 4px; }
+footer { border-top: 1px solid var(--rule); padding-block: 24px 36px; color: var(--muted); }
+footer p { margin-bottom: 8px; }
+#empty { padding: 24px; background: var(--panel); }
+@media (max-width: 800px) {
+  .shell { padding-inline: 20px; }
+  .topbar { flex-wrap: wrap; gap: 14px; }
+  .topbar nav { order: 3; width: 100%; }
+  main { padding-top: 32px; }
+  .outcomes { grid-template-columns: 1fr; gap: 18px; }
+  .revision, .evidence-grid { grid-template-columns: 1fr; gap: 18px; }
+  section { margin-top: 36px; }
+  .table-scroll { border-radius: 4px; }
+}
+@media print {
+  :root { --page: white; --panel: white; --raised: #eee; --text: black; --muted: #333; --rule: #777; --link: #222; }
+  .theme-control, .filters, .skip, nav { display: none !important; }
+  .shell { max-width: none; padding: 0; }
+  .table-scroll { overflow: visible; }
+  #run-table { min-width: 0; font-size: 9px; }
+  th, td { padding: 5px; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to saved results</a>
+<header><div class="shell topbar">
+<span class="brand">Project 1 · Autopilot failsafe laboratory</span>
+<nav aria-label="Report sections"><a href="#comparison">Release comparison</a><a href="#runs">Run ledger</a><a href="#evidence">Evidence</a></nav>
+<label id="theme-control" class="theme-control" hidden>Theme <select id="theme" aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label>
+</div></header>
+<main id="main" class="shell">
+<h1>When inputs fail,<br>what does the autopilot do?</h1>
+<p class="lede">A saved experiment comparing ArduCopter 4.5.6 and 4.5.7 under twelve simulated fault scenarios. Explore original outcomes, observed mode transitions, and the evidence behind each result.</p>
+<p class="scope"><strong>Simulation evidence only</strong>These are real executions of software-in-the-loop (SITL) with a synthetic aircraft and fictional site. They do not establish operational flight safety. LAND denotes a telemetry mode transition; this viewer does not run a simulator.</p>
+<p class="note"><strong>Public evidence copies:</strong> host identifiers and local paths have been replaced with fictional values. Telemetry checksums and publication seals were refreshed; recorded flight observations were compared before and after redaction. <a href="docs/publication-redaction.md">Read the redaction record</a> and <a href="evidence/publication-redaction.json">verification results</a>. Private originals remain unchanged locally.</p>
+<div class="section-head"><h2>Original corpus 1.0.0</h2><p>58 of 58 planned simulator runs completed</p></div>
+<div class="outcome-panel">
+<div class="outcome-track" role="img" aria-label="Original outcomes: 55 PASS, 2 expected disabled-failsafe FAIL, 1 preserved text-assertion FAIL"><span class="pass-segment"></span><span class="control-segment"></span><span class="mismatch-segment"></span></div>
+<dl class="outcomes"><div><dt>Original assertions</dt><dd>55 PASS</dd><small>Healthy baselines and fault scenarios</small></div><div><dt>Disabled-failsafe controls</dt><dd>2 expected FAIL</dd><small>Both controls detected the intended mismatch</small></div><div><dt>Text assertion</dt><dd>1 preserved FAIL</dd><small>Compound GCS and battery message alternative</small></div></dl>
+</div>
+<ul class="facts"><li><strong>522 / 522</strong>Saved provenance and isolation checks</li><li><strong>41 passing tests</strong>Original unit-test transcript</li><li><strong>9 onboard traces</strong>Retained independent-reader inspections</li><li><strong>2 wrong-mode replays</strong>Deliberate offline mismatches detected</li></ul>
+<p class="note">The original full-suite gate remains unresolved in its saved report. Corpus 1.0.1 has a separate four-trace retrospective assessment below. The inspections use an assistant-authored reader independent of the runner and evaluator; they are not qualified human certification.</p>
+<section id="comparison" aria-labelledby="comparison-title">
+<div class="section-head"><h2 id="comparison-title">Observed LAND responses</h2><p>Primary runs, zero-second schedule offset</p></div>
+<p>Each bar shows the largest matched mode-assertion latency for that scenario in simulation seconds. Both columns use a 0–8 s scale. Transient-input scenarios do not contain a LAND assertion.</p>
+<div class="table-scroll" role="region" aria-label="LAND response comparison" tabindex="0"><table class="chart-table"><caption>Values come from the original saved comparison. The run ledger lists each matched event response and its deadline.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">ArduCopter 4.5.6</th><th scope="col">ArduCopter 4.5.7</th></tr></thead><tbody><tr><th scope="row">GCS loss</th><td class="latency"><span class="bar release-6" style="width:37.525%" aria-hidden="true"></span><span class="bar-label">3.002 s</span></td><td class="latency"><span class="bar release-7" style="width:38.775%" aria-hidden="true"></span><span class="bar-label">3.102 s</span></td></tr>
+<tr><th scope="row">Battery low</th><td class="latency"><span class="bar release-6" style="width:38.775%" aria-hidden="true"></span><span class="bar-label">3.102 s</span></td><td class="latency"><span class="bar release-7" style="width:38.775%" aria-hidden="true"></span><span class="bar-label">3.102 s</span></td></tr>
+<tr><th scope="row">RC loss</th><td class="latency"><span class="bar release-6" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td><td class="latency"><span class="bar release-7" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td></tr>
+<tr><th scope="row">GCS recovery</th><td class="latency"><span class="bar release-6" style="width:37.525%" aria-hidden="true"></span><span class="bar-label">3.002 s</span></td><td class="latency"><span class="bar release-7" style="width:37.525%" aria-hidden="true"></span><span class="bar-label">3.002 s</span></td></tr>
+<tr><th scope="row">RC recovery</th><td class="latency"><span class="bar release-6" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td><td class="latency"><span class="bar release-7" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td></tr>
+<tr><th scope="row">Battery recovery</th><td class="latency"><span class="bar release-6" style="width:38.775%" aria-hidden="true"></span><span class="bar-label">3.102 s</span></td><td class="latency"><span class="bar release-7" style="width:40.025%" aria-hidden="true"></span><span class="bar-label">3.202 s</span></td></tr>
+<tr><th scope="row">GCS transient</th><td class="latency"><span class="bar-label">No LAND assertion</span></td><td class="latency"><span class="bar-label">No LAND assertion</span></td></tr>
+<tr><th scope="row">Battery transient</th><td class="latency"><span class="bar-label">No LAND assertion</span></td><td class="latency"><span class="bar-label">No LAND assertion</span></td></tr>
+<tr><th scope="row">GPS stale</th><td class="latency"><span class="bar release-6" style="width:98.750%" aria-hidden="true"></span><span class="bar-label">7.900 s</span></td><td class="latency"><span class="bar release-7" style="width:98.750%" aria-hidden="true"></span><span class="bar-label">7.900 s</span></td></tr>
+<tr><th scope="row">GCS RC compound</th><td class="latency"><span class="bar release-6" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td><td class="latency"><span class="bar release-7" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td></tr>
+<tr><th scope="row">GCS battery compound</th><td class="latency"><span class="bar release-6" style="width:37.525%" aria-hidden="true"></span><span class="bar-label">3.002 s</span></td><td class="latency"><span class="bar release-7" style="width:37.525%" aria-hidden="true"></span><span class="bar-label">3.002 s</span></td></tr>
+<tr><th scope="row">GPS RC compound</th><td class="latency"><span class="bar release-6" style="width:12.525%" aria-hidden="true"></span><span class="bar-label">1.002 s</span></td><td class="latency"><span class="bar release-7" style="width:11.275%" aria-hidden="true"></span><span class="bar-label">0.902 s</span></td></tr></tbody></table></div>
+<p class="note">Telemetry clocks are sampled at 0.1 s and heartbeats at 0.2 s. Small differences within those intervals do not establish a release regression. All twelve primary release pairs had 1,385 equal initial parameter values. <a href="docs/comparison.md">Read the reviewed comparison</a>.</p>
+</section>
+<section class="revision" aria-labelledby="revision-title">
+<div><h2 id="revision-title">The assertion correction stays separate</h2><p>Corpus 1.0.1 accepts the documented “GCS + Battery Failsafe - Continuing Landing” message as an alternative to “GCS Failsafe”. All four affected traces pass retrospective replay.</p><p>Events, parameters, deadlines, and state assertions are unchanged. The original failure remains recorded. <strong>No fresh full 1.0.1 simulator run is claimed.</strong></p><p><a href="docs/compound-ordering-review.md">Review the source-backed explanation</a></p></div>
+<div class="table-scroll" role="region" aria-label="Retrospective replay assessment" tabindex="0"><table><caption>Same recorded traces; separate assertion-only replay</caption><thead><tr><th scope="col">Release</th><th scope="col">Offset</th><th scope="col">Original</th><th scope="col">Replay</th><th scope="col">Evidence</th></tr></thead><tbody><tr><th scope="row">4.5.6</th><td>0.0 s</td><td><span class="status pass">PASS</span></td><td><span class="status pass">PASS</span></td><td><a href="evidence/full/corpus-1.0.1-replay/4.5.6__11-gcs-battery-compound__schedule-0.0.json">Replay JSON</a></td></tr><tr><th scope="row">4.5.7</th><td>0.0 s</td><td><span class="status pass">PASS</span></td><td><span class="status pass">PASS</span></td><td><a href="evidence/full/corpus-1.0.1-replay/4.5.7__11-gcs-battery-compound__schedule-0.0.json">Replay JSON</a></td></tr><tr><th scope="row">4.5.6</th><td>0.7 s</td><td><span class="status pass">PASS</span></td><td><span class="status pass">PASS</span></td><td><a href="evidence/full/corpus-1.0.1-replay/4.5.6__11-gcs-battery-compound__schedule-0.7.json">Replay JSON</a></td></tr><tr><th scope="row">4.5.7</th><td>0.7 s</td><td><span class="status mismatch">FAIL</span></td><td><span class="status pass">PASS</span></td><td><a href="evidence/full/corpus-1.0.1-replay/4.5.7__11-gcs-battery-compound__schedule-0.7.json">Replay JSON</a></td></tr></tbody></table></div>
+</section>
+<section id="runs" aria-labelledby="runs-title">
+<h2 id="runs-title">Original run ledger</h2>
+<p>Each result links to its recorded evaluation and publication-derivative evidence seal. FAIL remains the original machine outcome, including the two accepted disabled-failsafe controls.</p>
+<div id="filters" class="filters" hidden><label class="search">Search runs<input id="search" type="search" placeholder="Scenario, release, or assertion"></label><label>Release<select id="release"><option value="">Both releases</option><option>4.5.6</option><option>4.5.7</option></select></label><label>Outcome<select id="outcome"><option value="">All original outcomes</option><option value="pass">PASS</option><option value="control">Expected control FAIL</option><option value="mismatch">Text-assertion FAIL</option></select></label><button id="reset" type="button">Reset filters</button></div>
+<p id="run-count" role="status" aria-live="polite">58 of 58 original runs shown</p>
+<div class="table-scroll" role="region" aria-label="Original run results" tabindex="0"><table id="run-table"><caption>Response entries show event: matched latency / declared deadline, in simulation seconds.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Release</th><th scope="col">Offset</th><th scope="col">Original outcome</th><th scope="col">Response / deadline</th><th scope="col">Retained evidence</th></tr></thead><tbody><tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Baseline<small>00-baseline</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">land: 0.000 / 3 s</td><td><a href="evidence/full/4.5.6/00-baseline/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/00-baseline/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s</td><td><a href="evidence/full/4.5.6/01-gcs-loss/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/01-gcs-loss/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.102 / 12 s</td><td><a href="evidence/full/4.5.6/02-battery-low/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/02-battery-low/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">RC loss<small>03-rc-loss</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.6/03-rc-loss/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/03-rc-loss/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS recovery<small>04-gcs-recovery</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s</td><td><a href="evidence/full/4.5.6/04-gcs-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/04-gcs-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">RC recovery<small>05-rc-recovery</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.6/05-rc-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/05-rc-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery recovery<small>06-battery-recovery</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.102 / 12 s</td><td><a href="evidence/full/4.5.6/06-battery-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/06-battery-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS transient<small>07-gcs-transient</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.6/07-gcs-transient/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/07-gcs-transient/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery transient<small>08-battery-transient</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.6/08-battery-transient/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/08-battery-transient/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.900 / 40 s</td><td><a href="evidence/full/4.5.6/09-gps-stale/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/09-gps-stale/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS RC compound<small>10-gcs-rc-compound</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 1.002 / 8 s<br>rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS battery compound<small>11-gcs-battery-compound</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s<br>low: 3.002 / 12 s</td><td><a href="evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GPS RC compound<small>12-gps-rc-compound</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 1.002 / 40 s<br>rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.6/12-gps-rc-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/12-gps-rc-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Baseline<small>00-baseline</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">land: 0.000 / 3 s</td><td><a href="evidence/full/4.5.7/00-baseline/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/00-baseline/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.102 / 8 s</td><td><a href="evidence/full/4.5.7/01-gcs-loss/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/01-gcs-loss/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.102 / 12 s</td><td><a href="evidence/full/4.5.7/02-battery-low/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/02-battery-low/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">RC loss<small>03-rc-loss</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.7/03-rc-loss/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/03-rc-loss/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS recovery<small>04-gcs-recovery</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s</td><td><a href="evidence/full/4.5.7/04-gcs-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/04-gcs-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">RC recovery<small>05-rc-recovery</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.7/05-rc-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/05-rc-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery recovery<small>06-battery-recovery</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.202 / 12 s</td><td><a href="evidence/full/4.5.7/06-battery-recovery/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/06-battery-recovery/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS transient<small>07-gcs-transient</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.7/07-gcs-transient/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/07-gcs-transient/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery transient<small>08-battery-transient</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.7/08-battery-transient/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/08-battery-transient/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.900 / 40 s</td><td><a href="evidence/full/4.5.7/09-gps-stale/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/09-gps-stale/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS RC compound<small>10-gcs-rc-compound</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 1.002 / 8 s<br>rc: 1.002 / 6 s</td><td><a href="evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS battery compound<small>11-gcs-battery-compound</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s<br>low: 3.002 / 12 s</td><td><a href="evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GPS RC compound<small>12-gps-rc-compound</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 0.902 / 40 s<br>rc: 0.902 / 6 s</td><td><a href="evidence/full/4.5.7/12-gps-rc-compound/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/12-gps-rc-compound/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.298 / 8 s</td><td><a href="evidence/full/4.5.6/01-gcs-loss/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/01-gcs-loss/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.098 / 12 s</td><td><a href="evidence/full/4.5.6/02-battery-low/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/02-battery-low/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">RC loss<small>03-rc-loss</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.6/03-rc-loss/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/03-rc-loss/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS recovery<small>04-gcs-recovery</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.298 / 8 s</td><td><a href="evidence/full/4.5.6/04-gcs-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/04-gcs-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">RC recovery<small>05-rc-recovery</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.6/05-rc-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/05-rc-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery recovery<small>06-battery-recovery</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.098 / 12 s</td><td><a href="evidence/full/4.5.6/06-battery-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/06-battery-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS transient<small>07-gcs-transient</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.6/07-gcs-transient/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/07-gcs-transient/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery transient<small>08-battery-transient</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.6/08-battery-transient/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/08-battery-transient/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.798 / 40 s</td><td><a href="evidence/full/4.5.6/09-gps-stale/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/09-gps-stale/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS RC compound<small>10-gcs-rc-compound</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 0.998 / 8 s<br>rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/10-gcs-rc-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS battery compound<small>11-gcs-battery-compound</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 2.898 / 8 s<br>low: 2.898 / 12 s</td><td><a href="evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GPS RC compound<small>12-gps-rc-compound</small></th>
+<td>4.5.6</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 0.998 / 40 s<br>rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.6/12-gps-rc-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/12-gps-rc-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.6</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.002 / 8 s</td><td><a href="evidence/full/4.5.6/01-gcs-loss/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/01-gcs-loss/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.6</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.102 / 12 s</td><td><a href="evidence/full/4.5.6/02-battery-low/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/02-battery-low/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.6</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.902 / 40 s</td><td><a href="evidence/full/4.5.6/09-gps-stale/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/09-gps-stale/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.6" data-outcome="control">
+<th scope="row">Disabled GCS control<small>90-disabled-gcs-control</small></th>
+<td>4.5.6</td><td>0 s</td>
+<td><span class="status control">FAIL</span><small>Expected disabled-failsafe failure</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.6/90-disabled-gcs-control/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.6/90-disabled-gcs-control/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+<details><summary>Assertion details</summary><p>INDETERMINATE: No status text evidence in assertion window; FAIL: Observed states do not satisfy the declared assertion; FAIL: Observed states do not satisfy the declared assertion</p></details></td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.298 / 8 s</td><td><a href="evidence/full/4.5.7/01-gcs-loss/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/01-gcs-loss/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.098 / 12 s</td><td><a href="evidence/full/4.5.7/02-battery-low/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/02-battery-low/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">RC loss<small>03-rc-loss</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.7/03-rc-loss/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/03-rc-loss/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS recovery<small>04-gcs-recovery</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 3.298 / 8 s</td><td><a href="evidence/full/4.5.7/04-gcs-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/04-gcs-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">RC recovery<small>05-rc-recovery</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.7/05-rc-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/05-rc-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery recovery<small>06-battery-recovery</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.098 / 12 s</td><td><a href="evidence/full/4.5.7/06-battery-recovery/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/06-battery-recovery/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS transient<small>07-gcs-transient</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.7/07-gcs-transient/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/07-gcs-transient/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery transient<small>08-battery-transient</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.7/08-battery-transient/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/08-battery-transient/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.798 / 40 s</td><td><a href="evidence/full/4.5.7/09-gps-stale/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/09-gps-stale/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS RC compound<small>10-gcs-rc-compound</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 0.998 / 8 s<br>rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/10-gcs-rc-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="mismatch">
+<th scope="row">GCS battery compound<small>11-gcs-battery-compound</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status mismatch">FAIL</span><small>Preserved text-assertion mismatch</small></td>
+<td class="numeric">loss: 3.098 / 8 s<br>low: 3.098 / 12 s</td><td><a href="evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+<details><summary>Assertion details</summary><p>FAIL: Observed status text does not include the required text</p></details></td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GPS RC compound<small>12-gps-rc-compound</small></th>
+<td>4.5.7</td><td>0.7 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 0.998 / 40 s<br>rc: 0.998 / 6 s</td><td><a href="evidence/full/4.5.7/12-gps-rc-compound/schedule-0.7/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/12-gps-rc-compound/schedule-0.7/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GCS loss<small>01-gcs-loss</small></th>
+<td>4.5.7</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">loss: 2.900 / 8 s</td><td><a href="evidence/full/4.5.7/01-gcs-loss/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/01-gcs-loss/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">Battery low<small>02-battery-low</small></th>
+<td>4.5.7</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">low: 3.202 / 12 s</td><td><a href="evidence/full/4.5.7/02-battery-low/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/02-battery-low/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="pass">
+<th scope="row">GPS stale<small>09-gps-stale</small></th>
+<td>4.5.7</td><td>1.4 s</td>
+<td><span class="status pass">PASS</span><small>Original assertions passed</small></td>
+<td class="numeric">stale: 7.902 / 40 s</td><td><a href="evidence/full/4.5.7/09-gps-stale/schedule-1.4/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/09-gps-stale/schedule-1.4/SHA256SUMS">SHA-256 seal</a>
+</td></tr>
+<tr data-release="4.5.7" data-outcome="control">
+<th scope="row">Disabled GCS control<small>90-disabled-gcs-control</small></th>
+<td>4.5.7</td><td>0 s</td>
+<td><span class="status control">FAIL</span><small>Expected disabled-failsafe failure</small></td>
+<td class="numeric">No matched transition</td><td><a href="evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/result.json">Result JSON</a><br><a href="evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/SHA256SUMS">SHA-256 seal</a>
+<details><summary>Assertion details</summary><p>INDETERMINATE: No status text evidence in assertion window; FAIL: Observed states do not satisfy the declared assertion; FAIL: Observed states do not satisfy the declared assertion</p></details></td></tr></tbody></table></div>
+<p id="empty" hidden>No runs match these filters. Reset filters to show the complete recorded suite.</p>
+<noscript><p>The complete saved results remain available without JavaScript. Theme selection and filters require JavaScript.</p></noscript>
+</section>
+<section id="evidence" aria-labelledby="evidence-title">
+<h2 id="evidence-title">Evidence and reproduction</h2>
+<div class="evidence-grid"><div><h3>Review the retained record</h3><ul><li><a href="evidence/full/comparison.json">Original machine comparison</a></li><li><a href="evidence/full/corpus-revision-review.json">Separate corpus 1.0.1 assessment</a></li><li><a href="evidence/full/provenance-isolation-audit.json">Provenance and isolation audit</a></li><li><a href="evidence/unit-tests.txt">Original unit-test transcript</a></li><li><a href="docs/trace-inspection.md">Independent onboard-log inspection</a></li><li><a href="evidence/trace-inspection.json">Five primary inspection records</a> and <a href="evidence/compound-ordering-inspection.json">four compound-case records</a></li><li><a href="docs/trace-contract.md">Trace contract</a> and <a href="docs/review-record.md">review record</a></li></ul></div>
+<div><h3>Two historical release pins</h3><ul class="pins"><li><strong>ArduCopter 4.5.6</strong><code>7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696</code></li><li><strong>ArduCopter 4.5.7</strong><code>2a3dc4b7bf2507120f7378a7b2fde73185e0c325</code></li></ul><p class="note">The built-in quad model uses the corresponding pinned autopilot executable. These historical releases are not described as current releases.</p><p><a href="README.md">Reproduction instructions</a> explain dependencies, isolation, resource bounds, and offline checks. A fresh clean-environment reproduction by a separate operator remains the next verification step.</p><p><a href="manifest.json">Experiment dependency manifest</a> · <a href="viewer-manifest.json">Viewer provenance manifest</a></p></div></div>
+</section>
+</main>
+<footer><div class="shell"><p>Saved evidence, rendered locally. No telemetry service, external fonts, or network requests are used by this page.</p><p>Published comparison SHA-256: <code>945386b23f2dad3bb4d3c96a1773ff4c43f1e411a813232cffb3dd64bc9fcf4d</code></p><p class="note">Regenerate with <code>python3 scripts/build_viewer.py</code>; verify with <code>python3 scripts/build_viewer.py --check</code>.</p></div></footer>
+<script>(() => {
+  'use strict';
+  const theme = document.getElementById('theme');
+  theme.value = window.flightLabTheme.get();
+  theme.addEventListener('change', () => window.flightLabTheme.set(theme.value));
+  document.getElementById('theme-control').hidden = false;
+  const release = document.getElementById('release');
+  const outcome = document.getElementById('outcome');
+  const search = document.getElementById('search');
+  const rows = [...document.querySelectorAll('#run-table tbody tr')];
+  const count = document.getElementById('run-count');
+  const empty = document.getElementById('empty');
+  const update = () => {
+    const query = search.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    rows.forEach((row) => {
+      const match = (!release.value || row.dataset.release === release.value) &&
+        (!outcome.value || row.dataset.outcome === outcome.value) &&
+        (!query || row.textContent.toLocaleLowerCase().includes(query));
+      row.hidden = !match;
+      if (match) visible += 1;
+    });
+    count.textContent = `${visible} of ${rows.length} original runs shown`;
+    empty.hidden = visible !== 0;
+  };
+  release.addEventListener('change', update);
+  outcome.addEventListener('change', update);
+  search.addEventListener('input', update);
+  document.getElementById('reset').addEventListener('click', () => {
+    release.value = ''; outcome.value = ''; search.value = ''; update(); search.focus();
+  });
+  document.getElementById('filters').hidden = false;
+  update();
+})();
+</script>
+</body>
+</html>

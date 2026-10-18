@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.7/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.7/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.7/sitl.stdout",
+  "3": "socket:[203627]",
+  "4": "socket:[203628]",
+  "5": "socket:[203629]",
+  "6": "socket:[203630]",
+  "7": "socket:[203631]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/05-rc-recovery/schedule-0.7/eeprom.bin",
+  "9": "socket:[203632]"
+}

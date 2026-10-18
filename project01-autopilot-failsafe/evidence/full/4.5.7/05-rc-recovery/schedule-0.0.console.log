@@ -1,0 +1,4 @@
+{"id": "baseline_ready", "kind": "baseline", "sim_s": 56.432, "host_monotonic_ns": 5764925060716, "host_unix_us": 1792288879800225, "altitude_m": 11.972, "mode": 4, "armed": true}
+{"id": "rc", "kind": "parameter", "sim_s": 61.432, "host_monotonic_ns": 5766169428628, "host_unix_us": 1792288881044594, "at_s": 5, "name": "SIM_RC_FAIL", "value": 1}
+{"id": "restore", "kind": "parameter", "sim_s": 68.434, "host_monotonic_ns": 5767922066335, "host_unix_us": 1792288882797231, "at_s": 12, "name": "SIM_RC_FAIL", "value": 0}
+{"id": "scenario_end", "kind": "end", "sim_s": 118.434, "host_monotonic_ns": 5780418065749, "host_unix_us": 1792288895293231}

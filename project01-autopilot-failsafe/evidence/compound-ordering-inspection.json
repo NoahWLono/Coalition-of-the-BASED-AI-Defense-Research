@@ -1,0 +1,2361 @@
+{
+  "schema_version": 1,
+  "method": "Direct pymavlink DFReader_binary plus separate MAVLink decode; no runner/evaluator imports",
+  "inspector_sha256": "e3ebe7c6a5dd5e3eb99fcfae0bdbd7e6c86af1e413a8a0253f9f7e07583f1060",
+  "pymavlink_version": "2.4.49",
+  "annotation_producer": "Assistant-authored deterministic reader; assistant direct trace inspection recorded separately",
+  "nonfinite_encoding": "Non-finite raw floats are preserved as NaN, Infinity, or -Infinity strings",
+  "qualified_human_review": false,
+  "runs": [
+    {
+      "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.0",
+      "scenario_id": "11-gcs-battery-compound",
+      "version": "4.5.6",
+      "baseline_s": 56.334,
+      "scenario_end_s": 118.334,
+      "input_sha256": {
+        "logs/00000001.BIN": "b26d855adf158d5032d6e8d28aaeb2f613c8e6c18b2fde1f0a38d49c76f313ae",
+        "rx.tlog": "67ad36e8b794c2902841f753708ded559723bcc30388579c80c0d4e133bc2d2d",
+        "events.jsonl": "0fd8e02a82e1642b8cdd9fc604f97835884d1093556705782aba5f5e9e982051",
+        "scenario.json": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+        "run.json": "3156c0ed0e2be89e2ff3c71b0decf3609f8b925fbf19072c8ba91ca69c7de334"
+      },
+      "events": [
+        {
+          "id": "baseline_ready",
+          "kind": "baseline",
+          "sim_s": 56.334,
+          "host_monotonic_ns": 5539787823807,
+          "host_unix_us": 1792288654662989,
+          "altitude_m": 11.972,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "id": "loss",
+          "kind": "heartbeat",
+          "sim_s": 61.432,
+          "host_monotonic_ns": 5541062618066,
+          "host_unix_us": 1792288655937783,
+          "at_s": 5,
+          "enabled": false
+        },
+        {
+          "id": "low",
+          "kind": "parameter",
+          "sim_s": 61.432,
+          "host_monotonic_ns": 5541062759478,
+          "host_unix_us": 1792288655937924,
+          "at_s": 5,
+          "name": "SIM_BATT_VOLTAGE",
+          "value": 10.5
+        },
+        {
+          "id": "scenario_end",
+          "kind": "end",
+          "sim_s": 118.334,
+          "host_monotonic_ns": 5555278448873,
+          "host_unix_us": 1792288670153614
+        }
+      ],
+      "dataflash": {
+        "counts": {
+          "FMT": 179,
+          "PARM": 1396,
+          "UNIT": 36,
+          "MULT": 15,
+          "FMTU": 179,
+          "MSG": 39,
+          "VER": 1,
+          "MODE": 4,
+          "SIM2": 46713,
+          "IMU": 5838,
+          "BAT": 1167,
+          "MAG": 3504,
+          "ERR": 3,
+          "BARO": 2334,
+          "CTUN": 1167,
+          "ATT": 1167,
+          "RATE": 1167,
+          "SIM": 1167,
+          "MOTB": 1167,
+          "RCIN": 1168,
+          "RCI2": 1168,
+          "RCOU": 1167,
+          "RCO2": 1167,
+          "VIBE": 2334,
+          "CTRL": 1167,
+          "DCM": 1167,
+          "EAHR": 1167,
+          "AUXF": 1,
+          "MAV": 116,
+          "DU32": 116,
+          "DSF": 116,
+          "XKF4": 2314,
+          "XKF1": 2314,
+          "XKF2": 2314,
+          "XKF3": 2314,
+          "XKF5": 1157,
+          "XKFS": 2314,
+          "XKQ": 2314,
+          "XKV1": 232,
+          "XKV2": 232,
+          "XKTV": 454,
+          "AHR2": 1147,
+          "XKT": 46,
+          "EV": 11,
+          "ESC": 45224,
+          "GPS": 548,
+          "GPA": 548,
+          "POS": 1092,
+          "PM": 11,
+          "ORGN": 4,
+          "SRTL": 13,
+          "ARM": 2,
+          "D32": 1,
+          "MAVC": 2,
+          "PSCN": 769,
+          "PSCE": 769,
+          "PSCD": 769,
+          "XKY0": 1028,
+          "XKY1": 1028,
+          "FILE": 256
+        },
+        "last_sim_s": 119.062356,
+        "field_definitions_from_log": {
+          "PARM": [
+            "TimeUS",
+            "Name",
+            "Value",
+            "Default"
+          ],
+          "MSG": [
+            "TimeUS",
+            "Message"
+          ],
+          "MODE": [
+            "TimeUS",
+            "Mode",
+            "ModeNum",
+            "Rsn"
+          ],
+          "BAT": [
+            "TimeUS",
+            "Inst",
+            "Volt",
+            "VoltR",
+            "Curr",
+            "CurrTot",
+            "EnrgTot",
+            "Temp",
+            "Res",
+            "RemPct",
+            "H",
+            "SH"
+          ],
+          "ERR": [
+            "TimeUS",
+            "Subsys",
+            "ECode"
+          ],
+          "RCI2": [
+            "TimeUS",
+            "C15",
+            "C16",
+            "OMask",
+            "Flags"
+          ],
+          "DSF": [
+            "TimeUS",
+            "Dp",
+            "Blk",
+            "Bytes",
+            "FMn",
+            "FMx",
+            "FAv"
+          ],
+          "GPS": [
+            "TimeUS",
+            "I",
+            "Status",
+            "GMS",
+            "GWk",
+            "NSats",
+            "HDop",
+            "Lat",
+            "Lng",
+            "Alt",
+            "Spd",
+            "GCrs",
+            "VZ",
+            "Yaw",
+            "U"
+          ],
+          "ARM": [
+            "TimeUS",
+            "ArmState",
+            "ArmChecks",
+            "Forced",
+            "Method"
+          ]
+        },
+        "mode_records": [
+          {
+            "TimeUS": 2282420,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.28242,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42112315,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.112315,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 42139804,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.139804,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 64441713,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 64.441713,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "modes": [
+          {
+            "TimeUS": 2282420,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.28242,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42112315,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.112315,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 64441713,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 64.441713,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "errors": [
+          {
+            "TimeUS": 2364887,
+            "Subsys": 3,
+            "ECode": 0,
+            "sim_s": 2.364887,
+            "subsystem_name": "COMPASS"
+          },
+          {
+            "TimeUS": 64441713,
+            "Subsys": 8,
+            "ECode": 1,
+            "sim_s": 64.441713,
+            "subsystem_name": "FAILSAFE_GCS",
+            "meaning": "OCCURRED"
+          },
+          {
+            "TimeUS": 64664124,
+            "Subsys": 6,
+            "ECode": 1,
+            "sim_s": 64.664124,
+            "subsystem_name": "FAILSAFE_BATT",
+            "meaning": "OCCURRED"
+          }
+        ],
+        "arm_records": [
+          {
+            "TimeUS": 42139804,
+            "ArmState": 1,
+            "ArmChecks": 1,
+            "Forced": 0,
+            "Method": 1,
+            "sim_s": 42.139804
+          },
+          {
+            "TimeUS": 93621703,
+            "ArmState": 0,
+            "ArmChecks": 0,
+            "Forced": 0,
+            "Method": 13,
+            "sim_s": 93.621703
+          }
+        ],
+        "fault_parameter_records": [
+          {
+            "TimeUS": 2282420,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 12.600000381469727,
+            "Default": 12.600000381469727,
+            "sim_s": 2.28242
+          },
+          {
+            "TimeUS": 2282420,
+            "Name": "SIM_RC_FAIL",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.28242
+          },
+          {
+            "TimeUS": 2282420,
+            "Name": "SIM_GPS_BYTELOSS",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.28242
+          },
+          {
+            "TimeUS": 61469569,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 61.469569
+          },
+          {
+            "TimeUS": 61470402,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 61.470402
+          }
+        ],
+        "messages": [
+          {
+            "TimeUS": 64441713,
+            "Message": "GCS Failsafe",
+            "sim_s": 64.441713
+          },
+          {
+            "TimeUS": 64664124,
+            "Message": "Battery 1 is low 10.50V used 162 mAh",
+            "sim_s": 64.664124
+          },
+          {
+            "TimeUS": 64664124,
+            "Message": "Battery Failsafe",
+            "sim_s": 64.664124
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: GCS failsafe on",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery 1 low voltage failsafe",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery failsafe",
+            "sim_s": 97.264412
+          }
+        ],
+        "battery": {
+          "samples": 620,
+          "min_volt": 10.5,
+          "max_volt": 12.600000381469727
+        },
+        "gps": {
+          "samples": 548,
+          "status_transitions": [
+            {
+              "TimeUS": 9644474,
+              "I": 0,
+              "Status": 1,
+              "GMS": 252827600,
+              "GWk": 0,
+              "NSats": 3,
+              "HDop": 1.21,
+              "Lat": 0.0098958,
+              "Lng": 0.0098958,
+              "Alt": 0.09,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.644474
+            },
+            {
+              "TimeUS": 9824402,
+              "I": 0,
+              "Status": 6,
+              "GMS": 252827800,
+              "GWk": 2288,
+              "NSats": 10,
+              "HDop": 1.21,
+              "Lat": 0.01,
+              "Lng": 0.01,
+              "Alt": 0.1,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.824402
+            }
+          ]
+        },
+        "logger_dropped_max": 0,
+        "logger_drop_counter_changes": [
+          {
+            "TimeUS": 3267026,
+            "Dp": 0,
+            "Blk": 2458,
+            "Bytes": 107926,
+            "FMn": 133021,
+            "FMx": 204710,
+            "FAv": 172657,
+            "sim_s": 3.267026
+          }
+        ],
+        "logger_dropped_during_observation": 0
+      },
+      "mavlink": {
+        "modes": [
+          {
+            "sim_s": 2.354,
+            "Mode": 0,
+            "armed": false
+          },
+          {
+            "sim_s": 42.032,
+            "Mode": 4,
+            "armed": false
+          },
+          {
+            "sim_s": 64.434,
+            "Mode": 9,
+            "armed": true
+          }
+        ],
+        "statuses": [
+          {
+            "sim_s": 64.434,
+            "text": "GCS Failsafe"
+          },
+          {
+            "sim_s": 64.634,
+            "text": "Battery 1 is low 10.50V used 162 mAh"
+          },
+          {
+            "sim_s": 64.634,
+            "text": "Battery Failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: GCS failsafe on"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery 1 low voltage failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery failsafe"
+          }
+        ],
+        "system_time_samples": 1159,
+        "max_system_time_gap_s": 0.4000000000000057,
+        "last_sim_s": 119.032
+      },
+      "mode_time_comparison": [
+        {
+          "Mode": 0,
+          "dataflash_s": 2.28242,
+          "mavlink_assigned_s": 2.354,
+          "mavlink_minus_dataflash_s": 0.07157999999999998
+        },
+        {
+          "Mode": 4,
+          "dataflash_s": 42.112315,
+          "mavlink_assigned_s": 42.032,
+          "mavlink_minus_dataflash_s": -0.08031500000000591
+        },
+        {
+          "Mode": 9,
+          "dataflash_s": 64.441713,
+          "mavlink_assigned_s": 64.434,
+          "mavlink_minus_dataflash_s": -0.007712999999995418
+        }
+      ],
+      "crosschecks": [
+        {
+          "name": "sealed_inputs_match",
+          "passed": true
+        },
+        {
+          "name": "dataflash_covers_observation",
+          "passed": true
+        },
+        {
+          "name": "mode_sequence_matches_mavlink",
+          "passed": true
+        },
+        {
+          "name": "logger_reports_no_new_drops_during_observation",
+          "passed": true,
+          "startup_dropped": 0,
+          "observation_dropped": 0
+        }
+      ]
+    },
+    {
+      "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.7",
+      "scenario_id": "11-gcs-battery-compound",
+      "version": "4.5.6",
+      "baseline_s": 56.432,
+      "scenario_end_s": 119.132,
+      "input_sha256": {
+        "logs/00000001.BIN": "89ab9975f19f7d085805079bd1a2feae9980d0ce5c4b5cf97548402744805835",
+        "rx.tlog": "a77b67a9bdd4db8b12922733175cc1612025cebc0e3c01662d881476aa6a5cd7",
+        "events.jsonl": "a14853b566f2c03f9b68c2e9f60ef035c458463881577246637462f999088f7d",
+        "scenario.json": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+        "run.json": "785be5fa9e7dc1352612ce236f525a2fb2576e9b526d464776b26156d0c8fb28"
+      },
+      "events": [
+        {
+          "id": "baseline_ready",
+          "kind": "baseline",
+          "sim_s": 56.432,
+          "host_monotonic_ns": 6359368672475,
+          "host_unix_us": 1792289474243838,
+          "altitude_m": 11.972,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "id": "loss",
+          "kind": "heartbeat",
+          "sim_s": 62.134,
+          "host_monotonic_ns": 6360792398583,
+          "host_unix_us": 1792289475667564,
+          "at_s": 5,
+          "enabled": false
+        },
+        {
+          "id": "low",
+          "kind": "parameter",
+          "sim_s": 62.134,
+          "host_monotonic_ns": 6360792559503,
+          "host_unix_us": 1792289475667724,
+          "at_s": 5,
+          "name": "SIM_BATT_VOLTAGE",
+          "value": 10.5
+        },
+        {
+          "id": "scenario_end",
+          "kind": "end",
+          "sim_s": 119.132,
+          "host_monotonic_ns": 6375040471174,
+          "host_unix_us": 1792289489915636
+        }
+      ],
+      "dataflash": {
+        "counts": {
+          "FMT": 179,
+          "PARM": 1396,
+          "UNIT": 36,
+          "MULT": 15,
+          "FMTU": 179,
+          "MSG": 39,
+          "VER": 1,
+          "MODE": 4,
+          "SIM2": 47054,
+          "IMU": 5882,
+          "BAT": 1176,
+          "MAG": 3531,
+          "ERR": 3,
+          "BARO": 2352,
+          "CTUN": 1176,
+          "ATT": 1176,
+          "RATE": 1176,
+          "SIM": 1176,
+          "MOTB": 1176,
+          "RCIN": 1177,
+          "RCI2": 1177,
+          "RCOU": 1176,
+          "RCO2": 1176,
+          "VIBE": 2352,
+          "CTRL": 1176,
+          "DCM": 1176,
+          "EAHR": 1176,
+          "AUXF": 1,
+          "MAV": 117,
+          "DU32": 117,
+          "DSF": 117,
+          "XKF4": 2332,
+          "XKF1": 2332,
+          "XKF2": 2332,
+          "XKF3": 2332,
+          "XKF5": 1166,
+          "XKFS": 2332,
+          "XKQ": 2332,
+          "XKV1": 234,
+          "XKV2": 234,
+          "XKTV": 456,
+          "AHR2": 1156,
+          "XKT": 46,
+          "EV": 11,
+          "ESC": 45563,
+          "GPS": 552,
+          "GPA": 552,
+          "POS": 1101,
+          "PM": 11,
+          "ORGN": 4,
+          "SRTL": 11,
+          "ARM": 2,
+          "D32": 1,
+          "MAVC": 2,
+          "PSCN": 776,
+          "PSCE": 776,
+          "PSCD": 776,
+          "XKY0": 1550,
+          "XKY1": 1550,
+          "FILE": 256
+        },
+        "last_sim_s": 119.904519,
+        "field_definitions_from_log": {
+          "PARM": [
+            "TimeUS",
+            "Name",
+            "Value",
+            "Default"
+          ],
+          "MSG": [
+            "TimeUS",
+            "Message"
+          ],
+          "MODE": [
+            "TimeUS",
+            "Mode",
+            "ModeNum",
+            "Rsn"
+          ],
+          "BAT": [
+            "TimeUS",
+            "Inst",
+            "Volt",
+            "VoltR",
+            "Curr",
+            "CurrTot",
+            "EnrgTot",
+            "Temp",
+            "Res",
+            "RemPct",
+            "H",
+            "SH"
+          ],
+          "ERR": [
+            "TimeUS",
+            "Subsys",
+            "ECode"
+          ],
+          "RCI2": [
+            "TimeUS",
+            "C15",
+            "C16",
+            "OMask",
+            "Flags"
+          ],
+          "DSF": [
+            "TimeUS",
+            "Dp",
+            "Blk",
+            "Bytes",
+            "FMn",
+            "FMx",
+            "FAv"
+          ],
+          "GPS": [
+            "TimeUS",
+            "I",
+            "Status",
+            "GMS",
+            "GWk",
+            "NSats",
+            "HDop",
+            "Lat",
+            "Lng",
+            "Alt",
+            "Spd",
+            "GCrs",
+            "VZ",
+            "Yaw",
+            "U"
+          ],
+          "ARM": [
+            "TimeUS",
+            "ArmState",
+            "ArmChecks",
+            "Forced",
+            "Method"
+          ]
+        },
+        "mode_records": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42272251,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.272251,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 42299740,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.29974,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 65107280,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 65.10728,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "modes": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42272251,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.272251,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 65107280,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 65.10728,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "errors": [
+          {
+            "TimeUS": 2364887,
+            "Subsys": 3,
+            "ECode": 0,
+            "sim_s": 2.364887,
+            "subsystem_name": "COMPASS"
+          },
+          {
+            "TimeUS": 65107280,
+            "Subsys": 8,
+            "ECode": 1,
+            "sim_s": 65.10728,
+            "subsystem_name": "FAILSAFE_GCS",
+            "meaning": "OCCURRED"
+          },
+          {
+            "TimeUS": 65264717,
+            "Subsys": 6,
+            "ECode": 1,
+            "sim_s": 65.264717,
+            "subsystem_name": "FAILSAFE_BATT",
+            "meaning": "OCCURRED"
+          }
+        ],
+        "arm_records": [
+          {
+            "TimeUS": 42299740,
+            "ArmState": 1,
+            "ArmChecks": 1,
+            "Forced": 0,
+            "Method": 1,
+            "sim_s": 42.29974
+          },
+          {
+            "TimeUS": 94274775,
+            "ArmState": 0,
+            "ArmChecks": 0,
+            "Forced": 0,
+            "Method": 13,
+            "sim_s": 94.274775
+          }
+        ],
+        "fault_parameter_records": [
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 12.600000381469727,
+            "Default": 12.600000381469727,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_RC_FAIL",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_GPS_BYTELOSS",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 62141800,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 62.1418
+          },
+          {
+            "TimeUS": 62142633,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 62.142633
+          }
+        ],
+        "messages": [
+          {
+            "TimeUS": 65107280,
+            "Message": "GCS Failsafe",
+            "sim_s": 65.10728
+          },
+          {
+            "TimeUS": 65264717,
+            "Message": "Battery 1 is low 10.50V used 165 mAh",
+            "sim_s": 65.264717
+          },
+          {
+            "TimeUS": 65264717,
+            "Message": "Battery Failsafe",
+            "sim_s": 65.264717
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: GCS failsafe on",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery 1 low voltage failsafe",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery failsafe",
+            "sim_s": 97.264412
+          }
+        ],
+        "battery": {
+          "samples": 627,
+          "min_volt": 10.5,
+          "max_volt": 12.600000381469727
+        },
+        "gps": {
+          "samples": 552,
+          "status_transitions": [
+            {
+              "TimeUS": 9644474,
+              "I": 0,
+              "Status": 1,
+              "GMS": 252827600,
+              "GWk": 0,
+              "NSats": 3,
+              "HDop": 1.21,
+              "Lat": 0.0098958,
+              "Lng": 0.0098958,
+              "Alt": 0.09,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.644474
+            },
+            {
+              "TimeUS": 9824402,
+              "I": 0,
+              "Status": 6,
+              "GMS": 252827800,
+              "GWk": 2288,
+              "NSats": 10,
+              "HDop": 1.21,
+              "Lat": 0.01,
+              "Lng": 0.01,
+              "Alt": 0.1,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.824402
+            }
+          ]
+        },
+        "logger_dropped_max": 0,
+        "logger_drop_counter_changes": [
+          {
+            "TimeUS": 3267026,
+            "Dp": 0,
+            "Blk": 2463,
+            "Bytes": 108201,
+            "FMn": 133296,
+            "FMx": 204728,
+            "FAv": 174382,
+            "sim_s": 3.267026
+          }
+        ],
+        "logger_dropped_during_observation": 0
+      },
+      "mavlink": {
+        "modes": [
+          {
+            "sim_s": 2.377,
+            "Mode": 0,
+            "armed": false
+          },
+          {
+            "sim_s": 42.232,
+            "Mode": 4,
+            "armed": false
+          },
+          {
+            "sim_s": 65.032,
+            "Mode": 9,
+            "armed": true
+          }
+        ],
+        "statuses": [
+          {
+            "sim_s": 65.032,
+            "text": "GCS Failsafe"
+          },
+          {
+            "sim_s": 65.232,
+            "text": "Battery 1 is low 10.50V used 165 mAh"
+          },
+          {
+            "sim_s": 65.232,
+            "text": "Battery Failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: GCS failsafe on"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery 1 low voltage failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery failsafe"
+          }
+        ],
+        "system_time_samples": 1166,
+        "max_system_time_gap_s": 0.3999999999999986,
+        "last_sim_s": 119.832
+      },
+      "mode_time_comparison": [
+        {
+          "Mode": 0,
+          "dataflash_s": 2.269925,
+          "mavlink_assigned_s": 2.377,
+          "mavlink_minus_dataflash_s": 0.10707499999999959
+        },
+        {
+          "Mode": 4,
+          "dataflash_s": 42.272251,
+          "mavlink_assigned_s": 42.232,
+          "mavlink_minus_dataflash_s": -0.040250999999997816
+        },
+        {
+          "Mode": 9,
+          "dataflash_s": 65.10728,
+          "mavlink_assigned_s": 65.032,
+          "mavlink_minus_dataflash_s": -0.07528000000000645
+        }
+      ],
+      "crosschecks": [
+        {
+          "name": "sealed_inputs_match",
+          "passed": true
+        },
+        {
+          "name": "dataflash_covers_observation",
+          "passed": true
+        },
+        {
+          "name": "mode_sequence_matches_mavlink",
+          "passed": true
+        },
+        {
+          "name": "logger_reports_no_new_drops_during_observation",
+          "passed": true,
+          "startup_dropped": 0,
+          "observation_dropped": 0
+        }
+      ]
+    },
+    {
+      "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.0",
+      "scenario_id": "11-gcs-battery-compound",
+      "version": "4.5.7",
+      "baseline_s": 56.334,
+      "scenario_end_s": 118.334,
+      "input_sha256": {
+        "logs/00000001.BIN": "81b85123737acb807b70ed091f32e26f3957a8479d7afcaa3aa5e3b1a15f1566",
+        "rx.tlog": "eefa32ee664cc1475e0ace92aee7e755aa31ee877a6d817dc96c0e9621bc5ebe",
+        "events.jsonl": "48d1094a7ae1130168f2c4bb2c7ff208496b5fe6babe542a6ccd261c1e011e69",
+        "scenario.json": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+        "run.json": "83b576bb0e069ae71a1df48e673551df636965e02294ddca42bde922d059a6e5"
+      },
+      "events": [
+        {
+          "id": "baseline_ready",
+          "kind": "baseline",
+          "sim_s": 56.334,
+          "host_monotonic_ns": 5962526560409,
+          "host_unix_us": 1792289077401726,
+          "altitude_m": 11.972,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "id": "loss",
+          "kind": "heartbeat",
+          "sim_s": 61.432,
+          "host_monotonic_ns": 5963799765377,
+          "host_unix_us": 1792289078674931,
+          "at_s": 5,
+          "enabled": false
+        },
+        {
+          "id": "low",
+          "kind": "parameter",
+          "sim_s": 61.432,
+          "host_monotonic_ns": 5963799978664,
+          "host_unix_us": 1792289078675143,
+          "at_s": 5,
+          "name": "SIM_BATT_VOLTAGE",
+          "value": 10.5
+        },
+        {
+          "id": "scenario_end",
+          "kind": "end",
+          "sim_s": 118.334,
+          "host_monotonic_ns": 5978019894241,
+          "host_unix_us": 1792289092895059
+        }
+      ],
+      "dataflash": {
+        "counts": {
+          "FMT": 179,
+          "PARM": 1396,
+          "UNIT": 36,
+          "MULT": 15,
+          "FMTU": 179,
+          "MSG": 39,
+          "VER": 1,
+          "MODE": 4,
+          "SIM2": 46718,
+          "IMU": 5838,
+          "BAT": 1168,
+          "MAG": 3507,
+          "ERR": 3,
+          "BARO": 2334,
+          "CTUN": 1167,
+          "ATT": 1167,
+          "RATE": 1167,
+          "SIM": 1167,
+          "MOTB": 1167,
+          "RCIN": 1168,
+          "RCI2": 1168,
+          "RCOU": 1167,
+          "RCO2": 1167,
+          "VIBE": 2334,
+          "CTRL": 1167,
+          "DCM": 1167,
+          "EAHR": 1167,
+          "AUXF": 1,
+          "MAV": 116,
+          "DU32": 116,
+          "DSF": 116,
+          "XKF4": 2314,
+          "XKF1": 2314,
+          "XKF2": 2314,
+          "XKF3": 2314,
+          "XKF5": 1157,
+          "XKFS": 2314,
+          "XKQ": 2314,
+          "XKV1": 232,
+          "XKV2": 232,
+          "XKTV": 454,
+          "AHR2": 1147,
+          "XKT": 46,
+          "EV": 11,
+          "ESC": 45224,
+          "GPS": 548,
+          "GPA": 548,
+          "POS": 1092,
+          "PM": 11,
+          "ORGN": 4,
+          "SRTL": 13,
+          "PSCN": 769,
+          "PSCE": 769,
+          "PSCD": 769,
+          "ARM": 2,
+          "D32": 1,
+          "MAVC": 2,
+          "XKY0": 1536,
+          "XKY1": 1536,
+          "FILE": 256
+        },
+        "last_sim_s": 119.064855,
+        "field_definitions_from_log": {
+          "PARM": [
+            "TimeUS",
+            "Name",
+            "Value",
+            "Default"
+          ],
+          "MSG": [
+            "TimeUS",
+            "Message"
+          ],
+          "MODE": [
+            "TimeUS",
+            "Mode",
+            "ModeNum",
+            "Rsn"
+          ],
+          "BAT": [
+            "TimeUS",
+            "Inst",
+            "Volt",
+            "VoltR",
+            "Curr",
+            "CurrTot",
+            "EnrgTot",
+            "Temp",
+            "Res",
+            "RemPct",
+            "H",
+            "SH"
+          ],
+          "ERR": [
+            "TimeUS",
+            "Subsys",
+            "ECode"
+          ],
+          "RCI2": [
+            "TimeUS",
+            "C15",
+            "C16",
+            "OMask",
+            "Flags"
+          ],
+          "DSF": [
+            "TimeUS",
+            "Dp",
+            "Blk",
+            "Bytes",
+            "FMn",
+            "FMx",
+            "FAv"
+          ],
+          "GPS": [
+            "TimeUS",
+            "I",
+            "Status",
+            "GMS",
+            "GWk",
+            "NSats",
+            "HDop",
+            "Lat",
+            "Lng",
+            "Alt",
+            "Spd",
+            "GCrs",
+            "VZ",
+            "Yaw",
+            "U"
+          ],
+          "ARM": [
+            "TimeUS",
+            "ArmState",
+            "ArmChecks",
+            "Forced",
+            "Method"
+          ]
+        },
+        "mode_records": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42149800,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.1498,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 42187285,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.187285,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 64441713,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 64.441713,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "modes": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42149800,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.1498,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 64441713,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 5,
+            "sim_s": 64.441713,
+            "reason_name": "GCS_FAILSAFE"
+          }
+        ],
+        "errors": [
+          {
+            "TimeUS": 2364887,
+            "Subsys": 3,
+            "ECode": 0,
+            "sim_s": 2.364887,
+            "subsystem_name": "COMPASS"
+          },
+          {
+            "TimeUS": 64441713,
+            "Subsys": 8,
+            "ECode": 1,
+            "sim_s": 64.441713,
+            "subsystem_name": "FAILSAFE_GCS",
+            "meaning": "OCCURRED"
+          },
+          {
+            "TimeUS": 64564164,
+            "Subsys": 6,
+            "ECode": 1,
+            "sim_s": 64.564164,
+            "subsystem_name": "FAILSAFE_BATT",
+            "meaning": "OCCURRED"
+          }
+        ],
+        "arm_records": [
+          {
+            "TimeUS": 42187285,
+            "ArmState": 1,
+            "ArmChecks": 1,
+            "Forced": 0,
+            "Method": 1,
+            "sim_s": 42.187285
+          },
+          {
+            "TimeUS": 93616705,
+            "ArmState": 0,
+            "ArmChecks": 0,
+            "Forced": 0,
+            "Method": 13,
+            "sim_s": 93.616705
+          }
+        ],
+        "fault_parameter_records": [
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 12.600000381469727,
+            "Default": 12.600000381469727,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_RC_FAIL",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_GPS_BYTELOSS",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 61462072,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 61.462072
+          },
+          {
+            "TimeUS": 61462905,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 61.462905
+          }
+        ],
+        "messages": [
+          {
+            "TimeUS": 64441713,
+            "Message": "GCS Failsafe",
+            "sim_s": 64.441713
+          },
+          {
+            "TimeUS": 64564164,
+            "Message": "Battery 1 is low 10.50V used 161 mAh",
+            "sim_s": 64.564164
+          },
+          {
+            "TimeUS": 64564164,
+            "Message": "Battery Failsafe",
+            "sim_s": 64.564164
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: GCS failsafe on",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery 1 low voltage failsafe",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery failsafe",
+            "sim_s": 97.264412
+          }
+        ],
+        "battery": {
+          "samples": 620,
+          "min_volt": 10.5,
+          "max_volt": 12.600000381469727
+        },
+        "gps": {
+          "samples": 548,
+          "status_transitions": [
+            {
+              "TimeUS": 9644474,
+              "I": 0,
+              "Status": 1,
+              "GMS": 252827600,
+              "GWk": 0,
+              "NSats": 3,
+              "HDop": 1.21,
+              "Lat": 0.0098958,
+              "Lng": 0.0098958,
+              "Alt": 0.09,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.644474
+            },
+            {
+              "TimeUS": 9824402,
+              "I": 0,
+              "Status": 6,
+              "GMS": 252827800,
+              "GWk": 2288,
+              "NSats": 10,
+              "HDop": 1.21,
+              "Lat": 0.01,
+              "Lng": 0.01,
+              "Alt": 0.1,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.824402
+            }
+          ]
+        },
+        "logger_dropped_max": 0,
+        "logger_drop_counter_changes": [
+          {
+            "TimeUS": 3267026,
+            "Dp": 0,
+            "Blk": 2463,
+            "Bytes": 108201,
+            "FMn": 133076,
+            "FMx": 204723,
+            "FAv": 174244,
+            "sim_s": 3.267026
+          }
+        ],
+        "logger_dropped_during_observation": 0
+      },
+      "mavlink": {
+        "modes": [
+          {
+            "sim_s": 2.354,
+            "Mode": 0,
+            "armed": false
+          },
+          {
+            "sim_s": 42.132,
+            "Mode": 4,
+            "armed": false
+          },
+          {
+            "sim_s": 64.434,
+            "Mode": 9,
+            "armed": true
+          }
+        ],
+        "statuses": [
+          {
+            "sim_s": 64.434,
+            "text": "GCS Failsafe"
+          },
+          {
+            "sim_s": 64.534,
+            "text": "Battery 1 is low 10.50V used 161 mAh"
+          },
+          {
+            "sim_s": 64.534,
+            "text": "Battery Failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: GCS failsafe on"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery 1 low voltage failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery failsafe"
+          }
+        ],
+        "system_time_samples": 1159,
+        "max_system_time_gap_s": 0.4000000000000057,
+        "last_sim_s": 119.032
+      },
+      "mode_time_comparison": [
+        {
+          "Mode": 0,
+          "dataflash_s": 2.269925,
+          "mavlink_assigned_s": 2.354,
+          "mavlink_minus_dataflash_s": 0.0840749999999999
+        },
+        {
+          "Mode": 4,
+          "dataflash_s": 42.1498,
+          "mavlink_assigned_s": 42.132,
+          "mavlink_minus_dataflash_s": -0.017800000000001148
+        },
+        {
+          "Mode": 9,
+          "dataflash_s": 64.441713,
+          "mavlink_assigned_s": 64.434,
+          "mavlink_minus_dataflash_s": -0.007712999999995418
+        }
+      ],
+      "crosschecks": [
+        {
+          "name": "sealed_inputs_match",
+          "passed": true
+        },
+        {
+          "name": "dataflash_covers_observation",
+          "passed": true
+        },
+        {
+          "name": "mode_sequence_matches_mavlink",
+          "passed": true
+        },
+        {
+          "name": "logger_reports_no_new_drops_during_observation",
+          "passed": true,
+          "startup_dropped": 0,
+          "observation_dropped": 0
+        }
+      ]
+    },
+    {
+      "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7",
+      "scenario_id": "11-gcs-battery-compound",
+      "version": "4.5.7",
+      "baseline_s": 56.334,
+      "scenario_end_s": 119.132,
+      "input_sha256": {
+        "logs/00000001.BIN": "97fd5115c294f3e5196f310ac88ced292944e1314beaf0aa21cc797de97d7e22",
+        "rx.tlog": "e13f47e18dc434a4739f493e63e0ad215641aff166b6fd7b94b4ca8ad4a29775",
+        "events.jsonl": "a2275cf55bae1c3568ecea1756a93f77508194d46723844837e6c420806ccb80",
+        "scenario.json": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+        "run.json": "06a4e8650297d95a266d7e82e4e1dbd93a4ab4b9573680d8049579ae6cac3721"
+      },
+      "events": [
+        {
+          "id": "baseline_ready",
+          "kind": "baseline",
+          "sim_s": 56.334,
+          "host_monotonic_ns": 6890270101236,
+          "host_unix_us": 1792290005145266,
+          "altitude_m": 11.972,
+          "mode": 4,
+          "armed": true
+        },
+        {
+          "id": "loss",
+          "kind": "heartbeat",
+          "sim_s": 62.134,
+          "host_monotonic_ns": 6891719847042,
+          "host_unix_us": 1792290006595012,
+          "at_s": 5,
+          "enabled": false
+        },
+        {
+          "id": "low",
+          "kind": "parameter",
+          "sim_s": 62.134,
+          "host_monotonic_ns": 6891719984091,
+          "host_unix_us": 1792290006595148,
+          "at_s": 5,
+          "name": "SIM_BATT_VOLTAGE",
+          "value": 10.5
+        },
+        {
+          "id": "scenario_end",
+          "kind": "end",
+          "sim_s": 119.132,
+          "host_monotonic_ns": 6906006351431,
+          "host_unix_us": 1792290020881517
+        }
+      ],
+      "dataflash": {
+        "counts": {
+          "FMT": 179,
+          "PARM": 1396,
+          "UNIT": 36,
+          "MULT": 15,
+          "FMTU": 179,
+          "MSG": 39,
+          "VER": 1,
+          "MODE": 4,
+          "SIM2": 47025,
+          "IMU": 5878,
+          "BAT": 1175,
+          "MAG": 3528,
+          "ERR": 3,
+          "BARO": 2350,
+          "CTUN": 1175,
+          "ATT": 1175,
+          "RATE": 1175,
+          "SIM": 1175,
+          "MOTB": 1175,
+          "RCIN": 1176,
+          "RCI2": 1176,
+          "RCOU": 1175,
+          "RCO2": 1175,
+          "VIBE": 2350,
+          "CTRL": 1175,
+          "DCM": 1175,
+          "EAHR": 1175,
+          "AUXF": 1,
+          "MAV": 117,
+          "DU32": 117,
+          "DSF": 117,
+          "XKF4": 2330,
+          "XKF1": 2330,
+          "XKF2": 2330,
+          "XKF3": 2330,
+          "XKF5": 1165,
+          "XKFS": 2330,
+          "XKQ": 2330,
+          "XKV1": 233,
+          "XKV2": 233,
+          "XKTV": 456,
+          "AHR2": 1155,
+          "XKT": 46,
+          "EV": 11,
+          "ESC": 45532,
+          "GPS": 552,
+          "GPA": 552,
+          "POS": 1100,
+          "PM": 11,
+          "ORGN": 4,
+          "SRTL": 13,
+          "PSCN": 777,
+          "PSCE": 777,
+          "PSCD": 777,
+          "ARM": 2,
+          "D32": 1,
+          "MAVC": 2,
+          "XKY0": 1552,
+          "XKY1": 1552,
+          "FILE": 256
+        },
+        "last_sim_s": 119.829549,
+        "field_definitions_from_log": {
+          "PARM": [
+            "TimeUS",
+            "Name",
+            "Value",
+            "Default"
+          ],
+          "MSG": [
+            "TimeUS",
+            "Message"
+          ],
+          "MODE": [
+            "TimeUS",
+            "Mode",
+            "ModeNum",
+            "Rsn"
+          ],
+          "BAT": [
+            "TimeUS",
+            "Inst",
+            "Volt",
+            "VoltR",
+            "Curr",
+            "CurrTot",
+            "EnrgTot",
+            "Temp",
+            "Res",
+            "RemPct",
+            "H",
+            "SH"
+          ],
+          "ERR": [
+            "TimeUS",
+            "Subsys",
+            "ECode"
+          ],
+          "RCI2": [
+            "TimeUS",
+            "C15",
+            "C16",
+            "OMask",
+            "Flags"
+          ],
+          "DSF": [
+            "TimeUS",
+            "Dp",
+            "Blk",
+            "Bytes",
+            "FMn",
+            "FMx",
+            "FAv"
+          ],
+          "GPS": [
+            "TimeUS",
+            "I",
+            "Status",
+            "GMS",
+            "GWk",
+            "NSats",
+            "HDop",
+            "Lat",
+            "Lng",
+            "Alt",
+            "Spd",
+            "GCrs",
+            "VZ",
+            "Yaw",
+            "U"
+          ],
+          "ARM": [
+            "TimeUS",
+            "ArmState",
+            "ArmChecks",
+            "Forced",
+            "Method"
+          ]
+        },
+        "mode_records": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42164794,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.164794,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 42194782,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.194782,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 65264717,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 4,
+            "sim_s": 65.264717,
+            "reason_name": "BATTERY_FAILSAFE"
+          }
+        ],
+        "modes": [
+          {
+            "TimeUS": 2269925,
+            "Mode": 0,
+            "ModeNum": 0,
+            "Rsn": 26,
+            "sim_s": 2.269925,
+            "reason_name": "INITIALISED"
+          },
+          {
+            "TimeUS": 42164794,
+            "Mode": 4,
+            "ModeNum": 4,
+            "Rsn": 2,
+            "sim_s": 42.164794,
+            "reason_name": "GCS_COMMAND"
+          },
+          {
+            "TimeUS": 65264717,
+            "Mode": 9,
+            "ModeNum": 9,
+            "Rsn": 4,
+            "sim_s": 65.264717,
+            "reason_name": "BATTERY_FAILSAFE"
+          }
+        ],
+        "errors": [
+          {
+            "TimeUS": 2364887,
+            "Subsys": 3,
+            "ECode": 0,
+            "sim_s": 2.364887,
+            "subsystem_name": "COMPASS"
+          },
+          {
+            "TimeUS": 65264717,
+            "Subsys": 6,
+            "ECode": 1,
+            "sim_s": 65.264717,
+            "subsystem_name": "FAILSAFE_BATT",
+            "meaning": "OCCURRED"
+          },
+          {
+            "TimeUS": 65439647,
+            "Subsys": 8,
+            "ECode": 1,
+            "sim_s": 65.439647,
+            "subsystem_name": "FAILSAFE_GCS",
+            "meaning": "OCCURRED"
+          }
+        ],
+        "arm_records": [
+          {
+            "TimeUS": 42194782,
+            "ArmState": 1,
+            "ArmChecks": 1,
+            "Forced": 0,
+            "Method": 1,
+            "sim_s": 42.194782
+          },
+          {
+            "TimeUS": 94437210,
+            "ArmState": 0,
+            "ArmChecks": 0,
+            "Forced": 0,
+            "Method": 13,
+            "sim_s": 94.43721
+          }
+        ],
+        "fault_parameter_records": [
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 12.600000381469727,
+            "Default": 12.600000381469727,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_RC_FAIL",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 2269925,
+            "Name": "SIM_GPS_BYTELOSS",
+            "Value": 0.0,
+            "Default": 0.0,
+            "sim_s": 2.269925
+          },
+          {
+            "TimeUS": 62161792,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 62.161792
+          },
+          {
+            "TimeUS": 62162625,
+            "Name": "SIM_BATT_VOLTAGE",
+            "Value": 10.5,
+            "Default": "NaN",
+            "sim_s": 62.162625
+          }
+        ],
+        "messages": [
+          {
+            "TimeUS": 65264717,
+            "Message": "Battery 1 is low 10.50V used 166 mAh",
+            "sim_s": 65.264717
+          },
+          {
+            "TimeUS": 65264717,
+            "Message": "Battery Failsafe",
+            "sim_s": 65.264717
+          },
+          {
+            "TimeUS": 65439647,
+            "Message": "GCS + Battery Failsafe - Continuing Landing",
+            "sim_s": 65.439647
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: GCS failsafe on",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery 1 low voltage failsafe",
+            "sim_s": 97.264412
+          },
+          {
+            "TimeUS": 97264412,
+            "Message": "PreArm: Battery failsafe",
+            "sim_s": 97.264412
+          }
+        ],
+        "battery": {
+          "samples": 628,
+          "min_volt": 10.5,
+          "max_volt": 12.600000381469727
+        },
+        "gps": {
+          "samples": 552,
+          "status_transitions": [
+            {
+              "TimeUS": 9644474,
+              "I": 0,
+              "Status": 1,
+              "GMS": 252827600,
+              "GWk": 0,
+              "NSats": 3,
+              "HDop": 1.21,
+              "Lat": 0.0098958,
+              "Lng": 0.0098958,
+              "Alt": 0.09,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.644474
+            },
+            {
+              "TimeUS": 9824402,
+              "I": 0,
+              "Status": 6,
+              "GMS": 252827800,
+              "GWk": 2288,
+              "NSats": 10,
+              "HDop": 1.21,
+              "Lat": 0.01,
+              "Lng": 0.01,
+              "Alt": 0.1,
+              "Spd": 0.0,
+              "GCrs": 0.0,
+              "VZ": 0.0,
+              "Yaw": 0.0,
+              "U": 1,
+              "sim_s": 9.824402
+            }
+          ]
+        },
+        "logger_dropped_max": 0,
+        "logger_drop_counter_changes": [
+          {
+            "TimeUS": 3267026,
+            "Dp": 0,
+            "Blk": 2463,
+            "Bytes": 108201,
+            "FMn": 133076,
+            "FMx": 204710,
+            "FAv": 173499,
+            "sim_s": 3.267026
+          }
+        ],
+        "logger_dropped_during_observation": 0
+      },
+      "mavlink": {
+        "modes": [
+          {
+            "sim_s": 2.354,
+            "Mode": 0,
+            "armed": false
+          },
+          {
+            "sim_s": 42.132,
+            "Mode": 4,
+            "armed": false
+          },
+          {
+            "sim_s": 65.232,
+            "Mode": 9,
+            "armed": true
+          }
+        ],
+        "statuses": [
+          {
+            "sim_s": 65.232,
+            "text": "Battery 1 is low 10.50V used 166 mAh"
+          },
+          {
+            "sim_s": 65.232,
+            "text": "Battery Failsafe"
+          },
+          {
+            "sim_s": 65.432,
+            "text": "GCS + Battery Failsafe - Continuing Landing"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: GCS failsafe on"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery 1 low voltage failsafe"
+          },
+          {
+            "sim_s": 97.234,
+            "text": "PreArm: Battery failsafe"
+          }
+        ],
+        "system_time_samples": 1167,
+        "max_system_time_gap_s": 0.4000000000000057,
+        "last_sim_s": 119.832
+      },
+      "mode_time_comparison": [
+        {
+          "Mode": 0,
+          "dataflash_s": 2.269925,
+          "mavlink_assigned_s": 2.354,
+          "mavlink_minus_dataflash_s": 0.0840749999999999
+        },
+        {
+          "Mode": 4,
+          "dataflash_s": 42.164794,
+          "mavlink_assigned_s": 42.132,
+          "mavlink_minus_dataflash_s": -0.032794000000002654
+        },
+        {
+          "Mode": 9,
+          "dataflash_s": 65.264717,
+          "mavlink_assigned_s": 65.232,
+          "mavlink_minus_dataflash_s": -0.032717000000005214
+        }
+      ],
+      "crosschecks": [
+        {
+          "name": "sealed_inputs_match",
+          "passed": true
+        },
+        {
+          "name": "dataflash_covers_observation",
+          "passed": true
+        },
+        {
+          "name": "mode_sequence_matches_mavlink",
+          "passed": true
+        },
+        {
+          "name": "logger_reports_no_new_drops_during_observation",
+          "passed": true,
+          "startup_dropped": 0,
+          "observation_dropped": 0
+        }
+      ]
+    }
+  ],
+  "compound_ordering_review": {
+    "checked_at_utc": "2026-10-18T02:26:55.993163+00:00",
+    "annotation_producer": "assistant",
+    "qualified_human_review": false,
+    "verdict": "Expected battery-first source branch; original strict text assertion fails. No behavioral regression established by these four traces.",
+    "preservation": "Original scenario, raw logs, evaluator and result files were not changed by this review. Result hashes snapshot original evaluation outcomes.",
+    "sources": [
+      {
+        "version": "4.5.7",
+        "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+        "path": "ArduCopter/events.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/ArduCopter/events.cpp",
+        "bytes": 19639,
+        "sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe",
+        "observed_sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe",
+        "matches_manifest": true
+      },
+      {
+        "version": "4.5.7",
+        "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+        "path": "libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+        "bytes": 13328,
+        "sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01",
+        "observed_sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01",
+        "matches_manifest": true
+      },
+      {
+        "version": "4.5.7",
+        "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+        "path": "libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/2a3dc4b7bf2507120f7378a7b2fde73185e0c325/libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+        "bytes": 37929,
+        "sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1",
+        "observed_sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1",
+        "matches_manifest": true
+      },
+      {
+        "version": "4.5.6",
+        "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+        "path": "ArduCopter/events.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/ArduCopter/events.cpp",
+        "bytes": 19639,
+        "sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe",
+        "observed_sha256": "62992c7e68cf184a7e07b9204497613cb41a3a8ed51ec4aab966ee04d5737cfe",
+        "matches_manifest": true
+      },
+      {
+        "version": "4.5.6",
+        "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+        "path": "libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp",
+        "bytes": 13328,
+        "sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01",
+        "observed_sha256": "133e3561f87e844fe94fff0e3f0692f998ce1ac26307ba96335dfe67703a8e01",
+        "matches_manifest": true
+      },
+      {
+        "version": "4.5.6",
+        "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+        "path": "libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+        "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696/libraries/AP_BattMonitor/AP_BattMonitor.cpp",
+        "bytes": 37929,
+        "sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1",
+        "observed_sha256": "cef82e7231e424befec7b98aab57b591a6a5f4ddb51414659dad1e37288df9a1",
+        "matches_manifest": true
+      }
+    ],
+    "events_cpp_identical_between_pins": true,
+    "source_branch_lines": {
+      "announcement_formatter": [
+        90,
+        97
+      ],
+      "gcs_timeout": [
+        125,
+        158
+      ],
+      "gcs_occurrence_error": [
+        164,
+        165
+      ],
+      "battery_landing_continuation": [
+        208,
+        211
+      ],
+      "gcs_default_announcement": [
+        227,
+        228
+      ],
+      "gcs_action": [
+        231,
+        232
+      ]
+    },
+    "comparisons": [
+      {
+        "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.0",
+        "release": "4.5.6",
+        "schedule": "schedule-0.0",
+        "ordering": "gcs_first",
+        "fault_marker_s": 61.432,
+        "dataflash_land_s": 64.441713,
+        "dataflash_land_reason": 5,
+        "dataflash_gcs_s": 64.441713,
+        "dataflash_battery_s": 64.664124,
+        "second_minus_first_s": 0.22241100000000813,
+        "disarm_s": 93.621703,
+        "onboard_gcs_message": "GCS Failsafe",
+        "original_result": {
+          "sha256": "98609c2efbbaa8acc28383c94d34c172887221b118132cd0aeb485367b68265f",
+          "outcome": "PASS",
+          "failed_assertions": [],
+          "passed_assertion_count": 8,
+          "passed_run_check_count": 11
+        },
+        "source_consistency_checks": [
+          {
+            "name": "both_detectors_occur_within_declared_fault_windows",
+            "passed": true
+          },
+          {
+            "name": "land_reason_agrees_with_first_detector",
+            "passed": true
+          },
+          {
+            "name": "gcs_message_matches_source_branch_and_timestamp",
+            "passed": true
+          },
+          {
+            "name": "land_persists_and_disarms_by_declared_deadline",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/11-gcs-battery-compound/schedule-0.7",
+        "release": "4.5.6",
+        "schedule": "schedule-0.7",
+        "ordering": "gcs_first",
+        "fault_marker_s": 62.134,
+        "dataflash_land_s": 65.10728,
+        "dataflash_land_reason": 5,
+        "dataflash_gcs_s": 65.10728,
+        "dataflash_battery_s": 65.264717,
+        "second_minus_first_s": 0.1574370000000016,
+        "disarm_s": 94.274775,
+        "onboard_gcs_message": "GCS Failsafe",
+        "original_result": {
+          "sha256": "90a137220a300a07dd90a15021b479a9bde0b7198cb2084cc0e96883613597bb",
+          "outcome": "PASS",
+          "failed_assertions": [],
+          "passed_assertion_count": 8,
+          "passed_run_check_count": 11
+        },
+        "source_consistency_checks": [
+          {
+            "name": "both_detectors_occur_within_declared_fault_windows",
+            "passed": true
+          },
+          {
+            "name": "land_reason_agrees_with_first_detector",
+            "passed": true
+          },
+          {
+            "name": "gcs_message_matches_source_branch_and_timestamp",
+            "passed": true
+          },
+          {
+            "name": "land_persists_and_disarms_by_declared_deadline",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.0",
+        "release": "4.5.7",
+        "schedule": "schedule-0.0",
+        "ordering": "gcs_first",
+        "fault_marker_s": 61.432,
+        "dataflash_land_s": 64.441713,
+        "dataflash_land_reason": 5,
+        "dataflash_gcs_s": 64.441713,
+        "dataflash_battery_s": 64.564164,
+        "second_minus_first_s": 0.1224510000000123,
+        "disarm_s": 93.616705,
+        "onboard_gcs_message": "GCS Failsafe",
+        "original_result": {
+          "sha256": "0c37d96ccf7e6dbedec575ffc4d046ce15675b2c725c84a7512dc7811c6567d7",
+          "outcome": "PASS",
+          "failed_assertions": [],
+          "passed_assertion_count": 8,
+          "passed_run_check_count": 11
+        },
+        "source_consistency_checks": [
+          {
+            "name": "both_detectors_occur_within_declared_fault_windows",
+            "passed": true
+          },
+          {
+            "name": "land_reason_agrees_with_first_detector",
+            "passed": true
+          },
+          {
+            "name": "gcs_message_matches_source_branch_and_timestamp",
+            "passed": true
+          },
+          {
+            "name": "land_persists_and_disarms_by_declared_deadline",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "run_dir": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/11-gcs-battery-compound/schedule-0.7",
+        "release": "4.5.7",
+        "schedule": "schedule-0.7",
+        "ordering": "battery_first",
+        "fault_marker_s": 62.134,
+        "dataflash_land_s": 65.264717,
+        "dataflash_land_reason": 4,
+        "dataflash_gcs_s": 65.439647,
+        "dataflash_battery_s": 65.264717,
+        "second_minus_first_s": 0.17492999999998915,
+        "disarm_s": 94.43721,
+        "onboard_gcs_message": "GCS + Battery Failsafe - Continuing Landing",
+        "original_result": {
+          "sha256": "b413fc127bf80c0b9d33ccc2a866450055ff6a78fc7bb33ed1ff5b70d3fe701b",
+          "outcome": "FAIL",
+          "failed_assertions": [
+            {
+              "id": "assertion-02",
+              "outcome": "FAIL",
+              "detail": "Observed status text does not include the required text",
+              "type": "text",
+              "fault_evidence": true,
+              "window_sim_s": [
+                62.134,
+                70.134
+              ],
+              "accepted_substrings": [
+                "GCS Failsafe"
+              ],
+              "observations": [
+                {
+                  "sim_s": 65.232,
+                  "text": "Battery 1 is low 10.50V used 166 mAh"
+                },
+                {
+                  "sim_s": 65.232,
+                  "text": "Battery Failsafe"
+                },
+                {
+                  "sim_s": 65.432,
+                  "text": "GCS + Battery Failsafe - Continuing Landing"
+                }
+              ]
+            }
+          ],
+          "passed_assertion_count": 7,
+          "passed_run_check_count": 11
+        },
+        "source_consistency_checks": [
+          {
+            "name": "both_detectors_occur_within_declared_fault_windows",
+            "passed": true
+          },
+          {
+            "name": "land_reason_agrees_with_first_detector",
+            "passed": true
+          },
+          {
+            "name": "gcs_message_matches_source_branch_and_timestamp",
+            "passed": true
+          },
+          {
+            "name": "land_persists_and_disarms_by_declared_deadline",
+            "passed": true
+          }
+        ]
+      }
+    ],
+    "crosscheck_totals": {
+      "passed": 32,
+      "total": 32,
+      "generic_reader": 16,
+      "source_consistency": 16
+    },
+    "limitations": [
+      "Relative detector ordering is observed, but these logs do not isolate which scheduler or heartbeat phase caused the ordering difference.",
+      "This supplemental review does not replace or retroactively pass the original oracle.",
+      "No physical-model validation or qualified human review is claimed."
+    ]
+  }
+}

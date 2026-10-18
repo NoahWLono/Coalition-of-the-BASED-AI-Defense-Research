@@ -1,0 +1,44 @@
+{
+  "bootstrap_sha256": "a425ad8002d1bf89708bc73add76e4b39a66a6944900347986248e1a1f30393a",
+  "captured_at_utc": "2026-10-18T01:53:18.320646+00:00",
+  "checks": {
+    "forced_local_uv_python_fallback": "PASS",
+    "fresh_venv_from_existing_exact_python": "PASS",
+    "installed_package_contents_match_pinned_wheels": "PASS",
+    "manifest_and_environment_json": "PASS",
+    "namespace_creation_preflight": "PASS",
+    "readme_copyedit": "0 high/medium findings; 3 low confidence factual lists retained",
+    "reject_wrong_cached_binary_hash_and_preserve_bytes": "PASS",
+    "repeat_idempotence_zero_downloads": "PASS",
+    "shell_syntax": "PASS"
+  },
+  "evidence": [
+    {
+      "path": "evidence/bootstrap-first.log",
+      "sha256": "0c72facbb62b90e50e89bdfc1d05050e7b19f6a5b05ccc9c0fe31575bbf87d2a"
+    },
+    {
+      "path": "evidence/bootstrap-second.log",
+      "sha256": "cf32f9c3ff2d45ef743f41d75b6d058f9d91af7a5c072c7d48bead18ee3c0916"
+    },
+    {
+      "path": "evidence/bootstrap-fallback.log",
+      "sha256": "b2e9357386f2584b63c1180a59c10c938684d1d11258732b469f276017617e8c"
+    },
+    {
+      "path": "evidence/bootstrap-rejected-checksum.log",
+      "sha256": "14fae3d14b4e8b63b776817ff33c7265f8cfaff74b8c18a73109b725039fd62f"
+    },
+    {
+      "path": "evidence/bootstrap-final-fresh.log",
+      "sha256": "15d857a744ce3d4682307c66c54d39c0c6160b41adf36c6ea33c7b7e8708492f"
+    },
+    {
+      "path": "evidence/bootstrap-final-repeat.log",
+      "sha256": "cf32f9c3ff2d45ef743f41d75b6d058f9d91af7a5c072c7d48bead18ee3c0916"
+    }
+  ],
+  "final_smoke_location": "temporary copy under project .bootstrap, removed after checks",
+  "schema_version": 1,
+  "simulator_started": false
+}

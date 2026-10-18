@@ -1,0 +1,6 @@
+3  negative-parallelism  KEPT  Distinguishes static source observations from executed simulator evidence.
+28  negative-parallelism  KEPT  Distinguishes laboratory acceptance bounds from documented guarantees.
+65  negative-parallelism  KEPT  Corrects the proposed confusion between no-fix GPS messages and stale input.
+66  negative-parallelism  KEPT  Defines starvation and explicitly records the frozen-valid-data coverage gap.
+77  negative-parallelism  KEPT  Separates laboratory verification requirements from upstream source claims.
+FIXED: 0; KEPT: 5.

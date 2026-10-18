@@ -1,0 +1,135 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | ARCHITECTURE</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / ARCHITECTURE</p><article><h1>Architecture</h1>
+<p>CEDAR runs as one loopback FastAPI process and a SQLite database. The browser is a static JavaScript client of the same server. The initial dataset is imported from a dedicated corpus directory; future changes are stored in the database. Analysis never reads the separate evaluation annotations.</p>
+<pre><code class="language-mermaid">flowchart LR
+  D[Inert supplier text] --&gt; I[Ingestion and source hashes]
+  J[Buyer policy and declared structured inputs] --&gt; I
+  I --&gt; L[Assertion ledger]
+  L --&gt; E[Documentary policy engine]
+  L --&gt; C[Decimal cost model]
+  L --&gt; S[Scoring intervals]
+  J --&gt; A[Offline software assurance]
+  E --&gt; R[SQLite revision and review store]
+  C --&gt; R
+  S --&gt; R
+  A --&gt; R
+  R --&gt; U[Local browser workbench]
+  R --&gt; X[Portable decision package]
+  X --&gt; V[Standalone consistency verifier]
+  T[Separate answer keys] -. evaluation only .-&gt; Q[Test and evaluation runner]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Boundary</th>
+<th>Implementation</th>
+<th>Contract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source to assertion</td>
+<td><code>cedar/ingest.py</code></td>
+<td>Literal passages, SHA-256, line ranges, version, normalization and dates retained</td>
+</tr>
+<tr>
+<td>Assertion to assessment</td>
+<td><code>cedar/engine.py</code></td>
+<td>Requirement applicability and evidence type are checked before support can be granted</td>
+</tr>
+<tr>
+<td>Quotation to cost</td>
+<td><code>cedar/costs.py</code></td>
+<td>CAD Decimal arithmetic; unknown values create open exposures</td>
+</tr>
+<tr>
+<td>Evidence to preference</td>
+<td><code>cedar/scoring.py</code></td>
+<td>Per-criterion min-max formula, explicit weights and score bounds</td>
+</tr>
+<tr>
+<td>Inventory to finding</td>
+<td><code>cedar/assurance.py</code></td>
+<td>Offline official schema validation, bounded exact synthetic identifiers, exposure provenance</td>
+</tr>
+<tr>
+<td>State to decision</td>
+<td><code>cedar/store.py</code></td>
+<td>Write transaction, expected revision, immutable record digest, separate review/approval events</td>
+</tr>
+<tr>
+<td>Browser to authority</td>
+<td><code>cedar/app.py</code></td>
+<td>Opaque session, server role checks, CSRF, origin/host checks and bounded text upload</td>
+</tr>
+<tr>
+<td>Decision to artifact</td>
+<td><code>cedar/export.py</code></td>
+<td>Exact record, escaped report, safe CSV, inert source filenames and self-contained verifier</td>
+</tr>
+</tbody>
+</table>
+<p>The store uses a single workspace row and a snapshot table because the dataset is deliberately small. Each snapshot copies its analysis inputs and evaluation. This trades storage for simple inspection and reproducibility. It is not an enterprise document repository or a multi-tenant service.</p>
+<p>Every input mutation increments a revision inside <code>BEGIN IMMEDIATE</code>. The expected revision is checked under that lock. Approval checks the current revision, record digest, current input identity and technical review before writing an approval event. A concurrent amendment either follows the approval and makes it stale, or happens first and causes the attempted approval to fail. Every old snapshot remains exportable with its recorded inputs and current stale label.</p>
+<p>Invalidation is conservative: any evidence, assumption, policy or assertion-review change stales every prior snapshot. The change log separately lists the assessments, costs and score contributions that actually changed. Selective reapproval of unaffected decisions is a possible future optimization, not a demonstrated feature.</p>
+<p>The generative-model boundary is intentionally narrow. <code>cedar/adapters.py</code> declares proposal-only inputs and outputs; it contains no model client, credentials or permission to review or approve. The demonstrated application runs without a model and does not call the adapter.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

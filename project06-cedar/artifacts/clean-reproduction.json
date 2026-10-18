@@ -1,0 +1,345 @@
+{
+  "started_at": "2026-10-18T02:38:37.513871+00:00",
+  "host_platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "tested_archive_sha256": "23857a15ea07c5898794f9b215da007287602f89c22ce14de2d3173bdf2f8d7b",
+  "scope": "New temporary directory and new virtual environment on the same Linux host. uv dependency cache and installed managed Python may be reused. No independent-machine claim.",
+  "steps": [
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--frozen"
+      ],
+      "exit_code": 0,
+      "seconds": 0.464
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--frozen",
+        "python",
+        "-m",
+        "cedar",
+        "corpus"
+      ],
+      "exit_code": 0,
+      "seconds": 0.305
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--frozen",
+        "python",
+        "-m",
+        "cedar",
+        "verify"
+      ],
+      "exit_code": 0,
+      "seconds": 4.196
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--frozen",
+        "python",
+        "-m",
+        "cedar",
+        "walkthrough"
+      ],
+      "exit_code": 0,
+      "seconds": 3.548
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--frozen",
+        "python",
+        "scripts/verify_package.py",
+        "artifacts/full-decision.zip"
+      ],
+      "exit_code": 0,
+      "seconds": 0.192
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--frozen",
+        "python",
+        "scripts/reproduce_decision.py",
+        "artifacts/full-decision.zip"
+      ],
+      "exit_code": 0,
+      "seconds": 0.361
+    }
+  ],
+  "functional_tree_sha256": "c2808c3d3d7484cd2ec5fbee0c6d077e619203b61e430baaf5bbd46213395332",
+  "corpus_rebuild_byte_identical": true,
+  "fresh_server": {
+    "health": {
+      "status": "ok",
+      "synthetic": true,
+      "version": "0.1.0"
+    },
+    "packages": 12,
+    "requirements": 40,
+    "home_http": 200,
+    "offline_api_reference_http": 200
+  },
+  "evaluation": {
+    "executed_at": "2026-10-18T02:38:42.617448+00:00",
+    "python": "3.13.15",
+    "platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+    "annotation_provenance": "Assistant-authored synthetic fixture expectations prepared by a separate corpus-author task before comparing against the engine. This is not human annotation or independent empirical validation.",
+    "scopes": {
+      "slice": {
+        "counts": {
+          "suppliers": 3,
+          "packages": 3,
+          "requirements": 8,
+          "base_documents": 9,
+          "amendments": 1,
+          "inventories": 3
+        },
+        "baseline_assessments": 24,
+        "baseline_eligible": [
+          "P03"
+        ],
+        "baseline_state_counts": {
+          "supported": 19,
+          "conflicting": 1,
+          "not_satisfied": 1,
+          "unresolved": 2,
+          "stale": 1
+        },
+        "extraction_by_layout": {
+          "table": {
+            "expected_assertions": 18,
+            "extracted_assertions": 18,
+            "exact_matches": 18,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "labels": {
+            "expected_assertions": 19,
+            "extracted_assertions": 19,
+            "exact_matches": 19,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "blocks": {
+            "expected_assertions": 18,
+            "extracted_assertions": 18,
+            "exact_matches": 18,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "citation_checks": 55,
+        "unsupported_citations": 0,
+        "scenarios": [
+          "baseline",
+          "buyer-v2",
+          "AMD01"
+        ],
+        "assessment_checks": 72,
+        "assessment_errors": 0,
+        "false_supported_mandatory": 0,
+        "cost_checks": 9,
+        "eligibility_checks": 9,
+        "sensitivity": {
+          "cases": [
+            {
+              "operations_to_support": 0.25,
+              "possible_leaders": [
+                "P03"
+              ],
+              "guaranteed_leaders": [
+                "P03"
+              ]
+            },
+            {
+              "operations_to_support": 0.5,
+              "possible_leaders": [
+                "P03"
+              ],
+              "guaranteed_leaders": [
+                "P03"
+              ]
+            },
+            {
+              "operations_to_support": 1,
+              "possible_leaders": [
+                "P03"
+              ],
+              "guaranteed_leaders": [
+                "P03"
+              ]
+            },
+            {
+              "operations_to_support": 2,
+              "possible_leaders": [
+                "P03"
+              ],
+              "guaranteed_leaders": [
+                "P03"
+              ]
+            },
+            {
+              "operations_to_support": 4,
+              "possible_leaders": [
+                "P03"
+              ],
+              "guaranteed_leaders": [
+                "P03"
+              ]
+            }
+          ],
+          "interpretation": "Five explicit group-weight ratios (0.25, 0.5, 1, 2, 4), restricted to documentary-eligible bids. These are scenario comparisons, not probabilities of purchase success."
+        },
+        "dominance": []
+      },
+      "full": {
+        "counts": {
+          "suppliers": 6,
+          "packages": 12,
+          "requirements": 40,
+          "mandatory": 18,
+          "scored": 14,
+          "informational": 8,
+          "base_documents": 36,
+          "amendments": 3,
+          "inventories": 12,
+          "requirements_versions": 2
+        },
+        "baseline_assessments": 480,
+        "baseline_eligible": [
+          "P02",
+          "P03",
+          "P07",
+          "P11",
+          "P12"
+        ],
+        "baseline_state_counts": {
+          "supported": 463,
+          "conflicting": 2,
+          "not_satisfied": 1,
+          "unresolved": 5,
+          "not_applicable": 6,
+          "stale": 3
+        },
+        "extraction_by_layout": {
+          "table": {
+            "expected_assertions": 200,
+            "extracted_assertions": 200,
+            "exact_matches": 200,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "labels": {
+            "expected_assertions": 201,
+            "extracted_assertions": 201,
+            "exact_matches": 201,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "blocks": {
+            "expected_assertions": 200,
+            "extracted_assertions": 200,
+            "exact_matches": 200,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "citation_checks": 601,
+        "unsupported_citations": 0,
+        "scenarios": [
+          "baseline",
+          "buyer-v2",
+          "AMD01",
+          "AMD02",
+          "AMD03",
+          "all-amendments"
+        ],
+        "assessment_checks": 2880,
+        "assessment_errors": 0,
+        "false_supported_mandatory": 0,
+        "cost_checks": 72,
+        "eligibility_checks": 72,
+        "sensitivity": {
+          "cases": [
+            {
+              "operations_to_support": 0.25,
+              "possible_leaders": [
+                "P11"
+              ],
+              "guaranteed_leaders": [
+                "P11"
+              ]
+            },
+            {
+              "operations_to_support": 0.5,
+              "possible_leaders": [
+                "P11"
+              ],
+              "guaranteed_leaders": [
+                "P11"
+              ]
+            },
+            {
+              "operations_to_support": 1,
+              "possible_leaders": [
+                "P11"
+              ],
+              "guaranteed_leaders": [
+                "P11"
+              ]
+            },
+            {
+              "operations_to_support": 2,
+              "possible_leaders": [
+                "P07"
+              ],
+              "guaranteed_leaders": [
+                "P07"
+              ]
+            },
+            {
+              "operations_to_support": 4,
+              "possible_leaders": [
+                "P07"
+              ],
+              "guaranteed_leaders": [
+                "P07"
+              ]
+            }
+          ],
+          "interpretation": "Five explicit group-weight ratios (0.25, 0.5, 1, 2, 4), restricted to documentary-eligible bids. These are scenario comparisons, not probabilities of purchase success."
+        },
+        "dominance": [
+          {
+            "dominant": "P11",
+            "dominated": "P12"
+          }
+        ]
+      }
+    },
+    "errors": [],
+    "runtime_seconds": 0.3762,
+    "peak_process_rss_mib": 32.95,
+    "passed": true,
+    "scope_limits": [
+      "Exact-labelled, assistant-generated synthetic layouts; all three were designed for this parser.",
+      "No held-out unseen customer corpus, human annotation study, live LLM evaluation or measured user time savings.",
+      "Runtime is one local evaluation process; peak RSS includes Python, schema validator and evaluation code.",
+      "Independent arithmetic means separately derived calculations; review agents are not independent empirical confirmation."
+    ]
+  },
+  "passed": true,
+  "duration_seconds": 10.786,
+  "finished_at": "2026-10-18T02:38:48.299858+00:00"
+}

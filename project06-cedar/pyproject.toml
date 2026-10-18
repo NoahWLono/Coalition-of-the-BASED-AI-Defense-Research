@@ -1,0 +1,24 @@
+[project]
+name = "cedar-workbench"
+version = "0.1.0"
+description = "Synthetic civilian procurement evidence and assurance workbench"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "fastapi==0.143.3",
+    "jsonschema==4.26.0",
+    "uvicorn==0.54.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[dependency-groups]
+dev = [
+    "httpx2==2.13.1",
+    "markdown==3.11.1",
+    "playwright==1.64.0",
+    "pytest==9.1.1",
+    "reportlab==5.0.1",
+]

@@ -1,0 +1,10 @@
+Actual SITL trace: evidence/starter/4.5.6/01-gcs-loss/schedule-0.0
+Configured assertion: GCS heartbeat interruption -> LAND (mode 9)
+Original evidence: PASS
+  heartbeat_gap PASS [61.432, 65.432]
+  text PASS 64.434
+  mode PASS 64.434
+  disarmed PASS 93.634
+Planted oracle regression: require RTL (mode 6) for that same immutable trace
+Wrong expectation: FAIL
+This is a detector demonstration, not an observed autopilot release regression.

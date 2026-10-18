@@ -1,0 +1,80 @@
+{
+  "assertions": [
+    {
+      "after": "dip",
+      "fault_evidence": true,
+      "field": "voltage_battery",
+      "message": "SYS_STATUS",
+      "op": "lt",
+      "type": "field",
+      "value": 11000,
+      "within_s": 2
+    },
+    {
+      "after": "restore",
+      "fault_evidence": true,
+      "field": "voltage_battery",
+      "message": "SYS_STATUS",
+      "op": "gt",
+      "type": "field",
+      "value": 11500,
+      "within_s": 6
+    },
+    {
+      "after": "dip",
+      "allowed": [
+        4
+      ],
+      "duration_s": 14,
+      "start_s": 0,
+      "type": "hold_mode"
+    },
+    {
+      "after": "land",
+      "type": "disarmed",
+      "within_s": 45
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 67,
+  "events": [
+    {
+      "at_s": 5,
+      "id": "dip",
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 10.5
+    },
+    {
+      "at_s": 6,
+      "id": "restore",
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 12.6
+    },
+    {
+      "at_s": 20,
+      "id": "land",
+      "kind": "mode",
+      "mode": "LAND"
+    }
+  ],
+  "id": "08-battery-transient",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "1s voltage dip shorter than3s battery timer; require actual observed low reading. If filtering prevents the dip, case is not accepted as a pass.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Brief low-voltage dip does not trigger LAND"
+}

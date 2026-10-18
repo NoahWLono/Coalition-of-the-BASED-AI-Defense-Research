@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "method": "Retrospective assertion-only replay; no new SITL execution",
+  "executed_corpus_version": "1.0.0",
+  "revised_corpus_version": "1.0.1",
+  "original_summary_sha256": "945386b23f2dad3bb4d3c96a1773ff4c43f1e411a813232cffb3dd64bc9fcf4d",
+  "evaluator_sha256": "38403238b32309a46f06645b89a5a4bcc262a9547e8d88a07cff9ff31b6869ae",
+  "revised_scenario_sha256": "004aefe86d0da4e9fe69a2cfae42f04751f8e353263896f5a485b0a6a18e735b",
+  "review_basis": "docs/compound-ordering-review.md and pinned events.cpp lines 208-211",
+  "only_change": "Permit the explicit GCS plus Battery status branch as an alternative to GCS Failsafe",
+  "events_parameters_deadlines_and_state_assertions_unchanged": true,
+  "original_results_preserved": true,
+  "original_corpus_gates_resolved": false,
+  "revised_corpus_gates_resolved": true,
+  "replays": [
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.0",
+      "executed_corpus_outcome": "PASS",
+      "revised_corpus_outcome": "PASS",
+      "original_scenario_sha256": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+      "raw_seal_sha256": "7a45e52c8a75359d3222767dddfe265feed9b255bf6e1bdbe2cc589190ee3ee5",
+      "result": "corpus-1.0.1-replay/4.5.6__11-gcs-battery-compound__schedule-0.0.json"
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.0",
+      "executed_corpus_outcome": "PASS",
+      "revised_corpus_outcome": "PASS",
+      "original_scenario_sha256": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+      "raw_seal_sha256": "0aaaf30e2b56360d89c474a825a851c958eea6fbebdfb47401197f80a3fd6c4d",
+      "result": "corpus-1.0.1-replay/4.5.7__11-gcs-battery-compound__schedule-0.0.json"
+    },
+    {
+      "run": "4.5.6/11-gcs-battery-compound/schedule-0.7",
+      "executed_corpus_outcome": "PASS",
+      "revised_corpus_outcome": "PASS",
+      "original_scenario_sha256": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+      "raw_seal_sha256": "6b7515bf2b7f17449e1fb7d233d8b602f72899ead329a8387a5c4cdb6daf7f1e",
+      "result": "corpus-1.0.1-replay/4.5.6__11-gcs-battery-compound__schedule-0.7.json"
+    },
+    {
+      "run": "4.5.7/11-gcs-battery-compound/schedule-0.7",
+      "executed_corpus_outcome": "FAIL",
+      "revised_corpus_outcome": "PASS",
+      "original_scenario_sha256": "a1dac221df012ac15c83550c01c72b61b313ec53622b3f171d7ed01160d38f9e",
+      "raw_seal_sha256": "74347e9dd62e57c116c366603a60069d2136a3d219d828eeebf3752d2017b28d",
+      "result": "corpus-1.0.1-replay/4.5.7__11-gcs-battery-compound__schedule-0.7.json"
+    }
+  ]
+}

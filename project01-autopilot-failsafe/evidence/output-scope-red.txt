@@ -1,0 +1,25 @@
+test_accepts_fresh_evidence_subdirectory (test_runner.OutputScope.test_accepts_fresh_evidence_subdirectory) ... FAIL
+test_rejects_output_outside_project_evidence (test_runner.OutputScope.test_rejects_output_outside_project_evidence) ... FAIL
+test_rejects_external_action_and_unsorted_events (test_runner.RunnerContract.test_rejects_external_action_and_unsorted_events) ... ok
+test_requires_private_loopback_only_network (test_runner.RunnerContract.test_requires_private_loopback_only_network) ... ok
+
+======================================================================
+FAIL: test_accepts_fresh_evidence_subdirectory (test_runner.OutputScope.test_accepts_fresh_evidence_subdirectory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/tests/test_runner.py", line 29, in test_accepts_fresh_evidence_subdirectory
+    self.assertTrue(hasattr(runner,'validated_output'),'output scoping missing')
+AssertionError: False is not true : output scoping missing
+
+======================================================================
+FAIL: test_rejects_output_outside_project_evidence (test_runner.OutputScope.test_rejects_output_outside_project_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/tests/test_runner.py", line 24, in test_rejects_output_outside_project_evidence
+    self.assertTrue(hasattr(runner,'validated_output'),'output scoping missing')
+AssertionError: False is not true : output scoping missing
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)

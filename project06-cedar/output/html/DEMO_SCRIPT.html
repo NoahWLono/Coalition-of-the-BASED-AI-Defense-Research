@@ -1,0 +1,162 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | DEMO_SCRIPT</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / DEMO_SCRIPT</p><article><h1>CEDAR: a decision that changes when the evidence changes</h1>
+<p><strong>Target: 4 minutes 45 seconds after rehearsal · Synthetic data throughout</strong></p>
+<p>This is a narration script and an executable API walkthrough. It does not claim that a video recording has been made. The live sequence uses the implemented browser interface; the API replay is a separate reproducible fallback.</p>
+<h2>Prepare before the meeting</h2>
+<p>From the repository, install the locked environment and launch a fresh demonstration:</p>
+<pre><code class="language-sh">uv sync --frozen
+uv run --frozen python -m cedar demo --db runtime/presentation-01.sqlite
+</code></pre>
+<p>Use a new database filename for each clean rehearsal; an existing database retains its decisions and amendments. Open <a href="http://127.0.0.1:8765">the local workbench</a>. Confirm Overview shows twelve configurations, five documentary-eligible configurations, forty requirements in the matrix and no applied amendments. Requirements must be V1, the planning horizon three years, the replacement rate one, and optional equipment excluded. Keep all data synthetic and the server on loopback.</p>
+<p>The top-right role button opens the sign-in dialog. Choose a role, enter its displayed password and click <strong>Sign in</strong>. The public passwords are <code>cedar-analyst</code>, <code>cedar-reviewer</code> and <code>cedar-approver</code>. These are shared demonstration identities. The narrated review actions exercise the workflow. Independent human approval has not occurred.</p>
+<p>Keep the short notes below ready to paste. Close an evidence or review panel with its top-right close button before changing views or roles. Rehearse the clicks and downloads; the timings allow brief source inspection. A full technical review requires more time.</p>
+<h2>0:00–0:25: Establish the comparison</h2>
+<p><strong>Action:</strong> Start on <strong>Overview</strong>. Point to the scope, eligibility count and P01 subtotal. The initial requirements and supplier corpus are imported automatically when the fresh database starts.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>CEDAR compares fictional six-aircraft packages for a civilian inspection buyer. The new workspace has imported twelve configurations and forty requirements. Five configurations currently satisfy the mandatory documentary gates. That means they can receive further consideration; it does not establish field performance or authorize a purchase.</p>
+</blockquote>
+<h2>0:25–1:10: Inspect the apparent bargain</h2>
+<p><strong>Action:</strong> Click <strong>Inspect P01</strong> in the lowest-subtotal callout. Show the open mandatory gates and unpriced required item. Select <strong>R02</strong>, then an assertion card, to show the original passage, lines, version and hash. Close the panel. Open <strong>Requirements matrix</strong>, choose <strong>P01</strong> in <strong>Configuration</strong>, and point to R03 and R04.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>P01 has the lowest known subtotal: 113,700 Canadian dollars. A mandatory component is still unpriced, so the upper total is open. Its current documents also disagree about battery quantity. Here is the actual passage and its source version. Support is too short, and a supplier declaration does not satisfy a requirement for independent-test evidence. A high preference score cannot remove those gates.</p>
+</blockquote>
+<h2>1:10–1:45: Change an explicit assumption</h2>
+<p><strong>Action:</strong> Sign in as <strong>Analyst</strong>. Open <strong>Comparison</strong> and select <strong>P03</strong> in <strong>Inspect configuration</strong>. Show CAD 153,654.48. Change <strong>Replacement batteries / aircraft / year</strong> from <code>1</code> to <code>2</code>, then click <strong>Save assumptions</strong>. Confirm CAD 162,654.48. Briefly point to <strong>Weight sensitivity</strong> and <strong>Conservative dominance</strong> below the criterion table.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>P03 initially costs 153,654 dollars and 48 cents under the three-year assumptions. Two replacement batteries per aircraft per year raise that to 162,654 dollars and 48 cents. The quotation has not changed; the planning assumption has. Below, the weight scenarios expose preference trade-offs, and the declared comparison shows P11 dominating P12. Those scenarios do not estimate purchase-success probabilities.</p>
+</blockquote>
+<h2>1:45–2:35: Freeze and review the eligible decision</h2>
+<p><strong>Action:</strong> Open <strong>Decision package</strong>. Set <strong>Decision configuration</strong> to P03 and <strong>Decision type</strong> to <strong>Documentary eligible — further consideration</strong>. Paste the first rationale below and click <strong>Create snapshot</strong>. Switch to <strong>Reviewer</strong>, click <strong>Record technical review</strong> on that snapshot, paste its review note and submit. Close the panel. Switch to <strong>Approver</strong>, click <strong>Approve decision</strong>, paste its approval note and submit. Confirm the snapshot badge reads <strong>Approved</strong>.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>The analyst freezes the evidence, assumptions and recommendation in one snapshot. A technical-review role records its review of that exact digest, then a separate approver role approves it. The server enforces these permissions. I am switching shared demonstration accounts here; this exercise does not authenticate three independent people.</p>
+</blockquote>
+<h2>2:35–3:15: Apply the support amendment</h2>
+<p><strong>Action:</strong> Close the panel and switch to <strong>Analyst</strong>. Open <strong>Change review</strong> and click <strong>Apply AMD01</strong>. In the newest change record, show P03 R03 changing from <strong>Supported</strong> to <strong>Not satisfied</strong>. Click <strong>Inspect current evidence</strong> and its source assertion to show 24 months. Close the panel and open <strong>Decision package</strong>. Show the first snapshot's <strong>Stale</strong> badge and <strong>Previous review / approval is stale</strong> message.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>AMD01 replaces the support commitment. P03 now has 24 months of support against a 36-month requirement. Its eligibility changes, and the earlier approval becomes stale. The original record remains available with its old sources. CEDAR conservatively invalidates every earlier snapshot whenever an input changes; it does not silently carry approval forward.</p>
+</blockquote>
+<h2>3:15–4:15: Record the unresolved decision honestly</h2>
+<p><strong>Action:</strong> Still as Analyst, create a new P03 snapshot with <strong>Conditional — record open blockers</strong> and the conditional rationale below. Switch to Reviewer and record the conditional review note. Switch to Approver and approve with the conditional approval note. Close the panel. Show the new snapshot's conditional decision text beside its <strong>Approved</strong> status, with <strong>Open mandatory gates</strong> still visible. Click <strong>Export decision ZIP</strong> on this new snapshot.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>We can record a hold for clarification, but we cannot label P03 unconditionally eligible. This conditional record keeps the failed requirement visible. The new review and approval authorize the recorded hold only. The export includes the decision, alternatives, assumptions, outstanding questions, exact sources and verification instructions. No clarification question is sent to a supplier.</p>
+</blockquote>
+<h2>4:15–4:45: Show the portable result and its limit</h2>
+<p><strong>Action:</strong> Open the exported ZIP with the archive viewer and show <code>report.html</code>, <code>decision.json</code>, <code>evidence.csv</code>, <code>manifest.json</code> and <code>VERIFY.txt</code>. Open the extracted <code>report.html</code> for an offline review. If running a verifier live, use the downloaded ZIP's actual path with the trusted repository command shown below.</p>
+<p><strong>Say:</strong></p>
+<blockquote>
+<p>A reviewer can inspect this package without the running application. Hash checks detect inconsistency with the supplied manifest. They do not prove supplier truth, reviewer identity or approval currency after a future amendment. The next useful test is a bounded pilot with permitted documents and human annotations, measuring errors and total review effort. This demonstration has no customer validation or measured time-saving claim.</p>
+</blockquote>
+<h2>Exact review text</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Text to paste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First rationale</td>
+<td>Retain P03 for documentary consideration under V1 and two replacement batteries per aircraft per year. All supplied evidence is synthetic; no purchase is authorized.</td>
+</tr>
+<tr>
+<td>First technical review</td>
+<td>Demonstration review: source references, documentary gates and recorded cost assumptions checked for this snapshot.</td>
+</tr>
+<tr>
+<td>First approval</td>
+<td>Approve further documentary consideration only. No purchase or field-performance certification is authorized.</td>
+</tr>
+<tr>
+<td>Conditional rationale</td>
+<td>Hold P03 pending a support commitment that meets the 36-month requirement. AMD01 reduced the documented commitment to 24 months. Open gates remain; compare eligible alternatives.</td>
+</tr>
+<tr>
+<td>Conditional technical review</td>
+<td>Reviewed the amended support passage and unresolved gate. This record preserves a hold for clarification.</td>
+</tr>
+<tr>
+<td>Conditional approval</td>
+<td>Approve the recorded hold for clarification only. P03 remains ineligible for an unconditional recommendation.</td>
+</tr>
+</tbody>
+</table>
+<h2>Reproducible replay and package verification</h2>
+<p>The full API walkthrough runs in a temporary database, checks that an analyst approval attempt returns HTTP 403, and repeats the same cost, amendment, stale-approval and conditional-export story:</p>
+<pre><code class="language-sh">uv run --frozen python -m cedar walkthrough
+uv run --frozen python scripts/verify_package.py artifacts/full-decision.zip
+</code></pre>
+<p>Read <code>artifacts/walkthrough.json</code> for the recorded steps and <code>artifacts/full-stale-decision.zip</code> for the preserved earlier decision. These files come from the API replay, separately from the browser's downloaded ZIP. To verify the browser download, replace the example path with its actual location:</p>
+<pre><code class="language-sh">uv run --frozen python scripts/verify_package.py /path/to/downloaded-decision.zip
+</code></pre>
+<p>After extracting a trusted sample package, its portable verifier can also run without project dependencies:</p>
+<pre><code class="language-sh">python3 verify.py .
+</code></pre>
+<p>The complete verification entry point is <code>uv run --frozen python -m cedar verify</code>. The archive verifier checks content consistency and citation binding; it does not rerun the purchasing analysis. A verifier distributed inside an untrusted archive also needs a trusted source.</p>
+<p>For questions after the main demonstration, open <strong>Evidence viewer</strong> to filter the ledger or <strong>Software assurance</strong> to inspect a component disposition and its procurement consequence. All advisory identifiers are synthetic. A declared component and a supplier exposure statement do not establish real exploitability.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

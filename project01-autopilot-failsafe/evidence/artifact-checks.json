@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "corpus_1.0.1": true,
+    "corpus_1.0.0": true,
+    "corpus_generator_exact": true,
+    "dependency_manifest_hashes": true,
+    "local_doc_links": true
+  },
+  "missing_links": []
+}

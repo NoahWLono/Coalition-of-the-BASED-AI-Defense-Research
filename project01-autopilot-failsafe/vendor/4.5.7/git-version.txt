@@ -1,0 +1,7 @@
+commit 2a3dc4b7bf2507120f7378a7b2fde73185e0c325
+Author: Randy Mackay <rmackay9@yahoo.com>
+Date:   Mon Oct 7 16:30:57 2024 +0900
+
+    Plane: version to 4.5.7
+
+APMVERSION: ArduCopter V4.5.7

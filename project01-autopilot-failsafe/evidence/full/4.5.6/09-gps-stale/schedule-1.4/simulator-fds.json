@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-1.4/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-1.4/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-1.4/sitl.stdout",
+  "3": "socket:[183667]",
+  "4": "socket:[183668]",
+  "5": "socket:[183669]",
+  "6": "socket:[183670]",
+  "7": "socket:[183671]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/09-gps-stale/schedule-1.4/eeprom.bin",
+  "9": "socket:[183672]"
+}

@@ -1,0 +1,6 @@
+docs/comparison.md
+     5  HIGH negative-parallelism   patible pins, not the newest firmware releases.
+     9  MED  trailing-participle    , ordering and deadlines in SITL.
+    16  HIGH negative-parallelism   fline reader, not a second model opinion. The work has no qualified
+
+3 finding(s)

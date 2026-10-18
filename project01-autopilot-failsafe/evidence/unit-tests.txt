@@ -1,0 +1,46 @@
+test_disabled_requires_guided_armed_and_verified_silence (test_controls.Controls.test_disabled_requires_guided_armed_and_verified_silence) ... ok
+test_missing_injection_does_not_count_as_detection (test_controls.Controls.test_missing_injection_does_not_count_as_detection) ... ok
+test_replay_requires_only_targeted_mode_mismatch (test_controls.Controls.test_replay_requires_only_targeted_mode_mismatch) ... ok
+test_after_end_packet_cannot_supply_disarm_evidence (test_evaluator.EvaluatorTests.test_after_end_packet_cannot_supply_disarm_evidence) ... ok
+test_assertion_ids_are_optional_in_contract (test_evaluator.EvaluatorTests.test_assertion_ids_are_optional_in_contract) ... ok
+test_baseline_must_be_observed_not_only_claimed (test_evaluator.EvaluatorTests.test_baseline_must_be_observed_not_only_claimed) ... ok
+test_baseline_requires_stable_fresh_sensor_streams (test_evaluator.EvaluatorTests.test_baseline_requires_stable_fresh_sensor_streams) ... ok
+test_checksum_tampering_is_indeterminate (test_evaluator.EvaluatorTests.test_checksum_tampering_is_indeterminate) ... ok
+test_cleanup_failure_cannot_pass (test_evaluator.EvaluatorTests.test_cleanup_failure_cannot_pass) ... ok
+test_cli_outputs_json_and_outcome_exit_code (test_evaluator.EvaluatorTests.test_cli_outputs_json_and_outcome_exit_code) ... ok
+test_complete_transition_passes_with_fault_evidence (test_evaluator.EvaluatorTests.test_complete_transition_passes_with_fault_evidence) ... ok
+test_compound_events_cannot_exceed_declared_skew (test_evaluator.EvaluatorTests.test_compound_events_cannot_exceed_declared_skew) ... ok
+test_declared_baseline_allows_commanded_landing_without_fault (test_evaluator.EvaluatorTests.test_declared_baseline_allows_commanded_landing_without_fault) ... ok
+test_disabled_failsafe_still_guided_is_observed_failure (test_evaluator.EvaluatorTests.test_disabled_failsafe_still_guided_is_observed_failure) ... ok
+test_empty_assertions_and_no_fault_evidence_cannot_pass (test_evaluator.EvaluatorTests.test_empty_assertions_and_no_fault_evidence_cannot_pass) ... ok
+test_event_must_match_declared_schedule_and_offset (test_evaluator.EvaluatorTests.test_event_must_match_declared_schedule_and_offset) ... ok
+test_events_cannot_claim_different_action_from_scenario (test_evaluator.EvaluatorTests.test_events_cannot_claim_different_action_from_scenario) ... ok
+test_field_comparison_reads_mavlink_value (test_evaluator.EvaluatorTests.test_field_comparison_reads_mavlink_value) ... ok
+test_incomplete_window_coverage_is_indeterminate (test_evaluator.EvaluatorTests.test_incomplete_window_coverage_is_indeterminate) ... ok
+test_initial_mode_must_continue_until_first_event (test_evaluator.EvaluatorTests.test_initial_mode_must_continue_until_first_event) ... ok
+test_missing_autopilot_heartbeats_cannot_pass (test_evaluator.EvaluatorTests.test_missing_autopilot_heartbeats_cannot_pass) ... ok
+test_missing_fault_message_cannot_pass (test_evaluator.EvaluatorTests.test_missing_fault_message_cannot_pass) ... ok
+test_missing_or_empty_raw_logs_are_indeterminate (test_evaluator.EvaluatorTests.test_missing_or_empty_raw_logs_are_indeterminate) ... ok
+test_missing_seal_cannot_pass_actual_run (test_evaluator.EvaluatorTests.test_missing_seal_cannot_pass_actual_run) ... ok
+test_mode_is_not_physical_fault_evidence (test_evaluator.EvaluatorTests.test_mode_is_not_physical_fault_evidence) ... ok
+test_other_system_or_component_heartbeats_do_not_count (test_evaluator.EvaluatorTests.test_other_system_or_component_heartbeats_do_not_count) ... ok
+test_parameter_injection_requires_matching_tx_and_ack (test_evaluator.EvaluatorTests.test_parameter_injection_requires_matching_tx_and_ack) ... ok
+test_pre_stop_heartbeat_in_same_sim_tick_is_not_gap_violation (test_evaluator.EvaluatorTests.test_pre_stop_heartbeat_in_same_sim_tick_is_not_gap_violation) ... ok
+test_recovery_requires_continued_land_and_heartbeat_return (test_evaluator.EvaluatorTests.test_recovery_requires_continued_land_and_heartbeat_return) ... ok
+test_sparse_matching_field_still_proves_existential_assertion (test_evaluator.EvaluatorTests.test_sparse_matching_field_still_proves_existential_assertion) ... ok
+test_sparse_nonmatching_field_is_indeterminate_not_failure (test_evaluator.EvaluatorTests.test_sparse_nonmatching_field_is_indeterminate_not_failure) ... ok
+test_stale_and_missing_clocks_are_indeterminate (test_evaluator.EvaluatorTests.test_stale_and_missing_clocks_are_indeterminate) ... ok
+test_text_alternatives_accept_only_declared_gcs_branches (test_evaluator.EvaluatorTests.test_text_alternatives_accept_only_declared_gcs_branches) ... ok
+test_text_alternatives_reject_empty_malformed_or_ambiguous_lists (test_evaluator.EvaluatorTests.test_text_alternatives_reject_empty_malformed_or_ambiguous_lists) ... ok
+test_transmitted_heartbeat_inside_gap_fails (test_evaluator.EvaluatorTests.test_transmitted_heartbeat_inside_gap_fails) ... ok
+test_unknown_battery_sentinel_is_not_recovery (test_evaluator.EvaluatorTests.test_unknown_battery_sentinel_is_not_recovery) ... ok
+test_wrong_allowed_mode_fails_without_changing_raw_trace (test_evaluator.EvaluatorTests.test_wrong_allowed_mode_fails_without_changing_raw_trace) ... ok
+test_accepts_fresh_evidence_subdirectory (test_runner.OutputScope.test_accepts_fresh_evidence_subdirectory) ... ok
+test_rejects_output_outside_project_evidence (test_runner.OutputScope.test_rejects_output_outside_project_evidence) ... ok
+test_rejects_external_action_and_unsorted_events (test_runner.RunnerContract.test_rejects_external_action_and_unsorted_events) ... ok
+test_requires_private_loopback_only_network (test_runner.RunnerContract.test_requires_private_loopback_only_network) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 3.854s
+
+OK

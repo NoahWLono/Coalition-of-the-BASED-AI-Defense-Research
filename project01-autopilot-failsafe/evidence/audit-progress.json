@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "runs_audited": 30,
+  "checks_per_run": 9,
+  "gates_resolved": false,
+  "unresolved": [],
+  "remaining_project_simulator_pids": [
+    32447
+  ],
+  "all_checks_passed": false,
+  "runner_source_hashes": [
+    "339c39f4fdd7f2431d6965e4a8ef4c95718a3b20dff8324eb58e3f4817b1bc56",
+    "a0c9fb5c3bf13127d5ddd58bd41f3880a901dd75b4578f9a67209901c0f87bb0",
+    "b2b95ecf91dd889f1d5bf4097398eec6967105bfb68108f3bc8aeadc6581b3db"
+  ],
+  "observed_speedup_range": [
+    4.001052561027349,
+    4.004418228488849
+  ]
+}

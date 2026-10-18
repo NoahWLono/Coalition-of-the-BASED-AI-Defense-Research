@@ -1,0 +1,71 @@
+<!doctype html><html lang="fr" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | EXECUTIVE_BRIEF_FR</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / EXECUTIVE_BRIEF_FR</p><article><h1>CEDAR : les preuves derrière une décision d'achat</h1>
+<p><strong>Démonstration locale de portfolio · Offres civiles entièrement fictives</strong></p>
+<p>Comparer des offres devient difficile lorsqu'un composant obligatoire reste sans prix ou qu'une capacité annoncée manque de preuves. Les achats doivent justifier la comparaison, l'ingénieur doit vérifier les sources et le responsable de programme doit comprendre les conséquences des incertitudes.</p>
+<p>CEDAR est un outil local qui relie ces éléments. Un acheteur fictif y compare des ensembles de six drones non armés destinés à l'inspection civile. Le corpus complet réunit six fournisseurs, douze configurations et quarante exigences, avec trente-six documents initiaux dans trois formats textuels. Trois avenants et deux versions des exigences permettent d'examiner les changements. Les fournisseurs, produits, rapports d'essai et avis de sécurité sont tous fictifs.</p>
+<p>L'application conserve les énoncés explicitement identifiés, leur version, leur empreinte numérique et leurs lignes d'origine. Dix-huit exigences obligatoires déterminent l'admissibilité à un examen ultérieur. Quatorze critères pondérés expriment les préférences séparément; huit exigences informatives apportent du contexte. Les éléments manquants ou contradictoires restent visibles. Les coûts couvrent trois ans, en dollars canadiens, hors taxes et sans actualisation. Les hypothèses de remplacement sont explicites; les coûts obligatoires inconnus restent ouverts.</p>
+<p>La démonstration commence avec P01 : son sous-total connu de 113 700 CAD exclut un composant obligatoire sans prix. Le dossier présente aussi une quantité contradictoire, un soutien trop court et une preuve d'un type insuffisant. Un score élevé ne peut supprimer ces obstacles. P03 satisfait initialement aux exigences documentaires. Lorsque l'avenant AMD01 réduit son engagement de soutien de 36 à 24 mois, CEDAR modifie l'évaluation et indique que l'approbation précédente est périmée. Une nouvelle approbation conditionnelle porte uniquement sur la mise en attente pour clarification.</p>
+<p>L'évaluation initiale concorde avec les 480 états d'exigence et les douze totaux de coûts du manifeste attendu, rédigé séparément. Le parcours exécutable vérifie aussi les rôles, les approbations périmées et l'export. Le code et les annotations ont été produits avec l'aide de l'IA. Aucune validation humaine des annotations ni aucun audit indépendant n'est revendiqué.</p>
+<p>L'extraction exige la syntaxe textuelle documentée. Les PDF quelconques, la reconnaissance optique et l'évaluation d'un modèle connecté restent hors du périmètre réalisé. Les comptes de démonstration n'authentifient pas de véritables réviseurs. Les empreintes ne prouvent ni la véracité des offres ni les performances physiques.</p>
+<p>Un pilote proposé de quatre semaines utiliserait des documents autorisés, expurgés et non sensibles, avec des annotations humaines. Il mesurerait les erreurs et l'effort de revue. Noah Weinberger a fourni l'orientation du projet et son contexte en politiques, provenance des données et évaluation adversariale de l'IA. Aucun client ni entrepreneur n'a validé le produit.</p>
+<p>Voir la <a href="PILOT_PROPOSAL.html">proposition de pilote</a>, l'<a href="CASE_STUDY.html">étude technique</a> et les <a href="LIMITATIONS.html">limites</a>, en anglais.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+runtime/
+*.pyc
+artifacts/*.zip
+artifacts/*.webm
+dist/
+tmp/

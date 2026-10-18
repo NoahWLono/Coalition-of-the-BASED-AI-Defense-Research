@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/sitl.stdout",
+  "3": "socket:[426941]",
+  "4": "socket:[426942]",
+  "5": "socket:[426943]",
+  "6": "socket:[426944]",
+  "7": "socket:[426945]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.7/90-disabled-gcs-control/schedule-0.0/eeprom.bin",
+  "9": "socket:[426946]"
+}

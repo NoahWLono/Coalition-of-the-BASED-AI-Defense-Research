@@ -1,6 +1,13 @@
 # Keep generated CSV bytes stable for the scientific checksum manifests.
 *.csv -text whitespace=cr-at-eol
 # Retained failure logs contain test-runner indentation and blank lines.
-project16-ground-control-lab/evidence/*-red.txt -whitespace
+project02-ground-control-lab/evidence/*-red.txt -whitespace
 # These two displayed equations use explicit TeX backslash-space at line ends.
-project18-medical-dispatch/docs/model.md whitespace=-blank-at-eol
+project03-medical-dispatch/docs/model.md whitespace=-blank-at-eol
+# Preserve captured diagnostics, upstream snapshots, and quoted requirements.
+project01-autopilot-failsafe/evidence/** -whitespace
+project01-autopilot-failsafe/docs/source-evidence/** -whitespace
+project01-autopilot-failsafe/docs/mission.txt -whitespace
+project06-cedar/artifacts/*-red.txt -whitespace
+project06-cedar/docs/USER_REQUEST.txt -whitespace
+*.pdf binary

@@ -1,0 +1,1 @@
+RuntimeError: parameter snapshot differs: {'ARSPD_PIN': {'expected': 1.0, 'actual': None}, 'ARSPD_BUS': {'expected': 2.0, 'actual': None}}

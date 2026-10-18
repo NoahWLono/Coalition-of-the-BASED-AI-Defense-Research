@@ -1,0 +1,67 @@
+{
+  "captured_at_utc": "2026-10-18T01:51:31.747040+00:00",
+  "host": {
+    "architecture": "x86_64",
+    "available_cpu_affinity_slots": 8,
+    "distribution": {
+      "ID": "arch",
+      "PRETTY_NAME": "Arch Linux"
+    },
+    "kernel_release": "7.2.11-arch1-1",
+    "libc": {
+      "name": "glibc",
+      "version": "2.44"
+    },
+    "logical_cpu_count": 8,
+    "memory_bytes": {
+      "MemAvailable": 5047160832,
+      "MemTotal": 16063848448,
+      "SwapTotal": 8031563776
+    },
+    "operating_system": "Linux",
+    "project_filesystem_available_bytes": 309811548160
+  },
+  "namespace_preflight": {
+    "command": "bwrap --unshare-user --unshare-net --unshare-pid --unshare-ipc --unshare-uts --die-with-parent --new-session --ro-bind / / --dev /dev --proc /proc --tmpfs /tmp /bin/true",
+    "evidence": "evidence/bootstrap-second.log",
+    "result": "passed",
+    "scope": "Namespace creation only; no SITL started by bootstrap."
+  },
+  "privacy_note": "Excludes hostname, username, paths outside the project, serial numbers, interface identifiers, IP addresses, and environment variables.",
+  "resource_limits": {
+    "bootstrap_timeout_s": 300,
+    "case_wall_timeout_s": 180,
+    "concurrent_sitl_processes": 1,
+    "download_bytes_per_invocation": 157286400,
+    "sitl_address_space_bytes": 1610612736,
+    "sitl_cpu_affinity_slots": 2,
+    "sitl_speedup": 4
+  },
+  "runtime": {
+    "build": [
+      "main",
+      "Sep  1 2026 14:16:52"
+    ],
+    "compiler": "Clang 22.1.3 ",
+    "implementation": "CPython",
+    "interpreter_file": {
+      "bytes": 30913848,
+      "sha256": "f7c6210eb40fadcd3c2889dddd24a15fc2c9f926aec5a03bf9da66e12d581526"
+    },
+    "packages": {
+      "fastcrc": "0.5.0",
+      "lxml": "6.1.3",
+      "pymavlink": "2.4.49"
+    },
+    "version": "3.12.14"
+  },
+  "schema_version": 1,
+  "tools": {
+    "bubblewrap": "bubblewrap 0.13.1",
+    "host_python": "Python 3.14.8",
+    "ip": "ip utility, iproute2-7.2.0, libbpf 1.7.0",
+    "ss": "ss utility, iproute2-7.2.0",
+    "timeout": "timeout (GNU coreutils) 9.12",
+    "uv": "uv 0.13.1 (62faed335 2026-10-13 x86_64-unknown-linux-gnu)"
+  }
+}

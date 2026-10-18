@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "page_errors": [],
+  "local_links_exist": true,
+  "recorded_video_frame_decoded": true,
+  "pages": [
+    "PORTFOLIO.html",
+    "artifacts/sample-decision/report.html"
+  ],
+  "video_frame_check": "ffmpeg decoded frame at 100 seconds; inspected actual assurance view. Browser seek initially captured its loading indicator, so that observation was not used as verification."
+}

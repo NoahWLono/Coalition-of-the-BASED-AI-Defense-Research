@@ -1,0 +1,201 @@
+{
+  "scope": "full",
+  "executed_at": "2026-10-18T02:36:56.847280+00:00",
+  "packages": 12,
+  "requirements": 40,
+  "base_documents": 36,
+  "steps": [
+    {
+      "step": "import and inspect cheapest bid",
+      "package_id": "P01",
+      "known_subtotal": 113700.0,
+      "eligible": false,
+      "open_costs": [
+        {
+          "key": "C_required",
+          "label": "Required additional components",
+          "reason": "Missing, conflicting, expired or uninterpretable quoted value; amount is open.",
+          "assertions": [
+            "12d49180fe6f6af4cfb52449"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "change replacement assumption",
+      "revision": 1,
+      "P03_total": 162654.48
+    },
+    {
+      "step": "separate review and approval",
+      "snapshot": "DEC-7a33affe70",
+      "status": "approved",
+      "analyst_approval_http": 403
+    },
+    {
+      "step": "amendment and invalidation",
+      "revision": 2,
+      "old_snapshot_status": "stale",
+      "changes": {
+        "approval_effect": "All previous snapshots are conservatively stale because the input revision changed. Re-review is required.",
+        "at": "2026-10-18T02:36:55.173000+00:00",
+        "diffs": [
+          {
+            "after": "not_satisfied",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Documented value 24.0 does not satisfy gte 36.",
+            "requirement_id": "R03"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R05"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R12"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R13"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R14"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R15"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R16"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R17"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R23"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R26"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R27"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R28"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R31"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R32"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R33"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R37"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R38"
+          },
+          {
+            "after": "supported",
+            "before": "supported",
+            "package_id": "P03",
+            "reason": "Required documentary evidence supports the stated comparison. This is not a field-performance certification.",
+            "requirement_id": "R39"
+          },
+          {
+            "after": "unresolved",
+            "before": "unaffected",
+            "package_id": "P03",
+            "reason": "Affected component is declared, but application exposure evidence is missing or no longer current.",
+            "requirement_id": "assurance:SYNTH-CEDAR-001"
+          }
+        ],
+        "reason": "Supplier amendment AMD01: Birch support commitment shortened",
+        "revision": 2
+      }
+    },
+    {
+      "step": "review new conditional snapshot and export",
+      "snapshot": "DEC-05c21a1fa5",
+      "status": "approved",
+      "package_sha256": "4654ede2153078f316802a283e3ac8257321132e13a1b55e4440b930983ef8ae",
+      "verification": {
+        "valid": true,
+        "errors": [],
+        "scope": "Internal archive, source and citation consistency only; no authenticity or claim-truth guarantee.",
+        "snapshot_id": "DEC-05c21a1fa5",
+        "digest": "73a52a37e1633a50ca7ac294f4ed38d480bae8c9a3e3ed36e0a819761b5317b7",
+        "status": "approved",
+        "files_checked": 56,
+        "sources_checked": 51,
+        "citations_checked": 620
+      }
+    }
+  ],
+  "passed": true,
+  "limits": "API replay using synthetic fixtures and public demonstration roles; no human review or customer validation."
+}

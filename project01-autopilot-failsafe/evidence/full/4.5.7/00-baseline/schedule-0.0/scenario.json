@@ -1,0 +1,54 @@
+{
+  "assertions": [
+    {
+      "after": "baseline_ready",
+      "allowed": [
+        4
+      ],
+      "duration_s": 10,
+      "start_s": 0,
+      "type": "hold_mode"
+    },
+    {
+      "after": "land",
+      "allowed": [
+        9
+      ],
+      "type": "mode",
+      "within_s": 3
+    },
+    {
+      "after": "land",
+      "type": "disarmed",
+      "within_s": 45
+    }
+  ],
+  "baseline": true,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 60,
+  "events": [
+    {
+      "at_s": 12,
+      "id": "land",
+      "kind": "mode",
+      "mode": "LAND"
+    }
+  ],
+  "id": "00-baseline",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "Demonstrate stable hover and commanded landing before injecting failures.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Fault-free hover and commanded landing"
+}

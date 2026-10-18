@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "expected_runs": 58,
+  "completed_runs": 58,
+  "complete": true,
+  "gates_resolved": false,
+  "replays": [
+    {
+      "version": "4.5.6",
+      "outcome": "FAIL",
+      "control_accepted": true,
+      "expected": "FAIL",
+      "input": "unchanged sealed evidence; LAND9 expectation changed to RTL6"
+    },
+    {
+      "version": "4.5.7",
+      "outcome": "FAIL",
+      "control_accepted": true,
+      "expected": "FAIL",
+      "input": "unchanged sealed evidence; LAND9 expectation changed to RTL6"
+    }
+  ],
+  "outcomes": {
+    "PASS": 55,
+    "FAIL": 3
+  },
+  "cleanup_violations": [],
+  "evaluator_sha256": "38403238b32309a46f06645b89a5a4bcc262a9547e8d88a07cff9ff31b6869ae",
+  "max_rss_kib": 32072,
+  "sum_case_wall_duration_s": 1783.164972008999
+}

@@ -1,0 +1,104 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | SCHEMAS</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / SCHEMAS</p><article><h1>Evidence, requirement and snapshot schemas</h1>
+<p>The precise field/API contract is in <a href="CONTRACT.html">CONTRACT.md</a>. This document explains its meaning. Runtime validation of HTTP objects uses Pydantic with unknown fields rejected. The checked-in corpus is trusted fixture configuration; arbitrary external requirement-schema import is not implemented.</p>
+<p>A requirement has a stable <code>Rxx</code> ID; exact wording; category; version; mandatory/scored/informational mode; applicable package IDs; an explicit reason for exclusions; accepted evidence types; units; comparator and target; effective/expiry dates; source/reason; and a scored normalization rule where applicable. Switching from v1 to v2 changes a declared support-duration threshold. The previous policy remains in existing snapshots.</p>
+<p>An assertion has an ID derived from document ID, content hash and starting line. It records supplier/configuration, document ID/version/hash, line range, literal original text, raw and normalized value, original and normalized units, transformation, evidence type, extraction status, interpretation review and dates. Unknown interpretations are explicit. Superseded and rejected assertions stay in the ledger but cannot provide current support.</p>
+<table>
+<thead>
+<tr>
+<th>Assessment state</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported</td>
+<td>Current supplied evidence of the required type supports the comparator</td>
+</tr>
+<tr>
+<td>Not satisfied</td>
+<td>Current interpretable evidence fails the declared comparator</td>
+</tr>
+<tr>
+<td>Unresolved</td>
+<td>Missing, rejected, malformed, ambiguous or insufficient-type evidence</td>
+</tr>
+<tr>
+<td>Conflicting</td>
+<td>Current interpretable sources disagree on value or normalized unit</td>
+</tr>
+<tr>
+<td>Stale</td>
+<td>Policy is not effective, or all matching usable observations are outside their date range/superseded</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>Configuration is outside an explicit applicability list; reason is displayed</td>
+</tr>
+</tbody>
+</table>
+<p>Precedence is applicability, policy date, usable current observations, conflicts, interpretation/evidence-type/unit checks, then comparator. A valid current assertion can replace expired evidence. Equal claims from several sources are not treated as independent confirmations. A declaration cannot satisfy a requirement demanding an independent test. In this corpus, even an <code>independent_test</code> is a fictional document category.</p>
+<p>Eligibility requires every applicable mandatory assessment to be supported. Preference scoring happens separately. For scored numeric criterion value x, the higher-is-better score is <code>100 * clamp((x-low)/(high-low), 0, 1)</code>; lower-is-better reverses the fraction. Unresolved/conflicting/stale scored evidence spans <code>[0,100]</code>. Applicable criterion weights sum to one. There is no midpoint imputation. Requirements use their declared category: R19, R20, R21, R22, R24, R25, R29 and R30 form the capability group; R23, R26, R27, R28, R31 and R32 form the service group; profiles give these groups raw weights 1:1, 3:1 or 1:3. Sensitivity checks ratios 0.25, 0.5, 1, 2 and 4. A possible leader's upper bound reaches the greatest lower bound; a guaranteed leader's lower bound exceeds every other upper bound. These comparisons are not probabilities.</p>
+<p>Dominance is conservative and criterion-wise: both alternatives must be documentary-eligible and have closed cost bounds; the dominant bid's cost upper bound must not exceed the other's lower bound, and every criterion lower bound must meet the other's upper bound, with at least one strict improvement. Missing costs or overlapping criterion bounds prevent a dominance claim.</p>
+<p>A decision snapshot contains application/schema version, timestamp, input revision, evaluation date, selected policy, source bodies and hashes, inventories/advisories/exposure inputs, assertions/reviews, assumptions, preference policy, evaluation/clarifications, chosen package, decision type and rationale. Its canonical JSON digest binds this record. Technical review and approval are separate timestamped events referring to that digest. A conditional decision can approve a documented hold for clarification; it never converts failed gates into unconditional eligibility.</p>
+<p>The export adds an envelope status measured at export time. Its manifest hashes files, and the verifier checks sources and citations against the exact snapshot. It does not recompute purchasing truth or guarantee that a package remains current in an external workspace. <code>scripts/reproduce_decision.py</code> separately re-evaluates the recorded inputs with this version of the engine.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

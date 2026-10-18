@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "expected_runs": 58,
+  "completed_runs": 34,
+  "complete": false,
+  "gates_resolved": false,
+  "replays": [],
+  "outcomes": {
+    "PASS": 34
+  },
+  "cleanup_violations": [],
+  "evaluator_sha256": "afaa4b5733f958229a87b5923c9108a4a40324c38106a1d2d9c4b2a95b9b83ed",
+  "max_rss_kib": 32036,
+  "sum_case_wall_duration_s": 1035.7013053039982
+}

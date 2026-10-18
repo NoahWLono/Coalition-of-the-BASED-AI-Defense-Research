@@ -1,0 +1,6 @@
+.venv/
+.bootstrap/
+.cache/
+__pycache__/
+*.pyc
+vendor/*/arducopter

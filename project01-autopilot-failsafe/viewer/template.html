@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Explore the retained 58-run ArduCopter SITL failsafe experiment, original outcomes, and separate retrospective assertion replay.">
+<title>Project 1 · Autopilot failsafe laboratory · Saved experiment</title>
+<script>$theme_init</script>
+<style>$style</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to saved results</a>
+<header><div class="shell topbar">
+<span class="brand">Project 1 · Autopilot failsafe laboratory</span>
+<nav aria-label="Report sections"><a href="#comparison">Release comparison</a><a href="#runs">Run ledger</a><a href="#evidence">Evidence</a></nav>
+<label id="theme-control" class="theme-control" hidden>Theme <select id="theme" aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label>
+</div></header>
+<main id="main" class="shell">
+<h1>When inputs fail,<br>what does the autopilot do?</h1>
+<p class="lede">A saved experiment comparing ArduCopter 4.5.6 and 4.5.7 under twelve simulated fault scenarios. Explore original outcomes, observed mode transitions, and the evidence behind each result.</p>
+<p class="scope"><strong>Simulation evidence only</strong>These are real executions of software-in-the-loop (SITL) with a synthetic aircraft and fictional site. They do not establish operational flight safety. LAND denotes a telemetry mode transition; this viewer does not run a simulator.</p>
+<p class="note"><strong>Public evidence copies:</strong> host identifiers and local paths have been replaced with fictional values. Telemetry checksums and publication seals were refreshed; recorded flight observations were compared before and after redaction. <a href="docs/publication-redaction.md">Read the redaction record</a> and <a href="evidence/publication-redaction.json">verification results</a>. Private originals remain unchanged locally.</p>
+<div class="section-head"><h2>Original corpus 1.0.0</h2><p>58 of 58 planned simulator runs completed</p></div>
+<div class="outcome-panel">
+<div class="outcome-track" role="img" aria-label="Original outcomes: 55 PASS, 2 expected disabled-failsafe FAIL, 1 preserved text-assertion FAIL"><span class="pass-segment"></span><span class="control-segment"></span><span class="mismatch-segment"></span></div>
+<dl class="outcomes"><div><dt>Original assertions</dt><dd>55 PASS</dd><small>Healthy baselines and fault scenarios</small></div><div><dt>Disabled-failsafe controls</dt><dd>2 expected FAIL</dd><small>Both controls detected the intended mismatch</small></div><div><dt>Text assertion</dt><dd>1 preserved FAIL</dd><small>Compound GCS and battery message alternative</small></div></dl>
+</div>
+<ul class="facts"><li><strong>522 / 522</strong>Saved provenance and isolation checks</li><li><strong>41 passing tests</strong>Original unit-test transcript</li><li><strong>9 onboard traces</strong>Retained independent-reader inspections</li><li><strong>2 wrong-mode replays</strong>Deliberate offline mismatches detected</li></ul>
+<p class="note">The original full-suite gate remains unresolved in its saved report. Corpus 1.0.1 has a separate four-trace retrospective assessment below. The inspections use an assistant-authored reader independent of the runner and evaluator; they are not qualified human certification.</p>
+<section id="comparison" aria-labelledby="comparison-title">
+<div class="section-head"><h2 id="comparison-title">Observed LAND responses</h2><p>Primary runs, zero-second schedule offset</p></div>
+<p>Each bar shows the largest matched mode-assertion latency for that scenario in simulation seconds. Both columns use a 0–8 s scale. Transient-input scenarios do not contain a LAND assertion.</p>
+<div class="table-scroll" role="region" aria-label="LAND response comparison" tabindex="0"><table class="chart-table"><caption>Values come from the original saved comparison. The run ledger lists each matched event response and its deadline.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">ArduCopter 4.5.6</th><th scope="col">ArduCopter 4.5.7</th></tr></thead><tbody>$chart_rows</tbody></table></div>
+<p class="note">Telemetry clocks are sampled at 0.1 s and heartbeats at 0.2 s. Small differences within those intervals do not establish a release regression. All twelve primary release pairs had 1,385 equal initial parameter values. <a href="docs/comparison.md">Read the reviewed comparison</a>.</p>
+</section>
+<section class="revision" aria-labelledby="revision-title">
+<div><h2 id="revision-title">The assertion correction stays separate</h2><p>Corpus 1.0.1 accepts the documented “GCS + Battery Failsafe - Continuing Landing” message as an alternative to “GCS Failsafe”. All four affected traces pass retrospective replay.</p><p>Events, parameters, deadlines, and state assertions are unchanged. The original failure remains recorded. <strong>No fresh full 1.0.1 simulator run is claimed.</strong></p><p><a href="docs/compound-ordering-review.md">Review the source-backed explanation</a></p></div>
+<div class="table-scroll" role="region" aria-label="Retrospective replay assessment" tabindex="0"><table><caption>Same recorded traces; separate assertion-only replay</caption><thead><tr><th scope="col">Release</th><th scope="col">Offset</th><th scope="col">Original</th><th scope="col">Replay</th><th scope="col">Evidence</th></tr></thead><tbody>$replay_rows</tbody></table></div>
+</section>
+<section id="runs" aria-labelledby="runs-title">
+<h2 id="runs-title">Original run ledger</h2>
+<p>Each result links to its recorded evaluation and publication-derivative evidence seal. FAIL remains the original machine outcome, including the two accepted disabled-failsafe controls.</p>
+<div id="filters" class="filters" hidden><label class="search">Search runs<input id="search" type="search" placeholder="Scenario, release, or assertion"></label><label>Release<select id="release"><option value="">Both releases</option><option>4.5.6</option><option>4.5.7</option></select></label><label>Outcome<select id="outcome"><option value="">All original outcomes</option><option value="pass">PASS</option><option value="control">Expected control FAIL</option><option value="mismatch">Text-assertion FAIL</option></select></label><button id="reset" type="button">Reset filters</button></div>
+<p id="run-count" role="status" aria-live="polite">58 of 58 original runs shown</p>
+<div class="table-scroll" role="region" aria-label="Original run results" tabindex="0"><table id="run-table"><caption>Response entries show event: matched latency / declared deadline, in simulation seconds.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Release</th><th scope="col">Offset</th><th scope="col">Original outcome</th><th scope="col">Response / deadline</th><th scope="col">Retained evidence</th></tr></thead><tbody>$run_rows</tbody></table></div>
+<p id="empty" hidden>No runs match these filters. Reset filters to show the complete recorded suite.</p>
+<noscript><p>The complete saved results remain available without JavaScript. Theme selection and filters require JavaScript.</p></noscript>
+</section>
+<section id="evidence" aria-labelledby="evidence-title">
+<h2 id="evidence-title">Evidence and reproduction</h2>
+<div class="evidence-grid"><div><h3>Review the retained record</h3><ul><li><a href="evidence/full/comparison.json">Original machine comparison</a></li><li><a href="evidence/full/corpus-revision-review.json">Separate corpus 1.0.1 assessment</a></li><li><a href="evidence/full/provenance-isolation-audit.json">Provenance and isolation audit</a></li><li><a href="evidence/unit-tests.txt">Original unit-test transcript</a></li><li><a href="docs/trace-inspection.md">Independent onboard-log inspection</a></li><li><a href="evidence/trace-inspection.json">Five primary inspection records</a> and <a href="evidence/compound-ordering-inspection.json">four compound-case records</a></li><li><a href="docs/trace-contract.md">Trace contract</a> and <a href="docs/review-record.md">review record</a></li></ul></div>
+<div><h3>Two historical release pins</h3><ul class="pins">$release_pins</ul><p class="note">The built-in quad model uses the corresponding pinned autopilot executable. These historical releases are not described as current releases.</p><p><a href="README.md">Reproduction instructions</a> explain dependencies, isolation, resource bounds, and offline checks. A fresh clean-environment reproduction by a separate operator remains the next verification step.</p><p><a href="manifest.json">Experiment dependency manifest</a> · <a href="viewer-manifest.json">Viewer provenance manifest</a></p></div></div>
+</section>
+</main>
+<footer><div class="shell"><p>Saved evidence, rendered locally. No telemetry service, external fonts, or network requests are used by this page.</p><p>Published comparison SHA-256: <code>$summary_hash</code></p><p class="note">Regenerate with <code>python3 scripts/build_viewer.py</code>; verify with <code>python3 scripts/build_viewer.py --check</code>.</p></div></footer>
+<script>$behavior</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{
+  "captured_at_utc": "2026-10-18T02:25:34.666600+00:00",
+  "simulator_started": false,
+  "reproduce_checks": [
+    {
+      "failing_stages": [],
+      "stages_observed": [
+        "bootstrap",
+        "unittest",
+        "suite",
+        "summarize",
+        "demo",
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "suite"
+      ],
+      "stages_observed": [
+        "bootstrap",
+        "unittest",
+        "suite",
+        "summarize",
+        "demo",
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "suite",
+        "summarize"
+      ],
+      "stages_observed": [
+        "bootstrap",
+        "unittest",
+        "suite",
+        "summarize",
+        "demo",
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "demo"
+      ],
+      "stages_observed": [
+        "bootstrap",
+        "unittest",
+        "suite",
+        "summarize",
+        "demo",
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "stages_observed": [
+        "bootstrap",
+        "unittest",
+        "suite",
+        "summarize",
+        "demo",
+        "inspect_dataflash",
+        "audit_suite"
+      ],
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "bootstrap"
+      ],
+      "stages_observed": [
+        "bootstrap"
+      ],
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "failing_stages": [
+        "unittest"
+      ],
+      "stages_observed": [
+        "bootstrap",
+        "unittest"
+      ],
+      "exit_code": 1,
+      "passed": true
+    }
+  ],
+  "audit_result_expression_checks": [
+    {
+      "scenario_gates_resolved": false,
+      "runs_audited": 58,
+      "checks_evaluated": 522,
+      "unresolved": false,
+      "remaining_pid": false,
+      "all_checks_passed": true,
+      "passed": true
+    },
+    {
+      "scenario_gates_resolved": true,
+      "runs_audited": 58,
+      "checks_evaluated": 522,
+      "unresolved": false,
+      "remaining_pid": false,
+      "all_checks_passed": true,
+      "passed": true
+    },
+    {
+      "scenario_gates_resolved": false,
+      "runs_audited": 57,
+      "checks_evaluated": 513,
+      "unresolved": false,
+      "remaining_pid": false,
+      "all_checks_passed": false,
+      "passed": true
+    },
+    {
+      "scenario_gates_resolved": true,
+      "runs_audited": 58,
+      "checks_evaluated": 522,
+      "unresolved": true,
+      "remaining_pid": false,
+      "all_checks_passed": false,
+      "passed": true
+    },
+    {
+      "scenario_gates_resolved": true,
+      "runs_audited": 58,
+      "checks_evaluated": 522,
+      "unresolved": false,
+      "remaining_pid": true,
+      "all_checks_passed": false,
+      "passed": true
+    }
+  ],
+  "bash_syntax": "PASS",
+  "scope": "Orchestration uses temporary command stubs; audit checks execute the result expression extracted from actual source. No suite evidence was modified."
+}

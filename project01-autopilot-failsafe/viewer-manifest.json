@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Saved-results presentation only; no new SITL execution or operational validation.",
+  "generator": "python3 scripts/build_viewer.py",
+  "inputs": {
+    "evidence/full/comparison.json": "945386b23f2dad3bb4d3c96a1773ff4c43f1e411a813232cffb3dd64bc9fcf4d",
+    "evidence/full/corpus-revision-review.json": "c262faa3cadf08cf1ec97c2b9de4ef4119f9c25aa6444e708f5200b368bfb77d",
+    "evidence/full/provenance-isolation-audit.json": "0bd516231e9677081e65106c991a0e2212e6acff3a3f29f8612d3dcc521a14d5",
+    "evidence/trace-inspection.json": "6be9d82a738cc9f669a38e42e39cccf4d5402df07938c3b64d15d42d0b7028b6",
+    "evidence/compound-ordering-inspection.json": "7a27a8c92c5e057d3dd8222f039256184f199e300bd81f0713c251f6aeebd43b",
+    "evidence/unit-tests.txt": "df7d5d3ffb578cca41bf3bee23c1a46136fa2258bdd4a95c2e684f7aa4a7fea7",
+    "manifest.json": "ad48ff3baf01e38b291bf3041ea5e5590fe786b5c4b25bd8d22386d943a8dc50",
+    "src/failsafelab/evaluate.py": "38403238b32309a46f06645b89a5a4bcc262a9547e8d88a07cff9ff31b6869ae"
+  },
+  "sources": {
+    "scripts/build_viewer.py": "cb86dec3d6686e171ef5a5d6d9a12159a20e761adb3b77ec59c99ef5edeeb94e",
+    "viewer/template.html": "4cb903c6122f8648ae44006f576f387fb95dd95ac98e760e3745a0138826a7b6",
+    "viewer/viewer.css": "f95977a02e2e7b5070b5223b60d017fc934964f9b7a34810108c37ed691281aa",
+    "viewer/theme-init.js": "7a824027ed10bffb01c4642104f8600d3133d56c4108816d446368fcdb68bc63",
+    "viewer/viewer.js": "83aa06f53ec87625cef32ee15649d2c28016cff959ae4f796628a6a01649ed2d"
+  },
+  "outputs": {
+    "index.html": "84c03b8cce10c2415e1f7fa5e3668b969d96076462412bb902c18c14b7b4d1cc"
+  }
+}

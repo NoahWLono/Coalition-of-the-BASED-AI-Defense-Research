@@ -1,0 +1,439 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | THIRD_PARTY</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / THIRD_PARTY</p><article><h1>Third-party notices</h1>
+<p>CEDAR's original source code, documentation and generated synthetic corpus are covered by the repository's <a href="../../LICENSE">MIT license</a>, copyright 2026 CEDAR contributors. The fictional suppliers, aircraft configurations, reports, quotations and advisories were created for this demonstration. They are not claims about real products or organizations.</p>
+<h2>Vendored CycloneDX schemas</h2>
+<p>The repository includes these unmodified files from the <a href="https://github.com/CycloneDX/specification/tree/1.6/schema">CycloneDX specification 1.6 source</a>:</p>
+<ul>
+<li><code>vendor/bom-1.6.schema.json</code></li>
+<li><code>vendor/jsf-0.82.schema.json</code></li>
+<li><code>vendor/spdx.schema.json</code></li>
+</ul>
+<p>CycloneDX is an OWASP Foundation project. Its <a href="https://github.com/CycloneDX/specification/blob/1.6/LICENSE">1.6 license</a> states Apache License 2.0 and attributes copyright to the OWASP Foundation. The complete upstream license is retained as <a href="../../vendor/LICENSE-CycloneDX">vendor/LICENSE-CycloneDX</a>. The BOM schema explicitly states Apache 2.0. The JSF schema also states Apache 2.0 and credits Anders Rundgren and the OpenKeyStore project for JSON Signature Format. The SPDX identifier enumeration is the copy supplied in the same CycloneDX 1.6 source tree.</p>
+<p>All four local files were compared byte for byte with their upstream <code>1.6</code> paths during release preparation. Their recorded SHA-256 hashes are:</p>
+<table>
+<thead>
+<tr>
+<th>Vendored file</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LICENSE-CycloneDX</code></td>
+<td><code>6c29f22a4a7385285c6f579ec9f33c5e989f00739d6b257243a0b082ec9447ae</code></td>
+</tr>
+<tr>
+<td><code>bom-1.6.schema.json</code></td>
+<td><code>3e92dddbc30cf7f6a02b80f0942b1a4cfd4fb1c26f1dfc4310afa9d613cafb93</code></td>
+</tr>
+<tr>
+<td><code>jsf-0.82.schema.json</code></td>
+<td><code>8bae002c25e723db7ee1f26afde680ae1a2b1a8f6b4b4b0fd65dc3becb090aae</code></td>
+</tr>
+<tr>
+<td><code>spdx.schema.json</code></td>
+<td><code>baa9d3bd1ed57b6751b0887edead6b5063ff53ff7429cf85d476c6c94af0166e</code></td>
+</tr>
+</tbody>
+</table>
+<p>The schemas support offline validation of the synthetic CycloneDX inventories. Including the JSF schema does not mean CEDAR creates or verifies digital signatures. The project and its output do not claim endorsement by OWASP, CycloneDX, OpenKeyStore or SPDX.</p>
+<h2>Pinned Python dependencies</h2>
+<p>Direct requirements are pinned in <a href="../../pyproject.toml">pyproject.toml</a>. The complete resolved environment, including transitive dependencies and distribution hashes, is recorded in <a href="../../uv.lock">uv.lock</a>. The table below was read from the installed <code>.venv</code> distribution metadata during release preparation on 2026-10-17. It records the Linux validation environment; conditional dependencies on another platform may differ.</p>
+<p>The license column uses <code>License-Expression</code> where supplied, then the distribution's <code>License</code> field. The final column lists its declared <code>License-File</code> entries. ReportLab's metadata uses a descriptive BSD label; its installed license text was separately inspected and contains the source, binary and endorsement conditions. No SPDX identifier has been substituted for that metadata label.</p>
+<table>
+<thead>
+<tr>
+<th>Distribution</th>
+<th>Installed version</th>
+<th>Use</th>
+<th>Reported license</th>
+<th>Declared license files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>annotated-doc</td>
+<td><code>0.0.5</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>annotated-types</td>
+<td><code>0.8.0</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>anyio</td>
+<td><code>4.15.1</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>attrs</td>
+<td><code>26.1.0</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>charset-normalizer</td>
+<td><code>3.5.2</code></td>
+<td>Development transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>click</td>
+<td><code>8.5.0</code></td>
+<td>Runtime transitive</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.txt</code></td>
+</tr>
+<tr>
+<td>fastapi</td>
+<td><code>0.143.3</code></td>
+<td>Runtime direct</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>greenlet</td>
+<td><code>3.5.6</code></td>
+<td>Development transitive</td>
+<td>MIT AND PSF-2.0</td>
+<td><code>LICENSE</code>, <code>LICENSE.PSF</code></td>
+</tr>
+<tr>
+<td>h11</td>
+<td><code>0.16.0</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE.txt</code></td>
+</tr>
+<tr>
+<td>httpcore2</td>
+<td><code>2.13.1</code></td>
+<td>Development transitive</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td>httpx2</td>
+<td><code>2.13.1</code></td>
+<td>Development direct</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td>idna</td>
+<td><code>3.20</code></td>
+<td>Runtime transitive</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td>iniconfig</td>
+<td><code>2.3.1</code></td>
+<td>Development transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>jsonschema</td>
+<td><code>4.26.0</code></td>
+<td>Runtime direct</td>
+<td>MIT</td>
+<td><code>COPYING</code></td>
+</tr>
+<tr>
+<td>jsonschema-specifications</td>
+<td><code>2025.9.1</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>COPYING</code></td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td><code>3.11.1</code></td>
+<td>Development direct</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td>opentelemetry-api</td>
+<td><code>1.45.1</code></td>
+<td>Runtime transitive</td>
+<td>Apache-2.0</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>packaging</td>
+<td><code>26.3</code></td>
+<td>Development transitive</td>
+<td>Apache-2.0 OR BSD-2-Clause</td>
+<td><code>LICENSE</code>, <code>LICENSE.APACHE</code>, <code>LICENSE.BSD</code></td>
+</tr>
+<tr>
+<td>pillow</td>
+<td><code>13.0.0</code></td>
+<td>Development transitive</td>
+<td>MIT-CMU</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>playwright</td>
+<td><code>1.64.0</code></td>
+<td>Development direct</td>
+<td>Apache-2.0</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>pluggy</td>
+<td><code>1.7.0</code></td>
+<td>Development transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>pydantic</td>
+<td><code>2.14.1</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>pydantic_core</td>
+<td><code>2.50.1</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>pyee</td>
+<td><code>14.0.0</code></td>
+<td>Development transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>Pygments</td>
+<td><code>2.21.0</code></td>
+<td>Development transitive</td>
+<td>BSD-2-Clause</td>
+<td><code>AUTHORS</code>, <code>LICENSE</code></td>
+</tr>
+<tr>
+<td>pytest</td>
+<td><code>9.1.1</code></td>
+<td>Development direct</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>referencing</td>
+<td><code>0.37.0</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>COPYING</code></td>
+</tr>
+<tr>
+<td>reportlab</td>
+<td><code>5.0.1</code></td>
+<td>Development direct</td>
+<td>BSD license (see license.txt for details), Copyright (c) 2000-2025, ReportLab Inc.</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>rpds-py</td>
+<td><code>2026.9.1</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>starlette</td>
+<td><code>1.8.0</code></td>
+<td>Runtime transitive</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td>truststore</td>
+<td><code>0.10.5</code></td>
+<td>Development transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>typing_extensions</td>
+<td><code>4.16.0</code></td>
+<td>Runtime transitive</td>
+<td>PSF-2.0</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>typing-inspection</td>
+<td><code>0.4.4</code></td>
+<td>Runtime transitive</td>
+<td>MIT</td>
+<td><code>LICENSE</code></td>
+</tr>
+<tr>
+<td>uvicorn</td>
+<td><code>0.54.0</code></td>
+<td>Runtime direct</td>
+<td>BSD-3-Clause</td>
+<td><code>LICENSE.md</code></td>
+</tr>
+</tbody>
+</table>
+<p>The source release excludes <code>.venv</code> and dependency wheels. These dependencies are installed through the lockfile when setting up the project. Their distribution license files remain available in the installed environment. The table reports package-level metadata; it does not replace notices for components bundled in a dependency's wheel. For example, Pillow's installed license file contains additional codec notices, and Playwright's browser installation has its own third-party notices.</p>
+<p>Python, <code>uv</code>, browser executables and their caches are external tools and are not included in the source release. The screenshots and screen recording show CEDAR's own interface and synthetic corpus. Generated report artifacts retain the demonstration's limitations.</p>
+<p>To inspect an installed distribution's metadata after setup:</p>
+<pre><code class="language-python">from importlib.metadata import distribution
+
+d = distribution(&quot;fastapi&quot;)
+print(d.metadata[&quot;Name&quot;], d.version)
+print(d.metadata.get(&quot;License-Expression&quot;) or d.metadata.get(&quot;License&quot;))
+print(d.metadata.get_all(&quot;License-File&quot;))
+</code></pre>
+<p>When changing dependencies or vendored files, regenerate the lockfile as appropriate, inspect the new distributions' license metadata and notices, and update this inventory before rebuilding the source release.</p>
+<h2>Bitstream Vera fonts in generated PDFs</h2>
+<p>The PDF builder uses <code>Vera.ttf</code>, <code>VeraBd.ttf</code>, <code>VeraIt.ttf</code> and <code>VeraBI.ttf</code> from the installed ReportLab <code>fonts</code> directory. PDF output can embed subsets of these typefaces. The fonts have their own Bitstream Vera license, separate from ReportLab's package license. The source TTF files are not copied from <code>.venv</code> into the source release.</p>
+<p>The installed <code>reportlab/fonts/bitstream-vera-license.txt</code> was inspected during release preparation. Its copyright, trademark and permission notice is retained below for the generated PDFs. The source font file hashes used in that environment are:</p>
+<table>
+<thead>
+<tr>
+<th>Font</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Vera.ttf</code></td>
+<td><code>c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d</code></td>
+</tr>
+<tr>
+<td><code>VeraBd.ttf</code></td>
+<td><code>cc037385e4d55bfde89b13e03091ee93bf40c0c52ddd391ff031ab276f13b8e9</code></td>
+</tr>
+<tr>
+<td><code>VeraIt.ttf</code></td>
+<td><code>2adc684d518f45232c4ad1f56522f5a82a6904c31940373e1b7030beee20fb3a</code></td>
+</tr>
+<tr>
+<td><code>VeraBI.ttf</code></td>
+<td><code>fca0d4eeac1ced7e75e1b2274c869a351d2d83b5ed1f61d249e7bcc477c33ebe</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-text">Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream
+Vera is a trademark of Bitstream, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the fonts accompanying this license (&quot;Fonts&quot;) and associated
+documentation files (the &quot;Font Software&quot;), to reproduce and distribute
+the Font Software, including without limitation the rights to use,
+copy, merge, publish, distribute, and/or sell copies of the Font
+Software, and to permit persons to whom the Font Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright and trademark notices and this permission notice
+shall be included in all copies of one or more of the Font Software
+typefaces.
+
+The Font Software may be modified, altered, or added to, and in
+particular the designs of glyphs or characters in the Fonts may be
+modified and additional glyphs or characters may be added to the
+Fonts, only if the fonts are renamed to names not containing either
+the words &quot;Bitstream&quot; or the word &quot;Vera&quot;.
+
+This License becomes null and void to the extent applicable to Fonts
+or Font Software that has been modified and is distributed under the
+&quot;Bitstream Vera&quot; names.
+
+The Font Software may be sold as part of a larger software package but
+no copy of one or more of the Font Software typefaces may be sold by
+itself.
+
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL
+BITSTREAM OR THE GNOME FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT
+SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+
+Except as contained in this notice, the names of Gnome, the Gnome
+Foundation, and Bitstream Inc., shall not be used in advertising or
+otherwise to promote the sale, use or other dealings in this Font
+Software without prior written authorization from the Gnome Foundation
+or Bitstream Inc., respectively. For further information, contact:
+fonts at gnome dot org.
+</code></pre></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

@@ -1,0 +1,44 @@
+CEDAR portable package verification
+
+This synthetic decision package contains an exact snapshot envelope, a static
+report, a spreadsheet-safe evidence ledger, and inert UTF-8 original sources.
+No server credentials, sessions or live workspace database are included.
+
+Run from a trusted CEDAR checkout:
+  python3 scripts/verify_package.py /path/to/decision-package.zip
+
+Or inspect and establish trust in the included verify.py before running:
+  python3 verify.py /path/to/decision-package.zip
+Only Python 3 standard-library modules are needed. No network is used. The
+verifier reads ZIP members with size limits and never extracts or executes them.
+A successful check exits 0; failed checks exit 1 and list errors as JSON.
+
+The verifier checks:
+- safe unique archive paths, permitted members and expansion limits;
+- the exact manifest file list, byte sizes and SHA-256 file hashes;
+- canonical record SHA-256, snapshot revision, review digest references;
+- the selected requirements and evaluation requirement list agree;
+- all original document and structured source bodies match their stored hashes;
+- citations match the cited document hash, version, line range and original text;
+- assertion identifiers and assessment/clarification citation references agree;
+- the evidence CSV is the safe rendering of the recorded assertion ledger.
+
+Canonical record bytes are UTF-8 JSON using sorted keys, compact separators,
+ensure_ascii=False and no non-finite numbers. The digest covers record only.
+Envelope review/history/status are protected by the file manifest, not that
+record digest. The manifest hashes every package file except itself.
+
+LIMITS OF VERIFICATION
+Hashes prove internal consistency, not authenticity, claim truth, reviewer
+identity, digital signatures or purchasing authority. A party able to replace
+files can recompute hashes. A verifier inside an untrusted package can also be
+replaced; use a separately trusted copy to inspect untrusted packages. The
+verifier does not recompute cost/scoring policy or certify field capability.
+Snapshot status is the status recorded at export; this offline package cannot
+know whether a newer workspace revision exists. A stale snapshot remains stale
+and its old review or approval is historical only.
+
+Open report.html after verification. Keep the sources directory beside it.
+Original source links are text files; source markup is never rendered as HTML.
+CSV cells with formula/control prefixes are quoted and prefixed by an apostrophe.
+The raw values remain unchanged in decision.json and the original sources.

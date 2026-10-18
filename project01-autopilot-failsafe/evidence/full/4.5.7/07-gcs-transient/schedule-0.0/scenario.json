@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    {
+      "after": "brief",
+      "duration_s": 1,
+      "fault_evidence": true,
+      "type": "heartbeat_gap"
+    },
+    {
+      "after": "restore",
+      "type": "heartbeat_resumed",
+      "within_s": 1
+    },
+    {
+      "after": "brief",
+      "allowed": [
+        4
+      ],
+      "duration_s": 12,
+      "start_s": 0,
+      "type": "hold_mode"
+    },
+    {
+      "after": "land",
+      "type": "disarmed",
+      "within_s": 45
+    }
+  ],
+  "baseline": false,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "duration_s": 65,
+  "events": [
+    {
+      "at_s": 5,
+      "enabled": false,
+      "id": "brief",
+      "kind": "heartbeat"
+    },
+    {
+      "at_s": 6.2,
+      "enabled": true,
+      "id": "restore",
+      "kind": "heartbeat"
+    },
+    {
+      "at_s": 18,
+      "id": "land",
+      "kind": "mode",
+      "mode": "LAND"
+    }
+  ],
+  "id": "07-gcs-transient",
+  "max_compound_skew_s": 0.25,
+  "parameters": {},
+  "preconditions": {
+    "armed": true,
+    "max_abs_vz_cm_s": 30,
+    "max_altitude_m": 13.5,
+    "min_altitude_m": 10.5,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3,
+    "mode": 4,
+    "stable_for_s": 3
+  },
+  "rationale": "1.2s planned outage is below3s timeout even with heartbeat phase. Require observed silence and GUIDED through17s.",
+  "schema_version": 1,
+  "starter": false,
+  "title": "Short heartbeat dropout does not trigger LAND"
+}

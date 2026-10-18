@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "06-battery-recovery",
+  "title": "Restored battery voltage leaves LAND latched",
+  "starter": false,
+  "baseline": false,
+  "parameters": {},
+  "preconditions": {
+    "mode": 4,
+    "armed": true,
+    "min_altitude_m": 10.5,
+    "max_altitude_m": 13.5,
+    "max_abs_vz_cm_s": 30,
+    "stable_for_s": 3,
+    "min_battery_mv": 11500,
+    "min_gps_fix": 3
+  },
+  "events": [
+    {
+      "id": "low",
+      "at_s": 5,
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 10.5
+    },
+    {
+      "id": "restore",
+      "at_s": 16,
+      "kind": "parameter",
+      "name": "SIM_BATT_VOLTAGE",
+      "value": 12.6
+    }
+  ],
+  "max_compound_skew_s": 0.25,
+  "assertions": [
+    {
+      "type": "field",
+      "after": "low",
+      "within_s": 12,
+      "message": "SYS_STATUS",
+      "field": "voltage_battery",
+      "op": "lt",
+      "value": 11000,
+      "fault_evidence": true
+    },
+    {
+      "type": "text",
+      "after": "low",
+      "within_s": 12,
+      "contains": "Battery 1 is low",
+      "fault_evidence": true
+    },
+    {
+      "type": "mode",
+      "after": "low",
+      "within_s": 12,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "field",
+      "after": "restore",
+      "within_s": 8,
+      "message": "SYS_STATUS",
+      "field": "voltage_battery",
+      "op": "gt",
+      "value": 11500,
+      "fault_evidence": true
+    },
+    {
+      "type": "hold_mode",
+      "after": "restore",
+      "start_s": 5,
+      "duration_s": 10,
+      "allowed": [
+        9
+      ]
+    },
+    {
+      "type": "disarmed",
+      "after": "low",
+      "within_s": 50
+    }
+  ],
+  "duration_s": 62,
+  "cleanup": "Terminate and reap fresh simulator; never reuse eeprom; retain raw evidence",
+  "rationale": "Battery failsafe is latched; raising simulated voltage does not restart the mission. Recovery voltage confirmation is independent of parameter echo."
+}

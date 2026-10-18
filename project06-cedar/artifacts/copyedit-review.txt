@@ -1,0 +1,13 @@
+CLAIMS_LEDGER.md:5 rule-of-three KEPT distinct timestamps, denominators and resource observations
+CLAIMS_LEDGER.md:17 rule-of-three KEPT distinct contradiction, expiry and date-validity failure classes
+CLAIMS_LEDGER.md:23 rule-of-three KEPT format identity, component identity and advisory scope are separate limits
+CLAIMS_LEDGER.md:28 rule-of-three KEPT package consistency checks name separate input categories
+COMPLETION_REPORT.md:3 trailing-participle KEPT false positive on the noun purchasing action
+COMPLETION_REPORT.md:20 rule-of-three KEPT eligibility, preference, uncertainty and cost are required distinct outputs
+COMPLETION_REPORT.md:27 rule-of-three KEPT case study, briefs and claims ledger are distinct deliverables
+COMPLETION_REPORT.md:44 rule-of-three KEPT environment, identity and data handling are distinct pilot prerequisites
+COMPLETION_REPORT.md:44 rule-of-three KEPT signing, integration and operational controls require different implementation work
+COMPLETION_REPORT.md:44 trailing-participle KEPT false positive on the noun signing
+README.md:7 trailing-participle KEPT false positive on the noun recording
+Final detector review: 0 FIXED, 11 KEPT.
+Earlier revision replaced curly quotation marks in the claims table and clarified four contrastive scope statements. All source paragraphs were read for unsupported claims and vague wording.

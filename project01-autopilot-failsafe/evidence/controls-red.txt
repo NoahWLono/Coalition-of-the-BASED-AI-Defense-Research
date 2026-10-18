@@ -1,0 +1,32 @@
+test_disabled_requires_guided_armed_and_verified_silence (test_controls.Controls.test_disabled_requires_guided_armed_and_verified_silence) ... FAIL
+test_missing_injection_does_not_count_as_detection (test_controls.Controls.test_missing_injection_does_not_count_as_detection) ... FAIL
+test_replay_requires_only_targeted_mode_mismatch (test_controls.Controls.test_replay_requires_only_targeted_mode_mismatch) ... FAIL
+
+======================================================================
+FAIL: test_disabled_requires_guided_armed_and_verified_silence (test_controls.Controls.test_disabled_requires_guided_armed_and_verified_silence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/tests/test_controls.py", line 13, in test_disabled_requires_guided_armed_and_verified_silence
+    self.assertIsNotNone(control_accepted)
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_missing_injection_does_not_count_as_detection (test_controls.Controls.test_missing_injection_does_not_count_as_detection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/tests/test_controls.py", line 10, in test_missing_injection_does_not_count_as_detection
+    self.assertIsNotNone(control_accepted)
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_replay_requires_only_targeted_mode_mismatch (test_controls.Controls.test_replay_requires_only_targeted_mode_mismatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/tests/test_controls.py", line 18, in test_replay_requires_only_targeted_mode_mismatch
+    self.assertIsNotNone(control_accepted)
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+FAILED (failures=3)

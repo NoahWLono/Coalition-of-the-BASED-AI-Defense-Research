@@ -1,0 +1,145 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project 6 | CEDAR | README</title><script>/* Appearance only: never reads evidence, changes records, or contacts a server. */
+(() => {
+  'use strict';
+  const key = 'cedar-theme';
+  const allowed = new Set(['dark', 'light', 'system']);
+  const root = document.documentElement;
+  let preference = 'dark';
+  let system = null;
+  try { system = window.matchMedia('(prefers-color-scheme: dark)'); } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (allowed.has(saved)) preference = saved;
+  } catch (_) { /* Restricted file origins/private storage keep an in-memory choice. */ }
+
+  function apply() {
+    const resolved = preference === 'system' ? (system?.matches ? 'dark' : 'light') : preference;
+    root.dataset.theme = resolved;
+    root.dataset.themePreference = preference;
+    root.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'dark' ? '#0d1822' : '#f3f6f8';
+    document.querySelectorAll('[data-theme-control]').forEach(control => { control.value = preference; });
+  }
+  // This script is deliberately synchronous in the head, before styles and paint.
+  apply();
+  if (system?.addEventListener) system.addEventListener('change', () => { if (preference === 'system') apply(); });
+  else if (system?.addListener) system.addListener(() => { if (preference === 'system') apply(); });
+  window.addEventListener('storage', event => {
+    if (event.key !== key && event.key !== null) return;
+    preference = allowed.has(event.newValue) ? event.newValue : 'dark';
+    apply();
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.querySelectorAll('[data-theme-control]').forEach(control => {
+      control.addEventListener('change', () => {
+        preference = allowed.has(control.value) ? control.value : 'dark';
+        try { localStorage.setItem(key, preference); } catch (_) {}
+        apply();
+      });
+    });
+  });
+})();
+</script><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#183348;font:16px/1.65 system-ui,sans-serif}a{color:#087681}main{max-width:1100px;margin:auto;padding:48px 32px}header{background:#153044;color:white;padding:48px 0}header>div{max-width:1100px;margin:auto;padding:0 32px}.eyebrow{color:#99d1d0;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:42px;line-height:1.12;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:26px;margin-top:42px}h3{font-size:19px;margin-top:30px}.lead{max-width:800px;font-size:20px;color:#d4e3eb}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.card,article{background:white;border:1px solid #d9e3e9;border-radius:8px;padding:24px}.card h2{margin:0 0 12px;font-size:22px}.note{border-left:4px solid #bd9349;background:#fff9ed;padding:16px 20px}img,video{max-width:100%;height:auto;border:1px solid #d9e3e9;border-radius:6px}table{display:block;overflow:auto;border-collapse:collapse;font-size:14px}th,td{padding:10px;border:1px solid #d9e3e9;text-align:left;vertical-align:top}th{background:#e9f1f5}pre{overflow:auto;padding:20px;background:#152f43;color:#eef5f8;border-radius:5px}code{font-size:.9em}footer{font-size:13px;color:#526b7e;border-top:1px solid #cbd8e0;margin-top:42px;padding-top:18px}.pill{display:inline-block;padding:5px 10px;background:#edf7f6;border-radius:4px;font-size:13px;margin-right:8px}.actions a{display:inline-block;margin:5px 12px 5px 0;padding:11px 17px;background:#edf7f6;border:1px solid #bad6d6;border-radius:5px;text-decoration:none;font-weight:650}@media(max-width:600px){main{padding:25px 15px}header>div{padding:0 20px}h1{font-size:32px}article{padding:20px}table{font-size:12px}}
+
+:root{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
+.theme-control{display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:12px;font-weight:600;margin-bottom:18px}
+.theme-control select{font:inherit;color:inherit;background:#152735;border:1px solid #557586;border-radius:5px;padding:8px 26px 8px 10px}
+:root[data-theme="light"] .theme-control select{background:#fff;color:#183348}
+header .theme-control{color:#d4e3eb}header .theme-control select{background:#203e53;color:#fff}
+a:focus-visible,select:focus-visible{outline:3px solid #78d3d0;outline-offset:4px}
+:root:not([data-theme="light"]) body{background:#0d1822;color:#e1edf4}
+:root:not([data-theme="light"]) a{color:#8edbd7}
+:root:not([data-theme="light"]) :is(.card,article){background:#152735;border-color:#354e5e}
+:root:not([data-theme="light"]) .note{background:#372e20;border-color:#d4ac6d;color:#f0d7ac}
+:root:not([data-theme="light"]) :is(img,video,th,td){border-color:#354e5e}
+:root:not([data-theme="light"]) th{background:#213949}
+:root:not([data-theme="light"]) :is(.pill,.actions a){background:#1e3c42;border-color:#42646b;color:#b4e6df}
+:root:not([data-theme="light"]) footer{color:#a8becd;border-color:#354e5e}
+@media print{:root{color-scheme:light}.theme-control{display:none}:root:not([data-theme="light"]) body{background:white;color:#183348}:root:not([data-theme="light"]) :is(.card,article){background:white;color:#183348}:root:not([data-theme="light"]) a{color:#087681}:root:not([data-theme="light"]) .note{background:#fff9ed;color:#183348}:root:not([data-theme="light"]) th{background:#e9f1f5;color:#183348}}
+</style></head><body><main><label class="theme-control" for="theme-preference">Theme <select id="theme-preference" data-theme-control aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><p><a href="../../PORTFOLIO.html">Project 6: CEDAR portfolio</a> / README</p><article><h1>Project 6: CEDAR procurement evidence workbench</h1>
+<p><strong>A local procurement and assurance workbench for a fictional six-aircraft civilian inspection fleet.</strong></p>
+<p>CEDAR connects purchasing requirements to versioned supplier evidence, exposes unresolved cost and software questions, and preserves review decisions when the evidence changes. It is a synthetic portfolio demonstration directed by Noah Weinberger and implemented with AI assistance. No customer validation, field capability, contractor relationship or professional endorsement is claimed.</p>
+<p>Open <a href="../../PORTFOLIO.html">PORTFOLIO.html</a> for the meeting entry point, bilingual PDFs, recording and reviewable decision report. The <a href="COMPLETION_REPORT.html">completion report</a> records observed results and the remaining pilot scope.</p>
+<h2>Open the demonstration</h2>
+<p>Requirements: Linux/macOS with <a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> and Internet access for the initial dependency installation. Python 3.13.15 is pinned; no Node runtime, GPU, paid API, database service or external account is needed. After installation, the demonstration works offline. Windows has not been exercised.</p>
+<p>From the portfolio repository root:</p>
+<pre><code class="language-sh">cd project06-cedar
+uv sync --frozen
+uv run --frozen python -m cedar demo
+</code></pre>
+<p>Open <a href="http://127.0.0.1:8765">CEDAR on this machine</a>. The server binds to loopback and uses one worker. The documented commands work in Bash and Fish. Keep the terminal open; Ctrl+C stops the server. The dedicated database is <code>runtime/cedar.sqlite</code>. To start a separate pristine demonstration without deleting any prior decisions:</p>
+<pre><code class="language-sh">uv run --frozen python -m cedar demo --db runtime/meeting-02.sqlite
+</code></pre>
+<p>The initial corpus and buyer policy are imported automatically into a new database. Existing databases keep their evidence and decisions when the process restarts. Rebuilding source fixtures does not silently replace an existing database. Use a new database path to inspect a regenerated corpus.</p>
+<p>The role selector opens a local demonstration sign-in. The accounts are deliberately public:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Password</th>
+<th>Server permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyst</td>
+<td><code>cedar-analyst</code></td>
+<td>Import inert sources, change assumptions/policy, apply amendments, create snapshots</td>
+</tr>
+<tr>
+<td>Technical reviewer</td>
+<td><code>cedar-reviewer</code></td>
+<td>Accept/reject an assertion interpretation, review a current snapshot</td>
+</tr>
+<tr>
+<td>Approver</td>
+<td><code>cedar-approver</code></td>
+<td>Approve a current technically reviewed snapshot</td>
+</tr>
+</tbody>
+</table>
+<p>These identities demonstrate enforced permission boundaries. They do not establish separate human identities. Do not expose this server to a network or put customer information in it.</p>
+<h2>Reproduce the work</h2>
+<pre><code class="language-sh">uv run --frozen python -m cedar corpus
+uv run --frozen python -m cedar verify
+uv run --frozen python -m cedar walkthrough
+uv run --frozen python -m cedar export
+</code></pre>
+<p>These commands rebuild both synthetic corpora, run the meaningful verification suite and measured evaluation, replay the review/amendment story, and export the sample decision plus complete repository archive. Generated evidence goes to <code>artifacts/</code>; repository release archives go to <code>dist/</code>. Export does not push, upload, send or deploy anything.</p>
+<p>The complete source ZIP includes the recording, PDFs, screenshots and decision packages. Its portable archive format retains the internal <code>cedar/</code> folder; after extraction, enter that folder to run the project commands. The public repository folder is <code>project06-cedar/</code>. To verify its per-file manifest without installing dependencies:</p>
+<pre><code class="language-sh">python3 scripts/release.py --verify dist/cedar-portfolio-source.zip
+</code></pre>
+<p>Optional artifact regeneration uses the pinned development environment:</p>
+<pre><code class="language-sh">uv run --frozen python -m playwright install chromium
+uv run --frozen python scripts/browser_check.py --record
+uv run --frozen python scripts/build_portfolio.py
+uv run --frozen python scripts/clean_reproduce.py
+</code></pre>
+<p>The initial Chromium download needs network access; it is only needed to regenerate browser screenshots or the silent recording. PDF/HTML generation is local. Clean reproduction unpacks the already verified source archive into a temporary directory and creates a new virtual environment; it can reuse the host's dependency cache. It does not reset the working application's database.</p>
+<p>For the first milestone alone:</p>
+<pre><code class="language-sh">uv run --frozen python scripts/walkthrough.py --scope slice
+</code></pre>
+<p>A decision ZIP contains its own standard-library verifier. After unpacking the ZIP into a clean folder, run <code>python verify.py /path/to/decision-package.zip</code>. You can also check a package without extracting it:</p>
+<pre><code class="language-sh">uv run --frozen python scripts/verify_package.py artifacts/full-decision.zip
+</code></pre>
+<p>Hash checks establish internal consistency relative to the supplied manifest. They do not establish authenticity, genuine reviewer identity, truth of a supplier assertion or current approval after a later amendment. The exporting workspace's current/stale status is recorded at export time.</p>
+<h2>What to inspect</h2>
+<ul>
+<li><a href="../../docs/superpowers/specs/2026-10-17-cedar-design.md">Product brief and acceptance design</a></li>
+<li><a href="EXECUTIVE_BRIEF_EN.html">Executive brief in English</a> and <a href="EXECUTIVE_BRIEF_FR.html">French</a></li>
+<li><a href="CASE_STUDY.html">Technical case study</a>, <a href="CLAIMS_LEDGER.html">claims ledger</a>, <a href="COMPLETION_REPORT.html">completion report</a></li>
+<li><a href="PILOT_PROPOSAL.html">Four-week pilot proposal</a> and <a href="INTERVIEW.html">interview questions</a></li>
+<li><a href="DEMO_SCRIPT.html">Demonstration narration</a>, <a href="ARCHITECTURE.html">architecture</a>, <a href="SCHEMAS.html">schemas</a>, <a href="THREAT_MODEL.html">threat model</a></li>
+<li><a href="RESEARCH_REGISTER.html">Research register</a>, <a href="LIMITATIONS.html">limitations</a>, <a href="THIRD_PARTY.html">third-party attribution</a></li>
+<li><a href="../../artifacts/evaluation.json">Measured evaluation</a>, <a href="../../artifacts/walkthrough.json">API walkthrough</a>, <a href="../../evaluation/annotation-notes.md">separately authored annotations</a></li>
+</ul>
+<p>The application, portfolio entry page, HTML documentation and regenerated decision reports start in Dark mode. The visible Theme selector offers Dark, Light and System, remembers the preference when browser storage is available, and follows operating-system changes while System is selected. The interface remains usable if storage is blocked.</p>
+<p>The recording, screenshots, PDFs, browser download and original verification logs preserve the earlier light appearance. The <a href="THEME_REFRESH.html">theme update record</a> identifies regenerated packages and historical evidence. A complete source ZIP is optional and can be generated locally; it is not duplicated in the public repository.</p>
+<p>The implemented browser interface has seven views: overview, requirements, evidence, comparison, software assurance, change review and decision package. Every assessment opens the actual source version. A high score cannot compensate for a mandatory gate. Missing scored evidence spans a score interval, and an unknown required cost remains an open exposure.</p>
+<h2>Scope and trust</h2>
+<p>The full corpus contains six fictional suppliers, twelve packages, forty requirements (18 mandatory, 14 scored, eight informational), 36 base documents in three text layouts, three amendments, two buyer-policy versions and twelve CycloneDX 1.6 inventories. Additional machine-readable files are declared inputs. The answer keys live separately under <code>evaluation/</code>; the application never reads them.</p>
+<p>The parser is a deterministic baseline for explicit response identifiers in UTF-8 text. It does not perform OCR, read arbitrary PDFs or infer unstated capability. The optional proposal-adapter interface has no live model implementation; model evaluation is unperformed. Synthetic independent-test passages are documentary fixtures. No physical test occurred.</p>
+<p>This public portfolio demonstrates local software only. It has no connection to aircraft, operational routing, real infrastructure assessment, legal certification, purchase or vendor contact. INKAS and Marconi were supplied as possible audiences only; the portfolio remains contractor-neutral pending exact legal-entity confirmation.</p></article><footer>Synthetic demonstration · Directed by Noah Weinberger · Implemented with AI assistance</footer></main></body></html>

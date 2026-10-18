@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.0/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.0/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.0/sitl.stdout",
+  "3": "socket:[115851]",
+  "4": "socket:[115852]",
+  "5": "socket:[115853]",
+  "6": "socket:[115854]",
+  "7": "socket:[115855]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/07-gcs-transient/schedule-0.0/eeprom.bin",
+  "9": "socket:[115856]"
+}

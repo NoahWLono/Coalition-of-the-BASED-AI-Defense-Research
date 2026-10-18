@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.0/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.0/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.0/sitl.stdout",
+  "3": "socket:[105372]",
+  "4": "socket:[105373]",
+  "5": "socket:[105374]",
+  "6": "socket:[105375]",
+  "7": "socket:[105376]",
+  "8": "/research/project11-autopilot-failsafe/evidence/full/4.5.6/06-battery-recovery/schedule-0.0/eeprom.bin",
+  "9": "socket:[105377]"
+}

@@ -1,0 +1,532 @@
+{
+  "suppliers": [
+    {
+      "id": "S01",
+      "name": "Alder Airworks"
+    },
+    {
+      "id": "S02",
+      "name": "Birch Field Systems"
+    },
+    {
+      "id": "S03",
+      "name": "Cobalt Survey Technology"
+    }
+  ],
+  "packages": [
+    {
+      "id": "P01",
+      "supplier_id": "S01",
+      "name": "Alder Survey Lite"
+    },
+    {
+      "id": "P03",
+      "supplier_id": "S02",
+      "name": "Birch Inspect Standard"
+    },
+    {
+      "id": "P05",
+      "supplier_id": "S03",
+      "name": "Cobalt Terrain Base"
+    }
+  ],
+  "requirements": {
+    "v1": [
+      {
+        "id": "R01",
+        "wording": "Supply at least six aircraft in the civilian inspection fleet.",
+        "category": "fleet",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 6,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R02",
+        "wording": "Include at least eighteen flight batteries in the delivered fleet package.",
+        "category": "fleet",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 18,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R03",
+        "wording": "Commit to software maintenance and support for at least thirty-six months after acceptance.",
+        "category": "support",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 36,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R04",
+        "wording": "Provide a supplied independent-test report recording nominal position repeatability at or below two metres in its defined synthetic fixture.",
+        "category": "assurance",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "independent_test"
+        ],
+        "unit": "m",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R05",
+        "wording": "Commit to fleet delivery no later than twelve weeks after order acceptance.",
+        "category": "delivery",
+        "version": "v1",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "weeks",
+        "comparator": "lte",
+        "target": 12,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      },
+      {
+        "id": "R19",
+        "wording": "State nominal endurance for comparison under the supplier's declared synthetic test conditions.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "independent_test"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 25,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 25,
+          "high": 55,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R20",
+        "wording": "State the available civilian inspection payload allowance.",
+        "category": "operations",
+        "version": "v1",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "gte",
+        "target": 500,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": {
+          "low": 500,
+          "high": 2000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R33",
+        "wording": "Identify the training delivery format offered for buyer review.",
+        "category": "information",
+        "version": "v1",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional Cedar Civil Inspection Service buyer schedule, 2026-10-01",
+        "scoring": null
+      }
+    ],
+    "v2": [
+      {
+        "id": "R01",
+        "wording": "Supply at least six aircraft in the civilian inspection fleet.",
+        "category": "fleet",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 6,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R02",
+        "wording": "Include at least eighteen flight batteries in the delivered fleet package.",
+        "category": "fleet",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "quotation"
+        ],
+        "unit": "units",
+        "comparator": "gte",
+        "target": 18,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R03",
+        "wording": "Commit to software maintenance and support for at least forty-eight months after acceptance.",
+        "category": "support",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "months",
+        "comparator": "gte",
+        "target": 48,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R04",
+        "wording": "Provide a supplied independent-test report recording nominal position repeatability at or below two metres in its defined synthetic fixture.",
+        "category": "assurance",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "independent_test"
+        ],
+        "unit": "m",
+        "comparator": "lte",
+        "target": 2,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R05",
+        "wording": "Commit to fleet delivery no later than twelve weeks after order acceptance.",
+        "category": "delivery",
+        "version": "v2",
+        "mode": "mandatory",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "commitment"
+        ],
+        "unit": "weeks",
+        "comparator": "lte",
+        "target": 12,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      },
+      {
+        "id": "R19",
+        "wording": "State nominal endurance for comparison under the supplier's declared synthetic test conditions.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "independent_test"
+        ],
+        "unit": "minutes",
+        "comparator": "gte",
+        "target": 25,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 25,
+          "high": 55,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R20",
+        "wording": "State the available civilian inspection payload allowance.",
+        "category": "operations",
+        "version": "v2",
+        "mode": "scored",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration"
+        ],
+        "unit": "g",
+        "comparator": "gte",
+        "target": 500,
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": {
+          "low": 500,
+          "high": 2000,
+          "direction": "higher"
+        }
+      },
+      {
+        "id": "R33",
+        "wording": "Identify the training delivery format offered for buyer review.",
+        "category": "information",
+        "version": "v2",
+        "mode": "informational",
+        "applies_to": [
+          "*"
+        ],
+        "na_reason": null,
+        "evidence_types": [
+          "declaration",
+          "commitment"
+        ],
+        "unit": "text",
+        "comparator": "present",
+        "target": "provided",
+        "effective": "2026-10-01",
+        "expires": null,
+        "source": "Fictional buyer schedule revision 2, 2026-10-17",
+        "scoring": null
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "P01-spec-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P01-spec-v1.md",
+      "title": "Alder Survey Lite — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P01-quote-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P01-quote-v1.md",
+      "title": "Alder Survey Lite — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P01-terms-v1",
+      "package_id": "P01",
+      "supplier_id": "S01",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P01-terms-v1.md",
+      "title": "Alder Survey Lite — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P03-spec-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P03-spec-v1.md",
+      "title": "Birch Inspect Standard — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    },
+    {
+      "id": "P03-quote-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P03-quote-v1.md",
+      "title": "Birch Inspect Standard — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P03-terms-v1",
+      "package_id": "P03",
+      "supplier_id": "S02",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P03-terms-v1.md",
+      "title": "Birch Inspect Standard — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P05-spec-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "spec",
+      "path": "documents/P05-spec-v1.md",
+      "title": "Cobalt Terrain Base — product specification and synthetic laboratory attachment",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "blocks"
+    },
+    {
+      "id": "P05-quote-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "quote",
+      "path": "documents/P05-quote-v1.md",
+      "title": "Cobalt Terrain Base — commercial quotation",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "table"
+    },
+    {
+      "id": "P05-terms-v1",
+      "package_id": "P05",
+      "supplier_id": "S03",
+      "version": 1,
+      "kind": "terms",
+      "path": "documents/P05-terms-v1.md",
+      "title": "Cobalt Terrain Base — support, delivery, and exposure declaration",
+      "issued": "2026-10-01",
+      "supersedes": [],
+      "layout": "labels"
+    }
+  ],
+  "amendments": [
+    {
+      "id": "AMD01",
+      "title": "Birch support commitment shortened",
+      "description": "Replaces P03 terms with a twenty-four-month support commitment while retaining the other terms and exposure declaration.",
+      "documents": [
+        {
+          "id": "P03-terms-v2",
+          "package_id": "P03",
+          "supplier_id": "S02",
+          "version": 2,
+          "kind": "terms",
+          "path": "documents/P03-terms-v2.md",
+          "title": "Birch Inspect Standard — support, delivery, and exposure declaration",
+          "issued": "2026-10-17",
+          "supersedes": [
+            "P03-terms-v1"
+          ],
+          "layout": "labels"
+        }
+      ]
+    }
+  ]
+}

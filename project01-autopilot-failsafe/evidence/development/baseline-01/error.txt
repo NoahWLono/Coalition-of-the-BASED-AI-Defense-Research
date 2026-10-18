@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/research/project11-autopilot-failsafe/src/failsafelab/runner.py", line 164, in run_case
+    c.until(lambda:'HEARTBEAT' in c.latest,30,20)
+  File "/research/project11-autopilot-failsafe/src/failsafelab/runner.py", line 113, in until
+    raise TimeoutError('condition timed out: '+' | '.join(texts))
+TimeoutError: condition timed out:  |  |  | 

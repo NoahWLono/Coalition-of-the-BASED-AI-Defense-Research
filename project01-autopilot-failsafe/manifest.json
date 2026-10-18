@@ -1,0 +1,195 @@
+{
+  "bounds": {
+    "bootstrap_timeout_s": 300,
+    "case_wall_timeout_s": 180,
+    "concurrent_sitl_processes": 1,
+    "download_bytes_per_invocation": 157286400,
+    "sitl_address_space_bytes": 1610612736,
+    "sitl_cpu_affinity_slots": 2,
+    "sitl_speedup": 4
+  },
+  "config_note": "base-copter.parm is derived from upstream-copter.parm by removing ARSPD_PIN and ARSPD_BUS, which are not enumerated by these Copter binaries; lab.parm explicitly overrides experiment parameters.",
+  "files": [
+    {
+      "bytes": 6802848,
+      "download_if_missing": true,
+      "executable": true,
+      "path": "vendor/4.5.6/arducopter",
+      "sha256": "73691f043c7579f5ff4d6cf5c32219ade472476e662638e47bb860e5458f8f04",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.6/SITL_x86_64_linux_gnu/arducopter"
+    },
+    {
+      "bytes": 37,
+      "download_if_missing": true,
+      "path": "vendor/4.5.6/firmware-version.txt",
+      "sha256": "3a58e60d11df51e9ec3271cc54f97b0ab81974b961d5375250a2fc02337e0538",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.6/SITL_x86_64_linux_gnu/firmware-version.txt"
+    },
+    {
+      "bytes": 189,
+      "download_if_missing": true,
+      "path": "vendor/4.5.6/git-version.txt",
+      "sha256": "f39cfaef3c89e4487d076241ad219df17d2b83b979c62f2373956dd0294f5dbf",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.6/SITL_x86_64_linux_gnu/git-version.txt"
+    },
+    {
+      "bytes": 6802848,
+      "download_if_missing": true,
+      "executable": true,
+      "path": "vendor/4.5.7/arducopter",
+      "sha256": "b9035c08f003ab296b8af71f793a1dd790cd8a327f8a2e8f4aa1425953922a04",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.7/SITL_x86_64_linux_gnu/arducopter"
+    },
+    {
+      "bytes": 37,
+      "download_if_missing": true,
+      "path": "vendor/4.5.7/firmware-version.txt",
+      "sha256": "27a3dba1ef04ccc9e1012da8de8c6e095ca702f77130d8ca01d115a30e22a059",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.7/SITL_x86_64_linux_gnu/firmware-version.txt"
+    },
+    {
+      "bytes": 188,
+      "download_if_missing": true,
+      "path": "vendor/4.5.7/git-version.txt",
+      "sha256": "3df4432f8afe448be21e9d38a912239ea317b60ef6bd92e6df202685185c3d26",
+      "url": "https://firmware.ardupilot.org/Copter/stable-4.5.7/SITL_x86_64_linux_gnu/git-version.txt"
+    },
+    {
+      "bytes": 45,
+      "path": "requirements.txt",
+      "sha256": "cb06a9818f0e806af032bdf5d0be5cf6d384768f3fe2268fd4edea6c17a500df"
+    },
+    {
+      "bytes": 854,
+      "path": "config/lab.parm",
+      "sha256": "6233cedcfc575378c75f28d40080256374461ecb406887f3ca7fa4b108234544"
+    },
+    {
+      "bytes": 2019,
+      "path": "config/base-copter.parm",
+      "sha256": "87f209ec24aca57fdbd5256ceb2322cbe7a74382a1641713c690bf122fb24f28"
+    },
+    {
+      "bytes": 1957,
+      "path": "config/upstream-copter.parm",
+      "sha256": "5e01345b45d1c6190b28bece5638bbdd4cf1cce35e05bbbf480ab24d2b51aa0e"
+    },
+    {
+      "bytes": 35147,
+      "path": "docs/source-evidence/COPYING.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    }
+  ],
+  "host_tools": {
+    "bubblewrap": {
+      "installed_by_bootstrap": false,
+      "tested_version": "0.13.1"
+    },
+    "required_commands": [
+      "python3",
+      "timeout",
+      "uv",
+      "bwrap",
+      "ip",
+      "ss"
+    ],
+    "uv": {
+      "bootstrap_requires_exact_tested_version": true,
+      "tested_version": "0.13.1"
+    }
+  },
+  "laboratory": "ArduCopter failsafe SITL laboratory",
+  "platform": {
+    "architecture": "x86_64",
+    "libc": "glibc",
+    "minimum_glibc": "2.17",
+    "os": "Linux"
+  },
+  "python": {
+    "fallback_archive": {
+      "bytes": 34277962,
+      "checksum_source": "https://github.com/astral-sh/python-build-standalone/releases/download/20260929/SHA256SUMS",
+      "mirror_path": "20260929/cpython-3.12.14+20260929-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+      "sha256": "ef605200f8174e87ecfc308e52a88127543f85dd5c940dc5e92cab244b98a003",
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260929/cpython-3.12.14%2B20260929-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
+    },
+    "implementation": "CPython",
+    "pin_scope": "Exact Python patch version; an existing matching interpreter may have a different build from the fallback archive.",
+    "version": "3.12.14",
+    "wheels": [
+      {
+        "bytes": 6390472,
+        "filename": "pymavlink-2.4.49-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/pymavlink/2.4.49/json",
+        "package": "pymavlink",
+        "sha256": "4a87b508a9e9215afdb809189224731b4b34153f3879226fd94b8f485ac626ab",
+        "url": "https://files.pythonhosted.org/packages/87/44/34099ab9e4e41db4b2ec9f05c3d8e7726ef3d5a2ae8cfb6f90596c4d82fb/pymavlink-2.4.49-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "version": "2.4.49"
+      },
+      {
+        "bytes": 5105247,
+        "filename": "lxml-6.1.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/lxml/6.1.3/json",
+        "package": "lxml",
+        "sha256": "379f8a75cf6eb7eef0af074b55f49ab73b868388a98de14646abcdfa4564bb11",
+        "url": "https://files.pythonhosted.org/packages/db/36/aa413bc214dc4f785ad2b2ddd8cc99aae7062d49ab155e91e6011af00daf/lxml-6.1.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "version": "6.1.3"
+      },
+      {
+        "bytes": 1003486,
+        "filename": "fastcrc-0.5.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/fastcrc/0.5.0/json",
+        "package": "fastcrc",
+        "sha256": "5b408763b66c86ad493ccad836348ee18adc53d5f0072ce158e783b9bbd48eba",
+        "url": "https://files.pythonhosted.org/packages/f0/08/5fe22150ef93fa126d43e9428aeb04b221552917fd20dcc9f276253f7fe4/fastcrc-0.5.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "version": "0.5.0"
+      }
+    ]
+  },
+  "releases": [
+    {
+      "commit": "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+      "listing_url": "https://firmware.ardupilot.org/Copter/stable-4.5.6/SITL_x86_64_linux_gnu/",
+      "official_binary_listing_date": "2024-09-04",
+      "source_date": "2024-09-03T08:12:32+09:00",
+      "version": "4.5.6"
+    },
+    {
+      "commit": "2a3dc4b7bf2507120f7378a7b2fde73185e0c325",
+      "listing_url": "https://firmware.ardupilot.org/Copter/stable-4.5.7/SITL_x86_64_linux_gnu/",
+      "official_binary_listing_date": "2024-10-16",
+      "source_date": "2024-10-07T16:30:57+09:00",
+      "version": "4.5.7"
+    }
+  ],
+  "schema_version": 1,
+  "selection": "Historical compatible official releases; no claim these are the latest releases.",
+  "simulator": {
+    "external_simulator": false,
+    "frame": "quad/PLUS",
+    "home": {
+      "altitude_m_msl": 0,
+      "heading_deg": 0,
+      "latitude_deg": 0.01,
+      "longitude_deg": 0.01
+    },
+    "name": "ArduPilot built-in SITL Multicopter quad model",
+    "random_seed": "No user-controlled universal SITL seed asserted; schedule offsets are recorded instead",
+    "speedup": 4,
+    "start_time_unix_s": 1700000000,
+    "synthetic_clock": true,
+    "version": "Same pinned commit and executable as each autopilot release"
+  },
+  "source_evidence": {
+    "bytes": 10577,
+    "commits": [
+      "7ce11b4194f6c6b77d8e1f2bd5f14c0466d5e696",
+      "2a3dc4b7bf2507120f7378a7b2fde73185e0c325"
+    ],
+    "files": 28,
+    "license_path": "docs/source-evidence/COPYING.txt",
+    "path": "docs/source-evidence/manifest.json",
+    "sha256": "e9014196c2238ada76244d4b85698b7af0e8fbda9adf9927ca270498ef6bb07a"
+  },
+  "verification": "Bootstrap checks byte count and SHA-256 before reuse. Files with rejected checksums are preserved and cause failure."
+}

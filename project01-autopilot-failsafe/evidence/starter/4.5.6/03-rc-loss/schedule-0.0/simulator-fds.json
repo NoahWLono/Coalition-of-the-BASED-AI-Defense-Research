@@ -1,0 +1,13 @@
+{
+  "0": "/dev/null",
+  "1": "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/03-rc-loss/schedule-0.0/sitl.stdout",
+  "10": "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/03-rc-loss/schedule-0.0/logs/00000001.BIN",
+  "2": "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/03-rc-loss/schedule-0.0/sitl.stdout",
+  "3": "socket:[96726]",
+  "4": "socket:[96727]",
+  "5": "socket:[96728]",
+  "6": "socket:[96729]",
+  "7": "socket:[96730]",
+  "8": "/research/project11-autopilot-failsafe/evidence/starter/4.5.6/03-rc-loss/schedule-0.0/eeprom.bin",
+  "9": "socket:[96731]"
+}

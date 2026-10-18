@@ -1,0 +1,17 @@
+[
+  {
+    "id": "SYNTH-CEDAR-001",
+    "title": "Synthetic report-cache optional import handling issue",
+    "published": "2026-09-15",
+    "source": "CEDAR fictional advisory register; no external vulnerability assertion",
+    "component": "cedar-report-cache",
+    "purl": "pkg:generic/cedar-report-cache@1.0.0",
+    "affected_versions": [
+      "1.0.0"
+    ],
+    "fixed_versions": [
+      "1.1.0"
+    ],
+    "description": "Invented advisory for testing identity and application-specific exposure. Presence alone does not establish exposure. No exploit exists in this corpus."
+  }
+]

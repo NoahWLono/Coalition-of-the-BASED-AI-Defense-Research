@@ -1,0 +1,58 @@
+{
+  "scope": "Local deliverable byte inventory. Complete source archive has its own separate manifest and adjacent ZIP checksum.",
+  "functional_tree_sha256": "c2808c3d3d7484cd2ec5fbee0c6d077e619203b61e430baaf5bbd46213395332",
+  "files": {
+    "PORTFOLIO.html": {
+      "sha256": "0f6d0d346efd5ef035778a22b7cee63e03e7a94e1938a35853643bfb9e925eb4",
+      "bytes": 6945
+    },
+    "output/pdf/cedar-executive-briefs.pdf": {
+      "sha256": "2550b5629eb6f8ca8b7ba9452e8c2cbf279e9ae13db1d466a2fbc27104730426",
+      "bytes": 47429
+    },
+    "output/pdf/cedar-technical-portfolio.pdf": {
+      "sha256": "e1fad2dd2e7e73b5ebc324044160f8ff2f1badacaf0b5774630a649b92e598e2",
+      "bytes": 938711
+    },
+    "artifacts/cedar-demo.webm": {
+      "sha256": "e0c90902a8a677b9d614b5ba6d86f681eca4ca3df1ac1b206e1e5461d434d213",
+      "bytes": 28586371
+    },
+    "artifacts/full-decision.zip": {
+      "sha256": "4654ede2153078f316802a283e3ac8257321132e13a1b55e4440b930983ef8ae",
+      "bytes": 363125
+    },
+    "artifacts/full-stale-decision.zip": {
+      "sha256": "e4fef99067285cb43e80fdec1a01ff8b11b33c27e957aa4477f8f8d6fd812959",
+      "bytes": 356117
+    },
+    "artifacts/evaluation.json": {
+      "sha256": "b6ca12eaf1b8bd4c7c21468e22cac833456beeda63f656cdbf6238daf20950bd",
+      "bytes": 6658
+    },
+    "artifacts/test-results.txt": {
+      "sha256": "6e83fbfe056149abae31764db8b608736bcda9da4144a2d9a25eee2a33496f91",
+      "bytes": 233
+    },
+    "artifacts/browser-check.json": {
+      "sha256": "44728c2453f329fc457e22b8c97900072a18a6dfba5f1a4cb05f8bc9a8fd9201",
+      "bytes": 1425
+    },
+    "artifacts/clean-reproduction.json": {
+      "sha256": "beca2d6cf8ecd2683ec87d7ecba90839a12f102a252e842a72d2c66b1990e507",
+      "bytes": 9252
+    },
+    "artifacts/sample-decision/report.html": {
+      "sha256": "fec6be88f60331e0b03e25b5c5e770804d98e20ea5a471ff6c575ead4dc5031f",
+      "bytes": 1125177
+    },
+    "docs/CLAIMS_LEDGER.md": {
+      "sha256": "052ce6043ccc9e05db95523f43ecf0d58d504ba480904a0c064bf4772d120ec1",
+      "bytes": 10239
+    },
+    "docs/COMPLETION_REPORT.md": {
+      "sha256": "f644b8254a97f3314b268b7e0cdc33506a06ec5ed35979eb2a3c5cca8269e7f7",
+      "bytes": 8534
+    }
+  }
+}
