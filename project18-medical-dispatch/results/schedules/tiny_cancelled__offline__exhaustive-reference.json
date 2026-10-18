@@ -1,0 +1,53 @@
+{
+  "scenario_id": "tiny-cancelled",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R2",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 2,
+      "end": 2
+    },
+    {
+      "request_id": "R3",
+      "vehicle_id": "V1",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 4,
+      "delivery": 6,
+      "end": 6
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "cancelled",
+      "reason": "administrative cancellation"
+    },
+    {
+      "request_id": "R4",
+      "status": "cancelled",
+      "reason": "administrative cancellation"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 0.0,
+    "objective_rational": "0",
+    "best_bound": 0.0,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 114,
+    "enumerated_leaves": 9,
+    "transitions": 200,
+    "cache_hits": 87,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.004715781000413699
+  }
+}

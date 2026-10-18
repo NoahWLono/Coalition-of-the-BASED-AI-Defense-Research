@@ -1,0 +1,21 @@
+npm notice run ground-control-interface-lab@1.0.0 test:browser
+npm notice run node tools/audit-regressions.mjs && node tools/browser-check.mjs
+[
+  {
+    "mutation": "hidden owner value",
+    "detected": true
+  },
+  {
+    "mutation": "misleading visible heading only",
+    "detected": true
+  }
+]
+{
+  "passed": true,
+  "browser": "151.0.7922.34",
+  "renderedChecks": 1749,
+  "mutations": 7,
+  "keyboardVariants": 3,
+  "consoleErrors": [],
+  "externalRequests": []
+}

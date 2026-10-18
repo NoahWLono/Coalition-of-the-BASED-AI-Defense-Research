@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "tiny_charger_bottleneck",
+  "policy": "milp",
+  "information": "offline"
+}

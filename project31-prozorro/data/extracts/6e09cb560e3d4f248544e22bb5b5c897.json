@@ -1,0 +1,158 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "2610.0",
+          "amountNet": "2175.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "6f47fb88990d456d83b94448ba6a5bbc",
+        "contractID": "UA-2025-01-31-004337-a-a1",
+        "date": "2025-02-03T10:57:58.932213+02:00",
+        "dateModified": "2025-02-03T10:57:58.932213+02:00",
+        "dateSigned": "2025-01-30T11:14:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-03T10:57:58.764024+02:00",
+            "datePublished": "2025-02-03T10:57:58.764024+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "cace0553c77e42b580de847ea200680b"
+          }
+        ],
+        "id": "9a19eb78e4a24d078efb5975bf2b08af",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-02-28T00:00:00+02:00",
+              "startDate": "2025-01-30T00:00:00+02:00"
+            },
+            "description": "Папір 80г/м2 формат А4 UPM Copy Paper",
+            "id": "69a4d63f799b4701bc50ec2eedc5c5e2",
+            "quantity": "15.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "2610.0",
+          "amountNet": "2175.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 25697,
+        "method": "GET",
+        "response_sha256": "e862430a0b32bd7b329b01e7a2f43147ab8eca57d662282cbaa54618cdc92b8c",
+        "retrieved_at": "2026-10-18T01:48:08.918039+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:48:09 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/9a19eb78e4a24d078efb5975bf2b08af"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6016,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-01-31-004337-a/",
+    "method": "GET",
+    "response_sha256": "1d61872193029bbb2e01bebb59d67be8fb35848c04ad2400f13ac27dd9764dab",
+    "retrieved_at": "2026-10-18T01:48:07.867945+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:48:08 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/6e09cb560e3d4f248544e22bb5b5c897"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-01-31T11:15:49.113599+02:00",
+        "id": "6f47fb88990d456d83b94448ba6a5bbc",
+        "status": "active",
+        "value": {
+          "amount": "2610.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "6f47fb88990d456d83b94448ba6a5bbc",
+        "contractID": "UA-2025-01-31-004337-a-a1",
+        "date": "2025-01-31T11:15:50.694471+02:00",
+        "id": "9a19eb78e4a24d078efb5975bf2b08af",
+        "status": "active",
+        "value": {
+          "amount": "2610.0",
+          "amountNet": "2175.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-01-31T11:14:44.353099+02:00",
+    "dateModified": "2025-01-31T11:15:50.694471+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-01-31T11:15:48.487712+02:00",
+        "datePublished": "2025-01-31T11:15:48.320498+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "41e3978f3d014478a7dbac0df3b03f60"
+      }
+    ],
+    "id": "6e09cb560e3d4f248544e22bb5b5c897",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-02-28T00:00:00+02:00",
+          "startDate": "2025-01-30T00:00:00+02:00"
+        },
+        "description": "Папір 80г/м2 формат А4 UPM Copy Paper",
+        "id": "69a4d63f799b4701bc50ec2eedc5c5e2",
+        "quantity": "15.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-01-31-004337-a",
+    "title": "Папір 80г/м2 формат А4 UPM Copy Paper",
+    "value": {
+      "amount": "2610.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

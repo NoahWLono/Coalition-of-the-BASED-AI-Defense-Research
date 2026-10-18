@@ -1,0 +1,156 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "7800.0",
+          "amountNet": "6500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "b7f94089b6804c8aa3208d53f09e5dae",
+        "contractID": "UA-2025-03-14-008637-a-a1",
+        "date": "2025-12-30T11:11:47.435137+02:00",
+        "dateModified": "2025-12-30T11:11:47.435137+02:00",
+        "dateSigned": "2025-03-14T14:19:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-12-30T11:11:47.268657+02:00",
+            "datePublished": "2025-12-30T11:11:47.268657+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "fa6358c71272469f9c23d988f643fb77"
+          }
+        ],
+        "id": "3823c668d47343f992d85081edb50c28",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (Папір А4)",
+            "id": "a3d6150bc8bc4def8ce799a10afca933",
+            "quantity": "50.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "7800.0",
+          "amountNet": "6500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 26196,
+        "method": "GET",
+        "response_sha256": "102269e8a2664a47ea30e3f314b7243013e4ee61ab5fd7d566b6fba4073ac778",
+        "retrieved_at": "2026-10-18T01:49:25.111327+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:25 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/3823c668d47343f992d85081edb50c28"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6691,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-008637-a/",
+    "method": "GET",
+    "response_sha256": "682e3908f09c4e8fb7378447c06fe085cc23f581b32d282762f2e06183a02590",
+    "retrieved_at": "2026-10-18T01:49:24.061244+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:24 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/538ed4eb3fd54d0ca3f5764d63694047"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-14T14:21:27.856271+02:00",
+        "id": "b7f94089b6804c8aa3208d53f09e5dae",
+        "status": "active",
+        "value": {
+          "amount": "7800.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "b7f94089b6804c8aa3208d53f09e5dae",
+        "contractID": "UA-2025-03-14-008637-a-a1",
+        "date": "2025-03-14T14:21:29.417554+02:00",
+        "id": "3823c668d47343f992d85081edb50c28",
+        "status": "active",
+        "value": {
+          "amount": "7800.0",
+          "amountNet": "6500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-14T14:20:56.525020+02:00",
+    "dateModified": "2025-03-14T14:21:29.417554+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-14T14:21:27.348225+02:00",
+        "datePublished": "2025-03-14T14:21:27.174529+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "9ed2fa089b0747d6ae400123fcceb87a"
+      }
+    ],
+    "id": "538ed4eb3fd54d0ca3f5764d63694047",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (Папір А4)",
+        "id": "a3d6150bc8bc4def8ce799a10afca933",
+        "quantity": "50.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-14-008637-a",
+    "title": "ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (Папір А4)",
+    "value": {
+      "amount": "7800.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+✔ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (12.381027ms)
+✔ freshness boundary and historical evidence are distinct (1.110932ms)
+✔ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (0.622262ms)
+✔ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (0.688553ms)
+✔ rewind/reset during replay pauses and removes future state (1.911708ms)
+✔ stale ownership cannot authorize a request and unknown observations never invent a value (2.437545ms)
+✔ replays are deterministic for every second and do not mutate scripts (4.146595ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.827533

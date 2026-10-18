@@ -1,0 +1,7 @@
+test_duplicate_source_lot_fails (test_report.ReportTests.test_duplicate_source_lot_fails) ... ok
+test_offline_report_is_deterministic_and_escapes_sources (test_report.ReportTests.test_offline_report_is_deterministic_and_escapes_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.017s
+
+OK

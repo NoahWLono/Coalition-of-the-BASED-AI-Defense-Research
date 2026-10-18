@@ -1,0 +1,43 @@
+Executed in project16-ground-control-lab unless a full path is shown. Shell: Bash.
+
+Environment inspection:
+pwd
+git status --short --branch
+uname -srmo
+cat /etc/os-release
+free -h
+node --version
+npm --version
+python3 --version
+
+Initial model cycle:
+node --test tests/engine.test.mjs > evidence/initial-red.txt 2>&1
+node --test tests/engine.test.mjs > evidence/initial-green.txt 2>&1
+node tools/serve.mjs
+Initial browser launch failed because bundled Playwright had no installed browser executable.
+PLAYWRIGHT_BROWSERS_PATH="$PWD/.cache/ms-playwright" node <HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/cli.js install chromium --only-shell > evidence/browser-install.txt 2>&1
+Minimal browser replay at second5 then verified unresolved ownership and Supervisor next actor (evidence/minimal-browser.txt).
+
+Evaluator cycle:
+node --test tests/evaluator.test.mjs > evidence/evaluator-red.txt 2>&1
+node --test tests/engine.test.mjs tests/evaluator.test.mjs > evidence/model-green.txt 2>&1
+
+Integration checks:
+npm test > evidence/unit-tests.txt 2>&1
+node tools/evaluate.mjs > evidence/evaluate-log.txt 2>&1
+
+The scripts and evidence JSON record parameters and outputs. Edits were made with local file tools; the commands above describe executable verification rather than a shell reconstruction of file authoring.
+
+Final review and browser checks:
+node tools/audit-regressions.mjs > evidence/audit-regressions-red.txt 2>&1
+node tools/audit-regressions.mjs > evidence/audit-regressions-green.txt 2>&1
+npm test > evidence/unit-tests.txt 2>&1
+npm run evaluate > evidence/evaluate-log.txt 2>&1
+npm run test:browser > evidence/browser-log.txt 2>&1
+The browser command initially exposed an asynchronous assertion timing issue; preserved in browser-assertion-timing.txt. After waiting for the observable update, the final run passed.
+node tools/contrast-check.mjs
+node tools/capture.mjs
+python3 <HOME>/.agents/skills/copyediting-ai-prose/scripts/detect.py README.md docs/contract.md docs/state-machine.md docs/sources.md evidence/review.md
+python3 <HOME>/.agents/skills/copyediting-ai-prose/scripts/detect.py docs/comparison-report.md docs/accessibility-findings.md
+node tools/hash-artifacts.mjs
+sha256sum -c evidence/SHA256SUMS

@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "arithmetic_computable": 1,
+    "comparison_eligible": 0,
+    "excluded_lots": 50,
+    "leads": 0,
+    "real_leads": 0,
+    "screened_lots": 0,
+    "synthetic_leads": 0,
+    "unique_lots": 50
+  },
+  "date_basis": "API dateCreated",
+  "exclusion_reason_counts": {
+    "currency_unknown": 23,
+    "delivery_evidence_missing": 50,
+    "delivery_unknown": 50,
+    "fiscal_evidence_missing": 50,
+    "fiscal_unknown": 50,
+    "independent_human_review_required": 50,
+    "item_link_unresolved": 10,
+    "multiple_items": 16,
+    "no_active_current_contract": 23,
+    "pack_size_unreviewed": 13,
+    "payment_evidence_missing": 50,
+    "payment_unknown": 50,
+    "price_unavailable": 49,
+    "quantity_evidence_missing": 50,
+    "quantity_version_unknown": 10,
+    "review_unapproved": 50,
+    "spec_evidence_missing": 50,
+    "specification_unknown": 50,
+    "stage_evidence_missing": 50,
+    "unit_unresolved": 13
+  },
+  "human_reviewed_holdout": 0,
+  "milestone_status": "comparability_audit_only",
+  "reporting_period": [
+    "2025-01-01",
+    "2025-03-31"
+  ],
+  "sampling": "search-discovered convenience sample, one lot per tender; not representative",
+  "stage_counts": {
+    "amended_contract": 2,
+    "award": 51,
+    "bid": 61,
+    "contract_current": 48,
+    "estimate": 50,
+    "payment_observed": 27
+  },
+  "unmet_gates": [
+    "independent human reconciliation",
+    "document-supported goods/fiscal/delivery/payment comparability",
+    "empirical screening precision and false-exclusion validation"
+  ]
+}

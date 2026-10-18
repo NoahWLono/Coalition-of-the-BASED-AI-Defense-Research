@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "tiny_seed-18001",
+  "policy": "milp",
+  "information": "offline"
+}

@@ -1,0 +1,42 @@
+{
+  "accepted_label_count": 0,
+  "counts": {
+    "labeled_comparable": 0,
+    "labeled_leads": 0,
+    "labeled_screened_ordinary": 0
+  },
+  "ignored_labels": [],
+  "limitations": [
+    "Independent human labels are required for empirical error rates.",
+    "Synthetic expectations and assistant reviews do not validate real comparability.",
+    "Wilson intervals do not correct selection bias or reviewer error."
+  ],
+  "metrics": {
+    "false_exclusion_rate": {
+      "denominator": 0,
+      "estimate": null,
+      "numerator": 0,
+      "wilson_95": null
+    },
+    "false_lead_proportion": {
+      "denominator": 0,
+      "estimate": null,
+      "numerator": 0,
+      "wilson_95": null
+    },
+    "false_positive_rate": {
+      "denominator": 0,
+      "estimate": null,
+      "numerator": 0,
+      "wilson_95": null
+    },
+    "precision": {
+      "denominator": 0,
+      "estimate": null,
+      "numerator": 0,
+      "wilson_95": null
+    }
+  },
+  "validation_gate_met": false,
+  "validation_scope": "Labeled holdout records only; no representative population claim."
+}

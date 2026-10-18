@@ -1,0 +1,9 @@
+{
+  "objective": 1663.0,
+  "lower_bound": 1325.155172413799,
+  "relative_gap": 0.20315383498869577,
+  "source": "baseline__offline__milp.json",
+  "schedule": "chargers_2_transfer__offline__capacity_transfer.json",
+  "valid": true,
+  "explanation": "Adding an unused charger preserves all source operations."
+}

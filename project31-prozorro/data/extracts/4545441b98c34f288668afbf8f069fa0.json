@@ -1,0 +1,600 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "2000.0",
+          "amountNet": "2000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        },
+        "awardID": "e0251fa3d1ea400f917bf5cfffad1e68",
+        "contractID": "UA-2025-02-03-002285-a-c1",
+        "date": "2025-03-03T15:58:11.208533+02:00",
+        "dateModified": "2025-03-03T15:58:11.208533+02:00",
+        "dateSigned": "2025-02-03T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-03T15:58:03.222552+02:00",
+            "datePublished": "2025-03-03T15:58:03.222552+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "932e313a73be4017add221b21ffe4c0a"
+          }
+        ],
+        "id": "343a641011994d318b6dcc29f1f4dda5",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "дирокол",
+            "id": "eeacb8e1a574dfb2ba26acb125f44984",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "папка А4",
+            "id": "5dc5feb51957134644bbf5762caaa33d",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "файл",
+            "id": "b578720d14bdf9828be60f489d93aa20",
+            "quantity": "1.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "картон",
+            "id": "f8469814176ba4edad8d43ff60526d42",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "папка картонна",
+            "id": "6e9df52a76feecbe66dc8a628e029089",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "цвяшки",
+            "id": "1c34eb5feedcfd3805b22ba8605a737d",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "скрепка",
+            "id": "5cc349dd5ca77e73772d67fe7524fcff",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "кнопка",
+            "id": "d066e00c0ce526185fc7017e127adc8b",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "папка для файлів",
+            "id": "8ee753d116d839bdbedd00ef45309537",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "набір кольорових олівців",
+            "id": "e3c6e5a4c9853c4e5027d237f5f868ad",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "олівець",
+            "id": "29a6e4bfd7fc8133d4e92df900511b7e",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "папір А4",
+            "id": "e4740ae32d661fef84fac2d2ed9537a2",
+            "quantity": "3.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "картон А3",
+            "id": "762ed0a4cbc77ae5ff27aa883ee688ad",
+            "quantity": "16.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:26:29+02:00",
+              "startDate": "2025-02-03T10:26:29+02:00"
+            },
+            "description": "фотопапір 10*15",
+            "id": "73adb211e8b1667e70db35591e2d3cdd",
+            "quantity": "100.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "2000.0",
+          "amountNet": "2000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 40508,
+        "method": "GET",
+        "response_sha256": "8844a09692bf68f8d4c5ee6a25f201b11e6da00bf4d06d45d0a49568598c18c5",
+        "retrieved_at": "2026-10-18T01:49:13.560131+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:14 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/343a641011994d318b6dcc29f1f4dda5"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 21050,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-002285-a/",
+    "method": "GET",
+    "response_sha256": "ae057c980fbc93b73e08f3ca75c5292329bc5a5ea92a1ff82884e09b47c7ef92",
+    "retrieved_at": "2026-10-18T01:49:12.510023+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:12 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/4545441b98c34f288668afbf8f069fa0"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-03T10:26:47.917772+02:00",
+        "id": "e0251fa3d1ea400f917bf5cfffad1e68",
+        "status": "active",
+        "value": {
+          "amount": "2000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "e0251fa3d1ea400f917bf5cfffad1e68",
+        "contractID": "UA-2025-02-03-002285-a-c1",
+        "date": "2025-02-03T10:35:36.157532+02:00",
+        "id": "343a641011994d318b6dcc29f1f4dda5",
+        "status": "active",
+        "value": {
+          "amount": "2000.0",
+          "amountNet": "2000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-03T10:21:31.926795+02:00",
+    "dateModified": "2025-02-03T10:35:36.157532+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-03T10:33:24.797995+02:00",
+        "datePublished": "2025-02-03T10:33:24.797995+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "85240f97438448d4b7ff422f23ddb1ce"
+      }
+    ],
+    "id": "4545441b98c34f288668afbf8f069fa0",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "дирокол",
+        "id": "eeacb8e1a574dfb2ba26acb125f44984",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "папка А4",
+        "id": "5dc5feb51957134644bbf5762caaa33d",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "файл",
+        "id": "b578720d14bdf9828be60f489d93aa20",
+        "quantity": "1.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "картон",
+        "id": "f8469814176ba4edad8d43ff60526d42",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "папка картонна",
+        "id": "6e9df52a76feecbe66dc8a628e029089",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "цвяшки",
+        "id": "1c34eb5feedcfd3805b22ba8605a737d",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "скрепка",
+        "id": "5cc349dd5ca77e73772d67fe7524fcff",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "кнопка",
+        "id": "d066e00c0ce526185fc7017e127adc8b",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "папка для файлів",
+        "id": "8ee753d116d839bdbedd00ef45309537",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "набір кольорових олівців",
+        "id": "e3c6e5a4c9853c4e5027d237f5f868ad",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "олівець",
+        "id": "29a6e4bfd7fc8133d4e92df900511b7e",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "папір А4",
+        "id": "e4740ae32d661fef84fac2d2ed9537a2",
+        "quantity": "3.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "картон А3",
+        "id": "762ed0a4cbc77ae5ff27aa883ee688ad",
+        "quantity": "16.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:26:29+02:00",
+          "startDate": "2025-02-03T10:26:29+02:00"
+        },
+        "description": "фотопапір 10*15",
+        "id": "73adb211e8b1667e70db35591e2d3cdd",
+        "quantity": "100.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-03-002285-a",
+    "title": "Дирокол, папка, файл, картон - (30190000-7 - Офісне устаткування та приладдя різне)",
+    "value": {
+      "amount": "2000.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

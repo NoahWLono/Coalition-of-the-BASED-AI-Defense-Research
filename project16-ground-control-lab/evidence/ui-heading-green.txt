@@ -1,0 +1,12 @@
+✔ every variant renders each required fact exactly once with semantic metadata (13.975976ms)
+✔ stale ownership stays explicit and last reliable evidence is labeled historical (1.273094ms)
+✔ fact values, actor labels, alarm groups and event details cannot inject markup (2.058117ms)
+✔ declared visibility differs by design and all alarms retain their authored group (1.748013ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 145.195205

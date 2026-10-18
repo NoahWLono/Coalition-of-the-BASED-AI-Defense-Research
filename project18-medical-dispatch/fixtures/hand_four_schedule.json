@@ -1,0 +1,15 @@
+{
+  "scenario_id": "hand_four", "policy": "hand_reference", "information": "offline",
+  "services": [
+    {"request_id": "R1", "vehicle_id": "V1", "battery_id": "B1", "technician_id": "T1", "start": 0, "delivery": 2, "end": 2},
+    {"request_id": "R2", "vehicle_id": "V2", "battery_id": "B2", "technician_id": "T2", "start": 0, "delivery": 2, "end": 2},
+    {"request_id": "R3", "vehicle_id": "V1", "battery_id": "B1", "technician_id": "T1", "start": 4, "delivery": 6, "end": 6},
+    {"request_id": "R4", "vehicle_id": "V2", "battery_id": "B2", "technician_id": "T2", "start": 6, "delivery": 8, "end": 8}
+  ],
+  "charges": [
+    {"battery_id": "B1", "charger_id": "C1", "technician_id": "T1", "start": 2, "end": 4},
+    {"battery_id": "B2", "charger_id": "C1", "technician_id": "T2", "start": 4, "end": 6}
+  ],
+  "unserved": [],
+  "solver": {"status": "HAND_REFERENCE", "objective": 2, "bound": 2, "note": "Two initial full batteries and four services require at least two recharges; any rejection costs 200."}
+}

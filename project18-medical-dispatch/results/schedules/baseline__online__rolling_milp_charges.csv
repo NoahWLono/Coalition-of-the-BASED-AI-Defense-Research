@@ -1,0 +1,9 @@
+battery_id,charger_id,technician_id,start,end
+B1,C1,T2,8,12
+B2,C1,T2,12,16
+B4,C1,T2,16,20
+B3,C1,T1,20,24
+B1,C1,T2,24,28
+B4,C1,T2,28,32
+B2,C1,T2,32,36
+B3,C1,T2,36,40

@@ -1,0 +1,153 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "1a3c26c9f128417db181697c4992bccf",
+        "contractID": "UA-2025-02-17-001630-a-b1",
+        "date": "2025-02-17T10:02:17.369232+02:00",
+        "dateModified": "2025-02-17T10:02:17.369232+02:00",
+        "dateSigned": "2025-02-17T10:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-17T10:02:16.242221+02:00",
+            "datePublished": "2025-02-17T10:02:16.068249+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "2bcd84f9faf04ab59874cb7cfea4c772"
+          }
+        ],
+        "id": "2b001dace192446790c385b989193b22",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-02-17T00:00:00+02:00",
+              "startDate": "2025-02-17T00:00:00+02:00"
+            },
+            "description": "Папір А4 APHRODITE 80 бирюзовая (80г/м2,500л.,Белизна СIE 165%,Китай,фабрика APP)",
+            "id": "81fca85c35cf4e2fad486a7e61c2c57d",
+            "quantity": "300.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "62388.0",
+          "amountNet": "51990.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 26246,
+        "method": "GET",
+        "response_sha256": "bc26a195fb4f851df09b50f2ab56911ecff0f19f9419658e67bb4c19516c3deb",
+        "retrieved_at": "2026-10-18T01:47:36.157398+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:36 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/2b001dace192446790c385b989193b22"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6841,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-17-001630-a/",
+    "method": "GET",
+    "response_sha256": "37ef17cfac6c4f1bb90fc09c546a9eab248f87557356297ddfc6f62eb9b2bae0",
+    "retrieved_at": "2026-10-18T01:47:35.107294+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:35 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/c443f65cdd2c41f3b7ecf05e567f2d20"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-17T10:02:14.471647+02:00",
+        "id": "1a3c26c9f128417db181697c4992bccf",
+        "status": "active",
+        "value": {
+          "amount": "62388.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "1a3c26c9f128417db181697c4992bccf",
+        "contractID": "UA-2025-02-17-001630-a-b1",
+        "date": "2025-02-17T10:02:17.369232+02:00",
+        "id": "2b001dace192446790c385b989193b22",
+        "status": "active",
+        "value": {
+          "amount": "62388.0",
+          "amountNet": "51990.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-02-17T10:01:40.905917+02:00",
+    "dateModified": "2025-02-17T10:02:17.369232+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-17T10:02:13.961390+02:00",
+        "datePublished": "2025-02-17T10:02:13.803176+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "3034e93853dd4b59906418e743a81236"
+      }
+    ],
+    "id": "c443f65cdd2c41f3b7ecf05e567f2d20",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-02-17T00:00:00+02:00",
+          "startDate": "2025-02-17T00:00:00+02:00"
+        },
+        "description": "Папір А4 APHRODITE 80 бирюзовая (80г/м2,500л.,Белизна СIE 165%,Китай,фабрика APP)",
+        "id": "81fca85c35cf4e2fad486a7e61c2c57d",
+        "quantity": "300.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-17-001630-a",
+    "title": "придбання паперу для друку за кодом 30190000-7 Офісне устаткування та приладдя різне, згідно ДК 021-2015 «Єдиний закупівельний словник»",
+    "value": {
+      "amount": "62388.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

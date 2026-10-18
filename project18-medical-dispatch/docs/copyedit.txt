@@ -1,0 +1,11 @@
+README.md:46 trailing-participle KEPT Enumeration of reproducibility requirements carries meaning.
+README.md:68 negative-parallelism FIXED Split feasibility, exact-optimum and online-information evidence into direct statements.
+README.md:70 trailing-participle KEPT Aviation, handling and clinical requirements are distinct scope boundaries.
+docs/verification.md:11 negative-parallelism FIXED Described the separate calculation on synthetic inputs directly.
+docs/verification.md:17 copulative-avoidance KEPT False positive: "mark" describes the actual missing plot annotation.
+results/report.md:11 negative-parallelism FIXED State that objective weights permit service, lateness and fairness tradeoffs.
+results/report.md:67 negative-parallelism FIXED State the battery inventory limit directly.
+results/report.md:70 negative-parallelism FIXED Describe outcomes as consequences of administrative weights.
+results/report.md:74 trailing-participle FIXED State the transferred objective as a feasible upper bound.
+results/report.md:94 negative-parallelism FIXED Separate synthetic experiment scope from absence of real-performance estimation.
+7 FIXED, 3 KEPT

@@ -1,0 +1,720 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "1f52ceb9346a4ba585b3063fd36a52f9",
+        "contractID": "UA-2025-03-14-012340-a-a1",
+        "date": "2025-03-14T17:43:56.334877+02:00",
+        "dateModified": "2025-03-14T17:43:56.334877+02:00",
+        "dateSigned": "2025-03-12T09:00:00+02:00",
+        "id": "4c30863bafac45b0b424f00c9c448b98",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Біндер 51 мм",
+            "id": "31fa595af4074ae3808b5eaa71e639fe",
+            "quantity": "24.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Зошит 96 арк",
+            "id": "a5dc94989009488a829764b44aee3574",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Зошит А4 96 арк",
+            "id": "30e492decdb9466b96abf9a9cb984cd5",
+            "quantity": "8.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Клей ПВА 200 мл",
+            "id": "c75839263bfb42c9ae2df860e5033c33",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Коректор",
+            "id": "3d6fb62ce3024d9a81daaae31b6aa20c",
+            "quantity": "8.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Лінійка 30 см",
+            "id": "4c84418162364af7a2da8504e5b342a3",
+            "quantity": "6.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Олівець простий",
+            "id": "f9f3821b198a4b11aff249ac59f26e3d",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папір А4",
+            "id": "a304d6b680c04047ad0641ea07a1a4e9",
+            "quantity": "5.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папка А4",
+            "id": "c7526b1ebb7d4e05bb52875f172fb8de",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папка А4 картонна швидкозшивач",
+            "id": "4fbeb2faa6d94ee79bb48a67285e0e03",
+            "quantity": "40.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папка А4 картонна на зав'язку",
+            "id": "f16bdc48033a4d16aa20551b1b1ac97b",
+            "quantity": "40.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папка А4 пластик швидкозшивач",
+            "id": "03a4fd6043cf4b34acaab9a51a893ab7",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Папка-сегрегатор А4",
+            "id": "89d46d5251714b0e81d63f3efca59120",
+            "quantity": "8.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Ручка гель",
+            "id": "e404b09b913542c191b2aace8a25fdf1",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Ручка масляна",
+            "id": "e5b732b492f9448eaf4049d51ae830dd",
+            "quantity": "24.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Скріпки 28 мм",
+            "id": "b3386d2f4d7b4b76b627c7acda3ab4dd",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Точилка",
+            "id": "c806f7be3b6942b3931cf3f804587369",
+            "quantity": "8.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-03-12T00:00:00+02:00"
+            },
+            "description": "Файл А4 40мкн",
+            "id": "b097af441a8045c9a65e9c210c82f0a0",
+            "quantity": "5.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "8000.0",
+          "amountNet": "8000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 43342,
+        "method": "GET",
+        "response_sha256": "6d48496329983c56d3e46bf2222059d4d9d42c51ff61b0fc622133072dd8bc76",
+        "retrieved_at": "2026-10-18T01:49:28.261736+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:28 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4c30863bafac45b0b424f00c9c448b98"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 23959,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-012340-a/",
+    "method": "GET",
+    "response_sha256": "8f7541556baa86188eab2287f18ded5b94e891fe5b8af64abf6e49b449f154e5",
+    "retrieved_at": "2026-10-18T01:49:27.211601+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:27 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/02675fd432654f96afb006daba9dd9ec"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-14T17:43:02.730729+02:00",
+        "id": "1f52ceb9346a4ba585b3063fd36a52f9",
+        "status": "active",
+        "value": {
+          "amount": "8000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "1f52ceb9346a4ba585b3063fd36a52f9",
+        "contractID": "UA-2025-03-14-012340-a-a1",
+        "date": "2025-03-14T17:43:56.334877+02:00",
+        "id": "4c30863bafac45b0b424f00c9c448b98",
+        "status": "active",
+        "value": {
+          "amount": "8000.0",
+          "amountNet": "8000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-14T17:43:02.094688+02:00",
+    "dateModified": "2025-03-14T17:43:56.334877+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-14T17:43:40.822776+02:00",
+        "datePublished": "2025-03-14T17:43:40.822776+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "297187b040624008a97f4cbe8bc27269"
+      }
+    ],
+    "id": "02675fd432654f96afb006daba9dd9ec",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Біндер 51 мм",
+        "id": "31fa595af4074ae3808b5eaa71e639fe",
+        "quantity": "24.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Зошит 96 арк",
+        "id": "a5dc94989009488a829764b44aee3574",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Зошит А4 96 арк",
+        "id": "30e492decdb9466b96abf9a9cb984cd5",
+        "quantity": "8.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Клей ПВА 200 мл",
+        "id": "c75839263bfb42c9ae2df860e5033c33",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Коректор",
+        "id": "3d6fb62ce3024d9a81daaae31b6aa20c",
+        "quantity": "8.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Лінійка 30 см",
+        "id": "4c84418162364af7a2da8504e5b342a3",
+        "quantity": "6.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Олівець простий",
+        "id": "f9f3821b198a4b11aff249ac59f26e3d",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папір А4",
+        "id": "a304d6b680c04047ad0641ea07a1a4e9",
+        "quantity": "5.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папка А4",
+        "id": "c7526b1ebb7d4e05bb52875f172fb8de",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папка А4 картонна швидкозшивач",
+        "id": "4fbeb2faa6d94ee79bb48a67285e0e03",
+        "quantity": "40.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папка А4 картонна на зав'язку",
+        "id": "f16bdc48033a4d16aa20551b1b1ac97b",
+        "quantity": "40.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папка А4 пластик швидкозшивач",
+        "id": "03a4fd6043cf4b34acaab9a51a893ab7",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Папка-сегрегатор А4",
+        "id": "89d46d5251714b0e81d63f3efca59120",
+        "quantity": "8.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Ручка гель",
+        "id": "e404b09b913542c191b2aace8a25fdf1",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Ручка масляна",
+        "id": "e5b732b492f9448eaf4049d51ae830dd",
+        "quantity": "24.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Скріпки 28 мм",
+        "id": "b3386d2f4d7b4b76b627c7acda3ab4dd",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Точилка",
+        "id": "c806f7be3b6942b3931cf3f804587369",
+        "quantity": "8.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-03-12T00:00:00+02:00"
+        },
+        "description": "Файл А4 40мкн",
+        "id": "b097af441a8045c9a65e9c210c82f0a0",
+        "quantity": "5.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-14-012340-a",
+    "title": "Канцелярські товари",
+    "value": {
+      "amount": "8000.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

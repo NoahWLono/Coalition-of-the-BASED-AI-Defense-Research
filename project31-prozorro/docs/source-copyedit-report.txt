@@ -1,0 +1,6 @@
+17  negative-parallelism  KEPT  public_modified and dateModified have different pagination semantics.
+21  negative-parallelism  KEPT  Search result count cannot establish usable civilian lots.
+25  negative-parallelism  KEPT  Discovery candidates have not passed comparability review.
+43  negative-parallelism  KEPT  Documentation examples cannot establish actual acquisitions.
+51  negative-parallelism  KEPT  Assistant annotation does not fulfill qualified human review.
+0 FIXED, 5 KEPT.

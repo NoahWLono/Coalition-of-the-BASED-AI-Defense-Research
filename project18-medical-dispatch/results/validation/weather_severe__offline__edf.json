@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "weather_severe",
+  "policy": "edf",
+  "information": "offline"
+}

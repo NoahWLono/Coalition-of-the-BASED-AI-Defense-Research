@@ -1,0 +1,5 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /^10 of 11/. Input:
+
+'11 of 11 facts match the oracle'
+
+    at file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tools/browser-check.mjs:97:10

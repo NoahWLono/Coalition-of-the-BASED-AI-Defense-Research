@@ -1,0 +1,13 @@
+{
+  "actual_lead_keys": [
+    "synthetic-05/single"
+  ],
+  "author": "assistant_fixture_author",
+  "common_currency_scaling_preserves_leads": true,
+  "expected_lead_keys": [
+    "synthetic-05/single"
+  ],
+  "real_world_validation": false,
+  "seed": "none; enumerated constants",
+  "source_kind": "synthetic"
+}

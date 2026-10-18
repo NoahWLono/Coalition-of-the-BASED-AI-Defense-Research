@@ -1,0 +1,542 @@
+{
+  "scenario_id": "benchmark_s1801_n20_chargers0",
+  "policy": "fcfs",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R05",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 3,
+      "end": 8
+    },
+    {
+      "request_id": "R14",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 0,
+      "delivery": 5,
+      "end": 9
+    },
+    {
+      "request_id": "R03",
+      "vehicle_id": "V3",
+      "battery_id": "B3",
+      "technician_id": "T1",
+      "start": 1,
+      "delivery": 4,
+      "end": 7
+    },
+    {
+      "request_id": "R13",
+      "vehicle_id": "V3",
+      "battery_id": "B4",
+      "technician_id": "T1",
+      "start": 7,
+      "delivery": 10,
+      "end": 15
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R01",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R02",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R04",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R06",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R07",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R08",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R09",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R10",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R11",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R12",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R15",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R16",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R17",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R18",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    },
+    {
+      "request_id": "R19",
+      "status": "cancelled",
+      "reason": "Administrative pre-dispatch cancellation supplied with the request"
+    },
+    {
+      "request_id": "R20",
+      "status": "rejected",
+      "reason": "Initial full batteries exhausted and no charger is configured"
+    }
+  ],
+  "decisions": [
+    {
+      "time": 0,
+      "visible_request_ids": [
+        "R05",
+        "R14"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R05",
+          "vehicle_id": "V1",
+          "battery_id": "B1",
+          "technician_id": "T1",
+          "start": 0,
+          "delivery": 3,
+          "end": 8
+        },
+        {
+          "request_id": "R14",
+          "vehicle_id": "V2",
+          "battery_id": "B2",
+          "technician_id": "T2",
+          "start": 0,
+          "delivery": 5,
+          "end": 9
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 1,
+      "visible_request_ids": [
+        "R03",
+        "R05",
+        "R13",
+        "R14"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R03",
+          "vehicle_id": "V3",
+          "battery_id": "B3",
+          "technician_id": "T1",
+          "start": 1,
+          "delivery": 4,
+          "end": 7
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 2,
+      "visible_request_ids": [
+        "R03",
+        "R05",
+        "R13",
+        "R14"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 4,
+      "visible_request_ids": [
+        "R03",
+        "R05",
+        "R13",
+        "R14",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 5,
+      "visible_request_ids": [
+        "R03",
+        "R05",
+        "R13",
+        "R14",
+        "R15",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 6,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R05",
+        "R13",
+        "R14",
+        "R15",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 7,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R13",
+          "vehicle_id": "V3",
+          "battery_id": "B4",
+          "technician_id": "T1",
+          "start": 7,
+          "delivery": 10,
+          "end": 15
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 8,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 9,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 12,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 13,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 15,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 16,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 18,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 20,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 23,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 30,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 35,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 48,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    }
+  ],
+  "solver": {
+    "status": "HEURISTIC",
+    "optimality_proven": false,
+    "method": "discrete_event",
+    "event_count": 34,
+    "head_of_line_bypass": true,
+    "request_order": "release,id",
+    "resource_order": "lexicographic ID",
+    "charge_policy": "service first; proactive FIFO by depletion time then battery ID",
+    "information_scope": "only released requests are used for decisions"
+  }
+}

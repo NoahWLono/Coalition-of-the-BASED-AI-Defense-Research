@@ -1,0 +1,165 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "99840.0",
+          "amountNet": "99840.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        },
+        "awardID": "3cd9cff3dc284523842091765e0cf6d5",
+        "contractID": "UA-2025-02-06-003693-a-b1",
+        "date": "2026-01-02T14:18:00.229274+02:00",
+        "dateModified": "2026-01-02T14:18:00.229274+02:00",
+        "dateSigned": "2025-02-05T11:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-02T14:18:00.066277+02:00",
+            "datePublished": "2026-01-02T14:18:00.066277+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "71e78dcfc31d4d4083554d6459f8b278"
+          }
+        ],
+        "id": "35240f39c6fb4117990e50256daf6eb5",
+        "items": [
+          {
+            "classification": {
+              "id": "37820000-2",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папір офісний А4, 500аркушів 80г/м2",
+            "id": "3292e4b84a874c609ceff38d78d63d57",
+            "quantity": "384.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "99840.0",
+          "amountNet": "99840.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 26695,
+        "method": "GET",
+        "response_sha256": "b548f474f353c65e504889b1fdb553d1937161f7455ff5c38ed417a052805a33",
+        "retrieved_at": "2026-10-18T01:49:19.860772+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:20 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/35240f39c6fb4117990e50256daf6eb5"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 8096,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-06-003693-a/",
+    "method": "GET",
+    "response_sha256": "bc444a928a465e6eb31f4086a62d674591a2a653260a5b719614c7d52b8eee19",
+    "retrieved_at": "2026-10-18T01:49:18.810660+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:19 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/417ec3ad006a4040a5ebceb6f9a03b0b"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-06T10:50:48.664219+02:00",
+        "id": "3cd9cff3dc284523842091765e0cf6d5",
+        "status": "active",
+        "value": {
+          "amount": "99840.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "3cd9cff3dc284523842091765e0cf6d5",
+        "contractID": "UA-2025-02-06-003693-a-b1",
+        "date": "2025-02-06T10:50:50.824291+02:00",
+        "id": "35240f39c6fb4117990e50256daf6eb5",
+        "status": "active",
+        "value": {
+          "amount": "99840.0",
+          "amountNet": "99840.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-06T10:49:36.261256+02:00",
+    "dateModified": "2025-02-06T10:50:50.824291+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-06T10:49:37.168885+02:00",
+        "datePublished": "2025-02-06T10:49:37.168885+02:00",
+        "documentOf": "tender",
+        "format": "application/msword",
+        "id": "cd6672f2f5134469ab0a2a6b136029b8",
+        "relatedItem": "417ec3ad006a4040a5ebceb6f9a03b0b"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-06T10:50:48.183078+02:00",
+        "datePublished": "2025-02-06T10:50:48.022557+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "4e27e386abce4aa685ae5303c9229556"
+      }
+    ],
+    "id": "417ec3ad006a4040a5ebceb6f9a03b0b",
+    "items": [
+      {
+        "classification": {
+          "id": "37820000-2",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папір офісний А4, 500аркушів 80г/м2",
+        "id": "3292e4b84a874c609ceff38d78d63d57",
+        "quantity": "384.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-06-003693-a",
+    "title": "ДК 021:2015 37820000-2 – Приладдя для образотворчого мистецтва (папір офісний А4)",
+    "value": {
+      "amount": "99840.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

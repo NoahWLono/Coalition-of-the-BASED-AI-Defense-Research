@@ -1,0 +1,10 @@
+README.md:16  trailing-participle  KEPT  Switching is the subject of an independent clause after a condition; this is a detector false positive.
+README.md:59  negative-parallelism  KEPT  Separates assistant specification checks from human validation.
+docs/accessibility-findings.md:7  negative-parallelism  KEPT  Source palette calculations do not establish rendered contrast in every state.
+docs/accessibility-findings.md:15  negative-parallelism  KEPT  Records the original focus audit's limited coverage.
+docs/accessibility-findings.md:30  negative-parallelism  KEPT  Distinguishes disclosure visibility from viewport visibility.
+docs/comparison-report.md:19  negative-parallelism  KEPT  Defines the denominator for the reported fact counts.
+docs/comparison-report.md:29  negative-parallelism  KEPT  Prevents interpreting scripted paths as measured human performance.
+docs/comparison-report.md:29  trailing-participle  KEPT  Reaching is the subject of an independent clause; this is a detector false positive.
+evidence/review.md:3  negative-parallelism  KEPT  Identifies assistant review and excludes an unsupported human-review claim.
+FIXED: 0. KEPT: 9.

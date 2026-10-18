@@ -1,0 +1,600 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "3718.0",
+          "amountNet": "3718.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        },
+        "awardID": "4e84dcad73a84c0c97fb142bd7902876",
+        "contractID": "UA-2025-02-17-005343-a-c1",
+        "date": "2026-01-24T12:23:18.551005+02:00",
+        "dateModified": "2026-01-24T12:23:18.551005+02:00",
+        "dateSigned": "2025-02-13T12:05:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-24T12:23:18.364486+02:00",
+            "datePublished": "2026-01-24T12:23:18.364486+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "9e7bbb6391c54406b2427275af8a3dcd"
+          }
+        ],
+        "id": "acce5b3fb0464a658040a36bd6fa561b",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Лоток гормз. мет.",
+            "id": "dec870d6c33d4def8007cbac88263c27",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Папір ксероксний А4",
+            "id": "e7af5a14ed8b46409523ef8bb624cb66",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Коректор",
+            "id": "b49bc741f1674e8dad4df0e23f12d5b5",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Маркер",
+            "id": "959e5628c6444f00a261dd3f4c16a01f",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Папка на файли",
+            "id": "bf1340af22614d978116d36da79beb6b",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Файли",
+            "id": "b079d5b66fe0491daa96b77ed2559c96",
+            "quantity": "1.0",
+            "unit": {
+              "code": "PA",
+              "name": "пакунок"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Ручка чкрвона",
+            "id": "5f32986385794550870b65118bfc910b",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Степлер",
+            "id": "0e5839f944a64b46b00a65e331989332",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Ножниці",
+            "id": "6017892069fe4367ae7f55d5dab17013",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Олівці",
+            "id": "551396651f5a44e884df822b8bfd9ec9",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Гумка",
+            "id": "e1e43ebd5f9445ec9077160ebc8be820",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Скітери",
+            "id": "c60ff71c74874d69beb8341a14b369ce",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Ручка",
+            "id": "ac7c943264b74328b987da3079f58ba8",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-13T00:00:00+02:00"
+            },
+            "description": "Текстовид.",
+            "id": "b2f0db8b0cc44a36ade7be2812e06b25",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "3718.0",
+          "amountNet": "3718.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 38687,
+        "method": "GET",
+        "response_sha256": "11c0ab5d8780cc3845d78100949ca7e9324c63f6147f9789ab8eab6ac1db3e36",
+        "retrieved_at": "2026-10-18T01:49:30.361905+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:30 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/acce5b3fb0464a658040a36bd6fa561b"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 18890,
+    "discovery_url": "https://clarity-project.info/tender/7a5cc1a5bdce481c83a6fb19138feebf",
+    "method": "GET",
+    "response_sha256": "c023ff7618479726b3238c6cbc5b0ccc2d4bfc633fc65cd99ef9578a56194e09",
+    "retrieved_at": "2026-10-18T01:49:29.311812+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:29 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7a5cc1a5bdce481c83a6fb19138feebf"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-17T12:22:54.838617+02:00",
+        "id": "4e84dcad73a84c0c97fb142bd7902876",
+        "status": "active",
+        "value": {
+          "amount": "3718.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "4e84dcad73a84c0c97fb142bd7902876",
+        "contractID": "UA-2025-02-17-005343-a-c1",
+        "date": "2025-02-17T12:22:57.378990+02:00",
+        "id": "acce5b3fb0464a658040a36bd6fa561b",
+        "status": "active",
+        "value": {
+          "amount": "3718.0",
+          "amountNet": "3718.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-17T12:16:41.796030+02:00",
+    "dateModified": "2025-02-17T12:22:57.378990+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-17T12:22:54.283699+02:00",
+        "datePublished": "2025-02-17T12:22:54.116758+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "ea97d4fc03634ab19da117924c5265a7"
+      }
+    ],
+    "id": "7a5cc1a5bdce481c83a6fb19138feebf",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Лоток гормз. мет.",
+        "id": "dec870d6c33d4def8007cbac88263c27",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Папір ксероксний А4",
+        "id": "e7af5a14ed8b46409523ef8bb624cb66",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Коректор",
+        "id": "b49bc741f1674e8dad4df0e23f12d5b5",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Маркер",
+        "id": "959e5628c6444f00a261dd3f4c16a01f",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Папка на файли",
+        "id": "bf1340af22614d978116d36da79beb6b",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Файли",
+        "id": "b079d5b66fe0491daa96b77ed2559c96",
+        "quantity": "1.0",
+        "unit": {
+          "code": "PA",
+          "name": "пакунок"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Ручка чкрвона",
+        "id": "5f32986385794550870b65118bfc910b",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Степлер",
+        "id": "0e5839f944a64b46b00a65e331989332",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Ножниці",
+        "id": "6017892069fe4367ae7f55d5dab17013",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Олівці",
+        "id": "551396651f5a44e884df822b8bfd9ec9",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Гумка",
+        "id": "e1e43ebd5f9445ec9077160ebc8be820",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Скітери",
+        "id": "c60ff71c74874d69beb8341a14b369ce",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Ручка",
+        "id": "ac7c943264b74328b987da3079f58ba8",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-13T00:00:00+02:00"
+        },
+        "description": "Текстовид.",
+        "id": "b2f0db8b0cc44a36ade7be2812e06b25",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-17-005343-a",
+    "title": "Канцтовари",
+    "value": {
+      "amount": "3718.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

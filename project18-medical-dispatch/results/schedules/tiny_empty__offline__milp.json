@@ -1,0 +1,26 @@
+{
+  "scenario_id": "tiny-empty",
+  "policy": "milp",
+  "information": "offline",
+  "services": [],
+  "charges": [],
+  "unserved": [],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "used_fallback": false,
+    "feasible_objective": 0,
+    "lower_bound": 0.0,
+    "relative_gap": 0.0,
+    "raw_mip_gap": 0.0,
+    "objective_constant": 0,
+    "time_limit_seconds": 5,
+    "elapsed_seconds": 0.002402827999503643,
+    "nodes": 0,
+    "variables": 8,
+    "constraints": 32,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

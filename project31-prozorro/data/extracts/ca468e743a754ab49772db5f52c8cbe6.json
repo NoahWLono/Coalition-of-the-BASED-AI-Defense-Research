@@ -1,0 +1,385 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "149989.8",
+          "amountNet": "124991.5",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "6bebfe9824784d08b1138b4733cf446e",
+        "changes": [
+          {
+            "date": "2025-03-24T14:31:15.386000+02:00",
+            "dateSigned": "2025-03-21T00:00:00+02:00",
+            "id": "25a73b8c44ee4856b99f05fd6aed8c2e",
+            "rationaleTypes": [
+              "qualityImprovement"
+            ],
+            "status": "active"
+          }
+        ],
+        "contractID": "UA-2025-03-14-012026-a-b1",
+        "date": "2026-01-08T15:48:17.864741+02:00",
+        "dateModified": "2026-01-08T15:48:17.864741+02:00",
+        "dateSigned": "2025-03-21T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-24T15:44:33.336234+02:00",
+            "datePublished": "2025-03-24T15:44:33.336234+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "00c1a5ee59e047dfa7f5d481fdb4f001"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-24T15:45:54.211911+02:00",
+            "datePublished": "2025-03-24T15:45:54.211911+02:00",
+            "documentOf": "contract",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "69a1f615260b4b9dad95e85b751d30a1"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-24T16:31:07.221248+02:00",
+            "datePublished": "2025-03-24T16:31:07.221248+02:00",
+            "documentOf": "change",
+            "format": "application/pdf",
+            "id": "372d8ee4cfaa467996fcf4e08c33b3e6",
+            "relatedItem": "25a73b8c44ee4856b99f05fd6aed8c2e"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-24T16:32:19.705403+02:00",
+            "datePublished": "2025-03-24T16:32:19.705403+02:00",
+            "documentOf": "contract",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "69a1f615260b4b9dad95e85b751d30a1"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-08T15:48:11.957350+02:00",
+            "datePublished": "2026-01-08T15:48:11.957350+02:00",
+            "documentOf": "contract",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "69a1f615260b4b9dad95e85b751d30a1"
+          }
+        ],
+        "id": "266f2a78a5354304b9cca8d81b0046b5",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-04-30T16:00:00+03:00"
+            },
+            "description": "Папір ксероксний A4 IQ ULTRA",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "149989.8",
+          "amountNet": "124991.5",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 88169,
+        "method": "GET",
+        "response_sha256": "7bfe7de150f8802b3ae885a766978fcaf977eca787275c28efe320051593f075",
+        "retrieved_at": "2026-10-18T01:51:54.875329+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:51:55 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/266f2a78a5354304b9cca8d81b0046b5"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 44867,
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-14-012026-a",
+    "method": "GET",
+    "response_sha256": "2651ebd3cc5d5941a0a1c5e41787cafa083a0f08396bd8867063725e4eecb605",
+    "retrieved_at": "2026-10-18T01:51:53.825232+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:51:54 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/ca468e743a754ab49772db5f52c8cbe6"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-19T16:35:27.390287+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-19T16:35:02.910648+02:00",
+            "datePublished": "2025-03-19T16:35:02.910648+02:00",
+            "documentOf": "tender",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "af367b08f9a0409ab159d9b814d2620a"
+          }
+        ],
+        "id": "6bebfe9824784d08b1138b4733cf446e",
+        "status": "active",
+        "value": {
+          "amount": "149989.8",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "bids": [
+      {
+        "date": "2025-03-17T12:59:03.456799+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-17T12:59:03.309055+02:00",
+            "datePublished": "2025-03-17T12:59:03.309055+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "8525b01c02744e33a75d8d23b19d3e3a"
+          }
+        ],
+        "id": "ba6a960a84d945f182148dfc7873040e",
+        "items": [
+          {
+            "description": "Папір ксероксний A4 IQ ULTRA",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "149989.8",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-17T17:42:54.656477+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-17T17:42:54.401204+02:00",
+            "datePublished": "2025-03-17T17:42:54.401204+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "e7d5b125896e4039ab44822f7e02f8eb"
+          }
+        ],
+        "id": "114198f5598a487ba4d002a885dd969f",
+        "items": [
+          {
+            "description": "Офісний папір POLJET",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "166955.64",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-18T12:23:36.797725+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-18T12:23:36.649065+02:00",
+            "datePublished": "2025-03-18T12:23:36.649065+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "4c16b169fac5429d96e0d2b8c6ea6086"
+          }
+        ],
+        "id": "aa76d2d76d544fd49193ce4fd1b518d7",
+        "items": [
+          {
+            "description": "Папір офісний А4 500 арк. Navigator Universal",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "175947.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-18T13:25:29.197571+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-18T13:25:28.945200+02:00",
+            "datePublished": "2025-03-18T13:25:28.945200+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "c20071e273b24e358b98bba722c8cf0f"
+          }
+        ],
+        "id": "d6ad6b2d169748d9b74c372fc8d34f63",
+        "items": [
+          {
+            "description": "Папір для друку Xerox Premier A4, 80 г/м², 500 арк., білий",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "178489.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-18T17:03:04.688784+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-18T17:03:04.435624+02:00",
+            "datePublished": "2025-03-18T17:03:04.435624+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "4f6fd372b6754ad7af1f95041a643256"
+          }
+        ],
+        "id": "3e42cabf74f3443994996abe1c4e6469",
+        "items": [
+          {
+            "description": "Папір для друку PAPERONE Digital A4 80 г/м2, 500 арк./уп.",
+            "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+            "quantity": "1115.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "170461.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "6bebfe9824784d08b1138b4733cf446e",
+        "contractID": "UA-2025-03-14-012026-a-b1",
+        "date": "2025-03-24T15:46:17.976703+02:00",
+        "id": "266f2a78a5354304b9cca8d81b0046b5",
+        "status": "active",
+        "value": {
+          "amount": "149989.8",
+          "amountNet": "124991.5",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-14T16:52:36.496122+02:00",
+    "dateModified": "2025-03-24T15:46:17.976703+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-14T16:52:44.674538+02:00",
+        "datePublished": "2025-03-14T16:52:44.674538+02:00",
+        "documentOf": "tender",
+        "documentType": "contractProforma",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "63313a01ec414e68bc0b0b2ae6589932"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-14T16:56:13.664143+02:00",
+        "datePublished": "2025-03-14T16:56:13.664143+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "339acf34da974ae295d78aa5fea2eb1f"
+      }
+    ],
+    "id": "ca468e743a754ab49772db5f52c8cbe6",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-04-30T16:57:35+03:00"
+        },
+        "description": "Папір для друку, А4, 80 г/м², СIE 165%, 105 мкм, 92%, 500 арк., білий",
+        "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+        "quantity": "1115.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "priceQuotation",
+    "status": "complete",
+    "tenderID": "UA-2025-03-14-012026-a",
+    "title": "Папір для друку, А4",
+    "value": {
+      "amount": "178548.69",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

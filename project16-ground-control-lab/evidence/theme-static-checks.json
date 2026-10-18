@@ -1,0 +1,25 @@
+{
+  "scope": "Loopback HTTP response and source-markup checks only; no browser rendering or interactions.",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/minimal.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/src/theme.mjs",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

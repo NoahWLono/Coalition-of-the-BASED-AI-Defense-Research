@@ -1,0 +1,155 @@
+[
+  {
+    "case": "hand",
+    "objective": 2.0,
+    "reference_objective": 2.0,
+    "states": 573,
+    "transitions": 1270,
+    "lower_bound": 2.0,
+    "status": 0
+  },
+  {
+    "case": "empty",
+    "objective": 0,
+    "reference_objective": 0.0,
+    "states": 9,
+    "transitions": 8,
+    "lower_bound": 0.0,
+    "status": 0
+  },
+  {
+    "case": "no_vehicle",
+    "objective": 807.0,
+    "reference_objective": 807.0,
+    "states": 9,
+    "transitions": 8,
+    "lower_bound": 807.0,
+    "status": 0
+  },
+  {
+    "case": "charger_bottleneck",
+    "objective": 5.0,
+    "reference_objective": 5.0,
+    "states": 287,
+    "transitions": 566,
+    "lower_bound": 5.0,
+    "status": 0
+  },
+  {
+    "case": "staff_bottleneck",
+    "objective": 201.0,
+    "reference_objective": 201.0,
+    "states": 409,
+    "transitions": 782,
+    "lower_bound": 201.0,
+    "status": 0
+  },
+  {
+    "case": "cancelled",
+    "objective": 0.0,
+    "reference_objective": 0.0,
+    "states": 114,
+    "transitions": 200,
+    "lower_bound": 0.0,
+    "status": 0
+  },
+  {
+    "case": "beyond_horizon",
+    "objective": 800.0,
+    "reference_objective": 800.0,
+    "states": 9,
+    "transitions": 8,
+    "lower_bound": 800.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18000",
+    "objective": 9.0,
+    "reference_objective": 9.0,
+    "states": 32,
+    "transitions": 36,
+    "lower_bound": 9.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18001",
+    "objective": 14.0,
+    "reference_objective": 14.0,
+    "states": 60,
+    "transitions": 63,
+    "lower_bound": 14.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18002",
+    "objective": 60.5,
+    "reference_objective": 60.5,
+    "states": 11,
+    "transitions": 10,
+    "lower_bound": 60.5,
+    "status": 0
+  },
+  {
+    "case": "seed-18003",
+    "objective": 10.0,
+    "reference_objective": 10.0,
+    "states": 39,
+    "transitions": 44,
+    "lower_bound": 10.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18004",
+    "objective": 5.0,
+    "reference_objective": 5.0,
+    "states": 17,
+    "transitions": 17,
+    "lower_bound": 5.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18005",
+    "objective": 83.0,
+    "reference_objective": 83.0,
+    "states": 38,
+    "transitions": 41,
+    "lower_bound": 83.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18006",
+    "objective": 14.0,
+    "reference_objective": 14.0,
+    "states": 12,
+    "transitions": 11,
+    "lower_bound": 14.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18007",
+    "objective": 143.0,
+    "reference_objective": 143.0,
+    "states": 12,
+    "transitions": 11,
+    "lower_bound": 143.0,
+    "status": 0
+  },
+  {
+    "case": "seed-18008",
+    "objective": 15.5,
+    "reference_objective": 15.5,
+    "states": 39,
+    "transitions": 42,
+    "lower_bound": 15.5,
+    "status": 0
+  },
+  {
+    "case": "seed-18009",
+    "objective": 10.0,
+    "reference_objective": 10.0,
+    "states": 22,
+    "transitions": 22,
+    "lower_bound": 10.0,
+    "status": 0
+  }
+]

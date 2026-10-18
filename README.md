@@ -1,64 +1,37 @@
 # Coalition of the BASED: AI Defense Research
 
-## Project 24: Field of possibility
+A portfolio of local research laboratories, reproducible experiments, and evidence reviews. Each project has its own source, fixtures, run instructions, and account of what its results establish.
 
-A local, synthetic geolocation teaching laboratory. Toggle landmark observations, inspect the surviving camera regions, and reveal the separately stored camera position. The solver retains competing regions and distinguishes incompatible evidence from a region that remains unresolved at the chosen resolution.
+## Projects
 
-## Run
+| Project | Open the project | Delivered result and limits |
+|---|---|---|
+| 16 · Ground-control alarm and handover laboratory | [README and run instructions](project16-ground-control-lab/README.md) | Three interfaces for ten fictional civilian incidents. All 1,749 model/render checkpoint records match the declared expectations. Human workload and operational safety remain unvalidated. |
+| 18 · Civilian medical-delivery dispatch simulator | [README and run instructions](project18-medical-dispatch/README.md) | Synthetic dispatch simulation, MILP optimization, independent schedule checks, and tiny exhaustive references. Saved baseline optimum applies to the declared integer-slot model; some sensitivity solves retain gaps. No clinical or operational validation. |
+| 24 · Geolocation uncertainty laboratory | [README and run instructions](project24-geolocation-lab/README.md) | Synthetic 2D geometry, ambiguity exploration, conservative grid covers, and held-out checks. Bounds are numerical; no formal floating-point certificate or real-world geolocation validation. |
+| 31 · Prozorro comparable-purchase analyzer | [README and run instructions](project31-prozorro/README.md) | Completed comparability-audit fallback over 50 real civilian A4-paper lots. Economic screening remains unvalidated: zero eligible comparisons, zero real leads, and no independent human holdout labels. |
 
-No installation or third-party package is required. Verified on Arch Linux with Python 3.14.8. These commands work in Bash and Fish:
+The autopilot-failsafe laboratory and Project CEDAR are awaiting their originating chats' final handoffs. They will be added only after those chats finish and their deliverables have been checked. A finished chat can deliver a bounded or partial result; the project descriptions retain that distinction.
+
+## Start locally
 
 ```sh
 git clone https://github.com/NoahWLono/Coalition-of-the-BASED-AI-Defense-Research.git
 cd Coalition-of-the-BASED-AI-Defense-Research
-python3 -m geolab.server --port 8764
 ```
 
-Open [the local laboratory](http://127.0.0.1:8764). Stop the server with Ctrl+C. If that port is already occupied, select another with `--port 8765`. The service binds only to 127.0.0.1, runs one request at a time, and serves read-only data. It is a local teaching service. The eight-entry result cache reports the original computation time when serving a cached result.
+Then follow a project's README. Projects run independently and have different dependency requirements. The geolocation lab now lives in `project24-geolocation-lab/`; run its commands from that folder.
 
-Start with **Reflection ambiguity I**. Two unsigned landmark angles preserve solutions above and below the landmark line. Click **Add the distinguishing observation** to add a calibrated bearing. Reveal the synthetic camera and compare grid resolutions. **Reflection ambiguity II** and the two resolved presets provide the other teaching examples. A third, unwitnessed cover cluster near a landmark is a numerical ambiguity to inspect, not an established third answer.
+The ground-control and geolocation projects have interactive local applications. Medical dispatch has a saved HTML results viewer alongside its CLI and scientific reports. Prozorro includes separate real-data and synthetic HTML reports. GitHub displays HTML source; open these reports locally or use the loopback server described in the relevant README.
 
-![Two ambiguous scenes and two scenes resolved by one added bearing](reports/teaching.png)
+## Appearance
 
-## Reproduce the evidence
+Every published project's browser interface opens in **Dark** mode and provides a **Theme** selector with **Dark**, **Light**, and **System**. The browser saves the choice when local storage is available. System follows the operating-system preference. Controls and evidence displays use the selected palette; the original static scientific figures and historical screenshots retain their recorded colours.
 
-```sh
-python3 -m geolab.generate
-python3 -m unittest discover -s tests -v
-python3 -m geolab.evaluate
-node --check web/app.js
-```
+## Evidence and scope
 
-Node is used only for the optional JavaScript syntax check. Generation uses seed 240017. Evaluation is single-process and took about 15 seconds on this host. It records per-scene timings, areas, coverage, and failure classifications. Restart a running server after regenerating inputs because it loads them at startup. `bash reproduce.sh` runs the complete workflow, including optional PNG rendering when rsvg-convert is installed.
+[Publication verification](docs/publication-verification.md) records the theme checks, packaging checks, and saved evidence used for this portfolio update. Project-specific tests, reports, provenance, and SHA-256 manifests remain inside each project. Run hash checks from that project's directory.
 
-The dataset contains 20 benchmark scenes, 3 analytic fixtures, 4 tuning scenes, 12 held-out bounded-noise scenes, and 12 held-out Gaussian scenes. The held-out cases use different sampled camera configurations and noise draws; most share the benchmark landmark layout. They are a small synthetic generalization check, not a real-world validation dataset. No parameters were adjusted to improve held-out coverage.
+The collection contains research prototypes. Each project's own model, data provenance, validation limits, and source/reuse notes govern how to interpret and reuse it. Synthetic results do not establish field performance. The Prozorro project uses redacted public-field extracts with source attribution and explicitly withholds unsupported comparisons.
 
-## Artifacts
-
-| Artifact | Purpose |
-| --- | --- |
-| [Geometry specification](docs/geometry.md) | Coordinates, schema, observation models, inclusion argument and numerical limits |
-| [Coverage report](reports/coverage.md) | Measured inclusion, uncertainty in area, timing and failure interpretation |
-| [Machine-readable results](reports/evaluation.json) | Every scene and all check counts |
-| [Teaching comparison](reports/teaching.svg) | Two ambiguous cases and two resolved cases |
-| [Rendered teaching comparison](reports/teaching.png) | Visually checked PNG of the same geometry |
-| [Generator](geolab/generate.py) | Seeded synthetic geometry and independent answer keys |
-| [Region solver](geolab/solver.py) | Coarse enumeration, adaptive pruning, inner cells and outer cover |
-| [Reference checker](geolab/reference.py) | Independently implemented brute-force point-grid checker |
-| [Implementation review](docs/geometry-review.md) | Mathematical argument and adversarial tests |
-| [Execution record](reports/execution.md) | Environment, commands, sources, review and browser checks |
-| [Original mission](docs/mission.txt) | Authorized scope and success criteria |
-
-The delivered source, data, documentation and evidence have a SHA-256 manifest. Check the saved artifact set from the project directory with `sha256sum -c reports/SHA256SUMS`. Regenerating timed reports changes their hashes.
-
-## What the results establish
-
-The recorded audit uses a 128 × 128 final solver lattice and a separate 256 × 256 point reference. All 428 accepted reference samples were retained. Every valid bounded held-out camera was covered (12/12). Adding observations passed 60 subset comparisons; seven scenes passed refinement comparisons at 64, 128 and 256. The reports retain zero-width analytic cases that a point grid misses.
-
-For Gaussian one-sigma intervals, only 5/12 source cameras satisfy every observation constraint. The coarse outer cover happens to include 9/12. That larger count measures numerical over-inclusion; it is not a 75% calibrated confidence claim. No frequentist calibration, posterior probability, or real-world accuracy is asserted.
-
-The default narrow scenes have no entirely feasible cells at resolution 128, so their area lower bounds are zero. At resolution 256 the four teaching scenes supply 60 checked inner-cell corners and centers with no failures. Additional broad-tolerance and rectangular-domain tests exercise nonzero inner regions.
-
-The geometric enclosure argument is valid in real arithmetic. Python floating-point operations use an empirical angular pad without a formal rounding certificate. Outer clusters may contain extra cells or merge true branches. Cell diagonal measures grid resolution and does not bound distance to the nearest exact solution. These are material limitations of the delivered numerical prototype.
-
-All data, landmarks, terrain, cameras and annotations are synthetic and assistant-produced. Camera coordinates live in `data/truth/`; the solver receives only `data/inputs/`. The browser fetches the answer key only on reveal. The lab does not use imagery or identify real locations. Computation runs locally, while the coding assistant uses model-service processing; this is not described as an offline AI workflow.
+Local virtual environments, browser downloads, caches, credentials, and duplicate project archives are excluded from the repository. Historical machine usernames, absolute home paths, and hostnames have been replaced with publication placeholders where recorded; versions, test outcomes, and scientific results are retained.

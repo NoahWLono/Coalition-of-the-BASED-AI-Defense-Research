@@ -1,0 +1,3288 @@
+[
+  {
+    "scenarioId": "interrupted",
+    "at": 0,
+    "rationale": "Initial observations establish Operator A; no alarm or handover exists yet.",
+    "expected": {
+      "principal": {
+        "value": "Link uncertainty",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 3,
+    "rationale": "Operator B has acknowledged the alarm and is the requested target; Operator A still owns responsibility.",
+    "expected": {
+      "principal": {
+        "value": "Link uncertainty",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "requested",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "a1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "a1: link",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 4,
+    "rationale": "Acceptance creates an unresolved ownership interval; Supervisor must confirm or reconcile later.",
+    "expected": {
+      "principal": {
+        "value": "Link uncertainty",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 4
+      },
+      "handover": {
+        "value": "accepted",
+        "status": "known",
+        "at": 4
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 4
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "a1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "a1: link",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 5,
+    "rationale": "Interruption retains the requested target and leaves ownership unresolved; telemetry at its exact TTL is still known.",
+    "expected": {
+      "principal": {
+        "value": "Link uncertainty",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 5
+      },
+      "handover": {
+        "value": "interrupted",
+        "status": "known",
+        "at": 5
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 5
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "a1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "a1: link",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 7,
+    "rationale": "Supervisor restores Operator A and clears the target; the original telemetry has expired but remains historical evidence.",
+    "expected": {
+      "principal": {
+        "value": "Link uncertainty",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 7
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 7
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "stale",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "a1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "a1: link",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 8,
+    "rationale": "Alarm removal also removes its active receipt; the principal is explicitly cleared before completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 7
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 7
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "stale",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "interrupted",
+    "at": 12,
+    "rationale": "Completion persists, but the old mode and telemetry observations are stale at the final replay second.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "stale",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 7
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 7
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 7
+      },
+      "telemetry": {
+        "value": "Link margin 82 percent",
+        "status": "stale",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Link margin 82 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 0,
+    "rationale": "Initial telemetry and ownership both have three-second lifetimes; historical telemetry is initially available.",
+    "expected": {
+      "principal": {
+        "value": "Observation gap",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Roof offset 2 metres",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Roof offset 2 metres",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 4,
+    "rationale": "Both three-second observations have expired; the last reported owner must carry a stale marker, including next actor.",
+    "expected": {
+      "principal": {
+        "value": "Observation gap",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "stale",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "stale",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Roof offset 2 metres",
+        "status": "stale",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Roof offset 2 metres",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "s1: navigation",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 5,
+    "rationale": "An explicit null telemetry observation is unknown at second five; the old non-null observation remains historical.",
+    "expected": {
+      "principal": {
+        "value": "Observation gap",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "stale",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "stale",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Unknown",
+        "status": "unknown",
+        "at": 5
+      },
+      "lastReliable": {
+        "value": "Roof offset 2 metres",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "s1: navigation",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 6,
+    "rationale": "Conflicting evidence opens supervisory recovery; Operator C acknowledging the alarm does not resolve ownership.",
+    "expected": {
+      "principal": {
+        "value": "Observation gap",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 6
+      },
+      "handover": {
+        "value": "conflicted",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Unknown",
+        "status": "unknown",
+        "at": 5
+      },
+      "lastReliable": {
+        "value": "Roof offset 2 metres",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "s1: Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "s1: navigation",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 9,
+    "rationale": "Reconciliation establishes fresh ownership, a new telemetry observation restores evidence, and issue clearance permits completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 9
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 9
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 9
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 9
+      },
+      "telemetry": {
+        "value": "Roof offset 1 metre",
+        "status": "known",
+        "at": 9
+      },
+      "lastReliable": {
+        "value": "Roof offset 1 metre",
+        "status": "known",
+        "at": 9
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 9
+      }
+    }
+  },
+  {
+    "scenarioId": "stale_evidence",
+    "at": 14,
+    "rationale": "Recovered ownership and ten-second telemetry remain known at the final checkpoint.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 9
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 9
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 9
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 9
+      },
+      "telemetry": {
+        "value": "Roof offset 1 metre",
+        "status": "known",
+        "at": 9
+      },
+      "lastReliable": {
+        "value": "Roof offset 1 metre",
+        "status": "known",
+        "at": 9
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 9
+      }
+    }
+  },
+  {
+    "scenarioId": "alarm_cascade",
+    "at": 2,
+    "rationale": "All six active alarms retain their explicit issue mappings; no receipt has arrived and ownership is unchanged.",
+    "expected": {
+      "principal": {
+        "value": "Camera alignment fault",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Gimbal offset 14 degrees",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Gimbal offset 14 degrees",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "c1: imaging; c2: imaging; c3: imaging; c4: storage; c5: imaging; c6: inspection",
+        "status": "known",
+        "at": 2
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "alarm_cascade",
+    "at": 5,
+    "rationale": "Only c5 has cleared; receipts for c1, c2 and c4 remain, with the latest receipt timestamp at second four.",
+    "expected": {
+      "principal": {
+        "value": "Camera alignment fault",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Gimbal offset 14 degrees",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Gimbal offset 14 degrees",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "c1: Operator A; c2: Operator A; c4: Image Analyst",
+        "status": "known",
+        "at": 4
+      },
+      "alarmGroups": {
+        "value": "c1: imaging; c2: imaging; c3: imaging; c4: storage; c6: inspection",
+        "status": "known",
+        "at": 5
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "alarm_cascade",
+    "at": 9,
+    "rationale": "All remaining alarms and active receipts clear; corrected telemetry and an explicit issue clearance accompany completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 9
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Gimbal offset 0 degrees",
+        "status": "known",
+        "at": 9
+      },
+      "lastReliable": {
+        "value": "Gimbal offset 0 degrees",
+        "status": "known",
+        "at": 9
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 9
+      }
+    }
+  },
+  {
+    "scenarioId": "alarm_cascade",
+    "at": 15,
+    "rationale": "The cleared alarm state persists and all observations are still within their declared lifetimes.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 9
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Gimbal offset 0 degrees",
+        "status": "known",
+        "at": 9
+      },
+      "lastReliable": {
+        "value": "Gimbal offset 0 degrees",
+        "status": "known",
+        "at": 9
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 9
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 9
+      }
+    }
+  },
+  {
+    "scenarioId": "conflicting_receipts",
+    "at": 2,
+    "rationale": "Operator A has acknowledged the battery alarm; acknowledgment has no ownership transition.",
+    "expected": {
+      "principal": {
+        "value": "Battery estimate disagreement",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "r1: Operator A",
+        "status": "known",
+        "at": 2
+      },
+      "alarmGroups": {
+        "value": "r1: power",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "conflicting_receipts",
+    "at": 3,
+    "rationale": "Both receipt actors remain visible in sorted order; Operator A is still the only established owner.",
+    "expected": {
+      "principal": {
+        "value": "Battery estimate disagreement",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "r1: Operator A; r1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "r1: power",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "conflicting_receipts",
+    "at": 4,
+    "rationale": "Acceptance without a matching request is rejected, leaving every fact unchanged from second three.",
+    "expected": {
+      "principal": {
+        "value": "Battery estimate disagreement",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Battery estimate 48 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "r1: Operator A; r1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "r1: power",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "conflicting_receipts",
+    "at": 6,
+    "rationale": "The alarm and both receipts clear together; a corrected observation and issue clearance permit completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Battery estimate 51 percent",
+        "status": "known",
+        "at": 6
+      },
+      "lastReliable": {
+        "value": "Battery estimate 51 percent",
+        "status": "known",
+        "at": 6
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "conflicting_receipts",
+    "at": 12,
+    "rationale": "The completed incident retains Operator A and the corrected battery evidence.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Battery estimate 51 percent",
+        "status": "known",
+        "at": 6
+      },
+      "lastReliable": {
+        "value": "Battery estimate 51 percent",
+        "status": "known",
+        "at": 6
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "ownership_conflict",
+    "at": 1,
+    "rationale": "The two responsibility reports conflict, so ownership is explicitly unresolved and Supervisor is next actor.",
+    "expected": {
+      "principal": {
+        "value": "Responsibility report mismatch",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 1
+      },
+      "handover": {
+        "value": "conflicted",
+        "status": "known",
+        "at": 1
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 1
+      },
+      "telemetry": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "ownership_conflict",
+    "at": 2,
+    "rationale": "A later owner observation cannot bypass conflicted-state recovery and must leave the conflict unchanged.",
+    "expected": {
+      "principal": {
+        "value": "Responsibility report mismatch",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 1
+      },
+      "handover": {
+        "value": "conflicted",
+        "status": "known",
+        "at": 1
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 1
+      },
+      "telemetry": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "ownership_conflict",
+    "at": 4,
+    "rationale": "Operator C receipt acknowledges the responsibility alarm while responsibility remains unresolved.",
+    "expected": {
+      "principal": {
+        "value": "Responsibility report mismatch",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 1
+      },
+      "handover": {
+        "value": "conflicted",
+        "status": "known",
+        "at": 1
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 1
+      },
+      "telemetry": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "o1: Operator C",
+        "status": "known",
+        "at": 4
+      },
+      "alarmGroups": {
+        "value": "o1: handover",
+        "status": "known",
+        "at": 3
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "ownership_conflict",
+    "at": 6,
+    "rationale": "Only supervisory reconciliation establishes Operator B; clearing the issue and alarm then permits completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 6
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "ownership_conflict",
+    "at": 12,
+    "rationale": "The reconciled owner and cleared incident persist through the final checkpoint.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 6
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 32 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "accepted_timeout",
+    "at": 2,
+    "rationale": "Acceptance makes ownership unresolved pending confirmation and assigns Supervisor the next action.",
+    "expected": {
+      "principal": {
+        "value": "Shift handover pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 2
+      },
+      "handover": {
+        "value": "accepted",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "accepted_timeout",
+    "at": 5,
+    "rationale": "The accepted offer times out before the same-second confirmation; timeout is new evidence of unresolved responsibility.",
+    "expected": {
+      "principal": {
+        "value": "Shift handover pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 5
+      },
+      "handover": {
+        "value": "timed-out",
+        "status": "known",
+        "at": 5
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 5
+      },
+      "telemetry": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "accepted_timeout",
+    "at": 6,
+    "rationale": "A replacement request without a known owner is rejected and cannot erase the timeout or its diagnostic target.",
+    "expected": {
+      "principal": {
+        "value": "Shift handover pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 5
+      },
+      "handover": {
+        "value": "timed-out",
+        "status": "known",
+        "at": 5
+      },
+      "target": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 5
+      },
+      "telemetry": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "accepted_timeout",
+    "at": 8,
+    "rationale": "Supervisor reconciles to Operator B, clears the target, and explicit issue clearance allows completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 8
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 8
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 8
+      },
+      "telemetry": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "accepted_timeout",
+    "at": 12,
+    "rationale": "The recovered ownership and completion state persist after the expired offer.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 8
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 8
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 8
+      },
+      "telemetry": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 70 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "requested_timeout",
+    "at": 1,
+    "rationale": "Operator C retains ownership during the request; Operator D is the next actor until the deadline.",
+    "expected": {
+      "principal": {
+        "value": "Transfer deadline pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "requested",
+        "status": "known",
+        "at": 1
+      },
+      "target": {
+        "value": "Operator D",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Operator D",
+        "status": "known",
+        "at": 1
+      },
+      "telemetry": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "requested_timeout",
+    "at": 5,
+    "rationale": "Timeout precedes the deadline-second acceptance, which is rejected; source ownership remains known and Supervisor is next.",
+    "expected": {
+      "principal": {
+        "value": "Transfer deadline pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "timed-out",
+        "status": "known",
+        "at": 5
+      },
+      "target": {
+        "value": "Operator D",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 5
+      },
+      "telemetry": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "requested_timeout",
+    "at": 6,
+    "rationale": "Reconciliation confirms the same owner with fresh evidence, clears the target, and ends the handover while the issue remains active.",
+    "expected": {
+      "principal": {
+        "value": "Transfer deadline pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "requested_timeout",
+    "at": 8,
+    "rationale": "The later principal clearance marks completion after responsibility recovery.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "requested_timeout",
+    "at": 12,
+    "rationale": "The resolved request and completed incident persist with Operator C responsible.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 6
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "nextActor": {
+        "value": "Operator C",
+        "status": "known",
+        "at": 6
+      },
+      "telemetry": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 45 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "cancelled_receipt",
+    "at": 2,
+    "rationale": "Source cancellation preserves Operator A ownership and clears the offer target; the alarm is still active.",
+    "expected": {
+      "principal": {
+        "value": "Camera review requested",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "cancelled",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "k1: imaging",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "cancelled_receipt",
+    "at": 3,
+    "rationale": "Operator B delayed receipt is visible after cancellation but has no effect on ownership, target or handover.",
+    "expected": {
+      "principal": {
+        "value": "Camera review requested",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "cancelled",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "k1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "k1: imaging",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "cancelled_receipt",
+    "at": 4,
+    "rationale": "Delayed acceptance of the cancelled offer is rejected and does not revive the request.",
+    "expected": {
+      "principal": {
+        "value": "Camera review requested",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "cancelled",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "k1: Operator B",
+        "status": "known",
+        "at": 3
+      },
+      "alarmGroups": {
+        "value": "k1: imaging",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "cancelled_receipt",
+    "at": 6,
+    "rationale": "A cancelled phase permits completion after the alarm, active receipt and principal issue clear.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "cancelled",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "cancelled_receipt",
+    "at": 12,
+    "rationale": "The completed incident retains its cancelled handover history and original owner.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "cancelled",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Image count 120",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "simultaneous_events",
+    "at": 0,
+    "rationale": "Before the tied events, Operator A owns the calibration pause and the initial observation is available.",
+    "expected": {
+      "principal": {
+        "value": "Calibration pause",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "idle",
+        "status": "known",
+        "at": 0
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "nextActor": {
+        "value": "Operator A",
+        "status": "known",
+        "at": 0
+      },
+      "telemetry": {
+        "value": "Calibration error 3 units",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Calibration error 3 units",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "simultaneous_events",
+    "at": 2,
+    "rationale": "Script order completes the handshake to Operator B, then retains no alarm or receipt after clear; the post-clear receipt is rejected.",
+    "expected": {
+      "principal": {
+        "value": "Calibration pause",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Calibration error 3 units",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Calibration error 3 units",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "simultaneous_events",
+    "at": 3,
+    "rationale": "A null observation is unknown despite earlier reliable calibration evidence; a new evidence alarm is active.",
+    "expected": {
+      "principal": {
+        "value": "Calibration pause",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Unknown",
+        "status": "unknown",
+        "at": 3
+      },
+      "lastReliable": {
+        "value": "Calibration error 3 units",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "alarmGroups": {
+        "value": "q2: evidence",
+        "status": "known",
+        "at": 3
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "simultaneous_events",
+    "at": 6,
+    "rationale": "Fresh calibration evidence replaces the null observation; clearing an unacknowledged alarm leaves the receipt-change timestamp at two.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Calibration error 0 units",
+        "status": "known",
+        "at": 6
+      },
+      "lastReliable": {
+        "value": "Calibration error 0 units",
+        "status": "known",
+        "at": 6
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "simultaneous_events",
+    "at": 10,
+    "rationale": "The recovered calibration evidence and confirmed owner persist at the end of replay.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 6
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "nextActor": {
+        "value": "Operator B",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Calibration error 0 units",
+        "status": "known",
+        "at": 6
+      },
+      "lastReliable": {
+        "value": "Calibration error 0 units",
+        "status": "known",
+        "at": 6
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 2
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 6
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 6
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 1,
+    "rationale": "Operator D is still owner during the offer; Operator E must act next, and mode remains Survey hold.",
+    "expected": {
+      "principal": {
+        "value": "Inspection resumption pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Survey hold",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator D",
+        "status": "known",
+        "at": 0
+      },
+      "handover": {
+        "value": "requested",
+        "status": "known",
+        "at": 1
+      },
+      "target": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 1
+      },
+      "telemetry": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "u1: handover",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 2,
+    "rationale": "Operator E acceptance leaves ownership unresolved until Supervisor confirmation; no control-mode change has occurred.",
+    "expected": {
+      "principal": {
+        "value": "Inspection resumption pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Survey hold",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Unresolved",
+        "status": "unknown",
+        "at": 2
+      },
+      "handover": {
+        "value": "accepted",
+        "status": "known",
+        "at": 2
+      },
+      "target": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 1
+      },
+      "nextActor": {
+        "value": "Supervisor",
+        "status": "known",
+        "at": 2
+      },
+      "telemetry": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "u1: handover",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 3,
+    "rationale": "Confirmation establishes Operator E and clears the target; mode independently remains Survey hold.",
+    "expected": {
+      "principal": {
+        "value": "Inspection resumption pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Survey hold",
+        "status": "known",
+        "at": 0
+      },
+      "owner": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 3
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 3
+      },
+      "nextActor": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "telemetry": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "lastReliable": {
+        "value": "Inspection progress 90 percent",
+        "status": "known",
+        "at": 0
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "u1: handover",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 5,
+    "rationale": "A later explicit observation changes mode to Inspection and updates telemetry without changing ownership.",
+    "expected": {
+      "principal": {
+        "value": "Inspection resumption pending",
+        "status": "known",
+        "at": 0
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 5
+      },
+      "owner": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 3
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 3
+      },
+      "nextActor": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "telemetry": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "lastReliable": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "u1: handover",
+        "status": "known",
+        "at": 1
+      },
+      "completion": {
+        "value": "incomplete",
+        "status": "known",
+        "at": 0
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 8,
+    "rationale": "The unacknowledged review alarm clears without changing receipt evidence; explicit principal clearance permits completion.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 5
+      },
+      "owner": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 3
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 3
+      },
+      "nextActor": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "telemetry": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "lastReliable": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  },
+  {
+    "scenarioId": "successful_handover",
+    "at": 12,
+    "rationale": "The final state preserves the distinct ownership-confirmation and mode-observation timestamps.",
+    "expected": {
+      "principal": {
+        "value": "No active issue",
+        "status": "known",
+        "at": 8
+      },
+      "mode": {
+        "value": "Inspection",
+        "status": "known",
+        "at": 5
+      },
+      "owner": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "handover": {
+        "value": "completed",
+        "status": "known",
+        "at": 3
+      },
+      "target": {
+        "value": "None",
+        "status": "known",
+        "at": 3
+      },
+      "nextActor": {
+        "value": "Operator E",
+        "status": "known",
+        "at": 3
+      },
+      "telemetry": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "lastReliable": {
+        "value": "Inspection progress 95 percent",
+        "status": "known",
+        "at": 5
+      },
+      "acknowledgments": {
+        "value": "None",
+        "status": "known",
+        "at": 0
+      },
+      "alarmGroups": {
+        "value": "None",
+        "status": "known",
+        "at": 8
+      },
+      "completion": {
+        "value": "complete",
+        "status": "known",
+        "at": 8
+      }
+    }
+  }
+]

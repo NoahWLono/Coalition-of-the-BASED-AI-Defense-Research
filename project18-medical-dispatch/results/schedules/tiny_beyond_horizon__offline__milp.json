@@ -1,0 +1,47 @@
+{
+  "scenario_id": "tiny-beyond_horizon",
+  "policy": "milp",
+  "information": "offline",
+  "services": [],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R3",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R4",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    }
+  ],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "used_fallback": false,
+    "feasible_objective": 800.0,
+    "lower_bound": 800.0,
+    "relative_gap": 0.0,
+    "raw_mip_gap": 0.0,
+    "objective_constant": 800,
+    "time_limit_seconds": 5,
+    "elapsed_seconds": 0.0021749170000475715,
+    "nodes": 0,
+    "variables": 8,
+    "constraints": 38,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

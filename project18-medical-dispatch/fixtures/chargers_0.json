@@ -1,0 +1,270 @@
+{
+  "id": "benchmark_s1801_n20_chargers0",
+  "seed": 1801,
+  "horizon": 48,
+  "slot_minutes": 5,
+  "load_time": 1,
+  "handoff_time": 1,
+  "turnaround_time": 1,
+  "charge_duration": 4,
+  "vehicles": [
+    {
+      "id": "V1",
+      "unavailable": [
+        [
+          18,
+          23
+        ]
+      ]
+    },
+    {
+      "id": "V2",
+      "unavailable": [
+        [
+          30,
+          35
+        ]
+      ]
+    },
+    {
+      "id": "V3",
+      "unavailable": []
+    }
+  ],
+  "battery_ids": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "charger_ids": [],
+  "technician_ids": [
+    "T1",
+    "T2"
+  ],
+  "travel": {
+    "Depot": {
+      "Depot": 0,
+      "Alder": 1,
+      "Birch": 3,
+      "Cedar": 1,
+      "Dune": 5
+    },
+    "Alder": {
+      "Depot": 4,
+      "Alder": 0,
+      "Birch": 1,
+      "Cedar": 3,
+      "Dune": 2
+    },
+    "Birch": {
+      "Depot": 3,
+      "Alder": 2,
+      "Birch": 0,
+      "Cedar": 1,
+      "Dune": 2
+    },
+    "Cedar": {
+      "Depot": 2,
+      "Alder": 3,
+      "Birch": 4,
+      "Cedar": 0,
+      "Dune": 4
+    },
+    "Dune": {
+      "Depot": 4,
+      "Alder": 1,
+      "Birch": 1,
+      "Cedar": 3,
+      "Dune": 0
+    }
+  },
+  "requests": [
+    {
+      "id": "R01",
+      "release": 6,
+      "deadline": 19,
+      "region": "Alder",
+      "category": "standard",
+      "priority": 2,
+      "cancelled": false
+    },
+    {
+      "id": "R02",
+      "release": 23,
+      "deadline": 29,
+      "region": "Birch",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R03",
+      "release": 1,
+      "deadline": 7,
+      "region": "Cedar",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R04",
+      "release": 7,
+      "deadline": 13,
+      "region": "Dune",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R05",
+      "release": 0,
+      "deadline": 14,
+      "region": "Alder",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R06",
+      "release": 8,
+      "deadline": 18,
+      "region": "Birch",
+      "category": "protected",
+      "priority": 2,
+      "cancelled": false
+    },
+    {
+      "id": "R07",
+      "release": 16,
+      "deadline": 24,
+      "region": "Cedar",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R08",
+      "release": 12,
+      "deadline": 19,
+      "region": "Dune",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R09",
+      "release": 20,
+      "deadline": 34,
+      "region": "Alder",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R10",
+      "release": 20,
+      "deadline": 28,
+      "region": "Birch",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R11",
+      "release": 13,
+      "deadline": 21,
+      "region": "Cedar",
+      "category": "standard",
+      "priority": 2,
+      "cancelled": false
+    },
+    {
+      "id": "R12",
+      "release": 13,
+      "deadline": 22,
+      "region": "Dune",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R13",
+      "release": 1,
+      "deadline": 9,
+      "region": "Alder",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R14",
+      "release": 0,
+      "deadline": 14,
+      "region": "Birch",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R15",
+      "release": 5,
+      "deadline": 17,
+      "region": "Cedar",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R16",
+      "release": 7,
+      "deadline": 19,
+      "region": "Dune",
+      "category": "protected",
+      "priority": 2,
+      "cancelled": false
+    },
+    {
+      "id": "R17",
+      "release": 20,
+      "deadline": 26,
+      "region": "Alder",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R18",
+      "release": 7,
+      "deadline": 15,
+      "region": "Birch",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R19",
+      "release": 16,
+      "deadline": 24,
+      "region": "Cedar",
+      "category": "standard",
+      "priority": 1,
+      "cancelled": true
+    },
+    {
+      "id": "R20",
+      "release": 4,
+      "deadline": 14,
+      "region": "Dune",
+      "category": "protected",
+      "priority": 1,
+      "cancelled": false
+    }
+  ],
+  "weights": {
+    "rejection": 200,
+    "lateness": 1,
+    "charge": 1,
+    "fairness": 100
+  }
+}

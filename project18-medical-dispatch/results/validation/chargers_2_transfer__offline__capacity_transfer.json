@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "chargers_2_transfer",
+  "policy": "capacity_transfer",
+  "information": "offline"
+}

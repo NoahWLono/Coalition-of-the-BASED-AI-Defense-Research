@@ -1,0 +1,17 @@
+request_id,status,reason
+R01,rejected,Initial full batteries exhausted and no charger is configured
+R02,rejected,Initial full batteries exhausted and no charger is configured
+R04,rejected,Initial full batteries exhausted and no charger is configured
+R06,rejected,Initial full batteries exhausted and no charger is configured
+R07,rejected,Initial full batteries exhausted and no charger is configured
+R08,rejected,Initial full batteries exhausted and no charger is configured
+R09,rejected,Initial full batteries exhausted and no charger is configured
+R10,rejected,Initial full batteries exhausted and no charger is configured
+R11,rejected,Initial full batteries exhausted and no charger is configured
+R12,rejected,Initial full batteries exhausted and no charger is configured
+R15,rejected,Initial full batteries exhausted and no charger is configured
+R16,rejected,Initial full batteries exhausted and no charger is configured
+R17,rejected,Initial full batteries exhausted and no charger is configured
+R18,rejected,Initial full batteries exhausted and no charger is configured
+R19,cancelled,Administrative pre-dispatch cancellation supplied with the request
+R20,rejected,Initial full batteries exhausted and no charger is configured

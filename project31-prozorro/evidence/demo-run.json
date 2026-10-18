@@ -1,0 +1,10 @@
+{
+  "arithmetic_computable": 6,
+  "comparison_eligible": 6,
+  "excluded_lots": 0,
+  "leads": 1,
+  "real_leads": 0,
+  "screened_lots": 6,
+  "synthetic_leads": 1,
+  "unique_lots": 6
+}

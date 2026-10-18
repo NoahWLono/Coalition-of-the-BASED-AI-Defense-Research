@@ -1,0 +1,16 @@
+README.md:5 negative-parallelism FIXED Split result type and validation status into direct sentences.
+README.md:61 negative-parallelism FIXED State required-field checks and external verification separately.
+docs/DATA_CONTRACT.md:7 negative-parallelism KEPT Sampling limitations define the statistical scope.
+docs/DATA_CONTRACT.md:13 negative-parallelism KEPT Unique-lot accounting distinguishes observations from purchases.
+docs/DATA_CONTRACT.md:15 negative-parallelism KEPT Current snapshot, original signature and payment distinctions are substantive accounting requirements.
+docs/DATA_CONTRACT.md:29 negative-parallelism KEPT Explicit conversion prohibition prevents unsupported FX use.
+docs/DATA_CONTRACT.md:33 negative-parallelism KEPT An empty real stratum must not be fabricated.
+docs/DATA_CONTRACT.md:35 negative-parallelism KEPT Null metrics must remain distinct from zero error.
+docs/DATA_CONTRACT.md:33 ai-vocabulary KEPT Robust is the statistical method category.
+docs/COMPARABILITY_AUDIT.md:33 negative-parallelism FIXED Explain prototype exclusion policy in two direct sentences.
+docs/COMPARABILITY_AUDIT.md:45 trailing-participle FIXED Deleted the interpretive trailing phrase; the observed changed count carries the result.
+docs/COMPARABILITY_AUDIT.md:53 trailing-participle KEPT Reporting is an item in the list of tested components, not an interpretive clause.
+docs/superpowers/plans/2026-10-17-prozorro.md:16 ai-vocabulary KEPT Robust names the statistical method category.
+output/real/REPORT.md:48 trailing-participle KEPT Screening is a tested function in a list, not a trailing inference.
+FIXED 4
+KEPT 10

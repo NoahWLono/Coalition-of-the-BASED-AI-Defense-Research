@@ -1,0 +1,28 @@
+{
+  "recordedLocalDate": "2026-10-17",
+  "timezone": "America/Toronto",
+  "host": "redacted for publication",
+  "platform": "linux",
+  "kernel": "7.2.11-arch1-1",
+  "architecture": "x64",
+  "totalMemoryBytes": 16063848448,
+  "node": "v26.12.0",
+  "playwright": "1.62.1",
+  "browser": "Chrome Headless Shell 151.0.7922.34, build1234",
+  "browserPlatform": "Ubuntu24.04 fallback on Arch Linux; runtime verified",
+  "runtimeDependencies": [],
+  "verificationConcurrency": 1,
+  "scenarioSeed": null,
+  "seedReason": "No random generation or runtime randomness",
+  "units": "Integer simulated seconds; telemetry units explicit in strings",
+  "defaultTTLSeconds": {
+    "telemetry": 5,
+    "mode": 10,
+    "owner": 30,
+    "principal": null
+  },
+  "playbackTickWallMilliseconds": 1000,
+  "networkScope": "Loopback serving only; no aircraft, telemetry service, radio or external app integration",
+  "sourceDate": "2026-10-17",
+  "aiProcessing": "AI-assisted authoring used model services; not an offline AI workflow"
+}

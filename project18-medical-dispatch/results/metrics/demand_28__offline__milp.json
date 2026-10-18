@@ -1,0 +1,92 @@
+{
+  "scenario_id": "benchmark_s1801_n28",
+  "policy": "milp",
+  "information": "offline",
+  "requests": 28,
+  "eligible": 27,
+  "served": 12,
+  "rejected": 15,
+  "cancelled": 1,
+  "on_time": 6,
+  "late_requests": 6,
+  "lateness_minutes": 200,
+  "max_lateness_minutes": 80,
+  "mean_served_lateness_minutes": 16.666666666666668,
+  "charges": 8,
+  "charging_wait_minutes": 95,
+  "max_charging_wait_minutes": 30,
+  "charging_queue_peak": 3,
+  "unrecharged_returns": 4,
+  "censored_dirty_minutes": 130,
+  "vehicle_utilization": 0.746268656716418,
+  "charger_utilization": 0.6666666666666666,
+  "technician_utilization": 0.4583333333333333,
+  "maximum_regional_rejection_fraction": 0.8571428571428572,
+  "objective": 3338.714285714286,
+  "objective_components": {
+    "rejection": 3000,
+    "lateness": 245,
+    "charging": 8,
+    "fairness": 85.71428571428572
+  },
+  "distributions": {
+    "region": {
+      "Alder": {
+        "eligible": 7,
+        "served": 5,
+        "rejected": 2,
+        "service_rate": 0.7142857142857143,
+        "on_time": 4,
+        "mean_lateness_minutes": 12.0,
+        "max_lateness_minutes": 60
+      },
+      "Birch": {
+        "eligible": 7,
+        "served": 4,
+        "rejected": 3,
+        "service_rate": 0.5714285714285714,
+        "on_time": 1,
+        "mean_lateness_minutes": 25.0,
+        "max_lateness_minutes": 80
+      },
+      "Cedar": {
+        "eligible": 6,
+        "served": 2,
+        "rejected": 4,
+        "service_rate": 0.3333333333333333,
+        "on_time": 1,
+        "mean_lateness_minutes": 12.5,
+        "max_lateness_minutes": 25
+      },
+      "Dune": {
+        "eligible": 7,
+        "served": 1,
+        "rejected": 6,
+        "service_rate": 0.14285714285714285,
+        "on_time": 0,
+        "mean_lateness_minutes": 15.0,
+        "max_lateness_minutes": 15
+      }
+    },
+    "category": {
+      "protected": {
+        "eligible": 14,
+        "served": 5,
+        "rejected": 9,
+        "service_rate": 0.35714285714285715,
+        "on_time": 1,
+        "mean_lateness_minutes": 23.0,
+        "max_lateness_minutes": 80
+      },
+      "standard": {
+        "eligible": 13,
+        "served": 7,
+        "rejected": 6,
+        "service_rate": 0.5384615384615384,
+        "on_time": 5,
+        "mean_lateness_minutes": 12.142857142857142,
+        "max_lateness_minutes": 60
+      }
+    }
+  }
+}

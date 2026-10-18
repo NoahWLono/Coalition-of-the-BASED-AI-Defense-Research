@@ -1,0 +1,459 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "b20d6e751069499a9cbe365a2415e327",
+        "changes": [
+          {
+            "date": "2025-03-28T10:34:17.952000+02:00",
+            "dateSigned": "2025-03-26T00:00:00+02:00",
+            "id": "08a88b9d9a3c491a8e3a3a3d7073b592",
+            "rationaleTypes": [
+              "qualityImprovement"
+            ],
+            "status": "active"
+          }
+        ],
+        "contractID": "UA-2025-03-26-011424-a-a1",
+        "date": "2025-03-26T16:33:11.748938+02:00",
+        "dateModified": "2025-03-28T10:36:13.035265+02:00",
+        "dateSigned": "2025-03-26T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-28T10:34:12.108163+02:00",
+            "datePublished": "2025-03-28T10:34:12.108163+02:00",
+            "documentOf": "change",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "de285b346cbc49c988cc76fc8ec77e3d",
+            "relatedItem": "08a88b9d9a3c491a8e3a3a3d7073b592"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-28T10:36:13.035265+02:00",
+            "datePublished": "2025-03-28T10:36:13.035265+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "52fbb67612f44b43b4ffd7a3464a1d62"
+          }
+        ],
+        "id": "51d3d6245bf54624a803f08c986a25a4",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "папір ксероксний А-4",
+            "id": "d808fdbd76a346f8411570fa7050840c",
+            "quantity": "40.0",
+            "unit": {
+              "code": "PK"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "Папки на зав'язках картонні",
+            "id": "b3913250b1151ae2df305c878078cd33",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "Швидкозшивачі картонні",
+            "id": "c946be559cfdfbf6810157d36363a0fb",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "швидкозшивачі слюдові",
+            "id": "ee1d987b4bf7f81f5e58b322f1999e69",
+            "quantity": "30.0",
+            "unit": {
+              "code": "H87"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "Ручка кулькова",
+            "id": "150c9f5f5d23af4428bd471acbaceb1f",
+            "quantity": "50.0",
+            "unit": {
+              "code": "H87"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "книга канцелярська",
+            "id": "4aacec0cd4b3f3d5dfb617ad016f4190",
+            "quantity": "9.0",
+            "unit": {
+              "code": "H87"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "скоби великі",
+            "id": "7ad066bd8c8b9ed7a1bad6ab2824b7ae",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "скоби малі",
+            "id": "7834aee250b9e86ed1e32085268a561a",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "скріпки",
+            "id": "703e49faee0eedf9bc99407b91e2d125",
+            "quantity": "6.0",
+            "unit": {
+              "code": "PK"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T16:00:00+02:00"
+            },
+            "description": "олівці прості",
+            "id": "0927a9370848f5cc20f1a18504557364",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "10000.0",
+          "amountNet": "10000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 36109,
+        "method": "GET",
+        "response_sha256": "5c68ba266f529148126f28720936622cabcc1a8f6b670fcdff4aba53120c4f00",
+        "retrieved_at": "2026-10-18T01:47:54.216477+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:54 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/51d3d6245bf54624a803f08c986a25a4"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 16060,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-26-011424-a/",
+    "method": "GET",
+    "response_sha256": "be5c3c939a1c4e02105539e9663cdeae9cca1fe77cb85085ed109e83f6673f0c",
+    "retrieved_at": "2026-10-18T01:47:53.166397+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:53 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/526a9e37f46847b9941bf1a91e93a86d"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-26T16:22:31.157976+02:00",
+        "id": "b20d6e751069499a9cbe365a2415e327",
+        "status": "active",
+        "value": {
+          "amount": "10000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "b20d6e751069499a9cbe365a2415e327",
+        "contractID": "UA-2025-03-26-011424-a-a1",
+        "date": "2025-03-26T16:33:11.748938+02:00",
+        "id": "51d3d6245bf54624a803f08c986a25a4",
+        "status": "active",
+        "value": {
+          "amount": "10000.0",
+          "amountNet": "10000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-26T16:16:49.776542+02:00",
+    "dateModified": "2025-03-26T16:33:11.748938+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-26T16:30:53.592954+02:00",
+        "datePublished": "2025-03-26T16:30:53.592954+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "ef80a6860c2f4c4ca71b9b23782f8fee"
+      }
+    ],
+    "id": "526a9e37f46847b9941bf1a91e93a86d",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "папір ксероксний А-4",
+        "id": "d808fdbd76a346f8411570fa7050840c",
+        "quantity": "40.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "Папки на зав'язках картонні",
+        "id": "b3913250b1151ae2df305c878078cd33",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "Швидкозшивачі картонні",
+        "id": "c946be559cfdfbf6810157d36363a0fb",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "швидкозшивачі слюдові",
+        "id": "ee1d987b4bf7f81f5e58b322f1999e69",
+        "quantity": "30.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "Ручка кулькова",
+        "id": "150c9f5f5d23af4428bd471acbaceb1f",
+        "quantity": "50.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "книга канцелярська",
+        "id": "4aacec0cd4b3f3d5dfb617ad016f4190",
+        "quantity": "9.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "скоби великі",
+        "id": "7ad066bd8c8b9ed7a1bad6ab2824b7ae",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "скоби малі",
+        "id": "7834aee250b9e86ed1e32085268a561a",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "скріпки",
+        "id": "703e49faee0eedf9bc99407b91e2d125",
+        "quantity": "6.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T16:21:48+02:00",
+          "startDate": "2025-03-26T16:21:48+02:00"
+        },
+        "description": "олівці прості",
+        "id": "0927a9370848f5cc20f1a18504557364",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-26-011424-a",
+    "title": "Канцтовари. Папір А4",
+    "value": {
+      "amount": "10000.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

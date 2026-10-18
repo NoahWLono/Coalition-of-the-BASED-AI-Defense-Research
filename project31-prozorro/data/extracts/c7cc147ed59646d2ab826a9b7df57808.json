@@ -1,0 +1,268 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "4571.0",
+          "amountNet": "4571.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        },
+        "awardID": "13e92487b1674afc985d5d82078e1eb3",
+        "contractID": "UA-2025-03-03-009255-a-c1",
+        "date": "2025-03-03T15:38:27.995363+02:00",
+        "dateModified": "2025-03-03T15:38:27.995363+02:00",
+        "dateSigned": "2025-02-28T15:27:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-03T15:33:50.692384+02:00",
+            "datePublished": "2025-03-03T15:33:50.692384+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "26ca0654e764420b81fb2f2fe008d77a"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-03T15:38:17.690152+02:00",
+            "datePublished": "2025-03-03T15:38:17.690152+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "26ca0654e764420b81fb2f2fe008d77a"
+          }
+        ],
+        "id": "fc72e1d9624d41a68e1d4b41718b0208",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-28T00:00:00+02:00"
+            },
+            "description": "Папір А4",
+            "id": "cfc3dd215b34e6d51311c46d4e5e7262",
+            "quantity": "25.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-28T00:00:00+02:00"
+            },
+            "description": "РК ручка синя",
+            "id": "1036131955dfaf0e5839360d7800487e",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-28T00:00:00+02:00"
+            },
+            "description": "Файл А4",
+            "id": "76adacf65e242faf8418ce51fa7be5d4",
+            "quantity": "1.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-28T00:00:00+02:00"
+            },
+            "description": "Швидкозшивач картонний",
+            "id": "df3fe7d63175146602a26dff0dc6d2d5",
+            "quantity": "50.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "4571.0",
+          "amountNet": "4571.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 30009,
+        "method": "GET",
+        "response_sha256": "8479481b890a279f5833de9be0b33be7ffad5adab827e823ce944062d634106a",
+        "retrieved_at": "2026-10-18T01:47:40.491469+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:41 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/fc72e1d9624d41a68e1d4b41718b0208"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 9246,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-03-009255-a/",
+    "method": "GET",
+    "response_sha256": "73207acbbc7f0801658f1a4c5644c4c8f6932170b6f78f97e26d0d46f34be4f6",
+    "retrieved_at": "2026-10-18T01:47:39.307816+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:40 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/c7cc147ed59646d2ab826a9b7df57808"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-03T15:27:37.638412+02:00",
+        "id": "13e92487b1674afc985d5d82078e1eb3",
+        "status": "active",
+        "value": {
+          "amount": "4571.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "13e92487b1674afc985d5d82078e1eb3",
+        "contractID": "UA-2025-03-03-009255-a-c1",
+        "date": "2025-03-03T15:34:00.689830+02:00",
+        "id": "fc72e1d9624d41a68e1d4b41718b0208",
+        "status": "active",
+        "value": {
+          "amount": "4571.0",
+          "amountNet": "4571.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-03T15:27:30.708698+02:00",
+    "dateModified": "2025-03-03T15:34:00.689830+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-03T15:33:50.155177+02:00",
+        "datePublished": "2025-03-03T15:33:50.155177+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "a1e13a8685b24c7fb2390555e9670872"
+      }
+    ],
+    "id": "c7cc147ed59646d2ab826a9b7df57808",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-28T00:00:00+02:00"
+        },
+        "description": "Папір А4",
+        "id": "cfc3dd215b34e6d51311c46d4e5e7262",
+        "quantity": "25.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-28T00:00:00+02:00"
+        },
+        "description": "РК ручка синя",
+        "id": "1036131955dfaf0e5839360d7800487e",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-28T00:00:00+02:00"
+        },
+        "description": "Файл А4",
+        "id": "76adacf65e242faf8418ce51fa7be5d4",
+        "quantity": "1.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-28T00:00:00+02:00"
+        },
+        "description": "Швидкозшивач картонний",
+        "id": "df3fe7d63175146602a26dff0dc6d2d5",
+        "quantity": "50.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-03-009255-a",
+    "title": "Папір А4, ручка РК синя, файл А4, швидкозшивач картонний",
+    "value": {
+      "amount": "4571.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

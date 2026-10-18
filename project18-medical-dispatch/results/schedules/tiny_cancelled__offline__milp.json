@@ -1,0 +1,56 @@
+{
+  "scenario_id": "tiny-cancelled",
+  "policy": "milp",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R2",
+      "vehicle_id": "V2",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 2,
+      "end": 2
+    },
+    {
+      "request_id": "R3",
+      "vehicle_id": "V1",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 4,
+      "delivery": 6,
+      "end": 6
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "cancelled",
+      "reason": "cancelled_on_arrival"
+    },
+    {
+      "request_id": "R4",
+      "status": "cancelled",
+      "reason": "cancelled_on_arrival"
+    }
+  ],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "used_fallback": false,
+    "feasible_objective": 0.0,
+    "lower_bound": 0.0,
+    "relative_gap": 0.0,
+    "raw_mip_gap": 0.0,
+    "objective_constant": 400,
+    "time_limit_seconds": 5,
+    "elapsed_seconds": 0.011878841999532597,
+    "nodes": 1,
+    "variables": 36,
+    "constraints": 52,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

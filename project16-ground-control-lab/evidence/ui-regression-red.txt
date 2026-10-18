@@ -1,0 +1,2 @@
+FAIL display status mismatch was not detected: 11 of 11 facts match the oracle
+FAIL scenario change retained open disclosure: true

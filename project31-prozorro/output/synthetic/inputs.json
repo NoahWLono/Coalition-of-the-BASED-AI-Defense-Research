@@ -1,0 +1,398 @@
+[
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "9800",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-00"
+  },
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "9900",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-01"
+  },
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "10000",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-02"
+  },
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "10100",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-03"
+  },
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "10200",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-04"
+  },
+  {
+    "items": [
+      {
+        "description": "A4 80 gsm 500-sheet pack",
+        "id": "paper",
+        "pack_size_reviewed": true,
+        "quantity": "100",
+        "quantity_version": "current-v1",
+        "sheets_per_pack": "500",
+        "unit": "pack"
+      }
+    ],
+    "lot_id": "single",
+    "observations": [
+      {
+        "amendment_reconciled": true,
+        "amount": "20000",
+        "currency": "UAH",
+        "id": "contract-1",
+        "item_ids": [
+          "paper"
+        ],
+        "quantity_link_reviewed": true,
+        "quantity_version": "current-v1",
+        "stage": "contract_current",
+        "status": "active"
+      }
+    ],
+    "publication_date": "2025-01-08",
+    "review": {
+      "annotator_type": "synthetic_fixture_author",
+      "delivery_key": "delivered-terms-A",
+      "evidence": [
+        "fixture:example"
+      ],
+      "evidence_by_gate": {
+        "delivery": [
+          "fixture:example"
+        ],
+        "fiscal": [
+          "fixture:example"
+        ],
+        "payment": [
+          "fixture:example"
+        ],
+        "quantity": [
+          "fixture:example"
+        ],
+        "spec": [
+          "fixture:example"
+        ],
+        "stage": [
+          "fixture:example"
+        ]
+      },
+      "fiscal_key": "gross-VAT20",
+      "net_gross_scope": "gross",
+      "payment_key": "postpay-30d",
+      "reviewed": true,
+      "spec_key": "A4-80gsm-reviewed-grade-A",
+      "vat_included": true
+    },
+    "source_kind": "synthetic",
+    "status": "active",
+    "tender_id": "synthetic-05"
+  }
+]

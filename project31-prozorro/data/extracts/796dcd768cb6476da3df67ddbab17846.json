@@ -1,0 +1,151 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "3cbdc689aa4d4ff4ad334dda27621fd7",
+        "contractID": "UA-2025-02-03-005284-a-a1",
+        "date": "2025-02-03T11:47:05.642535+02:00",
+        "dateModified": "2025-02-03T11:47:05.642535+02:00",
+        "dateSigned": "2025-02-03T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-03T11:46:48.472962+02:00",
+            "datePublished": "2025-02-03T11:46:48.472962+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "3d7d09483b8d48eba37b7507443d57f6"
+          }
+        ],
+        "id": "07143592eb35430ea36480b8eafe90c7",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "папір А4",
+            "id": "2588a4608e9d43f2b8fcd8658d911c78",
+            "quantity": "200.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "39600.0",
+          "amountNet": "33000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 25133,
+        "method": "GET",
+        "response_sha256": "ad7957f5b19ede43fc9bb038dde87adab13d787595d8b895924a1c971f57234c",
+        "retrieved_at": "2026-10-18T01:47:44.765726+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:45 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/07143592eb35430ea36480b8eafe90c7"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 5480,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-005284-a/",
+    "method": "GET",
+    "response_sha256": "1700cbc58a19bef9359ea17c9e05173aea16ba127d3104393bd4048c2f8a1458",
+    "retrieved_at": "2026-10-18T01:47:43.715640+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:44 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/796dcd768cb6476da3df67ddbab17846"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-03T11:46:44.649712+02:00",
+        "id": "3cbdc689aa4d4ff4ad334dda27621fd7",
+        "status": "active",
+        "value": {
+          "amount": "39600.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "3cbdc689aa4d4ff4ad334dda27621fd7",
+        "contractID": "UA-2025-02-03-005284-a-a1",
+        "date": "2025-02-03T11:47:05.642535+02:00",
+        "id": "07143592eb35430ea36480b8eafe90c7",
+        "status": "active",
+        "value": {
+          "amount": "39600.0",
+          "amountNet": "33000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-02-03T11:46:44.224728+02:00",
+    "dateModified": "2025-02-03T11:47:05.642535+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-03T11:47:04.780124+02:00",
+        "datePublished": "2025-02-03T11:47:04.780124+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "35fbb09bf87144afbafe6c7e1d01449c"
+      }
+    ],
+    "id": "796dcd768cb6476da3df67ddbab17846",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "папір А4",
+        "id": "2588a4608e9d43f2b8fcd8658d911c78",
+        "quantity": "200.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-03-005284-a",
+    "title": "Папір А4",
+    "value": {
+      "amount": "39600.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

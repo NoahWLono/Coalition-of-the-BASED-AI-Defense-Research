@@ -1,0 +1,2 @@
+request_id,status,reason
+R02,rejected,Resource contention under this policy left no feasible start before the horizon

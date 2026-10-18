@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "baseline",
+  "policy": "rolling_milp",
+  "information": "online"
+}

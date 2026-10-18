@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "fairness_0",
+  "policy": "fcfs",
+  "information": "offline"
+}

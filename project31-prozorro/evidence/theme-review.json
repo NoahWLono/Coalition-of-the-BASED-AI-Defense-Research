@@ -1,0 +1,43 @@
+{
+  "scope": "Presentation-only theme update plus a separate synthetic HTML fixture view.",
+  "default_theme": "dark",
+  "choices": [
+    "system",
+    "light",
+    "dark"
+  ],
+  "theme_script_checked_with_mocked_dom": [
+    "default dark",
+    "saved preference reload",
+    "system preference changes",
+    "manual preference overrides system",
+    "storage read and write failures",
+    "invalid saved preference fallback",
+    "shared script in both generated reports",
+    "explicit label for native selector"
+  ],
+  "browser_verification": "Not performed by this worker; coordinator handles browser verification separately.",
+  "text_contrast_minimum": {
+    "dark": 8.49,
+    "light": 5.68,
+    "threshold": 4.5
+  },
+  "existing_data_and_comparator_sources_unchanged": true,
+  "existing_real_non_html_artifacts_byte_identical": 12,
+  "existing_suite": {
+    "tests": 56,
+    "passed": 56,
+    "command": "bash scripts/reproduce.sh",
+    "log": "evidence/theme-verification.txt"
+  },
+  "reproduction": "Two clean builds matched all 14 real and 4 synthetic artifacts with socket access blocked; see reproducibility.json.",
+  "acquisition_invoked": false,
+  "publication_metadata_redaction": "Seven historical traceback logs replace absolute home paths with <HOME>; environment hostname redacted; observed versions and outcomes retained.",
+  "limited_publication_scan": {
+    "credential_private_key_patterns": 0,
+    "phone_patterns": 0,
+    "retained_data_forbidden_private_fields": 0,
+    "email_pattern": "Only an intentional acquisition redaction test fixture; no dataset email matches."
+  },
+  "limitations": "Pattern scans do not certify the absence of every possible secret or personal field. The real comparison method still lacks independent human validation."
+}

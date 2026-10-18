@@ -1,0 +1,53 @@
+{
+  "scenario_id": "tiny-charger_bottleneck",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R1",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 4,
+      "delivery": 6,
+      "end": 6
+    },
+    {
+      "request_id": "R2",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 4,
+      "delivery": 6,
+      "end": 6
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R3",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R4",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 5.0,
+    "objective_rational": "5",
+    "best_bound": 5.0,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 287,
+    "enumerated_leaves": 41,
+    "transitions": 566,
+    "cache_hits": 280,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.008085960000244086
+  }
+}

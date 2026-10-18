@@ -1,0 +1,123 @@
+- link "Skip to scenario evidence":
+  - /url: "#view"
+- banner:
+  - paragraph: Interface laboratory Project 16
+  - heading "Ground control, shared understanding." [level=1]
+  - paragraph: One incident. Three ways to see the evidence. Explore alarms, responsibility and interrupted handovers.
+  - strong: Synthetic replay
+  - paragraph: Fictional civilian inspections. No connected vehicles or devices.
+- main:
+  - region "Scenario and replay controls":
+    - text: Incident script
+    - combobox "Incident script":
+      - option "01 / Interrupted quay inspection handover" [selected]
+      - option "02 / Stale roof survey evidence"
+      - option "03 / Camera alignment alarm cascade"
+      - option "04 / Two acknowledgments and one owner"
+      - option "05 / Conflicting responsibility reports"
+      - option "06 / Accepted handover expires unconfirmed"
+      - option "07 / Acceptance at the request deadline"
+      - option "08 / Cancelled handover with delayed receipt"
+      - option "09 / Ordered events at the calibration pause"
+      - option "10 / Confirmed handover and separate mode change"
+    - text: Interface design
+    - combobox "Interface design":
+      - option "Chronological alarms"
+      - option "Incident groups"
+      - option "Handover state" [selected]
+    - text: Oracle checkpoint
+    - combobox "Oracle checkpoint":
+      - option "Between checkpoints" [disabled]
+      - option "t=0 s" [selected]
+      - option "t=3 s"
+      - option "t=4 s"
+      - option "t=5 s"
+      - option "t=7 s"
+      - option "t=8 s"
+      - option "t=12 s"
+    - button "Play"
+    - button "Rewind one second" [disabled]: −1 s
+    - button "Step forward one second": +1 s
+    - button "Reset"
+    - text: Replay time in seconds
+    - slider "Replay time in seconds": "0"
+    - text: Replay start 12 seconds
+    - status: 00:00
+    - text: Paused
+    - paragraph: One replay second per second. Seeking pauses playback. Switching design preserves time and playback.
+  - region "Scenario evidence":
+    - paragraph: Cedar-01 / Fictional East Quay
+    - heading "Interrupted quay inspection handover" [level=2]
+    - paragraph: A civilian quay inspection loses control-link margin while Operator A offers responsibility to Operator B. Receipt, acceptance, interruption and supervisory reconciliation remain distinct.
+    - article "Establish who acts next":
+      - heading "Establish who acts next" [level=2]
+      - paragraph: Ownership, transfer state and the next responsible actor stay together. Alarm detail is one disclosure away.
+      - paragraph: Responsibility
+      - paragraph: Operator A
+      - paragraph: known · t=0 s
+      - paragraph: Responsible for next action
+      - paragraph: Operator A
+      - paragraph: known · t=0 s
+      - paragraph: Handover state
+      - paragraph: idle
+      - paragraph: known · t=0 s
+      - paragraph: Handover target
+      - paragraph: None
+      - paragraph: known · t=0 s
+      - paragraph: Alarm receipt and control mode do not establish a responsibility transfer.
+      - paragraph: Principal issue
+      - paragraph: Link uncertainty
+      - paragraph: known · t=0 s
+      - paragraph: Control mode
+      - paragraph: Inspection
+      - paragraph: known · t=0 s
+      - paragraph: Scenario completion
+      - paragraph: incomplete
+      - paragraph: known · t=0 s
+      - paragraph: Latest telemetry observation
+      - paragraph: Link margin 82 percent
+      - paragraph: known · t=0 s
+      - paragraph: Last reliable observation (historical)
+      - paragraph: Link margin 82 percent
+      - paragraph: known · t=0 s · historical
+      - paragraph: Historical evidence; do not treat this as current telemetry.
+      - group: Alarm details and receipts 2 facts behind this disclosure
+      - group: Event history 4 events; 0 rejected
+  - complementary "Comparison and evaluation":
+    - heading "Read the situation" [level=2]
+    - paragraph: Use the same three prompts in each design.
+    - list:
+      - listitem: What is the principal issue, and which alarms share its declared group?
+      - listitem: Who is responsible for the next action? Is ownership known, stale or unresolved?
+      - listitem: What was the last reliable observation, and when was it recorded?
+    - heading "Information decisions" [level=2]
+    - paragraph: Responsibility and transfer state are prominent. Detailed alarms, receipts and group mappings require opening the alarm disclosure.
+    - term: Immediately visible
+    - definition: 9 facts
+    - term: Inside one disclosure
+    - definition: 2 facts
+    - term: Intentionally omitted
+    - definition: 0 facts
+    - paragraph: Counts describe the initial screen. Disclosure steps are interface actions, not measured task times.
+    - heading "Checkpoint check" [level=2]
+    - status: 11 of 11 facts match the oracle
+    - paragraph: Initial observations establish Operator A; no alarm or handover exists yet.
+    - paragraph: Exact values, evidence states and timestamps are checked against assistant-authored literal expectations. This is a specification check.
+    - heading "Presentation check" [level=2]
+    - checkbox "View in grayscale"
+    - text: View in grayscale
+    - paragraph: Severity and freshness also use words and symbols. Native controls support keyboard navigation.
+    - heading "Take the evidence" [level=2]
+    - button "Scenario JSON"
+    - button "Current state JSON"
+    - button "Current trace JSON"
+    - button "Correctness matrix CSV"
+    - status: Downloads stay on this computer.
+  - heading "Completion condition" [level=2]
+  - paragraph: Supervisor reconciles responsibility to Operator A; the control-link alarm is cleared and the principal issue is explicitly cleared.
+  - heading "A comparison instrument" [level=2]
+  - paragraph: This mock interface has no human participant results. Any benefit to workload, speed or decision quality is a hypothesis for a later study with informed, consenting participants. Correctness and visibility checks do not establish operational safety or human performance.
+- contentinfo:
+  - paragraph: Ground-control interface laboratory
+  - paragraph: Synthetic data. Local replay. No operational controls.
+- paragraph: Rewound to 0 seconds. Playback paused.

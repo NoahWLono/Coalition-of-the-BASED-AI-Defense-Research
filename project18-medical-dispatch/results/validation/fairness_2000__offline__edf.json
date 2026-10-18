@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "fairness_2000",
+  "policy": "edf",
+  "information": "offline"
+}

@@ -1,0 +1,74 @@
+{
+  "scenario_id": "tiny-staff_bottleneck",
+  "policy": "milp",
+  "information": "offline",
+  "requests": 4,
+  "eligible": 4,
+  "served": 3,
+  "rejected": 1,
+  "cancelled": 0,
+  "on_time": 3,
+  "late_requests": 0,
+  "lateness_minutes": 0,
+  "max_lateness_minutes": 0,
+  "mean_served_lateness_minutes": 0.0,
+  "charges": 1,
+  "charging_wait_minutes": 0,
+  "max_charging_wait_minutes": 0,
+  "charging_queue_peak": 1,
+  "unrecharged_returns": 2,
+  "censored_dirty_minutes": 2,
+  "vehicle_utilization": 0.375,
+  "charger_utilization": 0.25,
+  "technician_utilization": 0.625,
+  "maximum_regional_rejection_fraction": 0.5,
+  "objective": 201.0,
+  "objective_components": {
+    "rejection": 200,
+    "lateness": 0,
+    "charging": 1,
+    "fairness": 0.0
+  },
+  "distributions": {
+    "region": {
+      "North": {
+        "eligible": 2,
+        "served": 2,
+        "rejected": 0,
+        "service_rate": 1.0,
+        "on_time": 2,
+        "mean_lateness_minutes": 0.0,
+        "max_lateness_minutes": 0
+      },
+      "South": {
+        "eligible": 2,
+        "served": 1,
+        "rejected": 1,
+        "service_rate": 0.5,
+        "on_time": 1,
+        "mean_lateness_minutes": 0.0,
+        "max_lateness_minutes": 0
+      }
+    },
+    "category": {
+      "package_a": {
+        "eligible": 2,
+        "served": 2,
+        "rejected": 0,
+        "service_rate": 1.0,
+        "on_time": 2,
+        "mean_lateness_minutes": 0.0,
+        "max_lateness_minutes": 0
+      },
+      "package_b": {
+        "eligible": 2,
+        "served": 1,
+        "rejected": 1,
+        "service_rate": 0.5,
+        "on_time": 1,
+        "mean_lateness_minutes": 0.0,
+        "max_lateness_minutes": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "e848b9c08adb4a0b83364058827519ef",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/e848b9c08adb4a0b83364058827519ef"
+  },
+  {
+    "id": "ae1202ce07614cefb9f6cc70827de6a2",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/ae1202ce07614cefb9f6cc70827de6a2"
+  },
+  {
+    "id": "7aa560abc8e84962a2149bb4df6a2dd5",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7aa560abc8e84962a2149bb4df6a2dd5"
+  },
+  {
+    "id": "af31212ad1d44f0e9d9bbd1a959dc731",
+    "reasons": [
+      "civilian_buyer_unverified",
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/af31212ad1d44f0e9d9bbd1a959dc731"
+  },
+  {
+    "id": "7aaf07f1c9f94f018a2f3fcdb3de8005",
+    "reasons": [
+      "civilian_buyer_unverified",
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7aaf07f1c9f94f018a2f3fcdb3de8005"
+  },
+  {
+    "id": "8501a8753834442bad074fcd487fba67",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/8501a8753834442bad074fcd487fba67"
+  },
+  {
+    "id": "22e01282d03a491a99d034e77049eef0",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/22e01282d03a491a99d034e77049eef0"
+  },
+  {
+    "id": "d6677f445cd44609ae8c157c201139c3",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/d6677f445cd44609ae8c157c201139c3"
+  },
+  {
+    "id": "74248d2e9e4247cb80169536171d1661",
+    "reasons": [
+      "excluded_buyer_scope"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/74248d2e9e4247cb80169536171d1661"
+  },
+  {
+    "id": "526057697cc247ce95edc48e78b25fcb",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/526057697cc247ce95edc48e78b25fcb"
+  },
+  {
+    "id": "f41b2dc98c254dc2a22bfca9159be1b9",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/f41b2dc98c254dc2a22bfca9159be1b9"
+  },
+  {
+    "id": "5047b1a2fac84f6c98f8bb757b764e60",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/5047b1a2fac84f6c98f8bb757b764e60"
+  },
+  {
+    "id": "b333883c5a9d4a06bc31f434948fe2d8",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b333883c5a9d4a06bc31f434948fe2d8"
+  },
+  {
+    "id": "7ab8ff7110a64a5d9196db25d4c064a0",
+    "reasons": [
+      "civilian_buyer_unverified",
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7ab8ff7110a64a5d9196db25d4c064a0"
+  },
+  {
+    "id": "a4227e8e39d044e8ab038a73c38886b6",
+    "reasons": [
+      "civilian_buyer_unverified",
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/a4227e8e39d044e8ab038a73c38886b6"
+  },
+  {
+    "id": "9d08a4164c4c44e0b957180e130b225f",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/9d08a4164c4c44e0b957180e130b225f"
+  },
+  {
+    "id": "93ff1b2bfbd8437fb0b345b61bc4691c",
+    "reasons": [
+      "excluded_buyer_scope"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/93ff1b2bfbd8437fb0b345b61bc4691c"
+  },
+  {
+    "id": "bffe4ae96a8f43fe9ff354843f1fd000",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/bffe4ae96a8f43fe9ff354843f1fd000"
+  },
+  {
+    "id": "dd2931b8a1de4986ba91cf1f184da4ad",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/dd2931b8a1de4986ba91cf1f184da4ad"
+  },
+  {
+    "id": "ae331cc297aa41988c5411021d8e02fe",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/ae331cc297aa41988c5411021d8e02fe"
+  },
+  {
+    "id": "99b2487894db4afcbd326808e957591a",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/99b2487894db4afcbd326808e957591a"
+  },
+  {
+    "id": "426bc88a5826441d88a5ae1c3ba2dbad",
+    "reasons": [
+      "no_a4_paper_item"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/426bc88a5826441d88a5ae1c3ba2dbad"
+  },
+  {
+    "id": "959d0a61ef184677b6fb80334fdaf3d8",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/959d0a61ef184677b6fb80334fdaf3d8"
+  },
+  {
+    "id": "76229a3412564d939c23983fda7a2a8c",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/76229a3412564d939c23983fda7a2a8c"
+  },
+  {
+    "id": "019395435ccc4c45a1975c6502168176",
+    "reasons": [
+      "civilian_buyer_unverified"
+    ],
+    "source_url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/019395435ccc4c45a1975c6502168176"
+  }
+]

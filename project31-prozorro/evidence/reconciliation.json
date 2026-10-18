@@ -1,0 +1,4192 @@
+{
+  "checker_independence": "Separate arithmetic implementation by the same assistant; not an independent human review.",
+  "core_exact_checks": [
+    {
+      "core_unit_price_fraction": {
+        "denominator": "2500",
+        "numerator": "669"
+      },
+      "field_paths": [
+        "/contract_details/0/contract/value/amount",
+        "/contract_details/0/contract/items/0/quantity",
+        "/contract_details/0/contract/items/0/unit",
+        "/contract_details/0/contract/items/0/description"
+      ],
+      "independent_quantity_sheets_fraction": {
+        "denominator": "1",
+        "numerator": "12500"
+      },
+      "independent_unit_price_fraction": {
+        "denominator": "2500",
+        "numerator": "669"
+      },
+      "key": "47bab2b64a3e481abfaf8ec52d01142f/single",
+      "matched": true,
+      "selected_observation_id": "344cf1d050944677ad03edf43e5a7214",
+      "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/344cf1d050944677ad03edf43e5a7214"
+    }
+  ],
+  "counts": {
+    "assistant_reviewed_records": 14,
+    "contract_snapshots": 50,
+    "core_exact_checks": 1,
+    "core_exact_matches": 1,
+    "declared_unit_quotients": 34,
+    "explicit_sheet_quotients": 8,
+    "mismatches_or_coverage_errors": 0,
+    "normalized_lots": 50,
+    "source_lots": 50,
+    "terminated_declared_unit_quotients": 17
+  },
+  "errors": [],
+  "input_extract_hashes": {
+    "data/extracts/02675fd432654f96afb006daba9dd9ec.json": "366fe05220f822f0fc25a1b55a697a4efeb08a2bca8b34bac94c32ffd3d35350",
+    "data/extracts/0802b95a93bf4106b1a4112ab7e70fb0.json": "877e636e8bef369bac8aea101fcae1cc868726e0b56b1718f359429155b1ba16",
+    "data/extracts/1d230a4a811f41ba9dcab4cb5025dae9.json": "c49d79788d0411175b85e3ffe78089cba1f62af7cdad48b99e48722ec0e4d4c7",
+    "data/extracts/1ecfaad964ba49559c66b0486f7b2955.json": "361931532598369d37559a8262c59ddbb45b3f37d0474e7780062a421796fe32",
+    "data/extracts/209616573c2a4c25974df8c37d223b3c.json": "945d467a05e394010dbcb6686960d320c88f8b3e9811409c10abcaa2e29b1f43",
+    "data/extracts/23f46b30d73a4968938099a4352c67e7.json": "77ebe2d3a588e221f4a434bce6955eb883855c185b9af478efc71878a2650011",
+    "data/extracts/267f363647dd4effa708852c3c981854.json": "d24eb3adb7fe0d24701053f1294829e4c5ad628dcdd7795198dcc71300e311b2",
+    "data/extracts/3000fb304c4e469ca1e90abce1feb6df.json": "7fb9e3f81a02bc5a2fbfbafff0f9831ebe014977cb57cea0e945dc742830070a",
+    "data/extracts/307cee5c39304e9594e2643f7e715c5a.json": "12b139baa68ba8dcf1c8627d36a3374e630d6007c1686e3c645b016676092572",
+    "data/extracts/3d0696b78d394dedae684b104b8ae2c8.json": "dabf7fb692cd8bbf453f32fdc73bdf2656bf4bc32e1d8bf3c82a83b4c8739fb8",
+    "data/extracts/417ec3ad006a4040a5ebceb6f9a03b0b.json": "e98eaaf30e84ac033401ddff8986f69e3c6967644ce42de977ca752f32724611",
+    "data/extracts/4545441b98c34f288668afbf8f069fa0.json": "ee6df54d34a0e1953c7e4564d6f00cdcddf4321b120ab5c8c8c1fc888cd3b18d",
+    "data/extracts/47bab2b64a3e481abfaf8ec52d01142f.json": "73776cdf9065ba5a0d10f80c01f026256392518cfdf0b11197f715b095e72268",
+    "data/extracts/526a9e37f46847b9941bf1a91e93a86d.json": "0a4bd7f8d89fc5e8ca028a83f984e52886a6c9eea76f3d8401428254e998d182",
+    "data/extracts/538ed4eb3fd54d0ca3f5764d63694047.json": "f1f5a159d882d51a761fb95e9489749d163b672d074e6fef694469316d3cdabe",
+    "data/extracts/554dc7b670964c4792c919b139c0db2a.json": "47f6a6f20a56556473b9893872fdb36a33b055b2f2580cc8629d72e93e46fb31",
+    "data/extracts/60ba4eb3b5674441b1d0abbe9a9c5309.json": "1fe94eba919c563efe786daf54958dfd01555fac861de3acbdd31fcfb04a62ae",
+    "data/extracts/625d8d9e637e445993c8d5a1747440ef.json": "14b0204870fbe4cb5db1325ca35a13c1cdeebb79f8faf29402f37585f02da587",
+    "data/extracts/64dc8610e9ad465c95e7c1830546b4d7.json": "20f0ce8f712ce2d5e90f90ebe69017aca3e2e30e2c1e5af88931bb688e1355e2",
+    "data/extracts/6a93f7f8a8c54b7f8fd31f5ce975f78d.json": "5329ec00bf0355d88f2f8610e8af4015d37f7d8e1152c31ba5032d3ba16a688b",
+    "data/extracts/6e09cb560e3d4f248544e22bb5b5c897.json": "df242f07626f3e359abe1e0114e5030825f2ade25dff084bec7f3778442ee093",
+    "data/extracts/6e3697e60622475481ac0764d3807040.json": "a1fd00f9af46eae3f887851b351e759fcf243fb221f48258ad280dc8b9067f4b",
+    "data/extracts/70e6ea6627724823857e54f9c3d53e82.json": "2bf4b908fbfb1eca58bf769100620398a746f7f1c7794c546144cafa422de867",
+    "data/extracts/796dcd768cb6476da3df67ddbab17846.json": "30d7fd9dd007ae209572f2e7a657d62c1b5e35a65813d87356959bf4907ac1d2",
+    "data/extracts/7a5cc1a5bdce481c83a6fb19138feebf.json": "ae428339bf0c72d1c7775003710ef1342500994ce899951ff448bcda4cc8f44f",
+    "data/extracts/7a670df13e1447d19a2411f21787d5d2.json": "c8aa33f6c93fc6cf639eba2258e5792fe88f70b7e98ba0033c9583783cb80c12",
+    "data/extracts/7aa7329eb9ed4006af81a5157d5ecc75.json": "13a86bf1519a00fc2a94ab7317b37f0463d6d39c4ae4158888490eb92919d348",
+    "data/extracts/7cdb8d17fd70423eb0a403d6eec06bf7.json": "613923fdd6f7b47fb356bd4901466d09c7c7bcdf70e20a2c7331e115287bbdd1",
+    "data/extracts/864de600a385479f8d215b70da9d91fd.json": "9d6ef05f702bfa39035ea7c6529e9cb4b1d734ecda3f85387053486b112d9448",
+    "data/extracts/b1cbf3ae645944cb8b9e115b55a86f74.json": "e20edd3123848a3af0763a704cfed4b79946cf46263c201298ebce8d43f7533a",
+    "data/extracts/b1e44ce7cd5d4acf8e58bc0ec8cb8ba6.json": "4cb0340501696287ae298916bc6a7a90eef483a87b50403fb7582e07297f1d1d",
+    "data/extracts/b25d73dac4d24bf39f92d2297288cc86.json": "810cc4f64c07e2290d137bdb1305b7f36f03b5ce97f4f191791af58172525c3a",
+    "data/extracts/b368d3ae49914fe9abd0c7fd08b6bd63.json": "76a99747a2cd6be5b6ea066701f204db8cfdd73b7c4aa979f5d72fa620c7a3e1",
+    "data/extracts/b57aca04ae0349d6b0a6b43e52f0caa5.json": "7dd4b922deb91c5addd7e905ed3043fc5d89421addd34c2da73e5c0a2bcbdbb0",
+    "data/extracts/b6001f73f5f44be1adf7e3e087920897.json": "869ba1328474326a2831fd0aa9eb4becc7fad80ec1f7b7c880f5e8edc70a3dd7",
+    "data/extracts/ba10b7d7fe1848f79d650b6855b2365d.json": "9a7a5eda43833302897e1b154c435794b945f833e00e43416b3b3b8d22a4d04f",
+    "data/extracts/ba3984c791c84d7e8f234e31a01bf20a.json": "b7ce2f8b12cfd5b796fec367a87a0dce8c8e44bc2871ac1165de0f05e26584b6",
+    "data/extracts/bcb4927c1a4048f7b86d443a52dc4afb.json": "e701c6e1265f546bc1b3344a99853b840c22a9b96e5e87a5c1e3c9c2602fdf03",
+    "data/extracts/c3acb646ea8b45f8847b71dbd50d079e.json": "bf89daf7dc70802698a41efa1675663a6fd3456a97b9e52f3a63f6b7da0f6080",
+    "data/extracts/c443f65cdd2c41f3b7ecf05e567f2d20.json": "08b8ab233380715625085d1fd4f80f3e33062fcfaac6b727fe48a436004b418b",
+    "data/extracts/c491421f633a4c90b7edb06f1f5e988e.json": "78c49497425805a98209435ddf59642b3ccc8ddada51a7ac3857646d3b415bf1",
+    "data/extracts/c7cc147ed59646d2ab826a9b7df57808.json": "85660be90109da06dcc27ffb048d886170cd39ee6892bab515a871fbcc7d9bde",
+    "data/extracts/ca468e743a754ab49772db5f52c8cbe6.json": "9593d0b7c7902e45d6acceb1d38fd0ed50f7ba54ea5920cc48af1bfaff965088",
+    "data/extracts/d611c68cc0a944f79acbb41107edd0f9.json": "a43e4ebe8350db0e39de106373daf874e2c5b2284559d1cf54328b017ca01f14",
+    "data/extracts/daca5461afc1430a9bef9102003bcfd1.json": "a6f02e77266ed027ed917014d1c80d1a62d64439e34956573c10ab173268775a",
+    "data/extracts/e38e5eaacc32474c8fbbc9ba9b720685.json": "b4315a6e5bc9802a00a73db2180c271a9f6e07fe261a944b33941ecfa1c522fb",
+    "data/extracts/ed7fdf2741644f40a6684bb976a780cb.json": "938493555ab9e8f4deb73f5d152ce738461ca5ee38ba309a1233ab22e0a95b21",
+    "data/extracts/f1390063aae94505af5bf4686c5556bc.json": "0f80541f91d8993970bb248aa879db13d8c387747c1eea280b1651df3aea308e",
+    "data/extracts/f4401d8a85574603adc0dec49413ee41.json": "486b38de279e95c7295c5ce80faa7adb25c9e90598cd82b9be1bff4a70495d57",
+    "data/extracts/f8a62528848d45c680dd07ef5bb6bd73.json": "2a53fc3ccd73db96bfff03beb03dd8ec4d88fd4dc6b0cc329859781fd8cb5091"
+  },
+  "input_normalized_sha256": "1374dbbeab4853b9e0b4f596e16bc9578d8fe51f6ba50ff6fa3932e67652e3b7",
+  "limitations": [
+    "A snapshot quotient is total divided by the same snapshot item quantity, not a cross-purchase price comparison.",
+    "Terminated snapshots are not substituted for active contract observations in the analyzer.",
+    "amountPaid is separate reported aggregate evidence; absent payments are unknown.",
+    "Exact arithmetic cannot validate specifications, tax, delivery, payments or human judgments.",
+    "The checker accepts only ungrouped source decimal strings and explicit recognized units."
+  ],
+  "method": "Independent integer-digit Fraction arithmetic on saved source extracts; core and adapter are not imported.",
+  "passed": true,
+  "review_strata": [
+    {
+      "observed_count": 8,
+      "selected_count": 5,
+      "selected_keys": [
+        "1d230a4a811f41ba9dcab4cb5025dae9/single",
+        "23f46b30d73a4968938099a4352c67e7/single",
+        "267f363647dd4effa708852c3c981854/15dd503751264b1e95bd569624f947d6",
+        "417ec3ad006a4040a5ebceb6f9a03b0b/single",
+        "47bab2b64a3e481abfaf8ec52d01142f/single"
+      ],
+      "status": "observed",
+      "stratum": "ordinary_single_item"
+    },
+    {
+      "observed_count": 16,
+      "selected_count": 3,
+      "selected_keys": [
+        "02675fd432654f96afb006daba9dd9ec/single",
+        "4545441b98c34f288668afbf8f069fa0/single",
+        "526a9e37f46847b9941bf1a91e93a86d/single"
+      ],
+      "status": "observed",
+      "stratum": "bundle"
+    },
+    {
+      "observed_count": 0,
+      "selected_count": 0,
+      "selected_keys": [],
+      "status": "absent_in_retained_real_sample",
+      "stratum": "missing_numeric_quantity"
+    },
+    {
+      "observed_count": 26,
+      "selected_count": 6,
+      "selected_keys": [
+        "0802b95a93bf4106b1a4112ab7e70fb0/single",
+        "1ecfaad964ba49559c66b0486f7b2955/single",
+        "209616573c2a4c25974df8c37d223b3c/single",
+        "3000fb304c4e469ca1e90abce1feb6df/single",
+        "307cee5c39304e9594e2643f7e715c5a/single",
+        "ca468e743a754ab49772db5f52c8cbe6/single"
+      ],
+      "status": "observed",
+      "stratum": "unresolved_sheet_quantity"
+    },
+    {
+      "observed_count": 2,
+      "selected_count": 2,
+      "selected_keys": [
+        "526a9e37f46847b9941bf1a91e93a86d/single",
+        "ca468e743a754ab49772db5f52c8cbe6/single"
+      ],
+      "status": "observed",
+      "stratum": "amendment"
+    },
+    {
+      "observed_count": 0,
+      "selected_count": 0,
+      "selected_keys": [],
+      "status": "absent_in_retained_real_sample",
+      "stratum": "cancelled"
+    },
+    {
+      "observed_count": 22,
+      "selected_count": 6,
+      "selected_keys": [
+        "1d230a4a811f41ba9dcab4cb5025dae9/single",
+        "23f46b30d73a4968938099a4352c67e7/single",
+        "267f363647dd4effa708852c3c981854/15dd503751264b1e95bd569624f947d6",
+        "417ec3ad006a4040a5ebceb6f9a03b0b/single",
+        "4545441b98c34f288668afbf8f069fa0/single",
+        "ca468e743a754ab49772db5f52c8cbe6/single"
+      ],
+      "status": "observed",
+      "stratum": "status_mismatch"
+    },
+    {
+      "observed_count": 2,
+      "selected_count": 2,
+      "selected_keys": [
+        "267f363647dd4effa708852c3c981854/15dd503751264b1e95bd569624f947d6",
+        "417ec3ad006a4040a5ebceb6f9a03b0b/single"
+      ],
+      "status": "observed",
+      "stratum": "arithmetic_range_endpoint"
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_arithmetic": [
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "4c30863bafac45b0b424f00c9c448b98",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 18,
+          "items": [
+            {
+              "description": "Біндер 51 мм",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "31fa595af4074ae3808b5eaa71e639fe",
+              "quantity": "24.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Зошит 96 арк",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "a5dc94989009488a829764b44aee3574",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Зошит А4 96 арк",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "30e492decdb9466b96abf9a9cb984cd5",
+              "quantity": "8.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Клей ПВА 200 мл",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "c75839263bfb42c9ae2df860e5033c33",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Коректор",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "3d6fb62ce3024d9a81daaae31b6aa20c",
+              "quantity": "8.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Лінійка 30 см",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "4c84418162364af7a2da8504e5b342a3",
+              "quantity": "6.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Олівець простий",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "f9f3821b198a4b11aff249ac59f26e3d",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папір А4",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "a304d6b680c04047ad0641ea07a1a4e9",
+              "quantity": "5.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Папка А4",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "c7526b1ebb7d4e05bb52875f172fb8de",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка А4 картонна швидкозшивач",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "4fbeb2faa6d94ee79bb48a67285e0e03",
+              "quantity": "40.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка А4 картонна на зав'язку",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "f16bdc48033a4d16aa20551b1b1ac97b",
+              "quantity": "40.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка А4 пластик швидкозшивач",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "03a4fd6043cf4b34acaab9a51a893ab7",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка-сегрегатор А4",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "89d46d5251714b0e81d63f3efca59120",
+              "quantity": "8.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка гель",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "e404b09b913542c191b2aace8a25fdf1",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка масляна",
+              "field_path": "/contract_details/0/contract/items/14",
+              "id": "e5b732b492f9448eaf4049d51ae830dd",
+              "quantity": "24.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Скріпки 28 мм",
+              "field_path": "/contract_details/0/contract/items/15",
+              "id": "b3386d2f4d7b4b76b627c7acda3ab4dd",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Точилка",
+              "field_path": "/contract_details/0/contract/items/16",
+              "id": "c806f7be3b6942b3931cf3f804587369",
+              "quantity": "8.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файл А4 40мкн",
+              "field_path": "/contract_details/0/contract/items/17",
+              "id": "b097af441a8045c9a65e9c210c82f0a0",
+              "quantity": "5.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4c30863bafac45b0b424f00c9c448b98",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "8000.0",
+            "amountNet": "8000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "02675fd432654f96afb006daba9dd9ec/single",
+      "source_file": "data/extracts/02675fd432654f96afb006daba9dd9ec.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "f8e35cb94182436b870665e52f5fce1a",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "169"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний Everywhere Printing Paper А4 80 г/м2",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "88f58e2086b5f3168ff9533bc8ac5c93",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/f8e35cb94182436b870665e52f5fce1a",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3380.0",
+            "amountNet": "3380.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "0802b95a93bf4106b1a4112ab7e70fb0/single",
+      "source_file": "data/extracts/0802b95a93bf4106b1a4112ab7e70fb0.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "81744.0",
+            "amountNet": "68120.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "f20efd55b40f4835b4cf14f20d381be9",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3144"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір для друку E PAPER COPY PAPER A4, 80 г/м², 500 арк., білий",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "0dde091e5d3c4d0598d875fc698e7a7c",
+              "quantity": "650.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "325000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "3125",
+            "numerator": "786"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/f20efd55b40f4835b4cf14f20d381be9",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "81744.0",
+            "amountNet": "68120.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "1d230a4a811f41ba9dcab4cb5025dae9/single",
+      "source_file": "data/extracts/1d230a4a811f41ba9dcab4cb5025dae9.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "4c6dad628a5b4049925a444203786082",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "148"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 April PPLite Клас В",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "73eae32a4efc42049f8bb51dc579235d",
+              "quantity": "160.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4c6dad628a5b4049925a444203786082",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "23680.0",
+            "amountNet": "23680.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "1ecfaad964ba49559c66b0486f7b2955/single",
+      "source_file": "data/extracts/1ecfaad964ba49559c66b0486f7b2955.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "d2ceb8c2a74641ff9c6d92225ce45191",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "190"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "165594186c9cc33247f10e071a16ea33",
+              "quantity": "32.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/d2ceb8c2a74641ff9c6d92225ce45191",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "6080.0",
+            "amountNet": "6080.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "209616573c2a4c25974df8c37d223b3c/single",
+      "source_file": "data/extracts/209616573c2a4c25974df8c37d223b3c.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "19008.0",
+            "amountNet": "15840.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "4cee64220c9a44588e692fcd247a9a94",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3168"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 80 г/м2 500 арк. EVERYDAY COPY",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "0c6bd05c5fa84993bad0ed21ee0c7bec",
+              "quantity": "150.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "75000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "3125",
+            "numerator": "792"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4cee64220c9a44588e692fcd247a9a94",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "19008.0",
+            "amountNet": "15840.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "23f46b30d73a4968938099a4352c67e7/single",
+      "source_file": "data/extracts/23f46b30d73a4968938099a4352c67e7.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "0.0",
+            "amountNet": "0.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "1557cfe57c4349c4b849d7b1d320822e",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "100"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4 80 г/м 500 арк.",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "d4bd9a0e905743b69a441c89a2e09ced",
+              "quantity": "650.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "325000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "5",
+            "numerator": "1"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/1557cfe57c4349c4b849d7b1d320822e",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "65000.0",
+            "amountNet": "65000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "267f363647dd4effa708852c3c981854/15dd503751264b1e95bd569624f947d6",
+      "source_file": "data/extracts/267f363647dd4effa708852c3c981854.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "7fee2306a0b2488aaaf16e4a8219e3ca",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "154"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 80 Ekon Copy клас C",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "0a964276c1f24954868c4f78b9b2694c",
+              "quantity": "25.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/7fee2306a0b2488aaaf16e4a8219e3ca",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3850.0",
+            "amountNet": "3208.33",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "3000fb304c4e469ca1e90abce1feb6df/single",
+      "source_file": "data/extracts/3000fb304c4e469ca1e90abce1feb6df.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "ce952f7d75564a03b8ec03c9874199a6",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "250"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Офісний папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "d3df16f0269c4a7cb1472aae8b1e7b1b",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/ce952f7d75564a03b8ec03c9874199a6",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "1250.0",
+            "amountNet": "1250.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "307cee5c39304e9594e2643f7e715c5a/single",
+      "source_file": "data/extracts/307cee5c39304e9594e2643f7e715c5a.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "1e6382ed317c45e796cb0bf594a8f6bf",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "200"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Товари-канцтовари (папір офісний А-4)",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "32ca2ece2525e0f386caa63355ff2eda",
+              "quantity": "75.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/1e6382ed317c45e796cb0bf594a8f6bf",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "15000.0",
+            "amountNet": "15000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "3d0696b78d394dedae684b104b8ae2c8/single",
+      "source_file": "data/extracts/3d0696b78d394dedae684b104b8ae2c8.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "99840.0",
+            "amountNet": "99840.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "35240f39c6fb4117990e50256daf6eb5",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "260"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4, 500аркушів 80г/м2",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "3292e4b84a874c609ceff38d78d63d57",
+              "quantity": "384.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "192000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "25",
+            "numerator": "13"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/35240f39c6fb4117990e50256daf6eb5",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "99840.0",
+            "amountNet": "99840.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "417ec3ad006a4040a5ebceb6f9a03b0b/single",
+      "source_file": "data/extracts/417ec3ad006a4040a5ebceb6f9a03b0b.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "2000.0",
+            "amountNet": "2000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "343a641011994d318b6dcc29f1f4dda5",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 14,
+          "items": [
+            {
+              "description": "дирокол",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "eeacb8e1a574dfb2ba26acb125f44984",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "папка А4",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "5dc5feb51957134644bbf5762caaa33d",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "файл",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "b578720d14bdf9828be60f489d93aa20",
+              "quantity": "1.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "картон",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "f8469814176ba4edad8d43ff60526d42",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "папка картонна",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "6e9df52a76feecbe66dc8a628e029089",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "цвяшки",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "1c34eb5feedcfd3805b22ba8605a737d",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "скрепка",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "5cc349dd5ca77e73772d67fe7524fcff",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "кнопка",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "d066e00c0ce526185fc7017e127adc8b",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "папка для файлів",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "8ee753d116d839bdbedd00ef45309537",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "набір кольорових олівців",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "e3c6e5a4c9853c4e5027d237f5f868ad",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "олівець",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "29a6e4bfd7fc8133d4e92df900511b7e",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "папір А4",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "e4740ae32d661fef84fac2d2ed9537a2",
+              "quantity": "3.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "картон А3",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "762ed0a4cbc77ae5ff27aa883ee688ad",
+              "quantity": "16.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "фотопапір 10*15",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "73adb211e8b1667e70db35591e2d3cdd",
+              "quantity": "100.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/343a641011994d318b6dcc29f1f4dda5",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "2000.0",
+            "amountNet": "2000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "4545441b98c34f288668afbf8f069fa0/single",
+      "source_file": "data/extracts/4545441b98c34f288668afbf8f069fa0.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "344cf1d050944677ad03edf43e5a7214",
+          "declared_unit_quotient": {
+            "denominator": "5",
+            "numerator": "669"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір для друку PP LITE COPY PAPER A4, 80 г/м², 500 арк., білий. ",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "1f0bdbce2aa442a3b2d467d56b2f0acb",
+              "quantity": "25.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "12500"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "2500",
+            "numerator": "669"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/344cf1d050944677ad03edf43e5a7214",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3345.0",
+            "amountNet": "2787.5",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "47bab2b64a3e481abfaf8ec52d01142f/single",
+      "source_file": "data/extracts/47bab2b64a3e481abfaf8ec52d01142f.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [
+            {
+              "date": "2025-03-28T10:34:17.952000+02:00",
+              "dateSigned": "2025-03-26T00:00:00+02:00",
+              "id": "08a88b9d9a3c491a8e3a3a3d7073b592",
+              "rationaleTypes": [
+                "qualityImprovement"
+              ],
+              "status": "active"
+            }
+          ],
+          "changes_count": 1,
+          "contract_id": "51d3d6245bf54624a803f08c986a25a4",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 10,
+          "items": [
+            {
+              "description": "папір ксероксний А-4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "d808fdbd76a346f8411570fa7050840c",
+              "quantity": "40.0",
+              "unit": {
+                "code": "PK"
+              }
+            },
+            {
+              "description": "Папки на зав'язках картонні",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "b3913250b1151ae2df305c878078cd33",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87"
+              }
+            },
+            {
+              "description": "Швидкозшивачі картонні",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "c946be559cfdfbf6810157d36363a0fb",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87"
+              }
+            },
+            {
+              "description": "швидкозшивачі слюдові",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "ee1d987b4bf7f81f5e58b322f1999e69",
+              "quantity": "30.0",
+              "unit": {
+                "code": "H87"
+              }
+            },
+            {
+              "description": "Ручка кулькова",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "150c9f5f5d23af4428bd471acbaceb1f",
+              "quantity": "50.0",
+              "unit": {
+                "code": "H87"
+              }
+            },
+            {
+              "description": "книга канцелярська",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "4aacec0cd4b3f3d5dfb617ad016f4190",
+              "quantity": "9.0",
+              "unit": {
+                "code": "H87"
+              }
+            },
+            {
+              "description": "скоби великі",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "7ad066bd8c8b9ed7a1bad6ab2824b7ae",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK"
+              }
+            },
+            {
+              "description": "скоби малі",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "7834aee250b9e86ed1e32085268a561a",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK"
+              }
+            },
+            {
+              "description": "скріпки",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "703e49faee0eedf9bc99407b91e2d125",
+              "quantity": "6.0",
+              "unit": {
+                "code": "PK"
+              }
+            },
+            {
+              "description": "олівці прості",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "0927a9370848f5cc20f1a18504557364",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/51d3d6245bf54624a803f08c986a25a4",
+          "stage": "amended_contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "10000.0",
+            "amountNet": "10000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "526a9e37f46847b9941bf1a91e93a86d/single",
+      "source_file": "data/extracts/526a9e37f46847b9941bf1a91e93a86d.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "7800.0",
+            "amountNet": "6500.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "3823c668d47343f992d85081edb50c28",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "156"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (Папір А4)",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "a3d6150bc8bc4def8ce799a10afca933",
+              "quantity": "50.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/3823c668d47343f992d85081edb50c28",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "7800.0",
+            "amountNet": "6500.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "538ed4eb3fd54d0ca3f5764d63694047/single",
+      "source_file": "data/extracts/538ed4eb3fd54d0ca3f5764d63694047.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "344.0",
+            "amountNet": "344.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "41622b2fbf534fae8343380addc3d264",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "172"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "ПАПІР ОФІСНИЙ А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "0879aef35509325c4d52c93f7c4cb596",
+              "quantity": "2.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/41622b2fbf534fae8343380addc3d264",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "344.0",
+            "amountNet": "344.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "554dc7b670964c4792c919b139c0db2a/single",
+      "source_file": "data/extracts/554dc7b670964c4792c919b139c0db2a.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "4efd191b817340e5a0740a72cd374f34",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "200"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "7b057860d8874a3abcfd27031a069ffc",
+              "quantity": "17.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4efd191b817340e5a0740a72cd374f34",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3400.0",
+            "amountNet": "3400.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "60ba4eb3b5674441b1d0abbe9a9c5309/single",
+      "source_file": "data/extracts/60ba4eb3b5674441b1d0abbe9a9c5309.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "707a2d7ddf22445088791474b577418c",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 2,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "f4ff33012372429f9a6965bf9d796c40",
+              "quantity": "580.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "a33c375eb35e4fcbac4d8a48fb8093d0",
+              "quantity": "20.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/707a2d7ddf22445088791474b577418c",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "103082.4",
+            "amountNet": "85902.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "625d8d9e637e445993c8d5a1747440ef/1bfd5eb0df9c44c2b83cd92b33ab572b",
+      "source_file": "data/extracts/625d8d9e637e445993c8d5a1747440ef.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "240304.32",
+            "amountNet": "200253.6",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "44949ae3b4444a6d8f13c70ce0a4aa97",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3048"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "91c997be352c4a3e82b6f616b643d555",
+              "quantity": "1971.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/44949ae3b4444a6d8f13c70ce0a4aa97",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "240304.32",
+            "amountNet": "200253.6",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "64dc8610e9ad465c95e7c1830546b4d7/678999c06c0447fcbac06977a1549683",
+      "source_file": "data/extracts/64dc8610e9ad465c95e7c1830546b4d7.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "a16c75cd6ab843d5ba1fd80570ec908e",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 2,
+          "items": [
+            {
+              "description": "Папір офісний А4 Mastеr 500 арк. 80 г/м2 (37823800-1)",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "b7782507d7664b6aa599d11c4faa0397",
+              "quantity": "29.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка на зав'язках (37823800-1)",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "1455f005a3294303b432b6320814a969",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/a16c75cd6ab843d5ba1fd80570ec908e",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "4456.0",
+            "amountNet": "4456.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "6a93f7f8a8c54b7f8fd31f5ce975f78d/single",
+      "source_file": "data/extracts/6a93f7f8a8c54b7f8fd31f5ce975f78d.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "2610.0",
+            "amountNet": "2175.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "9a19eb78e4a24d078efb5975bf2b08af",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "174"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір 80г/м2 формат А4 UPM Copy Paper",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "69a4d63f799b4701bc50ec2eedc5c5e2",
+              "quantity": "15.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/9a19eb78e4a24d078efb5975bf2b08af",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "2610.0",
+            "amountNet": "2175.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "6e09cb560e3d4f248544e22bb5b5c897/single",
+      "source_file": "data/extracts/6e09cb560e3d4f248544e22bb5b5c897.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "b35af87c9d124c9cb3c60d45989f1d05",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 4,
+          "items": [
+            {
+              "description": "(Папір А4 )\n",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "126eb81ca3c84b48a89f77bc7c100bbd",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "(ручка кулькова )\n",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "733b68f8a6c447ea856863feba94af86",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "(ручка кулькова )\n",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "488e5732b8fc4131b40b70810820c424",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "(ручка кулькова )\n",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "7d3a9b8da7fb411d85f105bfbf5bcb70",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/b35af87c9d124c9cb3c60d45989f1d05",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "2400.0",
+            "amountNet": "2400.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "6e3697e60622475481ac0764d3807040/single",
+      "source_file": "data/extracts/6e3697e60622475481ac0764d3807040.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "1a4054580ec843829aa4674eadb8d5f3",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "200"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А 4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "ae89421cdd7941db8c7497313cdb3981",
+              "quantity": "15.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/1a4054580ec843829aa4674eadb8d5f3",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3000.0",
+            "amountNet": "3000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "70e6ea6627724823857e54f9c3d53e82/single",
+      "source_file": "data/extracts/70e6ea6627724823857e54f9c3d53e82.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "07143592eb35430ea36480b8eafe90c7",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "198"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "2588a4608e9d43f2b8fcd8658d911c78",
+              "quantity": "200.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/07143592eb35430ea36480b8eafe90c7",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "39600.0",
+            "amountNet": "33000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "796dcd768cb6476da3df67ddbab17846/single",
+      "source_file": "data/extracts/796dcd768cb6476da3df67ddbab17846.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "3718.0",
+            "amountNet": "3718.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "acce5b3fb0464a658040a36bd6fa561b",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 14,
+          "items": [
+            {
+              "description": "Лоток гормз. мет.",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "dec870d6c33d4def8007cbac88263c27",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папір ксероксний А4",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "e7af5a14ed8b46409523ef8bb624cb66",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Коректор",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "b49bc741f1674e8dad4df0e23f12d5b5",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Маркер",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "959e5628c6444f00a261dd3f4c16a01f",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка на файли",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "bf1340af22614d978116d36da79beb6b",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файли",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "b079d5b66fe0491daa96b77ed2559c96",
+              "quantity": "1.0",
+              "unit": {
+                "code": "PA",
+                "name": "пакунок"
+              }
+            },
+            {
+              "description": "Ручка чкрвона",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "5f32986385794550870b65118bfc910b",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Степлер",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "0e5839f944a64b46b00a65e331989332",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ножниці",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "6017892069fe4367ae7f55d5dab17013",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Олівці",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "551396651f5a44e884df822b8bfd9ec9",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Гумка",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "e1e43ebd5f9445ec9077160ebc8be820",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Скітери",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "c60ff71c74874d69beb8341a14b369ce",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "ac7c943264b74328b987da3079f58ba8",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Текстовид.",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "b2f0db8b0cc44a36ade7be2812e06b25",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/acce5b3fb0464a658040a36bd6fa561b",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "3718.0",
+            "amountNet": "3718.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "7a5cc1a5bdce481c83a6fb19138feebf/single",
+      "source_file": "data/extracts/7a5cc1a5bdce481c83a6fb19138feebf.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "9b1596e0bf5d4838a74964d798452699",
+          "declared_unit_quotient": {
+            "denominator": "12",
+            "numerator": "2537"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір а4 Maestro 500 шт 80 гр, ",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "6ebf7da219d9442faddc152d1c915445",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/9b1596e0bf5d4838a74964d798452699",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "2537.0",
+            "amountNet": "2537.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "7a670df13e1447d19a2411f21787d5d2/single",
+      "source_file": "data/extracts/7a670df13e1447d19a2411f21787d5d2.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "63450.0",
+            "amountNet": "52875.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "721b696e8f8744479d919a8a1866599d",
+          "declared_unit_quotient": {
+            "denominator": "10",
+            "numerator": "1269"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір для друку UNIVERSAL COPY PAPER A4, 80 г/м², 500 арк., білий.",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "e4e9128fe3ba403bab23d6e70b0ab264",
+              "quantity": "500.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "250000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "5000",
+            "numerator": "1269"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/721b696e8f8744479d919a8a1866599d",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "63450.0",
+            "amountNet": "52875.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "7aa7329eb9ed4006af81a5157d5ecc75/single",
+      "source_file": "data/extracts/7aa7329eb9ed4006af81a5157d5ecc75.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "76d498542d0345f8a27d769ceaa6af3d",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 5,
+          "items": [
+            {
+              "description": "Офісний папір А4 Maestro Premium+ 500 листів.",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "27b7877d303b2e7f9c0cd19a385c9f0c",
+              "quantity": "100.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка швидкозшивач картонний",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "67c85082c9d856b893db1810039df5e8",
+              "quantity": "50.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка на зав’язках",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "b73af2e1e5d426e5e46a2daa81d76519",
+              "quantity": "50.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файл для документів, фактура \"глянець\" (100 шт / уп)",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "f837970c1da6a6fed934d017a5e3c481",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PA",
+                "name": "пакунок"
+              }
+            },
+            {
+              "description": "Книга обліку А4, 200 л., тв. палітурка",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "c1bc24611b00f3aa9128f9c933b2b022",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/76d498542d0345f8a27d769ceaa6af3d",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "24500.0",
+            "amountNet": "24500.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "7cdb8d17fd70423eb0a403d6eec06bf7/single",
+      "source_file": "data/extracts/7cdb8d17fd70423eb0a403d6eec06bf7.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "4693.92",
+            "amountNet": "3911.6",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "d0d650ba8a2a4993a8aaf70638d6c1e3",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 8,
+          "items": [
+            {
+              "description": "Папір А4/80 (500 арк.) MaestroStandart+",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "ad06039401e41dc02fc381029fb1154a",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файл Buromax A4 50мк. глянцевий",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "d2608fae2ecab23ae1729264b66b51e6",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папір з липким шаром Buromax асорті 100арк. 76*76мм",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "2c57f7b839735e620b406679c51b9446",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Коректор з пензликом BuroMax 20мм",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "6308466cf22badd41df5a1fa28d754e0",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Олівці чорнографітні НВ 4Office4-111 з гумкою",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "0619d58e5cce39d13e6c271e68150fb4",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка масляна Optima чорна OIL PRO 0,5 мм",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "d3038a44eb83ba065a651bcd492e6a46",
+              "quantity": "24.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка карт. на зав’язку R44090",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "63deb3b38177a60c6daf0de114939d47",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Швидкозшивач А4 з перф. Economix синій",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "4612b37ab5361b69351b9193e043fdec",
+              "quantity": "38.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/d0d650ba8a2a4993a8aaf70638d6c1e3",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "4693.92",
+            "amountNet": "3911.6",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "864de600a385479f8d215b70da9d91fd/single",
+      "source_file": "data/extracts/864de600a385479f8d215b70da9d91fd.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "112957.2",
+            "amountNet": "94131.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "10552643d3144e70a4386296e3276393",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 2,
+          "items": [
+            {
+              "description": "Папір для друку BUROMAX (BM.27261500) А4, 45 г/м², 500 арк., сірий",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "accd802125144dde8e8e890f6aad7015",
+              "quantity": "20.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Папір А4 80 г/м2 500 арк. EVERYDAY COPY",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "08f9d057ae524c25be13437e5b92d0e0",
+              "quantity": "900.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/10552643d3144e70a4386296e3276393",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "112957.2",
+            "amountNet": "94131.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "b1cbf3ae645944cb8b9e115b55a86f74/single",
+      "source_file": "data/extracts/b1cbf3ae645944cb8b9e115b55a86f74.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "35a2c19b75fc40eeaf5ef58a5d2c75e5",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "175"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "86d60b92e838466291208001db43c491",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/35a2c19b75fc40eeaf5ef58a5d2c75e5",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "1750.0",
+            "amountNet": "1750.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "b1e44ce7cd5d4acf8e58bc0ec8cb8ba6/single",
+      "source_file": "data/extracts/b1e44ce7cd5d4acf8e58bc0ec8cb8ba6.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "78f167fce2fb492bb27f7a659f35e7ed",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 14,
+          "items": [
+            {
+              "description": "Папір ксероксний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "c1faaa5de5dcceba6e24a4d3521dc5ed",
+              "quantity": "15.0",
+              "unit": {
+                "code": "PA",
+                "name": "пакунок"
+              }
+            },
+            {
+              "description": "Ламінувальна плівка А4",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "0d0d2c6a9f1f13ee89a1dd9fdea78a03",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Фотопапір,глян. А4",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "581efb46ba96d53f9d6170ad993e76e1",
+              "quantity": "100.0",
+              "unit": {
+                "code": "PA",
+                "name": "пакунок"
+              }
+            },
+            {
+              "description": "Ручка кулькова",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "3fd8919f7de9aa34df0d105c97532e94",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка на планці",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "35744054f3f6e4293145c5d6f6018ee3",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка на планці",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "0773b94adec240aef46e2729b7b010ec",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Подорожній лист легкового автомобіля",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "87d5daec0bed5fae6587fb53572a6c3b",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Мереживий фільтр  4,5м",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "dcba93f3dbac0ddc38228351e4294382",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папка кнопка",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "02e1a1209b0120ed62d65702c02e9ed8",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Лоток горизонтальний",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "f07a22286ba85847965a3347f4c31847",
+              "quantity": "6.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Маркер",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "659bd7ce6f359acc18ad7d80fa787ec5",
+              "quantity": "6.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Цвяшки",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "ce8f82eb9fb64655863686a7d61322f3",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Мереживий фільтр  3000W",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "5ed33e1dec24e1b07fe6aa6e7bea9a77",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Кабель аудіо 1,5м",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "86b822bc52bebc50a0b60651fa92990b",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/78f167fce2fb492bb27f7a659f35e7ed",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "8114.0",
+            "amountNet": "8114.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "b25d73dac4d24bf39f92d2297288cc86/single",
+      "source_file": "data/extracts/b25d73dac4d24bf39f92d2297288cc86.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "137598.0",
+            "amountNet": "114665.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "e88a1887b8b441ffb294f9cade267999",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3621"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "efd75d6a2d454e128c80b78b5c90a9c4",
+              "quantity": "950.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/e88a1887b8b441ffb294f9cade267999",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "137598.0",
+            "amountNet": "114665.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "b368d3ae49914fe9abd0c7fd08b6bd63/5ee8af3b36c1469084feaee48257cfd7",
+      "source_file": "data/extracts/b368d3ae49914fe9abd0c7fd08b6bd63.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "e8636346008f42639cfd73e811a346bb",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 14,
+          "items": [
+            {
+              "description": "Папір А4 500арк.",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "2e4fecaf8b24ab42013fdbda797202d3",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Папір А3",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "8e109f3e3ddcb8de190e0deb2962858e",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файли",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "d3159f733b97a59d3c6c9561ab45df34",
+              "quantity": "3.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Скріпки",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "a127b5e984a4520f498ccc331a2eb735",
+              "quantity": "2.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Клей ПВА",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "99a5f9b8f4f719f51ccedb5341b7da09",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Олівці",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "d22ea7238f1a6286747f272d94981145",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Гумки",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "2aea65cffc2a2e2fbe78e14047fc48a4",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручки",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "6d4f78ec0057fbcfedd047a0f4d450e0",
+              "quantity": "10.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Кнопки",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "0cd372de048ea28bc4f8f4b3dd4ed047",
+              "quantity": "3.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Календар",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "53b17032e95dbe9d230b66dc906499ab",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Наклейки на клавіатуру",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "866bd76981de649058c17ffb24eaafcb",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Коректор",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "7bb1eccffe090db0ead69699631a0f95",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Стругалки",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "afb534795262ccb02a04060731ab2010",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Стругалки",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "24df33081c41dc3d0a309e88a4eefbaf",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/e8636346008f42639cfd73e811a346bb",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3290.0",
+            "amountNet": "3290.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "b57aca04ae0349d6b0a6b43e52f0caa5/single",
+      "source_file": "data/extracts/b57aca04ae0349d6b0a6b43e52f0caa5.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "92941d3c8b514063876f976302bec910",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 3,
+          "items": [
+            {
+              "description": "Блок паперовий для заміток ВМ 90*90",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "70fb3ac1513d98c484c87dbb1d93b9bb",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папір 80г/м2 А4/500",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "c446b5861f025f99196491339e23c80b",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Книга пустографок оф тв.",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "b79b21a811142d9781abacda111ed48e",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/92941d3c8b514063876f976302bec910",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "2570.0",
+            "amountNet": "2570.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "b6001f73f5f44be1adf7e3e087920897/single",
+      "source_file": "data/extracts/b6001f73f5f44be1adf7e3e087920897.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "65c61df00e8942ea9f61c2e955a54431",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 17,
+          "items": [
+            {
+              "description": "Папка швидкосшивач пластикова а4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "255ae4a5405e455281455ad5a720c57d",
+              "quantity": "60.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файл для документыв а4 + 30мк глянець (100шт/уп)",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "f09566d80e9d41cebed2480db632e452",
+              "quantity": "4.0",
+              "unit": {
+                "code": "NMP",
+                "name": "паковання"
+              }
+            },
+            {
+              "description": "Текст-маркер флуор",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "5d63b858a2e44762bd1b79437a8c2ab4",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Маркер водостійкий, чорний",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "45cbe66a22a745519e9c225dba289ecd",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Маркер водостійкий кольоровий",
+              "field_path": "/contract_details/0/contract/items/4",
+              "id": "ba93fb614076496caa155fbbcefccb39",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Щоденник недатований а5",
+              "field_path": "/contract_details/0/contract/items/5",
+              "id": "753d296b5fee422aa7283efcf11ed33c",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Записна книжка а5 96арк. пружина",
+              "field_path": "/contract_details/0/contract/items/6",
+              "id": "e1cee00834204cf1978851b0d05c5f1e",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Книга канцелярська а4 96арк. на пружині",
+              "field_path": "/contract_details/0/contract/items/7",
+              "id": "79a9c6be2ce943e495dbd31d55c2b2eb",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка кулькова",
+              "field_path": "/contract_details/0/contract/items/8",
+              "id": "ac20ab5f65ba4cfcacd5082b205e20ed",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Папір а4 80г/м2 ксероксний (500а)",
+              "field_path": "/contract_details/0/contract/items/9",
+              "id": "0052bbb88c63468f86f82102ea195ffc",
+              "quantity": "5.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Олівець чорнографітовий НВ",
+              "field_path": "/contract_details/0/contract/items/10",
+              "id": "1bb0d5d4d5164f01ae18c3a823dadc8c",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Скоби №10 (1000шт.)",
+              "field_path": "/contract_details/0/contract/items/11",
+              "id": "4dbc6a2cfe1f466eb19e6c593dfff98e",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Скоби №24 (1000шт.)",
+              "field_path": "/contract_details/0/contract/items/12",
+              "id": "1554c37d5f6a4623b11cd479055f5eaf",
+              "quantity": "3.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Органайзер наст. \"Вертушка середня\"",
+              "field_path": "/contract_details/0/contract/items/13",
+              "id": "2d946a7b9b174da2953242366dc41193",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Кліпборд-папка а4",
+              "field_path": "/contract_details/0/contract/items/14",
+              "id": "0cfa28f7e7de4621aa65b16025626f9f",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Скотч пакувальний 45*100м",
+              "field_path": "/contract_details/0/contract/items/15",
+              "id": "5fca91b6eaa84cc5ae5177c8ff00eb9e",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Степлер пластиковий до 12арк.",
+              "field_path": "/contract_details/0/contract/items/16",
+              "id": "dff641acfcaf436e9385f81f8575388d",
+              "quantity": "1.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/65c61df00e8942ea9f61c2e955a54431",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "3958.2",
+            "amountNet": "3298.5",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "ba10b7d7fe1848f79d650b6855b2365d/single",
+      "source_file": "data/extracts/ba10b7d7fe1848f79d650b6855b2365d.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "64890.0",
+            "amountNet": "64890.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "c7bd96e0861343beb648c3f146b0d07d",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "126"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний Office Economy Cut-Size Copy&Print  NAVIGATOR",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "38fda61c39554ca3affd534b5727fc2a",
+              "quantity": "515.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/c7bd96e0861343beb648c3f146b0d07d",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "64890.0",
+            "amountNet": "64890.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "ba3984c791c84d7e8f234e31a01bf20a/single",
+      "source_file": "data/extracts/ba3984c791c84d7e8f234e31a01bf20a.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "1ac674029f20415bbdb64f36f2b2f0a3",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "200"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "7eef7c817ee04d6b9ad95d29bc094445",
+              "quantity": "20.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/1ac674029f20415bbdb64f36f2b2f0a3",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "4000.0",
+            "amountNet": "3333.33",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "bcb4927c1a4048f7b86d443a52dc4afb/single",
+      "source_file": "data/extracts/bcb4927c1a4048f7b86d443a52dc4afb.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "348705.0",
+            "amountNet": "348705.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "ac5155e331184c898efbe8dc92bb9360",
+          "declared_unit_quotient": {
+            "denominator": "50",
+            "numerator": "9963"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір для друку NIVEUS SUPERIOR A4, 80  г/м², 500  арк., білий",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "17cdc66963a5445ea59ba917769500cf",
+              "quantity": "1750.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "875000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "25000",
+            "numerator": "9963"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/ac5155e331184c898efbe8dc92bb9360",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "348705.0",
+            "amountNet": "348705.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "c3acb646ea8b45f8847b71dbd50d079e/single",
+      "source_file": "data/extracts/c3acb646ea8b45f8847b71dbd50d079e.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "2b001dace192446790c385b989193b22",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "5199"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 APHRODITE 80 бирюзовая (80г/м2,500л.,Белизна СIE 165%,Китай,фабрика APP)",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "81fca85c35cf4e2fad486a7e61c2c57d",
+              "quantity": "300.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/2b001dace192446790c385b989193b22",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "62388.0",
+            "amountNet": "51990.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "c443f65cdd2c41f3b7ecf05e567f2d20/single",
+      "source_file": "data/extracts/c443f65cdd2c41f3b7ecf05e567f2d20.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "54918.0",
+            "amountNet": "45765.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "becbab141d6a4447b8a4b7b592c5632f",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3051"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "7608d75797f87592cd27e313efe244c1",
+              "quantity": "450.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/becbab141d6a4447b8a4b7b592c5632f",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "54918.0",
+            "amountNet": "45765.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "c491421f633a4c90b7edb06f1f5e988e/e5072886e8c86feece30f0670c0dffb6",
+      "source_file": "data/extracts/c491421f633a4c90b7edb06f1f5e988e.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "4571.0",
+            "amountNet": "4571.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "fc72e1d9624d41a68e1d4b41718b0208",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 4,
+          "items": [
+            {
+              "description": "Папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "cfc3dd215b34e6d51311c46d4e5e7262",
+              "quantity": "25.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "РК ручка синя",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "1036131955dfaf0e5839360d7800487e",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Файл А4",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "76adacf65e242faf8418ce51fa7be5d4",
+              "quantity": "1.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Швидкозшивач картонний",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "df3fe7d63175146602a26dff0dc6d2d5",
+              "quantity": "50.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/fc72e1d9624d41a68e1d4b41718b0208",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "4571.0",
+            "amountNet": "4571.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "c7cc147ed59646d2ab826a9b7df57808/single",
+      "source_file": "data/extracts/c7cc147ed59646d2ab826a9b7df57808.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "149989.8",
+            "amountNet": "124991.5",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [
+            {
+              "date": "2025-03-24T14:31:15.386000+02:00",
+              "dateSigned": "2025-03-21T00:00:00+02:00",
+              "id": "25a73b8c44ee4856b99f05fd6aed8c2e",
+              "rationaleTypes": [
+                "qualityImprovement"
+              ],
+              "status": "active"
+            }
+          ],
+          "changes_count": 1,
+          "contract_id": "266f2a78a5354304b9cca8d81b0046b5",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3363"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір ксероксний A4 IQ ULTRA",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "65332b473d4e5a2bb837858cc7fb9cb3",
+              "quantity": "1115.0",
+              "unit": {
+                "code": "PK"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/266f2a78a5354304b9cca8d81b0046b5",
+          "stage": "amended_contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "149989.8",
+            "amountNet": "124991.5",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "ca468e743a754ab49772db5f52c8cbe6/single",
+      "source_file": "data/extracts/ca468e743a754ab49772db5f52c8cbe6.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_issue": "No allocation of a contract total across multiple or absent item lines.",
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "f7be6cc3afc64208bb2cfb5e2ac83e25",
+          "declared_unit_quotient": null,
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 4,
+          "items": [
+            {
+              "description": "Папір /А4/80_500",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "e41748e161c84815a4a8751722898c69",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            },
+            {
+              "description": "Ручка /масляна_синя",
+              "field_path": "/contract_details/0/contract/items/1",
+              "id": "8efe1dc83a5741b7a759b5955931148c",
+              "quantity": "12.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Ручка /масляна_чорна",
+              "field_path": "/contract_details/0/contract/items/2",
+              "id": "c29662d9c92c44319cab26a64f0d5aa7",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            },
+            {
+              "description": "Коректор/стрічка",
+              "field_path": "/contract_details/0/contract/items/3",
+              "id": "5a756605afa5489f883e8b3681552503",
+              "quantity": "4.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/f7be6cc3afc64208bb2cfb5e2ac83e25",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "1876.92",
+            "amountNet": "1564.1",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "d611c68cc0a944f79acbb41107edd0f9/single",
+      "source_file": "data/extracts/d611c68cc0a944f79acbb41107edd0f9.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "3880.0",
+            "amountNet": "3880.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "59140f141b544c23ba46b1532cb55980",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "194"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 \"Navigator\"",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "b75565c5197151c0f11612724339c76c",
+              "quantity": "20.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/59140f141b544c23ba46b1532cb55980",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "3880.0",
+            "amountNet": "3880.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "daca5461afc1430a9bef9102003bcfd1/single",
+      "source_file": "data/extracts/daca5461afc1430a9bef9102003bcfd1.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "bcdaed93211249eb945b8cd27f239cf8",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "202"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір -А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "0fd3bf41bfbf48e2ada5bca28883e3d8",
+              "quantity": "5.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/bcdaed93211249eb945b8cd27f239cf8",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "1010.0",
+            "amountNet": "1010.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "e38e5eaacc32474c8fbbc9ba9b720685/single",
+      "source_file": "data/extracts/e38e5eaacc32474c8fbbc9ba9b720685.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "e89a84d7c91940d2948fac6fe5ed4560",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "250"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "12709109a52047309628c073d1f23b23",
+              "quantity": "2.0",
+              "unit": {
+                "code": "H87",
+                "name": "штука"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "Declared unit does not establish sheets or a reviewed pack.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/e89a84d7c91940d2948fac6fe5ed4560",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "500.0",
+            "amountNet": "500.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "ed7fdf2741644f40a6684bb976a780cb/single",
+      "source_file": "data/extracts/ed7fdf2741644f40a6684bb976a780cb.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "35913.6",
+            "amountNet": "29928.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "5dae052528604a7f9364f13225ab1688",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3096"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4 80 г/м2 500 арк. EVERYDAY COPY",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "49bfe9776c1b4df293661a38641273af",
+              "quantity": "290.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": {
+            "denominator": "1",
+            "numerator": "145000"
+          },
+          "sheet_conversion_note": "PK/name agree and the description explicitly states 500 sheets.",
+          "sheet_quotient": {
+            "denominator": "3125",
+            "numerator": "774"
+          },
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/5dae052528604a7f9364f13225ab1688",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "35913.6",
+            "amountNet": "29928.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "f1390063aae94505af5bf4686c5556bc/single",
+      "source_file": "data/extracts/f1390063aae94505af5bf4686c5556bc.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": null,
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "0e4756e61df34daa92470b0aa2a86b74",
+          "declared_unit_quotient": {
+            "denominator": "1",
+            "numerator": "200"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "e19f9a57cb9515a6c6c225e02919a452",
+              "quantity": "10.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/0e4756e61df34daa92470b0aa2a86b74",
+          "stage": "contract_snapshot",
+          "status": "active",
+          "status_mismatch": false,
+          "value": {
+            "amount": "2000.0",
+            "amountNet": "2000.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "key": "f4401d8a85574603adc0dec49413ee41/single",
+      "source_file": "data/extracts/f4401d8a85574603adc0dec49413ee41.json"
+    },
+    {
+      "contracts": [
+        {
+          "amount_paid_interpretation": "Reported aggregate only; not a reconciled cash transaction.",
+          "amount_paid_observed": {
+            "amount": "137257.2",
+            "amountNet": "114381.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "arithmetic_evidence": [
+            "/contract_details/0/contract/value/amount",
+            "/contract_details/0/contract/items/0/quantity",
+            "/contract_details/0/contract/items/0/unit",
+            "/contract_details/0/contract/items/0/description"
+          ],
+          "arithmetic_issue": null,
+          "changes": [],
+          "changes_count": 0,
+          "contract_id": "ac21affa02e3484f9dd82b50cf78acda",
+          "declared_unit_quotient": {
+            "denominator": "25",
+            "numerator": "3222"
+          },
+          "eligible_for_purchase_comparison": false,
+          "embedded_status_evidence": {
+            "field_path": "/tender/contracts/0/status",
+            "status": "active"
+          },
+          "field_path": "/contract_details/0/contract",
+          "item_count": 1,
+          "items": [
+            {
+              "description": "Папір офісний А4",
+              "field_path": "/contract_details/0/contract/items/0",
+              "id": "2b0491b122bc0f66e8c4a0434cc12a85",
+              "quantity": "1065.0",
+              "unit": {
+                "code": "PK",
+                "name": "пачка"
+              }
+            }
+          ],
+          "quantity_sheets": null,
+          "sheet_conversion_note": "PK is explicit, but an unambiguous sheet count is absent.",
+          "sheet_quotient": null,
+          "source_url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/ac21affa02e3484f9dd82b50cf78acda",
+          "stage": "contract_snapshot",
+          "status": "terminated",
+          "status_mismatch": true,
+          "value": {
+            "amount": "137257.2",
+            "amountNet": "114381.0",
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          }
+        }
+      ],
+      "key": "f8a62528848d45c680dd07ef5bb6bd73/410aa4d33f821b03454b00e7d63d99f7",
+      "source_file": "data/extracts/f8a62528848d45c680dd07ef5bb6bd73.json"
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "browser": "151.0.7922.34",
+  "scenarios": 10,
+  "checkpoints": 53,
+  "renderedChecks": 1749,
+  "passed": true,
+  "mutations": [
+    {
+      "name": "wrong ownership",
+      "variant": "chronological",
+      "detected": true,
+      "failedFacts": [
+        "owner"
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "chronological",
+      "detected": true,
+      "failedFacts": [
+        "alarmGroups"
+      ]
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "grouped",
+      "detected": true,
+      "failedFacts": [
+        "owner"
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "grouped",
+      "detected": true,
+      "failedFacts": [
+        "alarmGroups"
+      ]
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "handover",
+      "detected": true,
+      "failedFacts": [
+        "owner"
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "handover",
+      "detected": true,
+      "failedFacts": [
+        "alarmGroups"
+      ]
+    },
+    {
+      "name": "stale owner displayed current",
+      "detected": true
+    }
+  ],
+  "keyboard": [
+    {
+      "variant": "chronological",
+      "scenario": "interrupted",
+      "at": 5,
+      "taskFacts": [
+        "owner",
+        "nextActor",
+        "principal",
+        "lastReliable"
+      ],
+      "hiddenBefore": [
+        "nextActor",
+        "principal",
+        "lastReliable"
+      ],
+      "disclosureActivations": 1,
+      "tabsToDisclosure": 8,
+      "passed": true,
+      "focus": {
+        "id": "chronological-evidence-toggle",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "variant": "grouped",
+      "scenario": "interrupted",
+      "at": 5,
+      "taskFacts": [
+        "owner",
+        "nextActor",
+        "principal",
+        "lastReliable"
+      ],
+      "hiddenBefore": [
+        "nextActor"
+      ],
+      "disclosureActivations": 1,
+      "tabsToDisclosure": 8,
+      "passed": true,
+      "focus": {
+        "id": "grouped-evidence-toggle",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "variant": "handover",
+      "scenario": "interrupted",
+      "at": 5,
+      "taskFacts": [
+        "owner",
+        "nextActor",
+        "principal",
+        "lastReliable"
+      ],
+      "hiddenBefore": [],
+      "disclosureActivations": 0,
+      "tabsToDisclosure": 0,
+      "passed": true,
+      "focus": {
+        "id": "variant",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "kind": "scenario",
+      "file": "interrupted-scenario.json",
+      "bytes": 1976,
+      "payloadVerified": true
+    },
+    {
+      "kind": "state",
+      "file": "interrupted-state-t5.json",
+      "bytes": 3850,
+      "payloadVerified": true
+    },
+    {
+      "kind": "trace",
+      "file": "interrupted-trace-t5.json",
+      "bytes": 1556,
+      "payloadVerified": true
+    },
+    {
+      "kind": "matrix",
+      "file": "correctness-matrix.csv",
+      "bytes": 173472,
+      "payloadVerified": true
+    }
+  ],
+  "controls": [
+    {
+      "id": "scenario",
+      "name": "Incident script",
+      "tabindex": 0
+    },
+    {
+      "id": "variant",
+      "name": "Interface design",
+      "tabindex": 0
+    },
+    {
+      "id": "checkpoint",
+      "name": "Oracle checkpoint",
+      "tabindex": 0
+    },
+    {
+      "id": "play",
+      "name": "Play",
+      "tabindex": 0
+    },
+    {
+      "id": "back",
+      "name": "Rewind one second",
+      "tabindex": 0
+    },
+    {
+      "id": "forward",
+      "name": "Step forward one second",
+      "tabindex": 0
+    },
+    {
+      "id": "reset",
+      "name": "Reset",
+      "tabindex": 0
+    },
+    {
+      "id": "timeline",
+      "name": "Replay time in seconds",
+      "tabindex": 0
+    },
+    {
+      "id": "handover-evidence-toggle",
+      "name": "Alarm details and receipts2 facts behind this disclosure",
+      "tabindex": 0
+    },
+    {
+      "id": "event-history-toggle",
+      "name": "Event history 4 events; 0 rejected",
+      "tabindex": 0
+    },
+    {
+      "id": "grayscale",
+      "name": "View in grayscale",
+      "tabindex": 0
+    },
+    {
+      "id": "export-scenario",
+      "name": "Scenario JSON",
+      "tabindex": 0
+    },
+    {
+      "id": "export-state",
+      "name": "Current state JSON",
+      "tabindex": 0
+    },
+    {
+      "id": "export-trace",
+      "name": "Current trace JSON",
+      "tabindex": 0
+    },
+    {
+      "id": "export-matrix",
+      "name": "Correctness matrix CSV",
+      "tabindex": 0
+    }
+  ],
+  "identicalOrderChecks": [
+    {
+      "scenario": "interrupted",
+      "at": 0,
+      "sha256": "8495e2469a68fa8366a1ab0ba771258401c45492de81e25c467898f12740edac"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 3,
+      "sha256": "dddd3b433acb71e030ba44a8a7646e0c0998ddec9e4babe326b6ffc95ac880b6"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 4,
+      "sha256": "670b9ee2c335f98604ad98c43e9a141f12e0a881c298730fcf20add5d38192b2"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 5,
+      "sha256": "328dd4bf7d1b2bd4b7ddad637cf05cd68e137dbcb39d249299cbed3c7841f2e5"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 7,
+      "sha256": "51c43c5fd5b0755b183313a88ba22649fae52426e5c6ac599fa761613927b1b2"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 8,
+      "sha256": "e63ff7898ff7c34bb282b6374acc92303435188bd0dc9b0e32412b515a4c7919"
+    },
+    {
+      "scenario": "interrupted",
+      "at": 12,
+      "sha256": "e63ff7898ff7c34bb282b6374acc92303435188bd0dc9b0e32412b515a4c7919"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 0,
+      "sha256": "85927ac2ce66dc4d0387e6ac755a4a1c4cbcd3f26a5014579c98aa6f4a671136"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 4,
+      "sha256": "17ff3e2213f3881300fef27ee1416fb1108b1b24a6a627e44865f3d6d204c3f6"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 5,
+      "sha256": "aaa3ee3c995114f1e2722c48e34aa16304faeba26cabfa8ec350727d1094d2ac"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 6,
+      "sha256": "db5c4b72b0c8f157e28608a72d0d550d42f55bfd9b883e564d6e7009f6d33317"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 9,
+      "sha256": "3db22fcb2c374c201ea0e8ead88473c44ffbd9da64f6297e71952e0bbfd185cf"
+    },
+    {
+      "scenario": "stale_evidence",
+      "at": 14,
+      "sha256": "3db22fcb2c374c201ea0e8ead88473c44ffbd9da64f6297e71952e0bbfd185cf"
+    },
+    {
+      "scenario": "alarm_cascade",
+      "at": 2,
+      "sha256": "b3d406b3972460d3a97461101bafdb704a2ef1e6411ea90b4d782ef86db5145f"
+    },
+    {
+      "scenario": "alarm_cascade",
+      "at": 5,
+      "sha256": "23954cca555c22b490d243a62fa53c4285fb4c49eb225404a906e4eae23cb810"
+    },
+    {
+      "scenario": "alarm_cascade",
+      "at": 9,
+      "sha256": "d628f36bc6ace1e892ab4b07163a252df7cd30f92416d4a535912622246f85c5"
+    },
+    {
+      "scenario": "alarm_cascade",
+      "at": 15,
+      "sha256": "d628f36bc6ace1e892ab4b07163a252df7cd30f92416d4a535912622246f85c5"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "at": 2,
+      "sha256": "ed0339f7bc2bb10362e5e0a017876b72983c31fc4e9c59420c892c5d11270943"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "at": 3,
+      "sha256": "807c34ac2d7384405a27b303a899824e4a1d96d1c2df2502efae8fee942eb968"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "at": 4,
+      "sha256": "9071ddb061d9b523d4eb046b10ba61d2188340aebbc1315f3780a6f09b5fbba6"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "at": 6,
+      "sha256": "857af8653666cfaef03ff1dc497d8a7fa50932f1494f49c82d93d1a07a380a3c"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "at": 12,
+      "sha256": "857af8653666cfaef03ff1dc497d8a7fa50932f1494f49c82d93d1a07a380a3c"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "at": 1,
+      "sha256": "bc7ef0c159e00d444ea0e05ebef0e64ab1e4752c0690b29e3a3a3137d6bf9f24"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "at": 2,
+      "sha256": "6fcd8f485d8984b39d9b8f703d66e30f121840ad968a6311a85df385623c2220"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "at": 4,
+      "sha256": "c563f72360637923501d531b40455761a62d69e2248591247b01eec63067497e"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "at": 6,
+      "sha256": "b9ccaf0d62ada09722882e4fd3c59558275dd814d17923325e0c8fdabdd79d59"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "at": 12,
+      "sha256": "b9ccaf0d62ada09722882e4fd3c59558275dd814d17923325e0c8fdabdd79d59"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "at": 2,
+      "sha256": "3c85863c93ae6f26604bf922743e5f55aa7656bb4098feacf0a573afa9eedda7"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "at": 5,
+      "sha256": "c64071a8b84847f2b1cf88de3aca3172cf11988a8510e5df435b033422fec158"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "at": 6,
+      "sha256": "7efb142ab1751ebb9edca7ff0c57edc1fe7ec48102452996bdbce6ca0e399203"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "at": 8,
+      "sha256": "c53d7cc69e5940fdbf5936d6e17360dbe4d5b7ec729269817d7410890b723e63"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "at": 12,
+      "sha256": "c53d7cc69e5940fdbf5936d6e17360dbe4d5b7ec729269817d7410890b723e63"
+    },
+    {
+      "scenario": "requested_timeout",
+      "at": 1,
+      "sha256": "7f2a41ba2e556de1c60405bd2fa707380d4043b46f9c2d783def15034c281758"
+    },
+    {
+      "scenario": "requested_timeout",
+      "at": 5,
+      "sha256": "02f297b1c380f33b6f7a8f2375eed549c22a44874a6a99c1741b4c2e668ab10d"
+    },
+    {
+      "scenario": "requested_timeout",
+      "at": 6,
+      "sha256": "53e1793122b49ba9fe310ca38327fb65812178d827840b9a20b9f4a026d9f422"
+    },
+    {
+      "scenario": "requested_timeout",
+      "at": 8,
+      "sha256": "23b08b390d20ffa0d24e800148b9d28b2b62f3c1a5e261016b7374ad0f6ee507"
+    },
+    {
+      "scenario": "requested_timeout",
+      "at": 12,
+      "sha256": "23b08b390d20ffa0d24e800148b9d28b2b62f3c1a5e261016b7374ad0f6ee507"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "at": 2,
+      "sha256": "21ddcd977a8a5d0599404daeffc9b69b1bc3462354c025f307fd99b712747658"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "at": 3,
+      "sha256": "50b332d8f0a4ce0a87ff3a93eada2e775d5e8bdd1eeecdfe7a7cddea73b4dac7"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "at": 4,
+      "sha256": "30f2de31a0fcffeb4903321cc2c7e8ab3e080526ae9d82caeb76c8366e4e08dd"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "at": 6,
+      "sha256": "2b3a1ee9889477b6d9779b40b30554b400355a2a25fc253efb7ed66956641e19"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "at": 12,
+      "sha256": "2b3a1ee9889477b6d9779b40b30554b400355a2a25fc253efb7ed66956641e19"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "at": 0,
+      "sha256": "3c144b2cb92f70a664a49dec2fb4f28db4dfdca7b4c24af39fc1078cd924cf9e"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "at": 2,
+      "sha256": "08cfea0146ebd8a190a34f73a9501b2b9c61bb7814860193d8bd86e3ca76bedd"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "at": 3,
+      "sha256": "caa76a2f8b1523146b703e59f92f8c944c0fddec16f691b26daa5a2d76e271f5"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "at": 6,
+      "sha256": "6259e54585d3f47591df25d35742cef469a620ceaa604349e27b1caa5a11adfb"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "at": 10,
+      "sha256": "6259e54585d3f47591df25d35742cef469a620ceaa604349e27b1caa5a11adfb"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 1,
+      "sha256": "883826420cf6757f0a332f0e6c7607ef78997e152603f8783c6064b1fc2b7d3c"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 2,
+      "sha256": "d0f2d4445757e33d9a230a99890513491906a035a66ea8e1284877a084ff75f1"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 3,
+      "sha256": "7e69ecea3a4e6d2fbb44165253621eeb3b36f02c2fa621c67f5d7b319eda2f7c"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 5,
+      "sha256": "9e6c9d104cf7b67581d0699a3d21ee5db725dbeae86aa3fd0ab59010cbe8e357"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 8,
+      "sha256": "0b269666f6ffa43e2575a090e977f4b114be3ae823fb7a53f9f43f80953d6f75"
+    },
+    {
+      "scenario": "successful_handover",
+      "at": 12,
+      "sha256": "0b269666f6ffa43e2575a090e977f4b114be3ae823fb7a53f9f43f80953d6f75"
+    }
+  ],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "checks": [
+    "actual text and visible timestamps match oracle",
+    "all initially obscured values become readable when expanded",
+    "visible group headings, counts and containers match oracle",
+    "keyboard core tasks in all variants",
+    "visible focus and playback focus retention",
+    "reset cancels advancing timer",
+    "keyboard step and rewind",
+    "scenario change closes disclosures",
+    "on-screen checker parses exact status words",
+    "all four exported payloads verified",
+    "reduced-motion preference",
+    "grayscale retains state words",
+    "390 px viewport has no horizontal overflow"
+  ],
+  "limitations": [
+    "No human participants",
+    "No assistive-technology user session",
+    "Single Chromium engine",
+    "Grayscale is not a full color-vision-deficiency study"
+  ]
+}

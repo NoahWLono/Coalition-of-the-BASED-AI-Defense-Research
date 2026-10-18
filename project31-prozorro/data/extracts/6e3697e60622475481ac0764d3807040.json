@@ -1,0 +1,244 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "fc74c6330e524284b35cf45be1b1aa84",
+        "contractID": "UA-2025-02-03-014047-a-c1",
+        "date": "2025-02-03T16:17:35.364578+02:00",
+        "dateModified": "2025-02-03T16:17:35.364578+02:00",
+        "dateSigned": "2025-02-03T00:00:00+02:00",
+        "id": "b35af87c9d124c9cb3c60d45989f1d05",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-02-03T00:00:00+02:00"
+            },
+            "description": "(Папір А4 )\n",
+            "id": "126eb81ca3c84b48a89f77bc7c100bbd",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-02-03T00:00:00+02:00"
+            },
+            "description": "(ручка кулькова )\n",
+            "id": "733b68f8a6c447ea856863feba94af86",
+            "quantity": "5.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-02-03T00:00:00+02:00"
+            },
+            "description": "(ручка кулькова )\n",
+            "id": "488e5732b8fc4131b40b70810820c424",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T23:59:59.999000+02:00",
+              "startDate": "2025-02-03T00:00:00+02:00"
+            },
+            "description": "(ручка кулькова )\n",
+            "id": "7d3a9b8da7fb411d85f105bfbf5bcb70",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "2400.0",
+          "amountNet": "2400.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 28868,
+        "method": "GET",
+        "response_sha256": "cd7e5e3b17466f2eb5332c6078a42a162f3f8dd4f97beb4ad49f73f6372239ca",
+        "retrieved_at": "2026-10-18T01:47:42.665546+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:43 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/b35af87c9d124c9cb3c60d45989f1d05"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 9677,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-014047-a/",
+    "method": "GET",
+    "response_sha256": "245719c1821b174cf9c82aa8f4050f2447a42e9ea50fab2768afb294bbbdb751",
+    "retrieved_at": "2026-10-18T01:47:41.615450+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:42 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/6e3697e60622475481ac0764d3807040"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-03T16:16:42.222014+02:00",
+        "id": "fc74c6330e524284b35cf45be1b1aa84",
+        "status": "active",
+        "value": {
+          "amount": "2400.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "fc74c6330e524284b35cf45be1b1aa84",
+        "contractID": "UA-2025-02-03-014047-a-c1",
+        "date": "2025-02-03T16:17:35.364578+02:00",
+        "id": "b35af87c9d124c9cb3c60d45989f1d05",
+        "status": "active",
+        "value": {
+          "amount": "2400.0",
+          "amountNet": "2400.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-03T16:16:41.792865+02:00",
+    "dateModified": "2025-02-03T16:17:35.364578+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-03T16:17:27.274412+02:00",
+        "datePublished": "2025-02-03T16:17:27.274412+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "ef1fed6191b94dc8a038420ca6984282"
+      }
+    ],
+    "id": "6e3697e60622475481ac0764d3807040",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-02-03T00:00:00+02:00"
+        },
+        "description": "(Папір А4 )\n",
+        "id": "126eb81ca3c84b48a89f77bc7c100bbd",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-02-03T00:00:00+02:00"
+        },
+        "description": "(ручка кулькова )\n",
+        "id": "733b68f8a6c447ea856863feba94af86",
+        "quantity": "5.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-02-03T00:00:00+02:00"
+        },
+        "description": "(ручка кулькова )\n",
+        "id": "488e5732b8fc4131b40b70810820c424",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T23:59:59.999000+02:00",
+          "startDate": "2025-02-03T00:00:00+02:00"
+        },
+        "description": "(ручка кулькова )\n",
+        "id": "7d3a9b8da7fb411d85f105bfbf5bcb70",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-03-014047-a",
+    "title": "ДК 021:2015 –30190000-7 – Офісне устаткування та приладдя різне (Папір А4, ручка кулькова )",
+    "value": {
+      "amount": "2400.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

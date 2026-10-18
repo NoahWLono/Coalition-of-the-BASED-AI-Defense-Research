@@ -1,0 +1,398 @@
+[
+  {
+    "theme": "dark",
+    "use": "main text / page",
+    "foreground": "#e5edf6",
+    "background": "#0d1826",
+    "minimum": 4.5,
+    "ratio": 15.12,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "main text / paper",
+    "foreground": "#e5edf6",
+    "background": "#172638",
+    "minimum": 4.5,
+    "ratio": 12.97,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / paper",
+    "foreground": "#b1c1d3",
+    "background": "#172638",
+    "minimum": 4.5,
+    "ratio": 8.34,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / rail",
+    "foreground": "#b1c1d3",
+    "background": "#18293c",
+    "minimum": 4.5,
+    "ratio": 8.05,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / principal band",
+    "foreground": "#b1c1d3",
+    "background": "#263552",
+    "minimum": 4.5,
+    "ratio": 6.68,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / handover details",
+    "foreground": "#b1c1d3",
+    "background": "#263d56",
+    "minimum": 4.5,
+    "ratio": 6.07,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / critical alarm",
+    "foreground": "#b1c1d3",
+    "background": "#342630",
+    "minimum": 4.5,
+    "ratio": 7.8,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "muted text / rejected event",
+    "foreground": "#b1c1d3",
+    "background": "#362e26",
+    "minimum": 4.5,
+    "ratio": 7.26,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "caution / paper",
+    "foreground": "#f0c774",
+    "background": "#172638",
+    "minimum": 4.5,
+    "ratio": 9.58,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "caution / ownership board",
+    "foreground": "#f0c774",
+    "background": "#1d3046",
+    "minimum": 4.5,
+    "ratio": 8.4,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "caution / handover details",
+    "foreground": "#f0c774",
+    "background": "#263d56",
+    "minimum": 4.5,
+    "ratio": 6.97,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "critical / ownership board",
+    "foreground": "#ffb2bb",
+    "background": "#1d3046",
+    "minimum": 4.5,
+    "ratio": 7.89,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "critical / alarm",
+    "foreground": "#ffb2bb",
+    "background": "#342630",
+    "minimum": 4.5,
+    "ratio": 8.42,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "known / handover details",
+    "foreground": "#96d4bc",
+    "background": "#263d56",
+    "minimum": 4.5,
+    "ratio": 6.6,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "rejected event / background",
+    "foreground": "#f2c398",
+    "background": "#362e26",
+    "minimum": 4.5,
+    "ratio": 8.27,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "primary button",
+    "foreground": "#102338",
+    "background": "#97bfe9",
+    "minimum": 4.5,
+    "ratio": 8.29,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "primary button hover",
+    "foreground": "#102338",
+    "background": "#b9d8f6",
+    "minimum": 4.5,
+    "ratio": 10.77,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "focus / paper",
+    "foreground": "#c4c1ff",
+    "background": "#172638",
+    "minimum": 4.5,
+    "ratio": 9.06,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "focus / page",
+    "foreground": "#c4c1ff",
+    "background": "#0d1826",
+    "minimum": 4.5,
+    "ratio": 10.56,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "focus / hover",
+    "foreground": "#c4c1ff",
+    "background": "#2b405b",
+    "minimum": 4.5,
+    "ratio": 6.25,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "success / rail",
+    "foreground": "#96d4bc",
+    "background": "#18293c",
+    "minimum": 4.5,
+    "ratio": 8.75,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "use": "control border / paper",
+    "foreground": "#6c819a",
+    "background": "#172638",
+    "minimum": 3,
+    "ratio": 3.83,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "main text / page",
+    "foreground": "#142d49",
+    "background": "#eaf0f6",
+    "minimum": 4.5,
+    "ratio": 12.18,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "main text / paper",
+    "foreground": "#142d49",
+    "background": "#ffffff",
+    "minimum": 4.5,
+    "ratio": 13.99,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / paper",
+    "foreground": "#50647c",
+    "background": "#ffffff",
+    "minimum": 4.5,
+    "ratio": 6.08,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / rail",
+    "foreground": "#50647c",
+    "background": "#f6f8fc",
+    "minimum": 4.5,
+    "ratio": 5.72,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / principal band",
+    "foreground": "#50647c",
+    "background": "#edf1fb",
+    "minimum": 4.5,
+    "ratio": 5.38,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / handover details",
+    "foreground": "#50647c",
+    "background": "#e8eff8",
+    "minimum": 4.5,
+    "ratio": 5.25,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / critical alarm",
+    "foreground": "#50647c",
+    "background": "#fffafa",
+    "minimum": 4.5,
+    "ratio": 5.88,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "muted text / rejected event",
+    "foreground": "#50647c",
+    "background": "#fff6ef",
+    "minimum": 4.5,
+    "ratio": 5.7,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "caution / paper",
+    "foreground": "#865500",
+    "background": "#ffffff",
+    "minimum": 4.5,
+    "ratio": 6.34,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "caution / ownership board",
+    "foreground": "#865500",
+    "background": "#f4f7fc",
+    "minimum": 4.5,
+    "ratio": 5.9,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "caution / handover details",
+    "foreground": "#865500",
+    "background": "#e8eff8",
+    "minimum": 4.5,
+    "ratio": 5.47,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "critical / ownership board",
+    "foreground": "#a42935",
+    "background": "#f4f7fc",
+    "minimum": 4.5,
+    "ratio": 6.64,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "critical / alarm",
+    "foreground": "#a42935",
+    "background": "#fffafa",
+    "minimum": 4.5,
+    "ratio": 6.89,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "known / handover details",
+    "foreground": "#275e51",
+    "background": "#e8eff8",
+    "minimum": 4.5,
+    "ratio": 6.46,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "rejected event / background",
+    "foreground": "#825027",
+    "background": "#fff6ef",
+    "minimum": 4.5,
+    "ratio": 6.3,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "primary button",
+    "foreground": "#ffffff",
+    "background": "#193b60",
+    "minimum": 4.5,
+    "ratio": 11.44,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "primary button hover",
+    "foreground": "#ffffff",
+    "background": "#254c79",
+    "minimum": 4.5,
+    "ratio": 8.79,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "focus / paper",
+    "foreground": "#4346b8",
+    "background": "#ffffff",
+    "minimum": 4.5,
+    "ratio": 7.48,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "focus / page",
+    "foreground": "#4346b8",
+    "background": "#eaf0f6",
+    "minimum": 4.5,
+    "ratio": 6.52,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "focus / hover",
+    "foreground": "#4346b8",
+    "background": "#e8edf9",
+    "minimum": 4.5,
+    "ratio": 6.38,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "success / rail",
+    "foreground": "#215747",
+    "background": "#f6f8fc",
+    "minimum": 4.5,
+    "ratio": 7.84,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "use": "control border / paper",
+    "foreground": "#73879d",
+    "background": "#ffffff",
+    "minimum": 3,
+    "ratio": 3.7,
+    "pass": true
+  }
+]

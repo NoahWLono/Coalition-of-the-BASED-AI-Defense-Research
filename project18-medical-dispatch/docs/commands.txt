@@ -1,0 +1,35 @@
+Working directory for project commands:
+<HOME>/Documents/ChatGPT/DEFENSE PORTFOLIO/project18-medical-dispatch
+
+Environment setup executed from the parent workspace:
+uv venv --python <HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 project18-medical-dispatch/.venv
+uv pip install --python project18-medical-dispatch/.venv/bin/python 'scipy==1.17.1' 'matplotlib==3.10.8' 'pytest==9.0.2'
+
+Project commands executed:
+uv pip freeze --python .venv/bin/python > requirements-lock.txt
+.venv/bin/python -m dispatch.generate
+.venv/bin/python -m pytest tests/test_checker.py -q
+.venv/bin/python -m dispatch.checker fixtures/hand_four.json fixtures/hand_four_schedule.json
+.venv/bin/python -m pytest tests/test_reference.py -q
+.venv/bin/python -m pytest tests/test_exact_agreement.py -q
+.venv/bin/python -m pytest tests/test_simulate.py -q
+.venv/bin/python -m pytest tests/test_optimize.py -q
+.venv/bin/python -m pytest -q
+.venv/bin/python -m dispatch.experiment --out results --offline-limit 3 --online-limit 0.5 > results/experiment.log 2>&1
+.venv/bin/python -m dispatch.audit results
+
+The first experiment attempt failed while a running process still held the
+earlier prefix-validation adapter. Its log is results/first_attempt_error.log.
+After the missing solver-metadata adapter field was fixed, the full test suite
+and experiment were rerun successfully. The final run is results/experiment.log.
+
+Postprocessing executed with a Python heredoc after the completed run:
+dispatch.experiment.capacity_certificate(Path('results'))
+dispatch.experiment.plot(out, saved_comparison_rows, saved_metric_rows)
+dispatch.report.generate_report(Path('results'))
+The metadata was corrected to record the original module invocation, executable,
+argument array and cwd. This postprocessing added a transfer certificate and
+annotated the time-limited figure; no optimization measurements were replaced.
+
+Final verification commands are also saved in docs/verification.md and the
+results/test-results.txt and results/artifact-audit.json evidence files.

@@ -1,0 +1,21 @@
+test_api_origin_and_path_are_pinned (test_acquire.AcquisitionTests.test_api_origin_and_path_are_pinned) ... ok
+test_missing_creation_is_not_modification_date (test_acquire.AcquisitionTests.test_missing_creation_is_not_modification_date) ... ok
+test_nonpaper_or_multilot_excluded (test_acquire.AcquisitionTests.test_nonpaper_or_multilot_excluded) ... ok
+test_projection_removes_contacts_locations_suppliers (test_acquire.AcquisitionTests.test_projection_removes_contacts_locations_suppliers) ... ok
+test_restricted_records_are_excluded (test_acquire.AcquisitionTests.test_restricted_records_are_excluded) ... FAIL
+test_scope_requires_civilian_and_period (test_acquire.AcquisitionTests.test_scope_requires_civilian_and_period) ... ok
+test_unknown_buyer_is_excluded (test_acquire.AcquisitionTests.test_unknown_buyer_is_excluded) ... ok
+
+======================================================================
+FAIL: test_restricted_records_are_excluded (test_acquire.AcquisitionTests.test_restricted_records_are_excluded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/Documents/ChatGPT/DEFENSE PORTFOLIO/project31-prozorro/tests/test_acquire.py", line 57, in test_restricted_records_are_excluded
+    self.assertIn('restricted_record', candidate_scope(d))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'restricted_record' not found in []
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+FAILED (failures=1)

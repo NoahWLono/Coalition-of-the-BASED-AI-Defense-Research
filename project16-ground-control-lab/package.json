@@ -1,0 +1,1 @@
+{"name":"ground-control-interface-lab","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"start":"node tools/serve.mjs","test":"node --test tests/*.test.mjs","evaluate":"node tools/evaluate.mjs","test:browser":"node tools/audit-regressions.mjs && node tools/browser-check.mjs"}}

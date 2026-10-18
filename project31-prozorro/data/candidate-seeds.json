@@ -1,0 +1,523 @@
+[
+  {
+    "id": "b368d3ae49914fe9abd0c7fd08b6bd63",
+    "tenderID": "UA-2025-02-04-012196-a",
+    "discovery_url": "https://clarity-project.info/tender/b368d3ae49914fe9abd0c7fd08b6bd63",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "e848b9c08adb4a0b83364058827519ef",
+    "tenderID": "UA-2025-03-10-000214-a",
+    "discovery_url": "https://clarity-project.info/tender/e848b9c08adb4a0b83364058827519ef",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "ae1202ce07614cefb9f6cc70827de6a2",
+    "tenderID": "UA-2025-01-31-009434-a",
+    "discovery_url": "https://clarity-project.info/tender/ae1202ce07614cefb9f6cc70827de6a2",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "ba3984c791c84d7e8f234e31a01bf20a",
+    "tenderID": "UA-2025-02-26-003202-a",
+    "discovery_url": "https://clarity-project.info/tender/ba3984c791c84d7e8f234e31a01bf20a",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7aa560abc8e84962a2149bb4df6a2dd5",
+    "tenderID": "UA-2025-01-15-000434-a",
+    "discovery_url": "https://clarity-project.info/tender/7aa560abc8e84962a2149bb4df6a2dd5",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "af31212ad1d44f0e9d9bbd1a959dc731",
+    "tenderID": "UA-2025-01-06-004373-a",
+    "discovery_url": "https://clarity-project.info/tender/af31212ad1d44f0e9d9bbd1a959dc731",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7aaf07f1c9f94f018a2f3fcdb3de8005",
+    "tenderID": "UA-2025-01-30-014427-a",
+    "discovery_url": "https://clarity-project.info/tender/7aaf07f1c9f94f018a2f3fcdb3de8005",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "8501a8753834442bad074fcd487fba67",
+    "tenderID": "UA-2025-01-17-001983-a",
+    "discovery_url": "https://clarity-project.info/tender/8501a8753834442bad074fcd487fba67",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "22e01282d03a491a99d034e77049eef0",
+    "tenderID": "UA-2025-01-23-012795-a",
+    "discovery_url": "https://clarity-project.info/tender/22e01282d03a491a99d034e77049eef0",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "d6677f445cd44609ae8c157c201139c3",
+    "tenderID": "UA-2025-01-14-008108-a",
+    "discovery_url": "https://clarity-project.info/tender/d6677f445cd44609ae8c157c201139c3",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7a670df13e1447d19a2411f21787d5d2",
+    "tenderID": "UA-2025-01-21-011581-a",
+    "discovery_url": "https://clarity-project.info/tender/7a670df13e1447d19a2411f21787d5d2",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "74248d2e9e4247cb80169536171d1661",
+    "tenderID": "UA-2025-01-29-016973-a",
+    "discovery_url": "https://clarity-project.info/tender/74248d2e9e4247cb80169536171d1661",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "6a93f7f8a8c54b7f8fd31f5ce975f78d",
+    "tenderID": "UA-2025-02-13-010368-a",
+    "discovery_url": "https://clarity-project.info/tender/6a93f7f8a8c54b7f8fd31f5ce975f78d",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "307cee5c39304e9594e2643f7e715c5a",
+    "tenderID": "UA-2025-02-25-006444-a",
+    "discovery_url": "https://clarity-project.info/tender/307cee5c39304e9594e2643f7e715c5a",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "526057697cc247ce95edc48e78b25fcb",
+    "tenderID": "UA-2025-02-18-010512-a",
+    "discovery_url": "https://clarity-project.info/tender/526057697cc247ce95edc48e78b25fcb",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "f41b2dc98c254dc2a22bfca9159be1b9",
+    "tenderID": "UA-2025-02-05-007413-a",
+    "discovery_url": "https://clarity-project.info/tender/f41b2dc98c254dc2a22bfca9159be1b9",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "5047b1a2fac84f6c98f8bb757b764e60",
+    "tenderID": "UA-2025-02-25-013525-a",
+    "discovery_url": "https://clarity-project.info/tender/5047b1a2fac84f6c98f8bb757b764e60",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "1d230a4a811f41ba9dcab4cb5025dae9",
+    "tenderID": "UA-2025-03-05-013548-a",
+    "discovery_url": "https://clarity-project.info/tender/1d230a4a811f41ba9dcab4cb5025dae9",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "70e6ea6627724823857e54f9c3d53e82",
+    "tenderID": "UA-2025-03-18-002720-a",
+    "discovery_url": "https://clarity-project.info/tender/70e6ea6627724823857e54f9c3d53e82",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b333883c5a9d4a06bc31f434948fe2d8",
+    "tenderID": "UA-2025-03-24-007224-a",
+    "discovery_url": "https://clarity-project.info/tender/b333883c5a9d4a06bc31f434948fe2d8",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7ab8ff7110a64a5d9196db25d4c064a0",
+    "tenderID": "UA-2025-03-05-002226-a",
+    "discovery_url": "https://clarity-project.info/tender/7ab8ff7110a64a5d9196db25d4c064a0",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b1cbf3ae645944cb8b9e115b55a86f74",
+    "tenderID": "UA-2025-03-04-000466-a",
+    "discovery_url": "https://clarity-project.info/tender/b1cbf3ae645944cb8b9e115b55a86f74",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "a4227e8e39d044e8ab038a73c38886b6",
+    "tenderID": "UA-2025-03-11-009229-a",
+    "discovery_url": "https://clarity-project.info/tender/a4227e8e39d044e8ab038a73c38886b6",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "3d0696b78d394dedae684b104b8ae2c8",
+    "tenderID": "UA-2025-03-19-006751-a",
+    "discovery_url": "https://clarity-project.info/tender/3d0696b78d394dedae684b104b8ae2c8",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "9d08a4164c4c44e0b957180e130b225f",
+    "tenderID": "UA-2025-03-04-010969-a",
+    "discovery_url": "https://clarity-project.info/tender/9d08a4164c4c44e0b957180e130b225f",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "47bab2b64a3e481abfaf8ec52d01142f",
+    "tenderID": "UA-2025-02-20-010618-a",
+    "discovery_url": "https://clarity-project.info/tender/47bab2b64a3e481abfaf8ec52d01142f",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "23f46b30d73a4968938099a4352c67e7",
+    "tenderID": "UA-2025-02-19-002540-a",
+    "discovery_url": "https://clarity-project.info/tender/23f46b30d73a4968938099a4352c67e7",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7aa7329eb9ed4006af81a5157d5ecc75",
+    "tenderID": "UA-2025-03-20-010225-a",
+    "discovery_url": "https://clarity-project.info/tender/7aa7329eb9ed4006af81a5157d5ecc75",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "c443f65cdd2c41f3b7ecf05e567f2d20",
+    "tenderID": "UA-2025-02-17-001630-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-17-001630-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b1e44ce7cd5d4acf8e58bc0ec8cb8ba6",
+    "tenderID": "UA-2025-03-17-002053-a",
+    "discovery_url": "https://clarity-project.info/tender/b1e44ce7cd5d4acf8e58bc0ec8cb8ba6",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "c7cc147ed59646d2ab826a9b7df57808",
+    "tenderID": "UA-2025-03-03-009255-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-03-009255-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "6e3697e60622475481ac0764d3807040",
+    "tenderID": "UA-2025-02-03-014047-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-014047-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "796dcd768cb6476da3df67ddbab17846",
+    "tenderID": "UA-2025-02-03-005284-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-005284-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "209616573c2a4c25974df8c37d223b3c",
+    "tenderID": "UA-2025-02-03-012193-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-012193-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "daca5461afc1430a9bef9102003bcfd1",
+    "tenderID": "UA-2025-03-03-008795-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-03-008795-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "93ff1b2bfbd8437fb0b345b61bc4691c",
+    "tenderID": "UA-2025-03-03-008108-a",
+    "discovery_url": "https://clarity-project.info/tender/93ff1b2bfbd8437fb0b345b61bc4691c",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "3000fb304c4e469ca1e90abce1feb6df",
+    "tenderID": "UA-2025-02-20-006592-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-20-006592-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "526a9e37f46847b9941bf1a91e93a86d",
+    "tenderID": "UA-2025-03-26-011424-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-26-011424-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "bffe4ae96a8f43fe9ff354843f1fd000",
+    "tenderID": "UA-2025-03-05-001164-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-05-001164-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "e38e5eaacc32474c8fbbc9ba9b720685",
+    "tenderID": "UA-2025-02-03-007345-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-007345-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "ed7fdf2741644f40a6684bb976a780cb",
+    "tenderID": "UA-2025-02-27-005524-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-27-005524-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "1ecfaad964ba49559c66b0486f7b2955",
+    "tenderID": "UA-2025-02-28-007918-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-28-007918-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "dd2931b8a1de4986ba91cf1f184da4ad",
+    "tenderID": "UA-2025-03-20-001237-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-20-001237-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b57aca04ae0349d6b0a6b43e52f0caa5",
+    "tenderID": "UA-2025-03-04-010878-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-04-010878-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "bcb4927c1a4048f7b86d443a52dc4afb",
+    "tenderID": "UA-2025-03-14-002718-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-002718-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "6e09cb560e3d4f248544e22bb5b5c897",
+    "tenderID": "UA-2025-01-31-004337-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-01-31-004337-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "ae331cc297aa41988c5411021d8e02fe",
+    "tenderID": "UA-2025-02-10-000251-a",
+    "discovery_url": "https://playtender.com.ua/prozorro/tender/24363445",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "60ba4eb3b5674441b1d0abbe9a9c5309",
+    "tenderID": "UA-2025-03-10-010083-a",
+    "discovery_url": "https://clarity-project.info/tender/60ba4eb3b5674441b1d0abbe9a9c5309",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "99b2487894db4afcbd326808e957591a",
+    "tenderID": "UA-2025-03-25-005867-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-25-005867-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "ba10b7d7fe1848f79d650b6855b2365d",
+    "tenderID": "UA-2025-03-10-000658-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-10-000658-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "554dc7b670964c4792c919b139c0db2a",
+    "tenderID": "UA-2025-03-24-001533-a",
+    "discovery_url": "https://clarity-project.info/tender/554dc7b670964c4792c919b139c0db2a",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "426bc88a5826441d88a5ae1c3ba2dbad",
+    "tenderID": "UA-2025-01-16-000410-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-16-000410-a",
+    "source_type": "official_search_discovery"
+  },
+  {
+    "id": "7cdb8d17fd70423eb0a403d6eec06bf7",
+    "tenderID": "UA-2025-03-17-006576-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-17-006576-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "4545441b98c34f288668afbf8f069fa0",
+    "tenderID": "UA-2025-02-03-002285-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-03-002285-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "d611c68cc0a944f79acbb41107edd0f9",
+    "tenderID": "UA-2025-03-10-011332-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-10-011332-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "0802b95a93bf4106b1a4112ab7e70fb0",
+    "tenderID": "UA-2025-02-11-003103-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-11-003103-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "417ec3ad006a4040a5ebceb6f9a03b0b",
+    "tenderID": "UA-2025-02-06-003693-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-06-003693-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "959d0a61ef184677b6fb80334fdaf3d8",
+    "tenderID": "UA-2025-02-06-003357-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-06-003357-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b6001f73f5f44be1adf7e3e087920897",
+    "tenderID": "UA-2025-03-06-013740-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-06-013740-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "538ed4eb3fd54d0ca3f5764d63694047",
+    "tenderID": "UA-2025-03-14-008637-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-008637-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "76229a3412564d939c23983fda7a2a8c",
+    "tenderID": "UA-2025-03-14-000450-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-000450-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "02675fd432654f96afb006daba9dd9ec",
+    "tenderID": "UA-2025-03-14-012340-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-14-012340-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "7a5cc1a5bdce481c83a6fb19138feebf",
+    "tenderID": "UA-2025-02-17-005343-a",
+    "discovery_url": "https://clarity-project.info/tender/7a5cc1a5bdce481c83a6fb19138feebf",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "b25d73dac4d24bf39f92d2297288cc86",
+    "tenderID": "UA-2025-02-12-002434-a",
+    "discovery_url": "https://clarity-project.info/tender/b25d73dac4d24bf39f92d2297288cc86",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "864de600a385479f8d215b70da9d91fd",
+    "tenderID": "UA-2025-03-05-015152-a",
+    "discovery_url": "https://clarity-project.info/tender/864de600a385479f8d215b70da9d91fd",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "f4401d8a85574603adc0dec49413ee41",
+    "tenderID": "UA-2025-03-07-006237-a",
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-07-006237-a/",
+    "source_type": "aggregator_discovery"
+  },
+  {
+    "id": "c491421f633a4c90b7edb06f1f5e988e",
+    "tenderID": "UA-2025-03-18-008846-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-18-008846-a"
+  },
+  {
+    "id": "ca468e743a754ab49772db5f52c8cbe6",
+    "tenderID": "UA-2025-03-14-012026-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-14-012026-a"
+  },
+  {
+    "id": "019395435ccc4c45a1975c6502168176",
+    "tenderID": "UA-2025-02-21-003920-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-21-003920-a"
+  },
+  {
+    "id": "625d8d9e637e445993c8d5a1747440ef",
+    "tenderID": "UA-2025-02-14-003379-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-14-003379-a"
+  },
+  {
+    "id": "64dc8610e9ad465c95e7c1830546b4d7",
+    "tenderID": "UA-2025-03-06-005646-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-06-005646-a"
+  },
+  {
+    "id": "f1390063aae94505af5bf4686c5556bc",
+    "tenderID": "UA-2025-02-28-009773-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-28-009773-a"
+  },
+  {
+    "id": "267f363647dd4effa708852c3c981854",
+    "tenderID": "UA-2025-02-24-007826-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-24-007826-a"
+  },
+  {
+    "id": "f8a62528848d45c680dd07ef5bb6bd73",
+    "tenderID": "UA-2025-02-12-013763-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-12-013763-a"
+  },
+  {
+    "id": "c3acb646ea8b45f8847b71dbd50d079e",
+    "tenderID": "UA-2025-03-03-009730-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-03-009730-a"
+  },
+  {
+    "id": "f74ccbd447d54e82bc1a40985a37a663",
+    "tenderID": "UA-2025-02-12-009054-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-12-009054-a"
+  },
+  {
+    "id": "bfbdd39160f142ddaad13a10f214b5f2",
+    "tenderID": "UA-2025-02-24-008855-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-24-008855-a"
+  },
+  {
+    "id": "ea44b93b24e24f9e864de151ffe169c4",
+    "tenderID": "UA-2025-03-24-009475-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-24-009475-a"
+  },
+  {
+    "id": "cc6c456b830742bfb6a28afcf7c46b2c",
+    "tenderID": "UA-2025-03-11-010561-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-11-010561-a"
+  },
+  {
+    "id": "d91f89dd70df4490a1ba65c5c10d2fb5",
+    "tenderID": "UA-2025-01-27-000805-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-27-000805-a"
+  },
+  {
+    "id": "44c043fff6f348159a3de5e249a74f21",
+    "tenderID": "UA-2025-02-10-008355-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-10-008355-a"
+  },
+  {
+    "id": "269a12c1c58049f89d3495d56e82e2f6",
+    "tenderID": "UA-2025-01-08-006885-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-08-006885-a"
+  },
+  {
+    "id": "2587f4e6293f4553b487a311cd571e13",
+    "tenderID": "UA-2025-01-07-000357-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-07-000357-a"
+  },
+  {
+    "id": "eda6d9cd91854f99b2d8b8c141f12ec3",
+    "tenderID": "UA-2025-02-20-009991-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-20-009991-a"
+  },
+  {
+    "id": "d62a011afc524acc9be80e65606309e4",
+    "tenderID": "UA-2025-01-10-004522-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-10-004522-a"
+  },
+  {
+    "id": "a0ec2481c8a14b2898129ce48c840456",
+    "tenderID": "UA-2025-02-03-008452-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-03-008452-a"
+  },
+  {
+    "id": "d4a61fac0d2d4a8dbe7bb5c15110f224",
+    "tenderID": "UA-2025-02-12-011845-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-02-12-011845-a"
+  },
+  {
+    "id": "22a219567ee04a0f9e196b3f9c9beeac",
+    "tenderID": "UA-2025-03-31-010899-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-31-010899-a"
+  },
+  {
+    "id": "f42e3c5e913a4c8982506504d7376495",
+    "tenderID": "UA-2025-01-09-009230-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-09-009230-a"
+  },
+  {
+    "id": "bf6cdaad61e041268e6037c7ed776286",
+    "tenderID": "UA-2025-01-24-011380-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-24-011380-a"
+  },
+  {
+    "id": "bd4bba50339b434f9710f9ec24e0e801",
+    "tenderID": "UA-2025-01-09-001112-a",
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-01-09-001112-a"
+  }
+]

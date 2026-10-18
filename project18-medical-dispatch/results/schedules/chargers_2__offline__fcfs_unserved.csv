@@ -1,0 +1,8 @@
+request_id,status,reason
+R02,rejected,Resource contention under this policy left no feasible start before the horizon
+R08,rejected,Resource contention under this policy left no feasible start before the horizon
+R09,rejected,Resource contention under this policy left no feasible start before the horizon
+R10,rejected,Resource contention under this policy left no feasible start before the horizon
+R12,rejected,Resource contention under this policy left no feasible start before the horizon
+R17,rejected,Resource contention under this policy left no feasible start before the horizon
+R19,cancelled,Administrative pre-dispatch cancellation supplied with the request

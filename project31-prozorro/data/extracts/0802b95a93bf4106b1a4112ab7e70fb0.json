@@ -1,0 +1,161 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "12dba3f9d7204eeb80b6af91c3a063ef",
+        "contractID": "UA-2025-02-11-003103-a-a1",
+        "date": "2025-02-11T10:41:53.866497+02:00",
+        "dateModified": "2025-02-11T10:42:04.526906+02:00",
+        "dateSigned": "2025-02-11T10:39:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-11T10:39:57.087973+02:00",
+            "datePublished": "2025-02-11T10:39:57.087973+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "c6d999006812472f95b59403e616b801"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-11T10:41:48.117701+02:00",
+            "datePublished": "2025-02-11T10:41:48.117701+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "4a2d01006722406e8197f8451c264b03"
+          }
+        ],
+        "id": "f8e35cb94182436b870665e52f5fce1a",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-11T00:00:00+02:00"
+            },
+            "description": "Папір офісний Everywhere Printing Paper А4 80 г/м2",
+            "id": "88f58e2086b5f3168ff9533bc8ac5c93",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "3380.0",
+          "amountNet": "3380.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 26580,
+        "method": "GET",
+        "response_sha256": "7ffe7a3cbccdf400fcb9f97a255e3886f3a382bf2361e74eb58c08d88a3093eb",
+        "retrieved_at": "2026-10-18T01:49:17.760549+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:18 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/f8e35cb94182436b870665e52f5fce1a"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6138,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-11-003103-a/",
+    "method": "GET",
+    "response_sha256": "67d09cbe05718a52f2b853de1b81a3de8a6deb463d3f1b2ed199b49dad29ef27",
+    "retrieved_at": "2026-10-18T01:49:16.710435+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:17 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/0802b95a93bf4106b1a4112ab7e70fb0"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-11T10:39:55.950292+02:00",
+        "id": "12dba3f9d7204eeb80b6af91c3a063ef",
+        "status": "active",
+        "value": {
+          "amount": "3380.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "12dba3f9d7204eeb80b6af91c3a063ef",
+        "contractID": "UA-2025-02-11-003103-a-a1",
+        "date": "2025-02-11T10:41:53.866497+02:00",
+        "id": "f8e35cb94182436b870665e52f5fce1a",
+        "status": "active",
+        "value": {
+          "amount": "3380.0",
+          "amountNet": "3380.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-11T10:39:54.327645+02:00",
+    "dateModified": "2025-02-11T10:41:53.866497+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-11T10:41:47.649488+02:00",
+        "datePublished": "2025-02-11T10:41:47.649488+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "f676fa95e385466e8100b340269708ef"
+      }
+    ],
+    "id": "0802b95a93bf4106b1a4112ab7e70fb0",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-11T00:00:00+02:00"
+        },
+        "description": "Папір офісний Everywhere Printing Paper А4 80 г/м2",
+        "id": "88f58e2086b5f3168ff9533bc8ac5c93",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-11-003103-a",
+    "title": "Папір офісний Everywhere Printing Paper А4 80 г/м2",
+    "value": {
+      "amount": "3380.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

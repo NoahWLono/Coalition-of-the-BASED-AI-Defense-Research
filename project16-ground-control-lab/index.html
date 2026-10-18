@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Ground-control interface laboratory</title>
+  <script src="./src/theme.mjs"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to scenario evidence</a>
+  <header class="masthead">
+    <div class="masthead-top">
+      <div class="identity"><span class="lab-mark" aria-hidden="true"><span></span><span></span><span></span></span><p>Interface laboratory <span>Project 16</span></p></div>
+      <div class="theme-control"><label for="theme">Theme</label><select id="theme"><option value="dark" selected>Dark</option><option value="light">Light</option><option value="system">System</option></select></div>
+    </div>
+    <div class="masthead-main"><div><h1>Ground control,<br>shared understanding.</h1><p class="intro">One incident. Three ways to see the evidence.<br>Explore alarms, responsibility and interrupted handovers.</p></div><div class="scope-stamp"><strong>Synthetic replay</strong><p>Fictional civilian inspections.<br>No connected vehicles or devices.</p></div></div>
+  </header>
+  <main>
+    <section class="replay-workbench" aria-label="Scenario and replay controls">
+      <div class="selectors">
+        <div class="field"><label for="scenario">Incident script</label><select id="scenario" disabled><option>Loading incidents…</option></select></div>
+        <div class="field"><label for="variant">Interface design</label><select id="variant"><option value="chronological">Chronological alarms</option><option value="grouped">Incident groups</option><option value="handover" selected>Handover state</option></select></div>
+        <div class="field checkpoint-field"><label for="checkpoint">Oracle checkpoint</label><select id="checkpoint" disabled><option value="">Loading checkpoints…</option></select></div>
+      </div>
+      <div class="transport">
+        <div class="transport-buttons"><button id="play" class="button-primary" type="button" disabled>Play</button><button id="back" type="button" aria-label="Rewind one second" title="Rewind one second" disabled>−1 s</button><button id="forward" type="button" aria-label="Step forward one second" title="Step forward one second" disabled>+1 s</button><button id="reset" type="button" disabled>Reset</button></div>
+        <div class="timeline-control"><label class="sr-only" for="timeline">Replay time in seconds</label><input id="timeline" type="range" min="0" max="12" step="1" value="0" disabled><div class="timeline-captions"><span>Replay start</span><span id="duration-label">12 seconds</span></div></div>
+        <div class="time-readout"><output id="time" for="timeline">00:00</output><span id="playback-state">Paused</span></div>
+      </div>
+      <p class="transport-help">One replay second per second. Seeking pauses playback. Switching design preserves time and playback.</p>
+    </section>
+    <div class="workspace">
+      <section class="simulation" aria-label="Scenario evidence">
+        <div class="scenario-heading"><p id="scenario-context">Loading fictional scenario</p><h2 id="scenario-title">Preparing the replay</h2><p id="scenario-description">The scripts and truth tables are loaded from this local project.</p></div>
+        <div id="view" tabindex="-1" aria-busy="true"><p class="loading">Loading scenario evidence…</p></div>
+      </section>
+      <aside class="study-rail" aria-label="Comparison and evaluation">
+        <section class="rail-section"><h2>Read the situation</h2><p class="rail-intro">Use the same three prompts in each design.</p><ol class="task-list"><li>What is the principal issue, and which alarms share its declared group?</li><li>Who is responsible for the next action? Is ownership known, stale or unresolved?</li><li>What was the last reliable observation, and when was it recorded?</li></ol></section>
+        <section class="rail-section"><h2>Information decisions</h2><p id="visibility-decision">Loading design decisions…</p><dl class="visibility-totals"><div><dt>Immediately visible</dt><dd id="visible-count">9 facts</dd></div><div><dt>Inside one disclosure</dt><dd id="obscured-count">2 facts</dd></div><div><dt>Intentionally omitted</dt><dd>0 facts</dd></div></dl><p class="rail-note">Counts describe the initial screen. Disclosure steps are interface actions, not measured task times.</p></section>
+        <section class="rail-section oracle-section"><h2>Checkpoint check</h2><p id="oracle-result" role="status">Loading separately authored truth tables…</p><p id="oracle-rationale"></p><p class="rail-note">Exact values, evidence states and timestamps are checked against assistant-authored literal expectations. This is a specification check.</p></section>
+        <section class="rail-section"><h2>Presentation check</h2><label class="check-control" for="grayscale"><input id="grayscale" type="checkbox"> View in grayscale</label><p class="rail-note">Severity and freshness also use words and symbols. Native controls support keyboard navigation.</p></section>
+        <section class="rail-section exports"><h2>Take the evidence</h2><div class="export-buttons"><button id="export-scenario" type="button" disabled>Scenario JSON</button><button id="export-state" type="button" disabled>Current state JSON</button><button id="export-trace" type="button" disabled>Current trace JSON</button><button id="export-matrix" type="button" disabled>Correctness matrix CSV</button></div><p id="export-result" role="status" class="rail-note">Downloads stay on this computer.</p></section>
+      </aside>
+    </div>
+    <section class="completion-condition"><h2>Completion condition</h2><p id="completion-condition">Loading scripted completion criteria…</p></section>
+    <section class="research-note"><h2>A comparison instrument</h2><p>This mock interface has no human participant results. Any benefit to workload, speed or decision quality is a hypothesis for a later study with informed, consenting participants. Correctness and visibility checks do not establish operational safety or human performance.</p></section>
+    <noscript><p class="error">JavaScript is required for deterministic replay. The scenario scripts and checkpoint oracle remain available in the local data directory.</p></noscript>
+  </main>
+  <footer><p>Ground-control interface laboratory</p><p>Synthetic data. Local replay. No operational controls.</p></footer>
+  <p id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

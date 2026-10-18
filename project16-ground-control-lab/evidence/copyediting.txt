@@ -1,0 +1,15 @@
+README.md:54 negative-parallelism KEPT distinguishes specification checks from unavailable human validation.
+docs/contract.md:13 negative-parallelism KEPT prevents treating authored groups as causal diagnosis.
+docs/contract.md:14 trailing-participle FIXED split active-alarm removal and retained log history into two sentences.
+docs/contract.md:47 negative-parallelism KEPT identifies oracle authorship limits.
+docs/contract.md:51 negative-parallelism KEPT prevents disclosure steps being misread as human timing.
+docs/state-machine.md:40 negative-parallelism KEPT distinguishes illustrative parameters from operational guidance.
+evidence/review.md:3 negative-parallelism KEPT records assistant review and unavailable empirical confirmation.
+docs/comparison-report.md:17 negative-parallelism KEPT precisely bounds the denominator of visibility counts.
+docs/comparison-report.md:27 negative-parallelism KEPT separates observed keyboard paths from unmeasured human outcomes.
+docs/comparison-report.md:27 trailing-participle KEPT the subject is the concrete action of reaching a disclosure; this is not an attached claim.
+docs/accessibility-findings.md:11 negative-parallelism KEPT bounds the focus inspection.
+docs/accessibility-findings.md:26 negative-parallelism KEPT distinguishes expanded document visibility from viewport visibility.
+FIXED: 1. KEPT: 11.
+
+The scenario catalog and future-study materials were also copyedited by their authors. Their reviewed factual distinctions and study-method lists were retained. No em dashes were introduced in authored prose.

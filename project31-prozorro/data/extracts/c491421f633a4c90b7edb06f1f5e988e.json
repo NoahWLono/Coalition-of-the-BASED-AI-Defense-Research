@@ -1,0 +1,1141 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "54918.0",
+          "amountNet": "45765.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "5b924f7b09ad4f6791bdcc734e600780",
+        "contractID": "UA-2025-03-18-008846-a-c1",
+        "date": "2025-11-07T09:14:23.420005+02:00",
+        "dateModified": "2025-11-07T09:14:23.420005+02:00",
+        "dateSigned": "2025-04-11T00:00:00+03:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-11T14:37:32.166329+03:00",
+            "datePublished": "2025-04-11T14:37:32.166329+03:00",
+            "documentOf": "contract",
+            "format": "application/pdf",
+            "id": "9d7276462bf94aafab9e384564092204"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-11T14:39:22.223085+03:00",
+            "datePublished": "2025-04-11T14:39:22.223085+03:00",
+            "documentOf": "contract",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "e838b81858144856b5c7b8d2d276ab56"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-11-07T09:14:19.153843+02:00",
+            "datePublished": "2025-11-07T09:14:19.153843+02:00",
+            "documentOf": "contract",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "e838b81858144856b5c7b8d2d276ab56"
+          }
+        ],
+        "id": "becbab141d6a4447b8a4b7b592c5632f",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-15T14:27:14+02:00"
+            },
+            "description": "Папір офісний А4",
+            "id": "7608d75797f87592cd27e313efe244c1",
+            "quantity": "450.0",
+            "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "54918.0",
+          "amountNet": "45765.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 85227,
+        "method": "GET",
+        "response_sha256": "5bf0f3f7de7fb1e8b7e165bec509cb7a7429eaf42179777fac1108b17eb9ca46",
+        "retrieved_at": "2026-10-18T01:51:52.775118+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:51:53 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/becbab141d6a4447b8a4b7b592c5632f"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 222629,
+    "discovery_url": "https://prozorro.gov.ua/tender/UA-2025-03-18-008846-a",
+    "method": "GET",
+    "response_sha256": "9cb35a7b679e312f6e55eb2e587355c1450348c063b0912f6affc35224e8e248",
+    "retrieved_at": "2026-10-18T01:51:51.636123+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:51:52 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/c491421f633a4c90b7edb06f1f5e988e"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-04-01T11:20:22.512087+03:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-28T12:16:33.647758+02:00",
+            "datePublished": "2025-03-28T12:16:33.647758+02:00",
+            "documentOf": "tender",
+            "documentType": "registerExtract",
+            "format": "application/yaml",
+            "id": "87685999694946b69c65299aacca5504"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-01T11:08:06.363525+03:00",
+            "datePublished": "2025-04-01T11:08:06.363525+03:00",
+            "documentOf": "tender",
+            "documentType": "winningBid",
+            "format": "application/pdf",
+            "id": "8ee6a9590b5542ba81e99ab4eb5983e7"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-01T11:08:12.170570+03:00",
+            "datePublished": "2025-04-01T11:08:12.170570+03:00",
+            "documentOf": "tender",
+            "format": "application/pdf",
+            "id": "4bd9efdfa32b422b8d556357f4678887"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-01T11:20:15.692916+03:00",
+            "datePublished": "2025-04-01T11:20:15.692916+03:00",
+            "documentOf": "tender",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "c81fee49e2c54278bf389ee30287d358"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-01T11:20:26.077395+03:00",
+            "datePublished": "2025-04-01T11:20:26.077395+03:00",
+            "documentOf": "tender",
+            "documentType": "register",
+            "format": "text/plain",
+            "id": "79e1e3ce9d634ac8a24f100541c956f3"
+          }
+        ],
+        "id": "5b924f7b09ad4f6791bdcc734e600780",
+        "lotID": "e5072886e8c86feece30f0670c0dffb6",
+        "status": "active",
+        "value": {
+          "amount": "54918.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "bids": [
+      {
+        "date": "2025-03-26T10:55:50.356252+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T10:55:50.260941+02:00",
+            "datePublished": "2025-03-26T10:55:50.260941+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "c99c45da741d4e8bbf4aa2ffa1fc3a60"
+          }
+        ],
+        "id": "b02f4610359348d9ad8699e93698be51",
+        "items": [
+          {
+            "description": "Папір офісний А4",
+            "id": "7608d75797f87592cd27e313efe244c1",
+            "quantity": "450.0",
+            "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "lotValues": [
+          {
+            "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+            "value": {
+              "amount": "57150.0",
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            }
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "date": "2025-03-26T23:13:55.958494+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "f93c1fba3e984f40ba52cc0142baba4a",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "36e66ba0c5734ac4afab118962ead1e1",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "e57a1ba6dec640d18758ad95f85bf749",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "c21cf62c90024c5fbbcd3d41d4d002f3",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "645dbeee7b3a4163b4a1c51fa1504006",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "a2593e60774c408ea4a6391d90e2b7b9",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "02475331b88f42d8b1c9a4f410ff3025",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "94f56d0ad75248fca22670cddc3e174b",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "70a3ee08a3ef41c78c1c0173d2f916f7",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "5e8dd129bf5242059ba8fc6a78b822bc",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "75698c5b443846e3a3a78d64bc1fe4c6",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "bba2885ba14f4113973cba02641cfd67",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "d5e62d361d97497c9a8f012c124dd7cd",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "47363a0bf6fa4634bde7f4691637681e",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "8300d051050b42a685fe5d03ef7688ec",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "34725b74c7514926a456263fbda26c51",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pdf",
+            "id": "9af89706a0ba4ef58e23b58a64c45d4c",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pkcs7-signature",
+            "id": "6cb0e32a18f043fcb506441c1ae9bcde",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "c5d3fb8d4df14583b887cdba399f61ef",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "11f406775e3f4a28b04fad3a3c19f433",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "c7a3319944c4487bb56219bc6418c07f",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "da7424e9f4104799ae8c7256dddd25e1",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "df93da61a1f24746870e914688423dba",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "fa40b92965cc40c59e2dd2e45b84944b",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "2c28380e6a29479990512c27af29fc84",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "c766d9e0d85349e9a7d9f06766d83d40",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "e511e03b4278487899fc09d40015afdd",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "2445e85ea0ef412b883b905c5037adee",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "601aefc2b856484dbc922fbe3f88f1eb",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "dc31eba7516f44bc9248abae41b364dc",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "e5b19f4df118459ebb45371869a8131c",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "dc5b0eee177441fca5d6d14d6d68ee34",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "228419a3b2bc45bd8ead562f322c46d6",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "3cf1066c71aa4a8193840184c862c08e",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pdf",
+            "id": "f5708ff9dc9d47488e6cbbd3d6a4e10a",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pkcs7-signature",
+            "id": "0a8d0df81e0b4cbd9f36440e5eef2180",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "d83164969b0246e98ef406835f618073",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "ad1f13d4fb034f4a8c22da81ddec4d78",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "e4581341404b47df9c79f8b12be20884",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "ba8450d31620429bbaf521603b4840e0",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pdf",
+            "id": "404e507377044fb08c468d6c4a758d8d",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:41.456011+02:00",
+            "datePublished": "2025-03-26T23:13:41.456011+02:00",
+            "documentOf": "lot",
+            "documentType": "technicalSpecifications",
+            "format": "application/pkcs7-signature",
+            "id": "e7ac18bf34354b6a802deb2b54755f36",
+            "relatedItem": "e5072886e8c86feece30f0670c0dffb6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T23:13:55.871873+02:00",
+            "datePublished": "2025-03-26T23:13:55.871873+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "02df9cbd785e46c0ba25e57e18ba3023"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/zip",
+            "id": "867e0d47e054435c8528a79f4d1d351b"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "0c820d633855473b893a6266cffe4c53"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/zip",
+            "id": "bfb67064f71a46b18c99d6060dc4ab79"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/zip",
+            "id": "f43f1b3455954c3d8f5c0eaa9bc79e81"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/zip",
+            "id": "ee89bb14da534d3cb295e71c3192cb85"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "2b4a776e07614fb99b5820c0124b4419"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "f0269c9895734a2a8c593557b6ddfa06"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "afe8ff4265d643cfad10ff675023ee33"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "148683341dd74789ae7d00c9471089f0"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pdf",
+            "id": "391164d4089648db99f20fcfda11cb2b"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "4fc48452b152499fbf4a3a821a2f4414"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "727aa87e0c2e4b7991529357ec942916"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "4a285b07e058468b9439444576ab894f"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "09066562a7ac4e378ec90a2180d769b6"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "1efcbed3962f4a6593ec92903c137633"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "95af7027400c46199e658ba212d7af89"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "1913b13ee1b94244ad949ef9edd48aa3"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "361317c2ca25406ab883d157d3082762"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "5651ad51fa09408eb6c5db93a994f782"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:03.158870+03:00",
+            "datePublished": "2025-04-02T08:29:03.158870+03:00",
+            "documentOf": "tender",
+            "documentType": "qualificationDocuments",
+            "format": "application/pkcs7-signature",
+            "id": "5a383cc96ba9459c92db04af31b261e1"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-04-02T08:29:48.145921+03:00",
+            "datePublished": "2025-04-02T08:29:48.145921+03:00",
+            "documentOf": "tender",
+            "format": "application/pkcs7-signature",
+            "id": "448a2f2c9551447390e626e68f1570c4"
+          }
+        ],
+        "id": "f35dd6506bf24f3983d2d282b421d90f",
+        "items": [
+          {
+            "description": "Папір офісний А4",
+            "id": "7608d75797f87592cd27e313efe244c1",
+            "quantity": "450.0",
+            "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "lotValues": [
+          {
+            "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+            "value": {
+              "amount": "54918.0",
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            }
+          }
+        ],
+        "status": "active"
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "5b924f7b09ad4f6791bdcc734e600780",
+        "contractID": "UA-2025-03-18-008846-a-c1",
+        "date": "2025-04-11T14:39:29.895647+03:00",
+        "id": "becbab141d6a4447b8a4b7b592c5632f",
+        "status": "active",
+        "value": {
+          "amount": "54918.0",
+          "amountNet": "45765.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-18T14:22:16.038963+02:00",
+    "dateModified": "2025-04-11T14:39:29.895647+03:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/msword",
+        "id": "571f490123944279b63d005e8d54b3f4"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "39a59693d7fa43a290609f31ce408369"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "61fb2e6b0c634fcd896a83d55adae347"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "bdb58936aa8b48bb88102fcc43caf90f"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "4b42dc1f8b0342a0bc789120b0cbfc14"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "be1cc5853ae64a0287c41466c35e6179"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "de2716e350064b8294e03bb3416f07fd"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "39c2287dfe9743199090ee9caa04131c"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "dff3a2378ba644afa5a6e3c5e52ce4a5"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:22:27.021488+02:00",
+        "datePublished": "2025-03-18T14:22:27.021488+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "55706988ecf840e6aad67363d1fd72de"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.417090+02:00",
+        "datePublished": "2025-03-18T14:33:08.417090+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/msword",
+        "id": "571f490123944279b63d005e8d54b3f4"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.501738+02:00",
+        "datePublished": "2025-03-18T14:33:08.501738+02:00",
+        "documentOf": "tender",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "39a59693d7fa43a290609f31ce408369"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.585298+02:00",
+        "datePublished": "2025-03-18T14:33:08.585298+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "61fb2e6b0c634fcd896a83d55adae347"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.671029+02:00",
+        "datePublished": "2025-03-18T14:33:08.671029+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "bdb58936aa8b48bb88102fcc43caf90f"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.760841+02:00",
+        "datePublished": "2025-03-18T14:33:08.760841+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "4b42dc1f8b0342a0bc789120b0cbfc14"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.850023+02:00",
+        "datePublished": "2025-03-18T14:33:08.850023+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "be1cc5853ae64a0287c41466c35e6179"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:08.941477+02:00",
+        "datePublished": "2025-03-18T14:33:08.941477+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "de2716e350064b8294e03bb3416f07fd"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:09.026626+02:00",
+        "datePublished": "2025-03-18T14:33:09.026626+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "39c2287dfe9743199090ee9caa04131c"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:09.116476+02:00",
+        "datePublished": "2025-03-18T14:33:09.116476+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "dff3a2378ba644afa5a6e3c5e52ce4a5"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T14:33:09.208975+02:00",
+        "datePublished": "2025-03-18T14:33:09.208975+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "55706988ecf840e6aad67363d1fd72de"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-18T15:02:43.558853+02:00",
+        "datePublished": "2025-03-18T15:02:43.558853+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "263df0cbc5d64c7a9d74127305fd991a"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-19T15:22:38.996574+02:00",
+        "datePublished": "2025-03-19T15:22:38.996574+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/pdf",
+        "id": "733598892539416a99bfea629e28c6f8"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-19T15:28:17.505742+02:00",
+        "datePublished": "2025-03-19T15:25:55.899734+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "d193628dd99a4a339cd5ebce5f0fb45e"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-19T16:16:41.311196+02:00",
+        "datePublished": "2025-03-19T16:16:41.311196+02:00",
+        "documentOf": "tender",
+        "format": "application/pdf",
+        "id": "8a76cd7ccd8c4716aee48f4df51c4e45"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-19T16:24:03.365937+02:00",
+        "datePublished": "2025-03-19T16:24:03.365937+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "263df0cbc5d64c7a9d74127305fd991a"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-28T12:16:28.731372+02:00",
+        "datePublished": "2025-03-28T12:16:28.731372+02:00",
+        "documentOf": "tender",
+        "format": "application/octet-stream",
+        "id": "3656b2d87fe047c09247da3a8f0bf608"
+      }
+    ],
+    "id": "c491421f633a4c90b7edb06f1f5e988e",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-15T14:27:14+02:00"
+        },
+        "description": "Папір офісний А4",
+        "id": "7608d75797f87592cd27e313efe244c1",
+        "quantity": "450.0",
+        "relatedLot": "e5072886e8c86feece30f0670c0dffb6",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [
+      {
+        "id": "e5072886e8c86feece30f0670c0dffb6",
+        "status": "complete",
+        "title": "Папір офісний А4",
+        "value": {
+          "amount": "65700.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "aboveThreshold",
+    "status": "complete",
+    "tenderID": "UA-2025-03-18-008846-a",
+    "title": "Папір офісний А4",
+    "value": {
+      "amount": "65700.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

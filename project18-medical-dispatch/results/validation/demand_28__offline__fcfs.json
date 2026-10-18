@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "demand_28",
+  "policy": "fcfs",
+  "information": "offline"
+}

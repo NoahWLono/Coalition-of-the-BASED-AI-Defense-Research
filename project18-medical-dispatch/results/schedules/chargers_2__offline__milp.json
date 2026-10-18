@@ -1,0 +1,243 @@
+{
+  "scenario_id": "benchmark_s1801_n20_chargers2",
+  "policy": "milp",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R05",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 3,
+      "end": 8
+    },
+    {
+      "request_id": "R03",
+      "vehicle_id": "V3",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 1,
+      "delivery": 4,
+      "end": 7
+    },
+    {
+      "request_id": "R13",
+      "vehicle_id": "V2",
+      "battery_id": "B3",
+      "technician_id": "T2",
+      "start": 1,
+      "delivery": 4,
+      "end": 9
+    },
+    {
+      "request_id": "R01",
+      "vehicle_id": "V3",
+      "battery_id": "B4",
+      "technician_id": "T1",
+      "start": 7,
+      "delivery": 10,
+      "end": 15
+    },
+    {
+      "request_id": "R15",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 11,
+      "delivery": 14,
+      "end": 17
+    },
+    {
+      "request_id": "R16",
+      "vehicle_id": "V3",
+      "battery_id": "B1",
+      "technician_id": "T2",
+      "start": 15,
+      "delivery": 22,
+      "end": 27
+    },
+    {
+      "request_id": "R11",
+      "vehicle_id": "V2",
+      "battery_id": "B3",
+      "technician_id": "T1",
+      "start": 17,
+      "delivery": 20,
+      "end": 23
+    },
+    {
+      "request_id": "R07",
+      "vehicle_id": "V1",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 23,
+      "delivery": 26,
+      "end": 29
+    },
+    {
+      "request_id": "R17",
+      "vehicle_id": "V3",
+      "battery_id": "B3",
+      "technician_id": "T1",
+      "start": 28,
+      "delivery": 31,
+      "end": 36
+    },
+    {
+      "request_id": "R02",
+      "vehicle_id": "V1",
+      "battery_id": "B4",
+      "technician_id": "T1",
+      "start": 29,
+      "delivery": 34,
+      "end": 38
+    },
+    {
+      "request_id": "R12",
+      "vehicle_id": "V2",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 36,
+      "delivery": 43,
+      "end": 48
+    }
+  ],
+  "charges": [
+    {
+      "battery_id": "B2",
+      "charger_id": "C1",
+      "technician_id": "T2",
+      "start": 7,
+      "end": 11
+    },
+    {
+      "battery_id": "B1",
+      "charger_id": "C2",
+      "technician_id": "T1",
+      "start": 8,
+      "end": 12
+    },
+    {
+      "battery_id": "B3",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 13,
+      "end": 17
+    },
+    {
+      "battery_id": "B4",
+      "charger_id": "C1",
+      "technician_id": "T2",
+      "start": 17,
+      "end": 21
+    },
+    {
+      "battery_id": "B2",
+      "charger_id": "C2",
+      "technician_id": "T1",
+      "start": 19,
+      "end": 23
+    },
+    {
+      "battery_id": "B3",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 24,
+      "end": 28
+    },
+    {
+      "battery_id": "B1",
+      "charger_id": "C2",
+      "technician_id": "T2",
+      "start": 27,
+      "end": 31
+    },
+    {
+      "battery_id": "B2",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 30,
+      "end": 34
+    },
+    {
+      "battery_id": "B3",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 38,
+      "end": 42
+    },
+    {
+      "battery_id": "B4",
+      "charger_id": "C2",
+      "technician_id": "T2",
+      "start": 38,
+      "end": 42
+    }
+  ],
+  "unserved": [
+    {
+      "request_id": "R04",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R06",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R08",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R09",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R10",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R14",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R18",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R19",
+      "status": "cancelled",
+      "reason": "cancelled_on_arrival"
+    },
+    {
+      "request_id": "R20",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    }
+  ],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 1,
+    "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "optimal": false,
+    "used_fallback": false,
+    "feasible_objective": 2085.0,
+    "lower_bound": 1325.155172413799,
+    "relative_gap": 0.36443397006532424,
+    "raw_mip_gap": 0.3021251799547519,
+    "objective_constant": 4600,
+    "time_limit_seconds": 3.0,
+    "elapsed_seconds": 3.056258474999595,
+    "nodes": 0,
+    "variables": 1349,
+    "constraints": 359,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

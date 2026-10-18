@@ -1,0 +1,797 @@
+{
+  "algorithm": {
+    "decimal_precision": 50,
+    "interpretation": "Review leads only; no inference of corruption or fraud.",
+    "minimum_group_size": 5,
+    "modified_z_threshold": "3.5",
+    "ratio_threshold": "1.5",
+    "threshold_comparison": "strict",
+    "two_sided": true,
+    "zero_mad_policy": "ratio_only_labeled_degenerate"
+  },
+  "counts": {
+    "arithmetic_computable": 6,
+    "comparison_eligible": 6,
+    "excluded_lots": 0,
+    "leads": 1,
+    "real_leads": 0,
+    "screened_lots": 6,
+    "synthetic_leads": 1,
+    "unique_lots": 6
+  },
+  "groups": [
+    {
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "keys": [
+        "synthetic-00/single",
+        "synthetic-01/single",
+        "synthetic-02/single",
+        "synthetic-03/single",
+        "synthetic-04/single",
+        "synthetic-05/single"
+      ],
+      "mad": "0.003",
+      "mad_degenerate": false,
+      "median": "0.201",
+      "size": 6,
+      "status": "screened"
+    }
+  ],
+  "leads": [
+    {
+      "direction": "high",
+      "is_lead": true,
+      "key": "synthetic-05/single",
+      "mad": "0.003",
+      "median": "0.201",
+      "method": "median_mad_and_ratio",
+      "modified_z": "44.741153429673419433333333333333333333333333333333",
+      "ratio_to_median": "1.9900497512437810945273631840796019900497512437811",
+      "source_kind": "synthetic",
+      "status": "screened",
+      "unit_price": "0.4"
+    }
+  ],
+  "records": [
+    {
+      "amount": "9800",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-00/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "9800",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": null,
+        "is_lead": false,
+        "key": "synthetic-00/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "1.1241495836601361666666666666666666666666666666667",
+        "ratio_to_median": "0.97512437810945273631840796019900497512437810945274",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.196"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-00",
+      "unit_price": "0.196",
+      "unit_price_fraction": {
+        "denominator": "250",
+        "numerator": "49"
+      },
+      "volume_band": "50000_to_499999"
+    },
+    {
+      "amount": "9900",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-01/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "9900",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": null,
+        "is_lead": false,
+        "key": "synthetic-01/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "0.6744897501960817",
+        "ratio_to_median": "0.98507462686567164179104477611940298507462686567164",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.198"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-01",
+      "unit_price": "0.198",
+      "unit_price_fraction": {
+        "denominator": "500",
+        "numerator": "99"
+      },
+      "volume_band": "50000_to_499999"
+    },
+    {
+      "amount": "10000",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-02/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "10000",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": null,
+        "is_lead": false,
+        "key": "synthetic-02/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "0.22482991673202723333333333333333333333333333333333",
+        "ratio_to_median": "0.99502487562189054726368159203980099502487562189055",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.2"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-02",
+      "unit_price": "0.2",
+      "unit_price_fraction": {
+        "denominator": "5",
+        "numerator": "1"
+      },
+      "volume_band": "50000_to_499999"
+    },
+    {
+      "amount": "10100",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-03/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "10100",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": null,
+        "is_lead": false,
+        "key": "synthetic-03/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "0.22482991673202723333333333333333333333333333333333",
+        "ratio_to_median": "1.0049751243781094527363184079601990049751243781095",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.202"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-03",
+      "unit_price": "0.202",
+      "unit_price_fraction": {
+        "denominator": "500",
+        "numerator": "101"
+      },
+      "volume_band": "50000_to_499999"
+    },
+    {
+      "amount": "10200",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-04/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "10200",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": null,
+        "is_lead": false,
+        "key": "synthetic-04/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "0.6744897501960817",
+        "ratio_to_median": "1.0149253731343283582089552238805970149253731343284",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.204"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-04",
+      "unit_price": "0.204",
+      "unit_price_fraction": {
+        "denominator": "250",
+        "numerator": "51"
+      },
+      "volume_band": "50000_to_499999"
+    },
+    {
+      "amount": "20000",
+      "arithmetic_status": "computed",
+      "comparison_eligible": true,
+      "contract_version": "1",
+      "currency": "UAH",
+      "exclusion_reasons": [],
+      "group_key": {
+        "currency": "UAH",
+        "delivery_key": "delivered-terms-A",
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "publication_month": "2025-01",
+        "source_kind": "synthetic",
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "stage": "contract_current",
+        "vat_included": true,
+        "volume_band": "50000_to_499999"
+      },
+      "items": [
+        {
+          "description": "A4 80 gsm 500-sheet pack",
+          "id": "paper",
+          "pack_size_reviewed": true,
+          "quantity": "100",
+          "quantity_version": "current-v1",
+          "sheets_per_pack": "500",
+          "unit": "pack"
+        }
+      ],
+      "key": "synthetic-05/single",
+      "lot_id": "single",
+      "observations": [
+        {
+          "amendment_reconciled": true,
+          "amount": "20000",
+          "currency": "UAH",
+          "id": "contract-1",
+          "item_ids": [
+            "paper"
+          ],
+          "quantity_link_reviewed": true,
+          "quantity_version": "current-v1",
+          "stage": "contract_current",
+          "status": "active"
+        }
+      ],
+      "publication_date": "2025-01-08",
+      "publication_month": "2025-01",
+      "quantity_sheets": "50000",
+      "review": {
+        "annotator_type": "synthetic_fixture_author",
+        "delivery_key": "delivered-terms-A",
+        "evidence": [
+          "fixture:example"
+        ],
+        "evidence_by_gate": {
+          "delivery": [
+            "fixture:example"
+          ],
+          "fiscal": [
+            "fixture:example"
+          ],
+          "payment": [
+            "fixture:example"
+          ],
+          "quantity": [
+            "fixture:example"
+          ],
+          "spec": [
+            "fixture:example"
+          ],
+          "stage": [
+            "fixture:example"
+          ]
+        },
+        "fiscal_key": "gross-VAT20",
+        "net_gross_scope": "gross",
+        "payment_key": "postpay-30d",
+        "reviewed": true,
+        "spec_key": "A4-80gsm-reviewed-grade-A",
+        "vat_included": true
+      },
+      "review_status": "synthetic_expectation",
+      "screening": {
+        "direction": "high",
+        "is_lead": true,
+        "key": "synthetic-05/single",
+        "mad": "0.003",
+        "median": "0.201",
+        "method": "median_mad_and_ratio",
+        "modified_z": "44.741153429673419433333333333333333333333333333333",
+        "ratio_to_median": "1.9900497512437810945273631840796019900497512437811",
+        "source_kind": "synthetic",
+        "status": "screened",
+        "unit_price": "0.4"
+      },
+      "selected_observation_id": "contract-1",
+      "selected_stage": "contract_current",
+      "source_kind": "synthetic",
+      "status": "active",
+      "tender_id": "synthetic-05",
+      "unit_price": "0.4",
+      "unit_price_fraction": {
+        "denominator": "5",
+        "numerator": "2"
+      },
+      "volume_band": "50000_to_499999"
+    }
+  ],
+  "sensitivity": [
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "3",
+      "ratio_threshold": "1.3"
+    },
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "3",
+      "ratio_threshold": "1.5"
+    },
+    {
+      "lead_count": 0,
+      "lead_keys": [],
+      "modified_z_threshold": "3",
+      "ratio_threshold": "2"
+    },
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "3.5",
+      "ratio_threshold": "1.3"
+    },
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "3.5",
+      "ratio_threshold": "1.5"
+    },
+    {
+      "lead_count": 0,
+      "lead_keys": [],
+      "modified_z_threshold": "3.5",
+      "ratio_threshold": "2"
+    },
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "4",
+      "ratio_threshold": "1.3"
+    },
+    {
+      "lead_count": 1,
+      "lead_keys": [
+        "synthetic-05/single"
+      ],
+      "modified_z_threshold": "4",
+      "ratio_threshold": "1.5"
+    },
+    {
+      "lead_count": 0,
+      "lead_keys": [],
+      "modified_z_threshold": "4",
+      "ratio_threshold": "2"
+    }
+  ]
+}

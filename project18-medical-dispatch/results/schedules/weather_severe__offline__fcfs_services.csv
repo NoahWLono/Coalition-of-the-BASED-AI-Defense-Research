@@ -1,0 +1,9 @@
+request_id,vehicle_id,battery_id,technician_id,start,delivery,end
+R05,V1,B1,T1,0,3,8
+R14,V2,B2,T2,0,5,9
+R03,V3,B3,T1,1,4,7
+R13,V1,B1,T1,30,33,38
+R20,V2,B2,T2,30,37,42
+R15,V3,B3,T1,31,34,37
+R01,V3,B4,T1,37,40,45
+R11,V1,B3,T1,41,44,47

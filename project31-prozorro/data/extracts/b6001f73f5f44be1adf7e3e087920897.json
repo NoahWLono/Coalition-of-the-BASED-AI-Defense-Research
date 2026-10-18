@@ -1,0 +1,210 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "d4fb1a92e44143ca82647f8b709ac68e",
+        "contractID": "UA-2025-03-06-013740-a-c1",
+        "date": "2025-03-06T17:28:24.275323+02:00",
+        "dateModified": "2025-03-06T17:32:12.621352+02:00",
+        "dateSigned": "2025-03-06T00:00:00+02:00",
+        "id": "92941d3c8b514063876f976302bec910",
+        "items": [
+          {
+            "classification": {
+              "id": "22810000-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T17:23:39+03:00",
+              "startDate": "2025-03-06T17:23:39+02:00"
+            },
+            "description": "Блок паперовий для заміток ВМ 90*90",
+            "id": "70fb3ac1513d98c484c87dbb1d93b9bb",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "22810000-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T17:23:39+03:00",
+              "startDate": "2025-03-06T17:23:39+02:00"
+            },
+            "description": "Папір 80г/м2 А4/500",
+            "id": "c446b5861f025f99196491339e23c80b",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "22810000-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T17:23:39+03:00",
+              "startDate": "2025-03-06T17:23:39+02:00"
+            },
+            "description": "Книга пустографок оф тв.",
+            "id": "b79b21a811142d9781abacda111ed48e",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "2570.0",
+          "amountNet": "2570.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 27136,
+        "method": "GET",
+        "response_sha256": "3afa3b54d5024ab5439c87539b1339f8f211a306444d2896a1d5a132b522e61a",
+        "retrieved_at": "2026-10-18T01:49:23.011108+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:23 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/92941d3c8b514063876f976302bec910"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 8452,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-06-013740-a/",
+    "method": "GET",
+    "response_sha256": "73fce164efb77b99b5b18f88493ee46d07a3c31cc203ae68b08ba853571f67fc",
+    "retrieved_at": "2026-10-18T01:49:21.960988+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:22 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b6001f73f5f44be1adf7e3e087920897"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-06T17:20:44.668955+02:00",
+        "id": "d4fb1a92e44143ca82647f8b709ac68e",
+        "status": "active",
+        "value": {
+          "amount": "2570.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "d4fb1a92e44143ca82647f8b709ac68e",
+        "contractID": "UA-2025-03-06-013740-a-c1",
+        "date": "2025-03-06T17:28:24.275323+02:00",
+        "id": "92941d3c8b514063876f976302bec910",
+        "status": "active",
+        "value": {
+          "amount": "2570.0",
+          "amountNet": "2570.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-06T17:18:40.416389+02:00",
+    "dateModified": "2025-03-06T17:28:24.275323+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-06T17:26:18.380789+02:00",
+        "datePublished": "2025-03-06T17:26:18.380789+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "1a132f7641884b858bb1178eca1db61c"
+      }
+    ],
+    "id": "b6001f73f5f44be1adf7e3e087920897",
+    "items": [
+      {
+        "classification": {
+          "id": "22810000-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T17:23:39+03:00",
+          "startDate": "2025-03-06T17:23:39+02:00"
+        },
+        "description": "Блок паперовий для заміток ВМ 90*90",
+        "id": "70fb3ac1513d98c484c87dbb1d93b9bb",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "22810000-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T17:23:39+03:00",
+          "startDate": "2025-03-06T17:23:39+02:00"
+        },
+        "description": "Папір 80г/м2 А4/500",
+        "id": "c446b5861f025f99196491339e23c80b",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "22810000-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T17:23:39+03:00",
+          "startDate": "2025-03-06T17:23:39+02:00"
+        },
+        "description": "Книга пустографок оф тв.",
+        "id": "b79b21a811142d9781abacda111ed48e",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-06-013740-a",
+    "title": "Блок паперовий для заміток ВМ 90*90, папір 80г/м2 А4/500, книга пустографок оф тв.",
+    "value": {
+      "amount": "2570.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

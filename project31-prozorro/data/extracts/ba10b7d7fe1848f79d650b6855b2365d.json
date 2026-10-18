@@ -1,0 +1,652 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "bd58ea315152429089d628652b3bf85e",
+        "contractID": "UA-2025-03-10-000658-a-b1",
+        "date": "2025-03-10T09:20:51.472285+02:00",
+        "dateModified": "2025-03-10T09:20:51.472285+02:00",
+        "dateSigned": "2025-03-10T09:09:00+02:00",
+        "id": "65c61df00e8942ea9f61c2e955a54431",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папка швидкосшивач пластикова а4",
+            "id": "255ae4a5405e455281455ad5a720c57d",
+            "quantity": "60.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Файл для документыв а4 + 30мк глянець (100шт/уп)",
+            "id": "f09566d80e9d41cebed2480db632e452",
+            "quantity": "4.0",
+            "unit": {
+              "code": "NMP",
+              "name": "паковання"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Текст-маркер флуор",
+            "id": "5d63b858a2e44762bd1b79437a8c2ab4",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Маркер водостійкий, чорний",
+            "id": "45cbe66a22a745519e9c225dba289ecd",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Маркер водостійкий кольоровий",
+            "id": "ba93fb614076496caa155fbbcefccb39",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Щоденник недатований а5",
+            "id": "753d296b5fee422aa7283efcf11ed33c",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Записна книжка а5 96арк. пружина",
+            "id": "e1cee00834204cf1978851b0d05c5f1e",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Книга канцелярська а4 96арк. на пружині",
+            "id": "79a9c6be2ce943e495dbd31d55c2b2eb",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Ручка кулькова",
+            "id": "ac20ab5f65ba4cfcacd5082b205e20ed",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папір а4 80г/м2 ксероксний (500а)",
+            "id": "0052bbb88c63468f86f82102ea195ffc",
+            "quantity": "5.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Олівець чорнографітовий НВ",
+            "id": "1bb0d5d4d5164f01ae18c3a823dadc8c",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Скоби №10 (1000шт.)",
+            "id": "4dbc6a2cfe1f466eb19e6c593dfff98e",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Скоби №24 (1000шт.)",
+            "id": "1554c37d5f6a4623b11cd479055f5eaf",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Органайзер наст. \"Вертушка середня\"",
+            "id": "2d946a7b9b174da2953242366dc41193",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Кліпборд-папка а4",
+            "id": "0cfa28f7e7de4621aa65b16025626f9f",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Скотч пакувальний 45*100м",
+            "id": "5fca91b6eaa84cc5ae5177c8ff00eb9e",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Степлер пластиковий до 12арк.",
+            "id": "dff641acfcaf436e9385f81f8575388d",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "3958.2",
+          "amountNet": "3298.5",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 42320,
+        "method": "GET",
+        "response_sha256": "b132883155f5cc5cece23fa47625795bb399b140b739b700704525a8bb68cf5d",
+        "retrieved_at": "2026-10-18T01:48:15.567374+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:48:16 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/65c61df00e8942ea9f61c2e955a54431"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 23129,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-10-000658-a/",
+    "method": "GET",
+    "response_sha256": "a773bfcb16fa0f7407ba1c985cd6cd90747d964ce66d6ab05783b8518024ac29",
+    "retrieved_at": "2026-10-18T01:48:14.517279+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:48:15 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/ba10b7d7fe1848f79d650b6855b2365d"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-10T09:20:48.663317+02:00",
+        "id": "bd58ea315152429089d628652b3bf85e",
+        "status": "active",
+        "value": {
+          "amount": "3958.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "bd58ea315152429089d628652b3bf85e",
+        "contractID": "UA-2025-03-10-000658-a-b1",
+        "date": "2025-03-10T09:20:51.472285+02:00",
+        "id": "65c61df00e8942ea9f61c2e955a54431",
+        "status": "active",
+        "value": {
+          "amount": "3958.2",
+          "amountNet": "3298.5",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-10T09:18:14.677496+02:00",
+    "dateModified": "2025-03-10T09:20:51.472285+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-10T09:20:48.078626+02:00",
+        "datePublished": "2025-03-10T09:20:47.896550+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "c0a2cb1fc6414106a4381b435b8ebc79"
+      }
+    ],
+    "id": "ba10b7d7fe1848f79d650b6855b2365d",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папка швидкосшивач пластикова а4",
+        "id": "255ae4a5405e455281455ad5a720c57d",
+        "quantity": "60.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Файл для документыв а4 + 30мк глянець (100шт/уп)",
+        "id": "f09566d80e9d41cebed2480db632e452",
+        "quantity": "4.0",
+        "unit": {
+          "code": "NMP",
+          "name": "паковання"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Текст-маркер флуор",
+        "id": "5d63b858a2e44762bd1b79437a8c2ab4",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Маркер водостійкий, чорний",
+        "id": "45cbe66a22a745519e9c225dba289ecd",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Маркер водостійкий кольоровий",
+        "id": "ba93fb614076496caa155fbbcefccb39",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Щоденник недатований а5",
+        "id": "753d296b5fee422aa7283efcf11ed33c",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Записна книжка а5 96арк. пружина",
+        "id": "e1cee00834204cf1978851b0d05c5f1e",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Книга канцелярська а4 96арк. на пружині",
+        "id": "79a9c6be2ce943e495dbd31d55c2b2eb",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Ручка кулькова",
+        "id": "ac20ab5f65ba4cfcacd5082b205e20ed",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папір а4 80г/м2 ксероксний (500а)",
+        "id": "0052bbb88c63468f86f82102ea195ffc",
+        "quantity": "5.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Олівець чорнографітовий НВ",
+        "id": "1bb0d5d4d5164f01ae18c3a823dadc8c",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Скоби №10 (1000шт.)",
+        "id": "4dbc6a2cfe1f466eb19e6c593dfff98e",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Скоби №24 (1000шт.)",
+        "id": "1554c37d5f6a4623b11cd479055f5eaf",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Органайзер наст. \"Вертушка середня\"",
+        "id": "2d946a7b9b174da2953242366dc41193",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Кліпборд-папка а4",
+        "id": "0cfa28f7e7de4621aa65b16025626f9f",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Скотч пакувальний 45*100м",
+        "id": "5fca91b6eaa84cc5ae5177c8ff00eb9e",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Степлер пластиковий до 12арк.",
+        "id": "dff641acfcaf436e9385f81f8575388d",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-10-000658-a",
+    "title": "Канцелярія",
+    "value": {
+      "amount": "3958.2",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

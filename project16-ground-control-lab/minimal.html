@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Minimal ownership replay</title>
+  <script src="./src/theme.mjs"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/minimal.mjs"></script>
+</head>
+<body class="minimal-replay">
+  <main>
+    <div class="masthead-top">
+      <h1>Minimal ownership replay</h1>
+      <div class="theme-control"><label for="theme">Theme</label><select id="theme"><option value="dark" selected>Dark</option><option value="light">Light</option><option value="system">System</option></select></div>
+    </div>
+    <p>Synthetic first-model validation. Seconds from replay start.</p>
+    <label for="second">Replay second</label>
+    <input id="second" type="range" min="0" max="12" value="0">
+    <pre id="facts"></pre>
+  </main>
+</body>
+</html>

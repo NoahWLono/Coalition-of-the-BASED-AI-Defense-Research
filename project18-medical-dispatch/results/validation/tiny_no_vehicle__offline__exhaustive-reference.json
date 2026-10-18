@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "tiny_no_vehicle",
+  "policy": "exhaustive-reference",
+  "information": "offline"
+}

@@ -1,0 +1,556 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "ebae2b1905ba428a87ba5c36447a66b1",
+        "contractID": "UA-2025-02-12-002434-a-c1",
+        "date": "2025-02-12T13:53:11.769678+02:00",
+        "dateModified": "2025-02-12T13:58:19.565534+02:00",
+        "dateSigned": "2025-02-11T00:00:00+02:00",
+        "id": "78f167fce2fb492bb27f7a659f35e7ed",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Папір ксероксний А4",
+            "id": "c1faaa5de5dcceba6e24a4d3521dc5ed",
+            "quantity": "15.0",
+            "unit": {
+              "code": "PA",
+              "name": "пакунок"
+            }
+          },
+          {
+            "classification": {
+              "id": "30194220-3",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Ламінувальна плівка А4",
+            "id": "0d0d2c6a9f1f13ee89a1dd9fdea78a03",
+            "quantity": "1.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197643-5",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Фотопапір,глян. А4",
+            "id": "581efb46ba96d53f9d6170ad993e76e1",
+            "quantity": "100.0",
+            "unit": {
+              "code": "PA",
+              "name": "пакунок"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192121-5",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Ручка кулькова",
+            "id": "3fd8919f7de9aa34df0d105c97532e94",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197210-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Папка на планці",
+            "id": "35744054f3f6e4293145c5d6f6018ee3",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197210-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Папка на планці",
+            "id": "0773b94adec240aef46e2729b7b010ec",
+            "quantity": "5.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30199340-5",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Подорожній лист легкового автомобіля",
+            "id": "87d5daec0bed5fae6587fb53572a6c3b",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Мереживий фільтр  4,5м",
+            "id": "dcba93f3dbac0ddc38228351e4294382",
+            "quantity": "5.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197210-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Папка кнопка",
+            "id": "02e1a1209b0120ed62d65702c02e9ed8",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30193200-0",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Лоток горизонтальний",
+            "id": "f07a22286ba85847965a3347f4c31847",
+            "quantity": "6.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192125-3",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Маркер",
+            "id": "659bd7ce6f359acc18ad7d80fa787ec5",
+            "quantity": "6.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197120-3",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Цвяшки",
+            "id": "ce8f82eb9fb64655863686a7d61322f3",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Мереживий фільтр  3000W",
+            "id": "5ed33e1dec24e1b07fe6aa6e7bea9a77",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T10:23:12+02:00"
+            },
+            "description": "Кабель аудіо 1,5м",
+            "id": "86b822bc52bebc50a0b60651fa92990b",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "8114.0",
+          "amountNet": "8114.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 36759,
+        "method": "GET",
+        "response_sha256": "f38d2939ee094f28ad779c6c1c4115b2bfaea6e6c6e2d5853887e1c88a73eef2",
+        "retrieved_at": "2026-10-18T01:49:32.462097+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:32 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/78f167fce2fb492bb27f7a659f35e7ed"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 17786,
+    "discovery_url": "https://clarity-project.info/tender/b25d73dac4d24bf39f92d2297288cc86",
+    "method": "GET",
+    "response_sha256": "65265bb0e6fe8bff85e3514de4d4fbb0d8b0ee6b2f784395fedd888b53240692",
+    "retrieved_at": "2026-10-18T01:49:31.412022+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:31 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b25d73dac4d24bf39f92d2297288cc86"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-12T11:10:19.276925+02:00",
+        "id": "ebae2b1905ba428a87ba5c36447a66b1",
+        "status": "active",
+        "value": {
+          "amount": "8114.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "ebae2b1905ba428a87ba5c36447a66b1",
+        "contractID": "UA-2025-02-12-002434-a-c1",
+        "date": "2025-02-12T13:53:11.769678+02:00",
+        "id": "78f167fce2fb492bb27f7a659f35e7ed",
+        "status": "active",
+        "value": {
+          "amount": "8114.0",
+          "amountNet": "8114.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-12T10:18:14.513751+02:00",
+    "dateModified": "2025-02-12T13:53:11.769678+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-12T13:50:55.413698+02:00",
+        "datePublished": "2025-02-12T13:50:55.413698+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "bd96efca5adf4787afc874a66a99bad2"
+      }
+    ],
+    "id": "b25d73dac4d24bf39f92d2297288cc86",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Папір ксероксний А4",
+        "id": "c1faaa5de5dcceba6e24a4d3521dc5ed",
+        "quantity": "15.0",
+        "unit": {
+          "code": "PA",
+          "name": "пакунок"
+        }
+      },
+      {
+        "classification": {
+          "id": "30194220-3",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Ламінувальна плівка А4",
+        "id": "0d0d2c6a9f1f13ee89a1dd9fdea78a03",
+        "quantity": "1.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197643-5",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Фотопапір,глян. А4",
+        "id": "581efb46ba96d53f9d6170ad993e76e1",
+        "quantity": "100.0",
+        "unit": {
+          "code": "PA",
+          "name": "пакунок"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192121-5",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Ручка кулькова",
+        "id": "3fd8919f7de9aa34df0d105c97532e94",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197210-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Папка на планці",
+        "id": "35744054f3f6e4293145c5d6f6018ee3",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197210-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Папка на планці",
+        "id": "0773b94adec240aef46e2729b7b010ec",
+        "quantity": "5.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30199340-5",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Подорожній лист легкового автомобіля",
+        "id": "87d5daec0bed5fae6587fb53572a6c3b",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Мереживий фільтр  4,5м",
+        "id": "dcba93f3dbac0ddc38228351e4294382",
+        "quantity": "5.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197210-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Папка кнопка",
+        "id": "02e1a1209b0120ed62d65702c02e9ed8",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30193200-0",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Лоток горизонтальний",
+        "id": "f07a22286ba85847965a3347f4c31847",
+        "quantity": "6.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192125-3",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Маркер",
+        "id": "659bd7ce6f359acc18ad7d80fa787ec5",
+        "quantity": "6.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197120-3",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Цвяшки",
+        "id": "ce8f82eb9fb64655863686a7d61322f3",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Мереживий фільтр  3000W",
+        "id": "5ed33e1dec24e1b07fe6aa6e7bea9a77",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T10:23:12+02:00"
+        },
+        "description": "Кабель аудіо 1,5м",
+        "id": "86b822bc52bebc50a0b60651fa92990b",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-12-002434-a",
+    "title": "Канцелярське приладдя",
+    "value": {
+      "amount": "8114.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

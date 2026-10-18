@@ -1,0 +1,56 @@
+{
+  "scenario_id": "tiny-charger_bottleneck",
+  "policy": "milp",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R3",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 2,
+      "end": 2
+    },
+    {
+      "request_id": "R4",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 0,
+      "delivery": 2,
+      "end": 2
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    },
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    }
+  ],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "used_fallback": false,
+    "feasible_objective": 5.0,
+    "lower_bound": 5.0,
+    "relative_gap": 0.0,
+    "raw_mip_gap": 0.0,
+    "objective_constant": 0,
+    "time_limit_seconds": 5,
+    "elapsed_seconds": 0.012074333999407827,
+    "nodes": 1,
+    "variables": 46,
+    "constraints": 42,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

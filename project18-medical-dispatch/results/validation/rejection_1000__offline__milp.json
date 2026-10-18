@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "checker": "dispatch.checker",
+  "scenario": "rejection_1000",
+  "policy": "milp",
+  "information": "offline"
+}

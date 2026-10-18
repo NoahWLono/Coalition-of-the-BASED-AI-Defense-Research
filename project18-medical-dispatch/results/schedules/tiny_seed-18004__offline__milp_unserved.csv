@@ -1,0 +1,4 @@
+request_id,status,reason
+R2,rejected,not_selected_under_resources_horizon_and_objective
+R3,rejected,not_selected_under_resources_horizon_and_objective
+R4,rejected,not_selected_under_resources_horizon_and_objective

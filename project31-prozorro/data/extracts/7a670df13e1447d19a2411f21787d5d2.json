@@ -1,0 +1,140 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "e0b67aefd2d24969b1d1d191870f73c3",
+        "contractID": "UA-2025-01-21-011581-a-a1",
+        "date": "2025-01-21T15:41:58.116277+02:00",
+        "dateModified": "2025-01-21T15:41:58.116277+02:00",
+        "dateSigned": "2025-01-21T14:01:00+02:00",
+        "id": "9b1596e0bf5d4838a74964d798452699",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папір а4 Maestro 500 шт 80 гр, ",
+            "id": "6ebf7da219d9442faddc152d1c915445",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "2537.0",
+          "amountNet": "2537.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 25478,
+        "method": "GET",
+        "response_sha256": "7010fed36da67795121826b4bc14e4b89cd1fc446de1220c0078b004836e3aba",
+        "retrieved_at": "2026-10-18T01:47:06.339014+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:06 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/9b1596e0bf5d4838a74964d798452699"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6300,
+    "discovery_url": "https://clarity-project.info/tender/7a670df13e1447d19a2411f21787d5d2",
+    "method": "GET",
+    "response_sha256": "28d1e6d5151fe802bcabbba0942cf1149c5cd7fbb64a3f75367feab515e39145",
+    "retrieved_at": "2026-10-18T01:47:05.288933+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:05 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7a670df13e1447d19a2411f21787d5d2"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-01-21T15:41:56.305095+02:00",
+        "id": "e0b67aefd2d24969b1d1d191870f73c3",
+        "status": "active",
+        "value": {
+          "amount": "2537.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "e0b67aefd2d24969b1d1d191870f73c3",
+        "contractID": "UA-2025-01-21-011581-a-a1",
+        "date": "2025-01-21T15:41:58.116277+02:00",
+        "id": "9b1596e0bf5d4838a74964d798452699",
+        "status": "active",
+        "value": {
+          "amount": "2537.0",
+          "amountNet": "2537.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-01-21T14:03:29.173765+02:00",
+    "dateModified": "2025-01-21T15:41:58.116277+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-01-21T15:41:55.501614+02:00",
+        "datePublished": "2025-01-21T15:41:55.333749+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "35ba5a36fb08496fb7442c991b824bbd"
+      }
+    ],
+    "id": "7a670df13e1447d19a2411f21787d5d2",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папір а4 Maestro 500 шт 80 гр, ",
+        "id": "6ebf7da219d9442faddc152d1c915445",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-01-21-011581-a",
+    "title": "Папір а4 Maestro 500 шт 80 гр, ",
+    "value": {
+      "amount": "2537.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

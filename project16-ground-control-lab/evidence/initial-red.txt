@@ -1,0 +1,97 @@
+✖ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (6.307358ms)
+✖ freshness boundary and historical evidence are distinct (0.640962ms)
+✖ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (0.46351ms)
+✖ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (0.592594ms)
+✖ rewind/reset during replay pauses and removes future state (0.513692ms)
+✖ stale ownership cannot authorize a request and unknown observations never invent a value (0.61797ms)
+✔ replays are deterministic for every second and do not mutate scripts (2.350051ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 1
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 204.806117
+
+✖ failing tests:
+
+test at tests/engine.test.mjs:6:1
+✖ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (6.307358ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + undefined
+  - {
+  -   at: 0,
+  -   status: 'known',
+  -   value: 'Operator A'
+  - }
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:7:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: { value: 'Operator A', status: 'known', at: 0 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/engine.test.mjs:14:1
+✖ freshness boundary and historical evidence are distinct (0.640962ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'status')
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:15:48)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/engine.test.mjs:20:1
+✖ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (0.46351ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'phase')
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:23:31)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/engine.test.mjs:27:1
+✖ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (0.592594ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:29:36)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/engine.test.mjs:33:1
+✖ rewind/reset during replay pauses and removes future state (0.513692ms)
+  TypeError [Error]: c.play is not a function
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:34:41)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/engine.test.mjs:40:1
+✖ stale ownership cannot authorize a request and unknown observations never invent a value (0.61797ms)
+  TypeError [Error]: Cannot read properties of undefined (reading 'status')
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/engine.test.mjs:42:51)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

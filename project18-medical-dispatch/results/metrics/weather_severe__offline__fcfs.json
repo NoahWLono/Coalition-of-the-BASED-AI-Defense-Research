@@ -1,0 +1,92 @@
+{
+  "scenario_id": "benchmark_s1801_n20_severe",
+  "policy": "fcfs",
+  "information": "offline",
+  "requests": 20,
+  "eligible": 19,
+  "served": 8,
+  "rejected": 11,
+  "cancelled": 1,
+  "on_time": 3,
+  "late_requests": 5,
+  "lateness_minutes": 540,
+  "max_lateness_minutes": 120,
+  "mean_served_lateness_minutes": 67.5,
+  "charges": 5,
+  "charging_wait_minutes": 60,
+  "max_charging_wait_minutes": 30,
+  "charging_queue_peak": 3,
+  "unrecharged_returns": 3,
+  "censored_dirty_minutes": 50,
+  "vehicle_utilization": 0.7,
+  "charger_utilization": 0.4166666666666667,
+  "technician_utilization": 0.2916666666666667,
+  "maximum_regional_rejection_fraction": 0.8,
+  "objective": 3445.0,
+  "objective_components": {
+    "rejection": 2600,
+    "lateness": 760,
+    "charging": 5,
+    "fairness": 80.0
+  },
+  "distributions": {
+    "region": {
+      "Alder": {
+        "eligible": 5,
+        "served": 3,
+        "rejected": 2,
+        "service_rate": 0.6,
+        "on_time": 1,
+        "mean_lateness_minutes": 75.0,
+        "max_lateness_minutes": 120
+      },
+      "Birch": {
+        "eligible": 5,
+        "served": 1,
+        "rejected": 4,
+        "service_rate": 0.2,
+        "on_time": 1,
+        "mean_lateness_minutes": 0.0,
+        "max_lateness_minutes": 0
+      },
+      "Cedar": {
+        "eligible": 4,
+        "served": 3,
+        "rejected": 1,
+        "service_rate": 0.75,
+        "on_time": 1,
+        "mean_lateness_minutes": 66.66666666666667,
+        "max_lateness_minutes": 115
+      },
+      "Dune": {
+        "eligible": 5,
+        "served": 1,
+        "rejected": 4,
+        "service_rate": 0.2,
+        "on_time": 0,
+        "mean_lateness_minutes": 115.0,
+        "max_lateness_minutes": 115
+      }
+    },
+    "category": {
+      "protected": {
+        "eligible": 10,
+        "served": 2,
+        "rejected": 8,
+        "service_rate": 0.2,
+        "on_time": 1,
+        "mean_lateness_minutes": 57.5,
+        "max_lateness_minutes": 115
+      },
+      "standard": {
+        "eligible": 9,
+        "served": 6,
+        "rejected": 3,
+        "service_rate": 0.6666666666666666,
+        "on_time": 2,
+        "mean_lateness_minutes": 70.83333333333333,
+        "max_lateness_minutes": 120
+      }
+    }
+  }
+}

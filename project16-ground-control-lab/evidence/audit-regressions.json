@@ -1,0 +1,10 @@
+[
+  {
+    "mutation": "hidden owner value",
+    "detected": true
+  },
+  {
+    "mutation": "misleading visible heading only",
+    "detected": true
+  }
+]

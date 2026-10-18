@@ -1,0 +1,88 @@
+{
+  "id": "tiny-seed-18002",
+  "seed": 18002,
+  "horizon": 6,
+  "slot_minutes": 1,
+  "load_time": 2,
+  "handoff_time": 0,
+  "turnaround_time": 0,
+  "charge_duration": 3,
+  "vehicles": [
+    {
+      "id": "V1",
+      "unavailable": [
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "V2",
+      "unavailable": []
+    }
+  ],
+  "battery_ids": [
+    "B1"
+  ],
+  "charger_ids": [
+    "C1",
+    "C2"
+  ],
+  "technician_ids": [
+    "T1",
+    "T2"
+  ],
+  "travel": {
+    "Depot": {
+      "Depot": 0,
+      "Amber": 2,
+      "Birch": 2
+    },
+    "Amber": {
+      "Depot": 0,
+      "Amber": 0,
+      "Birch": 0
+    },
+    "Birch": {
+      "Depot": 0,
+      "Amber": 0,
+      "Birch": 0
+    }
+  },
+  "requests": [
+    {
+      "id": "R1",
+      "release": 3,
+      "deadline": 5,
+      "region": "Birch",
+      "category": "package-B",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R2",
+      "release": 3,
+      "deadline": 4,
+      "region": "Amber",
+      "category": "package-B",
+      "priority": 2,
+      "cancelled": false
+    },
+    {
+      "id": "R3",
+      "release": 2,
+      "deadline": 5,
+      "region": "Birch",
+      "category": "package-B",
+      "priority": 1,
+      "cancelled": false
+    }
+  ],
+  "weights": {
+    "rejection": 20,
+    "lateness": 0.5,
+    "charge": 1,
+    "fairness": 0
+  }
+}

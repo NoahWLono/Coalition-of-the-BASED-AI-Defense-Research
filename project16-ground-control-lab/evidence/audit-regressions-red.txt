@@ -1,0 +1,25 @@
+[
+  {
+    "mutation": "hidden owner value",
+    "detected": false
+  },
+  {
+    "mutation": "misleading visible heading only",
+    "detected": false
+  }
+]
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: DOM-only semantic faults must be detected
+    at file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tools/audit-regressions.mjs:21:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.12.0

@@ -1,0 +1,36 @@
+{
+  "scenario_id": "tiny-empty",
+  "policy": "milp",
+  "information": "offline",
+  "requests": 0,
+  "eligible": 0,
+  "served": 0,
+  "rejected": 0,
+  "cancelled": 0,
+  "on_time": 0,
+  "late_requests": 0,
+  "lateness_minutes": 0,
+  "max_lateness_minutes": 0,
+  "mean_served_lateness_minutes": null,
+  "charges": 0,
+  "charging_wait_minutes": 0,
+  "max_charging_wait_minutes": 0,
+  "charging_queue_peak": 0,
+  "unrecharged_returns": 0,
+  "censored_dirty_minutes": 0,
+  "vehicle_utilization": 0.0,
+  "charger_utilization": 0.0,
+  "technician_utilization": 0.0,
+  "maximum_regional_rejection_fraction": 0,
+  "objective": 0,
+  "objective_components": {
+    "rejection": 0,
+    "lateness": 0,
+    "charging": 0,
+    "fairness": 0
+  },
+  "distributions": {
+    "region": {},
+    "category": {}
+  }
+}

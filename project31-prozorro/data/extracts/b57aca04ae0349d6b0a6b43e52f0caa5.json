@@ -1,0 +1,556 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "9f285b4e7ff843fd9671a8a2cbbc414d",
+        "contractID": "UA-2025-03-04-010878-a-c1",
+        "date": "2025-03-04T15:53:57.267450+02:00",
+        "dateModified": "2025-03-04T15:58:33.699247+02:00",
+        "dateSigned": "2025-03-04T00:00:00+02:00",
+        "id": "e8636346008f42639cfd73e811a346bb",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Папір А4 500арк.",
+            "id": "2e4fecaf8b24ab42013fdbda797202d3",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Папір А3",
+            "id": "8e109f3e3ddcb8de190e0deb2962858e",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Файли",
+            "id": "d3159f733b97a59d3c6c9561ab45df34",
+            "quantity": "3.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197220-4",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Скріпки",
+            "id": "a127b5e984a4520f498ccc331a2eb735",
+            "quantity": "2.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Клей ПВА",
+            "id": "99a5f9b8f4f719f51ccedb5341b7da09",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192130-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Олівці",
+            "id": "d22ea7238f1a6286747f272d94981145",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192100-2",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Гумки",
+            "id": "2aea65cffc2a2e2fbe78e14047fc48a4",
+            "quantity": "5.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Ручки",
+            "id": "6d4f78ec0057fbcfedd047a0f4d450e0",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30197120-3",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Кнопки",
+            "id": "0cd372de048ea28bc4f8f4b3dd4ed047",
+            "quantity": "3.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30199792-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Календар",
+            "id": "53b17032e95dbe9d230b66dc906499ab",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Наклейки на клавіатуру",
+            "id": "866bd76981de649058c17ffb24eaafcb",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192160-0",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Коректор",
+            "id": "7bb1eccffe090db0ead69699631a0f95",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Стругалки",
+            "id": "afb534795262ccb02a04060731ab2010",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192700-8",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:27:43+02:00"
+            },
+            "description": "Стругалки",
+            "id": "24df33081c41dc3d0a309e88a4eefbaf",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "3290.0",
+          "amountNet": "3290.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 50062,
+        "method": "GET",
+        "response_sha256": "7a84e8267da4ebfe47e638ce52f5da34665621146ceab725d15df8a11da2e5e3",
+        "retrieved_at": "2026-10-18T01:48:04.717613+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:48:05 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/e8636346008f42639cfd73e811a346bb"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 31989,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-04-010878-a/",
+    "method": "GET",
+    "response_sha256": "e29e2e5ee80d6b825c3ccbc6588de2f0b5fabf45d6642f269dc3d40724bb3e58",
+    "retrieved_at": "2026-10-18T01:48:03.667504+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:48:04 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b57aca04ae0349d6b0a6b43e52f0caa5"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-04T15:47:22.421948+02:00",
+        "id": "9f285b4e7ff843fd9671a8a2cbbc414d",
+        "status": "active",
+        "value": {
+          "amount": "3290.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "9f285b4e7ff843fd9671a8a2cbbc414d",
+        "contractID": "UA-2025-03-04-010878-a-c1",
+        "date": "2025-03-04T15:53:57.267450+02:00",
+        "id": "e8636346008f42639cfd73e811a346bb",
+        "status": "active",
+        "value": {
+          "amount": "3290.0",
+          "amountNet": "3290.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-04T15:22:45.480277+02:00",
+    "dateModified": "2025-03-04T15:53:57.267450+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-04T15:51:32.779914+02:00",
+        "datePublished": "2025-03-04T15:51:32.779914+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "67984911b0bd4448a7a84f12777cbf52"
+      }
+    ],
+    "id": "b57aca04ae0349d6b0a6b43e52f0caa5",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Папір А4 500арк.",
+        "id": "2e4fecaf8b24ab42013fdbda797202d3",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Папір А3",
+        "id": "8e109f3e3ddcb8de190e0deb2962858e",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Файли",
+        "id": "d3159f733b97a59d3c6c9561ab45df34",
+        "quantity": "3.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197220-4",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Скріпки",
+        "id": "a127b5e984a4520f498ccc331a2eb735",
+        "quantity": "2.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Клей ПВА",
+        "id": "99a5f9b8f4f719f51ccedb5341b7da09",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192130-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Олівці",
+        "id": "d22ea7238f1a6286747f272d94981145",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192100-2",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Гумки",
+        "id": "2aea65cffc2a2e2fbe78e14047fc48a4",
+        "quantity": "5.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Ручки",
+        "id": "6d4f78ec0057fbcfedd047a0f4d450e0",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30197120-3",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Кнопки",
+        "id": "0cd372de048ea28bc4f8f4b3dd4ed047",
+        "quantity": "3.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30199792-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Календар",
+        "id": "53b17032e95dbe9d230b66dc906499ab",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Наклейки на клавіатуру",
+        "id": "866bd76981de649058c17ffb24eaafcb",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192160-0",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Коректор",
+        "id": "7bb1eccffe090db0ead69699631a0f95",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Стругалки",
+        "id": "afb534795262ccb02a04060731ab2010",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192700-8",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:27:43+02:00"
+        },
+        "description": "Стругалки",
+        "id": "24df33081c41dc3d0a309e88a4eefbaf",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-04-010878-a",
+    "title": "Папір А4 500арк., Папір А3, Файли, Скріпки, Клей ПВА, Олівці, Гумки, Ручки, Кнопки, Календар, Наклейки на клавіатуру, Коректор, Стругалки (Класифікація за ДК 021-2015 (CPV) 30190000-7 - Офісне устаткування та приладдя різне)",
+    "value": {
+      "amount": "3290.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

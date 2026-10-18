@@ -1,0 +1,36 @@
+npm notice run ground-control-interface-lab@1.0.0 test
+npm notice run node --test tests/*.test.mjs
+✔ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (10.348611ms)
+✔ freshness boundary and historical evidence are distinct (1.516018ms)
+✔ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (0.799251ms)
+✔ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (1.092193ms)
+✔ rewind/reset during replay pauses and removes future state (2.269434ms)
+✔ stale ownership cannot authorize a request and unknown observations never invent a value (3.024282ms)
+✔ replays are deterministic for every second and do not mutate scripts (6.107143ms)
+✔ oracle comparison catches incorrect ownership and a misleading grouping independently (2.747309ms)
+✔ old responsibility promoted to current and omitted facts are errors (1.167031ms)
+✔ metadata parser preserves escaped values, unknown timestamps and disclosure steps (2.042464ms)
+✔ correct hidden information has a separate visibility result and CSV quotes cells (0.921176ms)
+✔ interrupted: all checkpoints match literal truth and reset removes future events (18.252042ms)
+✔ stale_evidence: all checkpoints match literal truth and reset removes future events (9.237883ms)
+✔ alarm_cascade: all checkpoints match literal truth and reset removes future events (19.196542ms)
+✔ conflicting_receipts: all checkpoints match literal truth and reset removes future events (3.448248ms)
+✔ ownership_conflict: all checkpoints match literal truth and reset removes future events (2.874525ms)
+✔ accepted_timeout: all checkpoints match literal truth and reset removes future events (2.805467ms)
+✔ requested_timeout: all checkpoints match literal truth and reset removes future events (4.160938ms)
+✔ cancelled_receipt: all checkpoints match literal truth and reset removes future events (3.811942ms)
+✔ simultaneous_events: all checkpoints match literal truth and reset removes future events (3.255261ms)
+✔ successful_handover: all checkpoints match literal truth and reset removes future events (3.389249ms)
+✔ every scenario has declared completion, at least three checkpoint tasks and no unmatched oracle records (0.595944ms)
+✔ every variant renders each required fact exactly once with semantic metadata (15.612412ms)
+✔ stale ownership stays explicit and last reliable evidence is labeled historical (1.345994ms)
+✔ fact values, actor labels, alarm groups and event details cannot inject markup (3.491718ms)
+✔ declared visibility differs by design and all alarms retain their authored group (2.80193ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 251.952453

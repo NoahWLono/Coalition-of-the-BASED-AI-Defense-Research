@@ -1,0 +1,65 @@
+{
+  "scenario_id": "tiny-staff_bottleneck",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R1",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 2,
+      "end": 2
+    },
+    {
+      "request_id": "R3",
+      "vehicle_id": "V1",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 3,
+      "delivery": 5,
+      "end": 5
+    },
+    {
+      "request_id": "R4",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 6,
+      "delivery": 8,
+      "end": 8
+    }
+  ],
+  "charges": [
+    {
+      "battery_id": "B1",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 4,
+      "end": 6
+    }
+  ],
+  "unserved": [
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 201.0,
+    "objective_rational": "201",
+    "best_bound": 201.0,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 409,
+    "enumerated_leaves": 45,
+    "transitions": 782,
+    "cache_hits": 374,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.01106969400007074
+  }
+}

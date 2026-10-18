@@ -1,0 +1,522 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "64890.0",
+          "amountNet": "64890.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "b94d6e6698c046808343607908fececc",
+        "contractID": "UA-2025-02-26-003202-a-b1",
+        "date": "2025-03-27T14:54:39.433439+02:00",
+        "dateModified": "2025-03-27T14:54:39.433439+02:00",
+        "dateSigned": "2025-03-13T16:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-14T09:24:31.395023+02:00",
+            "datePublished": "2025-03-14T09:24:31.395023+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "19fa436e6b4d415db84bf5a7f13c552b",
+            "relatedItem": "c7bd96e0861343beb648c3f146b0d07d"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-14T09:26:03.302797+02:00",
+            "datePublished": "2025-03-14T09:26:03.302797+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "92ba73086010437aa5d077a56afb2ee0",
+            "relatedItem": "c7bd96e0861343beb648c3f146b0d07d"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-14T09:26:51.276071+02:00",
+            "datePublished": "2025-03-14T09:26:51.276071+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "3bde54804eca4772bb3a217a01b44c6f",
+            "relatedItem": "c7bd96e0861343beb648c3f146b0d07d"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-27T14:53:21.055901+02:00",
+            "datePublished": "2025-03-27T14:53:21.055901+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "06ad855b2e9c4dc9b7be4f046109c402",
+            "relatedItem": "c7bd96e0861343beb648c3f146b0d07d"
+          }
+        ],
+        "id": "c7bd96e0861343beb648c3f146b0d07d",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-04-01T00:00:00+03:00"
+            },
+            "description": "Папір офісний Office Economy Cut-Size Copy&Print  NAVIGATOR",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "64890.0",
+          "amountNet": "64890.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 83478,
+        "method": "GET",
+        "response_sha256": "c8409e8c27b0ff3189c9b1c433b9b8749c2141d18a894198cab019c6442f24dc",
+        "retrieved_at": "2026-10-18T01:46:57.841382+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:46:58 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/c7bd96e0861343beb648c3f146b0d07d"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 67632,
+    "discovery_url": "https://clarity-project.info/tender/ba3984c791c84d7e8f234e31a01bf20a",
+    "method": "GET",
+    "response_sha256": "de2816946fb535de175ccc54799b4015040c97acef58f4f60edf43c1c358c52f",
+    "retrieved_at": "2026-10-18T01:46:56.134893+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:46:57 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/ba3984c791c84d7e8f234e31a01bf20a"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-05T10:11:41.062123+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-05T10:09:28.749663+02:00",
+            "datePublished": "2025-03-05T10:09:28.749663+02:00",
+            "documentOf": "tender",
+            "documentType": "eligibilityDocuments",
+            "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "id": "d1cc9cd2afbb4447a5d286aed95294d2"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-05T10:09:44.087948+02:00",
+            "datePublished": "2025-03-05T10:09:44.087948+02:00",
+            "documentOf": "tender",
+            "documentType": "eligibilityDocuments",
+            "format": "image/bmp",
+            "id": "da879e343d0745aeb978d596280a4525"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-05T10:09:56.824035+02:00",
+            "datePublished": "2025-03-05T10:09:56.824035+02:00",
+            "documentOf": "tender",
+            "documentType": "eligibilityDocuments",
+            "format": "image/bmp",
+            "id": "29d35e30431b4b2c88670e09c9f0ede4"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-05T10:11:29.196697+02:00",
+            "datePublished": "2025-03-05T10:11:29.196697+02:00",
+            "documentOf": "tender",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "33511db40ec841ec9545acee1423919a"
+          }
+        ],
+        "id": "b94d6e6698c046808343607908fececc",
+        "status": "active",
+        "value": {
+          "amount": "64890.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "bids": [
+      {
+        "date": "2025-02-26T13:19:27.864277+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-26T13:19:27.657300+02:00",
+            "datePublished": "2025-02-26T13:19:27.657300+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "411d91a75049433b86f41442db1bf821"
+          }
+        ],
+        "id": "f808f54791da4910ba3aaa4a15d45468",
+        "items": [
+          {
+            "description": "Папір для друку JET A4, 80 г/м², 500 арк., білий",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "80247.3",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-27T10:31:50.310796+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-27T10:31:49.449535+02:00",
+            "datePublished": "2025-02-27T10:31:49.449535+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "5c33031d801740d8bd155a2eb6423552"
+          }
+        ],
+        "id": "ad0435932ac5418d807ed8adc93a13cd",
+        "items": [
+          {
+            "description": "Папір офісний Office Economy Cut-Size Copy&Print  NAVIGATOR",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "64890.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-27T10:44:26.926137+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-27T10:44:26.665524+02:00",
+            "datePublished": "2025-02-27T10:44:26.665524+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "dac03f428812420c97f6619a447118a9"
+          }
+        ],
+        "id": "b9ae63201ebb4deb9ae10ecc5cec3a63",
+        "items": [
+          {
+            "description": "Папір для друку UNIVERSAL COPY PAPER A4, 80 г/м², 500 арк., білий.",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "65866.44",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-27T15:33:53.799216+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-27T15:33:53.517719+02:00",
+            "datePublished": "2025-02-27T15:33:53.517719+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "b50447a9c98b4bd1ab8a3530043458ca"
+          }
+        ],
+        "id": "4bb27a375e344d5b9cb362b1d36d4ebf",
+        "items": [
+          {
+            "description": "Папір для друку APHRODITE ,80 г/м², 500 арк., білий(6975649670027)",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "77589.9",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-28T16:29:27.416823+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-28T16:29:27.146023+02:00",
+            "datePublished": "2025-02-28T16:29:27.146023+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "ebf558ce9e5d4b3da49af0389b9ced21"
+          }
+        ],
+        "id": "6cd1189b79c14df88ba97d31cea57a0a",
+        "items": [
+          {
+            "description": "Папір для друку Xerox Premier A4, 80 г/м², 500 арк., білий",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "99745.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-28T17:27:05.140415+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-28T17:27:04.860955+02:00",
+            "datePublished": "2025-02-28T17:27:04.860955+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "a4c31b5285384a54a548d159f1ce52bb"
+          }
+        ],
+        "id": "17861de2fcc649f6854291c68f06c960",
+        "items": [
+          {
+            "description": "Папір для друку PAPERONE Digital A4 80 г/м2, 500 арк./уп.",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "78280.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-02-28T21:05:57.101332+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-28T21:05:56.962198+02:00",
+            "datePublished": "2025-02-28T21:05:56.962198+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "e9396209ede547378bb341b09d126527"
+          }
+        ],
+        "id": "42d2decad13b4b23b405805a463eb513",
+        "items": [
+          {
+            "description": "Папір для друку NAVIGATOR Universal A4, 80  г/м², 500  арк., білий",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "84387.9",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-02T13:03:34.202607+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-02T13:03:33.956380+02:00",
+            "datePublished": "2025-03-02T13:03:33.956380+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "0b0425283a4d43b4ab71722f91b3903a"
+          }
+        ],
+        "id": "ee6fa9c489694483b2b67bde1ed2eb1f",
+        "items": [
+          {
+            "description": "Папір для друку XEROX Excel A4, 80  г/м², 500 арк., білий",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "78769.25",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-02T14:58:41.384378+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-02T14:58:41.136345+02:00",
+            "datePublished": "2025-03-02T14:58:41.136345+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "bb69620a09a8447fba69a6c407b043fa"
+          }
+        ],
+        "id": "819a2b534c32489a8b96db4585c1037a",
+        "items": [
+          {
+            "description": "Папір для друку GOLDEN STAR A4 80 г/м2, 500 арк./уп.",
+            "id": "38fda61c39554ca3affd534b5727fc2a",
+            "quantity": "515.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "84975.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "b94d6e6698c046808343607908fececc",
+        "contractID": "UA-2025-02-26-003202-a-b1",
+        "date": "2025-03-14T09:27:00.365305+02:00",
+        "id": "c7bd96e0861343beb648c3f146b0d07d",
+        "status": "active",
+        "value": {
+          "amount": "64890.0",
+          "amountNet": "64890.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-02-26T10:46:42.547376+02:00",
+    "dateModified": "2025-03-14T09:27:00.365305+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-26T11:12:15.899951+02:00",
+        "datePublished": "2025-02-26T11:12:15.899951+02:00",
+        "documentOf": "tender",
+        "documentType": "contractProforma",
+        "format": "application/msword",
+        "id": "4286af72fe024385b7e9c484540bc7b7"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-26T11:13:10.748874+02:00",
+        "datePublished": "2025-02-26T11:13:10.748874+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "59291d7a7403474a972bf21eb038bf84"
+      }
+    ],
+    "id": "ba3984c791c84d7e8f234e31a01bf20a",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-04-01T00:00:00+03:00"
+        },
+        "description": "Папір для друку, А4, 80 г/м², СIE 168%, 105 мкм, 92%, 500 арк., білий",
+        "id": "38fda61c39554ca3affd534b5727fc2a",
+        "quantity": "515.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "priceQuotation",
+    "status": "complete",
+    "tenderID": "UA-2025-02-26-003202-a",
+    "title": "Офісне устаткування та приладдя різне",
+    "value": {
+      "amount": "103000.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

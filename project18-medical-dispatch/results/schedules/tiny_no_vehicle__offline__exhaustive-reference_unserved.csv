@@ -1,0 +1,5 @@
+request_id,status,reason
+R1,rejected,exhaustive optimum selection
+R2,rejected,exhaustive optimum selection
+R3,rejected,exhaustive optimum selection
+R4,rejected,exhaustive optimum selection

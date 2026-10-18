@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prozorro-comparable-purchase"
+version = "0.1.0"
+description = "Conservative stage-aware civilian purchase comparability audit"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+prozorro-compare = "prozorro_compare.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

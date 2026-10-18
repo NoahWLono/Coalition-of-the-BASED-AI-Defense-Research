@@ -1,0 +1,59 @@
+baseline offline fcfs: served=12, rejected=7, objective=2359.000, bound=None
+baseline offline edf: served=12, rejected=7, objective=2400.000, bound=None
+baseline offline milp: served=12, rejected=7, objective=1663.000, bound=1663.0
+demand_12 offline fcfs: served=10, rejected=2, objective=685.667, bound=None
+demand_12 offline edf: served=11, rejected=1, objective=537.333, bound=None
+demand_12 offline milp: served=12, rejected=0, objective=278.000, bound=278.0
+demand_28 offline fcfs: served=12, rejected=15, objective=4651.429, bound=None
+demand_28 offline edf: served=12, rejected=15, objective=4691.429, bound=None
+demand_28 offline milp: served=12, rejected=15, objective=3338.714, bound=3338.714285714286
+chargers_0 offline fcfs: served=4, rejected=15, objective=3905.000, bound=None
+chargers_0 offline edf: served=4, rejected=15, objective=3905.000, bound=None
+chargers_0 offline milp: served=4, rejected=15, objective=3080.000, bound=3080.0
+chargers_2 offline fcfs: served=13, rejected=6, objective=2012.000, bound=None
+chargers_2 offline edf: served=13, rejected=6, objective=2062.000, bound=None
+chargers_2 offline milp: served=11, rejected=8, objective=2085.000, bound=1325.155172413799
+weather_clear offline fcfs: served=12, rejected=7, objective=2280.000, bound=None
+weather_clear offline edf: served=12, rejected=7, objective=2340.000, bound=None
+weather_clear offline milp: served=12, rejected=7, objective=1643.000, bound=1643.000000000006
+weather_severe offline fcfs: served=8, rejected=11, objective=3445.000, bound=None
+weather_severe offline edf: served=8, rejected=11, objective=3705.000, bound=None
+weather_severe offline milp: served=8, rejected=11, objective=3009.000, bound=3009.0
+rejection_20 offline fcfs: served=12, rejected=7, objective=1099.000, bound=None
+rejection_20 offline edf: served=12, rejected=7, objective=1140.000, bound=None
+rejection_20 offline milp: served=10, rejected=9, objective=281.000, bound=281.00000000000006
+rejection_1000 offline fcfs: served=12, rejected=7, objective=7959.000, bound=None
+rejection_1000 offline edf: served=12, rejected=7, objective=8000.000, bound=None
+rejection_1000 offline milp: served=12, rejected=7, objective=7263.000, bound=7262.999999999933
+lateness_10 offline fcfs: served=12, rejected=7, objective=10549.000, bound=None
+lateness_10 offline edf: served=12, rejected=7, objective=10950.000, bound=None
+lateness_10 offline milp: served=10, rejected=9, objective=2036.000, bound=2036.0
+fairness_0 offline fcfs: served=12, rejected=7, objective=2319.000, bound=None
+fairness_0 offline edf: served=12, rejected=7, objective=2360.000, bound=None
+fairness_0 offline milp: served=12, rejected=7, objective=1603.000, bound=1603.0
+fairness_2000 offline fcfs: served=12, rejected=7, objective=3119.000, bound=None
+fairness_2000 offline edf: served=12, rejected=7, objective=3160.000, bound=None
+fairness_2000 offline milp: served=12, rejected=7, objective=2453.000, bound=2452.9999999999695
+baseline online fcfs: served=12, rejected=7, objective=2359.000
+baseline online edf: served=12, rejected=7, objective=2400.000
+baseline online rolling_milp: served=12, rejected=7, objective=1793.000
+{
+  "timestamp": "2026-10-17T21:56:48.968289-04:00",
+  "command": "<HOME>/Documents/ChatGPT/DEFENSE PORTFOLIO/project18-medical-dispatch/dispatch/experiment.py --out results --offline-limit 3 --online-limit 0.5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "packages": {
+    "scipy": "1.17.1",
+    "numpy": "2.5.4",
+    "matplotlib": "3.10.8",
+    "pytest": "9.0.2"
+  },
+  "highs_version": "1.12.0",
+  "seed": 1801,
+  "offline_time_limit": 3.0,
+  "online_time_limit": 0.5,
+  "elapsed_seconds": 28.832226513999558,
+  "comparison_schedules": 39,
+  "tiny_cases": 17,
+  "validated_schedules": 73
+}

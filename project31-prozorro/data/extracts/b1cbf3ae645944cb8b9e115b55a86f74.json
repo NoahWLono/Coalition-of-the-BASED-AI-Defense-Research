@@ -1,0 +1,298 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "112957.2",
+          "amountNet": "94131.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "b074e46dd2fe4b8b905121b12e87708f",
+        "contractID": "UA-2025-03-04-000466-a-b1",
+        "date": "2025-03-26T13:10:25.035040+02:00",
+        "dateModified": "2025-03-26T13:10:25.035040+02:00",
+        "dateSigned": "2025-03-12T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-13T15:51:52.840409+02:00",
+            "datePublished": "2025-03-13T15:51:52.840409+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "5fb5ecfa68fb4e5b91160ef7f7384b0b"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-13T15:52:08.684119+02:00",
+            "datePublished": "2025-03-13T15:52:08.684119+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "7effd14d5f0e4bec966191c3675287a8"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-26T13:10:24.504572+02:00",
+            "datePublished": "2025-03-26T13:10:24.504572+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "7effd14d5f0e4bec966191c3675287a8"
+          }
+        ],
+        "id": "10552643d3144e70a4386296e3276393",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папір для друку BUROMAX (BM.27261500) А4, 45 г/м², 500 арк., сірий",
+            "id": "accd802125144dde8e8e890f6aad7015",
+            "quantity": "20.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00"
+            },
+            "description": "Папір А4 80 г/м2 500 арк. EVERYDAY COPY",
+            "id": "08f9d057ae524c25be13437e5b92d0e0",
+            "quantity": "900.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "112957.2",
+          "amountNet": "94131.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 86579,
+        "method": "GET",
+        "response_sha256": "275efa40ea344afd942a5ed160a3ef4a1da5bd33dd87fa2a4678ab1a8669c815",
+        "retrieved_at": "2026-10-18T01:47:23.178280+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:23 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/10552643d3144e70a4386296e3276393"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 42339,
+    "discovery_url": "https://clarity-project.info/tender/b1cbf3ae645944cb8b9e115b55a86f74",
+    "method": "GET",
+    "response_sha256": "4ae00c0ec706399668677090d31d792be047feb72b3e39d59b5994b0dc3b7b38",
+    "retrieved_at": "2026-10-18T01:47:22.128199+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:22 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b1cbf3ae645944cb8b9e115b55a86f74"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-07T10:03:26.624486+02:00",
+        "id": "b074e46dd2fe4b8b905121b12e87708f",
+        "status": "active",
+        "value": {
+          "amount": "112957.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "bids": [
+      {
+        "date": "2025-03-06T15:41:30.442062+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-06T15:41:30.290856+02:00",
+            "datePublished": "2025-03-06T15:41:30.290856+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "49021e8a859a4561bb90ac733e7f4e0f"
+          }
+        ],
+        "id": "491c90c6c9004d8bbe215883a7f9600c",
+        "items": [
+          {
+            "description": "Папір для друку BUROMAX (BM.27261500) А4, 45 г/м², 500 арк., сірий",
+            "id": "accd802125144dde8e8e890f6aad7015",
+            "quantity": "20.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "description": "Папір А4 80 г/м2 500 арк. EVERYDAY COPY",
+            "id": "08f9d057ae524c25be13437e5b92d0e0",
+            "quantity": "900.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "112957.2",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      {
+        "date": "2025-03-06T23:11:09.860982+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-06T23:11:09.629691+02:00",
+            "datePublished": "2025-03-06T23:11:09.629691+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "475a2d1f70d64bd4b950d66a35753cde"
+          }
+        ],
+        "id": "b90354e3f705431587449e57300ad86c",
+        "items": [
+          {
+            "description": "Папір для друку BUROMAX (BM.27261500) А4, 45 г/м², 500 арк., сірий",
+            "id": "accd802125144dde8e8e890f6aad7015",
+            "quantity": "20.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "description": "Папір А4 Communicator Basic",
+            "id": "08f9d057ae524c25be13437e5b92d0e0",
+            "quantity": "900.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "118500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "b074e46dd2fe4b8b905121b12e87708f",
+        "contractID": "UA-2025-03-04-000466-a-b1",
+        "date": "2025-03-13T15:52:09.514380+02:00",
+        "id": "10552643d3144e70a4386296e3276393",
+        "status": "active",
+        "value": {
+          "amount": "112957.2",
+          "amountNet": "94131.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-04T08:50:00.614993+02:00",
+    "dateModified": "2025-03-13T15:52:09.514380+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-04T08:50:01.507307+02:00",
+        "datePublished": "2025-03-04T08:50:01.507307+02:00",
+        "documentOf": "tender",
+        "documentType": "contractProforma",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "id": "77c5faf00eba48eb88d9ddbd90cf5638"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-04T08:50:05.217665+02:00",
+        "datePublished": "2025-03-04T08:50:05.217665+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "aa25186f19bd469a9e8072e1cf353095"
+      }
+    ],
+    "id": "b1cbf3ae645944cb8b9e115b55a86f74",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папір офісний форматний A4, 45-80 г/м², 90-106 мкм, 90-95%, 500 арк., сірий",
+        "id": "accd802125144dde8e8e890f6aad7015",
+        "quantity": "20.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00"
+        },
+        "description": "Папір для друку, А4, 80 г/м², СIE 150%,  103 мкм, 91%, 500 арк., білий",
+        "id": "08f9d057ae524c25be13437e5b92d0e0",
+        "quantity": "900.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "priceQuotation",
+    "status": "complete",
+    "tenderID": "UA-2025-03-04-000466-a",
+    "title": "Папір офісний форматний A4, 45-80 г/м², 90-106 мкм, 90-95%, 500 арк., сірий,Папір для друку, А4, 80 г/м², СIE 150%,  103 мкм, 91%, 500 арк., білий",
+    "value": {
+      "amount": "119100.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

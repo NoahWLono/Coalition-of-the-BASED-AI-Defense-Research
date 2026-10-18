@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Civilian medical dispatch · Synthetic experiment</title>
+  <script>
+    (() => {
+      let preference = 'dark';
+      try { const saved = localStorage.getItem('medical-dispatch-theme'); if (['dark', 'light', 'system'].includes(saved)) preference = saved; } catch (_) {}
+      const darkSystem = typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = preference === 'system' ? (darkSystem ? 'dark' : 'light') : preference;
+      document.documentElement.dataset.themePreference = preference;
+    })();
+  </script>
+  <link rel="stylesheet" href="viewer/styles.css">
+  <script defer src="viewer/viewer.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to results</a>
+<header class="masthead">
+  <a class="identity" href="index.html"><span class="dispatch-mark" aria-hidden="true">+</span><span>Civilian supply research<span class="project-name">Medical dispatch / Project 18</span></span></a>
+  <label class="theme-control" for="theme">Theme <select id="theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label>
+</header>
+<main id="main">
+  <section class="introduction" aria-labelledby="page-title">
+    <div>
+      <p class="run-label">Saved experiment · Seed 1801 · 17 October 2026</p>
+      <h1>A dispatch decision has more than one outcome.</h1>
+      <p class="lead">Compare delay, rejection and regional service in a synthetic civilian medical-delivery model. The saved baseline serves 12 of 19 eligible requests under every policy; the scheduling decisions change who is served and when.</p>
+      <p class="scope">All inputs and annotations are AI-generated. This experiment uses no patient data, geographic routes or real delivery observations. It has no operational or clinical validation.</p>
+    </div>
+    <aside class="scenario" aria-label="Baseline scenario">
+      <h2>One simulated shift</h2>
+      <dl><div><dt>Requests</dt><dd>20 <small>1 cancelled</small></dd></div><div><dt>Shift</dt><dd>240 <small>minutes</small></dd></div><div><dt>Vehicles / batteries</dt><dd>3 / 4</dd></div><div><dt>Chargers / technicians</dt><dd>1 / 2</dd></div><div><dt>Time grid</dt><dd>5 <small>minutes</small></dd></div></dl>
+    </aside>
+  </section>
+
+  <noscript><p class="notice">The interactive comparison needs JavaScript. The <a href="results/report.md">complete saved report</a> and <a href="results/comparison.csv">comparison CSV</a> contain all results.</p></noscript>
+
+  <section class="comparison" aria-labelledby="comparison-title">
+    <div class="section-head"><div><h2 id="comparison-title">Baseline policy comparison</h2><p>Read service counts beside the objective and delay totals.</p></div><fieldset class="mode"><legend>Information available</legend><label><input type="radio" name="information" value="offline" checked> Offline</label><label><input type="radio" name="information" value="online"> Online</label></fieldset></div>
+    <p class="information-note" id="information-note">Offline policies know the full demand fixture at time zero, subject to release constraints. FCFS and EDF use their myopic queue rules; MILP can plan for future releases.</p>
+    <div class="legend" aria-label="Service outcome legend"><span><i class="on-time"></i>On time</span><span><i class="late"></i>Served late</span><span><i class="rejected"></i>Rejected</span></div>
+    <div id="outcomes" class="outcome-list" aria-label="Baseline service outcome charts"></div>
+    <p class="chart-note">Each bar represents the 19 eligible requests. The cancelled request is excluded.</p>
+    <div class="table-scroll" role="region" aria-label="Baseline policy metrics" tabindex="0"><table><caption>Exact values for the selected information setting</caption><thead><tr><th scope="col">Policy</th><th scope="col">Served</th><th scope="col">On time</th><th scope="col">Late minutes</th><th scope="col">Objective ↓</th><th scope="col">Lower bound</th><th scope="col">Gap</th></tr></thead><tbody id="baseline-table"></tbody></table></div>
+    <p class="chart-note">Late minutes are summed over served requests only. The objective adds priority-weighted rejection and lateness costs, charging cost and the worst regional rejection fraction. Its administrative weights allow service to trade against delay and fairness. <a href="docs/model.md">Read the model and assumptions</a>.</p>
+    <div class="tradeoff"><h3>The regional tradeoff</h3><p id="tradeoff-text"></p><div class="table-scroll" role="region" aria-label="Regional and category service rates" tabindex="0"><table><caption>Baseline service rates by fictional group</caption><thead><tr id="distribution-head"></tr></thead><tbody id="distribution-table"></tbody></table></div><p class="chart-note">The objective has no minimum regional or category service guarantee. Groups are fictional administrative labels. Full counts and lateness are in the <a href="results/distributions.csv">distribution CSV</a>.</p></div>
+    <p id="comparison-status" class="visually-hidden" role="status" aria-live="polite"></p>
+  </section>
+
+  <section class="sensitivity" aria-labelledby="sensitivity-title">
+    <div class="section-head"><div><h2 id="sensitivity-title">Sensitivity and unresolved bounds</h2><p>One-factor sweeps on the same seeded demand stream.</p></div><a class="file-link" href="results/comparison.csv" download>Download comparison CSV</a></div>
+    <aside class="notice"><h3>The two-charger optimum is still unresolved</h3><p>The three-second solve returned objective <strong>2,085.00</strong>, lower bound <strong>1,325.16</strong> and gap <strong>36.44%</strong>. A separately checked transfer of the baseline schedule gives a better feasible objective of <strong>1,663.00</strong>, reducing the remaining gap to <strong>20.32%</strong>. This certificate is a feasible upper bound; it does not establish a new optimum.</p><p>The limited incumbent does not establish that additional charging capacity harms performance. <a href="results/capacity_certificate.json">Inspect the capacity certificate</a>.</p></aside>
+    <div class="table-scroll" role="region" aria-label="Offline sensitivity results" tabindex="0"><table><caption>Saved offline results; objectives with different weights are not directly comparable</caption><thead><tr><th scope="col">Scenario</th><th scope="col">FCFS</th><th scope="col">EDF</th><th scope="col">MILP incumbent</th><th scope="col">Lower bound</th><th scope="col">MILP gap</th><th scope="col">Served</th></tr></thead><tbody id="sensitivity-table"></tbody></table></div>
+    <p class="chart-note">The two-charger row preserves the raw solver result. The transfer certificate is additional evidence. Time-limited incumbents and bounds can vary across machines and load.</p>
+  </section>
+
+  <section class="evidence" aria-labelledby="evidence-title">
+    <h2 id="evidence-title">Evidence and limits</h2>
+    <div class="evidence-grid"><div><h3>74 checked schedules</h3><p>The saved artifact audit reopens 39 policy comparisons, 34 tiny-case witnesses and one capacity certificate, checking feasibility and recomputing metrics.</p><a href="results/artifact-audit.json">Artifact audit</a></div><div><h3>17 tiny cases agree</h3><p>Exact rational enumeration agrees with the MILP objective and bound on all exported tiny instances. The four-request hand case also has an analytical optimum of 2.</p><a href="results/tiny_agreement.json">Tiny-case evidence</a></div><div><h3>A bounded synthetic study</h3><p>One controlled benchmark stream, a five-minute grid and simplified batteries. No energy physics, supply-handling rules or aviation requirements are validated. Online sensitivity and unexpected weather were not evaluated.</p><a href="docs/verification.md">Verification scope</a></div></div>
+    <p>Numerical solver bounds apply to the finite integer-slot model. Rolling MILP uses only requests revealed by each decision; local bounds provide no global online optimality gap or competitive ratio. All code, annotations and review were produced by AI assistants.</p>
+  </section>
+  <section class="downloads" aria-labelledby="downloads-title"><h2 id="downloads-title">Inspect or reproduce the saved run</h2><div class="download-links"><a href="results/report.md">Complete report</a><a href="README.md">Reproduction guide</a><a href="docs/contract.md">Timing contract</a><a href="results/run_metadata.json">Run metadata</a><a href="SHA256SUMS">File hashes</a></div><details><summary>Original figures and data provenance</summary><p>The original PNG figures retain their saved rendering. Download them to inspect the report’s comparison, resource timeline, service distribution and sensitivity plots.</p><div class="download-links"><a href="results/figures/comparison.png" download>Comparison PNG</a><a href="results/figures/schedule.png" download>Resource timeline PNG</a><a href="results/figures/fairness.png" download>Service distribution PNG</a><a href="results/figures/sensitivity.png" download>Sensitivity PNG</a></div><p>This page is generated from the saved CSV and JSON evidence. To check that it matches those sources, run <code>python3 scripts/build_viewer.py --check</code>.</p><dl id="source-hashes" class="source-hashes"></dl></details></section>
+</main>
+<footer><p>Civilian medical-delivery dispatch simulator</p><p>Saved results only. Changing the display does not run a new simulation.</p></footer>
+<script id="evidence-data" type="application/json">__EVIDENCE_JSON__</script>
+</body>
+</html>

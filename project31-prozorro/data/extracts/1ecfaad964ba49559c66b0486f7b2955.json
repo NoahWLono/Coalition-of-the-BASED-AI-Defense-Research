@@ -1,0 +1,140 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "cd45aa93639f4037a23584884a6ffeba",
+        "contractID": "UA-2025-02-28-007918-a-a1",
+        "date": "2025-02-28T15:00:19.873112+02:00",
+        "dateModified": "2025-02-28T15:00:19.873112+02:00",
+        "dateSigned": "2025-02-28T14:52:00+02:00",
+        "id": "4c6dad628a5b4049925a444203786082",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-08-31T00:00:00+03:00"
+            },
+            "description": "Папір А4 April PPLite Клас В",
+            "id": "73eae32a4efc42049f8bb51dc579235d",
+            "quantity": "160.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "23680.0",
+          "amountNet": "23680.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 25000,
+        "method": "GET",
+        "response_sha256": "550f9a9e5d185212faabfabf44e7ffd17994eaac4e02946df66f18b32362eecc",
+        "retrieved_at": "2026-10-18T01:48:01.567298+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:48:02 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/4c6dad628a5b4049925a444203786082"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 6218,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-02-28-007918-a/",
+    "method": "GET",
+    "response_sha256": "68db0d2c2d489b9a01aa0fac0d97c4f86c19a28f1ecefeccb9a48eef6bceb9ee",
+    "retrieved_at": "2026-10-18T01:48:00.517211+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:48:01 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/1ecfaad964ba49559c66b0486f7b2955"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-28T15:00:05.332543+02:00",
+        "id": "cd45aa93639f4037a23584884a6ffeba",
+        "status": "active",
+        "value": {
+          "amount": "23680.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "cd45aa93639f4037a23584884a6ffeba",
+        "contractID": "UA-2025-02-28-007918-a-a1",
+        "date": "2025-02-28T15:00:19.873112+02:00",
+        "id": "4c6dad628a5b4049925a444203786082",
+        "status": "active",
+        "value": {
+          "amount": "23680.0",
+          "amountNet": "23680.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-28T14:55:38.685612+02:00",
+    "dateModified": "2025-02-28T15:00:19.873112+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-28T14:59:59.851198+02:00",
+        "datePublished": "2025-02-28T14:59:59.685186+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "d5f79f526d8343eaa146da556d655805"
+      }
+    ],
+    "id": "1ecfaad964ba49559c66b0486f7b2955",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-08-31T00:00:00+03:00"
+        },
+        "description": "Папір А4 April PPLite Клас В",
+        "id": "73eae32a4efc42049f8bb51dc579235d",
+        "quantity": "160.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-28-007918-a",
+    "title": "Папір А4 April PPLite Клас В (код згідно ЄЗС ДК 021:2015: 30190000-7 Офісне устаткування та приладдя різне)",
+    "value": {
+      "amount": "23680.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+npm notice run ground-control-interface-lab@1.0.0 test
+npm notice run node --test tests/*.test.mjs
+✔ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (17.568509ms)
+✔ freshness boundary and historical evidence are distinct (2.319492ms)
+✔ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (1.119165ms)
+✔ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (1.340308ms)
+✔ rewind/reset during replay pauses and removes future state (3.410956ms)
+✔ stale ownership cannot authorize a request and unknown observations never invent a value (4.633495ms)
+✔ replays are deterministic for every second and do not mutate scripts (10.036874ms)
+✔ oracle comparison catches incorrect ownership and a misleading grouping independently (7.199687ms)
+✔ old responsibility promoted to current and omitted facts are errors (1.767494ms)
+✔ metadata parser preserves escaped values, unknown timestamps and disclosure steps (3.96034ms)
+✔ correct hidden information has a separate visibility result and CSV quotes cells (3.900188ms)
+✔ interrupted: all checkpoints match literal truth and reset removes future events (29.344855ms)
+✔ stale_evidence: all checkpoints match literal truth and reset removes future events (18.552443ms)
+✔ alarm_cascade: all checkpoints match literal truth and reset removes future events (42.637657ms)
+✔ conflicting_receipts: all checkpoints match literal truth and reset removes future events (6.723289ms)
+✔ ownership_conflict: all checkpoints match literal truth and reset removes future events (6.252021ms)
+✔ accepted_timeout: all checkpoints match literal truth and reset removes future events (5.380026ms)
+✔ requested_timeout: all checkpoints match literal truth and reset removes future events (3.288989ms)
+✔ cancelled_receipt: all checkpoints match literal truth and reset removes future events (5.642675ms)
+✔ simultaneous_events: all checkpoints match literal truth and reset removes future events (5.057424ms)
+✔ successful_handover: all checkpoints match literal truth and reset removes future events (5.166448ms)
+✔ every scenario has declared completion, at least three checkpoint tasks and no unmatched oracle records (0.806753ms)
+✔ new visits use dark before controls are ready, regardless of a light system preference (47.921113ms)
+✔ saved light preference is applied before controls are ready and a new choice persists (6.891642ms)
+✔ system theme follows preference changes only while system is selected (5.175986ms)
+✔ unavailable storage does not prevent selecting or following a theme (14.093363ms)
+✔ invalid saved values and missing media support have a usable dark fallback (7.704958ms)
+✔ every variant renders each required fact exactly once with semantic metadata (23.762703ms)
+✔ stale ownership stays explicit and last reliable evidence is labeled historical (1.969089ms)
+✔ fact values, actor labels, alarm groups and event details cannot inject markup (6.916168ms)
+✔ declared visibility differs by design and all alarms retain their authored group (9.464928ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 436.755307

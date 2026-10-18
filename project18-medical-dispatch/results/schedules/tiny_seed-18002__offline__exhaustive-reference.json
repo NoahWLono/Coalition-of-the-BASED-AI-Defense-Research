@@ -1,0 +1,44 @@
+{
+  "scenario_id": "tiny-seed-18002",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R3",
+      "vehicle_id": "V2",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 2,
+      "delivery": 6,
+      "end": 6
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 60.5,
+    "objective_rational": "121/2",
+    "best_bound": 60.5,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 11,
+    "enumerated_leaves": 2,
+    "transitions": 10,
+    "cache_hits": 0,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.00047627100047975546
+  }
+}

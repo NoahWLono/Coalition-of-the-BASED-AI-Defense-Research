@@ -1,0 +1,21 @@
+test_acquire (unittest.loader._FailedTest.test_acquire) ... ERROR
+
+======================================================================
+ERROR: test_acquire (unittest.loader._FailedTest.test_acquire)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_acquire
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/unittest/loader.py", line 433, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.14/unittest/loader.py", line 374, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "<HOME>/Documents/ChatGPT/DEFENSE PORTFOLIO/project31-prozorro/tests/test_acquire.py", line 2, in <module>
+    from prozorro_compare.acquire import sanitize, candidate_scope, safe_url
+ModuleNotFoundError: No module named 'prozorro_compare.acquire'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "interrupted",
+    "title": "Interrupted quay inspection handover",
+    "vehicle": "Cedar-01",
+    "location": "Fictional East Quay",
+    "description": "A civilian quay inspection loses control-link margin while Operator A offers responsibility to Operator B. Receipt, acceptance, interruption and supervisory reconciliation remain distinct.",
+    "duration": 12,
+    "completionCondition": "Supervisor reconciles responsibility to Operator A; the control-link alarm is cleared and the principal issue is explicitly cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Link uncertainty"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Link margin 82 percent"
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "a1",
+        "label": "Control link degraded",
+        "group": "link",
+        "severity": "warning"
+      },
+      {
+        "at": 2,
+        "type": "request",
+        "id": "h1",
+        "from": "Operator A",
+        "to": "Operator B",
+        "deadline": 10
+      },
+      {
+        "at": 3,
+        "type": "ack",
+        "id": "a1",
+        "actor": "Operator B"
+      },
+      {
+        "at": 4,
+        "type": "accept",
+        "id": "h1",
+        "actor": "Operator B"
+      },
+      {
+        "at": 5,
+        "type": "interrupt",
+        "id": "h1"
+      },
+      {
+        "at": 7,
+        "type": "reconcile",
+        "actor": "Supervisor",
+        "owner": "Operator A"
+      },
+      {
+        "at": 8,
+        "type": "clear",
+        "id": "a1"
+      },
+      {
+        "at": 8,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 8,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      0,
+      3,
+      4,
+      5,
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "stale_evidence",
+    "title": "Stale roof survey evidence",
+    "vehicle": "Birch-02",
+    "location": "Fictional Alder Depot",
+    "description": "A roof survey feed ages beyond its evidence lifetime, then explicitly reports no observation. The last reliable observation remains historical. Ownership evidence also expires before supervisory recovery.",
+    "duration": 14,
+    "completionCondition": "Supervisor re-establishes Operator C ownership, fresh telemetry arrives, and the delayed-feed alarm and principal issue are cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator C",
+        "ttl": 3
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Observation gap"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Roof offset 2 metres",
+        "ttl": 3
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "s1",
+        "label": "Position feed delayed",
+        "group": "navigation",
+        "severity": "warning"
+      },
+      {
+        "at": 5,
+        "type": "observe",
+        "field": "telemetry",
+        "value": null
+      },
+      {
+        "at": 6,
+        "type": "conflict",
+        "reports": [
+          "Last owner report: Operator C",
+          "Current console report: absent"
+        ]
+      },
+      {
+        "at": 6,
+        "type": "ack",
+        "id": "s1",
+        "actor": "Operator C"
+      },
+      {
+        "at": 9,
+        "type": "reconcile",
+        "actor": "Supervisor",
+        "owner": "Operator C"
+      },
+      {
+        "at": 9,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Roof offset 1 metre",
+        "ttl": 10
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "s1"
+      },
+      {
+        "at": 9,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 9,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      0,
+      4,
+      5,
+      6,
+      9,
+      14
+    ]
+  },
+  {
+    "id": "alarm_cascade",
+    "title": "Camera alignment alarm cascade",
+    "vehicle": "Maple-03",
+    "location": "Fictional Mill Facade",
+    "description": "Six alarms arrive during facade imaging. Four share an authored imaging group; storage and inspection alarms retain distinct groups. Clearing one alarm must preserve the remaining mappings.",
+    "duration": 15,
+    "completionCondition": "All six alarms are cleared after an explicit corrected gimbal observation; Operator A remains responsible and the principal issue is cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Camera alignment fault"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Gimbal offset 14 degrees",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "c1",
+        "label": "Camera alignment error",
+        "group": "imaging",
+        "severity": "warning"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "c2",
+        "label": "Image overlap low",
+        "group": "imaging",
+        "severity": "warning"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "c3",
+        "label": "Surface coverage incomplete",
+        "group": "imaging",
+        "severity": "advisory"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "c4",
+        "label": "Storage buffer rising",
+        "group": "storage",
+        "severity": "warning"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "c5",
+        "label": "Preview delayed",
+        "group": "imaging",
+        "severity": "advisory"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "c6",
+        "label": "Route segment paused",
+        "group": "inspection",
+        "severity": "advisory"
+      },
+      {
+        "at": 3,
+        "type": "ack",
+        "id": "c1",
+        "actor": "Operator A"
+      },
+      {
+        "at": 3,
+        "type": "ack",
+        "id": "c2",
+        "actor": "Operator A"
+      },
+      {
+        "at": 4,
+        "type": "ack",
+        "id": "c4",
+        "actor": "Image Analyst"
+      },
+      {
+        "at": 5,
+        "type": "clear",
+        "id": "c5"
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "c1"
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "c2"
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "c3"
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "c4"
+      },
+      {
+        "at": 9,
+        "type": "clear",
+        "id": "c6"
+      },
+      {
+        "at": 9,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Gimbal offset 0 degrees",
+        "ttl": 30
+      },
+      {
+        "at": 9,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 9,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      2,
+      5,
+      9,
+      15
+    ]
+  },
+  {
+    "id": "conflicting_receipts",
+    "title": "Two acknowledgments and one owner",
+    "vehicle": "Willow-04",
+    "location": "Fictional Canal Walkway",
+    "description": "Operators A and B both acknowledge an inconsistent battery estimate. These receipts are not responsibility transfers. Operator B also sends an acceptance for a handover that was never requested.",
+    "duration": 12,
+    "completionCondition": "The inconsistent estimate is corrected and its alarm and principal issue are cleared while Operator A remains owner.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Battery estimate disagreement"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Battery estimate 48 percent",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "r1",
+        "label": "Battery report disagreement",
+        "group": "power",
+        "severity": "warning"
+      },
+      {
+        "at": 2,
+        "type": "ack",
+        "id": "r1",
+        "actor": "Operator A"
+      },
+      {
+        "at": 3,
+        "type": "ack",
+        "id": "r1",
+        "actor": "Operator B"
+      },
+      {
+        "at": 4,
+        "type": "accept",
+        "id": "never-requested",
+        "actor": "Operator B"
+      },
+      {
+        "at": 6,
+        "type": "clear",
+        "id": "r1"
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Battery estimate 51 percent",
+        "ttl": 30
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 6,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      2,
+      3,
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "id": "ownership_conflict",
+    "title": "Conflicting responsibility reports",
+    "vehicle": "Hazel-05",
+    "location": "Fictional Orchard Viaduct",
+    "description": "Console and shift reports disagree about responsibility. A later owner observation and an alarm receipt cannot bypass supervisory reconciliation.",
+    "duration": 12,
+    "completionCondition": "Supervisor reconciles the conflicting reports to Operator B and the responsibility alarm and principal issue are cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator B"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Responsibility report mismatch"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Inspection progress 32 percent",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "conflict",
+        "reports": [
+          "Console report: Operator B",
+          "Shift report: Operator C"
+        ]
+      },
+      {
+        "at": 2,
+        "type": "owner",
+        "actor": "Operator C"
+      },
+      {
+        "at": 3,
+        "type": "alarm",
+        "id": "o1",
+        "label": "Responsibility requires reconciliation",
+        "group": "handover",
+        "severity": "warning"
+      },
+      {
+        "at": 4,
+        "type": "ack",
+        "id": "o1",
+        "actor": "Operator C"
+      },
+      {
+        "at": 6,
+        "type": "reconcile",
+        "actor": "Supervisor",
+        "owner": "Operator B"
+      },
+      {
+        "at": 6,
+        "type": "clear",
+        "id": "o1"
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 6,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      1,
+      2,
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "id": "accepted_timeout",
+    "title": "Accepted handover expires unconfirmed",
+    "vehicle": "Rowan-06",
+    "location": "Fictional Waterworks Fence",
+    "description": "Operator B accepts a shift handover, but confirmation arrives exactly at its deadline. Timeout happens first, leaving responsibility unresolved until Supervisor reconciles it.",
+    "duration": 12,
+    "completionCondition": "Supervisor resolves the accepted timeout to Operator B and explicitly clears the principal issue.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Shift handover pending"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Inspection progress 70 percent",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "request",
+        "id": "accepted-expiry",
+        "from": "Operator A",
+        "to": "Operator B",
+        "deadline": 5
+      },
+      {
+        "at": 2,
+        "type": "accept",
+        "id": "accepted-expiry",
+        "actor": "Operator B"
+      },
+      {
+        "at": 5,
+        "type": "confirm",
+        "id": "accepted-expiry",
+        "actor": "Supervisor"
+      },
+      {
+        "at": 6,
+        "type": "request",
+        "id": "rescue-request",
+        "from": "Operator A",
+        "to": "Operator C",
+        "deadline": 10
+      },
+      {
+        "at": 8,
+        "type": "reconcile",
+        "actor": "Supervisor",
+        "owner": "Operator B"
+      },
+      {
+        "at": 8,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 8,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      2,
+      5,
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "requested_timeout",
+    "title": "Acceptance at the request deadline",
+    "vehicle": "Ash-07",
+    "location": "Fictional Meadow Solar Canopy",
+    "description": "Operator D accepts at the exact request deadline. Timeout is processed first, so Operator C retains responsibility while Supervisor must resolve the timed-out request.",
+    "duration": 12,
+    "completionCondition": "Supervisor reconciles the requested timeout to Operator C and the principal issue is explicitly cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator C"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Transfer deadline pending"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Inspection progress 45 percent",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "request",
+        "id": "requested-expiry",
+        "from": "Operator C",
+        "to": "Operator D",
+        "deadline": 5
+      },
+      {
+        "at": 5,
+        "type": "accept",
+        "id": "requested-expiry",
+        "actor": "Operator D"
+      },
+      {
+        "at": 6,
+        "type": "reconcile",
+        "actor": "Supervisor",
+        "owner": "Operator C"
+      },
+      {
+        "at": 8,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 8,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      1,
+      5,
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "cancelled_receipt",
+    "title": "Cancelled handover with delayed receipt",
+    "vehicle": "Elm-08",
+    "location": "Fictional Brook Footbridge",
+    "description": "Operator A cancels a camera-review handover before acceptance. Operator B later acknowledges the alarm, then sends a delayed acceptance. Neither action transfers responsibility.",
+    "duration": 12,
+    "completionCondition": "The camera-review alarm and principal issue are cleared while the handover remains cancelled and Operator A remains owner.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Camera review requested"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Image count 120",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "k1",
+        "label": "Camera review pending",
+        "group": "imaging",
+        "severity": "advisory"
+      },
+      {
+        "at": 1,
+        "type": "request",
+        "id": "cancelled-offer",
+        "from": "Operator A",
+        "to": "Operator B",
+        "deadline": 9
+      },
+      {
+        "at": 2,
+        "type": "cancel",
+        "id": "cancelled-offer",
+        "actor": "Operator A"
+      },
+      {
+        "at": 3,
+        "type": "ack",
+        "id": "k1",
+        "actor": "Operator B"
+      },
+      {
+        "at": 4,
+        "type": "accept",
+        "id": "cancelled-offer",
+        "actor": "Operator B"
+      },
+      {
+        "at": 6,
+        "type": "clear",
+        "id": "k1"
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 6,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      2,
+      3,
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "id": "simultaneous_events",
+    "title": "Ordered events at the calibration pause",
+    "vehicle": "Pine-09",
+    "location": "Fictional Civic Hall Roof",
+    "description": "A request, acceptance, alarm receipt, alarm clear and confirmation share one second. Script order determines the result. A receipt after its alarm is cleared is rejected, and the next second reports absent telemetry.",
+    "duration": 10,
+    "completionCondition": "Responsibility is confirmed to Operator B, fresh calibration evidence replaces the absent observation, and all alarms and the principal issue are cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator A"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Calibration pause"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Calibration error 3 units",
+        "ttl": 30
+      },
+      {
+        "at": 2,
+        "type": "request",
+        "id": "simultaneous",
+        "from": "Operator A",
+        "to": "Operator B",
+        "deadline": 7
+      },
+      {
+        "at": 2,
+        "type": "accept",
+        "id": "simultaneous",
+        "actor": "Operator B"
+      },
+      {
+        "at": 2,
+        "type": "alarm",
+        "id": "q1",
+        "label": "Calibration review",
+        "group": "calibration",
+        "severity": "advisory"
+      },
+      {
+        "at": 2,
+        "type": "ack",
+        "id": "q1",
+        "actor": "Operator A"
+      },
+      {
+        "at": 2,
+        "type": "clear",
+        "id": "q1"
+      },
+      {
+        "at": 2,
+        "type": "ack",
+        "id": "q1",
+        "actor": "Operator B"
+      },
+      {
+        "at": 2,
+        "type": "confirm",
+        "id": "simultaneous",
+        "actor": "Supervisor"
+      },
+      {
+        "at": 3,
+        "type": "observe",
+        "field": "telemetry",
+        "value": null
+      },
+      {
+        "at": 3,
+        "type": "alarm",
+        "id": "q2",
+        "label": "Calibration observation missing",
+        "group": "evidence",
+        "severity": "warning"
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Calibration error 0 units",
+        "ttl": 30
+      },
+      {
+        "at": 6,
+        "type": "clear",
+        "id": "q2"
+      },
+      {
+        "at": 6,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 6,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      0,
+      2,
+      3,
+      6,
+      10
+    ]
+  },
+  {
+    "id": "successful_handover",
+    "title": "Confirmed handover and separate mode change",
+    "vehicle": "Juniper-10",
+    "location": "Fictional Lakeside Greenhouse",
+    "description": "A planned handover transfers responsibility from Operator D to Operator E after acceptance and supervisory confirmation. The control mode changes later through a separate observation.",
+    "duration": 12,
+    "completionCondition": "Supervisor confirms Operator E, the later Inspection mode observation is present, and the handover-review alarm and principal issue are cleared.",
+    "events": [
+      {
+        "at": 0,
+        "type": "owner",
+        "actor": "Operator D"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "principal",
+        "value": "Inspection resumption pending"
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "mode",
+        "value": "Survey hold",
+        "ttl": 30
+      },
+      {
+        "at": 0,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Inspection progress 90 percent",
+        "ttl": 30
+      },
+      {
+        "at": 1,
+        "type": "alarm",
+        "id": "u1",
+        "label": "Handover review pending",
+        "group": "handover",
+        "severity": "advisory"
+      },
+      {
+        "at": 1,
+        "type": "request",
+        "id": "successful",
+        "from": "Operator D",
+        "to": "Operator E",
+        "deadline": 7
+      },
+      {
+        "at": 2,
+        "type": "accept",
+        "id": "successful",
+        "actor": "Operator E"
+      },
+      {
+        "at": 3,
+        "type": "confirm",
+        "id": "successful",
+        "actor": "Supervisor"
+      },
+      {
+        "at": 5,
+        "type": "observe",
+        "field": "mode",
+        "value": "Inspection",
+        "ttl": 30
+      },
+      {
+        "at": 5,
+        "type": "observe",
+        "field": "telemetry",
+        "value": "Inspection progress 95 percent",
+        "ttl": 30
+      },
+      {
+        "at": 8,
+        "type": "clear",
+        "id": "u1"
+      },
+      {
+        "at": 8,
+        "type": "observe",
+        "field": "principal",
+        "value": "No active issue"
+      },
+      {
+        "at": 8,
+        "type": "complete"
+      }
+    ],
+    "checkpoints": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      12
+    ]
+  }
+]

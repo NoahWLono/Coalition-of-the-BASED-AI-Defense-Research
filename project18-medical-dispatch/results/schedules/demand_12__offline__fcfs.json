@@ -1,0 +1,799 @@
+{
+  "scenario_id": "benchmark_s1801_n12",
+  "policy": "fcfs",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R05",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 0,
+      "delivery": 3,
+      "end": 8
+    },
+    {
+      "request_id": "R03",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T1",
+      "start": 1,
+      "delivery": 4,
+      "end": 7
+    },
+    {
+      "request_id": "R01",
+      "vehicle_id": "V3",
+      "battery_id": "B3",
+      "technician_id": "T1",
+      "start": 6,
+      "delivery": 9,
+      "end": 14
+    },
+    {
+      "request_id": "R04",
+      "vehicle_id": "V2",
+      "battery_id": "B4",
+      "technician_id": "T1",
+      "start": 7,
+      "delivery": 14,
+      "end": 19
+    },
+    {
+      "request_id": "R06",
+      "vehicle_id": "V3",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 14,
+      "delivery": 19,
+      "end": 23
+    },
+    {
+      "request_id": "R11",
+      "vehicle_id": "V2",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 19,
+      "delivery": 22,
+      "end": 25
+    },
+    {
+      "request_id": "R08",
+      "vehicle_id": "V1",
+      "battery_id": "B3",
+      "technician_id": "T1",
+      "start": 23,
+      "delivery": 30,
+      "end": 35
+    },
+    {
+      "request_id": "R12",
+      "vehicle_id": "V3",
+      "battery_id": "B4",
+      "technician_id": "T2",
+      "start": 23,
+      "delivery": 30,
+      "end": 35
+    },
+    {
+      "request_id": "R07",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 35,
+      "delivery": 38,
+      "end": 41
+    },
+    {
+      "request_id": "R09",
+      "vehicle_id": "V2",
+      "battery_id": "B2",
+      "technician_id": "T2",
+      "start": 35,
+      "delivery": 38,
+      "end": 43
+    }
+  ],
+  "charges": [
+    {
+      "battery_id": "B2",
+      "charger_id": "C1",
+      "technician_id": "T2",
+      "start": 7,
+      "end": 11
+    },
+    {
+      "battery_id": "B1",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 11,
+      "end": 15
+    },
+    {
+      "battery_id": "B3",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 15,
+      "end": 19
+    },
+    {
+      "battery_id": "B4",
+      "charger_id": "C1",
+      "technician_id": "T2",
+      "start": 19,
+      "end": 23
+    },
+    {
+      "battery_id": "B2",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 24,
+      "end": 28
+    },
+    {
+      "battery_id": "B1",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 28,
+      "end": 32
+    },
+    {
+      "battery_id": "B3",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 36,
+      "end": 40
+    },
+    {
+      "battery_id": "B4",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 40,
+      "end": 44
+    },
+    {
+      "battery_id": "B1",
+      "charger_id": "C1",
+      "technician_id": "T1",
+      "start": 44,
+      "end": 48
+    }
+  ],
+  "unserved": [
+    {
+      "request_id": "R02",
+      "status": "rejected",
+      "reason": "Resource contention under this policy left no feasible start before the horizon"
+    },
+    {
+      "request_id": "R10",
+      "status": "rejected",
+      "reason": "Resource contention under this policy left no feasible start before the horizon"
+    }
+  ],
+  "decisions": [
+    {
+      "time": 0,
+      "visible_request_ids": [
+        "R05"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R05",
+          "vehicle_id": "V1",
+          "battery_id": "B1",
+          "technician_id": "T1",
+          "start": 0,
+          "delivery": 3,
+          "end": 8
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 1,
+      "visible_request_ids": [
+        "R03",
+        "R05"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R03",
+          "vehicle_id": "V2",
+          "battery_id": "B2",
+          "technician_id": "T1",
+          "start": 1,
+          "delivery": 4,
+          "end": 7
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 2,
+      "visible_request_ids": [
+        "R03",
+        "R05"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 6,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R05"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R01",
+          "vehicle_id": "V3",
+          "battery_id": "B3",
+          "technician_id": "T1",
+          "start": 6,
+          "delivery": 9,
+          "end": 14
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 7,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R04",
+          "vehicle_id": "V2",
+          "battery_id": "B4",
+          "technician_id": "T1",
+          "start": 7,
+          "delivery": 14,
+          "end": 19
+        }
+      ],
+      "charge_starts": [
+        {
+          "battery_id": "B2",
+          "charger_id": "C1",
+          "technician_id": "T2",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "time": 8,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 11,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B1",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "time": 12,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 13,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 14,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R06",
+          "vehicle_id": "V3",
+          "battery_id": "B2",
+          "technician_id": "T2",
+          "start": 14,
+          "delivery": 19,
+          "end": 23
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 15,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B3",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 15,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "time": 16,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 18,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 19,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R11",
+          "vehicle_id": "V2",
+          "battery_id": "B1",
+          "technician_id": "T1",
+          "start": 19,
+          "delivery": 22,
+          "end": 25
+        }
+      ],
+      "charge_starts": [
+        {
+          "battery_id": "B4",
+          "charger_id": "C1",
+          "technician_id": "T2",
+          "start": 19,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "time": 20,
+      "visible_request_ids": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 23,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R08",
+          "vehicle_id": "V1",
+          "battery_id": "B3",
+          "technician_id": "T1",
+          "start": 23,
+          "delivery": 30,
+          "end": 35
+        },
+        {
+          "request_id": "R12",
+          "vehicle_id": "V3",
+          "battery_id": "B4",
+          "technician_id": "T2",
+          "start": 23,
+          "delivery": 30,
+          "end": 35
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 24,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B2",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 24,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "time": 25,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 28,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B1",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 28,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "time": 30,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 32,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 35,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [
+        {
+          "request_id": "R07",
+          "vehicle_id": "V1",
+          "battery_id": "B1",
+          "technician_id": "T1",
+          "start": 35,
+          "delivery": 38,
+          "end": 41
+        },
+        {
+          "request_id": "R09",
+          "vehicle_id": "V2",
+          "battery_id": "B2",
+          "technician_id": "T2",
+          "start": 35,
+          "delivery": 38,
+          "end": 43
+        }
+      ],
+      "charge_starts": []
+    },
+    {
+      "time": 36,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B3",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 36,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "time": 40,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B4",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 40,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "time": 41,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 43,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    },
+    {
+      "time": 44,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": [
+        {
+          "battery_id": "B1",
+          "charger_id": "C1",
+          "technician_id": "T1",
+          "start": 44,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "time": 48,
+      "visible_request_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "service_starts": [],
+      "charge_starts": []
+    }
+  ],
+  "solver": {
+    "status": "HEURISTIC",
+    "optimality_proven": false,
+    "method": "discrete_event",
+    "event_count": 47,
+    "head_of_line_bypass": true,
+    "request_order": "release,id",
+    "resource_order": "lexicographic ID",
+    "charge_policy": "service first; proactive FIFO by depletion time then battery ID",
+    "information_scope": "only released requests are used for decisions"
+  }
+}

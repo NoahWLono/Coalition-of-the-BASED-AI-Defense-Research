@@ -1,0 +1,42 @@
+{
+  "scenario_id": "tiny-seed-18006",
+  "policy": "milp",
+  "information": "offline",
+  "services": [
+    {
+      "request_id": "R1",
+      "vehicle_id": "V1",
+      "battery_id": "B1",
+      "technician_id": "T1",
+      "start": 1,
+      "delivery": 4,
+      "end": 6
+    }
+  ],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "not_selected_under_resources_horizon_and_objective"
+    }
+  ],
+  "solver": {
+    "engine": "SciPy milp / HiGHS",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "optimal": true,
+    "used_fallback": false,
+    "feasible_objective": 14.0,
+    "lower_bound": 14.0,
+    "relative_gap": 0.0,
+    "raw_mip_gap": 0.0,
+    "objective_constant": 6,
+    "time_limit_seconds": 5,
+    "elapsed_seconds": 0.0017919980000442592,
+    "nodes": 0,
+    "variables": 6,
+    "constraints": 34,
+    "bound_scope": "known_request_integer_slot_problem"
+  }
+}

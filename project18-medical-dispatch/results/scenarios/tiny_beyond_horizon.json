@@ -1,0 +1,92 @@
+{
+  "id": "tiny-beyond_horizon",
+  "seed": 18,
+  "horizon": 8,
+  "slot_minutes": 1,
+  "load_time": 1,
+  "handoff_time": 0,
+  "turnaround_time": 0,
+  "charge_duration": 2,
+  "vehicles": [
+    {
+      "id": "V1",
+      "unavailable": []
+    },
+    {
+      "id": "V2",
+      "unavailable": []
+    }
+  ],
+  "battery_ids": [
+    "B1",
+    "B2"
+  ],
+  "charger_ids": [
+    "C1"
+  ],
+  "technician_ids": [
+    "T1",
+    "T2"
+  ],
+  "travel": {
+    "Depot": {
+      "Depot": 0,
+      "North": 1,
+      "South": 1
+    },
+    "North": {
+      "Depot": 0,
+      "North": 0,
+      "South": 0
+    },
+    "South": {
+      "Depot": 0,
+      "North": 0,
+      "South": 0
+    }
+  },
+  "requests": [
+    {
+      "id": "R1",
+      "release": 7,
+      "deadline": 2,
+      "region": "North",
+      "category": "package_a",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R2",
+      "release": 7,
+      "deadline": 2,
+      "region": "South",
+      "category": "package_b",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R3",
+      "release": 7,
+      "deadline": 6,
+      "region": "North",
+      "category": "package_b",
+      "priority": 1,
+      "cancelled": false
+    },
+    {
+      "id": "R4",
+      "release": 7,
+      "deadline": 8,
+      "region": "South",
+      "category": "package_a",
+      "priority": 1,
+      "cancelled": false
+    }
+  ],
+  "weights": {
+    "rejection": 200,
+    "lateness": 1,
+    "charge": 1,
+    "fairness": 0
+  }
+}

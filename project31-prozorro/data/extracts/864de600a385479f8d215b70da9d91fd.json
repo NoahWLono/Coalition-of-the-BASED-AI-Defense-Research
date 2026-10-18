@@ -1,0 +1,396 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "4693.92",
+          "amountNet": "3911.6",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "11f8ce3bd9e74f6a8f0b37a95118775d",
+        "contractID": "UA-2025-03-05-015152-a-c1",
+        "date": "2026-01-08T21:37:15.240033+02:00",
+        "dateModified": "2026-01-08T21:37:15.240033+02:00",
+        "dateSigned": "2025-03-05T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-05T19:57:52.182208+02:00",
+            "datePublished": "2025-03-05T19:57:52.182208+02:00",
+            "documentOf": "contract",
+            "format": "application/pdf",
+            "id": "a0a61e2ce5bd4fdc829cb841b26ccf8d"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-08T21:36:17.019739+02:00",
+            "datePublished": "2026-01-08T21:36:17.019739+02:00",
+            "documentOf": "contract",
+            "format": "application/pdf",
+            "id": "588f3e9160294d18ade14c116890272c"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-08T21:37:13.081682+02:00",
+            "datePublished": "2026-01-08T21:37:13.081682+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "db06af4719d84a808c029109e3772639"
+          }
+        ],
+        "id": "d0d650ba8a2a4993a8aaf70638d6c1e3",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Папір А4/80 (500 арк.) MaestroStandart+",
+            "id": "ad06039401e41dc02fc381029fb1154a",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Файл Buromax A4 50мк. глянцевий",
+            "id": "d2608fae2ecab23ae1729264b66b51e6",
+            "quantity": "3.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Папір з липким шаром Buromax асорті 100арк. 76*76мм",
+            "id": "2c57f7b839735e620b406679c51b9446",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Коректор з пензликом BuroMax 20мм",
+            "id": "6308466cf22badd41df5a1fa28d754e0",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Олівці чорнографітні НВ 4Office4-111 з гумкою",
+            "id": "0619d58e5cce39d13e6c271e68150fb4",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Ручка масляна Optima чорна OIL PRO 0,5 мм",
+            "id": "d3038a44eb83ba065a651bcd492e6a46",
+            "quantity": "24.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Папка карт. на зав’язку R44090",
+            "id": "63deb3b38177a60c6daf0de114939d47",
+            "quantity": "20.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T19:56:13+02:00"
+            },
+            "description": "Швидкозшивач А4 з перф. Economix синій",
+            "id": "4612b37ab5361b69351b9193e043fdec",
+            "quantity": "38.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "4693.92",
+          "amountNet": "3911.6",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 34733,
+        "method": "GET",
+        "response_sha256": "ca6321e85d67ca043fc4093b26e2daec236d595522658a0567b21f329b6a12a1",
+        "retrieved_at": "2026-10-18T01:49:34.562332+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:35 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/d0d650ba8a2a4993a8aaf70638d6c1e3"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 12725,
+    "discovery_url": "https://clarity-project.info/tender/864de600a385479f8d215b70da9d91fd",
+    "method": "GET",
+    "response_sha256": "343239934cacb2f1b7de60431688772cc1850b36e15050a3c7918c9e85a70634",
+    "retrieved_at": "2026-10-18T01:49:33.512224+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:34 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/864de600a385479f8d215b70da9d91fd"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-05T19:53:17.396030+02:00",
+        "id": "11f8ce3bd9e74f6a8f0b37a95118775d",
+        "status": "active",
+        "value": {
+          "amount": "4693.92",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "11f8ce3bd9e74f6a8f0b37a95118775d",
+        "contractID": "UA-2025-03-05-015152-a-c1",
+        "date": "2025-03-05T20:10:22.686544+02:00",
+        "id": "d0d650ba8a2a4993a8aaf70638d6c1e3",
+        "status": "active",
+        "value": {
+          "amount": "4693.92",
+          "amountNet": "3911.6",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-05T19:51:14.580097+02:00",
+    "dateModified": "2025-03-05T20:10:22.686544+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-05T20:08:19.192040+02:00",
+        "datePublished": "2025-03-05T20:08:19.192040+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "7e42a9dff946414a80ebcf128baeb061"
+      }
+    ],
+    "id": "864de600a385479f8d215b70da9d91fd",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Папір А4/80 (500 арк.) MaestroStandart+",
+        "id": "ad06039401e41dc02fc381029fb1154a",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Файл Buromax A4 50мк. глянцевий",
+        "id": "d2608fae2ecab23ae1729264b66b51e6",
+        "quantity": "3.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Папір з липким шаром Buromax асорті 100арк. 76*76мм",
+        "id": "2c57f7b839735e620b406679c51b9446",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Коректор з пензликом BuroMax 20мм",
+        "id": "6308466cf22badd41df5a1fa28d754e0",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Олівці чорнографітні НВ 4Office4-111 з гумкою",
+        "id": "0619d58e5cce39d13e6c271e68150fb4",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Ручка масляна Optima чорна OIL PRO 0,5 мм",
+        "id": "d3038a44eb83ba065a651bcd492e6a46",
+        "quantity": "24.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Папка карт. на зав’язку R44090",
+        "id": "63deb3b38177a60c6daf0de114939d47",
+        "quantity": "20.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T19:56:13+02:00"
+        },
+        "description": "Швидкозшивач А4 з перф. Economix синій",
+        "id": "4612b37ab5361b69351b9193e043fdec",
+        "quantity": "38.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-05-015152-a",
+    "title": "Канцтовари",
+    "value": {
+      "amount": "4693.92",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

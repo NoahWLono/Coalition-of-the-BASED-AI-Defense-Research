@@ -1,0 +1,244 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "fa1f7ef98aa048578d323a9852013a42",
+        "contractID": "UA-2025-03-10-011332-a-b1",
+        "date": "2025-03-10T16:06:18.165315+02:00",
+        "dateModified": "2025-03-10T16:06:18.165315+02:00",
+        "dateSigned": "2025-03-06T16:04:00+02:00",
+        "id": "f7be6cc3afc64208bb2cfb5e2ac83e25",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T00:00:00+03:00",
+              "startDate": "2025-03-06T00:00:00+02:00"
+            },
+            "description": "Папір /А4/80_500",
+            "id": "e41748e161c84815a4a8751722898c69",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192121-5",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T00:00:00+03:00",
+              "startDate": "2025-03-06T00:00:00+02:00"
+            },
+            "description": "Ручка /масляна_синя",
+            "id": "8efe1dc83a5741b7a759b5955931148c",
+            "quantity": "12.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192121-5",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T00:00:00+03:00",
+              "startDate": "2025-03-06T00:00:00+02:00"
+            },
+            "description": "Ручка /масляна_чорна",
+            "id": "c29662d9c92c44319cab26a64f0d5aa7",
+            "quantity": "2.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30192160-0",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-03-31T00:00:00+03:00",
+              "startDate": "2025-03-06T00:00:00+02:00"
+            },
+            "description": "Коректор/стрічка",
+            "id": "5a756605afa5489f883e8b3681552503",
+            "quantity": "4.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "1876.92",
+          "amountNet": "1564.1",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 28247,
+        "method": "GET",
+        "response_sha256": "44150608f2237d5373bd9c666d05faeb6aa501b3c9327927d14a80d8ec4f41cc",
+        "retrieved_at": "2026-10-18T01:49:15.660300+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:16 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/f7be6cc3afc64208bb2cfb5e2ac83e25"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 9397,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-10-011332-a/",
+    "method": "GET",
+    "response_sha256": "c28ad7d1f15b6e5e4e0be0b6e2b2205b87fa803195bf1f4cded2ecd9d696a9d1",
+    "retrieved_at": "2026-10-18T01:49:14.610229+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:14 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/d611c68cc0a944f79acbb41107edd0f9"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-10T16:06:14.468644+02:00",
+        "id": "fa1f7ef98aa048578d323a9852013a42",
+        "status": "active",
+        "value": {
+          "amount": "1876.92",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "fa1f7ef98aa048578d323a9852013a42",
+        "contractID": "UA-2025-03-10-011332-a-b1",
+        "date": "2025-03-10T16:06:18.165315+02:00",
+        "id": "f7be6cc3afc64208bb2cfb5e2ac83e25",
+        "status": "active",
+        "value": {
+          "amount": "1876.92",
+          "amountNet": "1564.1",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-03-10T16:05:29.905566+02:00",
+    "dateModified": "2025-03-10T16:06:18.165315+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-10T16:06:13.924795+02:00",
+        "datePublished": "2025-03-10T16:06:13.759357+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "e8b48e9288a8407d8103e369315fa913"
+      }
+    ],
+    "id": "d611c68cc0a944f79acbb41107edd0f9",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T00:00:00+03:00",
+          "startDate": "2025-03-06T00:00:00+02:00"
+        },
+        "description": "Папір /А4/80_500",
+        "id": "e41748e161c84815a4a8751722898c69",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192121-5",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T00:00:00+03:00",
+          "startDate": "2025-03-06T00:00:00+02:00"
+        },
+        "description": "Ручка /масляна_синя",
+        "id": "8efe1dc83a5741b7a759b5955931148c",
+        "quantity": "12.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192121-5",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T00:00:00+03:00",
+          "startDate": "2025-03-06T00:00:00+02:00"
+        },
+        "description": "Ручка /масляна_чорна",
+        "id": "c29662d9c92c44319cab26a64f0d5aa7",
+        "quantity": "2.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30192160-0",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-03-31T00:00:00+03:00",
+          "startDate": "2025-03-06T00:00:00+02:00"
+        },
+        "description": "Коректор/стрічка",
+        "id": "5a756605afa5489f883e8b3681552503",
+        "quantity": "4.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-10-011332-a",
+    "title": "ДК 021:2015 3019 0000-7 Офісне устаткування та приладдя різне (Папір, ручка масляна, коректор)",
+    "value": {
+      "amount": "1876.92",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

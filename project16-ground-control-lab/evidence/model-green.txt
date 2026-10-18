@@ -1,0 +1,19 @@
+✔ receipt never accepts responsibility; accepted/interrupted ownership is unresolved (11.160679ms)
+✔ freshness boundary and historical evidence are distinct (1.640596ms)
+✔ timeout wins simultaneous acceptance and delayed confirm cannot assign owner (0.897435ms)
+✔ accepted timeout retains unresolved owner and invalid cancellation cannot undo acceptance (1.01513ms)
+✔ rewind/reset during replay pauses and removes future state (2.17762ms)
+✔ stale ownership cannot authorize a request and unknown observations never invent a value (0.825122ms)
+✔ replays are deterministic for every second and do not mutate scripts (6.087033ms)
+✔ oracle comparison catches incorrect ownership and a misleading grouping independently (3.657832ms)
+✔ old responsibility promoted to current and omitted facts are errors (0.919295ms)
+✔ metadata parser preserves escaped values, unknown timestamps and disclosure steps (2.927764ms)
+✔ correct hidden information has a separate visibility result and CSV quotes cells (1.439347ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 236.957296

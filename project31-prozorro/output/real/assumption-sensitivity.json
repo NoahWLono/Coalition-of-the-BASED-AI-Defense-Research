@@ -1,0 +1,49 @@
+{
+  "comparability_scenarios": [
+    {
+      "arithmetic_computable": 1,
+      "assumed_items": 0,
+      "comparison_eligible": 0,
+      "excluded_lots": 50,
+      "interpretation": "Stress test only. Unsupported assumptions are never used in baseline results.",
+      "leads": 0,
+      "real_leads": 0,
+      "scenario": "strict",
+      "screened_lots": 0,
+      "synthetic_leads": 0,
+      "unique_lots": 50
+    },
+    {
+      "arithmetic_computable": 5,
+      "assumed_items": 13,
+      "comparison_eligible": 0,
+      "excluded_lots": 50,
+      "interpretation": "Stress test only. Unsupported assumptions are never used in baseline results.",
+      "leads": 0,
+      "real_leads": 0,
+      "scenario": "assume_500_sheet_packs",
+      "screened_lots": 0,
+      "synthetic_leads": 0,
+      "unique_lots": 50
+    },
+    {
+      "arithmetic_computable": 13,
+      "assumed_items": 12,
+      "comparison_eligible": 0,
+      "excluded_lots": 50,
+      "interpretation": "Stress test only. Unsupported assumptions are never used in baseline results.",
+      "leads": 0,
+      "real_leads": 0,
+      "scenario": "assume_piece_means_500_sheet_pack",
+      "screened_lots": 0,
+      "synthetic_leads": 0,
+      "unique_lots": 50
+    }
+  ],
+  "currency": {
+    "baseline": "UAH only, no conversion",
+    "common_scaling_check": "synthetic exact invariance test only; not empirical FX validation",
+    "cross_currency_assessment": "not_applicable_no_cross_currency_comparisons"
+  },
+  "warning": "No eligible real groups means zero leads under alternative assumptions is uninformative about economic robustness."
+}

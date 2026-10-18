@@ -1,0 +1,332 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "137598.0",
+          "amountNet": "114665.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "awardID": "cd91c02a14c04038aebc628d26d31d49",
+        "contractID": "UA-2025-02-04-012196-a-a1",
+        "date": "2026-01-14T10:02:28.945383+02:00",
+        "dateModified": "2026-01-14T10:02:28.945383+02:00",
+        "dateSigned": "2025-02-19T14:59:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-20T15:01:33.908639+02:00",
+            "datePublished": "2025-02-20T15:01:33.719963+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "de6e0082f4704e95b1fbdb32c68402bf"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-20T15:02:35.959611+02:00",
+            "datePublished": "2025-02-20T15:02:35.959611+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "6943761774834c6db00b87ecbc0ed136"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2026-01-14T10:02:28.718366+02:00",
+            "datePublished": "2026-01-14T10:02:28.718366+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "6943761774834c6db00b87ecbc0ed136"
+          }
+        ],
+        "id": "e88a1887b8b441ffb294f9cade267999",
+        "items": [
+          {
+            "classification": {
+              "id": "30197630-1",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-25T00:00:00+02:00"
+            },
+            "description": "Папір А4",
+            "id": "efd75d6a2d454e128c80b78b5c90a9c4",
+            "quantity": "950.0",
+            "relatedLot": "5ee8af3b36c1469084feaee48257cfd7",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "137598.0",
+          "amountNet": "114665.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      },
+      "provenance": {
+        "bytes": 81001,
+        "method": "GET",
+        "response_sha256": "15cb71b6ebe851d237570e97aeefb31b62bda9fb56f0cde9f659e8e693f9762a",
+        "retrieved_at": "2026-10-18T01:46:52.443630+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:46:52 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/e88a1887b8b441ffb294f9cade267999"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 131115,
+    "discovery_url": "https://clarity-project.info/tender/b368d3ae49914fe9abd0c7fd08b6bd63",
+    "method": "GET",
+    "response_sha256": "444e2fd21b23f712c1f1c3aec9f637e05d348d86081aaf576fb9acd9b88cee29",
+    "retrieved_at": "2026-10-18T01:46:51.393501+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:46:51 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b368d3ae49914fe9abd0c7fd08b6bd63"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-12T14:58:26.426693+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-12T00:02:32.137629+02:00",
+            "datePublished": "2025-02-12T00:02:32.137629+02:00",
+            "documentOf": "tender",
+            "documentType": "registerExtract",
+            "format": "application/yaml",
+            "id": "75cd005b618948f490434f6870bbe1d4"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-12T14:56:22.742172+02:00",
+            "datePublished": "2025-02-12T14:56:22.553780+02:00",
+            "documentOf": "tender",
+            "format": "text/plain",
+            "id": "60e01711189b4a7997bfe565bcc4213d"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-12T14:58:26.232108+02:00",
+            "datePublished": "2025-02-12T14:58:26.232108+02:00",
+            "documentOf": "tender",
+            "documentType": "notice",
+            "format": "application/pkcs7-signature",
+            "id": "d4f2092118b04ad09e7e585f42224620"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-12T14:58:37.823254+02:00",
+            "datePublished": "2025-02-12T14:58:37.823254+02:00",
+            "documentOf": "tender",
+            "documentType": "register",
+            "format": "text/plain",
+            "id": "ef968b525e25484eab9b61372b68a6a3"
+          }
+        ],
+        "id": "cd91c02a14c04038aebc628d26d31d49",
+        "lotID": "5ee8af3b36c1469084feaee48257cfd7",
+        "status": "active",
+        "value": {
+          "amount": "137598.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "bids": [
+      {
+        "date": "2025-02-11T15:22:58.692058+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-11T15:22:58.598899+02:00",
+            "datePublished": "2025-02-11T15:22:58.598899+02:00",
+            "documentOf": "tender",
+            "documentType": "proposal",
+            "format": "application/pkcs7-signature",
+            "id": "8f414157374244a4ba95dfbff46216ac"
+          },
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-02-13T09:09:21.493878+02:00",
+            "datePublished": "2025-02-13T09:09:21.493878+02:00",
+            "documentOf": "tender",
+            "format": "application/pkcs7-signature",
+            "id": "276efee558734719a8ebc2d049b40586"
+          }
+        ],
+        "id": "375f2297ff674ee58f7543c6ac515428",
+        "items": [
+          {
+            "description": "Папір А4",
+            "id": "efd75d6a2d454e128c80b78b5c90a9c4",
+            "quantity": "950.0",
+            "relatedLot": "5ee8af3b36c1469084feaee48257cfd7",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "lotValues": [
+          {
+            "relatedLot": "5ee8af3b36c1469084feaee48257cfd7",
+            "value": {
+              "amount": "137598.0",
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            }
+          }
+        ],
+        "status": "active"
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "cd91c02a14c04038aebc628d26d31d49",
+        "contractID": "UA-2025-02-04-012196-a-a1",
+        "date": "2025-02-20T15:02:36.135782+02:00",
+        "id": "e88a1887b8b441ffb294f9cade267999",
+        "status": "active",
+        "value": {
+          "amount": "137598.0",
+          "amountNet": "114665.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "dateCreated": "2025-02-04T15:08:12.056992+02:00",
+    "dateModified": "2025-02-20T15:02:36.135782+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "text/plain",
+        "id": "aac2a7ea91034300afedc5305a2cf6c7",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "eligibilityCriteria",
+        "format": "text/plain",
+        "id": "9c17c4d2e2ac470b9b4f28c7959f3b7f",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "technicalSpecifications",
+        "format": "text/plain",
+        "id": "f73155faa4af46b8aac10131b25eb527",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "contractProforma",
+        "format": "text/plain",
+        "id": "cd5414f207574f6e85a3e6612b1a44d9",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "text/plain",
+        "id": "2f60baf67c9b4739843914df92ca7853",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:08:16.131546+02:00",
+        "datePublished": "2025-02-04T15:08:16.131546+02:00",
+        "documentOf": "tender",
+        "documentType": "biddingDocuments",
+        "format": "text/plain",
+        "id": "8382964fdbf04f51bc1b46aed973e66b",
+        "relatedItem": "b368d3ae49914fe9abd0c7fd08b6bd63"
+      },
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-04T15:15:17.768558+02:00",
+        "datePublished": "2025-02-04T15:15:17.600182+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "01873be796fe414eb6f23b43f923c33a"
+      }
+    ],
+    "id": "b368d3ae49914fe9abd0c7fd08b6bd63",
+    "items": [
+      {
+        "classification": {
+          "id": "30197630-1",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-25T00:00:00+02:00"
+        },
+        "description": "Папір А4",
+        "id": "efd75d6a2d454e128c80b78b5c90a9c4",
+        "quantity": "950.0",
+        "relatedLot": "5ee8af3b36c1469084feaee48257cfd7",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [
+      {
+        "id": "5ee8af3b36c1469084feaee48257cfd7",
+        "status": "complete",
+        "title": "Папір А 4, код ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (30197630-1 Папір для друку) ",
+        "value": {
+          "amount": "142000.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "aboveThreshold",
+    "status": "complete",
+    "tenderID": "UA-2025-02-04-012196-a",
+    "title": "Папір А 4, код ДК 021:2015 30190000-7 Офісне устаткування та приладдя різне (30197630-1 Папір для друку) ",
+    "value": {
+      "amount": "142000.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    }
+  }
+}

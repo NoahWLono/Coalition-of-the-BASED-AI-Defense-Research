@@ -1,0 +1,153 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "366beaf87d634f909958466ea1fa8b84",
+        "contractID": "UA-2025-03-17-002053-a-c1",
+        "date": "2025-03-17T10:20:30.846515+02:00",
+        "dateModified": "2025-03-17T10:20:30.846515+02:00",
+        "dateSigned": "2025-03-17T10:18:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-17T10:20:30.456026+02:00",
+            "datePublished": "2025-03-17T10:20:30.290206+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "d6942b6eaeee4037a9467989367f3663"
+          }
+        ],
+        "id": "35a2c19b75fc40eeaf5ef58a5d2c75e5",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-03-17T00:00:00+02:00"
+            },
+            "description": "Папір офісний А4",
+            "id": "86d60b92e838466291208001db43c491",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "1750.0",
+          "amountNet": "1750.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 27412,
+        "method": "GET",
+        "response_sha256": "8fc5fce26f355790a9dabacd2ad039b8dc3fa66015eb9ba62dd49a1c2fcab209",
+        "retrieved_at": "2026-10-18T01:47:38.257592+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:38 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/35a2c19b75fc40eeaf5ef58a5d2c75e5"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 7484,
+    "discovery_url": "https://clarity-project.info/tender/b1e44ce7cd5d4acf8e58bc0ec8cb8ba6",
+    "method": "GET",
+    "response_sha256": "c2549a963629ac4202ee50e468df21f235426284d5ecb1bf8bc18739d5d1875d",
+    "retrieved_at": "2026-10-18T01:47:37.207501+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:37 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/b1e44ce7cd5d4acf8e58bc0ec8cb8ba6"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-17T10:20:28.383826+02:00",
+        "id": "366beaf87d634f909958466ea1fa8b84",
+        "status": "active",
+        "value": {
+          "amount": "1750.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "366beaf87d634f909958466ea1fa8b84",
+        "contractID": "UA-2025-03-17-002053-a-c1",
+        "date": "2025-03-17T10:20:30.846515+02:00",
+        "id": "35a2c19b75fc40eeaf5ef58a5d2c75e5",
+        "status": "active",
+        "value": {
+          "amount": "1750.0",
+          "amountNet": "1750.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-17T10:19:28.496619+02:00",
+    "dateModified": "2025-03-17T10:20:30.846515+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-17T10:20:27.856656+02:00",
+        "datePublished": "2025-03-17T10:20:27.672372+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "3621c483af9840f68e5139b7b0033b40"
+      }
+    ],
+    "id": "b1e44ce7cd5d4acf8e58bc0ec8cb8ba6",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-03-17T00:00:00+02:00"
+        },
+        "description": "Папір офісний А4",
+        "id": "86d60b92e838466291208001db43c491",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-17-002053-a",
+    "title": "Папір офісний А4",
+    "value": {
+      "amount": "1750.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "annotationProducer": "Assistant-authored literal oracle, independently derived from narratives and declared model; no human annotations",
+  "scenarios": 10,
+  "checkpoints": 53,
+  "variants": 3,
+  "rows": 1749,
+  "failures": [],
+  "determinism": [
+    {
+      "scenario": "interrupted",
+      "seconds": 13,
+      "sha256": "7e2da9c11e79e125e47e161bb34982be632a5b311180e2dec1713c97aa3b72e3"
+    },
+    {
+      "scenario": "stale_evidence",
+      "seconds": 15,
+      "sha256": "cd5fd8d91726178b1877cd492c401d0f7fa7d6281f7141e3ec76e21393d1a491"
+    },
+    {
+      "scenario": "alarm_cascade",
+      "seconds": 16,
+      "sha256": "e259bddbc3db13b62b225b8945218546cd35d2a2e6bb059b80e7e310c13a24af"
+    },
+    {
+      "scenario": "conflicting_receipts",
+      "seconds": 13,
+      "sha256": "bacd2f5c688358d5807dfc4ad176f9f5d3c361a4452e348efe867609e16115b0"
+    },
+    {
+      "scenario": "ownership_conflict",
+      "seconds": 13,
+      "sha256": "4620b324aa8fd803c932e53d933082dbd1327e7b488191cc2900ef31af7e3327"
+    },
+    {
+      "scenario": "accepted_timeout",
+      "seconds": 13,
+      "sha256": "31e2cc39e0a18111c3e29631688cccbc2b45419e2d9f48ce2d0891bc71a95aaa"
+    },
+    {
+      "scenario": "requested_timeout",
+      "seconds": 13,
+      "sha256": "afaa8e4386c159572b84b2cecf15865cd9514c81bb4e646d7bcbd5effd727248"
+    },
+    {
+      "scenario": "cancelled_receipt",
+      "seconds": 13,
+      "sha256": "99036d168ea8b4a1203a3ae222d4cb601112897d06518f91ea775c7582ed2519"
+    },
+    {
+      "scenario": "simultaneous_events",
+      "seconds": 11,
+      "sha256": "4e07ed8c8dc29b3dd0f6e3576bd167c9a653ad7dbb7c853370bbd7f8d0bc4b84"
+    },
+    {
+      "scenario": "successful_handover",
+      "seconds": 13,
+      "sha256": "c1faf4cdee360b29905d7d2936bbb24adf5276956467f07296faf0faf8209f4e"
+    }
+  ],
+  "mutations": [
+    {
+      "name": "wrong ownership",
+      "variant": "chronological",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "owner",
+          "expected": {
+            "value": "Operator A",
+            "status": "known",
+            "at": 0
+          },
+          "actual": {
+            "value": "Operator B",
+            "status": "known",
+            "at": 0,
+            "visibility": "visible",
+            "steps": 0
+          },
+          "correct": false,
+          "reason": "value: expected \"Operator A\", got \"Operator B\"",
+          "visibility": "visible",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "grouped",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "owner",
+          "expected": {
+            "value": "Operator A",
+            "status": "known",
+            "at": 0
+          },
+          "actual": {
+            "value": "Operator B",
+            "status": "known",
+            "at": 0,
+            "visibility": "visible",
+            "steps": 0
+          },
+          "correct": false,
+          "reason": "value: expected \"Operator A\", got \"Operator B\"",
+          "visibility": "visible",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "handover",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "owner",
+          "expected": {
+            "value": "Operator A",
+            "status": "known",
+            "at": 0
+          },
+          "actual": {
+            "value": "Operator B",
+            "status": "known",
+            "at": 0,
+            "visibility": "visible",
+            "steps": 0
+          },
+          "correct": false,
+          "reason": "value: expected \"Operator A\", got \"Operator B\"",
+          "visibility": "visible",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "chronological",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "alarmGroups",
+          "expected": {
+            "value": "a1: link",
+            "status": "known",
+            "at": 1
+          },
+          "actual": {
+            "value": "a1: battery",
+            "status": "known",
+            "at": 1,
+            "visibility": "obscured",
+            "steps": 1
+          },
+          "correct": false,
+          "reason": "value: expected \"a1: link\", got \"a1: battery\"",
+          "visibility": "obscured",
+          "steps": 1
+        }
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "grouped",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "alarmGroups",
+          "expected": {
+            "value": "a1: link",
+            "status": "known",
+            "at": 1
+          },
+          "actual": {
+            "value": "a1: battery",
+            "status": "known",
+            "at": 1,
+            "visibility": "visible",
+            "steps": 0
+          },
+          "correct": false,
+          "reason": "value: expected \"a1: link\", got \"a1: battery\"",
+          "visibility": "visible",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "handover",
+      "detected": true,
+      "mismatches": [
+        {
+          "fact": "alarmGroups",
+          "expected": {
+            "value": "a1: link",
+            "status": "known",
+            "at": 1
+          },
+          "actual": {
+            "value": "a1: battery",
+            "status": "known",
+            "at": 1,
+            "visibility": "obscured",
+            "steps": 1
+          },
+          "correct": false,
+          "reason": "value: expected \"a1: link\", got \"a1: battery\"",
+          "visibility": "obscured",
+          "steps": 1
+        }
+      ]
+    },
+    {
+      "name": "stale responsibility promoted to current",
+      "detected": true
+    }
+  ],
+  "visibility": {
+    "chronological": {
+      "visible": 371,
+      "obscured": 212,
+      "omitted": 0
+    },
+    "grouped": {
+      "visible": 424,
+      "obscured": 159,
+      "omitted": 0
+    },
+    "handover": {
+      "visible": 477,
+      "obscured": 106,
+      "omitted": 0
+    }
+  }
+}

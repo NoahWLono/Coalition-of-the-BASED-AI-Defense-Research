@@ -1,0 +1,44 @@
+{
+  "scenario_id": "tiny-beyond_horizon",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R3",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R4",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 800.0,
+    "objective_rational": "800",
+    "best_bound": 800.0,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 9,
+    "enumerated_leaves": 1,
+    "transitions": 8,
+    "cache_hits": 0,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.0005803240001114318
+  }
+}

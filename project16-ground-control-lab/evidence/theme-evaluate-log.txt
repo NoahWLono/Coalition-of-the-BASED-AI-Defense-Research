@@ -1,0 +1,61 @@
+npm notice run ground-control-interface-lab@1.0.0 evaluate
+npm notice run node tools/evaluate.mjs
+{
+  "scenarios": 10,
+  "checkpoints": 53,
+  "rows": 1749,
+  "failures": 0,
+  "mutations": [
+    {
+      "name": "wrong ownership",
+      "variant": "chronological",
+      "detected": true
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "grouped",
+      "detected": true
+    },
+    {
+      "name": "wrong ownership",
+      "variant": "handover",
+      "detected": true
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "chronological",
+      "detected": true
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "grouped",
+      "detected": true
+    },
+    {
+      "name": "misleading grouping",
+      "variant": "handover",
+      "detected": true
+    },
+    {
+      "name": "stale responsibility promoted to current",
+      "detected": true
+    }
+  ],
+  "visibility": {
+    "chronological": {
+      "visible": 371,
+      "obscured": 212,
+      "omitted": 0
+    },
+    "grouped": {
+      "visible": 424,
+      "obscured": 159,
+      "omitted": 0
+    },
+    "handover": {
+      "visible": 477,
+      "obscured": 106,
+      "omitted": 0
+    }
+  }
+}

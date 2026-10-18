@@ -1,0 +1,315 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "e8eabafd6c584fa287049811f616b678",
+        "contractID": "UA-2025-03-17-006576-a-b1",
+        "date": "2025-03-17T13:53:13.652856+02:00",
+        "dateModified": "2025-11-12T11:00:27.133832+02:00",
+        "dateSigned": "2025-03-17T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-03-17T13:48:14.356674+02:00",
+            "datePublished": "2025-03-17T13:48:14.356674+02:00",
+            "documentOf": "contract",
+            "documentType": "contractSigned",
+            "format": "application/pdf",
+            "id": "6581b3e7ba4b453f85be260fa6c1b954"
+          }
+        ],
+        "id": "76d498542d0345f8a27d769ceaa6af3d",
+        "implementation": {
+          "transactions": [
+            {
+              "date": "2025-05-28T10:32:27+03:00",
+              "id": "588492956",
+              "value": {
+                "amount": "9600.0",
+                "currency": "UAH"
+              }
+            },
+            {
+              "date": "2025-08-07T10:14:17+03:00",
+              "id": "609965415",
+              "value": {
+                "amount": "5000.0",
+                "currency": "UAH"
+              }
+            },
+            {
+              "date": "2025-10-17T10:07:31+03:00",
+              "id": "633736682",
+              "value": {
+                "amount": "4030.0",
+                "currency": "UAH"
+              }
+            },
+            {
+              "date": "2025-11-12T10:53:39+02:00",
+              "id": "642883210",
+              "value": {
+                "amount": "5870.0",
+                "currency": "UAH"
+              }
+            }
+          ]
+        },
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T13:26:56+02:00"
+            },
+            "description": "Офісний папір А4 Maestro Premium+ 500 листів.",
+            "id": "27b7877d303b2e7f9c0cd19a385c9f0c",
+            "quantity": "100.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T13:26:56+02:00"
+            },
+            "description": "Папка швидкозшивач картонний",
+            "id": "67c85082c9d856b893db1810039df5e8",
+            "quantity": "50.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T13:26:56+02:00"
+            },
+            "description": "Папка на зав’язках",
+            "id": "b73af2e1e5d426e5e46a2daa81d76519",
+            "quantity": "50.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T13:26:56+02:00"
+            },
+            "description": "Файл для документів, фактура \"глянець\" (100 шт / уп)",
+            "id": "f837970c1da6a6fed934d017a5e3c481",
+            "quantity": "10.0",
+            "unit": {
+              "code": "PA",
+              "name": "пакунок"
+            }
+          },
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T13:26:56+02:00"
+            },
+            "description": "Книга обліку А4, 200 л., тв. палітурка",
+            "id": "c1bc24611b00f3aa9128f9c933b2b022",
+            "quantity": "10.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "24500.0",
+          "amountNet": "24500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 32744,
+        "method": "GET",
+        "response_sha256": "5417f6a5cfdf748331f9a811961092d27dc2b7d12fe93835c76e1346f080c09f",
+        "retrieved_at": "2026-10-18T01:49:11.459938+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:49:12 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/76d498542d0345f8a27d769ceaa6af3d"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 10500,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-17-006576-a/",
+    "method": "GET",
+    "response_sha256": "0ac570694bffc66ca72100013689e78862de14894a14d7b5448e0c9d744945ff",
+    "retrieved_at": "2026-10-18T01:49:10.409825+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:49:11 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/7cdb8d17fd70423eb0a403d6eec06bf7"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-17T13:32:52.471898+02:00",
+        "id": "e8eabafd6c584fa287049811f616b678",
+        "status": "active",
+        "value": {
+          "amount": "24500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "e8eabafd6c584fa287049811f616b678",
+        "contractID": "UA-2025-03-17-006576-a-b1",
+        "date": "2025-03-17T13:53:13.652856+02:00",
+        "id": "76d498542d0345f8a27d769ceaa6af3d",
+        "status": "active",
+        "value": {
+          "amount": "24500.0",
+          "amountNet": "24500.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-17T13:21:57.451763+02:00",
+    "dateModified": "2025-03-17T13:53:13.652856+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-17T13:50:54.722625+02:00",
+        "datePublished": "2025-03-17T13:50:54.722625+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "a44518e5655d40728ada020de467a963"
+      }
+    ],
+    "id": "7cdb8d17fd70423eb0a403d6eec06bf7",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T13:26:56+02:00"
+        },
+        "description": "Офісний папір А4 Maestro Premium+ 500 листів.",
+        "id": "27b7877d303b2e7f9c0cd19a385c9f0c",
+        "quantity": "100.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T13:26:56+02:00"
+        },
+        "description": "Папка швидкозшивач картонний",
+        "id": "67c85082c9d856b893db1810039df5e8",
+        "quantity": "50.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T13:26:56+02:00"
+        },
+        "description": "Папка на зав’язках",
+        "id": "b73af2e1e5d426e5e46a2daa81d76519",
+        "quantity": "50.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T13:26:56+02:00"
+        },
+        "description": "Файл для документів, фактура \"глянець\" (100 шт / уп)",
+        "id": "f837970c1da6a6fed934d017a5e3c481",
+        "quantity": "10.0",
+        "unit": {
+          "code": "PA",
+          "name": "пакунок"
+        }
+      },
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T13:26:56+02:00"
+        },
+        "description": "Книга обліку А4, 200 л., тв. палітурка",
+        "id": "c1bc24611b00f3aa9128f9c933b2b022",
+        "quantity": "10.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-17-006576-a",
+    "title": "Офісне устаткування та приладдя різне",
+    "value": {
+      "amount": "24500.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

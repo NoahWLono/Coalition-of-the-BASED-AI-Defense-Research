@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "statusMismatchDetected": "10 of 11 facts match the oracle",
+  "scenarioDisclosureReset": true,
+  "disclosureFocusAndOpenRetained": true,
+  "visibleGroupHeading": true,
+  "downloads": [
+    {
+      "kind": "scenario",
+      "file": "interrupted-scenario.json",
+      "bytes": 1976,
+      "payloadVerified": true
+    },
+    {
+      "kind": "state",
+      "file": "interrupted-state-t5.json",
+      "bytes": 3851,
+      "payloadVerified": true
+    },
+    {
+      "kind": "trace",
+      "file": "interrupted-trace-t5.json",
+      "bytes": 1556,
+      "payloadVerified": true
+    },
+    {
+      "kind": "matrix",
+      "file": "correctness-matrix.csv",
+      "bytes": 173472,
+      "payloadVerified": true
+    }
+  ]
+}

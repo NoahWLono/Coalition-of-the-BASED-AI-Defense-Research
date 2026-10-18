@@ -1,0 +1,34 @@
+{
+  "scenario_id": "tiny-seed-18005",
+  "policy": "exhaustive-reference",
+  "information": "offline",
+  "services": [],
+  "charges": [],
+  "unserved": [
+    {
+      "request_id": "R1",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    },
+    {
+      "request_id": "R2",
+      "status": "rejected",
+      "reason": "exhaustive optimum selection"
+    }
+  ],
+  "solver": {
+    "status": "OPTIMAL",
+    "method": "exhaustive integer-slot state enumeration",
+    "objective": 83.0,
+    "objective_rational": "83",
+    "best_bound": 83.0,
+    "gap": 0.0,
+    "exact": true,
+    "enumerated_states": 38,
+    "enumerated_leaves": 3,
+    "transitions": 41,
+    "cache_hits": 4,
+    "count_semantics": "unique states after idle-resource symmetry reduction; leaves are horizon states",
+    "runtime_seconds": 0.0014998870001363684
+  }
+}

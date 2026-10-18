@@ -1,0 +1,176 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "awardID": "5c0e828f49b842bcb50b0bea8101fcde",
+        "contractID": "UA-2025-02-13-010368-a-a1",
+        "date": "2025-02-13T15:04:56.556572+02:00",
+        "dateModified": "2025-02-13T15:04:56.556572+02:00",
+        "dateSigned": "2025-02-12T15:03:00+02:00",
+        "id": "a16c75cd6ab843d5ba1fd80570ec908e",
+        "items": [
+          {
+            "classification": {
+              "id": "37820000-2",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-12T00:00:00+02:00"
+            },
+            "description": "Папір офісний А4 Mastеr 500 арк. 80 г/м2 (37823800-1)",
+            "id": "b7782507d7664b6aa599d11c4faa0397",
+            "quantity": "29.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          },
+          {
+            "classification": {
+              "id": "37820000-2",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T00:00:00+02:00",
+              "startDate": "2025-02-12T00:00:00+02:00"
+            },
+            "description": "Папка на зав'язках (37823800-1)",
+            "id": "1455f005a3294303b432b6320814a969",
+            "quantity": "5.0",
+            "unit": {
+              "code": "H87",
+              "name": "штука"
+            }
+          }
+        ],
+        "status": "active",
+        "value": {
+          "amount": "4456.0",
+          "amountNet": "4456.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 26593,
+        "method": "GET",
+        "response_sha256": "3e93e0535953589cc24072cbc7f456b0543a07b1e26f78ddb4f422def04bec65",
+        "retrieved_at": "2026-10-18T01:47:09.489284+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:09 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/a16c75cd6ab843d5ba1fd80570ec908e"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 7975,
+    "discovery_url": "https://clarity-project.info/tender/6a93f7f8a8c54b7f8fd31f5ce975f78d",
+    "method": "GET",
+    "response_sha256": "b6bf095b7d296d47cf99f25e1e6f2feeec80a12ef8dca66495ab21b566d89af7",
+    "retrieved_at": "2026-10-18T01:47:08.439202+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:08 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/6a93f7f8a8c54b7f8fd31f5ce975f78d"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-02-13T15:04:54.940143+02:00",
+        "id": "5c0e828f49b842bcb50b0bea8101fcde",
+        "status": "active",
+        "value": {
+          "amount": "4456.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "5c0e828f49b842bcb50b0bea8101fcde",
+        "contractID": "UA-2025-02-13-010368-a-a1",
+        "date": "2025-02-13T15:04:56.556572+02:00",
+        "id": "a16c75cd6ab843d5ba1fd80570ec908e",
+        "status": "active",
+        "value": {
+          "amount": "4456.0",
+          "amountNet": "4456.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-02-13T15:04:18.420503+02:00",
+    "dateModified": "2025-02-13T15:04:56.556572+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-02-13T15:04:54.409528+02:00",
+        "datePublished": "2025-02-13T15:04:54.236589+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "5aecc46f4db044e8a8b0119a1ce6022d"
+      }
+    ],
+    "id": "6a93f7f8a8c54b7f8fd31f5ce975f78d",
+    "items": [
+      {
+        "classification": {
+          "id": "37820000-2",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-12T00:00:00+02:00"
+        },
+        "description": "Папір офісний А4 Mastеr 500 арк. 80 г/м2 (37823800-1)",
+        "id": "b7782507d7664b6aa599d11c4faa0397",
+        "quantity": "29.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      },
+      {
+        "classification": {
+          "id": "37820000-2",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T00:00:00+02:00",
+          "startDate": "2025-02-12T00:00:00+02:00"
+        },
+        "description": "Папка на зав'язках (37823800-1)",
+        "id": "1455f005a3294303b432b6320814a969",
+        "quantity": "5.0",
+        "unit": {
+          "code": "H87",
+          "name": "штука"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-02-13-010368-a",
+    "title": "Папір офісний А4 (37823800-1); Папка на зав'язках (37823800-1) (код за ДК 021:2015: 37820000-2 - Приладдя для образотворчого мистецтва)",
+    "value": {
+      "amount": "4456.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

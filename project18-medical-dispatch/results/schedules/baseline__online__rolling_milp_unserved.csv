@@ -1,0 +1,9 @@
+request_id,status,reason
+R04,rejected,unserved_at_horizon
+R07,rejected,unserved_at_horizon
+R08,rejected,unserved_at_horizon
+R12,rejected,unserved_at_horizon
+R14,rejected,unserved_at_horizon
+R15,rejected,unserved_at_horizon
+R18,rejected,unserved_at_horizon
+R19,cancelled,cancelled_on_arrival

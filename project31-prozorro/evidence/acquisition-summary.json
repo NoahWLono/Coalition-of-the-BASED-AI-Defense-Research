@@ -1,0 +1,11 @@
+{
+  "publication_period": [
+    "2025-01-01",
+    "2025-03-31"
+  ],
+  "rejected_candidates": 25,
+  "requests_this_run": 17,
+  "sampling": "bounded search-discovered convenience sample; one lot per tender",
+  "saved_unique_lots": 50,
+  "target": 50
+}

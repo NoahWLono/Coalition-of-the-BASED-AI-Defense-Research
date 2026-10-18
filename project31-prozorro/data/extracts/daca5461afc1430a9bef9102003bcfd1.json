@@ -1,0 +1,158 @@
+{
+  "contract_details": [
+    {
+      "contract": {
+        "amountPaid": {
+          "amount": "3880.0",
+          "amountNet": "3880.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        },
+        "awardID": "1719dbeee0874d668a0d6dece73da91f",
+        "contractID": "UA-2025-03-03-008795-a-a1",
+        "date": "2025-12-04T09:41:27.329249+02:00",
+        "dateModified": "2025-12-04T09:41:27.329249+02:00",
+        "dateSigned": "2025-03-03T00:00:00+02:00",
+        "documents": [
+          {
+            "confidentiality": "public",
+            "dateModified": "2025-12-04T09:41:18.133378+02:00",
+            "datePublished": "2025-12-04T09:41:18.133378+02:00",
+            "documentOf": "contract",
+            "format": "application/pkcs7-signature",
+            "id": "cccb09e51cba4e8a9aa74415c9e18491"
+          }
+        ],
+        "id": "59140f141b544c23ba46b1532cb55980",
+        "items": [
+          {
+            "classification": {
+              "id": "30190000-7",
+              "scheme": "ДК021"
+            },
+            "deliveryDate": {
+              "endDate": "2025-12-31T15:17:27+02:00",
+              "startDate": "2025-03-03T15:17:27+02:00"
+            },
+            "description": "Папір А4 \"Navigator\"",
+            "id": "b75565c5197151c0f11612724339c76c",
+            "quantity": "20.0",
+            "unit": {
+              "code": "PK",
+              "name": "пачка"
+            }
+          }
+        ],
+        "status": "terminated",
+        "value": {
+          "amount": "3880.0",
+          "amountNet": "3880.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      "provenance": {
+        "bytes": 25511,
+        "method": "GET",
+        "response_sha256": "cf1adce915471354d0d9cce4bf5b2355d363b604ba8f6652ba7407aea42b2249",
+        "retrieved_at": "2026-10-18T01:47:48.966032+00:00",
+        "server_date": "Sun, 18 Oct 2026 01:47:49 GMT",
+        "status": 200,
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/contracts/59140f141b544c23ba46b1532cb55980"
+      }
+    }
+  ],
+  "provenance": {
+    "attribution": "Prozorro public procurement data",
+    "bytes": 5797,
+    "discovery_url": "https://tender.uub.com.ua/tender/UA-2025-03-03-008795-a/",
+    "method": "GET",
+    "response_sha256": "94e899af25e27b43497ae19d87e325355bcfcf05ccc99ae9e79f7efe247e0c7f",
+    "retrieved_at": "2026-10-18T01:47:47.915954+00:00",
+    "reuse_basis": "https://prozorro.gov.ua/openprocurement",
+    "server_date": "Sun, 18 Oct 2026 01:47:48 GMT",
+    "status": 200,
+    "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/daca5461afc1430a9bef9102003bcfd1"
+  },
+  "schema_version": 1,
+  "scope_review": {
+    "annotator_type": "assistant",
+    "basis": "positive civilian organization-name rule and negative sensitive-buyer rule; not independent human validation",
+    "civilian_candidate": true
+  },
+  "source_kind": "real",
+  "tender": {
+    "awards": [
+      {
+        "date": "2025-03-03T15:14:42.599339+02:00",
+        "id": "1719dbeee0874d668a0d6dece73da91f",
+        "status": "active",
+        "value": {
+          "amount": "3880.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "cancellations": [],
+    "contracts": [
+      {
+        "awardID": "1719dbeee0874d668a0d6dece73da91f",
+        "contractID": "UA-2025-03-03-008795-a-a1",
+        "date": "2025-03-03T15:26:33.739262+02:00",
+        "id": "59140f141b544c23ba46b1532cb55980",
+        "status": "active",
+        "value": {
+          "amount": "3880.0",
+          "amountNet": "3880.0",
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    ],
+    "dateCreated": "2025-03-03T15:12:28.753784+02:00",
+    "dateModified": "2025-03-03T15:26:33.739262+02:00",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "dateModified": "2025-03-03T15:24:16.295809+02:00",
+        "datePublished": "2025-03-03T15:24:16.295809+02:00",
+        "documentOf": "tender",
+        "documentType": "notice",
+        "format": "application/pkcs7-signature",
+        "id": "e0931c67b2364a198ce239b94bdd3772"
+      }
+    ],
+    "id": "daca5461afc1430a9bef9102003bcfd1",
+    "items": [
+      {
+        "classification": {
+          "id": "30190000-7",
+          "scheme": "ДК021"
+        },
+        "deliveryDate": {
+          "endDate": "2025-12-31T15:17:27+02:00",
+          "startDate": "2025-03-03T15:17:27+02:00"
+        },
+        "description": "Папір А4 \"Navigator\"",
+        "id": "b75565c5197151c0f11612724339c76c",
+        "quantity": "20.0",
+        "unit": {
+          "code": "PK",
+          "name": "пачка"
+        }
+      }
+    ],
+    "lots": [],
+    "mainProcurementCategory": "goods",
+    "procurementMethodType": "reporting",
+    "status": "complete",
+    "tenderID": "UA-2025-03-03-008795-a",
+    "title": "Папір А4 \"Navigator\"",
+    "value": {
+      "amount": "3880.0",
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    }
+  }
+}

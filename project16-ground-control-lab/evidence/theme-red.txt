@@ -1,0 +1,110 @@
+✖ new visits use dark before controls are ready, regardless of a light system preference (23.086089ms)
+✖ saved light preference is applied before controls are ready and a new choice persists (7.116294ms)
+✖ system theme follows preference changes only while system is selected (6.659984ms)
+✖ unavailable storage does not prevent selecting or following a theme (6.071218ms)
+✖ invalid saved values and missing media support have a usable dark fallback (4.920355ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 227.590359
+
+✖ failing tests:
+
+test at tests/theme.test.mjs:33:1
+✖ new visits use dark before controls are ready, regardless of a light system preference (23.086089ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'dark'
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/theme.test.mjs:35:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'dark',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/theme.test.mjs:40:1
+✖ saved light preference is applied before controls are ready and a new choice persists (7.116294ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'light'
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/theme.test.mjs:42:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'light',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/theme.test.mjs:50:1
+✖ system theme follows preference changes only while system is selected (6.659984ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'light'
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/theme.test.mjs:52:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'light',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/theme.test.mjs:65:1
+✖ unavailable storage does not prevent selecting or following a theme (6.071218ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'dark'
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/theme.test.mjs:67:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'dark',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/theme.test.mjs:76:1
+✖ invalid saved values and missing media support have a usable dark fallback (4.920355ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'dark'
+  
+      at TestContext.<anonymous> (file://<HOME>/Documents/ChatGPT/DEFENSE%20PORTFOLIO/project16-ground-control-lab/tests/theme.test.mjs:78:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'dark',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

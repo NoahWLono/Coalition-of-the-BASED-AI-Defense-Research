@@ -1,0 +1,4 @@
+48  rule-of-three  KEPT  Table row lists the three research topics covered by the linked source document.
+63  rule-of-three  KEPT  The transient processing, hashing and field reduction are distinct provenance actions.
+63  rule-of-three  KEPT  The omitted fields specify the privacy boundary.
+FIXED: 0; KEPT: 3.

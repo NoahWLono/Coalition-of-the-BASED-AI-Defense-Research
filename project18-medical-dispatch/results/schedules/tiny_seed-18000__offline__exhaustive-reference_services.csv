@@ -1,0 +1,2 @@
+request_id,vehicle_id,battery_id,technician_id,start,delivery,end
+R3,V1,B1,T1,4,6,7
