@@ -1,0 +1,88 @@
+{
+  "id": "heldout-gaussian-01",
+  "title": "Gaussian synthetic observations",
+  "split": "heldout-gaussian",
+  "description": "Fictional local geometry; assistant-generated teaching labels.",
+  "bounds": [
+    -8,
+    -7,
+    8,
+    7
+  ],
+  "landmarks": [
+    {
+      "id": "A",
+      "x": -5,
+      "y": -2,
+      "label": "A"
+    },
+    {
+      "id": "B",
+      "x": 4,
+      "y": -1,
+      "label": "B"
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 5,
+      "label": "C"
+    },
+    {
+      "id": "D",
+      "x": 5,
+      "y": 4,
+      "label": "D"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 192.07050713830023,
+      "tolerance_deg": 1.5,
+      "label": "bearing to A"
+    },
+    {
+      "id": "o2",
+      "kind": "bearing",
+      "landmarks": [
+        "B"
+      ],
+      "value_deg": 345.56862456168983,
+      "tolerance_deg": 1.5,
+      "label": "bearing to B"
+    },
+    {
+      "id": "o3",
+      "kind": "angle",
+      "landmarks": [
+        "B",
+        "C"
+      ],
+      "value_deg": 123.34624024113177,
+      "tolerance_deg": 1.5,
+      "label": "angle to B, C"
+    }
+  ],
+  "default_observations": [
+    "o1",
+    "o2",
+    "o3"
+  ],
+  "noise_model": {
+    "kind": "gaussian",
+    "angular_units": "degrees",
+    "tolerance_deg": 1.5,
+    "interval_sigma_multiplier": 1,
+    "seed": 240017,
+    "coordinates": "arbitrary local metres"
+  },
+  "teaching": {
+    "annotation_producer": "assistant",
+    "human_review": false
+  }
+}

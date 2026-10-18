@@ -1,0 +1,33 @@
+{
+  "scene_id": "analytic-reflection",
+  "camera": [
+    1,
+    3
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 40.60129464500448,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 40.60129464500448
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 63.43494882292201,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 63.43494882292201
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false,
+  "exact_solutions": [
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      -3
+    ]
+  ]
+}

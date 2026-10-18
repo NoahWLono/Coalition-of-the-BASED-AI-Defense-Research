@@ -1,0 +1,30 @@
+{
+  "scene_id": "benchmark-08",
+  "camera": [
+    1.7931650585241856,
+    -0.7329162531269116
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 190.5655869830793,
+      "drawn_error_deg": 1.1579508001253318,
+      "reported_value_deg": 191.72353778320462
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 353.0992995204283,
+      "drawn_error_deg": -0.6685703865791861,
+      "reported_value_deg": 352.4307291338491
+    },
+    {
+      "observation_id": "o3",
+      "exact_value_deg": 114.26955352245338,
+      "drawn_error_deg": 0.15232409968712934,
+      "reported_value_deg": 114.42187762214051
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false,
+  "annotations": "Observation o1 was generated for A and assigned to D."
+}

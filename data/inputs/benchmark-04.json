@@ -1,0 +1,89 @@
+{
+  "id": "benchmark-04",
+  "title": "Reflection resolved II",
+  "split": "benchmark",
+  "description": "Fictional local geometry; assistant-generated teaching labels.",
+  "bounds": [
+    -8,
+    -7,
+    8,
+    7
+  ],
+  "landmarks": [
+    {
+      "id": "A",
+      "x": -4,
+      "y": 0,
+      "label": "A"
+    },
+    {
+      "id": "B",
+      "x": 0,
+      "y": 0,
+      "label": "B"
+    },
+    {
+      "id": "C",
+      "x": 4,
+      "y": 0,
+      "label": "C"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "kind": "angle",
+      "landmarks": [
+        "A",
+        "B"
+      ],
+      "value_deg": 63.43494882292201,
+      "tolerance_deg": 1.8,
+      "label": "angle to A, B"
+    },
+    {
+      "id": "o2",
+      "kind": "angle",
+      "landmarks": [
+        "B",
+        "C"
+      ],
+      "value_deg": 40.60129464500448,
+      "tolerance_deg": 1.8,
+      "label": "angle to B, C"
+    },
+    {
+      "id": "o3",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 225.0,
+      "tolerance_deg": 1.8,
+      "label": "bearing to A"
+    }
+  ],
+  "default_observations": [
+    "o1",
+    "o2",
+    "o3"
+  ],
+  "noise_model": {
+    "kind": "exact",
+    "angular_units": "degrees",
+    "tolerance_deg": 1.8,
+    "interval_sigma_multiplier": null,
+    "seed": 240017,
+    "coordinates": "arbitrary local metres"
+  },
+  "teaching": {
+    "annotation_producer": "assistant",
+    "human_review": false,
+    "base_observations": [
+      "o1",
+      "o2"
+    ],
+    "additional_observation": "o3",
+    "explanation": "Angles preserve reflection across y=0; calibrated bearing selects a side."
+  }
+}

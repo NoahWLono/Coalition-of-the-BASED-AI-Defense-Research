@@ -1,0 +1,65 @@
+{
+  "id": "analytic-conflict",
+  "title": "Incompatible bearings to one landmark",
+  "split": "analytic",
+  "description": "Fictional local geometry; assistant-generated teaching labels.",
+  "bounds": [
+    -8,
+    -7,
+    8,
+    7
+  ],
+  "landmarks": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "label": "A"
+    },
+    {
+      "id": "B",
+      "x": 4,
+      "y": 0,
+      "label": "B"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 0,
+      "tolerance_deg": 0,
+      "label": "bearing to A"
+    },
+    {
+      "id": "o2",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 90,
+      "tolerance_deg": 0,
+      "label": "bearing to A"
+    }
+  ],
+  "default_observations": [
+    "o1",
+    "o2"
+  ],
+  "noise_model": {
+    "kind": "exact",
+    "angular_units": "degrees",
+    "tolerance_deg": 0,
+    "interval_sigma_multiplier": null,
+    "seed": 240017,
+    "coordinates": "arbitrary local metres"
+  },
+  "teaching": {
+    "annotation_producer": "assistant",
+    "human_review": false,
+    "explanation": "Two different zero-tolerance bearings to the same landmark cannot hold at one camera. The measurements were deliberately corrupted; removing either one restores a ray of possibilities."
+  }
+}

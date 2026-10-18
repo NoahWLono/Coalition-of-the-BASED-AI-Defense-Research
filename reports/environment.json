@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-17T21:59:42.889778-04:00",
+  "timezone": "America/Toronto",
+  "host": "momiji",
+  "platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "python": "3.14.8 (main, Oct  2 2026, 10:23:31) [GCC 16.2.1 20260810]",
+  "node": "v26.12.0",
+  "seed": 240017,
+  "additional_python_dependencies": [],
+  "solver_resolution": 128,
+  "reference_resolution": 256,
+  "angular_pad_deg": 1e-08,
+  "tests_passed": 32,
+  "generated_json_files_byte_identical": 103,
+  "formal_floating_point_certification": false,
+  "qualified_human_review": false
+}

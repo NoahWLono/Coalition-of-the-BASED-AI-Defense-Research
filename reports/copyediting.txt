@@ -1,0 +1,13 @@
+README.md:16 negative-parallelism KEPT Distinguishes unwitnessed numerical artifact from an established solution.
+README.md:29 negative-parallelism KEPT Limits held-out synthetic evidence to its measured scope.
+docs/geometry.md:13 negative-parallelism KEPT Distinguishes mathematical bearing convention from compass convention.
+docs/geometry.md:25 negative-parallelism KEPT Gaussian intervals are assumptions rather than guaranteed bounds.
+docs/geometry.md:44 negative-parallelism KEPT Disclaims directed arithmetic and formal certification accurately.
+docs/geometry.md:48 negative-parallelism KEPT Cell diagonal is not a localization error certificate.
+docs/geometry.md:17 trailing-participle KEPT Specifies exact omitted-selection behavior.
+docs/geometry.md:22 bold-header-list KEPT Parallel error-model definitions aid comparison.
+docs/geometry.md:42 trailing-participle KEPT Explains why identical lattices permit subset checks.
+reports/execution.md:32 negative-parallelism KEPT Restricts runtime interpretation to the measured run.
+reports/execution.md:53 negative-parallelism KEPT Separates saved generated diagram from unavailable UI screenshot.
+reports/execution.md:59 trailing-participle KEPT Detector false positive on the noun spending in a list of excluded actions.
+12 KEPT, 0 FIXED. Source line numbers reflect initial detector runs; later inserts shifted lines.

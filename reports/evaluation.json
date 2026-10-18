@@ -1,0 +1,2461 @@
+{
+  "schema_version": 1,
+  "python": "3.14.8",
+  "seed": 240017,
+  "scene_count": 51,
+  "resolution": 128,
+  "reference_resolution": 256,
+  "split_summary": {
+    "analytic": {
+      "count": 3,
+      "truth_exact_accepted": 2,
+      "truth_outer_covered": 2,
+      "valid_truth_count": 2,
+      "valid_truth_outer_covered": 2,
+      "discretization_center_misses": 2
+    },
+    "benchmark": {
+      "count": 20,
+      "truth_exact_accepted": 18,
+      "truth_outer_covered": 18,
+      "valid_truth_count": 18,
+      "valid_truth_outer_covered": 18,
+      "discretization_center_misses": 10
+    },
+    "heldout-bounded": {
+      "count": 12,
+      "truth_exact_accepted": 12,
+      "truth_outer_covered": 12,
+      "valid_truth_count": 12,
+      "valid_truth_outer_covered": 12,
+      "discretization_center_misses": 7
+    },
+    "heldout-gaussian": {
+      "count": 12,
+      "truth_exact_accepted": 5,
+      "truth_outer_covered": 9,
+      "valid_truth_count": 5,
+      "valid_truth_outer_covered": 5,
+      "discretization_center_misses": 2
+    },
+    "tuning": {
+      "count": 4,
+      "truth_exact_accepted": 4,
+      "truth_outer_covered": 4,
+      "valid_truth_count": 4,
+      "valid_truth_outer_covered": 4,
+      "discretization_center_misses": 1
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "analytic-conflict",
+      "split": "analytic",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "inconsistent evidence",
+      "status": "incompatible",
+      "area_lower": 0.0,
+      "area_upper": 0.0,
+      "area_bracket_width": 0.0,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 0,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 0,
+      "components": [],
+      "solver_runtime_ms": 0.09142799990513595,
+      "reference_runtime_ms": 235.18975700062583
+    },
+    {
+      "scene_id": "analytic-reflection",
+      "split": "analytic",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.2734375,
+      "area_bracket_width": 0.2734375,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 3,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 3,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 4,
+          "area_lower": 0.0,
+          "area_upper": 0.0546875,
+          "witness_count": 0,
+          "witness": null
+        },
+        {
+          "id": 1,
+          "cell_count": 8,
+          "area_lower": 0.0,
+          "area_upper": 0.109375,
+          "witness_count": 0,
+          "witness": null
+        },
+        {
+          "id": 2,
+          "cell_count": 8,
+          "area_lower": 0.0,
+          "area_upper": 0.109375,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 2.378027999839105,
+      "reference_runtime_ms": 242.71401300029538
+    },
+    {
+      "scene_id": "analytic-triangle",
+      "split": "analytic",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.02734375,
+      "area_bracket_width": 0.02734375,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 2,
+          "area_lower": 0.0,
+          "area_upper": 0.02734375,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 0.8776260001468472,
+      "reference_runtime_ms": 231.53997999997955
+    },
+    {
+      "scene_id": "benchmark-01",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.73828125,
+      "area_bracket_width": 0.73828125,
+      "reference_sample_area": 0.123046875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 36,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 3,
+      "witnessed_components": 2,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 4,
+          "area_lower": 0.0,
+          "area_upper": 0.0546875,
+          "witness_count": 0,
+          "witness": null
+        },
+        {
+          "id": 1,
+          "cell_count": 25,
+          "area_lower": 0.0,
+          "area_upper": 0.341796875,
+          "witness_count": 4,
+          "witness": [
+            0.9375,
+            -2.8984375
+          ]
+        },
+        {
+          "id": 2,
+          "cell_count": 25,
+          "area_lower": 0.0,
+          "area_upper": 0.341796875,
+          "witness_count": 4,
+          "witness": [
+            1.0625,
+            3.0078125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 4.241208000166807,
+      "reference_runtime_ms": 247.0035670003199
+    },
+    {
+      "scene_id": "benchmark-02",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.73828125,
+      "area_bracket_width": 0.73828125,
+      "reference_sample_area": 0.123046875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 36,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 3,
+      "witnessed_components": 2,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 25,
+          "area_lower": 0.0,
+          "area_upper": 0.341796875,
+          "witness_count": 4,
+          "witness": [
+            -0.9375,
+            -2.8984375
+          ]
+        },
+        {
+          "id": 1,
+          "cell_count": 25,
+          "area_lower": 0.0,
+          "area_upper": 0.341796875,
+          "witness_count": 4,
+          "witness": [
+            -1.0625,
+            3.1171875
+          ]
+        },
+        {
+          "id": 2,
+          "cell_count": 4,
+          "area_lower": 0.0,
+          "area_upper": 0.0546875,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 4.160448999755317,
+      "reference_runtime_ms": 253.703310999299
+    },
+    {
+      "scene_id": "benchmark-03",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.328125,
+      "area_bracket_width": 0.328125,
+      "reference_sample_area": 0.0615234375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 18,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 24,
+          "area_lower": 0.0,
+          "area_upper": 0.328125,
+          "witness_count": 4,
+          "witness": [
+            1.0625,
+            3.0078125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.5077759999257978,
+      "reference_runtime_ms": 258.209351000005
+    },
+    {
+      "scene_id": "benchmark-04",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.24609375,
+      "area_bracket_width": 0.24609375,
+      "reference_sample_area": 0.0546875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 16,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 18,
+          "area_lower": 0.0,
+          "area_upper": 0.24609375,
+          "witness_count": 4,
+          "witness": [
+            -1.0625,
+            3.1171875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.346709999779705,
+      "reference_runtime_ms": 242.90383199968346
+    },
+    {
+      "scene_id": "benchmark-05",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.19140625,
+      "area_bracket_width": 0.19140625,
+      "reference_sample_area": 0.04443359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 13,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 14,
+          "area_lower": 0.0,
+          "area_upper": 0.19140625,
+          "witness_count": 3,
+          "witness": [
+            -1.9375,
+            -1.0390625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.0476790002940106,
+      "reference_runtime_ms": 289.59285499968246
+    },
+    {
+      "scene_id": "benchmark-06",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.08203125,
+      "area_bracket_width": 0.08203125,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 6,
+          "area_lower": 0.0,
+          "area_upper": 0.08203125,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 1.2311270002101082,
+      "reference_runtime_ms": 346.0350049999761
+    },
+    {
+      "scene_id": "benchmark-07",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.095703125,
+      "area_bracket_width": 0.095703125,
+      "reference_sample_area": 0.00341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 1,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 7,
+          "area_lower": 0.0,
+          "area_upper": 0.095703125,
+          "witness_count": 1,
+          "witness": [
+            -0.1875,
+            0.4921875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.0538300002735923,
+      "reference_runtime_ms": 247.55416500011052
+    },
+    {
+      "scene_id": "benchmark-08",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "inconsistent evidence",
+      "status": "incompatible",
+      "area_lower": 0.0,
+      "area_upper": 0.0,
+      "area_bracket_width": 0.0,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 0,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 0,
+      "components": [],
+      "solver_runtime_ms": 0.6285270001171739,
+      "reference_runtime_ms": 244.92866299988236
+    },
+    {
+      "scene_id": "benchmark-09",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "inconsistent evidence",
+      "status": "incompatible",
+      "area_lower": 0.0,
+      "area_upper": 0.0,
+      "area_bracket_width": 0.0,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 0,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 0,
+      "components": [],
+      "solver_runtime_ms": 0.09081799998966744,
+      "reference_runtime_ms": 254.9997229998553
+    },
+    {
+      "scene_id": "benchmark-10",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.03759765625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 11,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            2.0625,
+            0.4921875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8524790000592475,
+      "reference_runtime_ms": 267.69009700001334
+    },
+    {
+      "scene_id": "benchmark-11",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.02392578125,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 7,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 2,
+          "witness": [
+            -0.0625,
+            -0.4921875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8922220004023984,
+      "reference_runtime_ms": 271.12735899936524
+    },
+    {
+      "scene_id": "benchmark-12",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.041015625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 12,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 2,
+          "witness": [
+            -0.6875,
+            0.7109375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.7858569997551967,
+      "reference_runtime_ms": 282.76264000032825
+    },
+    {
+      "scene_id": "benchmark-13",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.205078125,
+      "area_bracket_width": 0.205078125,
+      "reference_sample_area": 0.0068359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 2,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 15,
+          "area_lower": 0.0,
+          "area_upper": 0.205078125,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 1.5265700003510574,
+      "reference_runtime_ms": 285.3700610003216
+    },
+    {
+      "scene_id": "benchmark-14",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.109375,
+      "area_bracket_width": 0.109375,
+      "reference_sample_area": 0.01708984375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 5,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 8,
+          "area_lower": 0.0,
+          "area_upper": 0.109375,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 0.83520799944381,
+      "reference_runtime_ms": 257.66499800010934
+    },
+    {
+      "scene_id": "benchmark-15",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.02392578125,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 7,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 2,
+          "witness": [
+            -0.8125,
+            -0.3828125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9474039998167427,
+      "reference_runtime_ms": 259.4229229998746
+    },
+    {
+      "scene_id": "benchmark-16",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.1640625,
+      "area_bracket_width": 0.1640625,
+      "reference_sample_area": 0.03759765625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 11,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 12,
+          "area_lower": 0.0,
+          "area_upper": 0.1640625,
+          "witness_count": 3,
+          "witness": [
+            -1.9375,
+            1.9140625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8973320000222884,
+      "reference_runtime_ms": 274.74748799977533
+    },
+    {
+      "scene_id": "benchmark-17",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.0341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 10,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            1.5625,
+            2.4609375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.835187999655318,
+      "reference_runtime_ms": 331.01770899975236
+    },
+    {
+      "scene_id": "benchmark-18",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.095703125,
+      "area_bracket_width": 0.095703125,
+      "reference_sample_area": 0.01025390625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 3,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 7,
+          "area_lower": 0.0,
+          "area_upper": 0.095703125,
+          "witness_count": 1,
+          "witness": [
+            -0.0625,
+            0.7109375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.2827919999836013,
+      "reference_runtime_ms": 279.516521000005
+    },
+    {
+      "scene_id": "benchmark-19",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.068359375,
+      "area_bracket_width": 0.068359375,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 5,
+          "area_lower": 0.0,
+          "area_upper": 0.068359375,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 1.0388130003775586,
+      "reference_runtime_ms": 385.3404239998781
+    },
+    {
+      "scene_id": "benchmark-20",
+      "split": "benchmark",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.123046875,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.03759765625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 11,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 9,
+          "area_lower": 0.0,
+          "area_upper": 0.123046875,
+          "witness_count": 2,
+          "witness": [
+            -0.1875,
+            1.8046875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.2575950004247716,
+      "reference_runtime_ms": 522.58871200047
+    },
+    {
+      "scene_id": "heldout-bounded-01",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.1640625,
+      "area_bracket_width": 0.1640625,
+      "reference_sample_area": 0.041015625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 12,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 12,
+          "area_lower": 0.0,
+          "area_upper": 0.1640625,
+          "witness_count": 3,
+          "witness": [
+            2.1875,
+            2.0234375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9519729992462089,
+      "reference_runtime_ms": 234.9090729994714
+    },
+    {
+      "scene_id": "heldout-bounded-02",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.03759765625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 11,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            -1.9375,
+            2.1328125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.7961960000102408,
+      "reference_runtime_ms": 241.58664799961116
+    },
+    {
+      "scene_id": "heldout-bounded-03",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.123046875,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.01025390625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 3,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 9,
+          "area_lower": 0.0,
+          "area_upper": 0.123046875,
+          "witness_count": 1,
+          "witness": [
+            1.3125,
+            0.6015625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8004840001376579,
+      "reference_runtime_ms": 229.75143699932232
+    },
+    {
+      "scene_id": "heldout-bounded-04",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.1640625,
+      "area_bracket_width": 0.1640625,
+      "reference_sample_area": 0.04443359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 13,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 12,
+          "area_lower": 0.0,
+          "area_upper": 0.1640625,
+          "witness_count": 3,
+          "witness": [
+            -0.4375,
+            0.6015625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.2328600005275803,
+      "reference_runtime_ms": 239.8278760001631
+    },
+    {
+      "scene_id": "heldout-bounded-05",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.1640625,
+      "area_bracket_width": 0.1640625,
+      "reference_sample_area": 0.0341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 10,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 12,
+          "area_lower": 0.0,
+          "area_upper": 0.1640625,
+          "witness_count": 3,
+          "witness": [
+            1.4375,
+            2.1328125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.7590969999000663,
+      "reference_runtime_ms": 232.81283500000427
+    },
+    {
+      "scene_id": "heldout-bounded-06",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.177734375,
+      "area_bracket_width": 0.177734375,
+      "reference_sample_area": 0.05126953125,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 15,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 13,
+          "area_lower": 0.0,
+          "area_upper": 0.177734375,
+          "witness_count": 4,
+          "witness": [
+            -2.0625,
+            1.1484375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.769325999499415,
+      "reference_runtime_ms": 238.6584790001507
+    },
+    {
+      "scene_id": "heldout-bounded-07",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.123046875,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.03076171875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 9,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 9,
+          "area_lower": 0.0,
+          "area_upper": 0.123046875,
+          "witness_count": 2,
+          "witness": [
+            -0.3125,
+            1.1484375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8232459995269892,
+      "reference_runtime_ms": 234.54925299938623
+    },
+    {
+      "scene_id": "heldout-bounded-08",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.041015625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 12,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            -0.1875,
+            -0.0546875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9305840003435151,
+      "reference_runtime_ms": 241.56788900018
+    },
+    {
+      "scene_id": "heldout-bounded-09",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.0341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 10,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            1.8125,
+            1.3671875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8749309999984689,
+      "reference_runtime_ms": 231.86553300001833
+    },
+    {
+      "scene_id": "heldout-bounded-10",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "unresolved without center witness",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.08203125,
+      "area_bracket_width": 0.08203125,
+      "reference_sample_area": 0.013671875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 4,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 6,
+          "area_lower": 0.0,
+          "area_upper": 0.08203125,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 0.7582759999422706,
+      "reference_runtime_ms": 264.70555200012313
+    },
+    {
+      "scene_id": "heldout-bounded-11",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.03759765625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 11,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 3,
+          "witness": [
+            1.4375,
+            1.5859375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8986350003397092,
+      "reference_runtime_ms": 239.2912660006914
+    },
+    {
+      "scene_id": "heldout-bounded-12",
+      "split": "heldout-bounded",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.21875,
+      "area_bracket_width": 0.21875,
+      "reference_sample_area": 0.0478515625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 14,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 16,
+          "area_lower": 0.0,
+          "area_upper": 0.21875,
+          "witness_count": 1,
+          "witness": [
+            0.9375,
+            -0.4921875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.0469380003996775,
+      "reference_runtime_ms": 235.5184210000516
+    },
+    {
+      "scene_id": "heldout-gaussian-01",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.19140625,
+      "area_bracket_width": 0.19140625,
+      "reference_sample_area": 0.03076171875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 9,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 14,
+          "area_lower": 0.0,
+          "area_upper": 0.19140625,
+          "witness_count": 2,
+          "witness": [
+            1.8125,
+            -0.3828125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.0077159995489637,
+      "reference_runtime_ms": 267.2366070000862
+    },
+    {
+      "scene_id": "heldout-gaussian-02",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.041015625,
+      "area_bracket_width": 0.041015625,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 3,
+          "area_lower": 0.0,
+          "area_upper": 0.041015625,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 1.004290000309993,
+      "reference_runtime_ms": 353.7585970007058
+    },
+    {
+      "scene_id": "heldout-gaussian-03",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.02734375,
+      "area_bracket_width": 0.02734375,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 2,
+          "area_lower": 0.0,
+          "area_upper": 0.02734375,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 0.7096669996826677,
+      "reference_runtime_ms": 280.1781559992378
+    },
+    {
+      "scene_id": "heldout-gaussian-04",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.109375,
+      "area_bracket_width": 0.109375,
+      "reference_sample_area": 0.0068359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 2,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 8,
+          "area_lower": 0.0,
+          "area_upper": 0.109375,
+          "witness_count": 2,
+          "witness": [
+            -2.1875,
+            -0.4921875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.255983000191918,
+      "reference_runtime_ms": 392.9125109998495
+    },
+    {
+      "scene_id": "heldout-gaussian-05",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.02734375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 8,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 2,
+          "witness": [
+            -1.5625,
+            1.3671875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8028890006244183,
+      "reference_runtime_ms": 237.74864000006346
+    },
+    {
+      "scene_id": "heldout-gaussian-06",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.095703125,
+      "area_bracket_width": 0.095703125,
+      "reference_sample_area": 0.0068359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 2,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 7,
+          "area_lower": 0.0,
+          "area_upper": 0.095703125,
+          "witness_count": 2,
+          "witness": [
+            -1.4375,
+            1.6953125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8065550000537769,
+      "reference_runtime_ms": 258.97141999939777
+    },
+    {
+      "scene_id": "heldout-gaussian-07",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.0341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 10,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 3,
+          "witness": [
+            2.4375,
+            0.7109375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9443389999432839,
+      "reference_runtime_ms": 242.56972100010898
+    },
+    {
+      "scene_id": "heldout-gaussian-08",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.1640625,
+      "area_bracket_width": 0.1640625,
+      "reference_sample_area": 0.041015625,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 12,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 12,
+          "area_lower": 0.0,
+          "area_upper": 0.1640625,
+          "witness_count": 3,
+          "witness": [
+            -2.8125,
+            -0.3828125
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.3686299998880713,
+      "reference_runtime_ms": 240.05287399995723
+    },
+    {
+      "scene_id": "heldout-gaussian-09",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.013671875,
+      "area_bracket_width": 0.013671875,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 1,
+          "area_lower": 0.0,
+          "area_upper": 0.013671875,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 1.0140370004592114,
+      "reference_runtime_ms": 244.53236299996206
+    },
+    {
+      "scene_id": "heldout-gaussian-10",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.123046875,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.02392578125,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 7,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 9,
+          "area_lower": 0.0,
+          "area_upper": 0.123046875,
+          "witness_count": 2,
+          "witness": [
+            0.1875,
+            1.8046875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8120749998852261,
+      "reference_runtime_ms": 237.87006600014138
+    },
+    {
+      "scene_id": "heldout-gaussian-11",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": false,
+      "truth_outer_covered": false,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": false,
+      "classification": "model violation at source camera",
+      "status": "unresolved",
+      "area_lower": 0.0,
+      "area_upper": 0.08203125,
+      "area_bracket_width": 0.08203125,
+      "reference_sample_area": 0.0,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 0,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 0,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 6,
+          "area_lower": 0.0,
+          "area_upper": 0.08203125,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 0.7576260004498181,
+      "reference_runtime_ms": 226.80759499962733
+    },
+    {
+      "scene_id": "heldout-gaussian-12",
+      "split": "heldout-gaussian",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.177734375,
+      "area_bracket_width": 0.177734375,
+      "reference_sample_area": 0.04443359375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 13,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 13,
+          "area_lower": 0.0,
+          "area_upper": 0.177734375,
+          "witness_count": 2,
+          "witness": [
+            -0.3125,
+            -0.6015625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9396710001965403,
+      "reference_runtime_ms": 230.90020100062247
+    },
+    {
+      "scene_id": "tuning-01",
+      "split": "tuning",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.123046875,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.0341796875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 10,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 9,
+          "area_lower": 0.0,
+          "area_upper": 0.123046875,
+          "witness_count": 3,
+          "witness": [
+            -1.8125,
+            0.6015625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8023169993975898,
+      "reference_runtime_ms": 229.25135500008764
+    },
+    {
+      "scene_id": "tuning-02",
+      "split": "tuning",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.13671875,
+      "area_bracket_width": 0.13671875,
+      "reference_sample_area": 0.02392578125,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 7,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 10,
+          "area_lower": 0.0,
+          "area_upper": 0.13671875,
+          "witness_count": 2,
+          "witness": [
+            -2.3125,
+            -0.7109375
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.8636909997221665,
+      "reference_runtime_ms": 241.62705599974288
+    },
+    {
+      "scene_id": "tuning-03",
+      "split": "tuning",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": false,
+      "discretization_center_miss": true,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.150390625,
+      "area_bracket_width": 0.150390625,
+      "reference_sample_area": 0.02734375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 8,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 11,
+          "area_lower": 0.0,
+          "area_upper": 0.150390625,
+          "witness_count": 3,
+          "witness": [
+            1.1875,
+            1.9140625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 0.9680129996922915,
+      "reference_runtime_ms": 233.46166899955278
+    },
+    {
+      "scene_id": "tuning-04",
+      "split": "tuning",
+      "resolution": 128,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0,
+      "area_upper": 0.21875,
+      "area_bracket_width": 0.21875,
+      "reference_sample_area": 0.05810546875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 17,
+      "reference_points_missed": 0,
+      "inner_point_checks": 0,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 16,
+          "area_lower": 0.0,
+          "area_upper": 0.21875,
+          "witness_count": 5,
+          "witness": [
+            -1.3125,
+            -0.9296875
+          ]
+        }
+      ],
+      "solver_runtime_ms": 1.021240000227408,
+      "reference_runtime_ms": 301.7513199993118
+    }
+  ],
+  "monotonicity": [
+    {
+      "scene_id": "benchmark-05",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-06",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-07",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-10",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-11",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-12",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-13",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-14",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-15",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-16",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-17",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-18",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-19",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "benchmark-20",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-01",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-02",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-03",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-04",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-05",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-06",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-07",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-08",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-09",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-10",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-11",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "heldout-bounded-12",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "tuning-01",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "tuning-02",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "tuning-03",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    },
+    {
+      "scene_id": "tuning-04",
+      "resolution": 128,
+      "prefix_comparisons": 2,
+      "added_cells": 0
+    }
+  ],
+  "resolution_nesting": [
+    {
+      "scene_id": "analytic-conflict",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "analytic-reflection",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "analytic-triangle",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "benchmark-01",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "benchmark-02",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "benchmark-03",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    },
+    {
+      "scene_id": "benchmark-04",
+      "comparisons": 2,
+      "non_nested_cells": 0
+    }
+  ],
+  "teaching_at_256": [
+    {
+      "scene_id": "benchmark-01",
+      "split": "benchmark",
+      "resolution": 256,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.013671875,
+      "area_upper": 0.369140625,
+      "area_bracket_width": 0.35546875,
+      "reference_sample_area": 0.123046875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 36,
+      "reference_points_missed": 0,
+      "inner_point_checks": 20,
+      "inner_point_failures": 0,
+      "outer_components": 3,
+      "witnessed_components": 2,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 4,
+          "area_lower": 0.0,
+          "area_upper": 0.013671875,
+          "witness_count": 0,
+          "witness": null
+        },
+        {
+          "id": 1,
+          "cell_count": 52,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.177734375,
+          "witness_count": 18,
+          "witness": [
+            0.84375,
+            -3.03515625
+          ]
+        },
+        {
+          "id": 2,
+          "cell_count": 52,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.177734375,
+          "witness_count": 18,
+          "witness": [
+            0.90625,
+            3.03515625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 5.072400999779347,
+      "reference_runtime_ms": 225.74745400015672
+    },
+    {
+      "scene_id": "benchmark-02",
+      "split": "benchmark",
+      "resolution": 256,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.013671875,
+      "area_upper": 0.369140625,
+      "area_bracket_width": 0.35546875,
+      "reference_sample_area": 0.123046875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 36,
+      "reference_points_missed": 0,
+      "inner_point_checks": 20,
+      "inner_point_failures": 0,
+      "outer_components": 3,
+      "witnessed_components": 2,
+      "unwitnessed_outer_components": 1,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 52,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.177734375,
+          "witness_count": 18,
+          "witness": [
+            -1.09375,
+            -3.03515625
+          ]
+        },
+        {
+          "id": 1,
+          "cell_count": 52,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.177734375,
+          "witness_count": 18,
+          "witness": [
+            -1.09375,
+            3.03515625
+          ]
+        },
+        {
+          "id": 2,
+          "cell_count": 4,
+          "area_lower": 0.0,
+          "area_upper": 0.013671875,
+          "witness_count": 0,
+          "witness": null
+        }
+      ],
+      "solver_runtime_ms": 4.936311000165006,
+      "reference_runtime_ms": 242.259178000495
+    },
+    {
+      "scene_id": "benchmark-03",
+      "split": "benchmark",
+      "resolution": 256,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0068359375,
+      "area_upper": 0.177734375,
+      "area_bracket_width": 0.1708984375,
+      "reference_sample_area": 0.0615234375,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 18,
+      "reference_points_missed": 0,
+      "inner_point_checks": 10,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 52,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.177734375,
+          "witness_count": 18,
+          "witness": [
+            0.90625,
+            3.03515625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 2.8646560003835475,
+      "reference_runtime_ms": 250.1285469998038
+    },
+    {
+      "scene_id": "benchmark-04",
+      "split": "benchmark",
+      "resolution": 256,
+      "reference_resolution": 256,
+      "truth_exact_accepted": true,
+      "truth_outer_covered": true,
+      "truth_cell_center_accepted": true,
+      "discretization_center_miss": false,
+      "classification": "valid covered",
+      "status": "feasible",
+      "area_lower": 0.0068359375,
+      "area_upper": 0.1298828125,
+      "area_bracket_width": 0.123046875,
+      "reference_sample_area": 0.0546875,
+      "reference_area_within_bracket": true,
+      "reference_accepted_count": 16,
+      "reference_points_missed": 0,
+      "inner_point_checks": 10,
+      "inner_point_failures": 0,
+      "outer_components": 1,
+      "witnessed_components": 1,
+      "unwitnessed_outer_components": 0,
+      "components": [
+        {
+          "id": 0,
+          "cell_count": 38,
+          "area_lower": 0.0068359375,
+          "area_upper": 0.1298828125,
+          "witness_count": 16,
+          "witness": [
+            -1.09375,
+            3.03515625
+          ]
+        }
+      ],
+      "solver_runtime_ms": 2.483113000380399,
+      "reference_runtime_ms": 259.42597900029796
+    }
+  ],
+  "failures": {
+    "reference_points_missed": 0,
+    "valid_truth_exclusions": 0,
+    "inner_point_failures": 0,
+    "nonmonotone_added_cells": 0,
+    "non_nested_cells": 0
+  },
+  "classification_counts": {
+    "inconsistent evidence": 3,
+    "unresolved without center witness": 7,
+    "valid covered": 34,
+    "model violation at source camera": 7
+  },
+  "total_runtime_seconds": 15.04912748299921,
+  "limitations": [
+    "Numerical real-arithmetic enclosure argument; no formal floating-point guarantee.",
+    "Dense sampled areas and empty samples do not prove continuous feasibility or conflict.",
+    "Unwitnessed outer components may be conservative artifacts or real regions missed by centers.",
+    "Synthetic assistant-generated annotations; no human review or novelty claim."
+  ]
+}

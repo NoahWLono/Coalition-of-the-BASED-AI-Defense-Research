@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+reports/server.log
+reports/checksums-verified.log

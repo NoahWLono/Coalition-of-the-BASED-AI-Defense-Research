@@ -1,0 +1,25 @@
+{
+  "scene_id": "analytic-conflict",
+  "camera": [
+    1,
+    2
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 243.43494882292202,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 243.43494882292202
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 243.43494882292202,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 243.43494882292202
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false,
+  "expected_feasible": false,
+  "annotations": "Deliberately corrupted observations; camera is source geometry only."
+}

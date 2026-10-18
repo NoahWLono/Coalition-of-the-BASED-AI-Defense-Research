@@ -1,0 +1,29 @@
+{
+  "scene_id": "heldout-bounded-02",
+  "camera": [
+    -1.9748581775041436,
+    2.2485937048773605
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 234.54785328871327,
+      "drawn_error_deg": 0.3138959103742196,
+      "reported_value_deg": 234.86174919908748
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 331.4666058901948,
+      "drawn_error_deg": 0.5186884677853025,
+      "reported_value_deg": 331.9852943579801
+    },
+    {
+      "observation_id": "o3",
+      "exact_value_deg": 82.8640006509667,
+      "drawn_error_deg": 0.996190301115143,
+      "reported_value_deg": 83.86019095208185
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false
+}

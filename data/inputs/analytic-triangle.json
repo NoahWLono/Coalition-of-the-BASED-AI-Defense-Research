@@ -1,0 +1,64 @@
+{
+  "id": "analytic-triangle",
+  "title": "Two calibrated bearings intersect",
+  "split": "analytic",
+  "description": "Fictional local geometry; assistant-generated teaching labels.",
+  "bounds": [
+    -8,
+    -7,
+    8,
+    7
+  ],
+  "landmarks": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "label": "A"
+    },
+    {
+      "id": "B",
+      "x": 4,
+      "y": 0,
+      "label": "B"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 243.43494882292202,
+      "tolerance_deg": 0,
+      "label": "bearing to A"
+    },
+    {
+      "id": "o2",
+      "kind": "bearing",
+      "landmarks": [
+        "B"
+      ],
+      "value_deg": 326.30993247402023,
+      "tolerance_deg": 0,
+      "label": "bearing to B"
+    }
+  ],
+  "default_observations": [
+    "o1",
+    "o2"
+  ],
+  "noise_model": {
+    "kind": "exact",
+    "angular_units": "degrees",
+    "tolerance_deg": 0,
+    "interval_sigma_multiplier": null,
+    "seed": 240017,
+    "coordinates": "arbitrary local metres"
+  },
+  "teaching": {
+    "annotation_producer": "assistant",
+    "human_review": false
+  }
+}

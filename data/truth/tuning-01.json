@@ -1,0 +1,29 @@
+{
+  "scene_id": "tuning-01",
+  "camera": [
+    -1.798951249453797,
+    0.49217505635769343
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 217.9025252797212,
+      "drawn_error_deg": 0.5532338718209169,
+      "reported_value_deg": 218.4557591515421
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 345.56980989832454,
+      "drawn_error_deg": -1.024290079608964,
+      "reported_value_deg": 344.54551981871555
+    },
+    {
+      "observation_id": "o3",
+      "exact_value_deg": 82.67458219507571,
+      "drawn_error_deg": -0.8234298240388145,
+      "reported_value_deg": 81.8511523710369
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false
+}

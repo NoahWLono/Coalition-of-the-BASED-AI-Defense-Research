@@ -1,0 +1,23 @@
+{
+  "scene_id": "analytic-triangle",
+  "camera": [
+    1,
+    2
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 243.43494882292202,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 243.43494882292202
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 326.30993247402023,
+      "drawn_error_deg": 0,
+      "reported_value_deg": 326.30993247402023
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false
+}

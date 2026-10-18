@@ -1,0 +1,47 @@
+test_circular_conflict_threshold_and_reversed_angle_order (test_adversarial.AdversarialGeometryTests.test_circular_conflict_threshold_and_reversed_angle_order) ... ok
+test_rectangular_cover_and_inner_corners (test_adversarial.AdversarialGeometryTests.test_rectangular_cover_and_inner_corners) ... ok
+test_reflected_exact_pair_and_resolving_bearing (test_adversarial.AdversarialGeometryTests.test_reflected_exact_pair_and_resolving_bearing) ... ok
+test_right_angle_circle (test_adversarial.AdversarialGeometryTests.test_right_angle_circle) ... ok
+test_subdivision_and_added_constraint_outer_monotonicity (test_adversarial.AdversarialGeometryTests.test_subdivision_and_added_constraint_outer_monotonicity) ... ok
+test_used_landmark_singularity_never_inner (test_adversarial.AdversarialGeometryTests.test_used_landmark_singularity_never_inner) ... ok
+test_conflict_classified (test_evaluation.EvaluationTests.test_conflict_classified) ... ok
+test_exact_triangle_coverage_and_center_discretization (test_evaluation.EvaluationTests.test_exact_triangle_coverage_and_center_discretization) ... ok
+test_inner_corner_checks_are_nonvacuous (test_evaluation.EvaluationTests.test_inner_corner_checks_are_nonvacuous) ... ok
+test_monotonicity_and_nesting (test_evaluation.EvaluationTests.test_monotonicity_and_nesting) ... ok
+test_supplemental_truth_and_reference_exclusions_fail_gate (test_evaluation.EvaluationTests.test_supplemental_truth_and_reference_exclusions_fail_gate) ... ok
+test_analytic_generation_separate (test_reference.ReferenceTests.test_analytic_generation_separate) ... ok
+test_conflict (test_reference.ReferenceTests.test_conflict) ... ok
+test_generated_wrap_interval (test_reference.ReferenceTests.test_generated_wrap_interval) ... ok
+test_grid_area_and_validation (test_reference.ReferenceTests.test_grid_area_and_validation) ... ok
+test_reflections (test_reference.ReferenceTests.test_reflections) ... ok
+test_splits_determinism_and_truth (test_reference.ReferenceTests.test_splits_determinism_and_truth) ... ok
+test_teaching_grid_reflections_and_added_constraint (test_reference.ReferenceTests.test_teaching_grid_reflections_and_added_constraint) ... ok
+test_triangle (test_reference.ReferenceTests.test_triangle) ... ok
+test_wraparound (test_reference.ReferenceTests.test_wraparound) ... ok
+test_default_and_empty_selection_differ (test_server.ServerTests.test_default_and_empty_selection_differ) ... 127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/solve?id=benchmark-01&n=32 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/solve?id=benchmark-01&n=32&obs= HTTP/1.1" 200 -
+ok
+test_inputs_and_truth_separated (test_server.ServerTests.test_inputs_and_truth_separated) ... 127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/scene?id=benchmark-01 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/truth?id=benchmark-01 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/scenes HTTP/1.1" 200 -
+ok
+test_invalid_queries_rejected (test_server.ServerTests.test_invalid_queries_rejected) ... 127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/solve?id=benchmark-01&n=99999 HTTP/1.1" 400 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/solve?id=benchmark-01&obs=bad HTTP/1.1" 400 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /api/truth?id=../secret HTTP/1.1" 400 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /../docs/mission.txt HTTP/1.1" 404 -
+127.0.0.1 - - [17/Oct/2026 21:52:22] "GET /data/truth/benchmark-01.json HTTP/1.1" 404 -
+ok
+test_conflicting_bearings_even_at_landmark (test_solver.SolverTests.test_conflicting_bearings_even_at_landmark) ... ok
+test_constraint_monotonicity (test_solver.SolverTests.test_constraint_monotonicity) ... ok
+test_inner_cells_obey_all_constraints_at_corners (test_solver.SolverTests.test_inner_cells_obey_all_constraints_at_corners) ... ok
+test_invalid_inputs (test_solver.SolverTests.test_invalid_inputs) ... ok
+test_narrow_off_grid_truth (test_solver.SolverTests.test_narrow_off_grid_truth) ... ok
+test_no_constraints_returns_domain (test_solver.SolverTests.test_no_constraints_returns_domain) ... ok
+test_singular_landmark_is_not_witness (test_solver.SolverTests.test_singular_landmark_is_not_witness) ... ok
+test_wraparound (test_solver.SolverTests.test_wraparound) ... ok
+test_zero_width_triangle_preserved (test_solver.SolverTests.test_zero_width_triangle_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.169s
+
+OK

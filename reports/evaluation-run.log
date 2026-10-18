@@ -1,0 +1,59 @@
+{
+  "scene_count": 51,
+  "split_summary": {
+    "analytic": {
+      "count": 3,
+      "truth_exact_accepted": 2,
+      "truth_outer_covered": 2,
+      "valid_truth_count": 2,
+      "valid_truth_outer_covered": 2,
+      "discretization_center_misses": 2
+    },
+    "benchmark": {
+      "count": 20,
+      "truth_exact_accepted": 18,
+      "truth_outer_covered": 18,
+      "valid_truth_count": 18,
+      "valid_truth_outer_covered": 18,
+      "discretization_center_misses": 10
+    },
+    "heldout-bounded": {
+      "count": 12,
+      "truth_exact_accepted": 12,
+      "truth_outer_covered": 12,
+      "valid_truth_count": 12,
+      "valid_truth_outer_covered": 12,
+      "discretization_center_misses": 7
+    },
+    "heldout-gaussian": {
+      "count": 12,
+      "truth_exact_accepted": 5,
+      "truth_outer_covered": 9,
+      "valid_truth_count": 5,
+      "valid_truth_outer_covered": 5,
+      "discretization_center_misses": 2
+    },
+    "tuning": {
+      "count": 4,
+      "truth_exact_accepted": 4,
+      "truth_outer_covered": 4,
+      "valid_truth_count": 4,
+      "valid_truth_outer_covered": 4,
+      "discretization_center_misses": 1
+    }
+  },
+  "failures": {
+    "reference_points_missed": 0,
+    "valid_truth_exclusions": 0,
+    "inner_point_failures": 0,
+    "nonmonotone_added_cells": 0,
+    "non_nested_cells": 0
+  },
+  "classification_counts": {
+    "inconsistent evidence": 3,
+    "unresolved without center witness": 7,
+    "valid covered": 34,
+    "model violation at source camera": 7
+  },
+  "total_runtime_seconds": 15.04912748299921
+}

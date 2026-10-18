@@ -1,0 +1,29 @@
+{
+  "scene_id": "heldout-gaussian-08",
+  "camera": [
+    -2.490873917072957,
+    -0.24165150519892942
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 215.02205072863774,
+      "drawn_error_deg": 0.5357679573715233,
+      "reported_value_deg": 215.55781868600926
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 353.33617097366056,
+      "drawn_error_deg": 0.8728171563203384,
+      "reported_value_deg": 354.2089881299809
+    },
+    {
+      "observation_id": "o3",
+      "exact_value_deg": 71.24639530827018,
+      "drawn_error_deg": -3.129834168519914,
+      "reported_value_deg": 68.11656113975026
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false
+}

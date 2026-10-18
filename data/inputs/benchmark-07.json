@@ -1,0 +1,88 @@
+{
+  "id": "benchmark-07",
+  "title": "Collinear repeated layout",
+  "split": "benchmark",
+  "description": "Fictional local geometry; assistant-generated teaching labels.",
+  "bounds": [
+    -8,
+    -7,
+    8,
+    7
+  ],
+  "landmarks": [
+    {
+      "id": "A",
+      "x": -4,
+      "y": 0,
+      "label": "A"
+    },
+    {
+      "id": "B",
+      "x": 0,
+      "y": 0,
+      "label": "B"
+    },
+    {
+      "id": "C",
+      "x": 4,
+      "y": 0,
+      "label": "C"
+    },
+    {
+      "id": "D",
+      "x": 8,
+      "y": 0,
+      "label": "D"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "kind": "bearing",
+      "landmarks": [
+        "A"
+      ],
+      "value_deg": 186.66195967862004,
+      "tolerance_deg": 1.5,
+      "label": "bearing to A"
+    },
+    {
+      "id": "o2",
+      "kind": "bearing",
+      "landmarks": [
+        "B"
+      ],
+      "value_deg": 292.12956660956576,
+      "tolerance_deg": 1.5,
+      "label": "bearing to B"
+    },
+    {
+      "id": "o3",
+      "kind": "angle",
+      "landmarks": [
+        "B",
+        "C"
+      ],
+      "value_deg": 61.52291784943377,
+      "tolerance_deg": 1.5,
+      "label": "angle to B, C"
+    }
+  ],
+  "default_observations": [
+    "o1",
+    "o2",
+    "o3"
+  ],
+  "noise_model": {
+    "kind": "bounded",
+    "angular_units": "degrees",
+    "tolerance_deg": 1.5,
+    "interval_sigma_multiplier": null,
+    "seed": 240017,
+    "coordinates": "arbitrary local metres"
+  },
+  "teaching": {
+    "annotation_producer": "assistant",
+    "human_review": false
+  }
+}

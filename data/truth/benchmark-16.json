@@ -1,0 +1,29 @@
+{
+  "scene_id": "benchmark-16",
+  "camera": [
+    -2.0171866236836666,
+    1.9560713313926947
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "exact_value_deg": 232.98430127392515,
+      "drawn_error_deg": 0.4153616862046361,
+      "reported_value_deg": 233.3996629601298
+    },
+    {
+      "observation_id": "o2",
+      "exact_value_deg": 333.8364363894106,
+      "drawn_error_deg": -0.31561519273026395,
+      "reported_value_deg": 333.52082119668034
+    },
+    {
+      "observation_id": "o3",
+      "exact_value_deg": 82.63145303389301,
+      "drawn_error_deg": 1.280203917318775,
+      "reported_value_deg": 83.91165695121178
+    }
+  ],
+  "annotation_producer": "assistant",
+  "human_review": false
+}
